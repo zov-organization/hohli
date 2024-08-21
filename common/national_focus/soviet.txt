@@ -4074,7 +4074,7 @@ focus_tree = {
 		id = SOV_found_the_pcdi
 
 		icon = GFX_SOV_found_the_pcdi_ccp_2d_sov_compatibility
-		x = 15
+		x = 17
 		y = 0
 		relative_position_id = SOV_expand_the_red_fleet
 		cost = 5
@@ -6773,7 +6773,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 20
+		x = 18
 		y = 0
 		offset = {
 			x = -8
