@@ -1,0 +1,232 @@
+﻿capital = 219
+oob = "SOV_1936_army"
+set_naval_oob = "SOV_1936_fleet"
+set_country_flag = host
+
+
+set_research_slots = 3
+navy_experience = 0
+# Starting tech
+
+
+set_convoys = 799
+
+set_stability = 0.5
+set_war_support = 0.8
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Joseph Stalin"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+}
+
+set_popularities = {
+	democratic = 10.1
+	fascism = 0
+	communism = 89.9
+}
+create_faction = Comintern
+add_to_faction = SOV
+
+
+add_ideas = {
+}
+
+add_timed_idea = {
+}
+
+set_technology = {	
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+
+
+create_equipment_variant = {
+	name = "I-15bis"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 3
+		plane_range_upgrade = 5
+		plane_engine_upgrade = 5
+		plane_reliability_upgrade = 5
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "I-153"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 5
+		plane_range_upgrade = 5
+		plane_engine_upgrade = 5
+		plane_reliability_upgrade = 5
+	}
+}
+
+create_equipment_variant = {
+	name = "BT.7"
+	type = light_tank_chassis_2
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_three_man_tank_turret
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = dozer_blade
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+}
+
+create_equipment_variant = {
+	name = "T.35-A"
+	type = heavy_tank_chassis_1
+	modules = {
+		main_armament_slot = tank_heavy_cannon
+		turret_type_slot = tank_heavy_three_man_tank_turret
+		special_type_slot_1 = secondary_turret_small_cannon
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = dozer_blade
+		special_type_slot_4 = wet_ammo_storage
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+}
+
+create_equipment_variant = {
+	name = "Sh-1"
+	type = CAS_equipment_1
+	upgrades = {
+		plane_cas_upgrade = 0
+		plane_range_upgrade = 2
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "I-153"
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = heavy_mg_2x
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = self_sealing_fuel_tanks_small
+	}
+	icon = "GFX_SOV_early_fighter_medium"
+}
+
+
+create_equipment_variant = {
+	name = "Tu 23"
+	type = medium_plane_airframe_1
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		engine_type_slot = engine_2_2x
+		special_type_slot_1 = lmg_defense_turret_2x
+		special_type_slot_2 = armor_plate_medium
+	}
+	icon = "GFX_SOV_tactical_bomber1_medium"
+}
+
+
+create_equipment_variant = {
+	name = "Sh-1"
+	type = small_plane_cas_airframe_1
+	modules = {
+		fixed_main_weapon_slot = armor_piercing_bomb_locks
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = dive_brakes_small
+		special_type_slot_2 = lmg_defense_turret
+	}
+	icon = "GFX_SOV_CAS_equipment_1_medium"
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 20260
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 7651
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 229000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 118100
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 7900
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = heavy_tank_chassis_1
+	amount = 500
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 12400
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 19160
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 5000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_airframe_0
+	amount = 3000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = medium_plane_airframe_1
+	amount = 700
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 1000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_cas_airframe_1
+	amount = 500
+	producer = SOV
+}
