@@ -11,8 +11,8 @@ navy_experience = 0
 
 set_convoys = 799
 
-set_stability = 0.5
-set_war_support = 0.8
+set_stability = 0.4
+set_war_support = 0.3
 
 set_politics = {
 	ruling_party = communism
@@ -39,6 +39,12 @@ add_to_faction = SOV
 
 
 add_ideas = {
+	partial_economic_mobilisation
+	closed_economy
+	limited_conscription
+
+	SOV_five_year_plan
+	SOV_trotskyite_plot
 }
 
 add_timed_idea = {

@@ -4,18 +4,6 @@ state = {
 	manpower = 511000
 
 	history = {
-
-		owner = sau
-		add_core_of = SAU
-
-		victory_points = {
-			12758 2 
-		}
-		
-		buildings = {
-			infrastructure = 2
-		}
-
 	}
 
 	provinces = {
