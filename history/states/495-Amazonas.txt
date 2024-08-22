@@ -4,16 +4,6 @@ state={
 	name="STATE_495"
 
 	history={
-		owner = BRA
-		add_core_of = BRA
-		buildings = {
-			infrastructure = 0
-
-		}
-		victory_points = {
-			10934 1 
-		}
-
 	}
 
 	provinces={

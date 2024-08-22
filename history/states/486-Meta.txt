@@ -7,7 +7,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = COL
+		owner = col
 		buildings = {
 			infrastructure = 1
 		}

@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = COL
+		owner = col
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2

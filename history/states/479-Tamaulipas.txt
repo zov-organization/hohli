@@ -10,24 +10,8 @@ state = {
 		#steel=2 moved to Guerrero
 	}
 	
-	history = {
-
-		owner = MEX
-		add_core_of = MEX
-		add_core_of = RIG
-
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
-		
-		victory_points = {
-			4956 10
-		}
-		victory_points = {
-			5015 5
-		}
-
+	history={
+		owner = mex
 	}
 
 	provinces = {

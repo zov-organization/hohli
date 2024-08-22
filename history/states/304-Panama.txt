@@ -10,7 +10,7 @@ state={
 	state_category = town
 	
 	history={
-		owner = PAN
+		owner = pan
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -34,7 +34,7 @@ state={
 	}
 
 	provinces={
-		1633 4611 4624 7630 10482 
+		1633 4611 7630 10482 
 	}
 
 	local_supplies=0.0 

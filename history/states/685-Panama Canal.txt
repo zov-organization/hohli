@@ -20,7 +20,7 @@ state={
 		add_core_of = PAN
 	}
 	
-	provinces={ 7617 }
+	provinces={ 4624 7617 }
 
 	local_supplies=0.0 
 }
