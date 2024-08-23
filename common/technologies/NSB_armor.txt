@@ -1,13 +1,28 @@
 technologies = {
-
+	# SEARCH TAGS:
+	#	LIGHT_1
+	#	LIGHT_2
+	#	LIGHT_3
+	#	--------
+	#	MEDIUM_1
+	#	MEDIUM_2
+	#	MEDIUM_3
+	#	--------
+	#	HEAVY_1
+	#	HEAVY_2
+	#	HEAVY_3
+	#	--------
+	#	PROPELLER
+	#	-------
+	#	Maus
 
 	@1918 = 0
 	@1934 = 2
 	@1935 = 3
 	@1936 = 4
 	@1937 = 5
-	@1938 = 5
-	@1939 = 7
+	@1938 = 6
+	@1939 = 6
 	@1940 = 7
 	@1941 = 8
 	@1942 = 9
@@ -106,16 +121,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = basic_medium_tank_chassis
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		start_year = 1918
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 0 }
+			position = { x = 3 y = 0 }
 		}
 
 		ai_will_do = {
@@ -150,7 +160,7 @@ technologies = {
 		}
 	}
 
-	basic_light_tank_chassis = { #Panzer I
+	basic_light_tank_chassis = { # LIGHT_1
 
 		enable_equipments = {
 			light_tank_chassis_1
@@ -205,7 +215,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 
 		ai_will_do = {
@@ -240,7 +250,7 @@ technologies = {
 		}
 	}
 
-	improved_light_tank_chassis = { #Panzer II
+	improved_light_tank_chassis = { # LIGHT_2
 
 		enable_equipments = {
 			light_tank_chassis_2
@@ -255,7 +265,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = amphibious_tank_chassis
+			leads_to_tech = amphibious_drive
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -331,71 +346,7 @@ technologies = {
 		}
 	}
 
-
-
-	amphibious_tank_chassis = { #SchwimmPanzer II
-
-		enable_equipments = {
-			amphibious_tank_chassis_1
-		}
-
-		enable_subunits = {
-			amphibious_armor
-		}
-
-		path = {
-			leads_to_tech = amphibious_drive
-			research_cost_coeff = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		research_cost = 2
-		start_year = 1938
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 5 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				NOT = {
-					TAG = GER
-				}
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			tp_tech
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
-
-	amphibious_drive = { #SchwimmPanzer II
+	amphibious_drive = { # PROPELLER
 
 
 		enable_equipment_modules = {
@@ -422,31 +373,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
+			position = { x = -4 y = @1941 }
 		}
 
 		categories = {
@@ -457,7 +384,7 @@ technologies = {
 		}
 	}
 
-	advanced_light_tank_chassis = { #Leopard
+	advanced_light_tank_chassis = { # LIGHT_3
 
 		enable_equipments = {
 			light_tank_chassis_3
@@ -467,11 +394,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 8 }
+			position = { x = -1 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -505,7 +432,7 @@ technologies = {
 		}
 	}
 
-	basic_medium_tank_chassis = { #Panzer III
+	basic_medium_tank_chassis = { # MEDIUM_1
 
 		enable_equipments = {
 			medium_tank_chassis_1
@@ -550,11 +477,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 1939
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1937 }
+			position = { x = 3 y = @1939 }
 		}
 
 		ai_will_do = {
@@ -611,9 +538,7 @@ technologies = {
 		}
 	}
 
-
-
-	improved_medium_tank_chassis = { #Panzer IV
+	improved_medium_tank_chassis = { # MEDIUM_2
 
 		enable_equipments = {
 			medium_tank_chassis_2
@@ -632,7 +557,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1940 }
+			position = { x = 3 y = @1941 }
 		}
 
 		on_research_complete = {
@@ -699,7 +624,7 @@ technologies = {
 		}
 	}
 
-	advanced_medium_tank_chassis = { #Panther
+	advanced_medium_tank_chassis = { # MEDIUM_3
 
 		enable_equipments = {
 			medium_tank_chassis_3
@@ -709,7 +634,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = main_battle_tank_chassis
+			leads_to_tech = final_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -718,36 +643,10 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 3 y = @1943 }
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_medium_tank_templates = yes
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1945.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
 		}
 
 		categories = {
@@ -758,43 +657,21 @@ technologies = {
 		}
 	}
 
-	main_battle_tank_chassis = { #E-50
+	final_medium_tank_chassis = { # MEDIUM_4
 
 		enable_equipments = {
-			modern_tank_chassis_1
-			modern_tank_destroyer_chassis_1
-			modern_tank_artillery_chassis_1
-			modern_tank_aa_chassis_1
-		}
-		enable_subunits = {
-			modern_armor
+			
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1945
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 3 y = @1945 }
 		}
 
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
+		on_research_complete = {
 		}
 
 		categories = {
@@ -805,8 +682,7 @@ technologies = {
 		}
 	}
 
-
-	basic_heavy_tank_chassis = { #Grosstraktor
+	basic_heavy_tank_chassis = { # HEAVY_1
 
 		enable_equipments = {
 			heavy_tank_chassis_1
@@ -825,24 +701,7 @@ technologies = {
 			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			
 		}
 
 		path = {
@@ -851,39 +710,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 1935
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = 2 }
-		}
-
-		ai_will_do = {
-			factor = 0.8
-
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-			modifier = {
-				tag = FRA
-				factor = 3
-			}
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
+			position = { x = 6 y = @1935 }
 		}
 
 		categories = {
@@ -894,7 +725,7 @@ technologies = {
 		}
 	}
 
-	improved_heavy_tank_chassis = { #Tiger
+	improved_heavy_tank_chassis = { # HEAVY_2
 
 		enable_equipments = {
 			heavy_tank_chassis_2
@@ -918,20 +749,11 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @1940 }
+			position = { x = 7 y = @1940 }
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
-				}
-				ITA_add_improved_heavy_tank_templates = yes
-			}
+			
 		}
 
 		ai_will_do = {
@@ -966,7 +788,7 @@ technologies = {
 	}
 
 
-	advanced_heavy_tank_chassis = { #King Tiger
+	advanced_heavy_tank_chassis = { # HEAVY_3
 
 		enable_equipments = {
 			heavy_tank_chassis_3
@@ -976,7 +798,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = main_battle_tank_chassis
+			leads_to_tech = final_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -985,36 +807,11 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @1943 }
+			position = { x = 7 y = @1942 }
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
-				}
-				ITA_add_advanced_heavy_tank_templates = yes
-			}
-		}
-
-		ai_will_do = {
-			factor = 0.8
-
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1945.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
+			
 		}
 
 		categories = {
@@ -1025,13 +822,36 @@ technologies = {
 		}
 	}
 
-	super_heavy_tank_chassis = { #Maus
+	final_heavy_tank_chassis = { # HEAVY_4
+
+		enable_equipments = {
+			
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1944 }
+		}
+
+		on_research_complete = {
+			
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	super_heavy_tank_chassis = { # Maus
 
 		enable_equipments = {
 			super_heavy_tank_chassis_1
-			super_heavy_tank_destroyer_chassis_1
-			super_heavy_tank_artillery_chassis_1
-			super_heavy_tank_aa_chassis_1
 		}
 
 		enable_subunits = {
@@ -1046,33 +866,10 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 8 y = @1943 }
+			position = { x = 10 y = @1943 }
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-				}
-				if = {
-					limit = {
-						has_completed_focus = ITA_capo_supremo
-					}
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_modern_musculus
-					}
-					ITA_add_modern_musculus_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_a_time_for_war
-					}
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
-				}
-			}
 		}
 
 		ai_will_do = {
