@@ -37,25 +37,6 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
-		}
 	}
 
 	interwar_artillery = {
@@ -90,7 +71,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 
 		start_year = 1936
 
@@ -102,30 +83,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = { #This is needed for a lot of tank designs
-				factor = 2.0
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
 		}
 	}
 
@@ -157,25 +114,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1938.1.9"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
-			}
 		}
 	}
 
@@ -210,7 +148,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 
@@ -222,25 +160,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1940.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
 		}
 	}
 
@@ -273,7 +192,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1941
 
@@ -285,20 +204,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
-			}
 		}
 	}
 
@@ -316,7 +221,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1942
 
@@ -328,25 +233,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1941.1.9"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1942.1.6"
-			}
 		}
 	}
 
@@ -376,7 +262,7 @@ technologies = {
 			tank_heavy_howitzer
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1943
 
@@ -388,25 +274,6 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1943.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1945.1.1"
-			}
 		}
 	}
 
@@ -451,22 +318,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -494,8 +352,13 @@ technologies = {
 			leads_to_tech = rocket_artillery3
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = motorized_rocket_unit
+			research_cost_coeff = 1
+		}
 
-		research_cost = 1
+		research_cost = 2
 
 		start_year = 1941
 
@@ -504,18 +367,34 @@ technologies = {
 			position = { x = 3 y = 8 }
 		}
 
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
+		}
+	}
+
+	motorized_rocket_unit = {
+
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 9 }
+		}
+
+		research_cost = 3
+		start_year = 1942
+		
+		categories = {
+			rocketry
+			mio_cat_all_artillery_equipment
+			mot_rockets
+			mio_cat_tech_all_motorized_mechanized
 		}
 	}
 
@@ -539,22 +418,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1942
 
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -621,45 +491,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 2 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
 		}
 
 		categories = {
@@ -688,30 +526,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1939
 
 		folder = {
 			name = artillery_folder
 			position = { x = -3 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -749,23 +570,6 @@ technologies = {
 			position = { x = -3 y = 6 }
 		}
 
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
-		}
-
 		categories = {
 			artillery
 			cat_anti_air
@@ -796,30 +600,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1941
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
+			position = { x = -4 y = 8 }
 		}
 
 		categories = {
@@ -848,30 +635,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1942
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
+			position = { x = -4 y = 10 }
 		}
 
 		categories = {
@@ -902,24 +672,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
+			position = { x = -4 y = 12 }
 		}
 
 		categories = {
@@ -944,70 +697,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 2 }
-		}
-
-		ai_will_do = {
-			base = 1
-
-			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_war_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = { #This is needed for a lot of tank designs
-				factor = 4.0
-				is_major = yes
-			}
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
 		}
 
 		categories = {
@@ -1053,47 +749,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1939
 
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1939.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
-			}
 		}
 
 		categories = {
@@ -1128,50 +790,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1939.1.9"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1940.1.1"
-			}
-			modifier = {
-				tag = USA
-				has_War = no
-				factor = 0.5 #this tank nonsense will never catch on
-			}
-			modifier = {
-				factor = 5
-				date > "1940.1.6"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
+			position = { x = 9 y = 6 }
 		}
 
 		categories = {
@@ -1215,52 +834,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1941
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1941.1.6"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
+			position = { x = 9 y = 8 }
 		}
 
 		categories = {
@@ -1304,47 +884,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1942
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 5
-				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
-			}
+			position = { x = 11 y = 10 }
 		}
 
 		categories = {
@@ -1370,92 +916,12 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 12 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1942.1.9"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
-			}
+			position = { x = 11 y = 12 }
 		}
 
 		categories = {
 			artillery
 			cat_anti_tank
-			mio_cat_all_artillery_equipment
-		}
-	}
-
-	SWE_bofors_antitank_gun = {
-
-		research_cost = 1
-
-		# only from focus!!! Bofors anti tank gun ##### 
-		allow = {
-			always = no
-		}
-
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-
-		categories = {
-			cat_anti_tank
-			artillery
 			mio_cat_all_artillery_equipment
 		}
 	}

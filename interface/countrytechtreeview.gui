@@ -2767,49 +2767,6 @@ guiTypes = {
 				}
 			}
 
-
-			instantTextBoxType = {
-				name = "airtech_subtitle_airframe"
-				position = { x = 410 y = 110 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_AIRFRAME"
-				maxWidth = 300
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = ""
-			}
-
-			instantTextBoxType = {
-				name = "airtech_subtitle_weapons"
-				position = { x = 1155 y = 110 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_WEAPONS"
-				maxWidth = 300
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = ""
-			}
-
-			instantTextBoxType = {
-				name = "airtech_subtitle_engines"
-				position = { x = 1650 y = 110 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_ENGINES"
-				maxWidth = 300
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "nav_bomber_equipment_desc"
-			}
-
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=180 y=807 }
