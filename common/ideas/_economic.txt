@@ -614,8 +614,10 @@ ideas = {
 				min_export = 0.25
 				consumer_goods_expected_value = 0.05
 				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0
-				agency_upgrade_time = 0.15
+				civilian_intel_to_others = 100.0
+				army_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0
 				cic_construction_boost = 0.15
 			}
 
@@ -685,46 +687,14 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
+				civilian_intel_to_others = 100.0
+				army_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0
 				cic_construction_boost_factor = 0.05
 			}
 
 			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-
-   				modifier = {
-					factor = 300
-
-					OR = {
-						tag = PER
-						tag = IRQ
-					}
-					is_in_faction = no
-				}
-
-				modifier = {
-					factor = 300
-
-					tag = BRA
-					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
-				}
-
-				modifier = {
-					factor = 400
-					original_tag = SWE
-					date > 1941.6.1
-				}
-
-				# Oil for hitlers oil throne!
-				modifier = {
-					factor = 600
-					tag = ROM
-					is_in_faction_with = GER
-				}
-   			}
 		}
 
 		export_focus = {
@@ -757,39 +727,16 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
-				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
+				civilian_intel_to_others = 100.0
+				army_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0
 				cic_construction_boost_factor = 0.1
 			}
 
 			default = yes
 
 			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-
-				modifier = {
-					factor = 0
-
-					is_major = no
-					has_war = no
-					is_in_faction = no
-					OR = {
-						# portugal and sweden are special tungsten snowflakes
-						tag = POR
-						tag = SWE
-
-						# Iraq & Iran are special oil snowflakes
-						tag = PER
-						tag = IRQ
-					}
-				}
-				modifier = {
-					factor = 1000
-					has_idea = uncontrolled_exports #Poland should try and escape this as soon as they can
-				}
-   			}
 		}
 
 		limited_exports = {
@@ -841,47 +788,15 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.01
-				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
+				civilian_intel_to_others = 100.0
+				army_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0
 				lend_lease_tension = 0.20
 				cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-
-   				modifier = {
-					add = -1
-
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
-
-				# minors not at war should want to get the bonuses from free trade
-				modifier = {
-					add = -1
-
-					is_major = no
-					has_war = no
-				}
-				modifier = {
-					factor = 200
-					NOT = { has_government = fascism }
-					NOT = { has_idea = closed_economy }
-					has_war = yes
-					is_major = yes
-				}
-				modifier = {
-					add = 1500
-
-					# revert from closed_economy if we have large allies
-					has_idea = closed_economy
-					has_large_ally_not_pick_closed_economy = yes
-				}
-   			}
 		}
 
 		closed_economy = {
@@ -921,40 +836,15 @@ ideas = {
 
 			modifier = {
 				min_export = 0
-				#civilian_intel_to_others = 0.0
+				civilian_intel_to_others = 100.0
+				army_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0
 				lend_lease_tension = 0.40
 				cic_construction_boost = -0.1
 			}
 
 			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 1
-
-   				modifier = {
-					factor = 0
-
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
-
-				# minors not at war should want to get the bonuses from free trade
-				modifier = {
-					factor = 0
-
-					is_major = no
-					has_war = no
-				}
-
-				modifier = {
-					factor = 0
-
-					# don't take if we have a reasonable sized ally
-					# since they will require our trades
-					has_large_ally_not_pick_closed_economy = yes
-				}
-   			}
 		}
 	}
 }

@@ -47,7 +47,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1926
 		folder = {
 			name = bba_air_techs_folder
@@ -90,7 +90,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1936
 
 		folder = {
@@ -135,7 +135,7 @@ technologies = {
 		}
 				
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -182,7 +182,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1944
 
 		folder = {
@@ -221,7 +221,7 @@ technologies = {
 			jet_engines = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1945
 
 		folder = {
@@ -257,7 +257,7 @@ technologies = {
 	#		research_cost_coeff = 1
 	#	}
 	#	
-	#	research_cost = 2
+	#	research_cost = 5
 	#	start_year = 1926
 	#	folder = {
 	#		name = bba_air_techs_folder
@@ -304,7 +304,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1936
 
 		folder = {
@@ -338,7 +338,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -371,7 +371,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
@@ -399,7 +399,7 @@ technologies = {
 			jet_engines = 1
 		}
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1945
 		
 		folder = {
@@ -428,7 +428,7 @@ technologies = {
 	#		research_cost_coeff = 1
 	#	}
 	#
-	#	research_cost = 2
+	#	research_cost = 5
 	#	start_year = 1926
 	#	folder = {
 	#		name = bba_air_techs_folder
@@ -459,7 +459,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
@@ -490,7 +490,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -521,7 +521,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 5
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
@@ -543,7 +543,7 @@ technologies = {
 			large_plane_maritime_patrol_plane_airframe_4
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1950
 
 		dependencies = {
@@ -763,7 +763,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 2
+		research_cost = 5
 		start_year = 1945
 
 		folder = {

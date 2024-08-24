@@ -776,73 +776,6 @@ technologies = {
 			industry
 			synth_resources
 		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				oil > 10
-			}
-			modifier = {
-				factor = 3
-				oil > 20
-			}	
-			modifier = {
-				factor = 4
-				oil > 30
-			}	
-			
-			modifier = {
-				factor = 2
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 3
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 4
-				num_of_military_factories > 30
-			}	
-			modifier = {
-				factor = 4
-				num_of_military_factories > 40
-			}	
-			modifier = {
-				factor = 4
-				num_of_military_factories > 50
-			}	
-
-			modifier = {
-				factor = 2
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 3
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 4
-				num_of_naval_factories > 30
-			}	
-			modifier = {
-				factor = 4
-				num_of_naval_factories > 40
-			}
-			modifier = {
-				factor = 4
-				num_of_naval_factories > 50
-			}
-			
-			modifier = {
-				factor = 0.2
-				date < "1937.1.1"
-			}
-			modifier = {
-				factor = 0.4
-				date < "1938.1.1"
-			}
-		}
 	}
 
 	fuel_refining = {
@@ -859,7 +792,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 2 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1197,35 +1130,6 @@ technologies = {
 			industry
 			synth_resources
 			cat_synth_oil
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
 		}
 		
 		show_effect_as_desc = yes

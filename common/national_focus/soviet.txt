@@ -26,15 +26,17 @@
 		}
 	}
 	
+
+	# INDUSTRY
 	focus = {
-		id = SOV_civ_one
+		id = SOV_we_have_to_industrialize
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_stalin
 
-		x = -6
+		x = -8
 		y = 0
 		cost = 5
 
@@ -47,14 +49,14 @@
 	}
 
 	focus = {
-		id = SOV_civ_two
+		id = SOV_in_under_then_5_years
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_civ_one }
-		relative_position_id = SOV_civ_one
+		prerequisite = { focus = SOV_we_have_to_industrialize }
+		relative_position_id = SOV_we_have_to_industrialize
 
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 
@@ -67,14 +69,14 @@
 	}
 
 	focus = {
-		id = SOV_civ_three
+		id = SOV_otherwise_we-ll_be_stomped
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_civ_two }
-		relative_position_id = SOV_civ_two
+		prerequisite = { focus = SOV_we_have_to_industrialize }
+		relative_position_id = SOV_we_have_to_industrialize
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 
@@ -85,6 +87,141 @@
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = SOV_we-ll_be_ready
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_in_under_then_5_years }
+		prerequisite = { focus = SOV_otherwise_we-ll_be_stomped }
+		relative_position_id = SOV_we_have_to_industrialize
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ukrain_prom_compleks
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_we-ll_be_ready }
+		relative_position_id = SOV_we-ll_be_ready
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ukrain_prom_compleks_one
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_ukrain_prom_compleks }
+		relative_position_id = SOV_ukrain_prom_compleks
+
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ukrain_prom_compleks_two
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_ukrain_prom_compleks }
+		relative_position_id = SOV_ukrain_prom_compleks
+
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_making_use_of_the_storehouse_of_russia
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_we-ll_be_ready }
+		relative_position_id = SOV_we-ll_be_ready
+
+		x = 2
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_making_use_of_the_storehouse_of_russia_one
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_making_use_of_the_storehouse_of_russia }
+		relative_position_id = SOV_making_use_of_the_storehouse_of_russia
+
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_making_use_of_the_storehouse_of_russia_two
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_making_use_of_the_storehouse_of_russia }
+		relative_position_id = SOV_making_use_of_the_storehouse_of_russia
+
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
 
 
 
@@ -98,7 +235,129 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_initial_focus
 
-		x = -4
+		x = -7
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_wipe_out_the_parasites
+		
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_stalin }
+		relative_position_id = SOV_stalin
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_deploy_gulags
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_wipe_out_the_parasites }
+		relative_position_id = SOV_wipe_out_the_parasites
+
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_kill_trotski
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_stalin }
+		relative_position_id = SOV_stalin
+
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ensure_loyatly_of_those_who_left
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_wipe_out_the_parasites }
+		prerequisite = { focus = SOV_kill_trotski }
+		relative_position_id = SOV_kill_trotski
+
+		x = -1
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_propaganda
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_kill_trotski }
+		relative_position_id = SOV_kill_trotski
+
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_scintific_reborn
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_ensure_loyatly_of_those_who_left }
+		prerequisite = { focus = SOV_propaganda }
+		relative_position_id = SOV_ensure_loyatly_of_those_who_left
+
+		x = 1
 		y = 1
 		cost = 5
 
@@ -245,7 +504,7 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_navy_one
 
-		x = 11
+		x = 12
 		y = 0
 		cost = 5
 
@@ -265,7 +524,7 @@
 		prerequisite = { focus = SOV_military }
 		relative_position_id = SOV_military
 
-		x = 5
+		x = 1
 		y = 1
 		cost = 5
 
@@ -324,10 +583,52 @@
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_tank_two focus = SOV_tank_three }
-		prerequisite = { focus = SOV_katusha_one }
 		relative_position_id = SOV_tank_one
 
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	
+	
+	focus = {
+		id = SOV_katusha_one
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_tank_four }
+		prerequisite = { focus = SOV_rockets }
+		relative_position_id = SOV_tank_four
+
 		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_maus
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_tank_four }
+		relative_position_id = SOV_tank_four
+
+		x = 0
 		y = 2
 		cost = 5
 
@@ -340,14 +641,14 @@
 	}
 
 	focus = {
-		id = SOV_inf
+		id = SOV_start_reorg
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_military }
 		relative_position_id = SOV_military
 
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 
@@ -364,11 +665,11 @@
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_inf }
+		prerequisite = { focus = SOV_start_reorg }
 		prerequisite = { focus = SOV_navy_three }
-		relative_position_id = SOV_inf
+		relative_position_id = SOV_start_reorg
 
-		x = -5
+		x = -4
 		y = 1
 		cost = 5
 
@@ -405,10 +706,10 @@
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_inf }
-		relative_position_id = SOV_inf
+		prerequisite = { focus = SOV_start_reorg }
+		relative_position_id = SOV_start_reorg
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 
@@ -440,14 +741,34 @@
 		}
 	}
 
-
 	focus = {
-		id = SOV_anti_tank_one
+		id = SOV_new_infantry
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_inf }
-		relative_position_id = SOV_inf
+		prerequisite = { focus = SOV_inf_two }
+		relative_position_id = SOV_inf_two
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = SOV_mio_upgrade_1
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_start_reorg }
+		relative_position_id = SOV_start_reorg
 
 		x = 1
 		y = 1
@@ -462,34 +783,14 @@
 	}
 
 	focus = {
-		id = SOV_anti_tank_two
+		id = SOV_rockets
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_anti_tank_one }
-		relative_position_id = SOV_anti_tank_one
+		prerequisite = { focus = SOV_mio_upgrade_1 }
+		relative_position_id = SOV_mio_upgrade_1
 
 		x = 0
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = SOV_katusha_one
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_inf }
-		relative_position_id = SOV_inf
-
-		x = 4
 		y = 1
 		cost = 5
 
@@ -512,27 +813,31 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_military
 
-		x = 13
+		x = 11
 		y = 0
 		cost = 5
 
-		available = {
-
-		}
+		available = {}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_i_16
+				bonus = 1.5
+				uses = 1
+				technology = basic_small_airframe
+			}
 		}
 	}
 
 	focus = {
-		id = SOV_quantity
+		id = SOV_strati
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_i_16 }
 		relative_position_id = SOV_i_16
 
-		x = -1
+		x = -3
 		y = 1
 		cost = 5
 
@@ -541,31 +846,18 @@
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_strati
+				bonus = 2
+				uses = 2
+				technology = basic_medium_airframe
+				technology = basic_large_airframe 
+			}
 		}
 	}
 
 	focus = {
-		id = SOV_wood_for_planes
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_quantity }
-		relative_position_id = SOV_quantity
-
-		x = -1
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_quality
+		id = SOV_soveit_airplane_school
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
@@ -574,6 +866,61 @@
 
 		x = 1
 		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_soveit_airplane_school
+				bonus = 1
+				uses = 3
+				technology = aircraft_construction
+				technology = range_improvements
+				technology = survivability_studies
+				technology = aa_hmg
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_aviadoka
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_soveit_airplane_school focus = SOV_strati }
+		relative_position_id = SOV_soveit_airplane_school
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = SOV_aviadoka
+				cost_reduction = 0.75
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_strati_buff
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		prerequisite = { focus = SOV_strati }
+		relative_position_id = SOV_strati
+
+		x = 0
+		y = 2
 		cost = 5
 
 		available = {
@@ -589,11 +936,11 @@
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_quality }
-		relative_position_id = SOV_quality
+		prerequisite = { focus = SOV_soveit_airplane_school }
+		relative_position_id = SOV_soveit_airplane_school
 
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 
 		available = {
@@ -601,40 +948,20 @@
 		}
 
 		completion_reward = {
+			
 		}
 	}
 
 	focus = {
-		id = SOV_novikov_focus
+		id = SOV_aviadoka_2
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_wood_for_planes }
-		prerequisite = { focus = SOV_i_16 }
-		relative_position_id = SOV_i_16
-
-		x = 0
-		y = 3
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_plane_one
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_novikov_focus }
-		relative_position_id = SOV_novikov_focus
+		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_strati_buff }
+		relative_position_id = SOV_aviadoka
 
 		x = 1
-		y = 1
+		y = 2
 		cost = 5
 
 		available = {
@@ -642,36 +969,22 @@
 		}
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = SOV_aviadoka
+				cost_reduction = 0.75
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 
 	focus = {
-		id = SOV_strati
+		id = SOV_novikov
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_novikov_focus }
-		relative_position_id = SOV_novikov_focus
-
-		x = -3
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_cas
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_novikov_focus }
-		relative_position_id = SOV_novikov_focus
+		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_strati_buff }
+		relative_position_id = SOV_aviadoka_2
 
 		x = -1
 		y = 1
@@ -682,26 +995,12 @@
 		}
 
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_aviadoka
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_plane_one focus = SOV_strati focus = SOV_cas }
-		relative_position_id = SOV_plane_one
-
-		x = -2
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_soveit_airplane_school
+				bonus = 1
+				uses = 1
+				technology = improved_small_airframe
+			}
 		}
 	}
 
@@ -713,8 +1012,8 @@
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_arty_two focus = SOV_navy_maxim_gorki focus = SOV_navy_krasnaya_gorka focus = SOV_inf_two focus = SOV_katusha_two focus = SOV_anti_tank_two }
-		relative_position_id = SOV_inf_two
+		prerequisite = { focus = SOV_arty_two focus = SOV_navy_maxim_gorki focus = SOV_navy_krasnaya_gorka }
+		relative_position_id = SOV_arty_two
 
 		x = -2
 		y = 2
@@ -725,6 +1024,7 @@
 		}
 
 		completion_reward = {
+			
 		}
 	}
 
