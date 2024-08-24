@@ -6113,6 +6113,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/generic_inter_war_heavy_tank_chassis.dds"
 	}
 	SpriteType = {
+		name = "GFX_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/generic_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/generic_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_GER_basic_light_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/GER_light_tank_chassis_1.dds"
 	}
@@ -6157,6 +6165,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_heavy_tank_chassis_2.dds"
 	}
 	SpriteType = {
+		name = "GFX_GER_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_SOV_basic_light_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_1.dds"
 	}
@@ -6181,10 +6197,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_final_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
-	}
-	SpriteType = {
 		name = "GFX_SOV_basic_heavy_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_1.dds"
 	}
@@ -6195,6 +6207,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_advanced_heavy_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_SOV_final_heavy_tank_chassis_medium"
@@ -6289,6 +6305,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ENG_heavy_tank_chassis_3.dds"
 	}
 	SpriteType = {
+		name = "GFX_ENG_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_ENG_super_heavy_tank_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
 	}
@@ -6337,6 +6361,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FRA_superheavy_tank.dds"
 	}
 	SpriteType = {
+		name = "GFX_FRA_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_ITA_basic_light_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/ITA_light_tank_chassis_1.dds"
 	}
@@ -6371,6 +6403,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_advanced_heavy_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/ITA_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_medium_tank_chassis_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_ITA_super_heavy_tank_equipment_1_medium"
@@ -6419,6 +6459,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_JAP_amphibious_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/jap_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_chassis_3.dds"
 	}
 
 

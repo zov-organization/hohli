@@ -7,13 +7,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = bold_attack_spirit_tt
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 		tenacious_defense_spirit = {
 			ledger = army
@@ -21,26 +14,12 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = tenacious_defense_spirit_tt
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 		meticulous_preparation_spirit = {
 			ledger = army
 			available = { has_military_academy = yes }
 			modifier = {
 				custom_modifier_tooltip = meticulous_preparation_spirit_tt
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
 			}
 		}
 		best_of_the_best_spirit = {
@@ -54,20 +33,6 @@ ideas = {
 				army_intel_to_others = -5.0
 				custom_modifier_tooltip = best_of_the_best_spirit_tt
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_government = democratic
-				}
-			}
-
 		}
 		academy_scholarships_spirit = {
 			ledger = army
@@ -80,19 +45,6 @@ ideas = {
 				army_leader_cost_factor = -0.3 
 				unit_leader_as_advisor_cp_cost_factor = -0.75
 				custom_modifier_tooltip = academy_scholarships_spirit_tt
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_government = communism
-				}
 			}
 		}
 		political_loyalty_spirit = {
@@ -109,22 +61,6 @@ ideas = {
 				party_popularity_stability_factor = 0.15
 				custom_modifier_tooltip = political_loyalty_spirit_tt
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
-				}
-			}
 		}
 		inventive_leadership_spirit = {
 			ledger = army
@@ -135,13 +71,6 @@ ideas = {
 				trait_commando_xp_gain_factor = 0.2
 				trait_trickster_xp_gain_factor = 0.2
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 		mobile_warfare_academy_spirit = {
 			ledger = army
@@ -150,19 +79,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
 				trait_panzer_leader_xp_gain_factor = 0.2
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mobile_warfare
-				}
 			}
 		}
 		superior_firepower_academy_spirit = {
@@ -174,19 +90,6 @@ ideas = {
 				trait_engineer_xp_gain_factor = 0.2
 				initiative_factor = 0.04
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = superior_firepower
-				}
-			}
 		}
 		theatre_training_spirit = {
 			ledger = army
@@ -195,19 +98,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
 				terrain_trait_xp_gain_factor = 0.2
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = trench_warfare
-				}
 			}
 		}
 		mass_assault_academy_spirit = {
@@ -218,45 +108,7 @@ ideas = {
 				custom_modifier_tooltip = mass_assault_academy_spirit_tt
 				trait_infantry_leader_xp_gain_factor = 0.2
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mass_assault
-				}
-			}
-		}
-		NOR_flexible_officers_academy_spirit = {
-			ledger = army
-			available = { 
-				has_military_academy = yes 
-				has_completed_focus = NOR_officers_academy
-			}
-			visible = { 
-				NOR_AAT = yes 
-			}
-			modifier = {
-				army_leader_start_level = 2
-				promote_cost_factor = -0.3
-				reassignment_duration_factor = -0.3 
-				skill_bonus_factor = 0.1
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
-
-		}		
+		}	
 	}
 
 	army_spirit = {
@@ -266,13 +118,6 @@ ideas = {
 				experience_gain_army_factor = 0.05
 				land_doctrine_cost_factor = -0.05
 				command_power_gain = 0.2
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
 			}
 		}
 
@@ -284,13 +129,6 @@ ideas = {
 				dig_in_speed_factor = 0.1
 				railway_gun_bombardment_factor = 0.20
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 
 		proper_heritage_spirit = {
@@ -299,18 +137,6 @@ ideas = {
 				unit_cavalry_design_cost_factor = -1
 				cavalry_attack_factor = 0.05
 				supply_combat_penalties_on_core_factor = -0.2
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-				modifier = {
-					factor = 2.0
-					is_historical_focus_on = yes
-					tag = SOU
-				}
 			}
 		}
 
@@ -321,18 +147,6 @@ ideas = {
 				command_power_gain = 0.2
 				planning_speed = 0.2
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-				modifier = {
-					factor = 2.0
-					is_historical_focus_on = yes
-					original_tag = GER
-				}
-			}
 		}
 
 		relief_of_command_spirit = {
@@ -341,19 +155,6 @@ ideas = {
 			modifier = {
 				experience_gain_army_factor = 0.25
 				army_advisor_cost_factor = -0.5
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_government = democratic
-				}
 			}
 		}
 
@@ -364,19 +165,6 @@ ideas = {
 				pocket_penalty = -0.2
 				weekly_manpower = 500
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_government = communism
-				}
-			}
 		}
 
 		state_serves_the_military_spirit = {
@@ -385,19 +173,6 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				mobilization_laws_cost_factor = -0.25
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_government = fascism
-				}
 			}
 		}
 
@@ -412,25 +187,11 @@ ideas = {
 				#light_tank_destroyer_brigade
 				unit_medium_armor_design_cost_factor = -1
 				#medium_tank_destroyer_brigade 
-				unit_modern_armor_design_cost_factor = -1
 				unit_heavy_armor_design_cost_factor = -1
 				#heavy_tank_destroyer_brigade 
 				unit_super_heavy_armor_design_cost_factor = -1
 				unit_motorized_design_cost_factor = -1
 				unit_mechanized_design_cost_factor = -1
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mobile_warfare
-				}
 			}
 		}
 
@@ -446,20 +207,6 @@ ideas = {
 				unit_light_sp_artillery_brigade_design_cost_factor = -1
 				unit_medium_sp_artillery_brigade_design_cost_factor = -1
 				unit_heavy_sp_artillery_brigade_design_cost_factor = -1
-				unit_super_heavy_sp_artillery_brigade_design_cost_factor = -1
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = superior_firepower
-				}
 			}
 		}
 
@@ -474,19 +221,6 @@ ideas = {
 				extra_paratrooper_supply_grace = 24
 				extra_marine_supply_grace = 24
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = trench_warfare
-				}
-			}
 		}
 
 		mass_assault_army_spirit = {
@@ -498,19 +232,6 @@ ideas = {
 				unit_motorized_design_cost_factor = -1
 				unit_mechanized_design_cost_factor = -1
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mass_assault
-				}
-			}
 		}
 		
 		heritage_of_accomplishment = {
@@ -521,15 +242,7 @@ ideas = {
 				grant_medal_cost_factor = -0.5
 				field_officer_promotion_penalty = -1.0
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
-		
 	}
 
 	division_command_spirit = {
@@ -541,18 +254,6 @@ ideas = {
 				max_dig_in_factor = 0.1
 				dig_in_speed_factor = 0.1
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-				modifier = {
-					factor = 4
-					tag = SOU
-					GER = { is_ai = no }
-				}
-			}
 		}
 
 		flexible_organization_spirit = {
@@ -561,17 +262,6 @@ ideas = {
 				org_loss_when_moving = -0.15
 				army_speed_factor = 0.05
 				choose_preferred_tactics_cost = -15
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-				modifier = {
-					factor = 4
-					original_tag = GER #Right now this is just better for AI Germany
-				}
 			}
 		}
 
@@ -582,13 +272,6 @@ ideas = {
 				intel_from_combat_factor = 0.15
 				recon_factor = 0.15
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 
 		reserve_officers_spirit = {
@@ -597,13 +280,6 @@ ideas = {
 				tactic_delay_preferred_weight_factor = 1
 				training_time_army_factor = -0.15
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
 		}
 
 		victory_or_death_spirit = {
@@ -611,13 +287,6 @@ ideas = {
 			modifier = {
 				tactic_human_wave_tactics_preferred_weight_factor = 1
 				org_loss_at_low_org_factor = -0.15
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
 			}
 		}
 
@@ -628,20 +297,6 @@ ideas = {
 				army_speed_factor = 0.05
 				coordination_bonus = 0.05
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mobile_warfare
-				}
-
-			}
 		}
 
 		smoke_and_fire_spirit = {
@@ -650,19 +305,6 @@ ideas = {
 			modifier = {
 				tactic_barrage_preferred_weight_factor = 1
 				breakthrough_factor = 0.05
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = superior_firepower
-				}
 			}
 		}
 
@@ -675,19 +317,6 @@ ideas = {
 				air_fuel_consumption_factor = -0.05
 				navy_fuel_consumption_factor = -0.05
 			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = trench_warfare
-				}
-			}
 		}
 
 		operational_reserve_spirit = {
@@ -696,19 +325,6 @@ ideas = {
 			modifier = {
 				tactic_relentless_assault_preferred_weight_factor = 1
 				army_strength_factor = 0.1
-			}
-			ai_will_do = {
-				base = 1
-
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = mass_assault
-				}
 			}
 		}
 	}

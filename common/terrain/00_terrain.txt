@@ -39,10 +39,6 @@ categories =  {
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.1
-		
-		supply_flow_penalty_factor = 0.08
-		
-		truck_attrition_factor = 0.2
 	}
 
 	hills = {
@@ -55,34 +51,24 @@ categories =  {
 
 		units = {
 			attack = -0.25
-			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
-		
-		supply_flow_penalty_factor = 0.1
-		
-		truck_attrition_factor = 0.2
 	}
 	
 	mountain = {
 		color = { 157 192 208 }
 		movement_cost = 2.0
-		attrition = 0.3
+		attrition = 0.4
 		combat_width = 80
 		combat_support_width = 40
 		match_value = 10
 		sound_type = desert
 
 		units = {
-			attack = -0.5
-			#movement = -0.4
+			attack = -0.45
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.10
-		
-		supply_flow_penalty_factor = 0.12
-		
-		truck_attrition_factor = 1.0
+		enemy_army_bonus_air_superiority_factor = -0.25
 	}
 	
 	plains = {
@@ -104,12 +90,9 @@ categories =  {
 
 		units = {
 			attack = -0.3
-			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.50
-				
-		supply_flow_penalty_factor = -0.2
+		enemy_army_bonus_air_superiority_factor = -0.25
 	}
 	
 	jungle = {
@@ -122,17 +105,11 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.3
+			attack = -0.2
 			#movement = -0.3
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.25
-		
-		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.16
-		
-		truck_attrition_factor = 3.0
 	}	
 	
 	marsh = {
@@ -145,15 +122,8 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.4
-			#movement = -0.4
+			attack = -0.3
 		}
-		
-		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.16
-		
-		truck_attrition_factor = 4.0
 	}
 	
 	desert = {
@@ -164,12 +134,11 @@ categories =  {
 		combat_support_width = 40
 		match_value = 8
 		sound_type = desert
-		
-		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.14
-		
-		truck_attrition_factor = 0.5
+
+		units = {
+			attack = -0.2
+			defence = -0.2
+		}
 	}
 	
 	water_fjords = {

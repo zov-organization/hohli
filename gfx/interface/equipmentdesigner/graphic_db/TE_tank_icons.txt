@@ -442,19 +442,5 @@ default = {
 				"USSR_super_heavy_armor_entity"
 			}
 		}
-		
-	}
-
-	modern_tank_chassis_1 = {
-		pool = {
-			icons = { 
-				GFX_generic_modern_tank_medium
-			models = {
-				"GER_modern_armor_entity"
-				"GER_modern_sp_anti_air_brigade_0_entity"
-				"SOV_medium_armor_2_entity"
-				"USSR_modern_armor_entity"
-			}
-		}
 	}
 }

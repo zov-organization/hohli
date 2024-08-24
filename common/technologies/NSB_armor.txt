@@ -3,14 +3,16 @@ technologies = {
 	#	LIGHT_1
 	#	LIGHT_2
 	#	LIGHT_3
-	#	--------
-	#	MEDIUM_1
-	#	MEDIUM_2
-	#	MEDIUM_3
-	#	--------
+	#	-------
+	#	MED_1
+	#	MED_2
+	#	MED_3
+	#	MED_4
+	#	-------
 	#	HEAVY_1
 	#	HEAVY_2
 	#	HEAVY_3
+	#	HEAVY_4
 	#	--------
 	#	PROPELLER
 	#	-------
@@ -432,7 +434,7 @@ technologies = {
 		}
 	}
 
-	basic_medium_tank_chassis = { # MEDIUM_1
+	basic_medium_tank_chassis = { # MED_1
 
 		enable_equipments = {
 			medium_tank_chassis_1
@@ -538,7 +540,7 @@ technologies = {
 		}
 	}
 
-	improved_medium_tank_chassis = { # MEDIUM_2
+	improved_medium_tank_chassis = { # MED_2
 
 		enable_equipments = {
 			medium_tank_chassis_2
@@ -624,7 +626,7 @@ technologies = {
 		}
 	}
 
-	advanced_medium_tank_chassis = { # MEDIUM_3
+	advanced_medium_tank_chassis = { # MED_3
 
 		enable_equipments = {
 			medium_tank_chassis_3
@@ -657,10 +659,22 @@ technologies = {
 		}
 	}
 
-	final_medium_tank_chassis = { # MEDIUM_4
+	final_medium_tank_chassis = { # MED_4
 
 		enable_equipments = {
-			
+			# those are here just for tech icon to be big
+			light_tank_amphibious_chassis_0
+			medium_tank_amphibious_chassis_0
+			heavy_tank_amphibious_chassis_0
+			light_tank_amphibious_chassis_1
+			medium_tank_amphibious_chassis_1
+			heavy_tank_amphibious_chassis_1
+			light_tank_amphibious_chassis_2
+			medium_tank_amphibious_chassis_2
+			heavy_tank_amphibious_chassis_2
+			light_tank_amphibious_chassis_3
+			medium_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_3
 		}
 
 		research_cost = 2
@@ -825,7 +839,19 @@ technologies = {
 	final_heavy_tank_chassis = { # HEAVY_4
 
 		enable_equipments = {
-			
+			# those are here just for tech icon to be big
+			light_tank_amphibious_chassis_0
+			medium_tank_amphibious_chassis_0
+			heavy_tank_amphibious_chassis_0
+			light_tank_amphibious_chassis_1
+			medium_tank_amphibious_chassis_1
+			heavy_tank_amphibious_chassis_1
+			light_tank_amphibious_chassis_2
+			medium_tank_amphibious_chassis_2
+			heavy_tank_amphibious_chassis_2
+			light_tank_amphibious_chassis_3
+			medium_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_3
 		}
 
 		research_cost = 2.5

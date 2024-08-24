@@ -7,7 +7,7 @@ state = {
 	history = {
 
 		owner = chl
-		add_core_of = CHL
+		
 		add_core_of = RAP
 
 		buildings = {
