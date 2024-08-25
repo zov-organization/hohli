@@ -789,7 +789,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_SOV_rubber"
-		texturefile = "gfx/interface/goals/focus_generic_rubber.dds"
+		texturefile = "gfx/interface/goals/focus_generic_construction_resources_rubber_synth.dds"
 	}	
 	
 	SpriteType = {
