@@ -606,8 +606,8 @@ NProduction = {
 	ANNEX_FIELD_EQUIPMENT_RATIO = 0.25,	-- How much equipment from deployed divisions will be transferred on annexation
 	ANNEX_FUEL_RATIO = 1.0,	-- How much fuel will be transferred on annexation
 	ANNEX_CONVOYS_RATIO = 0.15,			-- How many convoys will be transferred on annexation
-	MIN_POSSIBLE_TRAINING_MANPOWER = 100000,	-- How many deployment lines minimum can be training
-	MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.75,	-- Ratio which % of army in field can be trained
+	MIN_POSSIBLE_TRAINING_MANPOWER = 20000000,	-- How many deployment lines minimum can be training
+	MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.9,	-- Ratio which % of army in field can be trained
 	CAPITULATE_STOCKPILES_RATIO = 0.5, -- How much equipment from deployed divisions will be transferred on capitulation
 	CAPITULATE_FUEL_RATIO = 0.5, -- How much fuel will be transferred on capitulation
 	INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1, 		-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
@@ -623,10 +623,10 @@ NProduction = {
 	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 2.0,			-- XP cost for upgrading licensed equipment
 	LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.50,			-- Penalty for producing non licensed equipment
 	CONVERSION_SPEED_BONUS = 0,							-- Modifier to the production speed when converting equipment
-	EQUIPMENT_MODULE_ADD_XP_COST = 5.0,					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
-	EQUIPMENT_MODULE_REPLACE_XP_COST = 6.0,				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
-	EQUIPMENT_MODULE_CONVERT_XP_COST = 3.0,				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
-	EQUIPMENT_MODULE_REMOVE_XP_COST = 1.0,				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+	EQUIPMENT_MODULE_ADD_XP_COST = 0,					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+	EQUIPMENT_MODULE_REPLACE_XP_COST = 0,				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+	EQUIPMENT_MODULE_CONVERT_XP_COST = 0,				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+	EQUIPMENT_MODULE_REMOVE_XP_COST = 0,				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 	BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2,       -- Fraction of the hull industry cost which is always included in the refitting cost.
 	BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.9,        -- Fraction of the chassis industry cost which is always included in the conversion cost.
 	MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.2,	-- Minimum fraction of a naval equipment's strategic resource cost that any conversion will cost.
@@ -717,11 +717,11 @@ NBuildings = {
 },
 
 NDeployment = {
-	BASE_DEPLOYMENT_TRAINING = 1,		-- Base training done each day during deployment.
+	BASE_DEPLOYMENT_TRAINING = 2,		-- Base training done each day during deployment.
 },
 
 NMilitary = {
-	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisation when determining the combat value of a division
+	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisa	tion when determining the combat value of a division
 	COMBAT_VALUE_STR_IMPORTANCE = 1,		-- Multiplier on TotalStrength when determining the combat value of a division
 
 	SOFT_ATTACK_TARGETING_FACTOR = 1.0,		-- How much we care about potential soft attacks when evaluating priority combat target
@@ -905,17 +905,17 @@ NMilitary = {
 
 	MAX_DIVISION_BRIGADE_WIDTH = 5,			-- Max width of regiments in division designer.
 	MAX_DIVISION_BRIGADE_HEIGHT = 5,		-- Max height of regiments in division designer.
-	MIN_DIVISION_BRIGADE_HEIGHT = 4,		-- Min height of regiments in division designer.
+	MIN_DIVISION_BRIGADE_HEIGHT = 5,		-- Min height of regiments in division designer.
 	MAX_DIVISION_SUPPORT_WIDTH = 2,			-- Max width of support in division designer.
 	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
 
-	BASE_DIVISION_BRIGADE_GROUP_COST = 20, 	--Base cost to unlock a regiment slot,
-	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
-	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
+	BASE_DIVISION_BRIGADE_GROUP_COST = 0, 	--Base cost to unlock a regiment slot,
+	BASE_DIVISION_BRIGADE_CHANGE_COST = 0,	--Base cost to change a regiment column.
+	BASE_DIVISION_SUPPORT_SLOT_COST = 0, 	--Base cost to unlock a support slot
 
-	MAX_ARMY_EXPERIENCE = 500,			--Max army experience a country can store
-	MAX_NAVY_EXPERIENCE = 500,			--Max navy experience a country can store
-	MAX_AIR_EXPERIENCE = 500,				--Max air experience a country can store
+	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store
+	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store
+	MAX_AIR_EXPERIENCE = 999,				--Max air experience a country can store
 
 	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
@@ -985,7 +985,7 @@ NMilitary = {
 	UNIT_EXPERIENCE_SCALE = 1.0,
 	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015,
 	TRAINING_MAX_LEVEL = 2,
-	DEPLOY_TRAINING_MAX_LEVEL = 1,
+	DEPLOY_TRAINING_MAX_LEVEL = 2,
 	TRAINING_EXPERIENCE_SCALE = 62.0,
 	TRAINING_ORG = 0.2,
 	ARMY_EXP_BASE_LEVEL = 1,
@@ -1139,12 +1139,12 @@ NMilitary = {
 	ARMOR_VS_AVERAGE = 0.4,			                -- how to weight in highest armor & pen vs the division average
 	PEN_VS_AVERAGE = 0.4,
 
-	LAND_EQUIPMENT_BASE_COST = 10,					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
-	LAND_EQUIPMENT_RAMP_COST = 5,
-	NAVAL_EQUIPMENT_BASE_COST = 25,
-	NAVAL_EQUIPMENT_RAMP_COST = 5,
-	AIR_EQUIPMENT_BASE_COST = 25,
-	AIR_EQUIPMENT_RAMP_COST = 5,
+	LAND_EQUIPMENT_BASE_COST = 0,					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
+	LAND_EQUIPMENT_RAMP_COST = 0,
+	NAVAL_EQUIPMENT_BASE_COST = 0,
+	NAVAL_EQUIPMENT_RAMP_COST = 0,
+	AIR_EQUIPMENT_BASE_COST = 0,
+	AIR_EQUIPMENT_RAMP_COST = 0,
 
 	FASTER_ORG_REGAIN_LEVEL = 0.25,
 	FASTER_ORG_REGAIN_MULT = 1.0,
@@ -4168,7 +4168,7 @@ NIndustrialOrganisation = {
 	FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100, 						-- How much each level mutliplies the funds for size up 
 	FUNDS_FOR_SIZE_UP_LEVEL_POW = 1.8, 							-- the power we applie to the mio size when calculating funds to level up. 	
 	UNLOCKED_TRAITS_PER_SIZE_UP = 1,							-- Number of points for unlocking traits obtained when the MIO increments its size
-	DESIGN_TEAM_CHANGE_XP_COST = 5,								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+	DESIGN_TEAM_CHANGE_XP_COST = 0,								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 	FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500,     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
 	FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0,					-- Funds added to MIO when a new variant is created with the Design Team assigned to it
 	FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1,				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.

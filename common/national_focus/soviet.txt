@@ -1,5 +1,6 @@
 ﻿focus_tree = {
 	id = soviet_focus
+	continuous_focus_position = { x = 55 y = 1500 }
 	country = {
 		factor = 0
 		modifier = {
@@ -36,7 +37,7 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_stalin
 
-		x = -8
+		x = -9
 		y = 0
 		cost = 5
 
@@ -116,7 +117,7 @@
 		prerequisite = { focus = SOV_we-ll_be_ready }
 		relative_position_id = SOV_we-ll_be_ready
 
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 
@@ -171,9 +172,10 @@
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_we-ll_be_ready }
+		prerequisite = { focus = SOV_deploy_gulags }
 		relative_position_id = SOV_we-ll_be_ready
 
-		x = 2
+		x = 3
 		y = 1
 		cost = 5
 
@@ -223,6 +225,51 @@
 	}
 
 
+	# RESOURCES
+	focus = {
+		id = SOV_aluminum
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		mutually_exclusive = { focus = SOV_wood }
+		
+		prerequisite = { focus = SOV_ukrain_prom_compleks_one focus = SOV_ukrain_prom_compleks_two }
+		prerequisite = { focus = SOV_making_use_of_the_storehouse_of_russia_one focus = SOV_making_use_of_the_storehouse_of_russia_two }
+		relative_position_id = SOV_making_use_of_the_storehouse_of_russia_one
+
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_wood
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+
+		mutually_exclusive = { focus = SOV_aluminum }
+
+		prerequisite = { focus = SOV_ukrain_prom_compleks_one focus = SOV_ukrain_prom_compleks_two }
+		prerequisite = { focus = SOV_making_use_of_the_storehouse_of_russia_one focus = SOV_making_use_of_the_storehouse_of_russia_two }
+		relative_position_id = SOV_making_use_of_the_storehouse_of_russia_one
+
+		x = -3
+		y = 1
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
 
 
 	# STALIN
@@ -235,7 +282,7 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_initial_focus
 
-		x = -7
+		x = -2
 		y = 1
 		cost = 5
 
@@ -349,7 +396,7 @@
 	}
 
 	focus = {
-		id = SOV_scintific_reborn
+		id = SOV_scientific_reborn
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
@@ -363,6 +410,26 @@
 
 		available = {
 
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_rubber
+
+		icon = GFX_focus_SOV_socialism_in_one_country
+		
+		prerequisite = { focus = SOV_scientific_reborn } 
+		prerequisite = { focus = SOV_deploy_gulags } 
+		relative_position_id = SOV_scientific_reborn 
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
 		}
 
 		completion_reward = {
@@ -399,7 +466,7 @@
 		prerequisite = { focus = SOV_navy_one }
 		relative_position_id = SOV_navy_one
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 
@@ -419,7 +486,7 @@
 		prerequisite = { focus = SOV_navy_one }
 		relative_position_id = SOV_navy_one
 
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 
@@ -440,28 +507,8 @@
 		prerequisite = { focus = SOV_navy_three }
 		relative_position_id = SOV_navy_three
 
-		x = -3
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_navy_maxim_gorki
-
-		icon = GFX_focus_SOV_socialism_in_one_country
-
-		prerequisite = { focus = SOV_navy_forts }
-		relative_position_id = SOV_navy_forts
-
 		x = -1
-		y = 1
+		y = 2
 		cost = 5
 
 		available = {
@@ -471,17 +518,17 @@
 		completion_reward = {
 		}
 	}
-
+	
 	focus = {
-		id = SOV_navy_krasnaya_gorka
+		id = SOV_forts
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_navy_forts }
-		relative_position_id = SOV_navy_forts
+		prerequisite = { focus = SOV_arty_two focus = SOV_navy_forts }
+		relative_position_id = SOV_arty_two
 
-		x = 1
-		y = 1
+		x = -2
+		y = 2
 		cost = 5
 
 		available = {
@@ -489,6 +536,7 @@
 		}
 
 		completion_reward = {
+			
 		}
 	}
 
@@ -504,7 +552,7 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_navy_one
 
-		x = 12
+		x = 11
 		y = 0
 		cost = 5
 
@@ -669,7 +717,7 @@
 		prerequisite = { focus = SOV_navy_three }
 		relative_position_id = SOV_start_reorg
 
-		x = -4
+		x = -3
 		y = 1
 		cost = 5
 
@@ -813,7 +861,7 @@
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_military
 
-		x = 11
+		x = 7
 		y = 0
 		cost = 5
 
@@ -1005,17 +1053,17 @@
 	}
 
 
-	# FORTS + WOW
+	# WOW
 
 	focus = {
-		id = SOV_forts
+		id = SOV_wow
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_arty_two focus = SOV_navy_maxim_gorki focus = SOV_navy_krasnaya_gorka }
-		relative_position_id = SOV_arty_two
+		prerequisite = { focus = SOV_wood focus = SOV_aluminum focus = SOV_rubber focus = SOV_forts focus = SOV_new_infantry focus = SOV_maus focus = SOV_novikov }
+		relative_position_id = SOV_forts
 
-		x = -2
+		x = 0
 		y = 2
 		cost = 5
 
@@ -1027,6 +1075,5 @@
 			
 		}
 	}
-
 
 }

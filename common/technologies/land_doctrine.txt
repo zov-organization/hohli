@@ -570,7 +570,6 @@ technologies = {
 		}
 		# faster planning
 		planning_speed = 0.2
-		additional_brigade_column_size = 1
 		
 		enable_tactic = tactic_overwhelming_fire
 		
@@ -1449,8 +1448,6 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		land_reinforce_rate = 0.02
-
-		additional_brigade_column_size = 1
 	
 		enable_tactic = tactic_tactical_withdrawal
 		
@@ -1685,8 +1682,6 @@ technologies = {
 			max_organisation = 2
 			default_morale = 0.05
 		}
-
-		additional_brigade_column_size = 1
 		
 		enable_tactic = tactic_tactical_withdrawal
 		
@@ -2005,8 +2000,6 @@ technologies = {
 		amphibious_mechanized = {
 			max_organisation = 5
 		}
-		
-		additional_brigade_column_size = 1
 
 		enable_tactic = tactic_blitz
 		enable_tactic = tactic_elastic_defense
@@ -2336,8 +2329,6 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
-
-		additional_brigade_column_size = 1
 		
 		enable_tactic = tactic_infantry_charge
 		
@@ -2801,8 +2792,6 @@ technologies = {
 
 		supply_consumption_factor = -0.10
 
-		additional_brigade_column_size = 1
-
 		enable_tactic = tactic_relentless_assault
 		
 		path = {
@@ -3220,8 +3209,6 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
 		#Land Units take less attrition
 		attrition = -0.1 #take 10% less attrition losses
-
-		additional_brigade_column_size = 1
 		
 		enable_tactic = tactic_human_wave_tactics
 		
