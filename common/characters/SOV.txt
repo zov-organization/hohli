@@ -18,4 +18,22 @@ characters = {
 			id = -1
 		}
 	}
+
+	SOV_nikolay_kuznetsov = {
+		name = SOV_nikolay_kuznetsov
+		portraits = {
+			army = {
+				small = "GFX_idea_nikolay_kuznetsov"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = nikolay_kuznetsov
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 10
+		}		
+	}
 }

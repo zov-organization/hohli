@@ -106,49 +106,49 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 7651
+	amount = 1500
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 229000
+	amount = 75000
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 118100
+	amount = 20000
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = train_equipment_1
-	amount = 1000
+	amount = 300
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 8000
+	amount = 500
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 12400
+	amount = 1000
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 19160
+	amount = 500
 	producer = SOV
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 20260
+	amount = 3000
 	producer = SOV
 }
 

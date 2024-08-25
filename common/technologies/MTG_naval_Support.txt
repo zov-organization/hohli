@@ -267,14 +267,6 @@ technologies = {
 			position = { x = -6 y = 16 }
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
-		}
-
 		categories = {
 			naval_equipment
 			ship_modules_tech
@@ -560,21 +552,6 @@ technologies = {
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 6 y = 5 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_tech = basic_ship_hull_heavy
-				factor = 20
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = JAP
-				}
-				factor = 2
-			}
 		}
 
 		categories = {
@@ -970,22 +947,6 @@ technologies = {
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 1 }
-		}
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
-				}
-				factor = 5
-			}
-			modifier = {
-				has_war = yes
-				factor = 3
-			}
 		}
 
 		categories = {
