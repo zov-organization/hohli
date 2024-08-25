@@ -6437,7 +6437,7 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_SOV_wood"
+		name = "GFX_SOV_steel"
 		texturefile = "gfx/interface/goals/focus_generic_agriculture.dds"	
 	}	
 

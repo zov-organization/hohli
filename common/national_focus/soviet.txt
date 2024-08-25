@@ -232,7 +232,7 @@
 
 		icon = GFX_SOV_aluminum
 
-		mutually_exclusive = { focus = SOV_wood }
+		mutually_exclusive = { focus = SOV_steel }
 		
 		prerequisite = { focus = SOV_ukrain_prom_compleks_one focus = SOV_ukrain_prom_compleks_two }
 		prerequisite = { focus = SOV_making_use_of_the_storehouse_of_russia_one focus = SOV_making_use_of_the_storehouse_of_russia_two }
@@ -250,9 +250,9 @@
 	}
 
 	focus = {
-		id = SOV_wood
+		id = SOV_steel
 
-		icon = GFX_SOV_wood
+		icon = GFX_SOV_steel
 
 		mutually_exclusive = { focus = SOV_aluminum }
 
@@ -576,8 +576,8 @@
 		icon = GFX_focus_SOV_socialism_in_one_country
 
 		prerequisite = { focus = SOV_kuznetsovs_plan }
-		prerequisite = { focus = SOV_high_calibers }
-		relative_position_id = SOV_high_calibers
+		prerequisite = { focus = SOV_large_calibers }
+		relative_position_id = SOV_large_calibers
 
 		x = 0
 		y = 2
@@ -783,7 +783,7 @@
 	}
 
 	focus = {
-		id = SOV_high_calibers
+		id = SOV_large_calibers
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
@@ -1113,7 +1113,7 @@
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 
-		prerequisite = { focus = SOV_wood focus = SOV_aluminum focus = SOV_rubber focus = SOV_forts focus = SOV_new_infantry focus = SOV_maus focus = SOV_novikov }
+		prerequisite = { focus = SOV_steel focus = SOV_aluminum focus = SOV_rubber focus = SOV_forts focus = SOV_new_infantry focus = SOV_maus focus = SOV_novikov }
 		relative_position_id = SOV_forts
 
 		x = 0
