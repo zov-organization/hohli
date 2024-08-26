@@ -3,7 +3,6 @@ upgrades = {
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
 		max_level = 20 #each level represents ~50HP
-		cost = 0
 
 		linear_cost = {
 			cost_by_level = 0
@@ -42,8 +41,7 @@ upgrades = {
 
 	tank_nsb_armor_upgrade = {
 		abbreviation = "arm"
-		max_level = 20 #each level represents ~10mm of armor 
-		cost = 0
+		max_level = 20 #each level represents ~10mm of armor
 
 		linear_cost = {
 			cost_by_level = 0

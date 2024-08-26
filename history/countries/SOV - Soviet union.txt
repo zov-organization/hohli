@@ -43,8 +43,11 @@ add_ideas = {
 	closed_economy
 	limited_conscription
 
-	SOV_five_year_plan
 	SOV_trotskyite_plot
+	SOV_five_year_plan
+
+	SOV_red_airforces
+	SOV_red_army
 }
 
 add_timed_idea = {

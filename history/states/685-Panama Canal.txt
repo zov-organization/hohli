@@ -17,10 +17,9 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = PAN
 	}
 	
-	provinces={ 4624 7617 }
+	provinces={ 7617 }
 
 	local_supplies=0.0 
 }

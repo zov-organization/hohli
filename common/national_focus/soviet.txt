@@ -47,6 +47,7 @@
 		}
 
 		completion_reward = {
+			add_ideas = { SOV_peaceful_building }
 		}
 	}
 
@@ -67,6 +68,14 @@
 		}
 
 		completion_reward = {
+			246 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -87,6 +96,14 @@
 		}
 
 		completion_reward = {
+			205 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -103,10 +120,18 @@
 		y = 2
 		cost = 5
 
-		available = {
-		}
+		available = {}
 
 		completion_reward = {
+			add_ideas = { SOV_stakhanovite_movement }
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -122,10 +147,31 @@
 		y = 1
 		cost = 5
 
-		available = {
-		}
+		available = {}
 
 		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 202
+						state = 203
+						state = 193
+						state = 225
+						state = 259
+						state = 203
+						state = 226
+						state = 197
+						state = 196
+						state = 200
+						state = 221
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = SOV_ukrain_prom_compleks
+					scope = SOV
+					days = 730
+				}
+			}
 		}
 	}
 
@@ -145,6 +191,14 @@
 		}
 
 		completion_reward = {
+			227 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -164,6 +218,14 @@
 		}
 
 		completion_reward = {
+			203 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -182,8 +244,31 @@
 
 		available = {
 		}
-
+		
 		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 398
+						state = 573
+						state = 653
+						state = 403
+						state = 572
+						state = 651
+						state = 582
+						state = 571
+						state = 578
+						state = 577
+						state = 568
+						state = 576
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = SOV_making_use_of_the_storehouse_of_russia
+					scope = SOV
+					days = 365
+				}
+			}
 		}
 	}
 
@@ -203,6 +288,14 @@
 		}
 
 		completion_reward = {
+			573 = {
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -222,6 +315,14 @@
 		}
 
 		completion_reward = {
+			582 = {
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -246,6 +347,11 @@
 		}
 
 		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 50
+				state = 398
+			}
 		}
 	}
 
@@ -268,6 +374,11 @@
 		}
 
 		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 653
+			}
 		}
 	}
 
@@ -292,6 +403,7 @@
 		}
 
 		completion_reward = {
+			add_ideas = { SOV_politburo }
 		}
 	}
 
@@ -332,6 +444,7 @@
 		}
 
 		completion_reward = {
+			add_ideas = { SOV_gulag }
 		}
 	}
 
@@ -352,6 +465,14 @@
 		}
 
 		completion_reward = {
+			hidden_effect = {
+				remove_ideas = { SOV_trotskyite_plot }
+				add_timed_idea = { 
+					idea = SOV_trotskyite_plot
+					days = 120
+				}
+			}
+			custom_effect_tooltip = SOV_kill_trotski_tt
 		}
 	}
 
@@ -393,6 +514,10 @@
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_politburo
+				add_idea = SOV_politburo_2
+			}
 		}
 	}
 
@@ -414,6 +539,8 @@
 		}
 
 		completion_reward = {
+			add_research_slot = 1
+			add_ideas = SOV_research_facility
 		}
 	}
 
@@ -573,7 +700,7 @@
 	focus = {
 		id = SOV_forts
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_forts
 
 		prerequisite = { focus = SOV_kuznetsovs_plan }
 		prerequisite = { focus = SOV_large_calibers }
@@ -597,9 +724,9 @@
 	# MILITARY
 
 	focus = {
-		id = SOV_military
+		id = SOV_the_red_army
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_the_red_army
 
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_navy_one
@@ -620,10 +747,10 @@
 	focus = {
 		id = SOV_tank_one
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_tank_one
 
-		prerequisite = { focus = SOV_military }
-		relative_position_id = SOV_military
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_the_red_army
 
 		x = 1
 		y = 1
@@ -640,7 +767,7 @@
 	focus = {
 		id = SOV_tank_two
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_tank_two
 
 		prerequisite = { focus = SOV_tank_one }
 		relative_position_id = SOV_tank_one
@@ -661,7 +788,7 @@
 	focus = {
 		id = SOV_tank_three
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_tank_three
 
 		prerequisite = { focus = SOV_tank_one }
 		relative_position_id = SOV_tank_one
@@ -681,7 +808,7 @@
 	focus = {
 		id = SOV_tank_four
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_tank_four
 
 		prerequisite = { focus = SOV_tank_two focus = SOV_tank_three }
 		relative_position_id = SOV_tank_one
@@ -701,9 +828,9 @@
 	
 	
 	focus = {
-		id = SOV_katusha_one
+		id = SOV_katusha
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_katusha
 
 		prerequisite = { focus = SOV_tank_four }
 		prerequisite = { focus = SOV_rockets }
@@ -722,9 +849,9 @@
 	}
 
 	focus = {
-		id = SOV_maus
+		id = SOV_kv_1
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_kv_1
 
 		prerequisite = { focus = SOV_tank_four }
 		relative_position_id = SOV_tank_four
@@ -742,12 +869,12 @@
 	}
 
 	focus = {
-		id = SOV_start_reorg
+		id = SOV_stavka_organisation
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_stavka_organisation
 
-		prerequisite = { focus = SOV_military }
-		relative_position_id = SOV_military
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_the_red_army
 
 		x = -4
 		y = 1
@@ -764,11 +891,11 @@
 	focus = {
 		id = SOV_arty_one
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_arty_one
 
-		prerequisite = { focus = SOV_start_reorg }
+		prerequisite = { focus = SOV_stavka_organisation }
 		prerequisite = { focus = SOV_navy_three }
-		relative_position_id = SOV_start_reorg
+		relative_position_id = SOV_stavka_organisation
 
 		x = -3
 		y = 1
@@ -785,7 +912,7 @@
 	focus = {
 		id = SOV_large_calibers
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_large_calibers
 
 		prerequisite = { focus = SOV_arty_one }
 		relative_position_id = SOV_arty_one
@@ -805,10 +932,10 @@
 	focus = {
 		id = SOV_inf_one
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_inf_one
 
-		prerequisite = { focus = SOV_start_reorg }
-		relative_position_id = SOV_start_reorg
+		prerequisite = { focus = SOV_stavka_organisation }
+		relative_position_id = SOV_stavka_organisation
 
 		x = -1
 		y = 1
@@ -825,7 +952,7 @@
 	focus = {
 		id = SOV_inf_two
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_inf_two
 
 		prerequisite = { focus = SOV_inf_one }
 		relative_position_id = SOV_inf_one
@@ -845,7 +972,7 @@
 	focus = {
 		id = SOV_new_infantry
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_new_infantry
 
 		prerequisite = { focus = SOV_inf_two }
 		relative_position_id = SOV_inf_two
@@ -866,10 +993,10 @@
 	focus = {
 		id = SOV_mio_upgrade_1
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_mio_upgrade_1
 
-		prerequisite = { focus = SOV_start_reorg }
-		relative_position_id = SOV_start_reorg
+		prerequisite = { focus = SOV_stavka_organisation }
+		relative_position_id = SOV_stavka_organisation
 
 		x = 1
 		y = 1
@@ -886,7 +1013,7 @@
 	focus = {
 		id = SOV_rockets
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_rockets
 
 		prerequisite = { focus = SOV_mio_upgrade_1 }
 		relative_position_id = SOV_mio_upgrade_1
@@ -912,7 +1039,7 @@
 		icon = GFX_SOV_i_16
 
 		prerequisite = { focus = SOV_initial_focus }
-		relative_position_id = SOV_military
+		relative_position_id = SOV_the_red_army
 
 		x = 7
 		y = 0
@@ -1111,9 +1238,9 @@
 	focus = {
 		id = SOV_wow
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_wow
 
-		prerequisite = { focus = SOV_steel focus = SOV_aluminum focus = SOV_rubber focus = SOV_forts focus = SOV_new_infantry focus = SOV_maus focus = SOV_novikov }
+		prerequisite = { focus = SOV_steel focus = SOV_aluminum focus = SOV_rubber focus = SOV_forts focus = SOV_new_infantry focus = SOV_kv_1 focus = SOV_novikov }
 		relative_position_id = SOV_forts
 
 		x = 0

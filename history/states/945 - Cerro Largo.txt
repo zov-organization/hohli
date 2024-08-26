@@ -10,21 +10,7 @@ state = {
 		steel = 2
 	}
 
-	history = { 
-
-		owner = urg
-		add_core_of = URG
-
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			dockyard = 1
-		}
-
-		victory_points = {
-			1641 1
-		}
-
+	history = {
 	}
 
 	provinces = {

@@ -3710,11 +3710,6 @@ spriteTypes = {
 
 
 	spriteType = {
-		name = "GFX_idea_SOV_kuznetsov_reforms"
-		texturefile = "gfx/interface/ideas/SOV_red_navy.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_SOV_trotskyite_plot"
 		texturefile = "gfx/interface/ideas/SOV_trotskyite_plot.dds"
 	}
@@ -3723,6 +3718,47 @@ spriteTypes = {
 		name = "GFX_idea_SOV_five_year_plan"
 		texturefile = "gfx/interface/ideas/idea_SOV_five_year_plan_second.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_SOV_kuznetsov_reforms"
+		texturefile = "gfx/interface/ideas/SOV_red_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_airforces"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_army"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_peaceful_building"
+		texturefile = "gfx/interface/ideas/generic_construction_repair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_economy_is_on_war_footing"
+		texturefile = "gfx/interface/ideas/SOV_defense_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_politburo"
+		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_gulag"
+		texturefile = "gfx/interface/ideas/SOV_smersh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_research_facility"
+		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
+	}
+
 
 
 

@@ -11,22 +11,6 @@ state = {
 	}
 
 	history = {
-
-		owner = urg
-		add_core_of = URG
-
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-		}
-
-		victory_points = {
-			12468 2
-		}
-
-		victory_points = {
-			10502 1
-		}
 	}
 
 	provinces = {

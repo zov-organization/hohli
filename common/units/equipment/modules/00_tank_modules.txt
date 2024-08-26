@@ -1489,7 +1489,6 @@ equipment_modules = {
 			reliability = 0.1
 		}
 		dismantle_cost_ic = 1
-		0
 		multiply_stats = {
 			build_cost_ic = -0.05
 		}

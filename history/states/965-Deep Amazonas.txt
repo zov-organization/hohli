@@ -5,8 +5,6 @@ state={
 		2147 5232 
 	}
 	history={
-		owner = 
-		add_core_of = BRA
 	}
 	manpower=21987
 	impassable = yes

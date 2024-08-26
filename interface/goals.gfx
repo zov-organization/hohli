@@ -6438,7 +6438,92 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_SOV_steel"
-		texturefile = "gfx/interface/goals/focus_generic_agriculture.dds"	
+		texturefile = "gfx/interface/goals/focus_generic_construction_resources_steel.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_the_red_army"
+		texturefile = "gfx/interface/goals/focus_SOV_ignite_the_flames.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_stavka_organisation"
+		texturefile = "gfx/interface/goals/SOV_Zhukov_Heroism.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_mio_upgrade_1"
+		texturefile = "gfx/interface/goals/focus_SOV_found_the_pcdi.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_rockets"
+		texturefile = "gfx/interface/goals/focus_SOV_organize_uprisings_in_the_country.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_katusha"
+		texturefile = "gfx/interface/goals/SOV_Katyusha.tga"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_kv_1"
+		texturefile = "gfx/interface/goals/SOV_kv1.tga"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_tank_one"
+		texturefile = "gfx/interface/goals/focus_SOV_russian_corporate_state.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_tank_two"
+		texturefile = "gfx/interface/goals/focus_SOV_expand_the_army.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_tank_three"
+		texturefile = "gfx/interface/goals/goal_sov_armour_development.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_tank_four"
+		texturefile = "gfx/interface/goals/focus_SOV_superior_war_machines.dds"	
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_arty_one"
+		texturefile = "gfx/interface/goals/focus_SOV_military_reorganization.dds"	
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_large_calibers"
+		texturefile = "gfx/interface/goals/focus_SOV_soviet_artillery.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_forts"
+		texturefile = "gfx/interface/goals/focus_SOV_improve_the_stalin_line.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_wow"
+		texturefile = "gfx/interface/goals/focus_SOV_great_patriotic_war.dds"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_inf_one"
+		texturefile = "gfx/interface/goals/SOV_Upgrade_inf.tga"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_inf_two"
+		texturefile = "gfx/interface/goals/SOV_equipment.tga"	
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_new_infantry"
+		texturefile = "gfx/interface/goals/focus_SOV_naval_infantry.dds"	
 	}	
 
 	#### Soviet CCP Compatibility ####

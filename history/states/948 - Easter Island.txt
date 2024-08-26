@@ -5,21 +5,6 @@ state = {
 	state_category = small_island
 	
 	history = {
-
-		owner = chl
-		
-		add_core_of = RAP
-
-		buildings = {
-			infrastructure = 1
-			13294 = {
-				naval_base = 1
-			}
-		}
-
-		victory_points = {
-			13294 1
-		}
 	}
 
 	provinces = {

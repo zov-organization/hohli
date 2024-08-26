@@ -2708,3 +2708,15 @@
 
  will_turn_to: "Will Turn Into"
  upon_timeout: "Upon Timeout"
+
+ SOV_five_year_plan:0 "Five Year Plan"
+ SOV_trotskyite_plot:0 "Trotskyite Plot"
+ SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
+ SOV_red_airforces:0 "Red Airforces"
+ SOV_red_army:0 "Red Army"
+ SOV_peaceful_building:0 "Peaceful Building"
+ SOV_economy_is_on_war_footing:0 "Economy is on war footing"
+ SOV_politburo:0 "Politburo"
+ SOV_politburo_2:0 "Politburo"
+ SOV_gulag:0 "Glavnoe Upravlenie Lageryami"
+ SOV_research_facility:0 "Russian Research Facility"

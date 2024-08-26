@@ -23,7 +23,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = PAN
 		victory_points = {
 			7630 5 
 		}
@@ -34,7 +33,7 @@ state={
 	}
 
 	provinces={
-		1633 4611 7630 10482 
+		1633 4611 4624 7630 10482 
 	}
 
 	local_supplies=0.0 

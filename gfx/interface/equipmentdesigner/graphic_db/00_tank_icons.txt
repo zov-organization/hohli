@@ -1019,27 +1019,6 @@ GER = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_GER_main_battle_tank_medium #E-50 Standardpanzer
-			}
-		}
-	}
-
-	amphibious_tank_chassis = { # No need to check for MTG, these chassis  won't show up without the DLC, (But it throws errors, so please still do or the error log will be sad!)
-		pool = {
-			limit = { has_dlc = "Man the Guns"}
-			icons = {
-				GFX_GER_amphibious_tank_2_medium #Tauchpanzer III (Amphibious Tank II) #Sorted like this so that by default 2D icon and 3D model match (Amphibious Tank I)
-				GFX_GER_amphibious_tank_medium #Schwimmpanzer II (Amphibious Tank I)
-			}
-			models = {
-				GER_amphibious_armor_entity #Schwimmpanzer II (Amphibious Tank I)
-			}
-		}
-	}
 }
 
 
@@ -1684,14 +1663,6 @@ USA = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_USA_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	ENGLAND
@@ -2055,14 +2026,6 @@ ENG = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	FRANCE
@@ -2389,14 +2352,6 @@ FRA = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_FRA_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	JAPAN
@@ -2712,14 +2667,6 @@ JAP = {
 		pool = {
 			icons = { 
 				GFX_JAP_super_heavy_tank_medium
-			}
-		}
-	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_JAP_main_battle_tank_medium
 			}
 		}
 	}
@@ -3157,14 +3104,6 @@ ITA = {
 		pool = {
 			icons = { 
 				GFX_ITA_super_heavy_tank_medium
-			}
-		}
-	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ITA_main_battle_tank_medium
 			}
 		}
 	}
@@ -3743,22 +3682,6 @@ AST = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-		pool = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			icons = { 
-				GFX_AST_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	INDIA
@@ -4331,22 +4254,6 @@ RAJ = {
 			}
 			icons = { 
 				GFX_RAJ_super_heavy_tank_medium
-			}
-		}
-	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-		pool = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			icons = { 
-				GFX_RAJ_main_battle_tank_medium
 			}
 		}
 	}
@@ -4925,22 +4832,6 @@ CAN = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-		pool = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			icons = { 
-				GFX_CAN_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	S.A.F.
@@ -5513,22 +5404,6 @@ SAF = {
 			}
 			icons = { 
 				GFX_SAF_super_heavy_tank_medium
-			}
-		}
-	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-		pool = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			icons = { 
-				GFX_SAF_main_battle_tank_medium
 			}
 		}
 	}
@@ -6111,22 +5986,6 @@ NZL = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_ENG_main_battle_tank_medium
-			}
-		}
-		pool = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			icons = { 
-				GFX_NZL_main_battle_tank_medium
-			}
-		}
-	}
 }
 
 #	HUNGARY
@@ -6293,17 +6152,6 @@ HUN = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			icons = { 
-				GFX_HUN_main_battle_tank_medium
-			}
-		}
-	}	
 }
 
 #	ROMANIA
@@ -6470,17 +6318,6 @@ ROM = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			icons = { 
-				GFX_ROM_main_battle_tank_medium
-			}
-		}
-	}	
 }
 
 #	BULGARIA
@@ -6647,17 +6484,6 @@ BUL = {
 			}
 		}
 	}
-
-	modern_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			icons = { 
-				GFX_BUL_main_battle_tank_medium
-			}
-		}
-	}	
 }
 
 #	FINLAND
@@ -6907,14 +6733,6 @@ FIN = {
 			icons = { 
 				GFX_FIN_super_heavy_tank_2_medium
 				GFX_FIN_super_heavy_tank_medium
-			}
-		}
-	}
-
-	modern_tank_chassis = {
-		pool = {
-			icons = { 
-				GFX_FIN_main_battle_tank_medium
 			}
 		}
 	}
