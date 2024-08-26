@@ -1,0 +1,530 @@
+SOV_forts = {
+
+	SOV_forts_krasnaya_gorka = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_navy_one
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 11186 9097 11080 181 3120 104 }
+		}
+        remove_effect = {
+            208 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11186
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9097
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11080
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 181
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3120
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 104
+					instant_build = yes
+				}
+			}
+        }
+    }
+	SOV_forts_maxim_gorki = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_navy_one
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 4
+        }
+		highlight_states = {
+			highlight_provinces = { 3686 705 6704 }
+		}
+        remove_effect = {
+            137 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 3686
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 4
+					province = 705
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6704
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_vitebsk_ukrep_rayon = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 3219 6326 6249 9323 11241 323 11220 9386 9353 }
+		}
+        remove_effect = {
+            207 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3219
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6326
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6249
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9323
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11241
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 323
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11220
+					instant_build = yes
+				}
+			}
+			210 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9386
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9353
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_kiev_ukrep_rayon = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 525 504 3543 3494 489 }
+		}
+        remove_effect = {
+            202 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 525
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 504
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3543
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3494
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 489
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_mojaisk_line_first = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 10
+        }
+		highlight_states = {
+			highlight_provinces = { 9302 3327 3358 3263 3377 382 11250 6245 6022 6122 3236 9366 11242 }
+		}
+        remove_effect = {
+            219 = {
+				# FIRST LINE
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9302
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3327
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3358
+					instant_build = yes
+				}
+			}
+			205 = {
+				# FIRST LINE
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3263
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3377
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 382
+					instant_build = yes
+				}
+			}
+			247 = {
+				# FIRST LINE
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11250
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6245
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6022
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6122
+					instant_build = yes
+				}
+			}
+			223 = {
+				# FIRST LINE
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3236
+					instant_build = yes
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9366
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11242
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+	SOV_forts_mojaisk_line_second = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 20
+        }
+		highlight_states = {
+			highlight_provinces = { 3259 11282 3391 6348 6290 3308 344 9256 9046 11347 3292 261 3323 6396 }
+		}
+        remove_effect = {
+            219 = {
+				# SECOND LINE
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3259
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11282
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3391
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6348
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6290
+					instant_build = yes
+				}
+			}
+			205 = {
+				# SECOND LINE
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3308
+					instant_build = yes
+				}
+			}
+			247 = {
+				# SECOND LINE
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 344
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9256
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9046
+					instant_build = yes
+				}
+			}
+			223 = {
+				# SECOND LINE
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11347
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3292
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 261
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3323
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6396
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+	SOV_forts_mojaisk_line_third = {
+        # icon = 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 25
+        }
+		highlight_states = {
+			highlight_provinces = { 6380 6414 9348 9282 11236 6283 6378 11268 11330 9378 301 3290 }
+		}
+        remove_effect = {
+            219 = {
+				# MOSKOW IS NOT BEHIND, ITS HERE
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 6380
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 6414
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 9348
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 9282
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11236
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 6283
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 6378
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11268
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11330
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 9378
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 301
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 3290
+					instant_build = yes
+				}
+			}
+		}
+    }
+}

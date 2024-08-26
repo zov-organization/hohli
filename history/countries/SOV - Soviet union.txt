@@ -4,12 +4,12 @@ set_naval_oob = "SOV_1936_fleet"
 set_country_flag = host
 
 
-set_research_slots = 4
+set_research_slots = 3
 navy_experience = 0
 # Starting tech
 
 
-set_convoys = 799
+set_convoys = 800
 
 set_stability = 0.4
 set_war_support = 0.3
@@ -28,6 +28,47 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = stalinism
 }
+
+
+recruit_character = SOV_genrikh_yagoda			# they are here just to get shot lol
+recruit_character = SOV_mikhail_tukhachevsky	#
+
+recruit_character = SOV_semyon_timoshenko
+recruit_character = SOV_ivan_konev
+recruit_character = SOV_konstantin_rokossovsky
+recruit_character = SOV_aleksandr_vasilevsky
+recruit_character = SOV_dmitry_pavlov
+recruit_character = SOV_georgy_zhukov
+recruit_character = SOV_boris_shaposhnikov
+recruit_character = SOV_nikolay_vatutin
+recruit_character = SOV_kliment_voroshilov
+recruit_character = SOV_semyon_budyonny
+recruit_character = SOV_ivan_chernyakhovsky
+recruit_character = SOV_issa_pliyev
+recruit_character = SOV_leonid_govorov
+recruit_character = SOV_grigory_kulik
+recruit_character = SOV_kirill_meretskov
+recruit_character = SOV_filipp_golikov
+recruit_character = SOV_andrey_yeryomenko
+recruit_character = SOV_georgy_zakharov
+recruit_character = SOV_yakov_cherevichenko
+recruit_character = SOV_maks_reyter
+recruit_character = SOV_nikandr_chibisov
+recruit_character = SOV_vasily_kuznetsov
+recruit_character = SOV_andrey_vlasov
+recruit_character = SOV_ivan_fedyuninsky
+recruit_character = SOV_maksim_purkayev
+recruit_character = SOV_kuzma_galitsky
+recruit_character = SOV_markian_popov
+recruit_character = SOV_nikolay_berzarin
+recruit_character = SOV_aleksandr_gorbatov
+recruit_character = SOV_kirill_moskalenko
+recruit_character = SOV_dmitry_lelyushenko
+recruit_character = SOV_andrey_grechko
+recruit_character = SOV_rodion_malinovsky
+recruit_character = SOV_vasily_chuykov
+
+activate_advisor = SOV_genrikh_yagoda
 
 set_popularities = {
 	democratic = 10.1

@@ -3750,6 +3750,61 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SOV_politburo_2"
+		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_1"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_2"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_3"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_4"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_5"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_military_reorg_6"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_kama_tank_school"
+		texturefile = "gfx/interface/ideas/barbarossa.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_mehkorpusa"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_all_union_trainings"
+		texturefile = "gfx/interface/ideas/SOV_rehabilitated_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_stavka"
+		texturefile = "gfx/interface/ideas/SOV_the_local_soviets.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_SOV_gulag"
 		texturefile = "gfx/interface/ideas/SOV_smersh.dds"
 	}

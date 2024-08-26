@@ -277,3 +277,11 @@
   refit_to_destroyer_nor: "Refit Convoys to Destroyers"
   refit_to_destroyer_mass_nor: "Refit Convoys to Destroyers En-mass"
   nor_building_ship: "Currently Converting Ships"
+
+  SOV_forts_krasnaya_gorka:0 "Krasnaya Gorka Forts"
+  SOV_forts_maxim_gorki:0 "Maxim Gorki Forts"
+  SOV_forts_vitebsk_ukrep_rayon:0 "Vitebskiy UkrepRayon"
+  SOV_forts_kiev_ukrep_rayon:0 "Kievskiy UkrepRayon"
+  SOV_forts_mojaisk_line_first:0 "Mojaiskata Liniya Oboroni, First Line"
+  SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
+  SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
