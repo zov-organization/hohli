@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		shipyard_investment = {
+			allowed={}
+			picture = generic_naval_manufacturer_1
+			modifier={
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		industrialization_efforts = {
+			allowed={ }
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+			}
+		}
+		research_bonus_effort = {
+			allowed={ }
+			picture = generic_build_infrastructure
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		production_efforts = {
+			allowed={ }
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}

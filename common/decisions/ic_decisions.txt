@@ -1,0 +1,211 @@
+ic_pp_waste = {
+
+    invest_in_civ_industries = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = no
+        days_re_enable = 180
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 150
+
+        complete_effect = {
+            custom_effect_tooltip = "EVENT_EFFECT_YAY"
+            add_offsite_building= { type = industrial_complex level = 2 }
+	    }
+    }
+	
+	
+    invest_in_arms_factory = {
+
+        icon = GFX_decision_generic_construction
+
+        available = {
+       
+        }
+
+        fire_only_once = no
+        days_re_enable = 180
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 150
+
+        complete_effect = {
+            custom_effect_tooltip = "EVENT_EFFECT_YAY"
+            add_offsite_building= { type = arms_factory level = 2 }
+	    }
+    }
+	
+    invest_in_shipyards = {
+	    icon = GFX_decision_generic_construction
+	    available = { }
+	    fire_only_once = yes
+	    days_re_enable = 180
+	    cost=25
+	    complete_effect={
+		    add_timed_idea={
+			    idea=shipyard_investment
+			    days=180
+		    }
+	    }
+    }
+	
+    industrialization_effort = {
+
+        icon = GFX_decision_generic_construction
+
+        available = {
+       
+        }
+
+        fire_only_once = no
+        days_re_enable = 365
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+                add_timed_idea = {
+                    idea = industrialization_efforts
+                    days = 365
+                }
+        }
+    }
+
+	
+	
+    invest_in_military_staff = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = {
+       
+        }
+
+        fire_only_once = no
+        days_re_enable = 90
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            custom_effect_tooltip = "EVENT_EFFECT_YAY"
+            army_experience = 50
+	    }
+    }
+	
+	invest_in_research = {
+
+        icon = GFX_decision_generic_research
+
+        available = {
+       
+        }
+
+        fire_only_once = no
+        days_re_enable = 365
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = research_bonus_effort
+                days = 365
+            }
+        }
+	}
+    production_effort = {
+
+        icon = GFX_decision_ger_military_buildup
+
+        available = {
+        }
+
+        fire_only_once = no
+        days_re_enable = 365
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+
+        cost = 150
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = production_efforts
+                days = 365
+            }
+        }
+    }
+
+	supply_buildup = {
+		icon = generic_construction
+		available = {
+			
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = -1
+		cost = 5
+		modifier = {
+			production_speed_rail_way_factor = 0.4
+			production_speed_supply_node_factor = 0.4
+			production_speed_naval_base_factor = 0.4
+			production_speed_air_base_factor = 0.4
+			consumer_goods_expected_value = 0.03
+		}
+		ai_will_do = {
+			base = 0
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+		}
+	}
+	supply_buildup_cancel = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			has_decision = supply_buildup
+		}
+		fire_only_once = no
+		cost = 5
+		complete_effect = {
+			remove_decision = supply_buildup
+		}
+	}
+	
+}
