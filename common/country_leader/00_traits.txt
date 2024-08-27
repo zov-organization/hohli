@@ -3318,14 +3318,6 @@ leader_traits = {
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		experience_gain_army = @experience_gain_low
 		max_command_power = 10
-
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
-		}
 	}
 
 	army_chief_drill_1 = { # Decreases training time for ground units
@@ -3334,14 +3326,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
-		}
 	}
 
 	army_chief_drill_2 = { # Decreases training time for ground units
@@ -3350,14 +3334,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
-		}
 	}
 
 	army_chief_drill_3 = { # Decreases training time for ground units
@@ -3366,14 +3342,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
-		}
 	}
 
 
@@ -3383,14 +3351,6 @@ leader_traits = {
 		experience_gain_army_factor = 0.05
 
 		command_cap = @tier1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
-		}
 	}
 
 	army_chief_reform_2 = {
@@ -3399,14 +3359,6 @@ leader_traits = {
 		experience_gain_army_factor = 0.1
 
 		command_cap = @tier2
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
-		}
 	}
 
 	army_chief_reform_3 = {
@@ -3415,14 +3367,6 @@ leader_traits = {
 		experience_gain_army_factor = 0.15
 
 		command_cap = @tier3
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
-		}
 	}
 
 

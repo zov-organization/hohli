@@ -6,8 +6,6 @@ set_country_flag = host
 
 set_research_slots = 3
 navy_experience = 0
-# Starting tech
-
 
 set_convoys = 800
 
@@ -97,6 +95,7 @@ add_timed_idea = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_weapons2 = 1
 	tech_trucks = 1
 	motorised_infantry = 1
 	armored_car1 = 1

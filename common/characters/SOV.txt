@@ -279,7 +279,7 @@ characters = {
 			slot = army_chief
 			idea_token = SOV_kliment_voroshilov
 			traits = {
-				army_chief_drill_1
+				army_chief_drill_2
 			}
 			cost = 50
 		}

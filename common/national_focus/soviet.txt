@@ -880,6 +880,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = SOV_katusha
+				ahead_reduction = 2
 				bonus = 1.5
 				uses = 1
 				technology = motorized_rocket_unit
@@ -908,7 +909,7 @@
 				name = SOV_kv_1
 				bonus = 1.25
 				uses = 1
-				technology = basic_heavy_tank_chassis
+				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
