@@ -1,4 +1,98 @@
 ic_helpful_tips = {
+    
+    SOV_optimal_building_line = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = SOV
+                date < 1936.02.01
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+            219 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            195 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            217 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            254 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = no
+				}
+            }
+            253 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = no
+				}
+            }
+
+
+            219 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            195 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            217 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            254 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            253 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+        }
+    }
+
     SOV_ukrain_promkompleks_tip = {
 
         icon = GFX_decision_generic_construction
@@ -131,7 +225,7 @@ ic_helpful_tips = {
         }
     }
 
-    SOV_debug = {
+    SOV_debug_cze = {
 
         icon = GFX_decision_generic_construction
 
@@ -154,7 +248,56 @@ ic_helpful_tips = {
             }
         }
     }
+
+    SOV_debug_pol = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+            annex_country = {
+                target = LIT
+            }
+             annex_country = {
+                target = LAT
+            }
+             annex_country = {
+                target = EST
+            }
+            every_state = {
+				limit = {
+					OR = {
+						state = 96
+                        state = 784
+                        state = 95
+                        state = 97
+                        state = 94
+                        state = 93
+                        state = 91
+                        state = 89
+                        state = 80
+                        state = 78
+                        state = 766
+                    }
+				}
+                transfer_state_to = SOV
+			}
+        }
+    }
 }
+
+
 
 ic_pp_waste = {
 
@@ -241,10 +384,10 @@ ic_pp_waste = {
         cost = 100
 
         complete_effect = {
-                add_timed_idea = {
-                    idea = industrialization_efforts
-                    days = 365
-                }
+            add_timed_idea = {
+                idea = industrialization_efforts
+                days = 365
+            }
         }
     }
 
@@ -365,5 +508,4 @@ ic_pp_waste = {
 			remove_decision = supply_buildup
 		}
 	}
-	
 }

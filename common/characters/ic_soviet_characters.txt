@@ -326,6 +326,44 @@ characters = {
 		}
 	}
 
+	ic_SOV_stepan_krasovsky = {
+		name = SOV_stepan_krasovsky
+		portraits = {
+			army = {
+				small = "GFX_idea_stepan_krasovsky"
+			}
+		}
+
+		#advisor = {
+		#	slot = high_command
+		#	idea_token = ic_SOV_stepan_krasovsky
+		#	ledger = air
+		#	traits = {
+		#		air_air_superiority_1
+		#	}
+		#	cost = 100
+		#}
+	}
+
+	ic_SOV_sergey_khudyakov = {
+		name = SOV_sergey_khudyakov
+		portraits = {
+			army = {
+				small = "GFX_idea_sergei_khudyakov"
+			}
+		}
+
+		#advisor = {
+		#	slot = high_command
+		#	idea_token = ic_SOV_sergey_khudyakov
+		#	ledger = air
+		#	traits = {
+		#		air_close_air_support_1
+		#	}
+		#	cost = 100
+		#}		
+	}
+
 	ic_SOV_dmitry_pavlov = {
 		name = ic_SOV_dmitry_pavlov
 

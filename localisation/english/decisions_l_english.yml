@@ -287,9 +287,10 @@
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
   ic_helpful_tips:0 "Helpful Tips"
+  SOV_optimal_building_line:0 "Optimal starting building line"
   SOV_ukrain_promkompleks_tip:0 "Show states affected by Ukrain PromKomplect"
   SOV_russian_storehouse_tip:0 "Show states affected by Russian Storehouse"
-  SOV_debug:0 "debug thingy for CZE annex"
+  SOV_debug_cze:0 "debug thingy for CZE annex"
 
 
   ic_pp_waste:0 "PP waste section"

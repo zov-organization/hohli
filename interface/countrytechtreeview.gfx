@@ -1071,7 +1071,7 @@ spriteTypes = {
 
 ###nsb armor tree
 
-spriteType = {
+	spriteType = {
 		name = "GFX_technology_nsb_armour_folder_small_unavailable_item_bg"
 		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
 	}	
@@ -1088,6 +1088,36 @@ spriteType = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_nsb_armour_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}	
+
+
+	# sov tank tech tree
+
+	spriteType = {
+		name = "GFX_technology_nsb_sov_armour_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_nsb_sov_armour_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_nsb_sov_armour_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_nsb_sov_armour_folder_small_currently_researching_item_bg"
 		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
@@ -1150,13 +1180,13 @@ spriteType = {
 		name = "GFX_techtree_line_horisontal"
 		textureFile = "gfx//interface//techtree//techtree_line_horisontal.dds"
 		noOfFrames = 4
-		}
+	}
 
 	spriteType = {
 		name = "GFX_techtree_line_vertical"
 		textureFile = "gfx//interface//techtree//techtree_line_vertical.dds"
 		noOfFrames = 4
-		}
+	}
 	
 	spriteType = {
 		name = "GFX_techtree_line_up_states"
@@ -1560,6 +1590,10 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_nsb_armour_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_sov_armour_folder_icon"
 		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
 	}
 	spriteType = {

@@ -29,8 +29,10 @@ create_country_leader = {
 
 
 recruit_character = ic_SOV_genrikh_yagoda			# they are here just to get shot lol
-recruit_character = ic_SOV_mikhail_tukhachevsky	#
+recruit_character = ic_SOV_mikhail_tukhachevsky		#
 
+recruit_character = ic_SOV_stepan_krasovsky
+recruit_character = ic_SOV_sergey_khudyakov
 recruit_character = ic_SOV_semyon_timoshenko
 recruit_character = ic_SOV_ivan_konev
 recruit_character = ic_SOV_konstantin_rokossovsky

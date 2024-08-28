@@ -3733,6 +3733,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SOV_red_airforces_2"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_airforces_3"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_SOV_red_army"
 		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
 	}

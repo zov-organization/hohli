@@ -9661,7 +9661,7 @@ leader_traits = {
 
 	air_air_superiority_4 = {
 		sprite = 1
-		air_superiority_efficiency = 0.15
+		air_superiority_efficiency = 0.2
 		experience_gain_air = @experience_gain_high
 
 		command_cap = 0

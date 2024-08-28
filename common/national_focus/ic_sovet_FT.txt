@@ -885,6 +885,32 @@ focus_tree = {
 					cost = 100
 				}
 			}
+
+			add_advisor_role = {
+				character = ic_SOV_stepan_krasovsky
+				advisor = {
+					slot = air_chief
+					idea_token = ic_SOV_stepan_krasovsky
+					ledger = air
+					traits = {
+						air_air_superiority_1
+					}
+					cost = 100
+				}
+			}
+
+			add_advisor_role = {
+				character = ic_SOV_sergey_khudyakov
+				advisor = {
+					slot = air_chief
+					idea_token = ic_SOV_sergey_khudyakov
+					ledger = air
+					traits = {
+						air_close_air_support_1
+					}
+					cost = 100
+				}
+			}
 		}
 	}
 
@@ -1316,6 +1342,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_airforces
+				add_idea = SOV_red_airforces_2
+			}
 			add_tech_bonus = {
 				name = SOV_soveit_airplane_school
 				bonus = 1
@@ -1449,9 +1479,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_airforces_2
+				add_idea = SOV_red_airforces_3
+			}
 			add_tech_bonus = {
 				name = SOV_novikov
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = improved_small_airframe
 			}

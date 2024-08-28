@@ -2717,6 +2717,8 @@
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
  SOV_red_airforces:0 "Red Airforces"
+ SOV_red_airforces_2:0 "Red Airforces"
+ SOV_red_airforces_3:0 "Red Airforces"
  SOV_red_army:0 "Red Army"
  ic_SOV_peaceful_building:0 "Peaceful Building"
  ic_SOV_economy_is_on_war_footing:0 "Economy is on war footing"

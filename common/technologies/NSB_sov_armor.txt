@@ -36,7 +36,7 @@ technologies = {
 	@1945 = 12
 	@1946 = 20
 
-	gwtank_chassis = { 
+	sov_gwtank_chassis = { 
 
 		show_equipment_icon = yes
 
@@ -48,19 +48,19 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = basic_light_tank_chassis
+			leads_to_tech = sov_basic_light_tank_chassis
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = basic_heavy_tank_chassis
+			leads_to_tech = sov_basic_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
 		research_cost = 5
 		start_year = 1918
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = 0 }
 		}
 
@@ -72,7 +72,7 @@ technologies = {
 		}
 	}
 
-	basic_light_tank_chassis = { # LIGHT_1
+	sov_basic_light_tank_chassis = { # LIGHT_1
 
 		enable_equipments = {
 			light_tank_equipment_1
@@ -84,14 +84,14 @@ technologies = {
 		#}
 
 		path = {
-			leads_to_tech = improved_light_tank_chassis
+			leads_to_tech = sov_improved_light_tank_chassis
 			research_cost_coeff = 1
 		}
 
 		research_cost = 5
 		start_year = 1934
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 1 y = 2 }
 		}
 
@@ -160,30 +160,30 @@ technologies = {
 #		}
 #	}
 
-	improved_light_tank_chassis = { # LIGHT_2
+	sov_improved_light_tank_chassis = { # LIGHT_2
 
 		enable_equipments = {
 			light_tank_equipment_2
 		}
 
 		sub_technologies = {
-			improved_light_td
-			improved_light_art
-			improved_light_spaa
+			sov_improved_light_td
+			sov_improved_light_art
+			sov_improved_light_spaa
 		}
 
 		path = {
-			leads_to_tech = advanced_light_tank_chassis
+			leads_to_tech = sov_advanced_light_tank_chassis
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = amphibious_drive
+			leads_to_tech = sov_amphibious_drive
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = basic_medium_tank_chassis
+			leads_to_tech = sov_basic_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -191,7 +191,7 @@ technologies = {
 		start_year = 1938
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = -1 y = @1938 }
 		}
 
@@ -203,7 +203,7 @@ technologies = {
 		}
 	}
 	
-	improved_light_td = {
+	sov_improved_light_td = {
 
 		enable_equipments = {
 			light_tank_destroyer_equipment_2
@@ -219,7 +219,7 @@ technologies = {
 		}
 	}
 	
-	improved_light_art = {
+	sov_improved_light_art = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_2
@@ -234,7 +234,7 @@ technologies = {
 		}
 	}
 	
-	improved_light_spaa = {
+	sov_improved_light_spaa = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_2
@@ -250,7 +250,7 @@ technologies = {
 		}
 	}
 
-	amphibious_drive = { # PROPELLER
+	sov_amphibious_drive = { # PROPELLER
 
 
 		enable_equipments = {
@@ -278,7 +278,7 @@ technologies = {
 		start_year = 1941
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = -4 y = @1941 }
 		}
 
@@ -290,7 +290,7 @@ technologies = {
 		}
 	}
 
-	advanced_light_tank_chassis = { # LIGHT_3
+	sov_advanced_light_tank_chassis = { # LIGHT_3
 
 		enable_equipments = {
 			light_tank_equipment_3 
@@ -306,7 +306,7 @@ technologies = {
 		start_year = 1940
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = -1 y = @1940 }
 		}
 
@@ -365,24 +365,24 @@ technologies = {
 	#	}
 	#}
 
-	basic_medium_tank_chassis = { # MED_1
+	sov_basic_medium_tank_chassis = { # MED_1
 
 		enable_equipments = {
 			medium_tank_equipment_1 
 		}
 
-		sub_technologies = {
-			basic_medium_td
-			basic_medium_art
-			basic_medium_spaa
-		}
+		#sub_technologies = {
+		#	basic_medium_td
+		#	basic_medium_art
+		#	basic_medium_spaa
+		#}
 
 		enable_subunits = {
 			medium_armor
 		}
 
 		path = {
-			leads_to_tech = improved_medium_tank_chassis
+			leads_to_tech = sov_improved_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -390,7 +390,7 @@ technologies = {
 		start_year = 1939
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1939 }
 		}
 
@@ -402,85 +402,81 @@ technologies = {
 		}
 	}
 
-	basic_medium_td = {
-		
-		allow = {
-			tag = GER
-		}
+	#basic_medium_td = {
+	#
+	#	enable_equipments = {
+	#		medium_tank_destroyer_equipment_1
+	#	}
+	#
+	#	enable_subunits = {
+	#		medium_tank_destroyer_brigade
+	#	}
+	#
+	#	research_cost = 0.5
+	#	start_year = 1939
+	#
+	#	
+	#	categories = {
+	#		armor
+	#		mio_cat_tech_all_armor_and_modules
+	#		mio_cat_tech_medium_armor_and_modules
+	#	}
+	#}
+	#
+	#basic_medium_art = {
+	#
+	#	enable_equipments = {
+	#		medium_tank_artillery_equipment_1
+	#	}
+	#
+	#	enable_subunits = {
+	#		medium_sp_artillery_brigade
+	#	}
+	#
+	#	research_cost = 0.5
+	#	start_year = 1939
+	#	
+	#	categories = {
+	#		armor
+	#		mio_cat_tech_all_armor_and_modules
+	#		mio_cat_tech_medium_armor_and_modules
+	#	}
+	#}
+	#
+	#basic_medium_spaa = {
+	#
+	#	enable_equipments = {
+	#		medium_tank_aa_equipment_1
+	#	}
+	#
+	#	enable_subunits = {
+	#		medium_sp_anti_air_brigade
+	#	}
+	#
+	#	research_cost = 0.5
+	#	start_year = 1939
+	#	
+	#	categories = {
+	#		armor
+	#		mio_cat_tech_all_armor_and_modules
+	#		mio_cat_tech_medium_armor_and_modules
+	#	}
+	#}
 
-		enable_equipments = {
-			medium_tank_destroyer_equipment_1
-		}
-
-		enable_subunits = {
-			medium_tank_destroyer_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1939
-
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-		}
-	}
-	
-	basic_medium_art = {
-
-		enable_equipments = {
-			medium_tank_artillery_equipment_1
-		}
-
-		enable_subunits = {
-			medium_sp_artillery_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1939
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-		}
-	}
-	
-	basic_medium_spaa = {
-
-		enable_equipments = {
-			medium_tank_aa_equipment_1
-		}
-
-		enable_subunits = {
-			medium_sp_anti_air_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1939
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-		}
-	}
-
-	improved_medium_tank_chassis = { # MED_2
+	sov_improved_medium_tank_chassis = { # MED_2
 
 		enable_equipments = {
 			medium_tank_equipment_2 
 		}
 
 		sub_technologies = {
-			improved_medium_td
-			improved_medium_art
-			improved_medium_spaa
+			sov_improved_medium_td
+			sov_improved_medium_art
+			sov_improved_medium_spaa
 		}
 
 		path = {
-			leads_to_tech = advanced_medium_tank_chassis
+			leads_to_tech = sov_advanced_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -488,7 +484,7 @@ technologies = {
 		start_year = 1940
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1941 }
 		}
 
@@ -500,7 +496,7 @@ technologies = {
 		}
 	}
 
-	improved_medium_td = {
+	sov_improved_medium_td = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_2
@@ -516,7 +512,7 @@ technologies = {
 		}
 	}
 	
-	improved_medium_art = {
+	sov_improved_medium_art = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_2
@@ -532,7 +528,7 @@ technologies = {
 		}
 	}
 	
-	improved_medium_spaa = {
+	sov_improved_medium_spaa = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_2
@@ -542,20 +538,20 @@ technologies = {
 		start_year = 1941
 	}
 
-	advanced_medium_tank_chassis = { # MED_3
+	sov_advanced_medium_tank_chassis = { # MED_3
 
 		enable_equipments = {
 			medium_tank_equipment_3 
 		}
 
 		sub_technologies = {
-			advanced_medium_td
-			advanced_medium_art
-			advanced_medium_spaa
+			sov_advanced_medium_td
+			sov_advanced_medium_art
+			sov_advanced_medium_spaa
 		}
 
 		path = {
-			leads_to_tech = final_medium_tank_chassis
+			leads_to_tech = sov_final_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -563,7 +559,7 @@ technologies = {
 		start_year = 1943
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1943 }
 		}
 
@@ -575,7 +571,7 @@ technologies = {
 		}
 	}
 
-	advanced_medium_td = {
+	sov_advanced_medium_td = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_3
@@ -591,7 +587,7 @@ technologies = {
 		}
 	}
 	
-	advanced_medium_art = {
+	sov_advanced_medium_art = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_3
@@ -607,7 +603,7 @@ technologies = {
 		}
 	}
 	
-	advanced_medium_spaa = {
+	sov_advanced_medium_spaa = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_3
@@ -623,7 +619,7 @@ technologies = {
 		}
 	}
 
-	final_medium_tank_chassis = { # MED_4
+	sov_final_medium_tank_chassis = { # MED_4
 
 		enable_equipments = {
 			# those are here just for tech icon to be big
@@ -645,7 +641,7 @@ technologies = {
 		start_year = 1945
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1945 }
 		}
 
@@ -660,7 +656,7 @@ technologies = {
 		}
 	}
 
-	basic_heavy_tank_chassis = { # HEAVY_1
+	sov_basic_heavy_tank_chassis = { # HEAVY_1
 
 		enable_equipments = {
 			heavy_tank_equipment_1 
@@ -677,7 +673,7 @@ technologies = {
 		#}
 
 		path = {
-			leads_to_tech = improved_heavy_tank_chassis
+			leads_to_tech = sov_improved_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -685,7 +681,7 @@ technologies = {
 		start_year = 1935
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 6 y = @1935 }
 		}
 
@@ -757,25 +753,25 @@ technologies = {
 	#	}
 	#}
 
-	improved_heavy_tank_chassis = { # HEAVY_2
+	sov_improved_heavy_tank_chassis = { # HEAVY_2
 
 		enable_equipments = {
 			heavy_tank_equipment_2 
 		}
 		
 		sub_technologies = {
-			improved_heavy_td
-			improved_heavy_art
+			sov_improved_heavy_td
+			sov_improved_heavy_art
 		#	improved_heavy_spaa
 		}
 
 		path = {
-			leads_to_tech = advanced_heavy_tank_chassis
+			leads_to_tech = sov_advanced_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = super_heavy_tank_chassis
+			leads_to_tech = sov_super_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -783,7 +779,7 @@ technologies = {
 		start_year = 1940
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 7 y = @1940 }
 		}
 
@@ -799,7 +795,7 @@ technologies = {
 		}
 	}
 
-	improved_heavy_td = {
+	sov_improved_heavy_td = {
 
 		enable_equipments = {
 			heavy_tank_destroyer_equipment_2
@@ -816,7 +812,7 @@ technologies = {
 		}
 	}
 	
-	improved_heavy_art = {
+	sov_improved_heavy_art = {
 
 		enable_equipments = {
 			heavy_tank_artillery_equipment_2
@@ -849,20 +845,20 @@ technologies = {
 	#	}
 	#}
 
-	advanced_heavy_tank_chassis = { # HEAVY_3
+	sov_advanced_heavy_tank_chassis = { # HEAVY_3
 
 		enable_equipments = {
 			heavy_tank_equipment_3 
 		}
 		
 		sub_technologies = {
-			advanced_heavy_td
-			advanced_heavy_art
+			sov_advanced_heavy_td
+			sov_advanced_heavy_art
 		#	advanced_heavy_spaa
 		}
 
 		path = {
-			leads_to_tech = final_heavy_tank_chassis
+			leads_to_tech = sov_final_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -870,7 +866,7 @@ technologies = {
 		start_year = 1943
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 7 y = @1942 }
 		}
 
@@ -886,7 +882,7 @@ technologies = {
 		}
 	}
 
-	advanced_heavy_td = {
+	sov_advanced_heavy_td = {
 
 		enable_equipments = {
 			heavy_tank_destroyer_equipment_3
@@ -903,7 +899,7 @@ technologies = {
 		}
 	}
 	
-	advanced_heavy_art = {
+	sov_advanced_heavy_art = {
 
 		enable_equipments = {
 			heavy_tank_artillery_equipment_3
@@ -935,7 +931,7 @@ technologies = {
 	#	}
 	#}
 
-	final_heavy_tank_chassis = { # HEAVY_4
+	sov_final_heavy_tank_chassis = { # HEAVY_4
 
 		enable_equipments = {
 			# those are here just for tech icon to be big
@@ -957,7 +953,7 @@ technologies = {
 		start_year = 1944
 
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 7 y = @1944 }
 		}
 
@@ -973,7 +969,7 @@ technologies = {
 		}
 	}
 
-	super_heavy_tank_chassis = { # Maus
+	sov_super_heavy_tank_chassis = { # Maus
 
 		enable_equipments = {
 			super_heavy_tank_equipment_1
@@ -986,7 +982,7 @@ technologies = {
 		research_cost = 5.5
 		start_year = 1943
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 10 y = @1943 }
 		}
 
@@ -1001,22 +997,22 @@ technologies = {
 		}
 	}
 
-	armor_tech_1 = {
+	sov_armor_tech_1 = {
 
 		path = {
-			leads_to_tech = armor_tech_2
+			leads_to_tech = sov_armor_tech_2
 			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_1_tt
+			custom_effect_tooltip = sov_armor_tech_1_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
 		start_year = 1936
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1935 }
 		}
 
@@ -1029,22 +1025,22 @@ technologies = {
 		}
 	}
 
-	armor_tech_2 = {
+	sov_armor_tech_2 = {
 
 		path = {
-			leads_to_tech = armor_tech_3
+			leads_to_tech = sov_armor_tech_3
 			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_2_tt
+			custom_effect_tooltip = sov_armor_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
 		start_year = 1938
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1938 }
 		}
 
@@ -1057,23 +1053,23 @@ technologies = {
 		}
 	}
 
-	armor_tech_3 = {
+	sov_armor_tech_3 = {
 
 
 		path = {
-			leads_to_tech = armor_tech_4
+			leads_to_tech = sov_armor_tech_4
 			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_3_tt
+			custom_effect_tooltip = sov_armor_tech_3_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1941 }
 		}
 
@@ -1086,17 +1082,17 @@ technologies = {
 		}
 	}
 
-	armor_tech_4 = {
+	sov_armor_tech_4 = {
 
 		research_cost = 1
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 3 y = @1944 }
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_4_tt
+			custom_effect_tooltip = sov_armor_tech_4_tt
 		}
 		show_effect_as_desc = yes
 		
@@ -1109,21 +1105,21 @@ technologies = {
 		}
 	}
 
-	engine_tech_1 = {
+	sov_engine_tech_1 = {
 
 
 		path = {
-			leads_to_tech = engine_tech_2
+			leads_to_tech = sov_engine_tech_2
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_1_tt
+			custom_effect_tooltip = sov_engine_tech_1_tt
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 2 y = @1935 }
 		}
 
@@ -1136,23 +1132,23 @@ technologies = {
 		}
 	}
 
-	engine_tech_2 = {
+	sov_engine_tech_2 = {
 
 
 		path = {
-			leads_to_tech = engine_tech_3
+			leads_to_tech = sov_engine_tech_3
 			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_2_tt
+			custom_effect_tooltip = sov_engine_tech_2_tt
 		}
 		show_effect_as_desc = yes
 
 		research_cost = 1
 		start_year = 1938
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 2 y = @1938 }
 		}
 
@@ -1165,21 +1161,21 @@ technologies = {
 		}
 	}
 
-	engine_tech_3 = {
+	sov_engine_tech_3 = {
 
 
 		path = {
-			leads_to_tech = engine_tech_4
+			leads_to_tech = sov_engine_tech_4
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_3_tt
+			custom_effect_tooltip = sov_engine_tech_3_tt
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 2 y = @1941 }
 		}
 
@@ -1192,16 +1188,16 @@ technologies = {
 		}
 	}
 
-	engine_tech_4 = {
+	sov_engine_tech_4 = {
 
 		research_cost = 1
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
+			name = nsb_sov_armour_folder
 			position = { x = 2 y = @1944 }
 		}
 		on_research_complete = {
-			custom_effect_tooltip = engine_tech_4_tt
+			custom_effect_tooltip = sov_engine_tech_4_tt
 		}
 		show_effect_as_desc = yes
 		

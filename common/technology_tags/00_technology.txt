@@ -148,6 +148,14 @@ technology_folders = {
 		ledger = army
 		available = {
 			has_dlc = "No Step Back"
+			NOT = { tag = SOV }
+		}
+	}
+	nsb_sov_armour_folder = {
+		ledger = army
+		available = {
+			has_dlc = "No Step Back"
+			tag = SOV
 		}
 	}
 	artillery_folder = {

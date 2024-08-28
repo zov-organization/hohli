@@ -54,6 +54,8 @@
  armour_folder_desc:0 "Tanks and their variants."
  nsb_armour_folder:0 "Armor"
  nsb_armour_folder_desc:0 "Tanks and their variants."
+ nsb_sov_armour_folder:0 "Armor"
+ nsb_sov_armour_folder_desc:0 "Tanks and their variants."
  artillery_folder:0 "Artillery"
  artillery_folder_desc:0 "Artillery, Anti-Tank & Anti-Aircraft weapons for divisions."
  land_doctrine_folder:0 "Land Doctrine"
