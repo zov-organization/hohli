@@ -1038,7 +1038,7 @@ focus_tree = {
 				name = SOV_tank_four
 				bonus = 0.25
 				uses = 1
-				technology = basic_medium_tank_chassis
+				technology = sov_basic_medium_tank_chassis
 			}
 		}
 	}
@@ -1094,7 +1094,7 @@ focus_tree = {
 				name = SOV_kv_1
 				bonus = 1.25
 				uses = 1
-				technology = improved_heavy_tank_chassis
+				technology = sov_improved_heavy_tank_chassis
 			}
 		}
 	}
