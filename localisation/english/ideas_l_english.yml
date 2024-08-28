@@ -2709,6 +2709,10 @@
  will_turn_to: "Will Turn Into"
  upon_timeout: "Upon Timeout"
 
+  peace_training:0 "Peacetime Training"
+  DayOne_Efficiency:0 "Day 1 Efficiency"
+  NoTradeback:0 "No Prewar Tradebacks"
+
  ic_SOV_five_year_plan:0 "Five Year Plan"
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
