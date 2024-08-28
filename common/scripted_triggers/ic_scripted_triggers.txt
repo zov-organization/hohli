@@ -23,3 +23,13 @@ is_playable_country = {
 		original_TAG = SOV
 	}
 }
+
+ic_jap_chi_war_started = {
+	608 = {
+		is_owned_by = JAP
+	}
+}
+
+ic_spain_civil_war_over = {
+	
+}

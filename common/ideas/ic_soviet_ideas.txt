@@ -519,24 +519,27 @@ ideas = {
 
 		# LEIFEE TO DO
 		# make an idea that will give SOV +n daily army xp and will get canceled once japan finally annexes china
-		#SOV_support_in_china_communism = {
-		#	name = SOV_support_in_china_generic
-		#
-		#	removal_cost = -1
-		#
-		#	allowed = {
-		#		always = no
-		#	}
-		#
-		#	cancel = {
-		#	}
-		#
-		#	picture = generic_communism_drift_bonus
-		#
-		#	modifier = {
-		#		experience_gain_army = 0.15
-		#	}
-		#}
+		ic_SOV_support_in_china_communism = {
+			name = SOV_support_in_china_generic
+		
+			removal_cost = -1
+		
+			allowed = {
+				always = no
+			}
+		
+			cancel = {
+				NOT = {
+					country_exists = CHI
+				}
+			}
+		
+			picture = generic_communism_drift_bonus
+		
+			modifier = {
+				experience_gain_air = 0.25
+			}
+		}
 
 		ic_SOV_military_advisors_in_spain = {
 			picture = SPR_nationalist_remnants
@@ -548,7 +551,8 @@ ideas = {
 			}
 
 			modifier = {
-				experience_gain_army = 0.1
+				experience_gain_army = 0.25
+				experience_gain_air = 0.25
 			}
 		}
 

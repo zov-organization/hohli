@@ -76,6 +76,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			247 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -97,6 +105,14 @@ focus_tree = {
 
 		completion_reward = {
 			205 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			222 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
@@ -568,6 +584,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+        	}
 			add_tech_bonus = {
 				name = SOV_rubber
 				bonus = 2
@@ -838,18 +859,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_advisor_role = {
-				character = ic_SOV_konstantin_rokossovsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_konstantin_rokossovsky
-					ledger = army
-					traits = {
-						army_armored_1
-					}
-					cost = 100
-				}
-			}
 
 			add_advisor_role = {
 				character = ic_SOV_aleksandr_vasilevsky
@@ -1336,6 +1345,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = ic_SOV_military_advisors_in_spain
+				days = 400
+			}
 			add_doctrine_cost_reduction = {
 				name = SOV_aviadoka
 				cost_reduction = 0.75
@@ -1379,7 +1392,9 @@ focus_tree = {
 		cost = 5
 
 		available = {
-
+			limit = {
+				ic_spain_civil_war_over = yes
+			}
 		}
 
 		completion_reward = {
@@ -1400,10 +1415,13 @@ focus_tree = {
 		cost = 5
 
 		available = {
-
+			IF = {
+				ic_jap_chi_war_started = yes
+			}
 		}
 
 		completion_reward = {
+			add_ideas = ic_SOV_support_in_china_communism
 			add_doctrine_cost_reduction = {
 				name = SOV_aviadoka
 				cost_reduction = 0.75
@@ -1462,6 +1480,18 @@ focus_tree = {
 
 		completion_reward = {
 			
+			add_advisor_role = {
+				character = ic_SOV_konstantin_rokossovsky
+				advisor = {
+					slot = high_command
+					idea_token = ic_SOV_konstantin_rokossovsky
+					ledger = army
+					traits = {
+						army_armored_3
+					}
+					cost = 100
+				}
+			}
 		}
 	}
 
