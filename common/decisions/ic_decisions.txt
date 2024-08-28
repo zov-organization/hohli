@@ -1,3 +1,161 @@
+ic_helpful_tips = {
+    SOV_ukrain_promkompleks_tip = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 202
+				state = 203
+				state = 193
+				state = 225
+				state = 259
+				state = 203
+				state = 226
+				state = 197
+				state = 196
+				state = 200
+				state = 221
+				state = 227
+				state = 228
+            }
+		}
+
+        cost = 0
+
+        complete_effect = {
+            every_owned_state = {
+				limit = {
+					OR = {
+						state = 202
+				        state = 203
+				        state = 193
+				        state = 225
+				        state = 259
+				        state = 203
+				        state = 226
+				        state = 197
+				        state = 196
+				        state = 200
+				        state = 221
+				        state = 227
+				        state = 228
+                    }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = no
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = no
+				}
+			}
+        }
+    }
+
+    SOV_russian_storehouse_tip = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 398
+				state = 573
+				state = 653
+				state = 403
+				state = 572
+				state = 651
+				state = 582
+				state = 578
+				state = 577
+				state = 568
+				state = 576
+				state = 571
+            }
+		}
+
+        cost = 0
+
+        complete_effect = {
+            every_owned_state = {
+				limit = {
+					OR = {
+						state = 398
+                        state = 573
+                        state = 653
+                        state = 403
+                        state = 572
+                        state = 651
+                        state = 582
+                        state = 578
+                        state = 577
+                        state = 568
+                        state = 576
+                        state = 571
+                    }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = no
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = no
+				}
+			}
+        }
+    }
+
+    SOV_debug = {
+
+        icon = GFX_decision_generic_construction
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+            swap_ideas = {
+                remove_idea = ic_SOV_peaceful_building
+                add_idea = ic_SOV_economy_is_on_war_footing
+            }
+        }
+    }
+}
+
 ic_pp_waste = {
 
     invest_in_civ_industries = {

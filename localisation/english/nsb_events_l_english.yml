@@ -1514,7 +1514,7 @@
  NSB_soviet_fascist_tsarist.32.desc:0 "During the most recent enemy retreat, a high-ranking [SOV.GetAdjective] general has been captured by our forces. In our custody this general, Andrey Vlasov, has professed his "anti-Bolshevism" and now proposes to raise some divisions of captured Russians to fight alongside us against "Stalinism"."
  NSB_soviet_fascist_tsarist.32.a:0 "Any ally against Bolshevism is welcome."
  NSB_soviet_fascist_tsarist.32.b:0 "We cannot trust him!"
- NSB_soviet_fascist_tsarist.33.desc:0 "We have received word that our general [SOV_andrey_vlasov.GetName] has been captured by enemy forces. We can only guess as to his fate..."
+ NSB_soviet_fascist_tsarist.33.desc:0 "We have received word that our general [ic_SOV_andrey_vlasov.GetName] has been captured by enemy forces. We can only guess as to his fate..."
  NSB_soviet_fascist_tsarist.33.a:0 "Unfortunate, but we have bigger things to worry about right now!"
 
  nsb_news.301.t:0 "The Mountainous Republics Unite"

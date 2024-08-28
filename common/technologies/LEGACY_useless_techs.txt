@@ -1,0 +1,12 @@
+technologies = {
+	photo_reconnaisance		= { }
+	iw_medium_airframe		= { }
+	iw_large_airframe		= { }
+	air_torpedoe_1			= { }
+	air_torpedoe_2			= { }
+	air_torpedoe_3			= { }
+	engines_1				= { }
+	engines_2				= { }
+	engines_3				= { }
+	early_bombs				= { }
+}

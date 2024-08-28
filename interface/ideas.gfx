@@ -3710,17 +3710,17 @@ spriteTypes = {
 
 
 	spriteType = {
-		name = "GFX_idea_SOV_trotskyite_plot"
+		name = "GFX_idea_ic_SOV_trotskyite_plot"
 		texturefile = "gfx/interface/ideas/SOV_trotskyite_plot.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_five_year_plan"
+		name = "GFX_idea_ic_SOV_five_year_plan"
 		texturefile = "gfx/interface/ideas/idea_SOV_five_year_plan_second.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_idea_SOV_kuznetsov_reforms"
+		name = "GFX_idea_ic_SOV_kuznetsov_reforms"
 		texturefile = "gfx/interface/ideas/SOV_red_navy.dds"
 	}
 
@@ -3735,82 +3735,87 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_peaceful_building"
+		name = "GFX_idea_ic_SOV_peaceful_building"
 		texturefile = "gfx/interface/ideas/generic_construction_repair.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_economy_is_on_war_footing"
+		name = "GFX_idea_ic_SOV_economy_is_on_war_footing"
 		texturefile = "gfx/interface/ideas/SOV_defense_industry.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_politburo"
+		name = "GFX_idea_ic_SOV_politburo"
 		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_politburo_2"
+		name = "GFX_idea_ic_SOV_politburo_2"
 		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_1"
+		name = "GFX_idea_ic_SOV_military_reorg_1"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_2"
+		name = "GFX_idea_ic_SOV_military_reorg_2"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_3"
+		name = "GFX_idea_ic_SOV_military_reorg_3"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_4"
+		name = "GFX_idea_ic_SOV_military_reorg_4"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_5"
+		name = "GFX_idea_ic_SOV_military_reorg_5"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_military_reorg_6"
+		name = "GFX_idea_ic_SOV_military_reorg_6"
 		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_kama_tank_school"
+		name = "GFX_idea_ic_SOV_kama_tank_school"
 		texturefile = "gfx/interface/ideas/barbarossa.tga"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_mehkorpusa"
+		name = "GFX_idea_ic_SOV_mehkorpusa"
 		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.tga"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_ic_SOV_indiscriminate_bombing_policy"
+		texturefile = "gfx/interface/ideas/SOV_strati_idea.dds"	
+	}	
+
 	spriteType = {
-		name = "GFX_idea_SOV_all_union_trainings"
+		name = "GFX_idea_ic_SOV_all_union_trainings"
 		texturefile = "gfx/interface/ideas/SOV_rehabilitated_military.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_stavka"
+		name = "GFX_idea_ic_SOV_stavka"
 		texturefile = "gfx/interface/ideas/SOV_the_local_soviets.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_gulag"
+		name = "GFX_idea_ic_SOV_gulag"
 		texturefile = "gfx/interface/ideas/SOV_smersh.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_SOV_research_facility"
+		name = "GFX_idea_ic_SOV_research_facility"
 		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
 	}
 
@@ -6303,8 +6308,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_usa_conflict.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SOV_stakhanovite_movement"
-		texturefile = "gfx/interface/ideas/idea_SOV_stakhanovite_movement.dds"
+		name = "GFX_idea_ic_SOV_stakhanovite_movement"
+		texturefile = "gfx/interface/ideas/idea_ic_SOV_stakhanovite_movement.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SOV_war_heroes"

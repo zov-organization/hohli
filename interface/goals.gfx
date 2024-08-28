@@ -788,7 +788,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_SOV_rubber"
+		name = "GFX_SOV_rubber_2"
 		texturefile = "gfx/interface/goals/focus_generic_construction_resources_rubber_synth.dds"
 	}	
 	
@@ -6307,7 +6307,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_SOV_kuznetsov_reforms"
+		name = "GFX_ic_SOV_kuznetsov_reforms"
 		texturefile = "gfx/interface/goals/SOV_kuznetsov_reforms.dds"	
 	}	
 	
@@ -6445,9 +6445,19 @@ spriteTypes = {
 		name = "GFX_SOV_the_red_army"
 		texturefile = "gfx/interface/goals/focus_SOV_ignite_the_flames.dds"	
 	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_rubber"
+		texturefile = "gfx/interface/goals/focus_SOV_national_specialists.dds"	
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_SOV_halkin_gol"
+		texturefile = "gfx/interface/goals/r56_goal_MON_defence.dds"	
+	}	
 
 	SpriteType = {
-		name = "GFX_SOV_stavka_organisation"
+		name = "GFX_ic_SOV_stavka_organisation"
 		texturefile = "gfx/interface/goals/SOV_Zhukov_Heroism.dds"	
 	}	
 

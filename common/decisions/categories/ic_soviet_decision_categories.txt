@@ -1,12 +1,12 @@
-ic_helpful_tips = {
-    priority = 100
+SOV_forts = {
+    priority = 10
     picture = GFX_decision_category_picture
     icon = GFX_decision_category_picture
     visible_when_empty = no
 }
 
-ic_pp_waste = {
-    priority = 10
+SOV_accelerate_industry = {
+    priority = 11
     picture = GFX_decision_category_picture
     icon = GFX_decision_category_picture
     visible_when_empty = no

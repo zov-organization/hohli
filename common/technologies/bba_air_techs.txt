@@ -576,7 +576,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
@@ -605,7 +605,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
@@ -636,7 +636,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
@@ -663,7 +663,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1937
 
 		folder = {
 			name = bba_air_techs_folder
@@ -696,7 +696,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1938
 
 		folder = {
 			name = bba_air_techs_folder
@@ -764,7 +764,7 @@ technologies = {
 		}
 		
 		research_cost = 5
-		start_year = 1945
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder

@@ -13,10 +13,13 @@ technologies = {
 	#	HEAVY_2
 	#	HEAVY_3
 	#	HEAVY_4
-	#	--------
+	#	---------
 	#	PROPELLER
-	#	-------
+	#	---------
 	#	Maus
+	#	----
+	# sub techs are desribed in common/technologies/armor.txt
+	# means in non NSB armor tech thingy
 
 	@1918 = 0
 	@1934 = 2
@@ -38,75 +41,10 @@ technologies = {
 		show_equipment_icon = yes
 
 		enable_equipments = {
-			light_tank_chassis_0
-			light_tank_destroyer_chassis_0
-			light_tank_artillery_chassis_0
-			light_tank_aa_chassis_0
-
-			medium_tank_chassis_0
-			medium_tank_destroyer_chassis_0
-			medium_tank_artillery_chassis_0
-			medium_tank_aa_chassis_0
-
-			heavy_tank_chassis_0
-			heavy_tank_destroyer_chassis_0
-			heavy_tank_artillery_chassis_0
-			heavy_tank_aa_chassis_0
-		}
-		enable_equipment_modules = {
-
-			# armor
-			tank_riveted_armor
-			tank_cast_armor
-			tank_welded_armor
-
-			# suspension
-			tank_torsion_bar_suspension
-			tank_christie_suspension
-			tank_bogie_suspension
-			tank_interleaved_suspension
-
-			# engines
-			tank_gasoline_engine
-			tank_diesel_engine
-			tank_petrol_electric_engine
-			tank_gas_turbine_engine
-
-			# turrets
-			tank_light_one_man_tank_turret
-			tank_light_two_man_tank_turret
-			tank_light_three_man_tank_turret
-			tank_light_fixed_superstructure_turret
-
-			tank_medium_one_man_tank_turret
-			tank_medium_two_man_tank_turret
-			tank_medium_three_man_tank_turret
-			tank_medium_fixed_superstructure_turret
-
-			tank_heavy_two_man_tank_turret
-			tank_heavy_three_man_tank_turret
-			tank_heavy_fixed_superstructure_turret
-
-			tank_super_heavy_four_man_tank_turret
-			tank_super_heavy_three_man_tank_turret
-
-			# extra stuff
-			sloped_armor
-			extra_ammo_storage
-			wet_ammo_storage
-			smoke_launchers
-			expanded_fuel_tank
-
-			# weaponary
-			tank_heavy_machine_gun
-			tank_small_cannon
-
-			# tank_modern_tank_turret
+			gw_tank_equipment
 		}
 		enable_subunits = {
 			light_armor
-			medium_armor
-			heavy_armor
 		}
 
 		path = {
@@ -137,19 +75,12 @@ technologies = {
 	basic_light_tank_chassis = { # LIGHT_1
 
 		enable_equipments = {
-			light_tank_chassis_1
-			light_tank_destroyer_chassis_1
-			light_tank_artillery_chassis_1
-			light_tank_aa_chassis_1
+			light_tank_equipment_1
 		}
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_anti_air_cannon
-			tank_auto_cannon
-			tank_close_support_gun
-		}
-		enable_subunits = {
-			light_armor
+		sub_technologies = {
+			basic_light_td
+			basic_light_art
+			basic_light_spaa
 		}
 
 		path = {
@@ -172,20 +103,73 @@ technologies = {
 		}
 	}
 
+	basic_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1
+		}
+		enable_subunits = {
+			light_tank_destroyer_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	basic_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1
+		}
+		enable_subunits = {
+			light_sp_artillery_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	basic_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1
+		}
+		enable_subunits = {
+			light_sp_anti_air_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
 	improved_light_tank_chassis = { # LIGHT_2
 
 		enable_equipments = {
-			light_tank_chassis_2
-			light_tank_destroyer_chassis_2
-			light_tank_artillery_chassis_2
-			light_tank_aa_chassis_2
+			light_tank_equipment_2
 		}
 
-		enable_equipment_modules = {
-			tank_auto_cannon_2
-			tank_small_cannon_2
-
-			tank_radio_1
+		sub_technologies = {
+			improved_light_td
+			improved_light_art
+			improved_light_spaa
 		}
 
 		path = {
@@ -218,15 +202,60 @@ technologies = {
 			mio_cat_tech_light_armor_and_modules
 		}
 	}
+	
+	improved_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	improved_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	improved_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
 
 	amphibious_drive = { # PROPELLER
 
 
-		enable_equipment_modules = {
-			amphibious_drive
-		}
-
 		enable_equipments = {
+			#amphibious_tank_equipment_1
+			# those are here just for tech icon to be big
 			light_tank_amphibious_chassis_0
 			medium_tank_amphibious_chassis_0
 			heavy_tank_amphibious_chassis_0
@@ -239,6 +268,10 @@ technologies = {
 			light_tank_amphibious_chassis_3
 			medium_tank_amphibious_chassis_3
 			heavy_tank_amphibious_chassis_3
+		}
+
+		enable_subunits = {
+			#amphibious_armor
 		}
 
 		research_cost = 5
@@ -260,10 +293,13 @@ technologies = {
 	advanced_light_tank_chassis = { # LIGHT_3
 
 		enable_equipments = {
-			light_tank_chassis_3
-			light_tank_destroyer_chassis_3
-			light_tank_artillery_chassis_3
-			light_tank_aa_chassis_3
+			light_tank_equipment_3 
+		}	
+
+		sub_technologies = {
+			advanced_light_td
+			advanced_light_art
+			advanced_light_spaa
 		}
 
 		research_cost = 5
@@ -281,22 +317,64 @@ technologies = {
 			mio_cat_tech_light_armor_and_modules
 		}
 	}
+	
+	advanced_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	advanced_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+	
+	advanced_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
 
 	basic_medium_tank_chassis = { # MED_1
 
 		enable_equipments = {
-			medium_tank_chassis_1
-			medium_tank_destroyer_chassis_1
-			medium_tank_artillery_chassis_1
-			medium_tank_aa_chassis_1
+			medium_tank_equipment_1 
 		}
 
-		enable_equipment_modules = {
-			tank_medium_cannon
-			tank_high_velocity_cannon
-			tank_medium_howitzer
-
-			flamethrower
+		sub_technologies = {
+			basic_medium_td
+			basic_medium_art
+			basic_medium_spaa
 		}
 
 		enable_subunits = {
@@ -324,21 +402,77 @@ technologies = {
 		}
 	}
 
+	basic_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1
+		}
+
+		enable_subunits = {
+			medium_tank_destroyer_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	basic_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1
+		}
+
+		enable_subunits = {
+			medium_sp_artillery_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	basic_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1
+		}
+
+		enable_subunits = {
+			medium_sp_anti_air_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+
 	improved_medium_tank_chassis = { # MED_2
 
 		enable_equipments = {
-			medium_tank_chassis_2
-			medium_tank_destroyer_chassis_2
-			medium_tank_artillery_chassis_2
-			medium_tank_aa_chassis_2
+			medium_tank_equipment_2 
 		}
 
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-			tank_high_velocity_cannon_2
-			tank_medium_howitzer_2
-
-			tank_radio_2
+		sub_technologies = {
+			improved_medium_td
+			improved_medium_art
+			improved_medium_spaa
 		}
 
 		path = {
@@ -362,21 +496,58 @@ technologies = {
 		}
 	}
 
+	improved_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	improved_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	improved_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+	}
+
 	advanced_medium_tank_chassis = { # MED_3
 
 		enable_equipments = {
-			medium_tank_chassis_3
-			medium_tank_destroyer_chassis_3
-			medium_tank_artillery_chassis_3
-			medium_tank_aa_chassis_3
+			medium_tank_equipment_3 
 		}
 
-		enable_equipment_modules = {
-			tank_medium_cannon_3
-			tank_high_velocity_cannon_3
-			tank_medium_howitzer_3
-
-			tank_radio_3
+		sub_technologies = {
+			advanced_medium_td
+			advanced_medium_art
+			advanced_medium_spaa
 		}
 
 		path = {
@@ -396,6 +567,54 @@ technologies = {
 			armor
 			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+
+	advanced_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	advanced_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+	
+	advanced_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 		}
 	}
@@ -440,20 +659,17 @@ technologies = {
 	basic_heavy_tank_chassis = { # HEAVY_1
 
 		enable_equipments = {
-			heavy_tank_chassis_1
-			heavy_tank_destroyer_chassis_1
-			heavy_tank_artillery_chassis_1
-			heavy_tank_aa_chassis_1
-		}
-
-		enable_equipment_modules = {
-			tank_heavy_cannon
-
-			tank_radio_1
+			heavy_tank_equipment_1 
 		}
 
 		enable_subunits = {
 			heavy_armor
+		}
+		
+		sub_technologies = {
+			basic_heavy_td
+			basic_heavy_art
+			basic_heavy_spaa
 		}
 
 		path = {
@@ -477,19 +693,76 @@ technologies = {
 		}
 	}
 
+	basic_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1
+		}
+
+		enable_subunits = {
+			heavy_tank_destroyer_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+	
+	basic_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1
+		}
+
+		enable_subunits = {
+			heavy_sp_artillery_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	
+	basic_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_1
+		}
+		enable_subunits = {
+			heavy_sp_anti_air_brigade
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
 	improved_heavy_tank_chassis = { # HEAVY_2
 
 		enable_equipments = {
-			heavy_tank_chassis_2
-			heavy_tank_destroyer_chassis_2
-			heavy_tank_artillery_chassis_2
-			heavy_tank_aa_chassis_2
+			heavy_tank_equipment_2 
 		}
-
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-
-			tank_radio_2
+		
+		sub_technologies = {
+			improved_heavy_td
+			improved_heavy_art
+			improved_heavy_spaa
 		}
 
 		path = {
@@ -514,29 +787,6 @@ technologies = {
 			
 		}
 
-		ai_will_do = {
-			factor = 0.8
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
-			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-		}
-
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -545,20 +795,66 @@ technologies = {
 		}
 	}
 
+	improved_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+	
+	improved_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	
+	improved_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
 
 	advanced_heavy_tank_chassis = { # HEAVY_3
 
 		enable_equipments = {
-			heavy_tank_chassis_3
-			heavy_tank_destroyer_chassis_3
-			heavy_tank_artillery_chassis_3
-			heavy_tank_aa_chassis_3
+			heavy_tank_equipment_3 
 		}
 		
-		enable_equipment_modules = {
-			tank_heavy_cannon_3
-
-			tank_radio_3
+		sub_technologies = {
+			advanced_heavy_td
+			advanced_heavy_art
+			advanced_heavy_spaa
 		}
 
 		path = {
@@ -582,6 +878,55 @@ technologies = {
 			armor
 			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	advanced_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+	
+	advanced_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+	
+	advanced_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
@@ -627,15 +972,11 @@ technologies = {
 	super_heavy_tank_chassis = { # Maus
 
 		enable_equipments = {
-			super_heavy_tank_chassis_1
+			super_heavy_tank_equipment_1
 		}
 
 		enable_subunits = {
 			super_heavy_armor
-		}
-
-		enable_equipment_modules = {
-			tank_super_heavy_cannon
 		}
 
 		research_cost = 5.5
@@ -646,10 +987,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-		}
-
-		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
 		}
 
 		categories = {
