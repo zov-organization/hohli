@@ -98,6 +98,12 @@ generic = {
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
+	flamethrower_sppt = {
+		prefix = ""
+		generic = { "Flamethrower Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
 	engineer = {
 		prefix = ""
 		generic = { "Engineer Company" }

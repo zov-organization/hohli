@@ -1,7 +1,7 @@
 SOV_ukrain_prom_compleks = {
 	enable = { always = yes }
 
-	icon = GFX_idea_trench_warfare
+	icon = ic_SOV_peaceful_building
 
 	state_production_speed_industrial_complex_factor = 0.25
 	state_production_speed_infrastructure_factor = 0.20
@@ -10,7 +10,7 @@ SOV_ukrain_prom_compleks = {
 SOV_making_use_of_the_storehouse_of_russia = {
 	enable = { always = yes }
 
-	icon = GFX_idea_trench_warfare
+	icon = ic_SOV_economy_is_on_war_footing
 
 	state_production_speed_infrastructure_factor = 0.1
 	state_production_speed_arms_factory_factor = 0.2

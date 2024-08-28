@@ -826,9 +826,10 @@ focus_tree = {
 		icon = GFX_SOV_SOV_halkin_gol
 
 		prerequisite = { focus = SOV_the_red_army }
+		prerequisite = { focus = SOV_i_16 }
 		relative_position_id = SOV_the_red_army
 
-		x = -1
+		x = 4
 		y = 1
 		cost = 5
 
@@ -837,13 +838,77 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = {
-				add_timed_idea = {
-					idea = ic_SOV_military_reorg_1
-					days = 180
+			add_advisor_role = {
+				character = ic_SOV_konstantin_rokossovsky
+				advisor = {
+					slot = high_command
+					idea_token = ic_SOV_konstantin_rokossovsky
+					ledger = army
+					traits = {
+						army_armored_1
+					}
+					cost = 100
 				}
 			}
-			custom_effect_tooltip = SOV_the_red_army_tt
+
+			add_advisor_role = {
+				character = ic_SOV_aleksandr_vasilevsky
+				advisor = {
+					slot = high_command
+					idea_token = ic_SOV_aleksandr_vasilevsky
+					ledger = army
+					traits = {
+						army_infantry_1
+					}
+					cost = 100
+				}
+			}
+
+			add_advisor_role = {
+				character = ic_SOV_ivan_konev
+				advisor = {
+					slot = high_command
+					idea_token = ic_SOV_ivan_konev
+					ledger = army
+					traits = {
+						army_artillery_1
+					}
+					cost = 100
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ic_SOV_stavka_organisation
+
+		icon = GFX_ic_SOV_stavka_organisation
+
+		prerequisite = { focus = SOV_halkin_gol }
+		relative_position_id = SOV_halkin_gol
+
+		x = 0
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ic_SOV_stavka
+
+			add_advisor_role = {
+				character = ic_SOV_semyon_timoshenko
+				advisor = {
+					slot = army_chief
+					idea_token = ic_SOV_semyon_timoshenko
+					traits = {
+						army_chief_reform_2
+					}
+					cost = 100
+				}
+			}
 		}
 	}
 
@@ -857,7 +922,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -897,6 +962,7 @@ focus_tree = {
 
 		prerequisite = { focus = SOV_tank_one }
 		relative_position_id = SOV_tank_one
+		mutually_exclusive = { focus = SOV_tank_two }
 
 		x = 1
 		y = 1
@@ -999,87 +1065,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_SOV_stavka_organisation
-
-		icon = GFX_ic_SOV_stavka_organisation
-
-		prerequisite = { focus = SOV_the_red_army }
-		relative_position_id = SOV_the_red_army
-
-		x = -4
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_ideas = ic_SOV_stavka
-
-			add_advisor_role = {
-				character = ic_SOV_semyon_timoshenko
-				advisor = {
-					slot = army_chief
-					idea_token = ic_SOV_semyon_timoshenko
-					traits = {
-						army_chief_reform_2
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_konstantin_rokossovsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_konstantin_rokossovsky
-					ledger = army
-					traits = {
-						army_armored_1
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_aleksandr_vasilevsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_aleksandr_vasilevsky
-					ledger = army
-					traits = {
-						army_infantry_1
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_ivan_konev
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_ivan_konev
-					ledger = army
-					traits = {
-						army_artillery_1
-					}
-					cost = 100
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = SOV_arty_one
 
 		icon = GFX_SOV_arty_one
 
-		prerequisite = { focus = ic_SOV_stavka_organisation }
-		prerequisite = { focus = SOV_navy_three }
-		relative_position_id = ic_SOV_stavka_organisation
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_inf_one
 
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 
@@ -1130,10 +1123,10 @@ focus_tree = {
 
 		icon = GFX_SOV_inf_one
 
-		prerequisite = { focus = ic_SOV_stavka_organisation }
-		relative_position_id = ic_SOV_stavka_organisation
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_the_red_army
 
-		x = -1
+		x = -5
 		y = 1
 		cost = 10
 
@@ -1160,7 +1153,7 @@ focus_tree = {
 		relative_position_id = SOV_inf_one
 
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {
@@ -1205,19 +1198,16 @@ focus_tree = {
 
 		icon = GFX_SOV_mio_upgrade_1
 
-		prerequisite = { focus = ic_SOV_stavka_organisation }
-		relative_position_id = ic_SOV_stavka_organisation
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_the_red_army
 
-		x = 1
+		x = -3
 		y = 1
 		cost = 5
 
-		available = {
+		available = {  }
 
-		}
-
-		completion_reward = {
-		}
+		completion_reward = {  }
 	}
 
 	focus = {
@@ -1257,7 +1247,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_the_red_army
 
-		x = 7
+		x = 9
 		y = 0
 		cost = 10
 
@@ -1429,6 +1419,7 @@ focus_tree = {
 		icon = GFX_SOV_novikov
 
 		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_back_land_destruction }
+		prerequisite = { focus = ic_SOV_stavka_organisation }
 		relative_position_id = SOV_aviadoka_2
 
 		x = -1

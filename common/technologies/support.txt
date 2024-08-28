@@ -50,6 +50,10 @@ technologies = {
 			leads_to_tech = tech_maintenance_company
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_flamethrower_sppt
+			research_cost_coeff = 1
+		}
 		research_cost = 1.0
 		start_year = 1918
 		folder = {
@@ -59,25 +63,6 @@ technologies = {
 		
 		categories = {
 			support_tech
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 4
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 4
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 4
-				date > "1939.1.1"
-			}
 		}
 	}
 
@@ -104,34 +89,6 @@ technologies = {
 			support_tech
 			engineers_tech
 		}
-		
-		ai_will_do = {
-			base = 4
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				date > "1940.1.1"
-			}
-		}
 	}
 	
 	tech_engineers2 = {
@@ -141,30 +98,6 @@ technologies = {
 			fort = {
 				defence = 0.10
 				attack = 0.10
-			}
-		}
-
-		enable_equipment_modules = {
-			dozer_blade
-			flamethrower
-		}
-
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_basic_light_flamethrower_template = yes
-				}
 			}
 		}
 		
@@ -184,30 +117,6 @@ technologies = {
 			support_tech
 			engineers_tech
 		}
-		
-		ai_will_do = {
-			base = 4
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
 	}
 	
 	tech_engineers3 = {
@@ -217,31 +126,6 @@ technologies = {
 			river = {
 				attack = 0.1	
 				defence = 0.10
-			}
-		}
-
-		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
 			}
 		}
 		path = {
@@ -295,30 +179,6 @@ technologies = {
 				defence = 0.1
 			}
 		}
-		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
 		research_cost = 2.0
 		start_year = 1945
 		folder = {
@@ -329,30 +189,6 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
-		}
-		
-		ai_will_do = {
-			factor = 4
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
 		}
 	}	
 	
@@ -754,9 +590,6 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-		}
-		enable_equipment_modules = {
-			easy_maintenance
 		}
 		
 		
@@ -1418,26 +1251,123 @@ technologies = {
 			signal_company_tech
 			electronics
 		}
+	}
+
+	tech_flamethrower_sppt = {
+
+		enable_subunits = {
+			flamethrower_sppt
+		}
 		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1948.1.1"
-			}
+		path = {
+			leads_to_tech = tech_flamethrower_sppt2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			flamethrower_sppt_tech
 		}
 	}
+	
+	tech_flamethrower_sppt2 = {
+
+		flamethrower_sppt = {
+			soft_attack = 0.1
+			breakthrough  = 0.15
+			fort = {
+				attack = 0.1
+			}
+			urban = {
+				attack = 0.1
+			}
+		}
+
+		enable_subunits = {
+		}
+		
+		
+		
+		path = {
+			leads_to_tech = tech_flamethrower_sppt3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			flamethrower_sppt_tech
+		}
+	}
+	
+	tech_flamethrower_sppt3 = {
+
+		flamethrower_sppt = {
+			soft_attack = 0.1
+			breakthrough = 0.15
+			fort = {
+				attack = 0.1
+			}
+			urban = {
+				attack = 0.1
+			}
+		}
+		path = {
+			leads_to_tech = tech_flamethrower_sppt4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			flamethrower_sppt_tech
+		}
+	}
+	
+	tech_flamethrower_sppt4 = {
+
+		flamethrower_sppt = {
+			soft_attack = 0.1
+			breakthrough  = 0.15
+			fort = {
+				attack = 0.1
+			}
+			urban = {
+				attack = 0.1
+			}
+		}
+		
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			flamethrower_sppt_tech
+		}
+	}	
 
 	basic_train = {
 		enable_equipments = {
@@ -1448,7 +1378,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1918 }
+			position = { x = 2 y = @1918 }
 		}
 
 		path = {
@@ -1464,28 +1394,6 @@ technologies = {
 		categories = {
 			train_tech
 		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				num_of_factories > 25
-				factor = 100 #might wanna get on that
-			}
-			modifier = {
-				factor = 1.2
-				date > "1936.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-		}
 	}
 
 	railway_gun = {
@@ -1497,7 +1405,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 3 }
+			position = { x = 6 y = 3 }
 		}
 		
 		categories = {
@@ -1532,7 +1440,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 2 y = @1939 }
 		}
 		
 		categories = {
@@ -1585,39 +1493,11 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 3 }
+			position = { x = 4 y = 3 }
 		}
 		
 		categories = {
 			train_tech
 		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				has_war = yes
-				factor = 20
-			}
-			modifier = {
-				tag = GER
-				factor = 5
-			}
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-		}
 	}
-
 }

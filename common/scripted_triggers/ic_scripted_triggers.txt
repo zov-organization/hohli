@@ -1,0 +1,25 @@
+is_playable_country = {
+	OR = {
+		# Centrals
+		original_TAG = GER
+		original_TAG = ITA
+		original_TAG = HUN
+		original_TAG = ROM
+		original_TAG = BUL
+		original_TAG = SPR
+		original_TAG = FIN
+		original_TAG = JAP
+		original_TAG = MAN
+		
+		# Entente
+		original_TAG = ENG
+		original_TAG = USA
+		original_TAG = CAN
+		original_TAG = SAF
+		original_TAG = RAJ
+		original_TAG = AST
+		original_TAG = FRA
+		original_TAG = NZL
+		original_TAG = SOV
+	}
+}

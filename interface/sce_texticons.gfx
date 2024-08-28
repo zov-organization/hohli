@@ -1,0 +1,8 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_unit_flamethrower_icon_small"
+		texturefile = "gfx/texticons/support_flamethrower_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}		
+}

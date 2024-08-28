@@ -77,11 +77,11 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1
 		}
-		sub_technologies = {
-			basic_light_td
-			basic_light_art
-			basic_light_spaa
-		}
+		#sub_technologies = {
+		#	basic_light_td
+		#	basic_light_art
+		#	basic_light_spaa
+		#}
 
 		path = {
 			leads_to_tech = improved_light_tank_chassis
@@ -103,62 +103,62 @@ technologies = {
 		}
 	}
 
-	basic_light_td = {
-
-		enable_equipments = {
-			light_tank_destroyer_equipment_1
-		}
-		enable_subunits = {
-			light_tank_destroyer_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1934
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
-	
-	basic_light_art = {
-
-		enable_equipments = {
-			light_tank_artillery_equipment_1
-		}
-		enable_subunits = {
-			light_sp_artillery_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1934
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
-	
-	basic_light_spaa = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_1
-		}
-		enable_subunits = {
-			light_sp_anti_air_brigade
-		}
-	
-		research_cost = 0.5
-		start_year = 1934
-		
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
+#	basic_light_td = {
+#
+#		enable_equipments = {
+#			light_tank_destroyer_equipment_1
+#		}
+#		enable_subunits = {
+#			light_tank_destroyer_brigade
+#		}
+#	
+#		research_cost = 0.5
+#		start_year = 1934
+#		
+#		categories = {
+#			armor
+#			mio_cat_tech_all_armor_and_modules
+#			mio_cat_tech_light_armor_and_modules
+#		}
+#	}
+#	
+#	basic_light_art = {
+#
+#		enable_equipments = {
+#			light_tank_artillery_equipment_1
+#		}
+#		enable_subunits = {
+#			light_sp_artillery_brigade
+#		}
+#	
+#		research_cost = 0.5
+#		start_year = 1934
+#		
+#		categories = {
+#			armor
+#			mio_cat_tech_all_armor_and_modules
+#			mio_cat_tech_light_armor_and_modules
+#		}
+#	}
+#	
+#	basic_light_spaa = {
+#
+#		enable_equipments = {
+#			light_tank_aa_equipment_1
+#		}
+#		enable_subunits = {
+#			light_sp_anti_air_brigade
+#		}
+#	
+#		research_cost = 0.5
+#		start_year = 1934
+#		
+#		categories = {
+#			armor
+#			mio_cat_tech_all_armor_and_modules
+#			mio_cat_tech_light_armor_and_modules
+#		}
+#	}
 
 	improved_light_tank_chassis = { # LIGHT_2
 

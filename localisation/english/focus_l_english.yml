@@ -2434,7 +2434,7 @@
  SOV_kuznetsovs_plan_desc:0 ""
  SOV_forts:0 "Improve forts"
  SOV_forts_desc:0 ""
- SOV_halkin_gol:0 "Khalkin Gol"
+ SOV_halkin_gol:0 "Halkin Gol"
  SOV_halkin_gol_desc:0 ""
  SOV_the_red_army:0 "The Red Army"
  SOV_the_red_army_tt:0 "§CWill start a chain of Military Reorganization of 6 debuffs, each of which will be removing one after another every 180 days (in total will take 1080 days = 3 years)§"

@@ -1,0 +1,21 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_sppt4_medium"
+		texturefile = "gfx/interface/technologies/flamethrower_sppt4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_sppt3_medium"
+		texturefile = "gfx/interface/technologies/flamethrower_sppt3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_sppt2_medium"
+		texturefile = "gfx/interface/technologies/flamethrower_sppt2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_sppt_medium"
+		texturefile = "gfx/interface/technologies/flamethrower_sppt.dds"
+	}	
+}

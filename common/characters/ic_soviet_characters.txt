@@ -141,9 +141,9 @@ characters = {
 			idea_token = ic_SOV_aleksandr_novikov
 			name = "Aleksandr Novikov"
 			traits = {
-				air_chief_reform_3
+				air_chief_reform_4
 			}
-			cost = 200
+			cost = 100
 		}
 	}
 

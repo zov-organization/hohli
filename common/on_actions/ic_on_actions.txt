@@ -1,0 +1,35 @@
+on_actions = {
+
+	on_startup = {
+
+		effect = {
+
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				add_ideas = {
+					peace_training
+					NoTradeback
+				}
+				add_timed_idea = {
+					idea = DayOne_Efficiency
+					days = 31
+				}
+				army_experience = 10
+				navy_experience = 10
+				air_experience = 10
+			}
+
+			every_country = {
+				limit = {
+					is_playable_country = no
+				}
+				add_ideas = ai_limiter
+			}
+
+		}
+
+	}
+
+}
