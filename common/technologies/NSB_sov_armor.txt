@@ -254,20 +254,7 @@ technologies = {
 
 
 		enable_equipments = {
-			#amphibious_tank_equipment_1
-			# those are here just for tech icon to be big
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
+			empty_tank_for_full_tech_display
 		}
 
 		enable_subunits = {
@@ -622,19 +609,7 @@ technologies = {
 	sov_final_medium_tank_chassis = { # MED_4
 
 		enable_equipments = {
-			# those are here just for tech icon to be big
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
+			empty_tank_for_full_tech_display
 		}
 
 		research_cost = 5
@@ -934,19 +909,7 @@ technologies = {
 	sov_final_heavy_tank_chassis = { # HEAVY_4
 
 		enable_equipments = {
-			# those are here just for tech icon to be big
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
+			empty_tank_for_full_tech_display
 		}
 
 		research_cost = 5.5

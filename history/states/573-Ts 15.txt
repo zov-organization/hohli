@@ -6,7 +6,8 @@ state={
 	
 	state_category = pastoral
 	resources={
-		chromium=23 # was: 32
+		chromium = 23
+		tungsten = 10
 	}
 
 	history={
