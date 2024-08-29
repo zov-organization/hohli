@@ -29,7 +29,3 @@ ic_jap_chi_war_started = {
 		is_owned_by = JAP
 	}
 }
-
-ic_spain_civil_war_over = {
-	
-}

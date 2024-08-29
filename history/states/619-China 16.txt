@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		owner = sik
-		add_core_of = SIK
+		
+		
 		
 		
 		buildings = {

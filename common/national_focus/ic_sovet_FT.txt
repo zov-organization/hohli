@@ -915,9 +915,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_SOV_stavka_organisation
+		id = SOV_stavka_organisation
 
-		icon = GFX_ic_SOV_stavka_organisation
+		icon = GFX_SOV_stavka_organisation
 
 		prerequisite = { focus = SOV_halkin_gol }
 		relative_position_id = SOV_halkin_gol
@@ -1421,12 +1421,6 @@ focus_tree = {
 		y = 2
 		cost = 5
 
-		available = {
-			limit = {
-				ic_spain_civil_war_over = yes
-			}
-		}
-
 		completion_reward = {
 			
 		}
@@ -1467,7 +1461,7 @@ focus_tree = {
 		icon = GFX_SOV_novikov
 
 		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_back_land_destruction }
-		prerequisite = { focus = ic_SOV_stavka_organisation }
+		prerequisite = { focus = SOV_stavka_organisation }
 		relative_position_id = SOV_aviadoka_2
 
 		x = -1

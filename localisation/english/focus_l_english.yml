@@ -2451,7 +2451,7 @@
  SOV_katusha_desc:0 ""
  SOV_kv_1:0 "KV-1"
  SOV_maus_desc:0 ""
- ic_SOV_stavka_organisation:0 "STAVKA organisation"
+ SOV_stavka_organisation:0 "STAVKA organisation"
  SOV_start_reorg_desc:0 ""
  SOV_arty_one:0 "Red God of War"
  SOV_arty_one_desc:0 ""

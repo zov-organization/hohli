@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = arg
+		
 		
 		add_claim_by = BOL
 

@@ -10,7 +10,7 @@ state= {
 	state_category = town
 
 	history={
-		owner = tur
+		 
 	}
 	provinces = {
 		849 922 3879 3893 6895 11842

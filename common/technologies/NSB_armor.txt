@@ -254,11 +254,11 @@ technologies = {
 
 
 		enable_equipments = {
-			empty_tank_for_full_tech_display
+			amphibious_tank_equipment_1
 		}
 
 		enable_subunits = {
-			#amphibious_armor
+			amphibious_armor
 		}
 
 		research_cost = 5

@@ -1,8 +1,4 @@
-﻿﻿@tier1 = 0
-@tier2 = 0
-@tier3 = 0
-
-@experience_gain_low = 0.06
+﻿@experience_gain_low = 0.06
 @experience_gain_medium = 0.09
 @experience_gain_high = 0.12
 @experience_gain_esport = 0.15
@@ -7105,7 +7101,7 @@ leader_traits = {
 	air_warfare_theorist = {
 		sprite = 14
 		air_doctrine_cost_factor = -0.1
-		experience_gain_air = @experience_gain_esports
+		experience_gain_air = @experience_gain_esport
 
 		ai_will_do = {
 			factor = 1
@@ -7161,7 +7157,7 @@ leader_traits = {
 	naval_theorist = {
 		sprite = 14
 		naval_doctrine_cost_factor = -0.1
-		experience_gain_navy = @experience_gain_esports
+		experience_gain_navy = @experience_gain_esport
 
 		ai_will_do = {
 			factor = 1
@@ -7181,7 +7177,6 @@ leader_traits = {
 	grand_fleet_proponent = {
 		sprite = 14
 		cat_fleet_in_being_cost_factor = -0.15
-		experience_gain_navy = @experience_gain_high
 		experience_gain_navy = @experience_gain_high
 
 		ai_will_do = {
@@ -9420,7 +9415,7 @@ leader_traits = {
 
 	air_chief_old_guard = {
 		sprite = 1
-		experience_gain_air = @@air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
 		max_command_power = 10
 	}
 

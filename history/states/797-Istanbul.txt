@@ -13,7 +13,7 @@ state={
 	state_category = city
 
 	history={
-		owner = tur
+		
 	}
 
 	local_supplies=0.0 

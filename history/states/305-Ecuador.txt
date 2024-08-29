@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = ecu
-		add_core_of = ECU
+		
+		
 
 		buildings = {
 			infrastructure = 2

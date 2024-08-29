@@ -3,8 +3,8 @@ state={
 	name="STATE_617"
 
 	history={
-		owner = sik
-		add_core_of = SIK
+		
+		
 		
 		
 		buildings = {

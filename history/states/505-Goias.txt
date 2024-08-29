@@ -13,8 +13,7 @@ state = {
 
 	history = {
 
-		owner = 
-		add_core_of = BRA
+				
 
 		buildings = {
 			infrastructure = 1
