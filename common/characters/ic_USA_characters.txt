@@ -1,0 +1,152 @@
+characters = {   
+    ic_USA_courtney_hodges = {
+		name = "Courtney Hodges"
+		portraits={
+			army={
+				small="GFX_idea_courtney_hodges"
+			}
+			army={
+				large=GFX_portrait_USA_courtney_hodges
+			}
+        } 
+        advisor={
+			slot = high_command
+			idea_token = courtney_hodges
+			ledger = army
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				USA_marines
+			}
+			cost = 100
+		}  
+	}
+
+    ic_USA_ernest_king={
+		name = USA_ernest_king
+		portraits={
+			navy={
+				small="GFX_idea_ernest_king"
+			}
+			army={
+				large=GFX_portrait_USA_ernest_king
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ernest_king
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				The_old_sailor
+			}
+			cost = 150			
+		}
+    }
+
+    ic_USA_thomas_kinkaid={
+		name = "Thomas Kinkaind"
+		portraits={
+			army={
+				small="GFX_idea_thomas_kinkaid"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = thomas_kinkaid
+			ledger = army
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				navy_amphibious_assault
+			}
+			cost = 150
+		}
+    }
+    ic_USA_chester_w_nimitz={
+		name=USA_chester_w_nimitz
+		portraits={
+			army={
+				large=GFX_portrait_USA_chester_w_nimitz
+			}
+			army={
+				small="GFX_idea_chester_nimitz"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = chester_nimitz
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				navy_chief_commerce_raiding
+			}
+			cost = 100
+		}
+	}
+    ic_USA_henry_arnold={
+		name=USA_henry_arnold
+		portraits={
+			army={
+				small="GFX_idea_henry_arnold"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = henry_arnold
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				air_chief_reform_3
+			}
+			cost = 150
+		}
+	}
+    ic_USA_george_kenney={
+		name=USA_george_kenney
+		portraits={
+			army={
+				small="GFX_idea_george_kenney"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = george_kenney
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				air_strategic_bombing_1
+			}
+			cost = 100
+		}
+	}
+    ic_USA_robert_oppenheimer={
+		name=USA_robert_oppenheimer
+		portraits={
+			army={
+				small="GFX_idea_robert_oppenheimer"
+			}
+		}
+		advisor={
+			cost = 125
+			slot = theorist
+			idea_token = robert_oppenheimer
+			ledger = army
+			allowed = {
+				original_tag = USA
+			}
+			research_bonus = {
+				nuclear = 0.250
+			}
+			traits = {
+				A_nuclear_scientist_but_crazy
+			}
+		}
+	}
+}
