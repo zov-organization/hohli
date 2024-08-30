@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_planned_economy"
+		texturefile = "gfx/interface/ideas/idea_FIN_finnish_federation_of_trade_unions_heavy.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"

@@ -71,8 +71,8 @@ recruit_character = ic_SOV_vasily_chuykov
 activate_advisor = ic_SOV_genrikh_yagoda
 
 set_popularities = {
-	democratic = 40
-	fascism = 0
+	democratic = 20
+	fascism = 20
 	communism = 60
 }
 create_faction = Comintern
@@ -92,7 +92,7 @@ add_dynamic_modifier = {
 
 add_ideas = {
 	partial_economic_mobilisation
-	closed_economy
+	planned_economy
 	limited_conscription
 
 	ic_SOV_trotskyite_plot
@@ -218,6 +218,6 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_0
-	amount = 500
+	amount = 2500
 	producer = SOV
 }
