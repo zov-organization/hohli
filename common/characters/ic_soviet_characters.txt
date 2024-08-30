@@ -31,7 +31,7 @@ characters = {
 			slot = navy_chief
 			idea_token = ic_SOV_nikolay_kuznetsov
 			traits = {
-				navy_chief_reform_2
+				navy_chief_kuznetsov
 			}
 			cost = 10
 		}

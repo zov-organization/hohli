@@ -71,8 +71,8 @@ recruit_character = ic_SOV_vasily_chuykov
 activate_advisor = ic_SOV_genrikh_yagoda
 
 set_popularities = {
-	democratic = 40
-	fascism = 0
+	democratic = 20
+	fascism = 20
 	communism = 60
 }
 create_faction = Comintern
