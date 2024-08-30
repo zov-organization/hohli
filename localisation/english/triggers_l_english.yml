@@ -942,8 +942,8 @@
 
 
  
-  ic_ger_spy_planes_caught_tt:0 "§YGerman spy planes detected§!"
-  ic_ger_spy_planes_caught_tt_NOT:0 "§YGerman spy planes are not detected§!"
+  ic_ger_spy_planes_caught_tt:0 "§YGERMAN SPY PLANES DETECTED§!\n "
+  ic_ger_spy_planes_caught_tt_NOT:0 "§YGERMAN SPY ARE NOT PLANES DETECTED§!"
 
-  ic_jap_chi_war_started_tt:0 "§YJapan started invasion of China§!"
-  ic_jap_chi_war_started_tt_NOT:0 "§YJapan has NOT started invasion of China yet§!"
+  ic_jap_chi_war_started_tt:0 "§YJAPAN STARTED INVASION OF CHINA§!"
+  ic_jap_chi_war_started_tt_NOT:0 "§YJAPAN HAS NOT STARTED INVASION OF CHINA YET§!"

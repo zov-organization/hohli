@@ -6821,11 +6821,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SOV_leader_of_the_party_and_the_people.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_SOV_kill_trotski_shine"
-		texturefile = "gfx/interface/goals/focus_SOV_the_permanent_revolution.dds"
+		name = "GFX_SOV_propaganda_shine"
+		texturefile = "gfx/interface/goals/focus_SOV_leader_of_the_party_and_the_people.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_SOV_the_permanent_revolution.dds"
+			animationmaskfile = "gfx/interface/goals/focus_SOV_leader_of_the_party_and_the_people.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6837,7 +6837,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_SOV_the_permanent_revolution.dds"
+			animationmaskfile = "gfx/interface/goals/focus_SOV_leader_of_the_party_and_the_people.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
