@@ -921,5 +921,4 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 }
