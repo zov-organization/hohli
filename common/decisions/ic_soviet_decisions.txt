@@ -1,7 +1,7 @@
-SOV_forts = {
+SOV_forts_category = {
 
 	SOV_forts_krasnaya_gorka = {
-        # icon = 
+        icon = GFX_decision_generic_fortification
 		visible = {
 			has_completed_focus = SOV_navy_one
 		}
@@ -55,7 +55,7 @@ SOV_forts = {
         }
     }
 	SOV_forts_maxim_gorki = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_navy_one
 		}
@@ -92,7 +92,7 @@ SOV_forts = {
     }
 
 	SOV_forts_vitebsk_ukrep_rayon = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_forts
 		}
@@ -168,7 +168,7 @@ SOV_forts = {
     }
 
 	SOV_forts_kiev_ukrep_rayon = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_forts
 		}
@@ -217,7 +217,7 @@ SOV_forts = {
     }
 
 	SOV_forts_mojaisk_line_first = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_forts
 		}
@@ -324,7 +324,7 @@ SOV_forts = {
     }
 
 	SOV_forts_mojaisk_line_second = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_forts
 		}
@@ -437,7 +437,7 @@ SOV_forts = {
     }
 
 	SOV_forts_mojaisk_line_third = {
-        # icon = 
+        icon = GFX_decision_generic_fortification 
 		visible = {
 			has_completed_focus = SOV_forts
 		}
@@ -526,5 +526,53 @@ SOV_forts = {
 				}
 			}
 		}
+    }
+}
+
+SOV_accelerate_industry = {
+	SOV_accelerate_industry_consumer_goods = {
+        icon = GFX_decision_generic_merge_plant_materiel
+		cost = 50
+        days_remove = 90
+        modifier = {}
+        remove_effect = {
+            add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.005	tooltip = SOV_accelerate_industry_consumer_goods_tt }
+        }
+    }
+	SOV_accelerate_industry_retention = {
+        icon = GFX_decision_generic_merge_plant_materiel
+		cost = 50
+        days_remove = 90
+        modifier = {}
+        remove_effect = {
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.10	tooltip = SOV_accelerate_industry_retention_tt }
+        }
+    }
+	SOV_accelerate_industry_cap = {
+        icon = GFX_decision_generic_merge_plant_materiel
+		cost = 50
+        days_remove = 90
+        modifier = {}
+        remove_effect = {
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.03	tooltip = SOV_accelerate_industry_cap_tt }
+        }
+    }
+	SOV_accelerate_industry_growth = {
+        icon = GFX_decision_generic_merge_plant_materiel
+		cost = 50
+        days_remove = 90
+        modifier = {}
+        remove_effect = {
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.08	tooltip = SOV_accelerate_industry_growth_tt }
+        }
+    }
+	SOV_accelerate_industry_base = {
+        icon = GFX_decision_generic_merge_plant_materiel
+		cost = 50
+        days_remove = 90
+        modifier = {}
+        remove_effect = {
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.05	tooltip = SOV_accelerate_industry_base_tt }
+        }
     }
 }

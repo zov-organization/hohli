@@ -28,7 +28,7 @@ sub_units = {
 			light_tank_chassis = 60
 		}
 
-		manpower = 500
+		manpower = 150
 		max_organisation = 10
 		max_strength = 2
 		default_morale = 0.3

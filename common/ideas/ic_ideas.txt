@@ -8,7 +8,7 @@ ideas = {
 				has_war = yes
 			}
 			removal_cost = -1
-			picture = generic_infantry_bonus
+			picture = generic_reserve_divisions
 			modifier = {
 				training_time_army_factor = -0.70
 				#training_time_factor = -0.70
@@ -35,7 +35,7 @@ ideas = {
 		}
 		DayOne_Efficiency = {
 			allowed = {  }
-			picture = generic_production_bonus
+			picture = generic_central_management
 			removal_cost = -1
 			modifier = {
 				production_factory_start_efficiency_factor = 0.40
