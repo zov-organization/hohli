@@ -1,0 +1,33 @@
+scripted_gui = {	
+
+	Super_Event_window = {
+		context_type = player_context
+		window_name = "Super_Event_window"
+
+		visible = {
+			check_variable={ super_event>0 }
+			NOT={ has_country_flag= super_events_disabled }
+		}
+		properties = {
+			super_event_image = {
+				image = "[THIS.GetSuperEventPicture]"
+			}
+		}
+	}
+
+	Super_Event = { 
+		context_type = player_context
+		window_name = "Super_Event"
+
+		visible = {
+			check_variable={ super_event>0 }
+			NOT={ has_country_flag= super_events_disabled }
+		}
+
+		effects = {
+			Option_click = {
+				clear_variable = super_event
+			}
+		}
+	}
+}

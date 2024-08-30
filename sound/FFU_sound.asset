@@ -1,0 +1,5 @@
+sound = {
+	name = "ic_great_patriotic_war_starts_sound"
+	file = "ffu_custom/ic_great_patriotic_war_starts_sound.wav"
+	always_load = no
+}
