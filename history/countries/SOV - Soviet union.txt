@@ -210,12 +210,6 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 1488
-	producer = SOV
-}
-
-add_equipment_to_stockpile = {
 	type = small_plane_airframe_0
 	amount = 2500
 	producer = SOV
