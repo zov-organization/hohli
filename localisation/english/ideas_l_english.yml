@@ -2713,6 +2713,8 @@
   DayOne_Efficiency:0 "Day 1 Efficiency"
   NoTradeback:0 "No Prewar Tradebacks"
 
+ planned_economy:0 "Planned Economy"
+ planned_economy_TT:0 ""
  ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"

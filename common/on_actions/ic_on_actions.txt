@@ -25,7 +25,10 @@ on_actions = {
 				limit = {
 					is_playable_country = no
 				}
-				add_ideas = ai_limiter
+				add_ideas = {
+					ai_limiter
+					NoTradeback
+				}
 			}
 
 		}
