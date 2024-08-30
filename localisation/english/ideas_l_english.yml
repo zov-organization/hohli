@@ -2693,7 +2693,7 @@
  ROM_white_squadron_desc:0 "The White squadron is a service of air ambulances piloted exclusively by women. Merely the notion that rescue might be close at hand keeps our soldiers in high spirits."
  MAN_hoankyoku_idea:0 "Hoankyoku"
  MAN_hoankyoku_idea_desc:0 "A secretive organization dedicated to dealing with undesired elements in society."
- AST_central_bureau_idea:0 "Central Bureau"
+ AST_central_bureau_idea:0 "Central Bureau"	
  AST_central_bureau_idea_desc:0 "A joint intelligence taskforce established and coordinated with the USA, which aims to counter the efforts of our enemies in the pacific theater."
  SWE_historical_trade_with_Germany_dummy_instant_desc: "(§YSweden§!) Target country trade cost: §G-20%§!)\n(§YSweden§!) Trade Opinion modifier: §G+50§!)\n§YOur domestic steel is of low grade and need high quality steel mixed in to be fully effective. Importing small amounts of foreign steel will drastically increase the resource output of our domestic steel production§!\n"
  ROM_national_christian_party_in_power:0 "National Christian Party"
@@ -2713,7 +2713,7 @@
   DayOne_Efficiency:0 "Day 1 Efficiency"
   NoTradeback:0 "No Prewar Tradebacks"
 
- ic_SOV_five_year_plan:0 "Five Year Plan"
+ ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
  SOV_red_airforces:0 "Red Airforces"

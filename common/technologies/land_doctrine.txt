@@ -17,6 +17,10 @@ technologies = {
 		category_all_armor = {
 			breakthrough = 0.20
 		}
+
+		category_support_tanks = {
+			breakthrough = 0.20
+		}
 		
 		planning_speed = 0.5
 		army_speed_factor = 0.10

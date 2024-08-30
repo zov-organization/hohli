@@ -21,6 +21,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_amphibious_tanks
+			category_support_tanks
 		}
 
 
@@ -29,7 +30,7 @@ sub_units = {
 		need = {
 			light_tank_amphibious_chassis = 50
 		}
-		manpower = 500
+		manpower = 150
 		max_organisation = 10
 		default_morale = 0.3
 		training_time = 180
@@ -89,6 +90,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_amphibious_tanks
+			category_support_tanks
 		}
 
 

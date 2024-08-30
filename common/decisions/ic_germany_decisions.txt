@@ -1,0 +1,70 @@
+GER_prep_for_barb_category = {
+
+    GER_send_scout_planes = {
+        icon = GFX_decision_SWE_set_air_budget
+		visible = {
+			#has_completed_focus = SOV_navy_one
+		}
+        fire_only_once = yes 
+        
+        complete_effect = {
+            activate_mission = GER_send_scout_planes_mission
+        }
+    }
+
+	GER_send_scout_planes_mission = {
+        icon = GFX_decision_SWE_set_air_budget
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+
+		days_mission_timeout = 120
+        complete_effect = {}
+        timeout_effect = { }
+    }
+
+    GER_prep_1 = {
+        icon = GFX_decision_SWE_set_air_budget
+		visible = {
+			has_active_mission = GER_send_scout_planes_mission
+		}
+        fire_only_once = yes 
+        
+        complete_effect = {
+            
+        }
+    }
+    GER_prep_2 = {
+        icon = GFX_decision_SWE_set_air_budget
+		visible = {
+			has_active_mission = GER_send_scout_planes_mission
+		}
+        fire_only_once = yes 
+        
+        complete_effect = {
+            
+        }
+    }
+    GER_prep_3 = {
+        icon = GFX_decision_SWE_set_air_budget
+		visible = {
+			has_active_mission = GER_send_scout_planes_mission
+		}
+        fire_only_once = yes 
+        
+        complete_effect = {
+            
+        }
+    }
+}

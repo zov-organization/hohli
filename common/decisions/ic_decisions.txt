@@ -2,7 +2,7 @@ ic_helpful_tips = {
     
     SOV_optimal_building_line = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_operation
 
         available = { }
 
@@ -95,7 +95,7 @@ ic_helpful_tips = {
 
     SOV_ukrain_promkompleks_tip = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_operation
 
         available = { }
 
@@ -162,7 +162,7 @@ ic_helpful_tips = {
 
     SOV_russian_storehouse_tip = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_operation
 
         available = { }
 
@@ -227,7 +227,7 @@ ic_helpful_tips = {
 
     SOV_debug_cze = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_wreckers
 
         available = { }
 
@@ -251,7 +251,7 @@ ic_helpful_tips = {
 
     SOV_debug_pol = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_wreckers
 
         available = { }
 
@@ -303,7 +303,7 @@ ic_pp_waste = {
 
     invest_in_civ_industries = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_factory
 
         available = { }
 
@@ -327,7 +327,7 @@ ic_pp_waste = {
 	
     invest_in_arms_factory = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_factory
 
         available = {
        
@@ -351,15 +351,15 @@ ic_pp_waste = {
     }
 	
     invest_in_shipyards = {
-	    icon = GFX_decision_generic_construction
+	    icon = GFX_decision_generic_merge_plant_ship
 	    available = { }
 	    fire_only_once = yes
 	    days_re_enable = 180
-	    cost=25
-	    complete_effect={
-		    add_timed_idea={
-			    idea=shipyard_investment
-			    days=180
+	    cost = 25
+	    complete_effect = {
+		    add_timed_idea = {
+			    idea = shipyard_investment
+			    days = 180
 		    }
 	    }
     }
@@ -471,7 +471,7 @@ ic_pp_waste = {
     }
 
 	supply_buildup = {
-		icon = generic_construction
+		icon = GFX_decision_generic_train
 		available = {
 			
 		}
@@ -496,7 +496,7 @@ ic_pp_waste = {
 		}
 	}
 	supply_buildup_cancel = {
-		icon = generic_construction
+		icon = GFX_decision_generic_train
 		available = {
 		}
 		visible = {

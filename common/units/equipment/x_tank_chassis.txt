@@ -1,6 +1,54 @@
 # This file must be evaluated after the file(s) defining the archetypes being duplicated.
 # The equipment attributes alias, type, variant_name, and derived_variant_name are not duplicated.
 
+# SEARCH TAGS:
+#	LIGHT_1
+#
+#	LIGHT_2
+#	2_LIGHT_aa
+#	2_LIGHT_art
+#	2_LIGHT_td
+#
+#	LIGHT_3
+#	3_LIGHT_aa
+#	3_LIGHT_art
+#	3_LIGHT_td
+#	-------
+#	MED_1
+#	1_MED_aa
+#	1_MED_art
+#	1_MED_td
+#
+#	MED_2
+#	2_MED_aa
+#	2_MED_art
+#	2_MED_td
+#
+#	MED_3
+#	3_MED_aa
+#	3_MED_art
+#	3_MED_td
+#
+#	MED_4
+#	-------
+#	HEAVY_1
+#
+#	HEAVY_2
+#	2_HEAVY_art
+#	2_HEAVY_td
+#
+#	HEAVY_3
+#	3_HEAVY_art
+#	3_HEAVY_td
+#
+#	HEAVY_4
+#	----------
+#	PROPELLER_1
+#	PROPELLER_2
+#	----------
+#	Maus
+#	----
+
 duplicate_archetypes = {
 
 	# light_tank
@@ -218,22 +266,24 @@ equipments = {
 		#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.8
+		hardness = 0.6
 
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 18
+		defense = 0.5
+		breakthrough = 12
 		armor_value = 5
 
 		#Offensive Abilities
-		soft_attack = 8
-		hard_attack = 4
-		ap_attack = 15
+		soft_attack = 20
+		hard_attack = 10
+		ap_attack = 10
 		air_attack = 0
 
 		build_cost_ic = 4 #gw tanks are clunky
 		fuel_consumption = 1.0
 	}
 
+	#	LIGHT_1
 	light_tank_equipment_1 = {
 		year = 1934
 		
@@ -255,7 +305,7 @@ equipments = {
 		armor_value = 10
 
 		#Offensive Abilities
-		soft_attack = 27
+		soft_attack = 23
 		hard_attack = 15
 		ap_attack = 15
 		air_attack = 0
@@ -272,6 +322,7 @@ equipments = {
 		fuel_consumption = 2.4
 	}
 
+	#	LIGHT_2
 	light_tank_equipment_2 = {
 		year = 1936
 		
@@ -292,8 +343,8 @@ equipments = {
 		armor_value = 12
 
 		#Offensive Abilities
-		soft_attack = 39
-		hard_attack = 27
+		soft_attack = 27
+		hard_attack = 20
 		ap_attack = 30
 		air_attack = 0
 
@@ -305,6 +356,7 @@ equipments = {
 		}
 	}
 
+	#	LIGHT_3
 	light_tank_equipment_3 = {
 		year = 1941
 	
@@ -381,6 +433,7 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
+	#	2_LIGHT_art
 	light_tank_artillery_equipment_2 = {
 		year = 1936
 
@@ -419,6 +472,7 @@ equipments = {
 		}
 	}
 
+	#	3_LIGHT_art
 	light_tank_artillery_equipment_3 = {
 		year = 1941
 
@@ -493,6 +547,7 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
+	#	2_LIGHT_td
 	light_tank_destroyer_equipment_2 = {
 		year = 1936
 
@@ -531,6 +586,7 @@ equipments = {
 		}
 	}
 
+	#	3_LIGHT_td
 	light_tank_destroyer_equipment_3 = {
 		year = 1941
 
@@ -605,6 +661,7 @@ equipments = {
 		fuel_consumption = 0.6
 	}
 
+	#	2_LIGHT_aa
 	light_tank_aa_equipment_2 = {
 		year = 1936
 
@@ -642,6 +699,7 @@ equipments = {
 		}
 	}
 
+	#	3_LIGHT_aa
 	light_tank_aa_equipment_3 = {
 		year = 1941
 		reliability = 0.8
@@ -676,6 +734,7 @@ equipments = {
 		}
 	}
 
+	#	MED_1
 	medium_tank_equipment_1 = {
 		year = 1939
 
@@ -718,7 +777,7 @@ equipments = {
 		fuel_consumption = 3.6
 	}
 
-	# 1941
+	#	MED_2
 	medium_tank_equipment_2 = {
 		year = 1941
 
@@ -753,7 +812,7 @@ equipments = {
 		}	
 	}
 
-	# 1943
+	#	MED_3
 	medium_tank_equipment_3 = {
 		year = 1943
 
@@ -788,6 +847,7 @@ equipments = {
 		}	
 	}
 
+	#	1_MED_art
 	medium_tank_artillery_equipment_1 = {
 		year = 1939
 
@@ -830,6 +890,7 @@ equipments = {
 		fuel_consumption = 1.8
 	}
 
+	#	2_MED_art
 	medium_tank_artillery_equipment_2 = {
 		year = 1941
 
@@ -867,6 +928,7 @@ equipments = {
 		}
 	}
 
+	#	3_MED_art
 	medium_tank_artillery_equipment_3 = {
 		year = 1943
 
@@ -904,6 +966,7 @@ equipments = {
 		}
 	}
 
+	#	1_MED_td
 	medium_tank_destroyer_equipment_1 = {
 		year = 1939
 
@@ -945,7 +1008,7 @@ equipments = {
 		fuel_consumption = 1.8
 	}
 
-	# 1941
+	#	2_MED_td
 	medium_tank_destroyer_equipment_2 = {
 		year = 1941
 
@@ -983,7 +1046,7 @@ equipments = {
 		}		
 	}
 
-	# 1943
+	#	3_MED_td
 	medium_tank_destroyer_equipment_3 = {
 		year = 1943
 
@@ -1021,6 +1084,7 @@ equipments = {
 		}
 	}
 
+	#	1_MED_aa
 	medium_tank_aa_equipment_1 = {
 		year = 1939
 
@@ -1063,6 +1127,7 @@ equipments = {
 		fuel_consumption = 0.9
 	}
 
+	#	2_MED_aa
 	medium_tank_aa_equipment_2 = {
 		year = 1941
 
@@ -1099,6 +1164,7 @@ equipments = {
 		}
 	}
 
+	#	3_MED_aa
 	medium_tank_aa_equipment_3 = {
 		year = 1943
 
@@ -1137,7 +1203,7 @@ equipments = {
 		}		
 	}
 
-	# 1934
+	#	HEAVY_1
 	heavy_tank_equipment_1 = {
 		year = 1934
 
@@ -1182,7 +1248,7 @@ equipments = {
 		}
 	}
 
-	# 1941
+	#	HEAVY_2
 	heavy_tank_equipment_2 = {
 		year = 1941
 
@@ -1215,7 +1281,7 @@ equipments = {
 		}
 	}
 
-	# 1943
+	#	HEAVY_3
 	heavy_tank_equipment_3 = {
 		year = 1943
 
@@ -1287,6 +1353,7 @@ equipments = {
 		fuel_consumption = 2.2
 	}
 
+	#	2_HEAVY_art
 	heavy_tank_artillery_equipment_2 = {
 		year = 1941
 
@@ -1324,6 +1391,7 @@ equipments = {
 		}
 	}
 
+	#	3_HEAVY_art
 	heavy_tank_artillery_equipment_3 = {
 		year = 1943
 
@@ -1397,6 +1465,7 @@ equipments = {
 		fuel_consumption = 2.2
 	}
 
+	#	2_HEAVY_td
 	heavy_tank_destroyer_equipment_2 = {
 		year = 1941
 
@@ -1435,6 +1504,7 @@ equipments = {
 		}
 	}
 
+	#	3_HEAVY_td
 	heavy_tank_destroyer_equipment_3 = {
 		year = 1943
 
@@ -1584,6 +1654,7 @@ equipments = {
 		
 	}
 
+	#	Maus
 	super_heavy_tank_equipment_1 = {
 		year = 1943
 
@@ -1630,6 +1701,7 @@ equipments = {
 		
 	}
 
+	#	PROPELLER_1
 	amphibious_tank_equipment_1 = {
 		year = 1934
 		
@@ -1675,6 +1747,7 @@ equipments = {
 		fuel_consumption = 4
 	}
 
+	#	PROPELLER_2
 	amphibious_tank_equipment_2 = {
 		year = 1939
 		

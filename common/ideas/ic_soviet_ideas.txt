@@ -2,27 +2,6 @@ ideas = {
 
 	country = {
 
-		ic_SOV_five_year_plan = {
-			name = ic_SOV_five_year_plan
-
-			removal_cost = -1
-
-			picture = GFX_idea_ic_SOV_five_year_plan
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				consumer_goods_expected_value = -0.01
-				line_change_production_efficiency_factor = -0.2
-				production_factory_start_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.15
-				production_factory_max_efficiency_factor = -0.05
-			}
-		}
-
 		ic_SOV_trotskyite_plot = {
 			name = ic_SOV_trotskyite_plot
 
@@ -310,7 +289,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.1
-				stability_weekly = 0.005
+				stability_weekly = 0.003
 			}
 		}
 
@@ -327,7 +306,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.1
-				stability_weekly = 0.005
+				stability_weekly = 0.003
 				war_support_weekly = 0.0025
 			}
 		}

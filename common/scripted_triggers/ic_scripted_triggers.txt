@@ -25,7 +25,19 @@ is_playable_country = {
 }
 
 ic_jap_chi_war_started = {
-	608 = {
-		is_owned_by = JAP
+	custom_trigger_tooltip = {
+		tooltip = ic_jap_chi_war_started_tt
+		608 = {
+			is_owned_by = JAP
+		}
+	}
+}
+
+ic_ger_spy_planes_caught = {
+	custom_trigger_tooltip = {
+		tooltip = ic_ger_spy_planes_caught_tt
+		GER = {
+			has_active_mission = GER_send_scout_planes_mission
+		}
 	}
 }
