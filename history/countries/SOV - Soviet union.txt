@@ -71,13 +71,24 @@ recruit_character = ic_SOV_vasily_chuykov
 activate_advisor = ic_SOV_genrikh_yagoda
 
 set_popularities = {
-	democratic = 10.1
+	democratic = 40
 	fascism = 0
-	communism = 89.9
+	communism = 60
 }
 create_faction = Comintern
 add_to_faction = SOV
 
+
+set_variable = { SOV_consumer_goods_expected_value				= -0.01 }
+set_variable = { SOV_line_change_production_efficiency_factor	= -0.2 }
+set_variable = { SOV_production_factory_max_efficiency_factor	= -0.05 }	
+set_variable = { SOV_production_factory_efficiency_gain_factor	= -0.15 }
+set_variable = { SOV_production_factory_start_efficiency_factor	= -0.05 }
+set_variable = { SOV_production_speed_industrial_complex_factor = 0.05 }
+
+add_dynamic_modifier = {
+	modifier = ic_SOV_mass_production
+}
 
 add_ideas = {
 	partial_economic_mobilisation
@@ -85,7 +96,6 @@ add_ideas = {
 	limited_conscription
 
 	ic_SOV_trotskyite_plot
-	ic_SOV_five_year_plan
 
 	SOV_red_airforces
 	SOV_red_army
@@ -148,7 +158,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment
-	amount = 1488
+	amount = 5000
 	producer = SOV
 }
 

@@ -939,3 +939,11 @@
  FRA_SNCAC_formed: "Has reorganized the Aviation Industry"
  DEN_danish_trading_partner_flag: "Is trading with [DEN.GetNameDef]"
  trade_partner_not_at_war_tt: "§Y[ROOT.GetNameWithFlag]§! cannot buy or sell arms to countries at war"
+
+
+ 
+  ic_ger_spy_planes_caught_tt:0 "§YGerman spy planes detected§!"
+  ic_ger_spy_planes_caught_tt_NOT:0 "§YGerman spy planes are not detected§!"
+
+  ic_jap_chi_war_started_tt:0 "§YJapan started invasion of China§!"
+  ic_jap_chi_war_started_tt_NOT:0 "§YJapan has NOT started invasion of China yet§!"

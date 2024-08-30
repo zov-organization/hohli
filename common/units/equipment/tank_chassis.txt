@@ -154,7 +154,7 @@ equipments = {
 
 		lend_lease_cost = 13
 
-		manpower = 2
+		manpower = 0
 
 	}
 
@@ -488,7 +488,7 @@ equipments = {
 
 		lend_lease_cost = 20
 
-		manpower = 2
+		manpower = 0
 
 	}
 
@@ -653,7 +653,7 @@ equipments = {
 
 		lend_lease_cost = 10
 
-		manpower = 2
+		manpower = 0
 
 	}
 

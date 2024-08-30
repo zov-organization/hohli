@@ -278,6 +278,12 @@
   refit_to_destroyer_mass_nor: "Refit Convoys to Destroyers En-mass"
   nor_building_ship: "Currently Converting Ships"
 
+
+
+
+
+  SOV_forts_category:0 "§HSOVIET FORTS§!"
+  SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war, for example fort Krasnaya Gorka near Leningrad was never captured by Germans outlining the front line with the range of its guns; Mojayskaya Defencive Line stopped German panzers advance towards Moscow during fall 1941; However Soviets werent able to build proper fort lines across the whole frontline.§!"
   SOV_forts_krasnaya_gorka:0 "Krasnaya Gorka Forts"
   SOV_forts_maxim_gorki:0 "Maxim Gorki Forts"
   SOV_forts_vitebsk_ukrep_rayon:0 "Vitebskiy UkrepRayon"
@@ -286,15 +292,15 @@
   SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
-  ic_helpful_tips:0 "Helpful Tips"
+  ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
   SOV_ukrain_promkompleks_tip:0 "Show states affected by Ukrain PromKomplect"
   SOV_russian_storehouse_tip:0 "Show states affected by Russian Storehouse"
   SOV_debug_cze:0 "debug thingy for CZE annex"
+  SOV_debug_pol:0 "debug thingy for baltiks, pol and bessarabia"
 
-
-  ic_pp_waste:0 "PP waste section"
-  ic_pp_waste_desc:0 "§gThose decisions will help you to waste infinite PP by impoving your industry§"
+  ic_pp_waste:0 "§HPP WASTE SECTION§!"
+  ic_pp_waste_desc:0 "§gThose decisions will help you to waste infinite PP by impoving your industry§!"
   production_efforts:0 "Production effort"
   industrialization_efforts:0 "Industrialization effort"
   research_bonus_effort:0 "Invest in the research"
@@ -310,3 +316,30 @@
   shipyard_investment:0 "Shipyard Investment"
   supply_buildup_cancel:0 "Cancel Logistical Preparations"
   supply_buildup:0 "Logistical Preparations"
+
+
+  ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §R-5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §R-1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §R-2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §R-1.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
+
+  SOV_accelerate_industry:0 "§OACCELERATE INDUSTRY§!"
+  SOV_accelerate_industry_desc:0 "§gIt is now obvious - Hitler is planning "drang nach osten".\nWe can no longer wait, that's the time for us to mobilize our industry.\nIf Germany wants a war of attrition - they will get it!§!"
+  SOV_accelerate_industry_consumer_goods:0 "Cut civilian needs"
+  SOV_accelerate_industry_retention:0 "Better equipment production"
+  SOV_accelerate_industry_cap:0 "12 hour working day"
+  SOV_accelerate_industry_growth:0 "New tools"
+  SOV_accelerate_industry_base:0 "Large material base"
+
+
+  SOV_accelerate_industry_consumer_goods_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-0.5%§! \n "
+  SOV_accelerate_industry_retention_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §G+10.00%§! \n "
+  SOV_accelerate_industry_cap_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £prod_eff_cap  Production Efficiency Cap: §G+3.00%§! \n "
+  SOV_accelerate_industry_growth_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_growth_texticon  Production Efficiency growth: §G+8.00%§! \n "
+  SOV_accelerate_industry_base_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_base_texticon  Production Efficiency Base: §G+5.00%§! \n "
+
+
+
+
+
+
+  GER_prep_for_barb_category:0 "§OOPERATION §R"BARBAROSSA"§! PREPARATIONS§!"
+  GER_send_scout_planes:0 "Kommando Rowehl (start of preparations)"
+  GER_send_scout_planes_mission:0 "§YOur spy planes are collecting info on USSR§!"

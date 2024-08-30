@@ -2389,6 +2389,8 @@
  SOV_otherwise_we-ll_be_stomped_desc:0 ""
  SOV_we-ll_be_ready:0 "We will be ready!"
  SOV_we-ll_be_ready_desc:0 ""
+ SOV_accelerate_industry_focus:0 "Accelerate industry"
+ SOV_accelerate_industry_focus_desc:0 ""
  SOV_ukrain_prom_compleks:0 "Ukranian PromKompleks"
  SOV_ukrain_prom_compleks_desc:0 ""
  SOV_ukrain_prom_compleks_one:0 "Expand Donbass Coal Production"

@@ -643,6 +643,7 @@ technologies = {
 
 		enable_subunits = {
 			heavy_armor
+			heavy_armor_brigade
 		}
 		
 		#sub_technologies = {

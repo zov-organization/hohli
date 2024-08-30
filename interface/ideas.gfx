@@ -3718,8 +3718,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_ic_SOV_five_year_plan"
-		texturefile = "gfx/interface/ideas/idea_SOV_five_year_plan_second.dds"
+		name = "GFX_idea_ic_SOV_mass_production"
+		texturefile = "gfx/interface/ideas/idea_ic_SOV_mass_production.dds"
 	}
 	
 	spriteType = {

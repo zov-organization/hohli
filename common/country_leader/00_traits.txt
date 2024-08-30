@@ -10674,4 +10674,14 @@ leader_traits = {
 			}
 		}
 	}
+
+	popular_figurehead_kalinin = {
+		sprite = 13
+		stability_factor = 0.20
+		communism_drift = 0.2
+		democratic_drift = -0.2
+		fascism_drift = -0.2
+		neutrality_drift = -0.2
+	}
+
 }
