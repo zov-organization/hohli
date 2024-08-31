@@ -18,16 +18,9 @@ state={
 			6562 5
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 8
 			industrial_complex = 4
 			air_base = 5
-
-		}
-		
-
-		1939.3.14 = {
-			owner = GER
-			controller = GER
 		}
 	}
 

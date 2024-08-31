@@ -1,0 +1,27 @@
+state={
+	id=970
+	name="STATE_970"
+	provinces={
+		519 694 3679 3690 3692 6542 6712 6934 9655 11486 11640 13126 
+	}
+	resources = {
+		aluminium = 8
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			3692 15
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 1
+			air_base = 3
+		}
+	}
+	manpower = 1895634
+	buildings_max_level_factor = 1.000
+	state_category=large_city
+	local_supplies = 0.000
+}
