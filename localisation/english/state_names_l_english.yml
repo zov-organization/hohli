@@ -49,7 +49,7 @@
  STATE_48:0 "Sofia"
  STATE_49:0 "Ankara"
  STATE_50:0 "Württemberg"
- STATE_51:0 "Rhineland"
+ STATE_51:0 "Left Side Rhineland"
  STATE_52:0 "Oberbayern"
  STATE_53:0 "Niederbayern"
  STATE_54:0 "Franken"
@@ -984,6 +984,7 @@
  STATE_966: "Amazon" # impassables
  STATE_967: "Amazon" # impassables
  STATE_968: "Amazon" # impassables
- STATE_969: "Rio Branco"
- 
-
+ STATE_970: "Albstadt"
+ STATE_971: "Kassel"
+ STATE_972: "Right Side Rhineland"
+ STATE_973: "Munich"
