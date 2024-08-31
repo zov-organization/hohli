@@ -5,13 +5,13 @@ set_naval_oob = "ic_GER_1936_fleet"
 set_country_flag = host
 
 
-set_research_slots = 3
+set_research_slots = 4
 navy_experience = 0
 
 set_convoys = 800
 
 set_stability = 0.8
-set_war_support = 0.4
+set_war_support = 0.35
 
 set_politics = {
 	ruling_party = fascism
@@ -20,7 +20,24 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = GER_adolf_hitler
+recruit_character = ic_GER_adolf_hitler
+recruit_character = ic_GER_hjalmar_schacht
+recruit_character = ic_GER_walther_funk
+recruit_character = ic_GER_albert_speer
+recruit_character = ic_GER_joseph_goebbels
+recruit_character = ic_GER_heinrich_himmler
+recruit_character = ic_GER_martin_bormann
+recruit_character = ic_GER_erich_von_manstein
+recruit_character = ic_GER_heinz_guderian
+recruit_character = ic_GER_wolfram_von_richthofen
+recruit_character = ic_GER_ernst_udet
+recruit_character = ic_GER_franz_halder
+recruit_character = ic_GER_karl_donitz
+recruit_character = ic_GER_erich_raeder
+recruit_character = ic_GER_erwin_rommel
+recruit_character = ic_GER_wilhelm_keitel
+recruit_character = ic_GER_ferdinand_schorner
+recruit_character = ic_GER_walter_model
 
 set_popularities = {
 	democratic = 10
@@ -37,7 +54,7 @@ add_ideas = {
 	export_focus
 	limited_conscription
 
-
+	ic_versailles_bond
 }
 
 set_technology = {
@@ -80,7 +97,7 @@ create_equipment_variant = {
 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment
-	amount = 5000
+	amount = 200
 	producer = GER
 }
 
@@ -134,12 +151,12 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_1
-	amount = 500
+	amount = 100
 	producer = GER
 }
 
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
-	amount = 500
+	amount = 200
 	producer = GER
 }

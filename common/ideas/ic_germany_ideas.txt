@@ -1,0 +1,61 @@
+ideas = {
+
+	country = {
+
+		ic_versailles_bond = {
+			name = ic_versailles_bond
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_versailles_bond
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.025
+				production_speed_arms_factory_factor = -0.65
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		ic_mefo_bills = {
+			name = ic_mefo_bills
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_mefo_bills
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.025
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_air_base_factor = 0.25
+			}
+		}
+
+		ic_nation_zombification = {
+			name = ic_nation_zombification
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+			}
+		}
+
+	}
+}

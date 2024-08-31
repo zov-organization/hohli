@@ -19,9 +19,7 @@ focus_tree = {
 		y = 0
 		cost = 5
 
-		available = {
-
-		}
+		available = { }
 
 		completion_reward = {
 			 add_political_power = 150
@@ -1001,6 +999,15 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_red_army }
 		relative_position_id = SOV_the_red_army
 
+		bypass = {
+			if = {
+				AND = {
+					GER = { has_idea = ic_SOV_kama_tank_school }
+					SOV = { has_idea = ic_SOV_kama_tank_school }
+				}
+			}
+		}
+
 		x = 1
 		y = 1
 		cost = 5
@@ -1010,7 +1017,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = { ic_SOV_kama_tank_school }
+			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
+			GER = { add_ideas = { ic_SOV_kama_tank_school } }
 		}
 	}
 

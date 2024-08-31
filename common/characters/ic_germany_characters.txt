@@ -1,0 +1,410 @@
+characters={
+	
+	ic_GER_adolf_hitler={
+		name = GER_adolf_hitler
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { dictator }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	ic_GER_hjalmar_schacht = {
+		name = GER_hjalmar_schacht
+		portraits = {
+			army = {
+				small = "GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_hjalmar_schacht
+			cost = 75
+			available = {
+				has_completed_focus = GER_extra_sponsorship
+			}
+			traits = {
+				captain_of_industry 
+			}
+		}
+	}	
+
+	ic_GER_walther_funk={
+		name=GER_walther_funk
+		portraits={
+			army={
+				small="GFX_idea_walther_funk"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_walther_funk
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				war_industrialist 
+			}
+		}		
+	}
+
+	ic_GER_albert_speer={ 
+		name=GER_albert_speer
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_albert_speer
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				armaments_organizer 
+			}
+		}		
+	}
+
+	ic_GER_joseph_goebbels={
+		name=GER_joseph_goebbels
+		portraits={
+			army={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_joseph_goebbels
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				fascist_demagogue propaganda_expert 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+		}
+	}
+
+	ic_GER_heinrich_himmler={
+		name=GER_heinrich_himmler
+		portraits={
+			army={
+				small="GFX_idea_heinrich_himmler"
+				large=GFX_portrait_GER_heinrich_himmler
+			}
+			civilian = {
+				large=GFX_portrait_GER_heinrich_himmler
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_heinrich_himmler
+			available = {
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+
+	ic_GER_martin_bormann={
+		name=GER_martin_bormann
+		portraits={
+			army={
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_martin_bormann
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	ic_GER_erich_von_manstein={
+		name=GER_erich_von_manstein
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_von_manstein
+				small="GFX_idea_manstein"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ic_GER_erich_von_manstein
+			ledger = army
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist armor_officer trickster trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=5
+		}
+	}
+
+	ic_GER_heinz_guderian={
+		name=GER_heinz_guderian
+		portraits={
+			army={
+				large=GFX_portrait_GER_heinz_guderian
+				small="GFX_idea_heinz_guderian"
+			}
+		}
+		advisor={
+			cost = 200
+			slot = theorist
+			idea_token = ic_GER_heinz_guderian
+			ledger = army
+			traits = {
+				blitzkrieg_theorist
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=6
+		}
+	}
+
+
+	ic_GER_wolfram_von_richthofen={
+		name=GER_wolfram_von_richthofen
+		portraits={
+			army={
+				small="GFX_idea_wolfram_von_richthofen"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ic_GER_wolfram_von_richthofen
+			ledger = air
+			traits = {
+				close_air_support_proponent
+			}
+		}
+	}
+
+	ic_GER_ernst_udet={
+		name=GER_ernst_udet
+		portraits={
+			army={
+				small="GFX_idea_ernst_udet"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ic_GER_ernst_udet
+			ledger = air
+			traits = {
+				dive_bomber
+			}
+		}
+	}
+
+	ic_GER_franz_halder={
+		name=GER_franz_halder
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_GER_franz_halder
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_GER_karl_donitz={
+		name=GER_karl_donitz
+		portraits={
+			army={
+				large=GFX_portrait_GER_karl_donitz
+				small=GFX_portrait_GER_karl_donitz_small
+			}
+			army={
+				small="GFX_idea_donitz"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_GER_karl_donitz
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 50
+		}
+		
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=26
+		}
+	}
+
+	ic_GER_erich_raeder={
+		name=GER_erich_raeder
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_GER_erich_raeder
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 50
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+	ic_GER_erwin_rommel = {
+		name=GER_erwin_rommel
+		portraits={
+			army={
+				large=GFX_portrait_GER_erwin_rommel
+				small="GFX_idea_erwin_rommel"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_GER_erwin_rommel
+			ledger = army
+			traits = {
+				army_armored_3
+			}
+			cost = 100
+		}
+		
+		corps_commander={
+			traits={ trait_reckless media_personality armor_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=4
+		}
+	}
+
+	ic_GER_ferdinand_schorner={
+		name=GER_ferdinand_schorner
+		portraits={
+			army={
+				small="GFX_idea_ferdinand_schorner"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_GER_ferdinand_schorner
+			ledger = army
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_GER_wilhelm_keitel={
+		name=GER_wilhelm_keitel
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_GER_wilhelm_keitel
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+		}		
+	}
+
+	ic_GER_walter_model={
+		name=GER_walter_model
+		portraits={
+			army={
+				large=GFX_portrait_GER_walter_model
+				small=GFX_portrait_GER_walter_model_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_GER_walter_model
+			ledger = army
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=10
+		}
+	}
+
+}
