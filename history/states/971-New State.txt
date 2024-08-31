@@ -1,0 +1,26 @@
+state={
+	id=971
+	name="STATE_971"
+	provinces={
+		564 3397 6549 9524 11445 11533 
+	}
+
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			564 5
+		}
+	}
+
+	manpower = 1899117
+	buildings_max_level_factor = 1
+	state_category=large_city
+	local_supplies = 0
+}
