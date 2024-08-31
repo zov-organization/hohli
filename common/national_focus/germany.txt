@@ -422,7 +422,7 @@
 
 	focus = {
 		id = GER_focke_wulf 
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_focke_wulf
 
 		prerequisite = { focus = GER_luftwaffe }
 		relative_position_id = GER_luftwaffe
@@ -443,7 +443,7 @@
 
 	focus = {
 		id = GER_bf_109_improvements
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_bf_109_improvements
 
 		prerequisite = { focus = GER_focke_wulf }
 		relative_position_id = GER_focke_wulf
@@ -495,7 +495,7 @@
 
 	focus = {
 		id = GER_subs
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_subs
 
 		prerequisite = { focus = GER_kriegsmarine }
 		relative_position_id = GER_kriegsmarine
@@ -510,7 +510,7 @@
 
 	focus = {
 		id = GER_heavy_ships
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_navy_battleship
 
 		prerequisite = { focus = GER_kriegsmarine }
 		relative_position_id = GER_kriegsmarine
@@ -658,7 +658,7 @@
 
 	focus = {
 		id = GER_army_expansion_two
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_army_expansion_two
 
 		prerequisite = { focus = GER_army_expansion }
 		relative_position_id = GER_army_expansion
@@ -792,7 +792,7 @@
 
 	focus = {
 		id = GER_expand_lebensraum
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_expand_lebensraum
 		
 		prerequisite = { focus = GER_bf_109_improvements }
 		prerequisite = { focus = GER_general_mobilization }
