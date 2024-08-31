@@ -15,7 +15,7 @@
 
 	focus = {
 		id = GER_initial_focus
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_initial_focus
 
 		prerequisite = {  }
 		relative_position_id = no
@@ -32,7 +32,7 @@
 
 	focus = {
 		id = GER_versailles_break_down
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_versailles_break_down
 
 		prerequisite = { focus = GER_initial_focus }
 		relative_position_id = GER_initial_focus
@@ -47,7 +47,7 @@
 
 	focus = {
 		id = GER_nation_zombification
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_nation_zombification
 
 		prerequisite = { focus = GER_initial_focus }
 		relative_position_id = GER_initial_focus
@@ -62,7 +62,7 @@
 
 	focus = {
 		id = GER_get_mefo_bills
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_get_mefo_bills
 
 		prerequisite = { focus = GER_initial_focus }
 		relative_position_id = GER_nation_zombification
@@ -77,7 +77,7 @@
 
 	focus = {
 		id = GER_deal_with_krupp
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_deal_with_krupp
 
 		prerequisite = { focus = GER_initial_focus }
 		relative_position_id = GER_nation_zombification
@@ -92,7 +92,7 @@
 
 	focus = {
 		id = GER_extra_sponsorship
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_extra_sponsorship
 
 		prerequisite = { focus = GER_deal_with_krupp }
 		relative_position_id = GER_deal_with_krupp
@@ -123,7 +123,7 @@
 
 	focus = {
 		id = GER_all_for_the_reich
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_all_for_the_reich
 
 		prerequisite = { focus = GER_nation_zombification focus = GER_deal_with_krupp focus = GER_get_mefo_bills }
 		relative_position_id = GER_nation_zombification
@@ -161,7 +161,7 @@
 
 	focus = {
 		id = GER_ic_autobahn
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_ic_autobahn
 
 		prerequisite = { focus = GER_all_for_the_reich }
 		relative_position_id = GER_deal_with_krupp
@@ -173,37 +173,40 @@
 			64 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 			}
 			59 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 			}
 			60 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 			}
 			54 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 6
+					level = 4
 					instant_build = yes
 				}
+			}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 6
 			}
 		}
 	}
 
 	focus = {
 		id = GER_factories_one
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_factories_one
 		
 		prerequisite = { focus = GER_ic_autobahn }
 		relative_position_id = GER_ic_autobahn
@@ -225,7 +228,7 @@
 
 	focus = {
 		id = GER_old_german_working_culture
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_workers
 		
 		prerequisite = { focus = GER_factories_one }
 		relative_position_id = GER_factories_one
@@ -247,7 +250,7 @@
 
 	focus = {
 		id = GER_factories_two
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_factories_two
 
 		prerequisite = { focus = GER_ic_autobahn }
 		prerequisite = { focus = GER_extra_sponsorship }
@@ -278,7 +281,7 @@
 
 	focus = {
 		id = GER_rubber
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_stockpile_fuel
 
 		prerequisite = { focus = GER_ic_autobahn }
 		relative_position_id = GER_ic_autobahn
@@ -298,12 +301,44 @@
 				uses = 4
 				category = synth_resources
 			}
+			51 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			972 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			55 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			973 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = GER_general_mobilization
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_general_mobilization
 
 		prerequisite = { focus = GER_factories_one }
 		prerequisite = { focus = GER_rubber }
@@ -334,7 +369,7 @@
 
 	focus = {
 		id = GER_luftwaffe
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_luftwaffe
 
 		prerequisite = { focus = GER_versailles_break_down }
 		relative_position_id = GER_versailles_break_down
@@ -357,7 +392,7 @@
 
 	focus = {
 		id = GER_ju_87
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_ju_87
 
 		prerequisite = { focus = GER_luftwaffe }
 		relative_position_id = GER_luftwaffe
@@ -372,7 +407,7 @@
 
 	focus = {
 		id = GER_ural_bomber
-		icon = GFX_goal_generic_construction
+		icon = GFX_SOV_back_land_destruction
 
 		prerequisite = { focus = GER_ju_87 }
 		relative_position_id = GER_ju_87
@@ -424,7 +459,7 @@
 
 	focus = {
 		id = GER_wehrmacht
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_wehrmacht
 
 		prerequisite = { focus = GER_versailles_break_down }
 		relative_position_id = GER_luftwaffe
@@ -445,7 +480,7 @@
 
 	focus = {
 		id = GER_kriegsmarine
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_kriegsmarine
 
 		prerequisite = { focus = GER_versailles_break_down }
 		relative_position_id = GER_luftwaffe
@@ -490,7 +525,7 @@
 
 	focus = {
 		id = GER_sov_schools
-		icon = GFX_goal_generic_construction
+		icon = GFX_SOV_tank_one
 
 		prerequisite = { focus = GER_wehrmacht }
 		prerequisite = { focus = GER_luftwaffe }
@@ -520,7 +555,7 @@
 
 	focus = {
 		id = GER_blumen_kriege
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_blumen_kriege
 
 		prerequisite = { focus = GER_initial_focus }
 		prerequisite = { focus = GER_wehrmacht }
@@ -536,7 +571,7 @@
 
 	focus = {
 		id = GER_army_expansion
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_ger_oppose_hitler
 
 		prerequisite = { focus = GER_blumen_kriege }
 		prerequisite = { focus = GER_sov_schools }
@@ -558,7 +593,7 @@
 
 	focus = {
 		id = GER_panzerwaffe
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_panzerwaffe
 
 		prerequisite = { focus = GER_sov_schools }
 		relative_position_id = GER_sov_schools
@@ -580,7 +615,7 @@
 
 	focus = {
 		id = GER_sturmgeshutz
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_sturmgeshutz
 
 		prerequisite = { focus = GER_panzerwaffe }
 		relative_position_id = GER_panzerwaffe
@@ -602,7 +637,7 @@
 
 	focus = {
 		id = GER_tiger
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_tiger
 
 		prerequisite = { focus = GER_panzerwaffe }
 		relative_position_id = GER_panzerwaffe
@@ -644,13 +679,12 @@
 
 	focus = {
 		id = GER_cheap_civilian_radios
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_cheap_civilian_radios
 
 		prerequisite = { focus = GER_all_for_the_reich }
-		prerequisite = { focus = GER_blumen_kriege }
-		relative_position_id = GER_blumen_kriege
+		relative_position_id = GER_all_for_the_reich
 
-		x = 3
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -660,13 +694,13 @@
 
 	focus = {
 		id = GER_proclaim_german_supremacy
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_proclaim_german_supremacy
 
 		prerequisite = { focus = GER_cheap_civilian_radios }
 		relative_position_id = GER_cheap_civilian_radios
 
 		x = -1
-		y = 2
+		y = 3
 		cost = 5
 		completion_reward = {
 			#
@@ -679,13 +713,14 @@
 
 	focus = {
 		id = GER_anshluss
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_anshluss
 		
 		available = {
 		    date > 1938.8.1
 		}
 
 		prerequisite = { focus = GER_blumen_kriege }
+		prerequisite = { focus = GER_cheap_civilian_radios }
 		relative_position_id = GER_blumen_kriege
 
 		x = 0
@@ -706,7 +741,7 @@
 
 	focus = {
 		id = GER_sudetenland
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_demand_sudetenland
 
 		prerequisite = { focus = GER_anshluss }
 		relative_position_id = GER_anshluss
@@ -724,7 +759,7 @@
 
 	focus = {
 		id = GER_cze_annex
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_cze_annex
 
 		prerequisite = { focus = GER_sudetenland }
 		relative_position_id = GER_sudetenland
