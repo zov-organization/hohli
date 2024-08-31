@@ -3840,6 +3840,47 @@ spriteTypes = {
 
 
 
+	spriteType = {
+		name = "GFX_idea_ic_versailles_bond"
+		texturefile = "gfx/interface/ideas/GER/spell_of_versailles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_mefo_bills"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_1"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_2"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_3"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_4"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_old_german_working_culture"
+		texturefile = "gfx/interface/ideas/GER/ic_old_german_working_culture.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_stuka"
+		texturefile = "gfx/interface/ideas/GER/ic_stuka.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ural_bomber"
+		texturefile = "gfx/interface/ideas/GER/ic_ural_bomber.dds"
+	}
+
+
+
+
+
 	### MAN
 
 	spriteType = {

@@ -68,3 +68,107 @@ GER_prep_for_barb_category = {
         }
     }
 }
+
+GER_core_new_territories_category = {
+
+    GER_add_netherlands_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 7
+				state = 36
+				state = 35
+            }
+		}
+
+        cost = 100
+        days_remove = 180
+        complete_effect = {
+            7 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            36 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            35 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_belgium_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 100
+        days_remove = 180
+        highlight_states = {
+            highlight_state_targets = {
+                state = 6
+				state = 34
+            }
+		}
+
+        complete_effect = {
+            6 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            34 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+}

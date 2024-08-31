@@ -40,12 +40,61 @@ ideas = {
 			}
 		}
 
-		ic_nation_zombification = {
-			name = ic_nation_zombification
+		ic_old_german_working_culture = {
+			name = ic_old_german_working_culture
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_nation_zombification
+			picture = GFX_idea_ic_old_german_working_culture
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ic_nation_zombification_1 = {
+			name = ic_nation_zombification_1
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification_1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.02
+			}
+		}
+		ic_nation_zombification_2 = {
+			name = ic_nation_zombification_2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification_2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		ic_nation_zombification_3 = {
+			name = ic_nation_zombification_2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification_3
 
 			allowed = {
 				always = no
@@ -53,8 +102,68 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.15
-				war_support_factor = 0.05
+				war_support_factor = 0.08
 			}
+		}
+		ic_nation_zombification_4 = {
+			name = ic_nation_zombification_2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification_4
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.2
+				war_support_factor = 0.12
+			}
+		}
+
+		ic_stuka = {
+			name = ic_stuka
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_stuka
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.2 instant = yes
+					air_ground_attack = 0.11 instant = yes
+				}
+			}
+
+			modifier = {  }
+		}
+
+		ic_ural_bomber = {
+			name = ic_ural_bomber
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ural_bomber
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				strat_bomber = {
+					build_cost_ic = -0.2 instant = yes
+					air_range = 0.11 instant = yes
+					air_defence = 0.15 instant = yes
+					air_bombing = 0.13 instant = yes
+				}
+			}
+
+			modifier = {  }
 		}
 
 	}

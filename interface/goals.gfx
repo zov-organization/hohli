@@ -9161,11 +9161,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_ju_87"
+		name = "GFX_GER_ju_87_stuka"
 		texturefile = "gfx/interface/goals/GER/focus_SOV_experts_in_camouflage.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GER_ju_87_shine"
+		name = "GFX_GER_ju_87_stuka_shine"
 		texturefile = "gfx/interface/goals/GER/focus_SOV_experts_in_camouflage.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

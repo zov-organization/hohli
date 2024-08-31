@@ -61,7 +61,7 @@ characters = {
 				original_tag = USA
 			}
 			traits = {
-				navy_amphibious_assault
+				navy_amphibious_assault_4
 			}
 			cost = 150
 		}
@@ -83,7 +83,7 @@ characters = {
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_commerce_raiding
+				navy_chief_commerce_raiding_4
 			}
 			cost = 100
 		}
