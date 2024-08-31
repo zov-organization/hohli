@@ -10354,6 +10354,7 @@ leader_traits = {
 	navy_amphibious_assault_2 = {
 		sprite = 3
 		amphibious_invasion = 0.1
+		amphibious_invasion_defence = 0.08
 		experience_gain_navy = @experience_gain_medium
 
 		command_cap = 0

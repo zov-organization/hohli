@@ -61,7 +61,7 @@ characters = {
 				original_tag = USA
 			}
 			traits = {
-				navy_amphibious_assault
+				navy_amphibious_assault_2
 			}
 			cost = 150
 		}
