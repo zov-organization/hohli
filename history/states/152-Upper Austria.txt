@@ -14,7 +14,7 @@ state={
 	history={
 		
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 8
 			industrial_complex = 3
 		}
 		victory_points = {
@@ -32,13 +32,6 @@ state={
 		#victory_points = {
 		#	11612 3
 		#}
-		
-
-		1938.3.12 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
-		}
 	}
 
 	provinces={

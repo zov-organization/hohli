@@ -18,7 +18,7 @@ state={
 			6377 10 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 1
 			dockyard = 2
@@ -28,15 +28,6 @@ state={
 
 		}
 		add_core_of = GER
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				arms_factory = 4
-				industrial_complex = 3
-				dockyard = 3
-			}
-		}
 	}
 
 	provinces={
