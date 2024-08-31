@@ -1,7 +1,9 @@
-
 state={
-	id=53
-	name="STATE_53"
+	id=973
+	name="STATE_973"
+	provinces={
+		692 707 3688 3705 6725 9515 9652 9681 11653 
+	}
 
 	history={
 		owner = GER
@@ -10,15 +12,12 @@ state={
 			infrastructure = 3
 		}
 		victory_points = {
-			3571 3
+			9515 5
 		}
 	}
 
-	provinces={
-		532 571 586 3299 3541 3571 11497 
-	}
-	manpower=1453365
+	manpower=2679413
 	buildings_max_level_factor=1.000
 	state_category=city
-	local_supplies=7.000
+	local_supplies=0.000
 }
