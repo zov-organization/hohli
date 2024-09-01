@@ -73,7 +73,7 @@ GER_thousand_year_reich_category = {
     
     GER_appoint_fireman = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_army_support
 
         available = { 
             ic_red_hordes_are_coming = yes
@@ -107,7 +107,7 @@ GER_thousand_year_reich_category = {
 
     GER_retake_what_kaiser_lost = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_pickelhaube
 
         available = {
             85 = { is_controlled_by = GER }
@@ -131,8 +131,8 @@ GER_thousand_year_reich_category = {
             }
 		}
 
-        cost = 100
-        days_remove = 180
+        cost = 10
+        days_remove = 20
         remove_effect = {
             85 = { 
                 add_core_of = GER
@@ -370,9 +370,603 @@ GER_thousand_year_reich_category = {
         }
     }
 
+    GER_atlantik_wall_ger_den = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 56
+				state = 59
+                state = 58
+                state = 909
+                state = 912
+                state = 99
+            }
+		}
+
+        cost = 10
+        days_remove = 70
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            56 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11360
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 241
+	                instant_build = yes
+                }
+            }
+            59 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3326
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 374
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6349
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6325
+	                instant_build = yes
+                }
+            }
+            58 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9347
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3368
+	                instant_build = yes
+                }
+            }
+            909 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3231
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11366
+	                instant_build = yes
+                }
+            }
+            912 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 332
+	                instant_build = yes
+                }
+            }
+            99 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 13263
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 399
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 13262
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3206
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6235
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 394
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 316
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_fra_bel_hol = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 14
+				state = 15
+                state = 785
+                state = 29
+                state = 6
+                state = 35
+                state = 36
+				state = 7
+            }
+		}
+
+        cost = 10
+        days_remove = 200
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            14 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9510
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6536
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 542
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3552
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6572
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9525
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11508
+	                instant_build = yes
+                }
+            }
+            15 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9550
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6449
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3579
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11535
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6599
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9434
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 485
+	                instant_build = yes
+                }
+            }
+            785 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11420
+	                instant_build = yes
+                }
+            }
+            29 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9500
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11548
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 575
+	                instant_build = yes
+                }
+            }
+            6 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6446
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6560
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6598
+	                instant_build = yes
+                }
+            }
+            35 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 480
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9431
+	                instant_build = yes
+                }
+            }
+            7 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9498
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3211
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 68
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3314
+	                instant_build = yes
+                }
+            }
+            36 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6336
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9335
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11318
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_fra_south = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 30
+				state = 23
+                state = 19
+                state = 806
+            }
+		}
+
+        cost = 10
+        days_remove = 60
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            30 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11465
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11616
+	                instant_build = yes
+                }
+            }
+            15 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11600
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6657
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9597
+	                instant_build = yes
+                }
+            }
+            785 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11565
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9737
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6621
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6777
+	                instant_build = yes
+                }
+            }
+            29 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9710
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 743
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_improvements = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            15 = {
+                coastal_bunker > 21
+            }
+        }
+
+        cost = 10
+        days_remove = 2
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            16 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 5
+	                instant_build = yes
+                }
+            }
+            30 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 3
+	                instant_build = yes
+                }
+            }
+            18 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+            }
+            34 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 5
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
     GER_set_up_bordeaux_naval_bases = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_merge_plant_ship
 
         available = {
             has_completed_focus = GER_kriegsmarine
@@ -383,6 +977,7 @@ GER_thousand_year_reich_category = {
             ROOT = {
                 tag = GER
             }
+            28 = { is_core_of = GER }
         }
 
         cost = 20
@@ -427,7 +1022,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_one = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = { }
 
@@ -469,7 +1064,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_two = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = { }
 
@@ -527,7 +1122,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_three = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = {  }
 
@@ -590,7 +1185,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_four = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = {  }
 
@@ -661,7 +1256,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_five = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = {  }
 
@@ -736,7 +1331,7 @@ GER_thousand_year_reich_category = {
 
     GER_france_industrial_relocation_six = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = {  }
 

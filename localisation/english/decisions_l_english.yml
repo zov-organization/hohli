@@ -339,7 +339,7 @@
 
 
   GER_thousand_year_reich_category:0 "§YTHOUSAND-YEAR REICH§!"
-  GER_thousand_year_reich_category_desc:0 "§gThis decisions will help you build, manage, improve your Reich§!"
+  GER_thousand_year_reich_category_desc:0 " "
   GER_appoint_fireman:0 "Urgently call Walter Model to the Headquarters"
   GER_retake_what_kaiser_lost:0 "Retake what Kaiser Lost"
   GER_add_denmark_to_the_reich:0 "Add Denmark to the Reich"
@@ -347,6 +347,10 @@
   GER_add_belgium_to_the_reich:0 "Add Belguim to the Reich"
   GER_alsace_lorraine_integration:0 "Alsace-Lorraine Integration"
   GER_set_up_bordeaux_naval_bases:0 "Set up Bordeaux Naval Bases"
+  GER_atlantik_wall_ger_den:0 "Northern Part of Atlantikwall"
+  GER_atlantik_wall_fra_bel_hol:0 "France, Belguim and Holland Part of Atlantikwall"
+  GER_atlantik_wall_fra_south:0 "Southern France Part of Atlantikwall"
+  GER_atlantik_wall_improvements:0 "Atlantikwall Improvements"
   GER_france_industrial_relocation_one:0 "France Industry Relocation: 1"
   GER_france_industrial_relocation_two:0 "France Industry Relocation: 2"
   GER_france_industrial_relocation_three:0 "France Industry Relocation: 3"
