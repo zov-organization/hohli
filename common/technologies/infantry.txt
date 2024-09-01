@@ -860,7 +860,7 @@ technologies = {
 		}
 	}
 	
-		support_weapons = {
+	support_weapons = {
 
 		infantry = {
 			defense = 0.05

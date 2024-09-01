@@ -14,7 +14,7 @@ leader_traits = {
 
 	dictator = {
 		random = no
-		political_power_factor = 0.25
+		political_power_factor = 0.05
 	}
 
 	warrior_code = {
@@ -8393,49 +8393,25 @@ leader_traits = {
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.05
-		experience_gain_army = @experience_gain_low
+		experience_gain_navy_unit_factor = @experience_gain_low
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.1
-		experience_gain_army = @experience_gain_medium
+		experience_gain_navy_unit_factor = @experience_gain_medium
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.15
-		experience_gain_army = @experience_gain_high
+		experience_gain_navy_unit_factor = @experience_gain_high
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10732,6 +10708,20 @@ leader_traits = {
 		political_power_factor = 0.05
 		fascism_drift = 0.2
 		research_speed_factor = 0.08
+	}
+
+	fuhrers_fireman = {
+		random = yes
+		sprite = 13
+		planning_speed = 0.2
+		army_core_defence_factor = 0.15
+		army_core_attack_factor = 0.1
+		army_speed_factor = 0.08
+		army_morale_factor = 0.2
+		cas_damage_reduction = 0.6
+		air_superiority_bonus_in_combat = -0.6
+		pocket_penalty = -0.15
+		max_dig_in_factor = 0.1
 	}
 
 }

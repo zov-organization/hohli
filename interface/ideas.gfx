@@ -16,6 +16,19 @@ spriteTypes = {
 		noOfFrames = 18
 	}
 
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_golden_times"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_its_over"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+
 	### new tfv nat spirit icons
 
 	spriteType = {

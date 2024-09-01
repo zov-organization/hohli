@@ -69,13 +69,51 @@ GER_prep_for_barb_category = {
     }
 }
 
-GER_core_new_territories_category = {
-
-    GER_add_netherlands_to_the_reich = {
+GER_thousand_year_reich_category = {
+    
+    GER_appoint_fireman = {
 
         icon = GFX_decision_generic_operation
 
-        available = { }
+        available = { 
+            ic_red_hordes_are_coming = yes
+        }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        complete_effect = {
+            add_advisor_role = {
+                character = ic_GER_walter_model
+                advisor={
+			        slot = high_command
+			        idea_token = ic_GER_walter_model
+			        ledger = army
+			        traits = {
+				        fuhrers_fireman
+			        }
+			        cost = 100
+		        }
+            }
+        }
+    }
+
+    GER_retake_what_kaiser_lost = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            85 = { is_controlled_by = GER }
+            807 = { is_controlled_by = GER }
+            86 = { is_controlled_by = GER }
+        }
 
         fire_only_once = no
 
@@ -87,15 +125,140 @@ GER_core_new_territories_category = {
 
         highlight_states = {
             highlight_state_targets = {
-                state = 7
-				state = 36
-				state = 35
+				state = 85
+				state = 807
+                state = 86
             }
 		}
 
         cost = 100
         days_remove = 180
-        complete_effect = {
+        remove_effect = {
+            85 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            807 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            86 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_denmark_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            6 = { is_controlled_by = GER }
+            34 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 25
+        days_remove = 35
+        highlight_states = {
+            highlight_state_targets = {
+                state = 912
+                state = 911
+				state = 99
+				state = 37
+            }
+		}
+
+        remove_effect = {
+            912 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            911 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            99 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            37 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_netherlands_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            7 = { is_controlled_by = GER }
+            36 = { is_controlled_by = GER }
+            35 = { is_controlled_by = GER }
+        }
+
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 36
+				state = 35
+                state = 7
+            }
+		}
+
+        cost = 100
+        days_remove = 180
+        remove_effect = {
             7 = { 
                 add_core_of = GER
                 add_extra_state_shared_building_slots = 2
@@ -130,9 +293,10 @@ GER_core_new_territories_category = {
 
         icon = GFX_decision_generic_operation
 
-        available = { }
-
-        fire_only_once = no
+        available = {
+            6 = { is_controlled_by = GER }
+            34 = { is_controlled_by = GER }
+        }
 
         visible = {
             ROOT = {
@@ -149,7 +313,7 @@ GER_core_new_territories_category = {
             }
 		}
 
-        complete_effect = {
+        remove_effect = {
             6 = { 
                 add_core_of = GER
                 add_extra_state_shared_building_slots = 2
@@ -171,4 +335,524 @@ GER_core_new_territories_category = {
         }
     }
 
+    GER_alsace_lorraine_integration = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            28 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 25
+        days_remove = 50
+        highlight_states = {
+            highlight_state_targets = {
+                state = 28
+            }
+		}
+
+        remove_effect = {
+            28 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_set_up_bordeaux_naval_bases = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            has_completed_focus = GER_kriegsmarine
+            19 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 20
+        days_remove = 28
+        highlight_states = {
+            highlight_state_targets = {
+                state = 19
+            }
+		}
+
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = ic_gray_wolf
+                add_idea = ic_gray_wolf_golden_times
+            }
+            19 = { 
+                add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+            }
+            806 = { 
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+            }
+            23 = { 
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_france_industrial_relocation_one = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 17
+                state = 18
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 17.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 17.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 17.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 17.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 18.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 18.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 18.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 18.arms_factory_level           instant_build = yes }
+            }
+
+            17 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            18 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_two = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                17 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                18 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 29
+                state = 785
+                state = 16
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 16.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 16.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 16.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 16.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 29.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 29.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 29.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 29.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 785.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 785.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 785.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 785.arms_factory_level           instant_build = yes }
+            }
+            16 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            29 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            785 = { remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_three = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                16 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                29 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                785 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 14
+                state = 15
+                state = 30
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 14.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 14.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 14.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 14.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 15.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 15.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 15.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 15.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 30.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 30.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 30.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 30.arms_factory_level           instant_build = yes }
+            }
+
+            14 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            15 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            30 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_four = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                14 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                15 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                30 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 24
+                state = 23
+                state = 33
+                state = 25
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 24.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 24.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 24.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 24.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 23.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 23.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 23.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 23.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 33.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 33.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 33.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 33.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 25.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 25.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 25.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 25.arms_factory_level           instant_build = yes }
+            }
+
+            24 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            23 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            33 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            25 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_five = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                24 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                23 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                33 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                25 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 27
+                state = 20
+                state = 26
+                state = 22
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 27.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 27.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 27.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 27.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 20.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 20.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 20.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 20.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 26.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 26.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 26.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 26.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 22.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 22.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 22.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 22.arms_factory_level           instant_build = yes }
+            }
+
+            27 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            20 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            26 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            22 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_six = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                27 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                20 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                26 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                22 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 19
+                state = 806
+                state = 31
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 19.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 19.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 19.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 19.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 806.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 806.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 806.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 806.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 31.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 31.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 31.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 31.arms_factory_level           instant_build = yes }
+            }
+
+            19 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            806 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            31 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_prepare_france_for_fighting = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                27 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                20 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                26 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                22 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 150
+        days_remove = 365
+        highlight_states = {
+            highlight_state_targets = {
+                state = 19
+                state = 806
+                state = 31
+            }
+		}
+
+        remove_effect = {
+            hidden_effect = {
+                every_owned_state = {
+                    IF = {
+                        limit = {
+                            is_core_of = FRA
+                        }
+                        add_core_of = GER
+                    }
+                }
+            }
+        }
+    }
 }

@@ -374,15 +374,6 @@ characters={
 				small=GFX_portrait_GER_walter_model_small
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = ic_GER_walter_model
-			ledger = army
-			traits = {
-				army_infantry_2
-			}
-			cost = 100
-		}
 		field_marshal={
 			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
 			skill=3

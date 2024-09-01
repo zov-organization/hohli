@@ -166,5 +166,74 @@ ideas = {
 			modifier = {  }
 		}
 
+		ic_gray_wolf = {
+			name = ic_gray_wolf
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_gray_wolf
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_torpedo_reveal_chance_factor = -0.05
+				#naval_torpedo_screen_penetration_factor = 0.07
+				#naval_torpedo_hit_chance_factor = 0.05
+				navy_submarine_attack_factor = 0.05
+				sub_retreat_speed = 0.02
+				navy_max_range_factor = -0.35
+			}
+		}
+
+		ic_gray_wolf_golden_times = {
+			name = ic_gray_wolf_golden_times
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_gray_wolf_golden_times
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				submarine = { build_cost_ic = -0.15 instant = yes }
+			}
+
+			modifier = {
+				naval_torpedo_reveal_chance_factor = -0.15
+				naval_torpedo_screen_penetration_factor = 0.07
+				naval_torpedo_hit_chance_factor = 0.05
+				navy_submarine_attack_factor = 0.15
+				sub_retreat_speed = 0.09
+				navy_max_range_factor = 0.5
+			}
+		}
+
+		ic_gray_wolf_its_over = {
+			name = ic_gray_wolf_its_over
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_gray_wolf_its_over
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				strat_bomber = {
+					build_cost_ic = -0.2 instant = yes
+					air_range = 0.11 instant = yes
+					air_defence = 0.15 instant = yes
+					air_bombing = 0.13 instant = yes
+				}
+			}
+
+			modifier = {  }
+		}
+
 	}
 }

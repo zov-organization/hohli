@@ -41,3 +41,20 @@ ic_ger_spy_planes_caught = {
 		}
 	}
 }
+
+ic_red_hordes_are_coming = {
+	custom_trigger_tooltip = {
+		tooltip = ic_red_hordes_are_coming_tt
+		date > 1942.1.1
+		OR = {
+			SOV = { controls_state = 188 }
+			SOV = { controls_state = 817 }
+			SOV = { controls_state = 97 }
+			SOV = { controls_state = 94 }
+			SOV = { controls_state = 93 }
+			SOV = { controls_state = 199 }
+			SOV = { controls_state = 198 }
+			SOV = { controls_state = 192 }
+		}
+	}
+}

@@ -104,21 +104,11 @@
 		cost = 5
 		completion_reward = {
 			show_ideas_tooltip = ic_GER_hjalmar_schacht
-			64 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			64 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				name = GER_extra_sponsorship
+				bonus = 0.5
+				uses = 4
+				category = electronics
 			}
 		}
 	}
@@ -132,7 +122,7 @@
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			51 = {
 				add_extra_state_shared_building_slots = 3
@@ -379,9 +369,44 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			air_experience = 50
+			51 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			972 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			55 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			68 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			66 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = GER_luftwaffe
 				bonus = 1
@@ -475,7 +500,7 @@
 
 		x = 3
 		y = 0
-		cost = 5
+		cost = 10
 		completion_reward = {
 			army_experience = 50
 			add_tech_bonus = {
@@ -499,6 +524,30 @@
 		cost = 5
 		completion_reward = {
 			navy_experience = 50
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			61 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			62 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -513,7 +562,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			add_ideas = { ic_gray_wolf }
 		}
 	}
 
@@ -614,7 +663,7 @@
 			army_experience = 50
 			add_tech_bonus = {
 				name = GER_panzerwaffe
-				bonus = 2
+				bonus = 1.75
 				uses = 2
 				technology = improved_light_tank_chassis
 				technology = basic_medium_tank_chassis
@@ -702,7 +751,7 @@
 				add_idea = ic_nation_zombification_2
 			}
 			add_tech_bonus = {
-				name = GER_army_expansion_two
+				name = GER_cheap_civilian_radios
 				bonus = 0.5
 				uses = 4
 				category = electronics
@@ -713,7 +762,9 @@
 	focus = {
 		id = GER_proclaim_german_supremacy
 		icon = GFX_GER_proclaim_german_supremacy
-
+		
+		prerequisite = { focus = GER_sudetenland }
+		prerequisite = { focus = GER_old_german_working_culture }
 		prerequisite = { focus = GER_cheap_civilian_radios }
 		relative_position_id = GER_cheap_civilian_radios
 
@@ -721,7 +772,7 @@
 		y = 3
 		cost = 5
 		completion_reward = {
-			unlock_decision_category_tooltip = GER_core_new_territories_category
+			unlock_decision_category_tooltip = GER_thousand_year_reich_category
 			swap_ideas = {
 				remove_idea = ic_nation_zombification_2
 				add_idea = ic_nation_zombification_3
