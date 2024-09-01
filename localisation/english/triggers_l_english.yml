@@ -947,3 +947,6 @@
 
   ic_jap_chi_war_started_tt:0 "§YJAPAN STARTED INVASION OF CHINA§!"
   ic_jap_chi_war_started_tt_NOT:0 "§YJAPAN HAS NOT STARTED INVASION OF CHINA YET§!"
+  
+  ic_red_hordes_are_coming_tt:0 "§YRED HORDES ARE COMING§!\n "
+  ic_red_hordes_are_coming_tt_NOT:0 "§YRED HORDES ARE COMING§!\n "

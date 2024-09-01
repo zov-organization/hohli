@@ -21,7 +21,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Joseph Stalin"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
 	picture = "Portrait_Soviet_Joseph_Stalin.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
@@ -108,17 +107,23 @@ set_technology = {
 	tech_trucks = 1
 	motorised_infantry = 1
 	armored_car1 = 1
+
 	tech_support = 1
 	tech_military_police = 1
 	basic_train = 1
+
 	sov_gwtank_chassis = 1
 	sov_basic_heavy_tank_chassis = 1
 	sov_engine_tech_1 = 1
+
 	gw_artillery = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
+
 	iw_small_airframe = 1
 	aa_lmg = 1
+
+	basic_machine_tools = 1
 	fuel_silos = 1
 	fuel_refining = 1
 }
@@ -207,12 +212,6 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
 	amount = 3000
-	producer = SOV
-}
-
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 1488
 	producer = SOV
 }
 

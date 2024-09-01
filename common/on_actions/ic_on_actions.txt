@@ -4,6 +4,15 @@ on_actions = {
 
 		effect = {
 
+			give_resource_rights = {
+				receiver = FRA
+				state = 51
+			}
+			give_resource_rights = {
+				receiver = FRA
+				state = 42
+			}
+
 			every_country = {
 				limit = {
 					is_playable_country = yes

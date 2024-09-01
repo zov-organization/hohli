@@ -494,7 +494,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1940
 		
 		categories = {
 			armor
@@ -510,7 +510,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1940
 		
 		categories = {
 			armor
@@ -526,7 +526,7 @@ technologies = {
 		}
 	
 		research_cost = 0.5
-		start_year = 1941
+		start_year = 1940
 	}
 
 	advanced_medium_tank_chassis = { # MED_3

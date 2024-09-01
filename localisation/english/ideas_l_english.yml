@@ -2709,6 +2709,10 @@
  will_turn_to: "Will Turn Into"
  upon_timeout: "Upon Timeout"
 
+
+
+
+
   peace_training:0 "Peacetime Training"
   DayOne_Efficiency:0 "Day 1 Efficiency"
   NoTradeback:0 "No Prewar Tradebacks"
@@ -2739,3 +2743,19 @@
  ic_SOV_military_reorg_5:0 "Military Reorganization Stage: 5"
  ic_SOV_military_reorg_6:0 "Military Reorganization Stage: 6"
  ic_SOV_indiscriminate_bombing_policy:0 "Indiscriminate Bombing Policy"
+
+
+
+
+ ic_versailles_bond:0 "Versailles Bond"
+ ic_mefo_bills:0 "MEFO Bills"
+ ic_old_german_working_culture:0 "Old German Working Culture"
+ ic_nation_zombification_1:0 "RMVP"
+ ic_nation_zombification_2:0 "RMVP"
+ ic_nation_zombification_3:0 "RMVP"
+ ic_nation_zombification_4:0 "RMVP"
+ ic_stuka:0 "Achtung Stuka!"
+ ic_ural_bomber:0 "Ural Bomber"
+ ic_gray_wolf:0 "§gGray Wolf's in Den§!"
+ ic_gray_wolf_golden_times:0 "§gGray Wolf: §YGolden Times!§!§!"
+ ic_gray_wolf_its_over:0 "§gGray Wolf tucked its tail§!"
