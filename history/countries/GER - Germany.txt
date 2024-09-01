@@ -113,6 +113,15 @@ create_equipment_variant = {
 		special_type_slot_2 = dive_brakes_small
 	}
 }
+create_equipment_variant = {
+	name = "Arado Ar 95"
+	type = small_plane_naval_bomber_airframe_1
+	#design_team = mio:GER_junkers_organization
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		engine_type_slot = engine_2_1x
+	}
+}
 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment
