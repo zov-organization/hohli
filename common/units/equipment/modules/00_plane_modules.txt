@@ -182,7 +182,7 @@ equipment_modules = {
 		parent = engine_2_1x
 
 		add_stats = {
-			thrust = 25
+			thrust = 28
 			build_cost_ic = 16
 			fuel_consumption = 0.16
 		}
