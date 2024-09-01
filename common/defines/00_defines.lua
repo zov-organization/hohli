@@ -1439,7 +1439,7 @@ NAir = {
 
 	AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.3, -- max trucks we can destroy in one instance of a logistics strike
 
-	SECONDARY_DAMAGE_STRAT = 0.2,  -- how much damage gets translated to railway guns for strat bombing
+	SECONDARY_DAMAGE_STRAT = 0.1,  -- how much damage gets translated to railway guns for strat bombing
 	SECONDARY_DAMAGE_LOGISTICS = 1.0, -- how much damage gets translated to railway guns for logistic strike
 
 	INTERCEPTION_DISTANCE_SCALE = 50, -- At this many pixels of path length, full interception efficiency is applied to air missions. Lerp from 0.
@@ -1462,7 +1462,7 @@ NAir = {
 		0.0, -- NAVAL_KAMIKAZE
         0.0, -- PORT_STRIKE
 		0.0, -- ATTACK_LOGISTICS
-		0.05, -- AIR_SUPPLY
+		0.0, -- AIR_SUPPLY
 		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
@@ -1473,16 +1473,16 @@ NAir = {
 	MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 		1.0, -- AIR_SUPERIORITY
 		1.0, -- CAS
-		0.2, -- INTERCEPTION
+		1.0, -- INTERCEPTION
 		1.0, -- STRATEGIC_BOMBER
 		1.0, -- NAVAL_BOMBER
 		1.0, -- DROP_NUKE
 		1.0, -- PARADROP
-		0.75, -- NAVAL_KAMIKAZE
-		1.2, -- PORT_STRIKE
-		1.2, -- ATTACK_LOGISTICS
+		1.0, -- NAVAL_KAMIKAZE
+		1.0, -- PORT_STRIKE
+		1.0, -- ATTACK_LOGISTICS
 		1.0, -- AIR_SUPPLY
-		0.6, -- TRAINING
+		0.5, -- TRAINING
 		1.0, -- NAVAL_MINES_PLANTING
 		1.0, -- NAVAL_MINES_SWEEPING
 		1.0, -- RECON
@@ -1494,7 +1494,7 @@ NAir = {
 
 	MISSION_EFFICIENCY_MULT_AT_LACK_OF_FUEL = 0.25, 				-- multiplier for mission efficiency when a base lacks fuel
 
-	BOMBING_TARGETING_RANDOM_FACTOR = 0.25,							-- % of picking the wrong target
+	BOMBING_TARGETING_RANDOM_FACTOR = 0.05,							-- % of picking the wrong target
 	BOMBING_PROV_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for provincial buildings
 	BOMBING_STATE_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for state buildings
 	BOMBING_INFRA_PRIO_SCALE = 0.7,									-- Scale of the selected priority for infastryctyre
@@ -1506,7 +1506,7 @@ NAir = {
 	REINFORCEMENT_DISABLING_DURATION_IN_LAND_CARRIER_TRANSFER = 48,	-- The reinforcement disabling duration in hours when transfering from land to carrier and vice versa
 
 	THRUST_WEIGHT_AGILITY_FACTOR = 0.5,								-- For plane designs, additive agility bonus per point of thrust exceeding weight
-	MAX_QUICK_WING_SELECTION = 3,									-- Max possible selection for airwing quick deploy
+	MAX_QUICK_WING_SELECTION = 5,									-- Max possible selection for airwing quick deploy
 
 	USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = true,						-- If true, only the armament module category that inflicts the greatest damage to naval targets will contribute naval strike and port strike mission specific stats. Only modules with both naval_strike_attack and naval_strike_targetting are considered. This is used to prevent torpedo_mounting and bomb_locks stats from stacking.
 	

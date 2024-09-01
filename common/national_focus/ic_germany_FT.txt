@@ -38,7 +38,7 @@
 		prerequisite = { focus = GER_initial_focus }
 		relative_position_id = GER_initial_focus
 
-		x = -5
+		x = -7
 		y = 1
 		cost = 8
 		completion_reward = {
@@ -425,7 +425,7 @@
 		prerequisite = { focus = GER_luftwaffe }
 		relative_position_id = GER_luftwaffe
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -498,7 +498,7 @@
 		prerequisite = { focus = GER_versailles_break_down }
 		relative_position_id = GER_luftwaffe
 
-		x = 3
+		x = 5
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -519,7 +519,7 @@
 		prerequisite = { focus = GER_versailles_break_down }
 		relative_position_id = GER_luftwaffe
 
-		x = -3
+		x = -5
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -670,12 +670,15 @@
 		y = 3
 		cost = 5
 		completion_reward = {
-			FRA = {
-				remove_resource_rights = 51
+			ENG = {
+				add_political_power = 100
+				add_war_support = 0.15
 			}
 			FRA = {
-				remove_resource_rights = 42
+				add_political_power = 100
+				add_war_support = 0.15
 			}
+			army_experience = 10
 			add_political_power = 100
 			add_stability = 0.15
 		}
