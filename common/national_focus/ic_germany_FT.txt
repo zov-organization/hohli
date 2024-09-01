@@ -411,9 +411,9 @@
 				name = GER_luftwaffe
 				bonus = 1
 				uses = 3
-				technology = range_improvements
-				technology = survivability_studies
 				technology = aa_hmg
+				technology = aa_cannon_1
+				technology = aa_cannon_3
 			}
 		}
 	}
