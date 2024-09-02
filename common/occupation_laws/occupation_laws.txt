@@ -8,7 +8,5 @@ ZoV = {
 	state_modifier = {
 		required_garrison_factor = -1
 	}
-	suppressed_state_modifier = {
-		#no_compliance_gain = 1
-	}
+	suppressed_state_modifier = {  }
 }
