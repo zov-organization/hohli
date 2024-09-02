@@ -26,15 +26,6 @@ characters = {
 				small = "GFX_idea_nikolay_kuznetsov"
 			}
 		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = ic_SOV_nikolay_kuznetsov
-			traits = {
-				navy_chief_kuznetsov
-			}
-			cost = 10
-		}
 	}
 
 	ic_SOV_genrikh_yagoda = {
@@ -110,15 +101,6 @@ characters = {
 			army = {
 				small = "GFX_idea_alexander_novikov"
 			}
-		}
-		advisor = {
-			slot = air_chief
-			idea_token = ic_SOV_aleksandr_novikov
-			name = "Aleksandr Novikov"
-			traits = {
-				air_chief_reform_4
-			}
-			cost = 100
 		}
 	}
 
