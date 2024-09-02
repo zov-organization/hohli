@@ -558,10 +558,50 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			recruit_character = ic_SOV_mikhail_kalinin
-			recruit_character = ic_SOV_nikolay_voznesensky
-			recruit_character = ic_SOV_vyacheslav_molotov
-			recruit_character = ic_SOV_nikita_khrushchyov
+			add_advisor_role = {
+				character = ic_SOV_mikhail_kalinin
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_mikhail_kalinin
+					traits = {
+						popular_figurehead_kalinin 
+					}
+				}
+				cost = 100
+			}
+			add_advisor_role = {
+				character = ic_SOV_nikolay_voznesensky
+				
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_nikolay_voznesensky
+					name = "Nikolay Voznesensky"
+					traits = {
+						captain_of_industry 
+					}
+				}
+			}
+			add_advisor_role = {
+				character = ic_SOV_vyacheslav_molotov
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_vyacheslav_molotov
+					name = "Vyacheslav Molotov"
+					traits = {
+						pc_for_foreign_affairs_molotov
+					}
+				}
+			}
+			add_advisor_role = {
+				character = ic_SOV_nikita_khrushchyov
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_nikita_khrushchyov
+					traits = {
+						technocrat 
+					}
+				}
+			}
 		}
 	}
 
@@ -1586,4 +1626,4 @@ focus_tree = {
 		}
 	}
 
-}
+	}
