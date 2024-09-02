@@ -1,12 +1,10 @@
-﻿@experience_gain_low = 0.06
+﻿@error_causer = 0 #(dont remove)
+
+@experience_gain_low = 0.06
 @experience_gain_medium = 0.09
 @experience_gain_high = 0.12
 @experience_gain_esport = 0.15
 
-@air_and_navy_dudes_xp_gain_low = 0.06
-@air_and_navy_dudes_xp_gain_medium = 0.09
-@air_and_navy_dudes_xp_gain_high = 0.12
-@air_and_navy_dudes_xp_gain_esport = 0.15
 
 ###Todo remove commented advisor experience gains
 
@@ -9303,7 +9301,7 @@ leader_traits = {
 
 	air_chief_reform_1 = {  # Rate at which air experience is gained increases by 5%
 		sprite = 1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 		experience_gain_air_factor = 0.05
 
 		command_cap = 0
@@ -9311,7 +9309,7 @@ leader_traits = {
 
 	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
 		sprite = 1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 		experience_gain_air_factor = 0.10
 
 		command_cap = 0
@@ -9319,7 +9317,7 @@ leader_traits = {
 
 	air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 		experience_gain_air_factor = 0.15
 
 		command_cap = 0
@@ -9327,7 +9325,7 @@ leader_traits = {
 
 	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 		experience_gain_air_factor = 0.2
 
 		command_cap = 0
@@ -9337,7 +9335,7 @@ leader_traits = {
 	air_chief_safety_1 = {  # Rate of air accidents reduced by 5%
 		sprite = 1
 		air_accidents_factor = -0.05
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9345,7 +9343,7 @@ leader_traits = {
 	air_chief_safety_2 = {  # Rate of air accidents reduced by 10%
 		sprite = 1
 		air_accidents_factor = -0.1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9353,7 +9351,7 @@ leader_traits = {
 	air_chief_safety_3 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.15
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9361,21 +9359,21 @@ leader_traits = {
 	air_chief_safety_4 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.2
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 
 		command_cap = 0
 	}
 
 	air_chief_old_guard = {
 		sprite = 1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 		max_command_power = 10
 	}
 
 	air_chief_night_operations_1 = {
 		sprite = 1
 		air_night_penalty = -0.1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9383,7 +9381,7 @@ leader_traits = {
 	air_chief_night_operations_2 = {
 		sprite = 1
 		air_night_penalty = -0.2
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9391,7 +9389,7 @@ leader_traits = {
 	air_chief_night_operations_3 = {
 		sprite = 1
 		air_night_penalty = -0.3
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9399,7 +9397,7 @@ leader_traits = {
 	air_chief_night_operations_4 = {
 		sprite = 1
 		air_night_penalty = -0.3
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 
 		command_cap = 0
 	}
@@ -9407,7 +9405,7 @@ leader_traits = {
 	air_chief_ground_support_1 = {  # Air superiority impact on land units improved by 5%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.05
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9415,7 +9413,7 @@ leader_traits = {
 	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9423,7 +9421,7 @@ leader_traits = {
 	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.15
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9431,7 +9429,7 @@ leader_traits = {
 	air_chief_ground_support_4 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.2
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 
 		command_cap = 0
 	}
@@ -9441,7 +9439,7 @@ leader_traits = {
 	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9449,7 +9447,7 @@ leader_traits = {
 	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.2
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9457,7 +9455,7 @@ leader_traits = {
 	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.3
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9465,7 +9463,7 @@ leader_traits = {
 	air_chief_all_weather_4 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.4
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 
 		command_cap = 0
 	}
@@ -9474,7 +9472,7 @@ leader_traits = {
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.05
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9482,7 +9480,7 @@ leader_traits = {
 	air_air_combat_training_2 = {  # Chance of ace generating is increased by 10%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.1
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9490,7 +9488,7 @@ leader_traits = {
 	air_air_combat_training_3 = {  # Chance of ace generating is increased by 15%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.15
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9553,7 +9551,7 @@ leader_traits = {
 	air_bomber_interception_1 = {
 		sprite = 1
 		air_intercept_efficiency = 0.05
-		experience_gain_air = @air_and_navy_dudes_xp_gain_low
+		experience_gain_air = @experience_gain_low
 
 		command_cap = 0
 	}
@@ -9561,7 +9559,7 @@ leader_traits = {
 	air_bomber_interception_2 = {
 		sprite = 1
 		air_intercept_efficiency = 0.10
-		experience_gain_air = @air_and_navy_dudes_xp_gain_medium
+		experience_gain_air = @experience_gain_medium
 
 		command_cap = 0
 	}
@@ -9569,7 +9567,7 @@ leader_traits = {
 	air_bomber_interception_3 = {
 		sprite = 1
 		air_intercept_efficiency = 0.15
-		experience_gain_air = @air_and_navy_dudes_xp_gain_high
+		experience_gain_air = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -9577,7 +9575,7 @@ leader_traits = {
 	air_bomber_interception_4 = {
 		sprite = 1
 		air_intercept_efficiency = 0.15
-		experience_gain_air = @air_and_navy_dudes_xp_gain_esport
+		experience_gain_air = @experience_gain_esport
 
 		command_cap = 0
 	}
@@ -10723,5 +10721,4 @@ leader_traits = {
 		pocket_penalty = -0.15
 		max_dig_in_factor = 0.1
 	}
-
 }
