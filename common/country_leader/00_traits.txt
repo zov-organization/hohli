@@ -1,4 +1,4 @@
-﻿@error_causer = 0 #(dont remove)
+﻿@error_causer_fix = 0 #(dont remove)
 
 @experience_gain_low = 0.06
 @experience_gain_medium = 0.09
@@ -7084,7 +7084,7 @@ leader_traits = {
 			}
 		}
 		air_doctrine_cost_factor = -0.10
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_medium
 
 		ai_will_do = {
 			factor = 1

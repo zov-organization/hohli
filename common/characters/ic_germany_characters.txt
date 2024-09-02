@@ -134,7 +134,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 75
 			slot = theorist
 			idea_token = ic_GER_erich_von_manstein
 			ledger = army
@@ -192,12 +192,12 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 75
 			slot = theorist
 			idea_token = ic_GER_wolfram_von_richthofen
 			ledger = air
 			traits = {
-				close_air_support_proponent
+				air_warfare_theorist
 			}
 		}
 	}

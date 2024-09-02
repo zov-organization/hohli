@@ -30,6 +30,13 @@ create_country_leader = {
 recruit_character = ic_SOV_genrikh_yagoda			# they are here just to get shot lol
 recruit_character = ic_SOV_mikhail_tukhachevsky		#
 
+recruit_character = ic_SOV_mikhail_kalinin #future advisors
+recruit_character = ic_SOV_nikolay_voznesensky #future advisors
+recruit_character = ic_SOV_vyacheslav_molotov #future advisors
+recruit_character = ic_SOV_nikita_khrushchyov #future advisors
+recruit_character = ic_SOV_nikolay_kuznetsov #future advisors
+recruit_character = ic_SOV_aleksandr_novikov #future advisors
+
 recruit_character = ic_SOV_stepan_krasovsky
 recruit_character = ic_SOV_sergey_khudyakov
 recruit_character = ic_SOV_semyon_timoshenko

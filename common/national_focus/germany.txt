@@ -1,6 +1,6 @@
 ﻿focus_tree = {
 	id = ic_german_focus
-	continuous_focus_position = { x = 55 y = 1500 }
+	continuous_focus_position = { x = 2700 y = 50 }
 
 	country = {
 		factor = 0
@@ -158,7 +158,7 @@
 		prerequisite = { focus = GER_all_for_the_reich }
 		relative_position_id = GER_deal_with_krupp
 
-		x = 1
+		x = 2
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -249,7 +249,7 @@
 		prerequisite = { focus = GER_extra_sponsorship }
 		relative_position_id = GER_ic_autobahn
 
-		x = 2
+		x = 3
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -277,6 +277,7 @@
 		icon = GFX_focus_generic_stockpile_fuel
 
 		prerequisite = { focus = GER_ic_autobahn }
+		prerequisite = { focus = GER_factories_two focus = GER_factories_one }
 		relative_position_id = GER_ic_autobahn
 
 		x = 1
@@ -294,6 +295,20 @@
 				uses = 4
 				category = synth_resources
 			}
+		}
+	}
+
+	focus = {
+		id = GER_rubber_2
+		icon = GFX_focus_generic_stockpile_fuel
+
+		prerequisite = { focus = GER_rubber }
+		relative_position_id = GER_rubber
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
 			51 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -334,7 +349,6 @@
 		icon = GFX_GER_general_mobilization
 
 		prerequisite = { focus = GER_factories_one }
-		prerequisite = { focus = GER_rubber }
 		relative_position_id = GER_rubber
 
 		x = -2
@@ -817,16 +831,52 @@
 	}
 
 	focus = {
-		id = GER_proclaim_german_supremacy
+		id = GER_himmler_focus
 		icon = GFX_GER_proclaim_german_supremacy
 		
-		prerequisite = { focus = GER_sudetenland }
-		prerequisite = { focus = GER_old_german_working_culture }
 		prerequisite = { focus = GER_cheap_civilian_radios }
 		relative_position_id = GER_cheap_civilian_radios
 
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_thousand_year_reich_category
+			swap_ideas = {
+				remove_idea = ic_nation_zombification_2
+				add_idea = ic_nation_zombification_3
+			}
+		}
+	}
+
+	focus = {
+		id = GER_proclaim_german_supremacy
+		icon = GFX_GER_proclaim_german_supremacy
+		
+		prerequisite = { focus = GER_himmler_focus }
+		relative_position_id = GER_himmler_focus
+
 		x = -1
-		y = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_thousand_year_reich_category
+			swap_ideas = {
+				remove_idea = ic_nation_zombification_2
+				add_idea = ic_nation_zombification_3
+			}
+		}
+	}
+
+	focus = {
+		id = GER_deport_jews
+		icon = GFX_GER_proclaim_german_supremacy
+		
+		prerequisite = { focus = GER_proclaim_german_supremacy }
+		relative_position_id = GER_proclaim_german_supremacy
+
+		x = 0
+		y = 1
 		cost = 5
 		completion_reward = {
 			unlock_decision_category_tooltip = GER_thousand_year_reich_category
@@ -929,7 +979,6 @@
 		prerequisite = { focus = GER_bf_109_improvements }
 		prerequisite = { focus = GER_general_mobilization }
 		prerequisite = { focus = GER_cze_annex }
-		prerequisite = { focus = GER_proclaim_german_supremacy }
 		prerequisite = { focus = GER_army_expansion_two }
 		relative_position_id = GER_cze_annex
 
