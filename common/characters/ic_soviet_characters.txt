@@ -75,15 +75,6 @@ characters = {
 				small = "GFX_idea_SOV_vyacheslav_molotov"
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ic_SOV_vyacheslav_molotov
-			name = "Vyacheslav Molotov"
-			traits = {
-				pc_for_foreign_affairs_molotov 
-			}
-		}
 	}
 
 	ic_SOV_nikita_khrushchyov = {
