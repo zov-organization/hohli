@@ -38,6 +38,9 @@ recruit_character = ic_GER_erwin_rommel
 recruit_character = ic_GER_wilhelm_keitel
 recruit_character = ic_GER_ferdinand_schorner
 recruit_character = ic_GER_walter_model
+recruit_character = ic_GER_albert_kesselring
+recruit_character = ic_GER_hermann_goring
+recruit_character = ic_GER_ritter_von_greim
 
 set_popularities = {
 	democratic = 10
