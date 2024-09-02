@@ -795,7 +795,7 @@ generic_medium_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { mio_cat_eq_all_medium_tank }
+	equipment_type = { armor }
 	research_categories = { mio_cat_tech_medium_armor_and_modules }
 
 	tree_header_text = {
@@ -6820,6 +6820,7 @@ generic_infantry_equipment_organization = {
 
 	equipment_type = {
 		infantry_equipment
+		support_equipment
 	}
 	research_categories = { infantry_weapons }
 

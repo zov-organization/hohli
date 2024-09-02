@@ -113,7 +113,8 @@ instant_effect = {
 		}
 		requested_factories = 2
 		progress = 0
-		efficiency = 50
+		efficiency = 53
+		industrial_manufacturer = mio:GER_mauser_organization
 	}
 
 	add_equipment_production = {
@@ -157,6 +158,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0
 		efficiency = 50
+		industrial_manufacturer = mio:GER_man_organization
 	}
 
 	add_equipment_production = {
