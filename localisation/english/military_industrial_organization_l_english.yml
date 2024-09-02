@@ -309,7 +309,6 @@ mio_header_light_aircraft: "Light Aircraft"
 mio_header_medium_aircraft: "Medium Aircraft"
 mio_header_motorized: "Motorized"
 mio_header_mechanized: "Mechanized"
-mio_header_anti_tank: "Anti-Tank"
 mio_header_protection: "Protection"
 mio_header_specialization: "Specialization"
 

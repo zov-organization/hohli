@@ -7018,11 +7018,7 @@ leader_traits = {
 			}
 		}
 		cat_mobile_warfare_cost_factor = -0.15
-		experience_gain_army = @experience_gain_high
-
-		ai_will_do = {
-			factor = 5
-		}
+		experience_gain_army = @experience_gain_medium
 	}
 
 	military_theorist = {
@@ -7079,10 +7075,6 @@ leader_traits = {
 		sprite = 14
 		air_doctrine_cost_factor = -0.1
 		experience_gain_air = @experience_gain_esport
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	dive_bomber = {
@@ -8392,24 +8384,24 @@ leader_traits = {
 
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
-		training_time_army_factor = -0.05
-		experience_gain_navy_unit_factor = @experience_gain_low
+		experience_gain_army_unit_factor = 0.05
+		experience_gain_army = @experience_gain_low
 
 		command_cap = 0
 	}
 
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
-		training_time_army_factor = -0.1
-		experience_gain_navy_unit_factor = @experience_gain_medium
+		experience_gain_army_unit_factor = 0.1
+		experience_gain_army = @experience_gain_medium
 
 		command_cap = 0
 	}
 
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
-		training_time_army_factor = -0.15
-		experience_gain_navy_unit_factor = @experience_gain_high
+		experience_gain_army_unit_factor = 0.15
+		experience_gain_army = @experience_gain_high
 
 		command_cap = 0
 	}
@@ -8799,14 +8791,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_high
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 

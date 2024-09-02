@@ -977,7 +977,7 @@ GER_thousand_year_reich_category = {
             ROOT = {
                 tag = GER
             }
-            28 = { is_core_of = GER }
+            #28 = { is_core_of = GER }
         }
 
         cost = 20

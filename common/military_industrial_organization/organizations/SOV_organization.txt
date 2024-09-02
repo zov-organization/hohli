@@ -898,11 +898,6 @@ SOV_tula_arms_plant_organization = {
 		x = 2.5
 	}
 
-	tree_header_text = {
-		text = mio_header_anti_tank
-		x = 7
-	}
-
 	override_trait = {
 		token = generic_mio_trait_armor_piercing_rounds
 		
