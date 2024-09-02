@@ -1,7 +1,6 @@
 state={
 	id=972
 	name="STATE_972"
-	set_demilitarized_zone = yes
 	history = {
 		owner = GER
 		add_core_of = GER
