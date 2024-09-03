@@ -9,7 +9,7 @@
  #################### 
 
 GER_man_organization = {
-	include = generic_medium_tank_organization
+	include = ic_generic_medium_tank_organization
 	icon = GFX_idea_GER_MAN
 	
 	allowed = {	
@@ -168,7 +168,7 @@ GER_rheinmetall_organization = {
 }
 
 GER_mauser_organization = {
-	include = generic_infantry_equipment_organization
+	include = ic_generic_infantry_equipment_organization
 	icon = GFX_idea_mauser
 	
 	allowed = {	 
