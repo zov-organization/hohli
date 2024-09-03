@@ -657,7 +657,6 @@ NMarket = {
 	CONTRACT_ESTIMATE_AVERAGE_CONVOY_SUNK_MULTIPLIER_ALPHA = 0.5,	-- How strong effect should have the daily sunk efficiency on the average (1.0 means it will use only the new number as average)
 	CONTRACT_ESTIMATE_AVERAGE_CONVOY_SUNK_MULTIPLIER_SNAP_LIMIT = 0.05, -- If the difference between current and estimated sunk efficiency convoy count is smaller then this value, we will use the current value for calculations.
 	WARNING_CONVOYS_SUNK_MAX_DAYS  = 30, -- The contracts will show sunk convoy message if there was sunk convoy in this amount of days
-
 },
 
 NTechnology = {
@@ -721,7 +720,7 @@ NDeployment = {
 },
 
 NMilitary = {
-	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisa	tion when determining the combat value of a division
+	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisation when determining the combat value of a division
 	COMBAT_VALUE_STR_IMPORTANCE = 1,		-- Multiplier on TotalStrength when determining the combat value of a division
 
 	SOFT_ATTACK_TARGETING_FACTOR = 1.0,		-- How much we care about potential soft attacks when evaluating priority combat target
