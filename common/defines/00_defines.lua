@@ -419,8 +419,8 @@ NCountry = {
 
 	FUEL_LEASE_CONVOY_RATIO = 0.0005,				-- num convoys needed per fuel land lease
 
-	STARTING_FUEL_RATIO = 0.25,						-- starting fuel ratio compared to max fuel for countries
-	BASE_FUEL_GAIN_PER_OIL = 2,						-- base amount of fuel gained hourly per excess oil
+	STARTING_FUEL_RATIO = 0.75,						-- starting fuel ratio compared to max fuel for countries
+	BASE_FUEL_GAIN_PER_OIL = 3.4,						-- base amount of fuel gained hourly per excess oil
 	BASE_FUEL_GAIN = 2.0,							-- base amount of fuel gained hourly, independent of excess oil
 	BASE_FUEL_CAPACITY = 50000,						-- base amount of fuel capacity
 
@@ -2100,7 +2100,6 @@ NNavy = {
 	},
 
 	-- all of these NEED to be the same size!!!!
-
 },
 
 NRailwayGun = {
@@ -4136,6 +4135,7 @@ NSupply = {
 	NON_CORE_MANPOWER_STATE_SUPPLY = 0.2,						--Factor for population sttate supply when controlled by an occupier (NO TAKE FOOD)
 	STORED_SUPPLY_CONSUMPTION_RATE_FACTOR = 0.75,				--Multiplies consumption rate of stored supply (more/less easement)
 },
+
 NAITheatre = {
 	AI_THEATRE_GENERATION_HOME_THEATRE_DEPTH_RESTRICTION = 2,			-- The home theatre is generated based off a initial depth restriction
 	AI_THEATRE_GENERATION_BORDER_SIZE_RESTRICTION = 7,					-- Theatres are generated based off borders, Higher value means larger theatres
@@ -4160,6 +4160,7 @@ NAITheatre = {
 	AI_THEATRE_SUPPLY_CRISIS_LIMIT = 0.1,                               -- If a unit is standing in an area with this supply ratio it will try to escape
 	AI_THEATRE_AI_FRONT_MIN_DESIRED_RATIO = 0.18,						-- Fronts are sorted based on priority, we nudge unit demand based on this sorting, the higher the value the more units the most important front gets
 },
+
 NIndustrialOrganisation = {
 	ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0,					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
 	ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0,		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
@@ -4179,4 +4180,5 @@ NIndustrialOrganisation = {
 	DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180,				-- Default start cooldown in days after attaching a policy
 	LEGACY_COST_FACTOR_SCALE = 1.0,								-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
 },
+
 }

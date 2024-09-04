@@ -1077,40 +1077,11 @@ technologies = {
 				FIN_nokia_tires_after_tech_effect = yes
 			}
 		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 5
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
-		}
 	}
 	
 	oil_processing = {
 		
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		start_year = 1937
 
@@ -1137,7 +1108,7 @@ technologies = {
 	
 	improved_oil_processing = {
 		
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = advanced_oil_processing
@@ -1158,46 +1129,12 @@ technologies = {
 			cat_synth_oil
 		}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}	
-			modifier = {
-				original_tag = GER			
-				has_war = yes
-				factor = 3
-			}		
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
-		}
-		
 		show_effect_as_desc = yes
 	}
 	
 	advanced_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = modern_oil_processing
@@ -1218,41 +1155,12 @@ technologies = {
 			cat_synth_oil
 		}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			rubber = -2.0
-		}
-		
 		show_effect_as_desc = yes
 	}
 
 	modern_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 		
 		research_cost = 1
 		start_year = 1943
@@ -1266,26 +1174,6 @@ technologies = {
 			industry
 			synth_resources
 			cat_synth_oil
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
 		}
 		
 		show_effect_as_desc = yes
