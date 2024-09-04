@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "SOV"
 		default = yes
 		
 		"FRA"={
@@ -71,10 +71,14 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				
+				ic_SOV_fake_mass_production
+				ic_SOV_peaceful_building
+				ic_SOV_mehkorpusa
 			}
 			focuses = {
-				
+				SOV_we-ll_be_ready
+				SOV_wow
+				SOV_stavka_organisation
 			}	
 		}
 
