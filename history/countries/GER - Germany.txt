@@ -125,7 +125,8 @@ create_equipment_variant = {
 		fixed_main_weapon_slot = torpedo_mounting
 		engine_type_slot = engine_2_1x
 		special_type_slot_1 = floats
-	}	special_type_slot_2 = lmg_defense_turret
+		special_type_slot_2 = lmg_defense_turret
+	}	
 }
 
 add_equipment_to_stockpile = {

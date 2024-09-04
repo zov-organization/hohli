@@ -64,9 +64,16 @@ GER_germaniawerft_organization = {
 ###########################
 
 GER_messerschmitt_organization = {
-	include = generic_light_aircraft_organization
+	include = ic_generic_light_aircraft_organization
 	icon = GFX_idea_messerschmitt
 	
+	equipment_type = {
+		small_plane_airframe
+		medium_plane_airframe
+		large_plane_airframe
+		transport_plane_equipment
+	}
+
 	allowed = {	
 		OR = {
 			tag = GER
@@ -90,46 +97,6 @@ GER_messerschmitt_organization = {
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
-
-	add_trait = {
-		token = GER_mio_trait_maintenance_first_design
-		name = GER_mio_trait_maintenance_first_design
-
-		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
-		special_trait_background = yes
-		
-		position = { x=-2 y=1 }
-		relative_position_id = generic_mio_trait_expanded_production_facilities
-
-		all_parents = { generic_mio_trait_expanded_production_facilities }
-
-		equipment_bonus = {
-			reliability = 0.05
-		}
-
-		production_bonus = {
-			production_efficiency_gain_factor = 0.05
-		}
-	}
-
-	add_trait = {
-		token = GER_mio_trait_fuselage_based_weapons
-		name = GER_mio_trait_fuselage_based_weapons
-
-		icon = GFX_generic_mio_trait_icon_anti_air_attack
-		special_trait_background = yes
-		
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_gun_pods
-
-		any_parent = { generic_mio_trait_heavier_airframe generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
-
-		equipment_bonus = {
-			air_attack = 0.05
-			air_agility = 0.05
-		} 
-	}
-
 }
 
 ################################### 
