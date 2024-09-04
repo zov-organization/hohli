@@ -4,7 +4,7 @@ set_naval_oob = "ic_SOV_1936_fleet"
 set_country_flag = host
 
 
-set_research_slots = 3
+set_research_slots = 2
 navy_experience = 0
 
 set_convoys = 800

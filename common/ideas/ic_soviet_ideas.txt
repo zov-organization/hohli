@@ -168,7 +168,27 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			equipment_bonus = {
+				infantry_equipment = {					
+					build_cost_ic = 0.1 instant = yes
+				}
+                support_equipment = {					
+					build_cost_ic = 0.15 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+			research_bonus = {
+                armor = -0.35
+				artillery = -0.2
+            }
 			modifier = {
 				army_attack_factor = -0.05
 				army_defence_factor = -0.075
@@ -302,8 +322,8 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_gain = 0.1
-				stability_weekly = 0.003
+				political_power_gain = 0.05
+				stability_weekly = 0.001
 			}
 		}
 
@@ -319,8 +339,8 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_gain = 0.1
-				stability_weekly = 0.003
+				political_power_gain = 0.05
+				stability_weekly = 0.001
 				war_support_weekly = 0.0025
 			}
 		}
@@ -337,7 +357,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_speed_factor = 0.09
+				research_speed_factor = 0.05
 			}
 		}
 
