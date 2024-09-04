@@ -42,6 +42,16 @@ ic_ger_spy_planes_caught = {
 	}
 }
 
+ic_ger_has_completed_all_six_waves_of_industry_evac = {
+	custom_trigger_tooltip = {
+		tooltip = ic_ger_has_completed_all_six_waves_of_industry_evac_tt
+		31 = {
+			arms_factory < 1
+            industrial_complex < 1
+		}
+	}
+}
+
 ic_red_hordes_are_coming = {
 	custom_trigger_tooltip = {
 		tooltip = ic_red_hordes_are_coming_tt

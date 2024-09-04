@@ -10,6 +10,12 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			visible = {
+				NOT = {
+					tag = SOV
+				}
+			}
+
 			removal_cost = -1
 
 			modifier = {
@@ -667,6 +673,11 @@ ideas = {
 		}
 
 		free_trade = {
+			visible = {
+				NOT = {
+					tag = SOV
+				}
+			}
 
 			available = {
 				if = {
@@ -698,6 +709,11 @@ ideas = {
 		}
 
 		export_focus = {
+			visible = {
+				NOT = {
+					tag = SOV
+				}
+			}
 
 			available = {
 
@@ -740,6 +756,11 @@ ideas = {
 		}
 
 		limited_exports = {
+			visible = {
+				NOT = {
+					tag = SOV
+				}
+			}
 			available = {
 				OR = {
 					AND = {
@@ -800,6 +821,11 @@ ideas = {
 		}
 
 		closed_economy = {
+			visible = {
+				NOT = {
+					tag = SOV
+				}
+			}
 
 
 			available = {
@@ -848,6 +874,9 @@ ideas = {
 		}
 
 		planned_economy = {
+			visible = {
+				tag = SOV
+			}
 
 
 			available = { tag = SOV }

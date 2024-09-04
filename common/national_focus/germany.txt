@@ -271,57 +271,9 @@
 			}
 		}
 	}
-	
-	focus = {
-		id = GER_silesian_industrial_region
-		icon = GFX_GER_factories_two
-
-		prerequisite = { focus = GER_factories_two }
-		relative_position_id = GER_factories_two
-
-		x = 0
-		y = 2
-		cost = 5
-		completion_reward = {
-			66 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				set_state_category = metropolis
-				#add_resource = {
-				#	type = steel
-				#	amount = 30
-				#}
-				#add_resource = {
-				#	type = aluminium
-				#	amount = 30
-				#}
-			}
-			67 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				set_state_category = megalopolis
-				#add_resource = {
-				#	type = steel
-				#	amount = 30
-				#}
-				#add_resource = {
-				#	type = aluminium
-				#	amount = 30
-				#}
-			}
-		}
-	}
 
 	focus = {
-		id = GER_silesian_industrial_region
+		id = GER_silesian_industrial_region_one
 		icon = GFX_GER_factories_two
 
 		prerequisite = { focus = GER_factories_two }
@@ -346,6 +298,52 @@
 					level = 3
 					instant_build = yes
 				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_silesian_industrial_region_two
+		icon = GFX_GER_factories_two
+
+		prerequisite = { focus = GER_factories_two }
+		relative_position_id = GER_factories_two
+
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			66 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_state_category = metropolis
+				#add_resource = {
+				#	type = steel
+				#	amount = 30
+				#}
+				#add_resource = {
+				#	type = aluminium
+				#	amount = 30
+				#}
+			}
+			67 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_state_category = megalopolis
+				#add_resource = {
+				#	type = steel
+				#	amount = 30
+				#}
+				#add_resource = {
+				#	type = aluminium
+				#	amount = 30
+				#}
 			}
 		}
 	}
@@ -395,22 +393,6 @@
 				}
 			}
 			972 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			55 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			973 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
@@ -891,26 +873,11 @@
 	}
 
 	focus = {
-		id = GER_himmler_focus
+		id = GER_proclaim_german_supremacy
 		icon = GFX_GER_proclaim_german_supremacy
 		
 		prerequisite = { focus = GER_cheap_civilian_radios }
 		relative_position_id = GER_cheap_civilian_radios
-
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GER_proclaim_german_supremacy
-		icon = GFX_GER_proclaim_german_supremacy
-		
-		prerequisite = { focus = GER_himmler_focus }
-		relative_position_id = GER_himmler_focus
 
 		x = 0
 		y = 1
@@ -926,16 +893,16 @@
 
 	focus = {
 		id = GER_the_question
-		icon = GFX_GER_proclaim_german_supremacy
+		icon = GFX_GER_the_question
 		
 		prerequisite = { focus = GER_proclaim_german_supremacy }
 		relative_position_id = GER_proclaim_german_supremacy
 
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		completion_reward = {
-
+			unlock_decision_category_tooltip = GER_the_question_category
 		}
 	}
 
@@ -1040,13 +1007,17 @@
 		y = 2
 		cost = 0.2
 		completion_reward = {
-			#
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+			remove_ideas = ic_mefo_bills
 		}
 	}
 	
 	focus = {
-		id = GER_expand_gestapo_power
-		icon = GFX_GER_proclaim_german_supremacy
+		id = GER_ss_regiments
+		icon = GFX_GER_ss_regiments
 		
 		prerequisite = { focus = GER_expand_lebensraum }
 		relative_position_id = GER_expand_lebensraum
@@ -1061,12 +1032,12 @@
 
 	focus = {
 		id = GER_rubber_3
-		icon = GFX_focus_generic_stockpile_fuel
+		icon = GFX_GER_rubber_3
 
 		prerequisite = { focus = GER_expand_lebensraum }
-		relative_position_id = GER_expand_gestapo_power
+		relative_position_id = GER_ss_regiments
 
-		x = 2
+		x = 3
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -1075,19 +1046,28 @@
         	   resource = rubber
         	   amount = 1
         	}
-			add_tech_bonus = {
-				name = SOV_rubber
-				bonus = 1.5
-				uses = 4
-				category = synth_resources
+			55 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			973 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}
 
-
 	focus = {
 		id = GER_silesian_industrial_region_2
-		icon = GFX_GER_factories_two
+		icon = GFX_GER_silesian_industrial_region_2
 
 		prerequisite = { focus = GER_expand_lebensraum }
 		relative_position_id = GER_rubber_3
@@ -1097,14 +1077,19 @@
 		cost = 5
 		completion_reward = {
 			66 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 9
 				add_building_construction = {
 					type = arms_factory
 					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = infrastructure
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
 					level = 3
 					instant_build = yes
 				}
@@ -1120,20 +1105,100 @@
 		}
 	}
 
+	focus = {
+		id = GER_get_them_milzz
+		icon = GFX_GER_get_them_milzz
+
+		prerequisite = { focus = GER_silesian_industrial_region_2 }
+		prerequisite = { focus = GER_rubber_3 }
+		relative_position_id = GER_silesian_industrial_region_2
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_GER_mobilize_reich
+		}
+	}
+
+	focus = {
+		id = GER_aa_defences_of_life_important_industry
+		icon = GFX_GER_aa_defences_of_life_important_industry
+
+		prerequisite = { focus = GER_get_them_milzz }
+		relative_position_id = GER_get_them_milzz
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			every_core_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_aa_defences_of_remnants_of_the_reich
+		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+
+		prerequisite = { focus = GER_aa_defences_of_life_important_industry }
+		relative_position_id = GER_aa_defences_of_life_important_industry
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			HOL = {
+				every_core_state = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			BEL = {
+				every_core_state = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			FRA = {
+				every_core_state = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+
+
 
 
 	focus = {
 		id = GER_fra_cap
-		icon = GFX_GER_expand_lebensraum
+		icon = GFX_GER_fra_cap
 		
 		prerequisite = { focus = GER_expand_lebensraum }
 		relative_position_id = GER_expand_lebensraum
 
 		x = -2
 		y = 1
-		cost = 0.2
+		cost = 1
 		completion_reward = {
-			#
+			unlock_decision_tooltip = GER_alsace_lorraine_integration
 		}
 	}
 
@@ -1160,7 +1225,7 @@
 
 	focus = {
 		id = GER_unsere_rommel
-		icon = GFX_GER_tiger
+		icon = GFX_GER_unsere_rommel
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_tiger
@@ -1169,34 +1234,145 @@
 		y = 0
 		cost = 5
 		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = GER_tiger
-				bonus = 0.5
-				uses = 1
-				technology = improved_heavy_tank_chassis
+			ITA = {
+				army_experience = 50
+				add_tech_bonus = {
+					name = GER_unsere_rommel
+					bonus = 1
+					uses = 1
+					technology = improved_medium_tank_chassis
+				}
 			}
 		}
 	}
 
 	focus = {
 		id = GER_battle_for_england
-		icon = GFX_GER_bf_109_improvements
+		icon = GFX_GER_battle_for_england
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_unsere_rommel
 
 		x = -2
 		y = 0
+		cost = 10
+		completion_reward = {
+			unlock_decision_tooltip = GER_start_tact_bomber_production
+			add_equipment_to_stockpile = {
+                type = medium_plane_airframe
+                amount = 200
+                producer = GER
+            }
+			15 = {
+				add_building_construction = {
+					type = radar_station
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			14 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			6 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = GER_symbol_of_the_blitzkrieg
+		icon = GFX_GER_symbol_of_the_blitzkrieg
+
+		prerequisite = { focus = GER_ss_regiments }
+		relative_position_id = GER_ss_regiments
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_extra_sponsorship
+				bonus = 1
+				uses = 1
+				category = mio_cat_tech_all_motorized_mechanized
+			}
+		}
+	}
+
+	focus = {
+		id = GER_new_main_tank
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = GER_tiger }
+		prerequisite = { focus = GER_symbol_of_the_blitzkrieg }
+		relative_position_id = GER_tiger
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_extra_sponsorship
+				bonus = 1.5
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_army_innovation
+		icon = GFX_GER_army_innovation
+
+		prerequisite = { focus = GER_ss_regiments }
+		relative_position_id = GER_ss_regiments
+
+		x = 1
+		y = 2
 		cost = 5
 		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = GER_battle_for_england
-				bonus = 0.5
-				uses = 1
-				technology = improved_heavy_tank_chassis
-			}
+
+		}
+	}
+
+	focus = {
+		id = GER_change_direction
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_symbol_of_the_blitzkrieg }
+		prerequisite = { focus = GER_army_innovation }
+		prerequisite = { focus = GER_new_main_tank }
+		relative_position_id = GER_symbol_of_the_blitzkrieg
+
+		x = 0
+		y = 2
+		cost = 12
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_prep_for_barb_category
 		}
 	}
 

@@ -281,23 +281,14 @@
 
 
 
-
-  SOV_forts_category:0 "§HSOVIET FORTS§!"
-  SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war, for example fort Krasnaya Gorka near Leningrad was never captured by Germans outlining the front line with the range of its guns; Mojayskaya Defencive Line stopped German panzers advance towards Moscow during fall 1941; However Soviets werent able to build proper fort lines across the whole frontline.§!"
-  SOV_forts_krasnaya_gorka:0 "Krasnaya Gorka Forts"
-  SOV_forts_maxim_gorki:0 "Maxim Gorki Forts"
-  SOV_forts_vitebsk_ukrep_rayon:0 "Vitebskiy UkrepRayon"
-  SOV_forts_kiev_ukrep_rayon:0 "Kievskiy UkrepRayon"
-  SOV_forts_mojaisk_line_first:0 "Mojaiskata Liniya Oboroni, First Line"
-  SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
-  SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
-
   ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
+  GER_optimal_building_line:0 "Optimal starting building line"
   SOV_ukrain_promkompleks_tip:0 "Show states affected by Ukrain PromKomplect"
   SOV_russian_storehouse_tip:0 "Show states affected by Russian Storehouse"
   SOV_debug_cze:0 "debug thingy for CZE annex"
   SOV_debug_pol:0 "debug thingy for baltiks, pol and bessarabia"
+
 
   ic_pp_waste:0 "§HPP WASTE SECTION§!"
   ic_pp_waste_desc:0 "§gThose decisions will help you to waste infinite PP by impoving your industry§!"
@@ -316,6 +307,17 @@
   shipyard_investment:0 "Shipyard Investment"
   supply_buildup_cancel:0 "Cancel Logistical Preparations"
   supply_buildup:0 "Logistical Preparations"
+
+
+  SOV_forts_category:0 "§HSOVIET FORTS§!"
+  SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war, for example fort Krasnaya Gorka near Leningrad was never captured by Germans outlining the front line with the range of its guns; Mojayskaya Defencive Line stopped German panzers advance towards Moscow during fall 1941; However Soviets werent able to build proper fort lines across the whole frontline.§!"
+  SOV_forts_krasnaya_gorka:0 "Krasnaya Gorka Forts"
+  SOV_forts_maxim_gorki:0 "Maxim Gorki Forts"
+  SOV_forts_vitebsk_ukrep_rayon:0 "Vitebskiy UkrepRayon"
+  SOV_forts_kiev_ukrep_rayon:0 "Kievskiy UkrepRayon"
+  SOV_forts_mojaisk_line_first:0 "Mojaiskata Liniya Oboroni, First Line"
+  SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
+  SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
 
   ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §R-5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §R-1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §R-2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §R-1.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
@@ -345,7 +347,7 @@
   GER_add_denmark_to_the_reich:0 "Add Denmark to the Reich"
   GER_add_netherlands_to_the_reich:0 "Add Netherlands to the Reich"
   GER_add_belgium_to_the_reich:0 "Add Belguim to the Reich"
-  GER_alsace_lorraine_integration:0 "Alsace-Lorraine Integration"
+  GER_alsace_lorraine_integration:0 "Alsace-Lorraine Integration\n(unlocks industry evac decisions)"
   GER_set_up_bordeaux_naval_bases:0 "Set up Bordeaux Naval Bases"
   GER_atlantik_wall_ger_den:0 "Northern Part of Atlantikwall"
   GER_atlantik_wall_fra_bel_hol:0 "France, Belguim and Holland Part of Atlantikwall"
@@ -358,7 +360,17 @@
   GER_france_industrial_relocation_five:0 "France Industry Relocation: 5"
   GER_france_industrial_relocation_six:0 "France Industry Relocation: 6"
   GER_prepare_france_for_fighting:0 "Festung Frankreich"
+  GER_prepare_france_for_fighting_tt:0 " §OWill get cores on all FRA cores§!\n "
 
+  GER_the_question_category:0 "§YTHE QUESTION§!"
+  GER_the_question_category_desc:0 ""
+  GER_discredit_ethnic_groups:0 "Discredit Eethnic Groups"
+  GER_blame_the_nosies:0 "Blame the Nosies"
+  GER_build_questiobable_camps:0 "Build Questionable Camps"
+
+  GER_start_tact_bomber_production:0 "Start producting tactical bombers"
+  GER_stop_tact_bomber_production:0 "Stop producting tactical bombers"
+  GER_start_tact_bomber_production_mission:0 "Next batch is expected in..."
 
   GER_prep_for_barb_category:0 "§OOPERATION §R"BARBAROSSA"§! PREPARATIONS§!"
   GER_send_scout_planes:0 "Kommando Rowehl (start of preparations)"

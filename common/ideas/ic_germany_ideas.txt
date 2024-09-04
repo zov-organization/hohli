@@ -41,6 +41,26 @@ ideas = {
 			}
 		}
 
+		ic_GER_mobilize_reich = {
+			name = ic_GER_mobilize_reich
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_GER_mobilize_reich
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.03
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_air_base_factor = 0.25
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+
 		ic_old_german_working_culture = {
 			name = ic_old_german_working_culture
 
@@ -157,6 +177,12 @@ ideas = {
 			}
 
 			equipment_bonus = {
+				tactical_bomber = {
+					build_cost_ic = -0.2 instant = yes
+					air_range = 0.11 instant = yes
+					air_defence = 0.15 instant = yes
+					air_bombing = 0.13 instant = yes
+				}
 				strat_bomber = {
 					build_cost_ic = -0.2 instant = yes
 					air_range = 0.11 instant = yes
@@ -166,6 +192,23 @@ ideas = {
 			}
 
 			modifier = {  }
+		}
+
+		ic_ural_bomber_programm = {
+			name = ic_ural_bomber_programm
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_gray_wolf
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.25
+			}
 		}
 
 		ic_gray_wolf = {

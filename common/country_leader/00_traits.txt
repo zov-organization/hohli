@@ -5425,7 +5425,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		stability_factor = 0.14
-		war_support_factor = 0.0088
+		war_support_factor = 0.088
 	}
 
 	#Litvinov

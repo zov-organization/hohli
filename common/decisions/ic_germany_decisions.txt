@@ -70,6 +70,66 @@ GER_prep_for_barb_category = {
 }
 
 GER_thousand_year_reich_category = {
+
+    GER_start_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_completed_focus = GER_battle_for_england
+            NOT = {
+                has_active_mission = GER_start_tact_bomber_production_mission
+            }
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            activate_mission = GER_start_tact_bomber_production_mission
+            add_ideas = ic_ural_bomber_programm
+        }
+    }
+
+    GER_stop_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_active_mission = GER_start_tact_bomber_production_mission
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            remove_mission = GER_start_tact_bomber_production_mission
+            remove_ideas = ic_ural_bomber_programm
+        }
+    }
+
+	GER_start_tact_bomber_production_mission = {
+        icon = GFX_decision_SWE_set_air_budget
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = {  }
+
+		days_mission_timeout = 30
+        complete_effect = {}
+        timeout_effect = {
+            add_equipment_to_stockpile = {
+                type = medium_plane_airframe
+                amount = 20
+                producer = GER
+            }
+            activate_mission = GER_start_tact_bomber_production_mission
+        }
+    }
     
     GER_appoint_fireman = {
 
@@ -79,7 +139,7 @@ GER_thousand_year_reich_category = {
             ic_red_hordes_are_coming = yes
         }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -115,7 +175,7 @@ GER_thousand_year_reich_category = {
             86 = { is_controlled_by = GER }
         }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -167,6 +227,8 @@ GER_thousand_year_reich_category = {
     GER_add_denmark_to_the_reich = {
 
         icon = GFX_decision_generic_operation
+
+        fire_only_once = yes
 
         available = {
             6 = { is_controlled_by = GER }
@@ -240,7 +302,7 @@ GER_thousand_year_reich_category = {
             35 = { is_controlled_by = GER }
         }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -337,10 +399,10 @@ GER_thousand_year_reich_category = {
 
     GER_alsace_lorraine_integration = {
 
-        icon = GFX_decision_generic_operation
+        icon = GFX_decision_generic_factory
 
         available = {
-            28 = { is_controlled_by = GER }
+            has_completed_focus = GER_fra_cap
         }
 
         visible = {
@@ -376,7 +438,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -534,7 +596,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -770,7 +832,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -880,7 +942,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = no
+        fire_only_once = yes
 
         visible = {
             ROOT = {
@@ -1400,44 +1462,40 @@ GER_thousand_year_reich_category = {
 
         icon = GFX_decision_generic_operation
 
-        available = {  }
+        available = {
+            ic_ger_has_completed_all_six_waves_of_industry_evac = yes
+        }
 
         visible = {
-            AND = {
-                ROOT = {
-                    tag = GER
-                }
-                27 = {
-                    arms_factory < 1
-                    industrial_complex < 1
-                }
-                20 = {
-                    arms_factory < 1
-                    industrial_complex < 1
-                }
-                26 = {
-                    arms_factory < 1
-                    industrial_complex < 1
-                }
-                22 = {
-                    arms_factory < 1
-                    industrial_complex < 1
-                }
-            }
+            #AND = {
+            #    ROOT = {
+            #        tag = GER
+            #    }
+            #    27 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    20 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    26 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    22 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #}
         }
 
         fire_only_once = yes
         cost = 150
         days_remove = 365
-        highlight_states = {
-            highlight_state_targets = {
-                state = 19
-                state = 806
-                state = 31
-            }
-		}
 
         remove_effect = {
+            custom_effect_tooltip = GER_prepare_france_for_fighting_tt
             hidden_effect = {
                 every_owned_state = {
                     IF = {
@@ -1450,4 +1508,104 @@ GER_thousand_year_reich_category = {
             }
         }
     }
+}
+
+GER_the_question_category = {
+
+    GER_discredit_ethnic_groups = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {  }
+
+        days_remove = 50
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        complete_effect = {
+            random_owned_state = {
+                add_manpower = -1000
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_blame_the_nosies = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {  }
+
+        days_remove = 50
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 15
+
+        complete_effect = {
+            random_owned_state = {
+                add_manpower = -1500
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_build_questiobable_camps = {
+
+        icon = GFX_decision_generic_arrest
+
+        available = {  }
+
+        days_remove = 80
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 30
+
+        modifier = {
+			weekly_manpower = -250
+            civilian_factory_use = 2
+        }
+        complete_effect = {
+            random_owned_state = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+
 }

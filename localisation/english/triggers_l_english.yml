@@ -945,6 +945,8 @@
   ic_ger_spy_planes_caught_tt:0 "§YGERMAN SPY PLANES DETECTED§!\n "
   ic_ger_spy_planes_caught_tt_NOT:0 "§YGERMAN SPY ARE NOT PLANES DETECTED§!"
 
+  ic_ger_has_completed_all_six_waves_of_industry_evac_tt:0 "§YHAS COMPLETED ALL 6 WAVES OF FRANCE INDUSTRY EVAC§!\n "
+
   ic_jap_chi_war_started_tt:0 "§YJAPAN STARTED INVASION OF CHINA§!"
   ic_jap_chi_war_started_tt_NOT:0 "§YJAPAN HAS NOT STARTED INVASION OF CHINA YET§!"
   

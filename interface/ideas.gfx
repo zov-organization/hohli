@@ -3867,6 +3867,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_GER_mobilize_reich"
+		texturefile = "gfx/interface/ideas/inflexible.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_nation_zombification_1"
 		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
