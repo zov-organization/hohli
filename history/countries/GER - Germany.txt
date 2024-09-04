@@ -20,6 +20,15 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Adolf Hitler"
+	picture = "GFX_portrait_GER_adolf_hitler"
+	ideology = nazism
+	expire = "1965.1.1.1"
+	id = -1
+	traits = { dictator }
+}
+
 recruit_character = ic_GER_adolf_hitler
 recruit_character = ic_GER_hjalmar_schacht
 recruit_character = ic_GER_walther_funk

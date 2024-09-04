@@ -3739,6 +3739,11 @@ spriteTypes = {
 		name = "GFX_idea_ic_SOV_mass_production"
 		texturefile = "gfx/interface/ideas/idea_ic_SOV_mass_production.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_fake_mass_production"
+		texturefile = "gfx/interface/ideas/idea_ic_SOV_mass_production.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_ic_SOV_kuznetsov_reforms"
