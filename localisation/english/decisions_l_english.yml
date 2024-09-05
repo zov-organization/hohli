@@ -284,6 +284,10 @@
   ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
   GER_optimal_building_line:0 "Optimal starting building line"
+
+  SOV_faq_event:0 "faq - SOV"
+  GER_faq_event:0 "faq - GER"
+
   SOV_ukrain_promkompleks_tip:0 "Show states affected by Ukrain PromKomplect"
   SOV_russian_storehouse_tip:0 "Show states affected by Russian Storehouse"
   SOV_debug_cze:0 "debug thingy for CZE annex"
