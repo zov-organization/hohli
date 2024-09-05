@@ -1,0 +1,50 @@
+add_namespace = ic_faq_events
+
+country_event = {   # FAQ for SOV
+    id = ic_faq_events.1
+    title = ic_faq_events.1.t
+    desc = ic_faq_events.1.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_faq_events.1.a
+    }
+}
+
+country_event = {   # FAQ for GER
+    id = ic_faq_events.2
+    title = ic_faq_events.2.t
+    desc = ic_faq_events.2.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_faq_events.2.a
+    }
+}
+
+country_event = {   # FAQ for ITA
+    id = ic_faq_events.3
+    title = ic_faq_events.3.t
+    desc = ic_faq_events.3.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_faq_events.3.a
+    }
+}
+
+    
+country_event = {   # FAQ for ENG
+    id = ic_faq_events.4
+    title = ic_faq_events.4.t
+    desc = ic_faq_events.4.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_faq_events.4.a
+    }
+}

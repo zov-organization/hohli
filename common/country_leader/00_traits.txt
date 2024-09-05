@@ -5305,10 +5305,8 @@ leader_traits = {
 	head_of_the_nkvd_yagoda_initial = {
 		random = no
 		sprite = 13
-		stability_factor = -0.05
-		enemy_operative_detection_chance = 0.1
-		enemy_operative_capture_chance_factor = 0.05
-		civilian_intel_to_others = -5
+		stability_factor = -0.1
+		political_power_factor = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
 
@@ -5426,9 +5424,8 @@ leader_traits = {
 	pc_for_foreign_affairs_molotov = {
 		random = no
 		sprite = 13
-		political_power_factor = 0.14
-		stability_factor = 0.08
-		war_support_factor = 0.08
+		stability_factor = 0.14
+		war_support_factor = 0.088
 	}
 
 	#Litvinov
@@ -10538,10 +10535,6 @@ leader_traits = {
 	viceroy_emeritus = {
 		random = no
 		generate_wargoal_tension = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	surveyor = { 
@@ -10552,23 +10545,15 @@ leader_traits = {
 		experience_gain_army = @experience_gain_medium
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	popular_figurehead_kalinin = {
 		sprite = 13
-		stability_factor = 0.20
-		communism_drift = 0.2
-		democratic_drift = -0.2
-		fascism_drift = -0.2
-		neutrality_drift = -0.2
+		stability_factor = 0.15
+		communism_drift = 0.1
+		democratic_drift = -0.05
+		fascism_drift = -0.05
+		neutrality_drift = -0.05
 	}
 
 	navy_chief_kuznetsov = {
@@ -10610,14 +10595,6 @@ leader_traits = {
 		amphibious_invasion_defence = 0.08
 
 		command_cap = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_commerce_raiding_4 = {
