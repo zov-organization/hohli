@@ -100,7 +100,12 @@ GER_plan_ost_category = {
 
         icon = GFX_decision_generic_arrest
 
-        available = {  }
+        available = {
+            any_state = {
+                ic_is_ukranian = yes
+                is_controlled_by = GER
+            }
+        }
 
         days_remove = 30
         fire_only_once = yes
@@ -132,7 +137,12 @@ GER_plan_ost_category = {
 
         icon = GFX_decision_generic_arrest
 
-        available = {  }
+        available = {
+            any_state = {
+                ic_is_ukranian = yes
+                is_controlled_by = GER
+            }
+        }
 
         days_remove = 60
         fire_only_once = yes
@@ -154,6 +164,7 @@ GER_plan_ost_category = {
             random_state = {
                 limit = {
                     ic_is_ukranian = yes
+                    is_controlled_by = GER
                 }
                 add_building_construction = {
                     type = industrial_complex
@@ -173,6 +184,7 @@ GER_plan_ost_category = {
                 any_state = {
                     AND = {
                         ic_is_ukranian = yes
+                        is_controlled_by = GER
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0
@@ -214,7 +226,7 @@ GER_plan_ost_category = {
 
         cost = 10
 
-        days_remove = 30
+        days_remove = 100
         
         modifier = {
             civilian_factory_use = 5
@@ -230,6 +242,7 @@ GER_plan_ost_category = {
                 limit = {
                     AND = {
                         ic_is_ukranian = yes
+                        is_controlled_by = GER
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0
@@ -261,6 +274,7 @@ GER_plan_ost_category = {
                 any_state = {
                     AND = {
                         is_core_of = SOV
+                        is_controlled_by = GER
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0
@@ -279,7 +293,7 @@ GER_plan_ost_category = {
 
         cost = 10
 
-        days_remove = 30
+        days_remove = 100
         
         modifier = {
             civilian_factory_use = 5
@@ -291,6 +305,7 @@ GER_plan_ost_category = {
                     AND = {
                         is_core_of = SOV
                         ic_is_ukranian = no
+                        is_controlled_by = GER
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0

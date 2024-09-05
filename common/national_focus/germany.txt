@@ -1247,14 +1247,34 @@
 	}
 
 	focus = {
-		id = GER_battle_for_england
-		icon = GFX_GER_battle_for_england
+		id = GER_air_innovations
+		icon = GFX_GER_change_direction
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_unsere_rommel
 
 		x = -2
 		y = 0
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_extra_sponsorship
+				bonus = 1.25
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+
+	focus = {
+		id = GER_battle_for_england
+		icon = GFX_GER_battle_for_england
+
+		prerequisite = { focus = GER_air_innovations }
+		relative_position_id = GER_air_innovations
+
+		x = 0
+		y = 1
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = GER_start_tact_bomber_production
@@ -1411,10 +1431,11 @@
 		
 		available = { }
 
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = {
+			unlock_decision_category_tooltip = GER_plan_ost_category
 		}
 	}
 
@@ -1425,12 +1446,13 @@
 		prerequisite = { focus = GER_drang_nach_osten }
 		relative_position_id = GER_plan_ost
 		
-		available = { hidden_trigger = { always = no } }
+		available = {  }
 
-		x = -2
+		x = 2
 		y = 0
 		cost = 10
 		completion_reward = {
+			add_ideas = ic_ger_barb_stall_1
 		}
 	}
 
@@ -1468,7 +1490,7 @@
 			has_idea = ic_ger_barbarossa
 		}
 
-		x = -4
+		x = 4
 		y = 0
 		cost = 1
 		completion_reward = {
