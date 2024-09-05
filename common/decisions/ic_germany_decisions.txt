@@ -1,4 +1,4 @@
-GER_prep_for_barb_category = {
+GER_barb_category = {
 
     GER_send_scout_planes = {
         icon = GFX_decision_SWE_set_air_budget
@@ -32,6 +32,32 @@ GER_prep_for_barb_category = {
 		days_mission_timeout = 120
         complete_effect = {}
         timeout_effect = { }
+    }
+
+    GER_blitzkrieg_mission = {
+        icon = GFX_decision_generic_tank
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+
+		days_mission_timeout = 10
+        complete_effect = {  }
+        timeout_effect = {
+            remove_ideas = ic_ger_barbarossa
+            
+			add_ideas = ic_ger_barb_stall_1
+        }
     }
 
     GER_prep_1 = {

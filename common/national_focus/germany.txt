@@ -1359,6 +1359,7 @@
 		}
 	}
 
+
 	focus = {
 		id = GER_change_direction
 		icon = GFX_GER_change_direction
@@ -1372,7 +1373,160 @@
 		y = 2
 		cost = 12
 		completion_reward = {
-			unlock_decision_category_tooltip = GER_prep_for_barb_category
+			unlock_decision_category_tooltip = GER_barb_category
+		}
+	}
+
+
+
+	focus = {
+		id = GER_drang_nach_osten
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_change_direction }
+		relative_position_id = GER_change_direction
+		
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = 0
+		y = 1
+		cost = 0
+		completion_reward = {
+			add_ideas = ic_ger_barbarossa
+            activate_mission = GER_blitzkrieg_mission
+		}
+	}
+
+	focus = {
+		id = GER_plan_ost
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_drang_nach_osten
+		
+		available = { }
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GER_blitzkrieg_stalls
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_plan_ost
+		
+		available = { hidden_trigger = { always = no } }
+
+		x = -2
+		y = 0
+		cost = 10
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GER_oops_forgor_winter_equip
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_blitzkrieg_stalls }
+		relative_position_id = GER_blitzkrieg_stalls
+		
+		available = { }
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ic_ger_barb_stall_2
+				remove_idea = ic_ger_barb_stall_1
+			}
+		}
+	}
+
+	focus = {
+		id = GER_barbarossa_first_succeses
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_plan_ost
+		
+		available = {
+			controls_state = 11
+			controls_state = 206
+			controls_state = 192
+			has_idea = ic_ger_barbarossa
+		}
+
+		x = -4
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = GER_blitzkrieg_mission
+				days = 45
+			}
+		}
+	}
+
+	focus = {
+		id = GER_barbarossa_moderate_succeses
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_barbarossa_first_succeses }
+		relative_position_id = GER_barbarossa_first_succeses
+		
+		available = {
+			controls_state = 808
+			controls_state = 201
+			controls_state = 197
+			has_idea = ic_ger_barbarossa
+		}
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = GER_blitzkrieg_mission
+				days = 45
+			}
+		}
+	}
+
+	focus = {
+		id = GER_barbarossa_big_succeses
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_barbarossa_moderate_succeses }
+		relative_position_id = GER_barbarossa_moderate_succeses
+		
+		available = {
+			controls_state = 813
+			controls_state = 207
+			controls_state = 193
+			controls_state = 200
+			has_idea = ic_ger_barbarossa
+		}
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = GER_blitzkrieg_mission
+				days = 45
+			}
 		}
 	}
 

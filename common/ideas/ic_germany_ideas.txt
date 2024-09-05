@@ -280,5 +280,71 @@ ideas = {
 			modifier = {  }
 		}
 
+		ic_ger_barbarossa = {
+			name = ic_ger_barbarossa
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_barbarossa
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				breakthrough_factor = 0.05
+				cas_damage_reduction = 0.1
+				coordination_bonus = 0.15
+				army_speed_factor = 0.1
+				air_agility_factor = 0.1
+				air_mission_efficiency = 0.1
+				air_weather_penalty = -0.07
+				ground_attack_factor = 0.1
+				strategic_bomb_visibility = -0.2
+				army_bonus_air_superiority_factor = 0.05
+				air_superiority_detect_factor = 0.08
+			}
+		}
+
+		ic_ger_barb_stall_1 = {
+			name = ic_ger_barb_stall
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_barb_stall
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = 0.05
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.06
+				org_loss_when_moving = 0.05
+				winter_attrition_factor = 0.5
+			}
+		}
+
+		ic_ger_barb_stall_2 = {
+			name = ic_ger_barb_stall
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_barb_stall
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = 0.05
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.06
+				org_loss_when_moving = 0.05
+				winter_attrition_factor = 0.25
+			}
+		}
+
 	}
 }

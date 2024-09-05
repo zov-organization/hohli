@@ -376,6 +376,6 @@
   GER_stop_tact_bomber_production:0 "Stop producting tactical bombers"
   GER_start_tact_bomber_production_mission:0 "Next batch is expected in..."
 
-  GER_prep_for_barb_category:0 "§OOPERATION §R"BARBAROSSA"§! PREPARATIONS§!"
+  GER_barb_category:0 "§OOPERATION §R"BARBAROSSA"§!"
   GER_send_scout_planes:0 "Kommando Rowehl (start of preparations)"
   GER_send_scout_planes_mission:0 "§YOur spy planes are collecting info on USSR§!"
