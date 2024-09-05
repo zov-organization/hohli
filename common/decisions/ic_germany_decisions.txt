@@ -290,6 +290,7 @@ GER_plan_ost_category = {
                 limit = {
                     AND = {
                         is_core_of = SOV
+                        ic_is_ukranian = no
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0
