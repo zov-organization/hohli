@@ -1,0 +1,47 @@
+ic_helpful_tips = {
+
+	SOV_faq_event = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+        priority = 99
+
+        cost = 0
+
+        complete_effect = {
+            SOV = {
+                country_event = ic_faq_events.1
+            }
+        }
+    }
+
+    GER_faq_event = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+        priority = 99
+
+        cost = 0
+
+        complete_effect = {
+            GER = {
+                country_event = ic_faq_events.2
+            }
+        }
+    }
+
+}
