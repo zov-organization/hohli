@@ -95,7 +95,7 @@ GER_barb_category = {
 }
 
 GER_plan_ost_category = {
-    GER_evacuate_ukranian_undustry = {
+    GER_evacuate_ukranian_industry = {
 
         icon = GFX_decision_generic_army_support
 
@@ -152,6 +152,11 @@ GER_plan_ost_category = {
         }
 
         complete_effect = {
+            
+            # да, я сделал по умному.
+            # не как в гду
+            # не по тупому
+
             random_state = {
                 limit = {
                     AND = {
@@ -162,9 +167,6 @@ GER_plan_ost_category = {
                         }
                     }
                 }
-                
-                set_variable = { civs = industrial_complex_level }
-                set_variable = { mils = arms_factory_level }
 
                 GER = {
                     random_core_state = {   add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
@@ -180,6 +182,67 @@ GER_plan_ost_category = {
             }
         }
     }
+
+    GER_evacuate_soviet_industry = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = { 
+            IF = {
+                any_state = {
+                    AND = {
+                        is_core_of = SOV
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+            }
+        }
+
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        days_remove = 30
+        
+        modifier = {
+            civilian_factory_use = 5
+        }
+
+        complete_effect = {
+            random_state = {
+                limit = {
+                    AND = {
+                        is_core_of = SOV
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+
+                GER = {
+                    random_core_state = {   add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
+				                            add_building_construction = { type = industrial_complex     level = PREV.PREV.industrial_complex_level     instant_build = yes }
+                                            add_extra_state_shared_building_slots = PREV.PREV.arms_factory_level
+				                            add_building_construction = { type = arms_factory           level = PREV.PREV.arms_factory_level           instant_build = yes }
+                    }
+                }
+
+                remove_building = { type = industrial_complex level = industrial_complex_level }
+                remove_building = { type = arms_factory level = arms_factory_level }
+
+            }
+        }
+    }
+
 }
 
 GER_thousand_year_reich_category = {
