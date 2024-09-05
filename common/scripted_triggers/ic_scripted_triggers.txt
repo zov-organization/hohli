@@ -52,6 +52,31 @@ ic_ger_has_completed_all_six_waves_of_industry_evac = {
 	}
 }
 
+ic_is_ukranian = {
+	AND = {
+		OR = {
+			state = 202
+			state = 199
+			state = 201
+			state = 202
+			state = 193
+			state = 225
+			state = 221
+			state = 227
+			state = 226
+			state = 259
+			state = 203
+			state = 198
+			state = 834
+			state = 192
+			state = 197
+			state = 196
+			state = 137
+			state = 200
+		}
+	}
+}
+
 ic_red_hordes_are_coming = {
 	custom_trigger_tooltip = {
 		tooltip = ic_red_hordes_are_coming_tt
