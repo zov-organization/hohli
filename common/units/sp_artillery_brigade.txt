@@ -40,7 +40,7 @@ sub_units = {
 
 		suppression = 1.25
 
-		same_support_type = sp_ab
+		same_support_type = sp_td_art
 	}
 	
 	medium_sp_artillery_brigade = {
@@ -82,7 +82,7 @@ sub_units = {
 
 		suppression = 1.5
 
-		same_support_type = sp_ab
+		same_support_type = sp_td_art
 	}
 	
 	heavy_sp_artillery_brigade = {
@@ -125,6 +125,6 @@ sub_units = {
 
 		suppression = 1.5
 
-		same_support_type = sp_ab
+		same_support_type = sp_td_art
 	}
 }
