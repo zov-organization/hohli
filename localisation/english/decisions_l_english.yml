@@ -366,6 +366,12 @@
   GER_prepare_france_for_fighting:0 "Festung Frankreich"
   GER_prepare_france_for_fighting_tt:0 " §OWill get cores on all FRA cores§!\n "
 
+  GER_plan_ost_category:0 "§YPLAN "OST"§!"
+  GER_build_babiy_yar:0 "Build Babiy Yar"
+  GER_expand_questionable_camps_building:0 "Expand Questionable Camps Building"
+  GER_evacuate_ukranian_industry:0 "Evacuate Ukranian Industry"
+  GER_evacuate_soviet_industry:0 "Evacuate Soviet Industry"
+
   GER_the_question_category:0 "§YTHE QUESTION§!"
   GER_the_question_category_desc:0 ""
   GER_discredit_ethnic_groups:0 "Discredit Eethnic Groups"
