@@ -15,6 +15,11 @@ technologies = {
 		
 		enable_equipment_modules = {
 			engine_1_1x
+			bomb_locks
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+			torpedo_mounting
 		}
 	
 		path = {
@@ -576,7 +581,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1937
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -605,7 +610,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1937
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -636,7 +641,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1937
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder

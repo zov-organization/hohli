@@ -788,7 +788,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -853,7 +853,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1
 		start_year = 1937
 		folder = {
 			name = industry_folder
@@ -909,7 +909,7 @@ technologies = {
 			leads_to_tech = fuel_refining4 
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = industry_folder
@@ -956,7 +956,7 @@ technologies = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1
 		start_year = 1941
 		folder = {
 			name = industry_folder
@@ -999,7 +999,7 @@ technologies = {
 		fuel_gain_factor = 0.20
 		fuel_gain_factor_from_states = 0.1
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = industry_folder
@@ -1053,7 +1053,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -1077,40 +1077,11 @@ technologies = {
 				FIN_nokia_tires_after_tech_effect = yes
 			}
 		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 5
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
-		}
 	}
 	
 	oil_processing = {
 		
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		start_year = 1937
 
@@ -1119,7 +1090,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		
 		folder = {
 			name = industry_folder
@@ -1137,14 +1108,14 @@ technologies = {
 	
 	improved_oil_processing = {
 		
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		
 		folder = {
@@ -1158,53 +1129,19 @@ technologies = {
 			cat_synth_oil
 		}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}	
-			modifier = {
-				original_tag = GER			
-				has_war = yes
-				factor = 3
-			}		
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
-		}
-		
 		show_effect_as_desc = yes
 	}
 	
 	advanced_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 
 		path = {
 			leads_to_tech = modern_oil_processing
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1941
 		
 		folder = {
@@ -1218,43 +1155,14 @@ technologies = {
 			cat_synth_oil
 		}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			rubber = -2.0
-		}
-		
 		show_effect_as_desc = yes
 	}
 
 	modern_oil_processing = {
 
-		fuel_gain_factor_from_states = 0.5
+		fuel_gain_factor_from_states = 0.25
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1943
 		
 		folder = {
@@ -1266,26 +1174,6 @@ technologies = {
 			industry
 			synth_resources
 			cat_synth_oil
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
 		}
 		
 		show_effect_as_desc = yes
@@ -1307,7 +1195,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1937
 		
 		folder = {
@@ -1367,7 +1255,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		
 		folder = {
@@ -1427,7 +1315,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1941
 		
 		folder = {
@@ -1482,7 +1370,7 @@ technologies = {
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1943
 		
 		folder = {
@@ -1534,7 +1422,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		categories = {
 			industry
@@ -1564,7 +1452,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		
 		categories = {
 			industry
@@ -1620,7 +1508,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1937
 		
 		categories = {
@@ -1651,7 +1539,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1937
 		
 		categories = {
@@ -1709,7 +1597,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1939
 		
 		categories = {
@@ -1751,7 +1639,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1939
 		
 		categories = {
@@ -1808,7 +1696,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1941
 		
 		categories = {
@@ -1839,7 +1727,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1941
 		
 		categories = {
@@ -1893,7 +1781,7 @@ technologies = {
 		}
 
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1943
 		
 		categories = {
@@ -1925,7 +1813,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1943
 		
 		categories = {

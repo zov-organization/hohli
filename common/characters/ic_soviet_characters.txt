@@ -26,15 +26,6 @@ characters = {
 				small = "GFX_idea_nikolay_kuznetsov"
 			}
 		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = ic_SOV_nikolay_kuznetsov
-			traits = {
-				navy_chief_kuznetsov
-			}
-			cost = 10
-		}
 	}
 
 	ic_SOV_genrikh_yagoda = {
@@ -64,14 +55,6 @@ characters = {
 				small = "GFX_idea_mikhail_kalinin"
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ic_SOV_mikhail_kalinin
-			traits = {
-				popular_figurehead_kalinin 
-			}
-		}
 	}
 
 	ic_SOV_nikolay_voznesensky = {
@@ -80,15 +63,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_nikolay_voznesensky"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ic_SOV_nikolay_voznesensky
-			name = "Nikolay Voznesensky"
-			traits = {
-				captain_of_industry 
 			}
 		}
 	}
@@ -101,15 +75,6 @@ characters = {
 				small = "GFX_idea_SOV_vyacheslav_molotov"
 			}
 		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ic_SOV_vyacheslav_molotov
-			name = "Vyacheslav Molotov"
-			traits = {
-				pc_for_foreign_affairs_molotov 
-			}
-		}
 	}
 
 	ic_SOV_nikita_khrushchyov = {
@@ -117,14 +82,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_nikita_khrushchev"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ic_SOV_nikita_khrushchyov
-			traits = {
-				technocrat 
 			}
 		}
 	}
@@ -135,15 +92,6 @@ characters = {
 			army = {
 				small = "GFX_idea_alexander_novikov"
 			}
-		}
-		advisor = {
-			slot = air_chief
-			idea_token = ic_SOV_aleksandr_novikov
-			name = "Aleksandr Novikov"
-			traits = {
-				air_chief_reform_4
-			}
-			cost = 100
 		}
 	}
 

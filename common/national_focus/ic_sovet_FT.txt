@@ -19,9 +19,7 @@ focus_tree = {
 		y = 0
 		cost = 5
 
-		available = {
-
-		}
+		available = { }
 
 		completion_reward = {
 			 add_political_power = 150
@@ -76,14 +74,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			247 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -112,14 +102,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			222 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -134,7 +116,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 
 		available = {}
 
@@ -494,7 +476,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -560,10 +542,50 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			recruit_character = ic_SOV_mikhail_kalinin
-			recruit_character = ic_SOV_nikolay_voznesensky
-			recruit_character = ic_SOV_vyacheslav_molotov
-			recruit_character = ic_SOV_nikita_khrushchyov
+			add_advisor_role = {
+				character = ic_SOV_mikhail_kalinin
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_mikhail_kalinin
+					traits = {
+						popular_figurehead_kalinin 
+					}
+					cost = 100
+				}
+			}
+			add_advisor_role = {
+				character = ic_SOV_nikolay_voznesensky
+				
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_nikolay_voznesensky
+					name = "Nikolay Voznesensky"
+					traits = {
+						captain_of_industry 
+					}
+				}
+			}
+			add_advisor_role = {
+				character = ic_SOV_vyacheslav_molotov
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_vyacheslav_molotov
+					name = "Vyacheslav Molotov"
+					traits = {
+						pc_for_foreign_affairs_molotov
+					}
+				}
+			}
+			add_advisor_role = {
+				character = ic_SOV_nikita_khrushchyov
+				advisor = {
+					slot = political_advisor
+					idea_token = ic_SOV_nikita_khrushchyov
+					traits = {
+						technocrat 
+					}
+				}
+			}
 		}
 	}
 
@@ -602,7 +624,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -825,7 +847,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			recruit_character = ic_SOV_nikolay_kuznetsov
+			add_advisor_role = {
+				character = ic_SOV_nikolay_kuznetsov
+				advisor = {
+					slot = navy_chief
+					idea_token = ic_SOV_nikolay_kuznetsov
+					traits = {
+						navy_chief_kuznetsov
+					}
+					cost = 10
+				}
+			}
 			add_ideas = { ic_SOV_kuznetsov_reforms }
 		}
 	}
@@ -1001,6 +1033,15 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_red_army }
 		relative_position_id = SOV_the_red_army
 
+		bypass = {
+			if = {
+				AND = {
+					GER = { has_idea = ic_SOV_kama_tank_school }
+					SOV = { has_idea = ic_SOV_kama_tank_school }
+				}
+			}
+		}
+
 		x = 1
 		y = 1
 		cost = 5
@@ -1010,7 +1051,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = { ic_SOV_kama_tank_school }
+			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
+			GER = { add_ideas = { ic_SOV_kama_tank_school } }
 		}
 	}
 
@@ -1073,7 +1115,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -1129,7 +1171,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -1538,7 +1580,18 @@ focus_tree = {
 				uses = 1
 				technology = improved_small_airframe
 			}
-			recruit_character = ic_SOV_aleksandr_novikov
+			add_advisor_role = {
+				character = ic_SOV_aleksandr_novikov
+				advisor = {
+					slot = air_chief
+					idea_token = ic_SOV_aleksandr_novikov
+					name = "Aleksandr Novikov"
+					traits = {
+						air_chief_reform_4
+					}
+					cost = 100
+				}
+			}
 		}
 	}
 
@@ -1577,5 +1630,4 @@ focus_tree = {
 			}
 		}
 	}
-
 }

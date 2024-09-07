@@ -41,3 +41,55 @@ ic_ger_spy_planes_caught = {
 		}
 	}
 }
+
+ic_ger_has_completed_all_six_waves_of_industry_evac = {
+	custom_trigger_tooltip = {
+		tooltip = ic_ger_has_completed_all_six_waves_of_industry_evac_tt
+		31 = {
+			arms_factory < 1
+            industrial_complex < 1
+		}
+	}
+}
+
+ic_is_ukranian = {
+	AND = {
+		OR = {
+			state = 202
+			state = 199
+			state = 201
+			state = 202
+			state = 193
+			state = 225
+			state = 221
+			state = 227
+			state = 226
+			state = 259
+			state = 203
+			state = 198
+			state = 834
+			state = 192
+			state = 197
+			state = 196
+			state = 137
+			state = 200
+		}
+	}
+}
+
+ic_red_hordes_are_coming = {
+	custom_trigger_tooltip = {
+		tooltip = ic_red_hordes_are_coming_tt
+		date > 1942.1.1
+		OR = {
+			SOV = { controls_state = 188 }
+			SOV = { controls_state = 817 }
+			SOV = { controls_state = 97 }
+			SOV = { controls_state = 94 }
+			SOV = { controls_state = 93 }
+			SOV = { controls_state = 199 }
+			SOV = { controls_state = 198 }
+			SOV = { controls_state = 192 }
+		}
+	}
+}

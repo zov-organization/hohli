@@ -1,4 +1,4 @@
-GER_prep_for_barb_category = {
+GER_barb_category = {
 
     GER_send_scout_planes = {
         icon = GFX_decision_SWE_set_air_budget
@@ -34,6 +34,31 @@ GER_prep_for_barb_category = {
         timeout_effect = { }
     }
 
+    GER_blitzkrieg_mission = {
+        icon = GFX_decision_generic_tank
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+
+		days_mission_timeout = 10
+        complete_effect = {  }
+        timeout_effect = {
+            remove_ideas = ic_ger_barbarossa
+			add_ideas = ic_ger_barb_stall_1
+        }
+    }
+
     GER_prep_1 = {
         icon = GFX_decision_SWE_set_air_budget
 		visible = {
@@ -67,4 +92,1781 @@ GER_prep_for_barb_category = {
             
         }
     }
+}
+
+GER_plan_ost_category = {
+
+    GER_build_babiy_yar = {
+
+        icon = GFX_decision_generic_arrest
+
+        available = {
+            any_state = {
+                ic_is_ukranian = yes
+                is_controlled_by = GER
+            }
+        }
+
+        days_remove = 30
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 30
+
+        modifier = {
+			weekly_manpower = -250
+            civilian_factory_use = 2
+        }
+        complete_effect = {
+            202 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_expand_questionable_camps_building = {
+
+        icon = GFX_decision_generic_arrest
+
+        available = {
+            any_state = {
+                ic_is_ukranian = yes
+                is_controlled_by = GER
+            }
+        }
+
+        days_remove = 60
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 65
+
+        modifier = {
+			weekly_manpower = -250
+            civilian_factory_use = 2
+        }
+        complete_effect = {
+
+            random_state = {
+                limit = {
+                    ic_is_ukranian = yes
+                    is_controlled_by = GER
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_evacuate_ukranian_industry = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = { 
+            IF = {
+                any_state = {
+                    AND = {
+                        ic_is_ukranian = yes
+                        is_controlled_by = GER
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 202
+                state = 199
+                state = 201
+                state = 202
+                state = 193
+                state = 225
+                state = 221
+                state = 227
+                state = 226
+                state = 259
+                state = 203
+                state = 198
+                state = 834
+                state = 192
+                state = 197
+                state = 196
+                state = 137
+                state = 200
+            }
+		}
+
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        days_remove = 100
+        
+        modifier = {
+            civilian_factory_use = 5
+        }
+
+        complete_effect = {
+            
+            # да, я сделал по умному.
+            # не как в гду
+            # не по тупому
+
+            random_state = {
+                limit = {
+                    AND = {
+                        ic_is_ukranian = yes
+                        is_controlled_by = GER
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+
+                GER = {
+                    random_core_state = {   add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
+				                            add_building_construction = { type = industrial_complex     level = PREV.PREV.industrial_complex_level     instant_build = yes }
+                                            add_extra_state_shared_building_slots = PREV.PREV.arms_factory_level
+				                            add_building_construction = { type = arms_factory           level = PREV.PREV.arms_factory_level           instant_build = yes }
+                    }
+                }
+
+                remove_building = { type = industrial_complex level = industrial_complex_level }
+                remove_building = { type = arms_factory level = arms_factory_level }
+
+            }
+        }
+    }
+
+    GER_evacuate_soviet_industry = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = { 
+            IF = {
+                any_state = {
+                    AND = {
+                        is_core_of = SOV
+                        is_controlled_by = GER
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+            }
+        }
+
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        days_remove = 100
+        
+        modifier = {
+            civilian_factory_use = 5
+        }
+
+        complete_effect = {
+            random_state = {
+                limit = {
+                    AND = {
+                        is_core_of = SOV
+                        ic_is_ukranian = no
+                        is_controlled_by = GER
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+
+                GER = {
+                    random_core_state = {   add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
+				                            add_building_construction = { type = industrial_complex     level = PREV.PREV.industrial_complex_level     instant_build = yes }
+                                            add_extra_state_shared_building_slots = PREV.PREV.arms_factory_level
+				                            add_building_construction = { type = arms_factory           level = PREV.PREV.arms_factory_level           instant_build = yes }
+                    }
+                }
+
+                remove_building = { type = industrial_complex level = industrial_complex_level }
+                remove_building = { type = arms_factory level = arms_factory_level }
+
+            }
+        }
+    }
+
+}
+
+GER_thousand_year_reich_category = {
+
+    GER_start_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_completed_focus = GER_battle_for_england
+            NOT = {
+                has_active_mission = GER_start_tact_bomber_production_mission
+            }
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            activate_mission = GER_start_tact_bomber_production_mission
+            add_ideas = ic_ural_bomber_programm
+        }
+    }
+
+    GER_stop_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_active_mission = GER_start_tact_bomber_production_mission
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            remove_mission = GER_start_tact_bomber_production_mission
+            remove_ideas = ic_ural_bomber_programm
+        }
+    }
+
+	GER_start_tact_bomber_production_mission = {
+        icon = GFX_decision_SWE_set_air_budget
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = {  }
+
+		days_mission_timeout = 30
+        complete_effect = {}
+        timeout_effect = {
+            add_equipment_to_stockpile = {
+                type = medium_plane_airframe
+                amount = 20
+                producer = GER
+            }
+            activate_mission = GER_start_tact_bomber_production_mission
+        }
+    }
+    
+    GER_appoint_fireman = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = { 
+            ic_red_hordes_are_coming = yes
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 10
+
+        complete_effect = {
+            add_advisor_role = {
+                character = ic_GER_walter_model
+                advisor={
+			        slot = high_command
+			        idea_token = ic_GER_walter_model
+			        ledger = army
+			        traits = {
+				        fuhrers_fireman
+			        }
+			        cost = 100
+		        }
+            }
+        }
+    }
+
+    GER_retake_what_kaiser_lost = {
+
+        icon = GFX_decision_generic_pickelhaube
+
+        available = {
+            85 = { is_controlled_by = GER }
+            807 = { is_controlled_by = GER }
+            86 = { is_controlled_by = GER }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 85
+				state = 807
+                state = 86
+            }
+		}
+
+        cost = 10
+        days_remove = 20
+        remove_effect = {
+            85 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            807 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            86 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_denmark_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        fire_only_once = yes
+
+        available = {
+            6 = { is_controlled_by = GER }
+            34 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 25
+        days_remove = 35
+        highlight_states = {
+            highlight_state_targets = {
+                state = 912
+                state = 911
+				state = 99
+				state = 37
+            }
+		}
+
+        remove_effect = {
+            912 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            911 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            99 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            37 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_netherlands_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            7 = { is_controlled_by = GER }
+            36 = { is_controlled_by = GER }
+            35 = { is_controlled_by = GER }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 36
+				state = 35
+                state = 7
+            }
+		}
+
+        cost = 100
+        days_remove = 180
+        remove_effect = {
+            7 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            36 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            35 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_add_belgium_to_the_reich = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            6 = { is_controlled_by = GER }
+            34 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 100
+        days_remove = 180
+        highlight_states = {
+            highlight_state_targets = {
+                state = 6
+				state = 34
+            }
+		}
+
+        remove_effect = {
+            6 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+            34 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_alsace_lorraine_integration = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {
+            has_completed_focus = GER_fra_cap
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 25
+        days_remove = 50
+        highlight_states = {
+            highlight_state_targets = {
+                state = 28
+            }
+		}
+
+        remove_effect = {
+            28 = { 
+                add_core_of = GER
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_atlantik_wall_ger_den = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 56
+				state = 59
+                state = 58
+                state = 909
+                state = 912
+                state = 99
+            }
+		}
+
+        cost = 10
+        days_remove = 70
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            56 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11360
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 241
+	                instant_build = yes
+                }
+            }
+            59 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3326
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 374
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6349
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6325
+	                instant_build = yes
+                }
+            }
+            58 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9347
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3368
+	                instant_build = yes
+                }
+            }
+            909 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3231
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11366
+	                instant_build = yes
+                }
+            }
+            912 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 332
+	                instant_build = yes
+                }
+            }
+            99 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 13263
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 399
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 13262
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3206
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6235
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 394
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 316
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_fra_bel_hol = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 14
+				state = 15
+                state = 785
+                state = 29
+                state = 6
+                state = 35
+                state = 36
+				state = 7
+            }
+		}
+
+        cost = 10
+        days_remove = 200
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            14 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9510
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6536
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 542
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3552
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6572
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9525
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11508
+	                instant_build = yes
+                }
+            }
+            15 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9550
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6449
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3579
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11535
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6599
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9434
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 485
+	                instant_build = yes
+                }
+            }
+            785 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11420
+	                instant_build = yes
+                }
+            }
+            29 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9500
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11548
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 575
+	                instant_build = yes
+                }
+            }
+            6 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6446
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6560
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6598
+	                instant_build = yes
+                }
+            }
+            35 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 480
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9431
+	                instant_build = yes
+                }
+            }
+            7 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9498
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 3211
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 68
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 3314
+	                instant_build = yes
+                }
+            }
+            36 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6336
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9335
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11318
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_fra_south = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+            6 = { is_core_of = GER }
+            7 = { is_core_of = GER }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+				state = 30
+				state = 23
+                state = 19
+                state = 806
+            }
+		}
+
+        cost = 10
+        days_remove = 60
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            30 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11465
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11616
+	                instant_build = yes
+                }
+            }
+            15 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11600
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 6657
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9597
+	                instant_build = yes
+                }
+            }
+            785 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 11565
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 4
+	                province = 9737
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6621
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 6777
+	                instant_build = yes
+                }
+            }
+            29 = {
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 9710
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = coastal_bunker
+	                level = 2
+	                province = 743
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_atlantik_wall_improvements = {
+
+        icon = GFX_decision_generic_coastal_fortification
+
+        available = {  }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            15 = {
+                coastal_bunker > 21
+            }
+        }
+
+        cost = 10
+        days_remove = 2
+
+        modifier = {
+            civilian_factory_use = 10
+        }
+        remove_effect = {
+            16 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 5
+	                instant_build = yes
+                }
+            }
+            30 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 3
+	                instant_build = yes
+                }
+            }
+            18 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+            }
+            34 = {
+                add_building_construction = {
+	                type = anti_air_building
+	                level = 2
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = radar_station
+	                level = 1
+	                instant_build = yes
+                }
+                add_building_construction = {
+	                type = air_base
+	                level = 5
+	                instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_set_up_bordeaux_naval_bases = {
+
+        icon = GFX_decision_generic_merge_plant_ship
+
+        available = {
+            has_completed_focus = GER_kriegsmarine
+            19 = { is_controlled_by = GER }
+        }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            #28 = { is_core_of = GER }
+        }
+
+        cost = 20
+        days_remove = 28
+        highlight_states = {
+            highlight_state_targets = {
+                state = 19
+            }
+		}
+
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = ic_gray_wolf
+                add_idea = ic_gray_wolf_golden_times
+            }
+            19 = { 
+                add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+            }
+            806 = { 
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+            }
+            23 = { 
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    GER_france_industrial_relocation_one = {
+
+        icon = GFX_decision_generic_factory
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+            28 = { is_core_of = GER }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 17
+                state = 18
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 17.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 17.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 17.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 17.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 18.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 18.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 18.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 18.arms_factory_level           instant_build = yes }
+            }
+
+            17 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            18 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_two = {
+
+        icon = GFX_decision_generic_factory
+
+        available = { }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                17 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                18 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 29
+                state = 785
+                state = 16
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 16.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 16.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 16.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 16.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 29.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 29.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 29.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 29.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 785.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 785.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 785.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 785.arms_factory_level           instant_build = yes }
+            }
+            16 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            29 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            785 = { remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_three = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                16 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                29 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                785 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 14
+                state = 15
+                state = 30
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 14.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 14.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 14.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 14.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 15.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 15.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 15.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 15.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 30.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 30.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 30.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 30.arms_factory_level           instant_build = yes }
+            }
+
+            14 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            15 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            30 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_four = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                14 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                15 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                30 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 24
+                state = 23
+                state = 33
+                state = 25
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 24.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 24.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 24.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 24.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 23.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 23.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 23.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 23.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 33.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 33.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 33.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 33.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 25.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 25.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 25.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 25.arms_factory_level           instant_build = yes }
+            }
+
+            24 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            23 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            33 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            25 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_five = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                24 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                23 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                33 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                25 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 27
+                state = 20
+                state = 26
+                state = 22
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 27.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 27.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 27.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 27.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 20.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 20.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 20.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 20.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 26.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 26.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 26.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 26.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 22.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 22.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 22.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 22.arms_factory_level           instant_build = yes }
+            }
+
+            27 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            20 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            26 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            22 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_france_industrial_relocation_six = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {  }
+
+        visible = {
+            AND = {
+                ROOT = {
+                    tag = GER
+                }
+                27 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                20 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                26 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+                22 = {
+                    arms_factory < 1
+                    industrial_complex < 1
+                }
+            }
+        }
+
+        fire_only_once = yes
+        cost = 75
+        days_remove = 100
+        highlight_states = {
+            highlight_state_targets = {
+                state = 19
+                state = 806
+                state = 31
+            }
+		}
+
+        remove_effect = {
+            random_core_state = {   add_extra_state_shared_building_slots = 19.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 19.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 19.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 19.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 806.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 806.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 806.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 806.arms_factory_level           instant_build = yes }
+            }
+            random_core_state = {   add_extra_state_shared_building_slots = 31.industrial_complex_level
+				                    add_building_construction = { type = industrial_complex     level = 31.industrial_complex_level     instant_build = yes }
+                                    add_extra_state_shared_building_slots = 31.arms_factory_level
+				                    add_building_construction = { type = arms_factory           level = 31.arms_factory_level           instant_build = yes }
+            }
+
+            19 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            806 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+            31 = {  remove_building = { type = industrial_complex level = industrial_complex_level }
+                    remove_building = { type = arms_factory level = arms_factory_level } }
+        }
+    }
+
+    GER_prepare_france_for_fighting = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            ic_ger_has_completed_all_six_waves_of_industry_evac = yes
+        }
+
+        visible = {
+            #AND = {
+            #    ROOT = {
+            #        tag = GER
+            #    }
+            #    27 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    20 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    26 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #    22 = {
+            #        arms_factory < 1
+            #        industrial_complex < 1
+            #    }
+            #}
+        }
+
+        fire_only_once = yes
+        cost = 150
+        days_remove = 365
+
+        remove_effect = {
+            custom_effect_tooltip = GER_prepare_france_for_fighting_tt
+            hidden_effect = {
+                every_owned_state = {
+                    IF = {
+                        limit = {
+                            is_core_of = FRA
+                        }
+                        add_core_of = GER
+                    }
+                }
+            }
+        }
+    }
+}
+
+GER_the_question_category = {
+
+    GER_discredit_ethnic_groups = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {  }
+
+        days_remove = 60
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 50
+
+        complete_effect = {
+            random_owned_state = {
+                add_manpower = -1000
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_blame_the_nosies = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {  }
+
+        days_remove = 60
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 65
+
+        complete_effect = {
+            random_owned_state = {
+                add_manpower = -1500
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    GER_build_questiobable_camps = {
+
+        icon = GFX_decision_generic_arrest
+
+        available = {  }
+
+        days_remove = 120
+        fire_only_once = no
+
+        visible = {
+            ROOT = {
+                tag = GER
+            }
+        }
+
+        cost = 100
+
+        modifier = {
+			weekly_manpower = -250
+            civilian_factory_use = 3
+        }
+        complete_effect = {
+            random_owned_state = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+
 }

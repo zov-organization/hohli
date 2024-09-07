@@ -1,98 +1,5 @@
 ic_helpful_tips = {
     
-    SOV_optimal_building_line = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = yes
-
-        visible = {
-            ROOT = {
-                tag = SOV
-                date < 1936.02.01
-            }
-        }
-
-        cost = 0
-
-        complete_effect = {
-            219 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = no
-				}
-            }
-            195 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = no
-				}
-            }
-            217 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = no
-				}
-            }
-            254 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = no
-				}
-            }
-            253 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = no
-				}
-            }
-
-
-            219 = {
-                add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = no
-				}
-            }
-            195 = {
-                add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = no
-				}
-            }
-            217 = {
-                add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = no
-				}
-            }
-            254 = {
-                add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = no
-				}
-            }
-            253 = {
-                add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = no
-				}
-            }
-        }
-    }
-
     SOV_ukrain_promkompleks_tip = {
 
         icon = GFX_decision_generic_operation
@@ -106,6 +13,7 @@ ic_helpful_tips = {
                 tag = SOV
             }
         }
+        priority = 1
 
         highlight_states = {
             highlight_state_targets = {
@@ -173,6 +81,7 @@ ic_helpful_tips = {
                 tag = SOV
             }
         }
+        priority = 1
 
         highlight_states = {
             highlight_state_targets = {
@@ -238,6 +147,7 @@ ic_helpful_tips = {
                 tag = SOV
             }
         }
+        priority = 1
 
         cost = 0
 
@@ -262,6 +172,7 @@ ic_helpful_tips = {
                 tag = SOV
             }
         }
+        priority = 1
 
         cost = 0
 

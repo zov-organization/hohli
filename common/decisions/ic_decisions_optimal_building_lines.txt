@@ -1,0 +1,161 @@
+ic_helpful_tips = {
+    
+    SOV_optimal_building_line = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = SOV
+                date < 1936.02.01
+            }
+        }
+        priority = 100
+
+        cost = 0
+
+        complete_effect = {
+            219 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            195 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            217 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = no
+				}
+            }
+            254 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = no
+				}
+            }
+            253 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = no
+				}
+            }
+
+
+            219 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            195 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            217 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            254 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            253 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+        }
+    }
+
+    GER_optimal_building_line = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = GER
+                date < 1936.02.01
+            }
+        }
+        priority = 100
+
+        cost = 0
+
+        complete_effect = {
+            51 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = no
+				}
+            }
+            972 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = no
+				}
+            }
+            55 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = no
+				}
+            }
+
+            51 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            972 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            55 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+        }
+    }
+}

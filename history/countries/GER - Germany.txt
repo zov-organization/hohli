@@ -1,0 +1,209 @@
+﻿capital = 64
+load_focus_tree = ic_german_focus
+oob = "ic_GER_1936_army"
+set_naval_oob = "ic_GER_1936_fleet"
+set_country_flag = host
+
+
+set_research_slots = 4
+navy_experience = 0
+
+set_convoys = 800
+
+set_stability = 0.65
+set_war_support = 0.35
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Adolf Hitler"
+	picture = "GFX_portrait_GER_adolf_hitler"
+	ideology = nazism
+	expire = "1965.1.1.1"
+	id = -1
+	traits = { dictator }
+}
+
+recruit_character = ic_GER_adolf_hitler
+recruit_character = ic_GER_hjalmar_schacht
+recruit_character = ic_GER_walther_funk
+recruit_character = ic_GER_albert_speer
+recruit_character = ic_GER_joseph_goebbels
+recruit_character = ic_GER_heinrich_himmler
+recruit_character = ic_GER_martin_bormann
+recruit_character = ic_GER_erich_von_manstein
+recruit_character = ic_GER_heinz_guderian
+recruit_character = ic_GER_wolfram_von_richthofen
+recruit_character = ic_GER_ernst_udet
+recruit_character = ic_GER_franz_halder
+recruit_character = ic_GER_karl_donitz
+recruit_character = ic_GER_erich_raeder
+recruit_character = ic_GER_erwin_rommel
+recruit_character = ic_GER_wilhelm_keitel
+recruit_character = ic_GER_ferdinand_schorner
+recruit_character = ic_GER_walter_model
+recruit_character = ic_GER_albert_kesselring
+recruit_character = ic_GER_hermann_goring
+recruit_character = ic_GER_ritter_von_greim
+
+set_popularities = {
+	democratic = 10
+	fascism = 75
+	communism = 15
+}
+
+create_faction = Axis
+add_to_faction = GER
+add_to_faction = ITA
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = BUL
+
+
+add_ideas = {
+	partial_economic_mobilisation
+	export_focus
+	limited_conscription
+
+	ic_versailles_bond
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	armored_car1 = 1
+
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	basic_train = 1
+
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	aircraft_construction = 1
+	aa_lmg = 1
+
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+
+create_equipment_variant = {
+	name = "BF-109 A"
+	type = small_plane_airframe_1
+	design_team = mio:GER_messerschmitt_organization
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		fixed_auxiliary_weapon_slot_1 = light_mg_4x
+		engine_type_slot = engine_2_1x
+	}
+}
+create_equipment_variant = {
+	name = "Ju 87"
+	type = small_plane_cas_airframe_1
+	design_team = mio:GER_messerschmitt_organization
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = dive_brakes_small
+	}
+}
+create_equipment_variant = {
+	name = "Arado Ar 95"
+	type = small_plane_naval_bomber_airframe_1
+	#design_team = mio:GER_messerschmitt_organization
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = floats
+		special_type_slot_2 = lmg_defense_turret
+	}	
+}
+
+add_equipment_to_stockpile = {
+	type = gw_tank_equipment
+	amount = 200
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 15000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 25000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 300
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 500
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 750
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 200
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 100
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_airframe_1
+	amount = 200
+	producer = GER
+}

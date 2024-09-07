@@ -419,8 +419,8 @@ NCountry = {
 
 	FUEL_LEASE_CONVOY_RATIO = 0.0005,				-- num convoys needed per fuel land lease
 
-	STARTING_FUEL_RATIO = 0.25,						-- starting fuel ratio compared to max fuel for countries
-	BASE_FUEL_GAIN_PER_OIL = 2,						-- base amount of fuel gained hourly per excess oil
+	STARTING_FUEL_RATIO = 0.75,						-- starting fuel ratio compared to max fuel for countries
+	BASE_FUEL_GAIN_PER_OIL = 3.4,						-- base amount of fuel gained hourly per excess oil
 	BASE_FUEL_GAIN = 2.0,							-- base amount of fuel gained hourly, independent of excess oil
 	BASE_FUEL_CAPACITY = 50000,						-- base amount of fuel capacity
 
@@ -588,7 +588,7 @@ NProduction = {
 	RAILWAY_GUN_REPAIR_SPEED = 8.0,			-- Railway gun strength repair speed per factory
 	EFFICIENCY_LOSS_PER_UNUSED_DAY = 1,		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
 	RESOURCE_PENALTY_WARNING_CRITICAL_RATIO =  0.8, -- Switch to red progress bar if penalty is over threshold
-	BASE_FACTORY_SPEED = 5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+	BASE_FACTORY_SPEED = 4.5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_SPEED_MIL = 5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_SPEED_NAV = 2.5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_START_EFFICIENCY_FACTOR = 10,	-- Base start efficiency for factories expressed in %.
@@ -657,7 +657,6 @@ NMarket = {
 	CONTRACT_ESTIMATE_AVERAGE_CONVOY_SUNK_MULTIPLIER_ALPHA = 0.5,	-- How strong effect should have the daily sunk efficiency on the average (1.0 means it will use only the new number as average)
 	CONTRACT_ESTIMATE_AVERAGE_CONVOY_SUNK_MULTIPLIER_SNAP_LIMIT = 0.05, -- If the difference between current and estimated sunk efficiency convoy count is smaller then this value, we will use the current value for calculations.
 	WARNING_CONVOYS_SUNK_MAX_DAYS  = 30, -- The contracts will show sunk convoy message if there was sunk convoy in this amount of days
-
 },
 
 NTechnology = {
@@ -721,7 +720,7 @@ NDeployment = {
 },
 
 NMilitary = {
-	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisa	tion when determining the combat value of a division
+	COMBAT_VALUE_ORG_IMPORTANCE = 1,		-- Multiplier on TotalOrganisation when determining the combat value of a division
 	COMBAT_VALUE_STR_IMPORTANCE = 1,		-- Multiplier on TotalStrength when determining the combat value of a division
 
 	SOFT_ATTACK_TARGETING_FACTOR = 1.0,		-- How much we care about potential soft attacks when evaluating priority combat target
@@ -1277,7 +1276,6 @@ NMilitary = {
 	}
 },
 
-
 NAir = {
 	AIR_WING_FLIGHT_SPEED_MULT = 0.02,					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 	AIR_WING_MAX_STATS_ATTACK = 100,					-- Max stats
@@ -1439,7 +1437,7 @@ NAir = {
 
 	AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.3, -- max trucks we can destroy in one instance of a logistics strike
 
-	SECONDARY_DAMAGE_STRAT = 0.2,  -- how much damage gets translated to railway guns for strat bombing
+	SECONDARY_DAMAGE_STRAT = 0.1,  -- how much damage gets translated to railway guns for strat bombing
 	SECONDARY_DAMAGE_LOGISTICS = 1.0, -- how much damage gets translated to railway guns for logistic strike
 
 	INTERCEPTION_DISTANCE_SCALE = 50, -- At this many pixels of path length, full interception efficiency is applied to air missions. Lerp from 0.
@@ -1462,7 +1460,7 @@ NAir = {
 		0.0, -- NAVAL_KAMIKAZE
         0.0, -- PORT_STRIKE
 		0.0, -- ATTACK_LOGISTICS
-		0.05, -- AIR_SUPPLY
+		0.0, -- AIR_SUPPLY
 		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
@@ -1473,16 +1471,16 @@ NAir = {
 	MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 		1.0, -- AIR_SUPERIORITY
 		1.0, -- CAS
-		0.2, -- INTERCEPTION
+		1.0, -- INTERCEPTION
 		1.0, -- STRATEGIC_BOMBER
 		1.0, -- NAVAL_BOMBER
 		1.0, -- DROP_NUKE
 		1.0, -- PARADROP
-		0.75, -- NAVAL_KAMIKAZE
-		1.2, -- PORT_STRIKE
-		1.2, -- ATTACK_LOGISTICS
+		1.0, -- NAVAL_KAMIKAZE
+		1.0, -- PORT_STRIKE
+		1.0, -- ATTACK_LOGISTICS
 		1.0, -- AIR_SUPPLY
-		0.6, -- TRAINING
+		0.5, -- TRAINING
 		1.0, -- NAVAL_MINES_PLANTING
 		1.0, -- NAVAL_MINES_SWEEPING
 		1.0, -- RECON
@@ -1494,7 +1492,7 @@ NAir = {
 
 	MISSION_EFFICIENCY_MULT_AT_LACK_OF_FUEL = 0.25, 				-- multiplier for mission efficiency when a base lacks fuel
 
-	BOMBING_TARGETING_RANDOM_FACTOR = 0.25,							-- % of picking the wrong target
+	BOMBING_TARGETING_RANDOM_FACTOR = 0.05,							-- % of picking the wrong target
 	BOMBING_PROV_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for provincial buildings
 	BOMBING_STATE_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for state buildings
 	BOMBING_INFRA_PRIO_SCALE = 0.7,									-- Scale of the selected priority for infastryctyre
@@ -1506,7 +1504,7 @@ NAir = {
 	REINFORCEMENT_DISABLING_DURATION_IN_LAND_CARRIER_TRANSFER = 48,	-- The reinforcement disabling duration in hours when transfering from land to carrier and vice versa
 
 	THRUST_WEIGHT_AGILITY_FACTOR = 0.5,								-- For plane designs, additive agility bonus per point of thrust exceeding weight
-	MAX_QUICK_WING_SELECTION = 3,									-- Max possible selection for airwing quick deploy
+	MAX_QUICK_WING_SELECTION = 5,									-- Max possible selection for airwing quick deploy
 
 	USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = true,						-- If true, only the armament module category that inflicts the greatest damage to naval targets will contribute naval strike and port strike mission specific stats. Only modules with both naval_strike_attack and naval_strike_targetting are considered. This is used to prevent torpedo_mounting and bomb_locks stats from stacking.
 	
@@ -2101,7 +2099,6 @@ NNavy = {
 	},
 
 	-- all of these NEED to be the same size!!!!
-
 },
 
 NRailwayGun = {
@@ -3326,7 +3323,6 @@ NAI = {
 	
 	AI_WANTED_LAND_BASED_PLANES_FACTOR = 0.50,		-- Factor applied to desire for land based planes (total airbase space * define)
 	AI_WANTED_CARRIER_BASED_PLANES_FACTOR = 1.0,	-- Factor applied to desire for carrier based planes (total carrier space * define)
-	
 },
 
 NFocus = {
@@ -4061,8 +4057,8 @@ NSupply = {
 	SUPPLY_BASE_MULT = 0.2,							-- multiplier on supply base values
 	SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
-	RAILWAY_CONVERSION_COOLDOWN = 10, -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
-	RAILWAY_CONVERSION_COOLDOWN_CORE = 5,
+	RAILWAY_CONVERSION_COOLDOWN = 0, -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+	RAILWAY_CONVERSION_COOLDOWN_CORE = 0,
 	RAILWAY_CONVERSION_COOLDOWN_CIVILWAR = 0,
 
 	DEFAULT_STARTING_TRUCK_RATIO = 1.5, -- countries get this ratio of starting truck in their buffers compared to their need
@@ -4137,6 +4133,7 @@ NSupply = {
 	NON_CORE_MANPOWER_STATE_SUPPLY = 0.2,						--Factor for population sttate supply when controlled by an occupier (NO TAKE FOOD)
 	STORED_SUPPLY_CONSUMPTION_RATE_FACTOR = 0.75,				--Multiplies consumption rate of stored supply (more/less easement)
 },
+
 NAITheatre = {
 	AI_THEATRE_GENERATION_HOME_THEATRE_DEPTH_RESTRICTION = 2,			-- The home theatre is generated based off a initial depth restriction
 	AI_THEATRE_GENERATION_BORDER_SIZE_RESTRICTION = 7,					-- Theatres are generated based off borders, Higher value means larger theatres
@@ -4161,6 +4158,7 @@ NAITheatre = {
 	AI_THEATRE_SUPPLY_CRISIS_LIMIT = 0.1,                               -- If a unit is standing in an area with this supply ratio it will try to escape
 	AI_THEATRE_AI_FRONT_MIN_DESIRED_RATIO = 0.18,						-- Fronts are sorted based on priority, we nudge unit demand based on this sorting, the higher the value the more units the most important front gets
 },
+
 NIndustrialOrganisation = {
 	ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0,					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
 	ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0,		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
@@ -4180,4 +4178,5 @@ NIndustrialOrganisation = {
 	DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180,				-- Default start cooldown in days after attaching a policy
 	LEGACY_COST_FACTOR_SCALE = 1.0,								-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
 },
+
 }
