@@ -10350,14 +10350,52 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
-	
-	
-	
-
-
-	
-
-	
-
+	SpriteType = {
+	name = "GFX_"
+	texturefile = "gfx/interface/goals/USA/.tga"			
+	}
+	SpriteType = {
+	name = "GFX_USA_DDay"
+	texturefile = "gfx/interface/goals/USA/USA_DDay.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_dockyards"
+	texturefile = "gfx/interface/goals/USA/USA_dockyards.tga"			
+	}
+	SpriteType = {
+	name = "GFX_USA_federalhousing"
+	texturefile = "gfx/interface/goals/USA/USA_federalhousing.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_sonar"
+	texturefile = "gfx/interface/goals/USA/USA_sonar.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_tanks"
+	texturefile = "gfx/interface/goals/USA/USA_tanks.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_WPA"
+	texturefile = "gfx/interface/goals/USA/USA_WPA.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USALL1"
+	texturefile = "gfx/interface/goals/USA/USALL1.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_armored"
+	texturefile = "gfx/interface/goals/USA/USA_armored.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_island_hopping"
+	texturefile = "gfx/interface/goals/USA/USA_island_hopping.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_battleship"
+	texturefile = "gfx/interface/goals/USA/USA_battleship.dds"			
+	}
+	SpriteType = {
+	name = "GFX_USA_industry"
+	texturefile = "gfx/interface/goals/USA/USA_industry.dds"			
+	}
 }

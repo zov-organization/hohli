@@ -1,0 +1,180 @@
+ic_USA_research_grants_category = {
+    ic_give_refuge_ita = {
+
+    	icon = generic_research
+
+        allowed = {
+            OR = {
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = TUR
+            }
+		}
+
+		visible = {
+            NOT = { has_government = fascism }
+            NOT = { has_government = communism }
+			is_government_in_exile = no
+        }
+        cost = 75
+        fire_only_once = yes
+        days_remove = -1
+
+        available = {
+            ITA = { NOT = { has_government = ROOT } }
+        }
+
+        modifier = {
+            research_speed_factor = 0.05
+            stability_factor = -0.05
+        }
+        ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
+		}
+    }
+    ic_give_refuge_ger = {
+
+		icon = generic_research
+
+        allowed = {
+            OR = {
+                original_tag = ENG
+                original_tag = USA
+                original_tag = FRA
+                original_tag = CAN
+                original_tag = TUR
+            }
+        }
+
+		visible = {
+            NOT = { has_government = fascism }
+            NOT = { has_government = communism }
+			is_government_in_exile = no
+		}
+
+        cost = 75
+        fire_only_once = yes
+        
+        days_remove = -1
+
+        modifier = {
+            research_speed_factor = 0.05
+            stability_factor = -0.05
+        }
+
+        remove_trigger = {
+            OR = {
+                GER = { has_government = ROOT }
+                AND = {
+                    country_exists = WGR
+                    WGR = { has_government = ROOT }
+                }
+                AND = {
+                    country_exists = DDR
+                    DDR = { has_government = ROOT }
+                }
+            }
+        }
+
+        ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
+		}
+    }
+}
+ic_USA_war_plans_category = {
+    
+	ic_USA_execute_war_plan_silver = {
+		icon = generic_operation
+		available = {
+			has_war_with = ITA
+		}
+		visible = {
+			has_completed_focus = ic_USA_war_plan_silver
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	ic_USA_execute_war_plan_orange = {
+		icon = generic_operation
+		available = {
+			has_war_with = JAP
+		}
+		visible = {
+			has_completed_focus = ic_USA_war_plan_orange
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	ic_USA_execute_war_plan_gold = {
+		icon = generic_operation
+		available = {
+			has_war_with = FRA
+		}
+		visible = {
+			has_completed_focus = ic_USA_war_plan_gold
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = FRA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	ic_USA_execute_war_plan_black = {
+		icon = generic_operation
+		available = {
+			has_war_with = GER
+		}
+		visible = {
+			has_completed_focus = ic_USA_war_plan_black
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+}

@@ -45,27 +45,6 @@ characters = {
 			cost = 150			
 		}
     }
-
-    ic_USA_thomas_kinkaid={
-		name = "Thomas Kinkaind"
-		portraits={
-			army={
-				small="GFX_idea_thomas_kinkaid"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = thomas_kinkaid
-			ledger = army
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				navy_amphibious_assault_2
-			}
-			cost = 150
-		}
-    }
     ic_USA_chester_w_nimitz={
 		name=USA_chester_w_nimitz
 		portraits={
@@ -83,7 +62,7 @@ characters = {
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_commerce_raiding
+				navy_chief_commerce_raiding_4
 			}
 			cost = 100
 		}
@@ -134,18 +113,167 @@ characters = {
 			}
 		}
 		advisor={
-			cost = 125
 			slot = theorist
-			idea_token = robert_oppenheimer
-			ledger = army
+			idea_token = ic_USA_robert_oppenheimer
 			allowed = {
 				original_tag = USA
+			}
+			available = {
+				has_completed_focus = ic_USA_manhattan_project 
 			}
 			research_bonus = {
 				nuclear = 0.250
 			}
 			traits = {
 				A_nuclear_scientist_but_crazy
+			}
+			cost = 125
+		}
+	}
+	ic_USA_william_regnery={
+		name=USA_william_regnery
+		portraits={
+			army={
+				small=GFX_portrait_USA_william_regnery_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = icUSA_william_regnery
+			allowed  = {
+				original_tag  = USA
+			}
+			traits  = {
+				captain_of_industry 
+			}
+			cost  = 150
+			available = {
+			has_completed_focus = ic_USA_manhattan_project 
+			}
+		}
+	}
+	ic_USA_joseph_patterson={
+		name=USA_joseph_patterson
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = USA_joseph_patterson
+			allowed  = {
+				original_tag  = USA
+			}
+			traits  = {
+				editor 
+			}
+			cost  = 100.000
+		}
+	}
+	ic_USA_victor_perlo={
+		name=USA_victor_perlo
+		portraits={
+			army={
+				small=GFX_portrait_USA_victor_perlo_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_USA_victor_perlo
+			allowed  = {
+				OR = {
+					original_tag  = USA
+					original_tag = SWE
+				}
+			}
+			traits  = {
+				economist 
+			}
+			cost  = 150
+			available = {
+			has_completed_focus = ic_USA_manhattan_project 
+			}
+		}
+	}
+
+	ic_USA_walter_krueger={
+		name=USA_walter_krueger
+		portraits={
+			army={
+				small="GFX_idea_USA_walter_krueger"
+			}
+			army={
+				large=GFX_portrait_USA_walter_krueger
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = walter_krueger
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist career_officer armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	ic_USA_jimmy_doolittle={
+		name=USA_jimmy_doolittle
+		portraits={
+			army={
+				small="GFX_idea_jimmy_doolittle"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_USA_jimmy_doolittle
+			ledger = air
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			available = {
+				has_completed_focus = ic_USA_combined_bomber_offensive 
+			}
+		}
+	}
+	ic_USA_joseph_mccarthy={
+		name=USA_joseph_mccarthy
+		portraits={
+			army={
+				small="GFX_idea_USA_joseph_mccarthy"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_USA_joseph_mccarthy
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				anti_communist_crusader 
+			}
+			cost = 100
+			available = {
+			has_completed_focus = ic_USA_manhattan_project 
 			}
 		}
 	}

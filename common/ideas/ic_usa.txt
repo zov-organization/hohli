@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		ic_USA_us_airforce = {
+            name = ic_USA_army_airforce
+			picture = usa_us_air_force
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = -0.30
+			}
+		}
+    }
+}
