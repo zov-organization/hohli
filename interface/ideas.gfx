@@ -3887,6 +3887,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_ss_idea"
+		# texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_old_german_working_culture"
 		texturefile = "gfx/interface/ideas/GER/ic_old_german_working_culture.dds"
 	}

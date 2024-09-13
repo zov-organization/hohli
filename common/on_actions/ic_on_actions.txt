@@ -3,14 +3,15 @@ on_actions = {
 	on_startup = {
 
 		effect = {
-
-			give_resource_rights = {
-				receiver = FRA
-				state = 51
-			}
-			give_resource_rights = {
-				receiver = FRA
-				state = 42
+			GER = {
+				give_resource_rights = {
+					receiver = FRA
+					state = 51
+				}
+				give_resource_rights = {
+					receiver = FRA
+					state = 42
+				}
 			}
 
 			every_country = {

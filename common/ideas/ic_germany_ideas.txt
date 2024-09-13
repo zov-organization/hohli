@@ -144,6 +144,23 @@ ideas = {
 			}
 		}
 
+		ic_ss_idea = {
+			name = ic_ss_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ss_idea
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				weekly_manpower = 100
+				army_morale_factor = 0.02
+			}
+		}
+
 		ic_stuka = {
 			name = ic_stuka
 
@@ -269,12 +286,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				strat_bomber = {
-					build_cost_ic = -0.2 instant = yes
-					air_range = 0.11 instant = yes
-					air_defence = 0.15 instant = yes
-					air_bombing = 0.13 instant = yes
-				}
+				
 			}
 
 			modifier = {  }

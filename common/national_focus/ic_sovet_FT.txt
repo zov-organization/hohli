@@ -11,6 +11,27 @@ focus_tree = {
 	default = no
 
 	focus = {
+		id = SOV_stalin
+
+		icon = GFX_SOV_stalin
+
+		prerequisite = { focus = SOV_initial_focus }
+		relative_position_id = SOV_initial_focus
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = { ic_SOV_politburo }
+		}
+	}
+
+	focus = {
 		id = SOV_initial_focus
 
 		icon = GFX_focus_SOV_socialism_in_one_country
@@ -422,27 +443,6 @@ focus_tree = {
 
 
 	# STALIN
-
-	focus = {
-		id = SOV_stalin
-
-		icon = GFX_SOV_stalin
-
-		prerequisite = { focus = SOV_initial_focus }
-		relative_position_id = SOV_initial_focus
-
-		x = -2
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_ideas = { ic_SOV_politburo }
-		}
-	}
 
 	focus = {
 		id = SOV_wipe_out_the_parasites
@@ -863,6 +863,34 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SOV_large_calibers
+
+		icon = GFX_SOV_large_calibers
+
+		prerequisite = { focus = SOV_kuznetsovs_plan }
+		prerequisite = { focus = SOV_arty_one }
+		relative_position_id = SOV_arty_one
+
+		x = -2
+		y = 1
+		cost = 10
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_large_calibers
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_forts
 
 		icon = GFX_SOV_forts
@@ -1188,60 +1216,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_arty_one
-
-		icon = GFX_SOV_arty_one
-
-		prerequisite = { focus = SOV_the_red_army }
-		relative_position_id = SOV_inf_one
-
-		x = -2
-		y = 1
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_arty_one
-				bonus = 0.75
-				uses = 8
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_large_calibers
-
-		icon = GFX_SOV_large_calibers
-
-		prerequisite = { focus = SOV_kuznetsovs_plan }
-		prerequisite = { focus = SOV_arty_one }
-		relative_position_id = SOV_arty_one
-
-		x = -2
-		y = 1
-		cost = 10
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_large_calibers
-				bonus = 1
-				ahead_reduction = 1
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_inf_one
 
 		icon = GFX_SOV_inf_one
@@ -1267,6 +1241,33 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_arty_one
+
+		icon = GFX_SOV_arty_one
+
+		prerequisite = { focus = SOV_the_red_army }
+		relative_position_id = SOV_inf_one
+
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_arty_one
+				bonus = 0.75
+				uses = 8
+				category = artillery
+			}
+		}
+	}
+
+	
 	focus = {
 		id = SOV_inf_two
 
