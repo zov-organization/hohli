@@ -818,6 +818,7 @@
  operational_integrity_tree:0 "Operational Integrity Doctrine"
  strategic_destruction_tree:0 "Strategic Destruction Doctrine"
  armor:0 "Armor technology"
+ auxiliary_armor:0 "Auxiliary Armor"
  cat_light_armor:0 "Light Tank models"
  cat_medium_armor:0 "Medium Tank models"
  cat_heavy_armor:0 "Heavy Tank models"

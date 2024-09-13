@@ -619,7 +619,6 @@ ideas = {
 			modifier = {
 				min_export = 0.25
 				consumer_goods_expected_value = 0.05
-				civilian_intel_to_others = 40.0
 				civilian_intel_to_others = 100.0
 				army_intel_to_others = 100.0
 				navy_intel_to_others = 100.0
