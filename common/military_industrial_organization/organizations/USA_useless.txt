@@ -1,0 +1,122 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+USA_marmon_herrington_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_marmon_herrington
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+
+}
+
+USA_chrysler_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_chrysler
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+
+
+	initial_trait = {
+		name = USA_mio_trait_medium_tank_manufacturer
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+			soft_attack = 0.02
+			hard_attack = 0.03
+			defense = -0.15
+		}
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_strict_design_specifications
+		name = USA_mio_trait_strict_design_specifications
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=2 y=1 }
+		relative_position_id = generic_mio_trait_simplified_turret_design
+
+		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_expanded_production_facilities
+		name = USA_mio_trait_expanded_production_facilities
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = USA_mio_trait_strict_design_specifications
+
+		all_parents = { USA_mio_trait_strict_design_specifications }
+		production_bonus = {
+			production_cost_factor = -0.1
+			production_capacity_factor = 0.05
+		}
+	}
+}
+
+USA_army_ordnance_department_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_army_ordnance_department
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+
+	add_trait = { 
+		token = USA_mio_trait_periscope_sights
+		name = USA_mio_trait_periscope_sights
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
+		special_trait_background = yes
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_all_round_cupola
+
+		all_parents = { generic_mio_trait_all_round_cupola }
+		equipment_bonus = {
+			breakthrough = 0.1
+			defense = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_mass_production_of_armor
+		name = USA_mio_trait_mass_production_of_armor
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
+		special_trait_background = yes
+
+		position = { x=2 y=1 }
+		relative_position_id = generic_mio_trait_simplified_turret_design
+
+		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+}
