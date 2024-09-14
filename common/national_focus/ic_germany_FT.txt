@@ -18,7 +18,6 @@
 		icon = GFX_GER_initial_focus
 
 		prerequisite = {  }
-		relative_position_id = no
 
 		x = 16
 		y = 0
@@ -749,10 +748,12 @@
 			ENG = {
 				add_political_power = 100
 				add_war_support = 0.15
+				remove_resource_rights = 42
 			}
 			FRA = {
 				add_political_power = 100
 				add_war_support = 0.15
+				remove_resource_rights = 51
 			}
 			army_experience = 10
 			add_political_power = 100
@@ -1026,7 +1027,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-
+			add_ideas = ic_ss_idea
 		}
 	}
 
@@ -1324,6 +1325,26 @@
 	}
 
 	focus = {
+		id = GER_high_individual_scores
+		icon = GFX_GER_battle_for_england
+
+		prerequisite = { focus = GER_battle_for_england }
+		relative_position_id = GER_battle_for_england
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			air_experience = 75
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
 		id = GER_symbol_of_the_blitzkrieg
 		icon = GFX_GER_symbol_of_the_blitzkrieg
 
@@ -1365,7 +1386,47 @@
 	}
 
 	focus = {
-		id = GER_army_innovation
+		id = GER_auxiliary_tanks
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = GER_new_main_tank }
+		relative_position_id = GER_new_main_tank
+
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_auxiliary_tanks
+				bonus = 0.5
+				uses = 4
+				category = auxiliary_armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_further_tank_improvements
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = GER_auxiliary_tanks }
+		relative_position_id = GER_auxiliary_tanks
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_further_tank_improvements
+				bonus = 0.25
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = ic_GER_army_innovation
 		icon = GFX_GER_army_innovation
 
 		prerequisite = { focus = GER_ss_regiments }
@@ -1375,7 +1436,12 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = GER_army_innovation
+				bonus = 0.25
+				uses = 4
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -1453,6 +1519,8 @@
 		cost = 10
 		completion_reward = {
 			add_ideas = ic_ger_barb_stall_1
+			remove_ideas = ic_ger_barbarossa
+			remove_mission = GER_blitzkrieg_mission
 		}
 	}
 
