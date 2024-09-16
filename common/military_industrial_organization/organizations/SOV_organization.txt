@@ -319,7 +319,9 @@ SOV_ilyushin_design_bureau_organization = {
 				has_completed_focus = SOV_aluminum_for_planes
 			}
 		}
-
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
 		equipment_bonus = {
 			air_agility = -0.07
 			air_defence = -0.1
