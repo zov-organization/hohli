@@ -358,5 +358,46 @@ ideas = {
 			}
 		}
 
+		ic_ger_quality_tanks = {
+			name = ic_ger_quality_tanks
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_quality_tanks
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.2 instant = yes
+					air_ground_attack = 0.11 instant = yes
+				}
+			}
+
+			modifier = { }
+		}
+
+		ic_ger_quantity_tanks = {
+			name = ic_ger_quantity_tanks
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_quantity_tanks
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+
+			modifier = { }
+		}
+
 	}
 }

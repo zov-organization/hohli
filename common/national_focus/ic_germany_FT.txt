@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = ic_german_focus
+	id = german_focus
 	continuous_focus_position = { x = 2700 y = 50 }
 
 	country = {
@@ -1392,35 +1392,15 @@
 		prerequisite = { focus = GER_new_main_tank }
 		relative_position_id = GER_new_main_tank
 
-		x = -1
+		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_auxiliary_tanks
 				bonus = 0.5
 				uses = 4
 				category = auxiliary_armor
-			}
-		}
-	}
-
-	focus = {
-		id = GER_further_tank_improvements
-		icon = GFX_GER_new_main_tank
-
-		prerequisite = { focus = GER_auxiliary_tanks }
-		relative_position_id = GER_auxiliary_tanks
-
-		x = 0
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_further_tank_improvements
-				bonus = 0.25
-				uses = 1
-				category = cat_medium_armor
 			}
 		}
 	}
@@ -1499,7 +1479,7 @@
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			unlock_decision_category_tooltip = GER_plan_ost_category
 		}
@@ -1617,6 +1597,101 @@
 				mission = GER_blitzkrieg_mission
 				days = 45
 			}
+		}
+	}
+
+	focus = {
+		id = GER_quality_tanks
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		prerequisite = { focus = GER_auxiliary_tanks }
+		relative_position_id = GER_drang_nach_osten
+		
+		mutually_exclusive = { focus = GER_quantity_tanks }
+
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			#add_ideas = ic_ger_quality_tanks
+			mio:GER_man_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quality_tanks
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_quantity_tanks
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		prerequisite = { focus = GER_auxiliary_tanks }
+		relative_position_id = GER_quality_tanks
+
+		mutually_exclusive = { focus = GER_quality_tanks }
+
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = 2
+		y = 0
+		cost = 10
+		completion_reward = {
+			#add_ideas = ic_ger_quantity_tanks
+			mio:GER_man_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quantity_tanks
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_further_tank_improvements
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = GER_quantity_tanks focus = GER_quality_tanks }
+		relative_position_id = GER_quality_tanks
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_further_tank_improvements
+				bonus = 0.25
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_plan_new_summer_offencive
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_drang_nach_osten
+
+		x = 0
+		y = 3
+		cost = 3
+		completion_reward = {
+			
 		}
 	}
   

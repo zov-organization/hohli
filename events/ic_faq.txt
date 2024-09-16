@@ -48,3 +48,16 @@ country_event = {   # FAQ for ENG
         name = ic_faq_events.4.a
     }
 }
+
+    
+country_event = {   # FAQ for USA
+    id = ic_faq_events.5
+    title = ic_faq_events.5.t
+    desc = ic_faq_events.5.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_faq_events.5.a
+    }
+}

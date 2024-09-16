@@ -1,5 +1,5 @@
 ﻿capital = 64
-load_focus_tree = ic_german_focus
+load_focus_tree = german_focus
 oob = "ic_GER_1936_army"
 set_naval_oob = "ic_GER_1936_fleet"
 set_country_flag = host

@@ -44,4 +44,26 @@ ic_helpful_tips = {
         }
     }
 
+    USA_faq_event = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = USA
+            }
+        }
+        priority = 99
+
+        cost = 0
+
+        complete_effect = {
+            USA = {
+                country_event = ic_faq_events.5
+            }
+        }
+    }
+
 }

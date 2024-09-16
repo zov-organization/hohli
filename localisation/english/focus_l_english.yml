@@ -2543,6 +2543,8 @@
  GER_aa_defences_of_life_important_industry:0 "AA Defences of Life Important Industry"
  GER_aa_defences_of_remnants_of_the_reich:0 "AA Defences of Remnants of the Reich"
  GER_new_main_tank:0 "New Main Tank"
+ GER_auxiliary_tanks:0 "Auxiliary Tanks"
+ GER_further_tank_improvements:0 "Further Tank Improvements"
  GER_symbol_of_the_blitzkrieg:0 "Symbol of the Blitzkrieg"
  GER_change_direction:0 "Change Direction"
  GER_drang_nach_osten:0 "Drang Nach Osten"
@@ -2552,3 +2554,7 @@
  GER_barbarossa_first_succeses:0 "Barbarossa First Succeses"
  GER_barbarossa_moderate_succeses:0 "Barbarossa Moderate Succeses"
  GER_barbarossa_big_succeses:0 "Barbarossa Big Succeses"
+
+ GER_quality_tanks:0 "Quality Tanks"
+ GER_quantity_tanks:0 "Quantity Tanks"
+ GER_plan_new_summer_offencive:0 "Plan New Summer Offencive"
