@@ -986,6 +986,13 @@
 				71 = { add_core_of = HUN }
 			}
 			add_war_support = 0.2
+
+			SOV = {
+				swap_ideas = {
+					remove_idea = ic_SOV_peaceful_building
+					add_idea = ic_SOV_economy_is_on_war_footing
+				}
+			}
 		}
 	}
 

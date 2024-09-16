@@ -1340,6 +1340,13 @@ focus_tree = {
 			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = -0.02	}
 			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = -0.01	}
 			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}
+			
+			mio:SOV_kirov_organization = {
+				add_mio_funds = 1000
+			}
+			mio:SOV_ilyushin_design_bureau_organization = {
+				add_mio_funds = 1000
+			}
 		}
 	}
 
@@ -1520,7 +1527,11 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			
+			mio:SOV_ilyushin_design_bureau_organization = {
+				complete_mio_trait = {
+					trait = SOV_mio_trait_merge_plant_no_150
+				}
+			}
 		}
 	}
 
@@ -1631,4 +1642,33 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = SOV_bebra
+
+		icon = GFX_SOV_forts
+
+		prerequisite = { focus = SOV_wow }
+		relative_position_id = SOV_wow
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
+		}
+	}
+
+
+
+
 }

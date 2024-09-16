@@ -9256,7 +9256,7 @@ leader_traits = {
 		command_cap = 0
 	}
 
-	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 15%
+	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 20%
 		sprite = 1
 		experience_gain_air = @experience_gain_esport
 		experience_gain_air_factor = 0.2

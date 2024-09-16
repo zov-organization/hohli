@@ -1,0 +1,36 @@
+add_namespace = ic_news
+
+news_event = {
+	# GER scout planes over Russia
+	id = ic_news.1
+	title = ic_news.1.t
+	desc = ic_news.1.d
+	#picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ic_news.1.a
+		trigger = { 
+			AND = {
+				NOT = {
+					TAG = GER
+				}
+				NOT = {
+					TAG = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = ic_news.1.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = ic_news.1.c
+		trigger = { TAG = SOV }
+	}
+
+}

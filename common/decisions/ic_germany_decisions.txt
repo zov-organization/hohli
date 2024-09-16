@@ -6,10 +6,11 @@ GER_barb_category = {
 			#has_completed_focus = SOV_navy_one
 		}
         fire_only_once = yes 
-        
+
         complete_effect = {
             activate_mission = GER_send_scout_planes_mission
-        }
+            news_event = ic_news.1
+        } 
     }
 
 	GER_send_scout_planes_mission = {
