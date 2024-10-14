@@ -32,7 +32,7 @@ GER_barb_category = {
 
 		days_mission_timeout = 120
         complete_effect = {}
-        timeout_effect = { }
+        timeout_effect = {}
     }
 
     GER_blitzkrieg_mission = {
@@ -50,10 +50,10 @@ GER_barb_category = {
         is_good = yes
 
         fire_only_once = yes
-        cancel_trigger = {  }
+        cancel_trigger = { }
 
 		days_mission_timeout = 10
-        complete_effect = {  }
+        complete_effect = { }
         timeout_effect = {
             remove_ideas = ic_ger_barbarossa
 			add_ideas = ic_ger_barb_stall_1
@@ -61,36 +61,172 @@ GER_barb_category = {
     }
 
     GER_prep_1 = {
-        icon = GFX_decision_SWE_set_air_budget
+        icon = GFX_decision_generic_air
 		visible = {
 			has_active_mission = GER_send_scout_planes_mission
+            NOT = {
+                has_active_mission = GER_prep_1_mission
+            }
 		}
-        fire_only_once = yes 
+        fire_only_once = no
         
         complete_effect = {
-            
+            activate_mission = GER_prep_1_mission
         }
     }
+	GER_prep_1_mission = {
+        icon = GFX_decision_generic_air
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = { }
+
+		days_mission_timeout = 30
+        complete_effect = { }
+        timeout_effect = {
+            92 = {
+                #add_building_construction = {
+                #    type = radar_station
+                #    level = 1
+                #    instant_build = yes
+                #}
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            5 = {
+                #add_building_construction = {
+                #    type = radar_station
+                #    level = 1
+                #    instant_build = yes
+                #}
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            763 = {
+                #add_building_construction = {
+                #    type = radar_station
+                #    level = 1
+                #    instant_build = yes
+                #}
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            78 = {
+                #add_building_construction = {
+                #    type = radar_station
+                #    level = 1
+                #    instant_build = yes
+                #}
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            79 = {
+                #add_building_construction = {
+                #    type = radar_station
+                #    level = 1
+                #    instant_build = yes
+                #}
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
     GER_prep_2 = {
-        icon = GFX_decision_SWE_set_air_budget
+        icon = GFX_decision_generic_train
 		visible = {
 			has_active_mission = GER_send_scout_planes_mission
+            NOT = {
+                has_active_mission = GER_prep_2_mission
+            }
 		}
-        fire_only_once = yes 
+        fire_only_once = no
         
         complete_effect = {
-            
+            activate_mission = GER_prep_2_mission
         }
     }
-    GER_prep_3 = {
-        icon = GFX_decision_SWE_set_air_budget
-		visible = {
-			has_active_mission = GER_send_scout_planes_mission
+	GER_prep_2_mission = {
+        icon = GFX_decision_generic_train
+
+        available = {
+			hidden_trigger = { always = no }
 		}
-        fire_only_once = yes 
-        
-        complete_effect = {
-            
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+
+		days_mission_timeout = 30
+        complete_effect = {}
+        timeout_effect = {
+            level = 1
+			build_railway = {   # Danzig - Siedlce
+				path = {
+					362 3380 3351 6347 6321 9290 6567 524 402
+				}
+			}
+			build_railway = {   # Berlin - Breslau
+				path = {
+					6521 11505 9496 3572 6595 552 9570
+				}
+			}
+			build_railway = {   # Breslau - Gleiwitz
+				path = {
+				    9570 6462 9511 11467
+				}
+			}
+			build_railway = {   # Gleiwitz - Lublin
+				path = {
+				    11467 6464 13205 9427 11430 6416 3458 3559
+				}
+			}
+			build_railway = {   # Kustrin(one tile to its left) - Poznan
+				path = {
+				    9496 3473 11478 3532 6558
+				}
+			}
+			build_railway = {   # Kustrin(one tile to its left) - Danzig
+				path = {
+				    9496 537 6236 9387 9252 11260 11288 334 389 362
+				}
+			}
+			build_railway = {   # Danzig - Konigsberg
+				path = {
+				    362 3380 6402 6332
+				}
+			}
         }
     }
 }
@@ -458,28 +594,28 @@ GER_thousand_year_reich_category = {
         remove_effect = {
             85 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             807 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             86 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
@@ -517,37 +653,37 @@ GER_thousand_year_reich_category = {
         remove_effect = {
             912 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             911 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             99 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             37 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
@@ -585,28 +721,28 @@ GER_thousand_year_reich_category = {
         remove_effect = {
             7 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             36 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }
             35 = { 
                 add_core_of = GER
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
             }

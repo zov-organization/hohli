@@ -1459,11 +1459,14 @@
 		prerequisite = { focus = GER_change_direction }
 		relative_position_id = GER_change_direction
 		
-		available = { hidden_trigger = { always = no } }		
-		bypass = {
-			if = {
-				has_war_with = SOV
+		available = { 
+			SOV = {
+				has_completed_focus = SOV_accelerate_industry_focus
 			}
+            NOT = {
+			    has_active_mission = GER_send_scout_planes_mission
+            }
+			hidden_trigger = { always = no }
 		}
 
 		x = 0
@@ -1472,6 +1475,10 @@
 		completion_reward = {
 			add_ideas = ic_ger_barbarossa
             activate_mission = GER_blitzkrieg_mission
+            declare_war_on = {
+                target = SOV
+                type = annex_everything
+            }
 		}
 	}
 

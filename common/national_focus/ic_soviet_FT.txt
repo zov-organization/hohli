@@ -166,7 +166,9 @@ focus_tree = {
 		y = 1
 		cost = 1
 
-		available = { ic_ger_spy_planes_caught = yes }
+		available = {
+			ic_ger_spy_planes_caught = yes
+		}
 
 		completion_reward = {
 			unlock_decision_category_tooltip = SOV_accelerate_industry
