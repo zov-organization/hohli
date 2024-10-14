@@ -57,7 +57,7 @@
 		cost = 3
 		completion_reward = {
 			add_ideas = ic_nation_zombification_1
-			activate_advisor = ic_GER_joseph_goebbels
+			show_ideas_tooltip = ic_GER_joseph_goebbels
 		}
 	}
 
@@ -87,7 +87,7 @@
 		y = 0
 		cost = 3
 		completion_reward = {
-			add_ideas = krupp
+			show_ideas_tooltip = krupp
 		}
 	}
 

@@ -1862,6 +1862,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+				
+			}
+			available = {
+				has_completed_focus = GER_deal_with_krupp
 			}
 			
 			research_bonus = {
