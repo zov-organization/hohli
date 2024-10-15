@@ -10557,6 +10557,14 @@ leader_traits = {
 		neutrality_drift = -0.05
 	}
 
+	stalins_horn = {
+		sprite = 13
+		stability_factor = 0.2
+		war_support_factor = 0.25
+		communism_drift = 0.1
+		political_power_factor = 0.3
+	}
+
 	navy_chief_kuznetsov = {
 		sprite = 3
 		experience_gain_navy = @experience_gain_medium

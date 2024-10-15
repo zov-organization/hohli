@@ -1511,6 +1511,7 @@ focus_tree = {
 		completion_reward = {
 			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
+			show_ideas_tooltip = ic_SOV_yuri_levitan
 		}
 	}
 

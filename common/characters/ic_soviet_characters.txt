@@ -140,6 +140,27 @@ characters = {
 		}
 	}
 
+	ic_SOV_yuri_levitan = {
+		name = "Yuri Levitan"
+		portraits = {
+			army = {
+				#small = "GFX_idea_nikita_khrushchev"
+			}
+		}
+		advisor = {
+			slot = ic_SOV_yuri_levitan
+			idea_token = ic_SOV_nikita_khrushchyov
+			available = {
+				has_completed_focus = SOV_wow
+			}
+			traits = {
+				stalins_horn
+			}
+		}
+	}
+
+
+
 	ic_SOV_aleksandr_novikov = {
 		name = ic_SOV_aleksandr_novikov
 		portraits = {
