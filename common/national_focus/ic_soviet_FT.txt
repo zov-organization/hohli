@@ -814,32 +814,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_forts
-
-		icon = GFX_SOV_forts
-
-		prerequisite = { focus = SOV_kuznetsovs_plan }
-		prerequisite = { focus = SOV_large_calibers }
-		relative_position_id = SOV_large_calibers
-
-		x = 0
-		y = 2
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
-		}
-	}
-
 
 
 	# MILITARY
@@ -1157,6 +1131,32 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_forts
+
+		icon = GFX_SOV_forts
+
+		prerequisite = { focus = SOV_kuznetsovs_plan }
+		prerequisite = { focus = SOV_large_calibers }
+		relative_position_id = SOV_large_calibers
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
 		}
 	}
 

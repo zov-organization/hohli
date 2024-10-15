@@ -191,7 +191,6 @@ GER_barb_category = {
 		days_mission_timeout = 30
         complete_effect = {}
         timeout_effect = {
-            level = 1
 			build_railway = {   # Danzig - Siedlce
 				path = {
 					362 3380 3351 6347 6321 9290 6567 524 402
