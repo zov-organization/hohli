@@ -9256,7 +9256,7 @@ leader_traits = {
 		command_cap = 0
 	}
 
-	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 15%
+	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 20%
 		sprite = 1
 		experience_gain_air = @experience_gain_esport
 		experience_gain_air_factor = 0.2
@@ -10555,6 +10555,14 @@ leader_traits = {
 		democratic_drift = -0.05
 		fascism_drift = -0.05
 		neutrality_drift = -0.05
+	}
+
+	stalins_horn = {
+		sprite = 13
+		stability_factor = 0.2
+		war_support_factor = 0.25
+		communism_drift = 0.1
+		political_power_factor = 0.3
 	}
 
 	navy_chief_kuznetsov = {

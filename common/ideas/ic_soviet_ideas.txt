@@ -187,7 +187,7 @@ ideas = {
 			}
 			research_bonus = {
                 armor = -0.35
-				artillery = -0.2
+				#artillery = -0.2
             }
 			modifier = {
 				army_attack_factor = -0.05
@@ -580,9 +580,9 @@ ideas = {
 				experience_gain_air_factor = 0.1
 				land_doctrine_cost_factor = -0.05
 				air_doctrine_cost_factor = -0.05
-				army_advisor_cost_factor = -0.5
-				air_advisor_cost_factor = -0.5
-				navy_advisor_cost_factor = -0.5
+				army_advisor_cost_factor = -0.25
+				air_advisor_cost_factor = -0.25
+				navy_advisor_cost_factor = -0.25
 			}
 		}
 

@@ -221,6 +221,41 @@ characters={
 			cost = 100
 		}
 	}
+	
+	ic_GER_ludwig_beck={
+		name=GER_ludwig_beck
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_GER_ludwig_beck
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_GER_walther_von_brauchitsch={
+		name=GER_walther_von_brauchitsch
+		portraits={
+			army={
+				small="GFX_idea_walther_von_brauchitsch"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = ic_GER_walther_von_brauchitsch
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+		}
+	}
+
 
 	ic_GER_karl_donitz={
 		name=GER_karl_donitz

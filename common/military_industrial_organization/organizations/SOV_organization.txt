@@ -41,12 +41,6 @@
 @aircraft_2_Y = 3
 @aircraft_3_X = 9
 @aircraft_3_Y = 4
-#BONUSES
-@aircraft_production_cost_factor = -0.05
-@aircraft_air_agility = 0.05
-@aircraft_air_defence = 0.1
-@aircraft_surface_detection = 0.15
-@aircraft_sub_detection = 0.15
 
 ### MATERIEL
 #POSITION
@@ -269,43 +263,16 @@ SOV_ilyushin_design_bureau_organization = {
 	include = ic_generic_light_aircraft_organization
 	icon = GFX_idea_ilyushin_design_bureau
 	
+	equipment_type = {
+		small_plane_airframe
+		medium_plane_airframe
+	}
+
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		tag = SOV
 	}
 	
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_ilyushin_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-	}
+	available = { }
 
 	add_trait = { 
 		token = SOV_mio_trait_merge_plant_no_28
@@ -322,25 +289,15 @@ SOV_ilyushin_design_bureau_organization = {
 		
 		available = {
 			FROM = {
-				has_full_control_of_state = 251 #KUYBYSHEV
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_28_flag
+				has_completed_focus = SOV_mio_upgrade_1
 			}
 		}
 
 		production_bonus = {
-			production_cost_factor = @aircraft_production_cost_factor
+			production_cost_factor = -0.05
+		}
+		equipment_bonus = {
+			air_agility = 0.05
 		}
 	}
 
@@ -359,30 +316,15 @@ SOV_ilyushin_design_bureau_organization = {
 		
 		available = {
 			FROM = {
-				has_full_control_of_state = 219 #MOSCOW
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
+				has_completed_focus = SOV_aluminum_for_planes
 			}
 		}
-
-		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_150_flag
-				add_resource = {
-					type = aluminium
-					amount = 3
-					state = 219
-				}
-			}
+		production_bonus = {
+			production_cost_factor = -0.05
 		}
-
 		equipment_bonus = {
-			air_agility = @aircraft_air_agility
+			air_agility = -0.07
+			air_defence = -0.1
 		}
 	}
 
@@ -401,35 +343,17 @@ SOV_ilyushin_design_bureau_organization = {
 		
 		available = {
 			FROM = {
-				has_full_control_of_state = 808 #RIGA
-			}
-			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_vef_plant_flag
-				add_tech_bonus = {
-					name = SOV_mio_trait_merge_vef_plant
-					bonus = 1
-					uses = 1
-					category = radar_tech
-				}
 			}
 		}
 
 		equipment_bonus = {
-			air_defence = @aircraft_air_defence
-			surface_detection = @aircraft_surface_detection
-			sub_detection = @aircraft_sub_detection
+			air_defence = 0.1
+			surface_detection = 0.15
+			sub_detection = 0.15
 		}
 	}
+
 }
 
 SOV_tupolev_design_bureau_organization = {
@@ -536,7 +460,7 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		production_bonus = {
-			production_cost_factor = @aircraft_production_cost_factor
+			production_cost_factor = -0.05
 		}
 	}
 
@@ -578,7 +502,7 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			air_agility = @aircraft_air_agility
+			air_agility = 0.05
 		}
 	}
 
@@ -621,9 +545,9 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			air_defence = @aircraft_air_defence
-			surface_detection = @aircraft_surface_detection
-			sub_detection = @aircraft_sub_detection
+			air_defence = 0.1
+			surface_detection = 0.15
+			sub_detection = 0.15
 		}
 	}
 }

@@ -1,5 +1,4 @@
-﻿
-GER_BB_HISTORICAL = {
+﻿GER_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
 	for_countries = { GER }

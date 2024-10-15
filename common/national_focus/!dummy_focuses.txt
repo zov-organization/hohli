@@ -1,0 +1,48 @@
+focus_tree = {
+	id = dummy_focuses
+	continuous_focus_position = { x = 50 y = 50 }
+	
+	default = no
+
+	focus = { id = GER_army_innovation }
+	focus = { id = GER_oppose_hitler }
+	focus = { id = GER_air_innovation }
+	focus = { id = GER_west_wall }
+	focus = { id = GER_four_year_plan }
+	focus = { id = GER_demand_sudetenland }
+	focus = { id = GER_reestablish_free_elections }
+	focus = { id = GER_revive_the_kaiserreich }
+	focus = { id = GER_barbarossa_recap }
+	focus = { id = GER_form_the_reichskommissariats }
+	focus = { id = GER_rekindle_imperial_sentiment }
+	focus = { id = GER_ally_the_shade }
+	focus = { id = GER_tackle_the_communist_threat }
+	focus = { id = GER_plan_z }
+	focus = { id = GER_align_hungary }
+	focus = { id = GER_align_romania }
+	focus = { id = GER_mol_rib_pact }
+	focus = { id = GER_danzig_or_war }
+	focus = { id = GER_central_european_alliance }
+	focus = { id = GER_the_central_powers }
+	focus = { id = GER_assassinate_mussolini }
+	focus = { id = GER_anschluss }
+	focus = { id = GER_rhineland }
+	focus = { id = GER_return_of_the_kaiser }
+	focus = { id = GER_the_monarchy_compromise }
+	focus = { id = GER_demand_slovenia }
+	focus = { id = GER_rebuild_the_high_seas_fleet }
+	focus = { id = GER_ussr_war_goal }
+	focus = { id = GER_anti_comitern_pact }
+	focus = { id = GER_anti_soviet_pact }
+	focus = { id = GER_china_friend }
+	focus = { id = GER_expatriate_the_communists }
+	focus = { id = GER_focus_on_the_true_enemy }
+	focus = { id = GER_second_ljubljana_award }
+	focus = { id = GER_war_with_greece }
+	focus = { id = GER_our_place_in_the_sun }
+	focus = { id = GER_pool_technical_know_how }
+	focus = { id = GER_danzig_for_guarantees }
+	focus = { id = GER_soviet_ally }
+	focus = { id = GER_demand_memel }
+	focus = { id = GER_poland_friend }
+}

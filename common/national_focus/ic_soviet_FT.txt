@@ -166,7 +166,9 @@ focus_tree = {
 		y = 1
 		cost = 1
 
-		available = { ic_ger_spy_planes_caught = yes }
+		available = {
+			ic_ger_spy_planes_caught = yes
+		}
 
 		completion_reward = {
 			unlock_decision_category_tooltip = SOV_accelerate_industry
@@ -542,50 +544,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_advisor_role = {
-				character = ic_SOV_mikhail_kalinin
-				advisor = {
-					slot = political_advisor
-					idea_token = ic_SOV_mikhail_kalinin
-					traits = {
-						popular_figurehead_kalinin 
-					}
-					cost = 100
-				}
-			}
-			add_advisor_role = {
-				character = ic_SOV_nikolay_voznesensky
-				
-				advisor = {
-					slot = political_advisor
-					idea_token = ic_SOV_nikolay_voznesensky
-					name = "Nikolay Voznesensky"
-					traits = {
-						captain_of_industry 
-					}
-				}
-			}
-			add_advisor_role = {
-				character = ic_SOV_vyacheslav_molotov
-				advisor = {
-					slot = political_advisor
-					idea_token = ic_SOV_vyacheslav_molotov
-					name = "Vyacheslav Molotov"
-					traits = {
-						pc_for_foreign_affairs_molotov
-					}
-				}
-			}
-			add_advisor_role = {
-				character = ic_SOV_nikita_khrushchyov
-				advisor = {
-					slot = political_advisor
-					idea_token = ic_SOV_nikita_khrushchyov
-					traits = {
-						technocrat 
-					}
-				}
-			}
+			show_ideas_tooltip = ic_SOV_mikhail_kalinin
+			show_ideas_tooltip = ic_SOV_nikolay_voznesensky
+			show_ideas_tooltip = ic_SOV_vyacheslav_molotov
+			show_ideas_tooltip = ic_SOV_nikita_khrushchyov
 		}
 	}
 
@@ -847,44 +809,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_advisor_role = {
-				character = ic_SOV_nikolay_kuznetsov
-				advisor = {
-					slot = navy_chief
-					idea_token = ic_SOV_nikolay_kuznetsov
-					traits = {
-						navy_chief_kuznetsov
-					}
-					cost = 10
-				}
-			}
 			add_ideas = { ic_SOV_kuznetsov_reforms }
-		}
-	}
-
-	focus = {
-		id = SOV_forts
-
-		icon = GFX_SOV_forts
-
-		prerequisite = { focus = SOV_kuznetsovs_plan }
-		prerequisite = { focus = SOV_large_calibers }
-		relative_position_id = SOV_large_calibers
-
-		x = 0
-		y = 2
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
+			show_ideas_tooltip = ic_SOV_nikolay_kuznetsov
 		}
 	}
 
@@ -937,58 +863,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			add_advisor_role = {
-				character = ic_SOV_aleksandr_vasilevsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_aleksandr_vasilevsky
-					ledger = army
-					traits = {
-						army_infantry_1
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_ivan_konev
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_ivan_konev
-					ledger = army
-					traits = {
-						army_artillery_1
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_stepan_krasovsky
-				advisor = {
-					slot = air_chief
-					idea_token = ic_SOV_stepan_krasovsky
-					ledger = air
-					traits = {
-						air_air_superiority_1
-					}
-					cost = 100
-				}
-			}
-
-			add_advisor_role = {
-				character = ic_SOV_sergey_khudyakov
-				advisor = {
-					slot = air_chief
-					idea_token = ic_SOV_sergey_khudyakov
-					ledger = air
-					traits = {
-						air_close_air_support_1
-					}
-					cost = 100
-				}
-			}
+			show_ideas_tooltip = ic_SOV_aleksandr_vasilevsky
+			show_ideas_tooltip = ic_SOV_ivan_konev
+			show_ideas_tooltip = ic_SOV_stepan_krasovsky
+			show_ideas_tooltip = ic_SOV_sergey_khudyakov
 		}
 	}
 
@@ -1010,18 +888,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ic_SOV_stavka
-
-			add_advisor_role = {
-				character = ic_SOV_semyon_timoshenko
-				advisor = {
-					slot = army_chief
-					idea_token = ic_SOV_semyon_timoshenko
-					traits = {
-						army_chief_reform_2
-					}
-					cost = 100
-				}
-			}
+			show_ideas_tooltip = ic_SOV_semyon_timoshenko
 		}
 	}
 
@@ -1267,6 +1134,32 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_forts
+
+		icon = GFX_SOV_forts
+
+		prerequisite = { focus = SOV_kuznetsovs_plan }
+		prerequisite = { focus = SOV_large_calibers }
+		relative_position_id = SOV_large_calibers
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
+		}
+	}
+
 	
 	focus = {
 		id = SOV_inf_two
@@ -1340,6 +1233,13 @@ focus_tree = {
 			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = -0.02	}
 			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = -0.01	}
 			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}
+			
+			mio:SOV_kirov_organization = {
+				add_mio_funds = 1000
+			}
+			mio:SOV_ilyushin_design_bureau_organization = {
+				add_mio_funds = 1000
+			}
 		}
 	}
 
@@ -1520,7 +1420,11 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			
+			mio:SOV_ilyushin_design_bureau_organization = {
+				complete_mio_trait = {
+					trait = SOV_mio_trait_merge_plant_no_150
+				}
+			}
 		}
 	}
 
@@ -1581,18 +1485,7 @@ focus_tree = {
 				uses = 1
 				technology = improved_small_airframe
 			}
-			add_advisor_role = {
-				character = ic_SOV_aleksandr_novikov
-				advisor = {
-					slot = air_chief
-					idea_token = ic_SOV_aleksandr_novikov
-					name = "Aleksandr Novikov"
-					traits = {
-						air_chief_reform_4
-					}
-					cost = 100
-				}
-			}
+			show_ideas_tooltip = ic_SOV_aleksandr_novikov
 		}
 	}
 
@@ -1612,23 +1505,42 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			has_war_with = GER
+		}
+
+		completion_reward = {
+			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
+			show_ideas_tooltip = ic_SOV_georgy_zhukov
+			show_ideas_tooltip = ic_SOV_yuri_levitan
+		}
+	}
+
+	focus = {
+		id = SOV_bebra
+
+		icon = GFX_SOV_forts
+
+		prerequisite = { focus = SOV_wow }
+		relative_position_id = SOV_wow
+
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
 
 		}
 
 		completion_reward = {
-			
-			add_advisor_role = {
-				character = ic_SOV_konstantin_rokossovsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_konstantin_rokossovsky
-					ledger = army
-					traits = {
-						army_armored_3
-					}
-					cost = 100
-				}
-			}
+			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
+			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
 		}
 	}
+
+
+
+
 }
