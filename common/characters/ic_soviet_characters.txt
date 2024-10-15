@@ -144,12 +144,12 @@ characters = {
 		name = "Yuri Levitan"
 		portraits = {
 			army = {
-				#small = "GFX_idea_nikita_khrushchev"
+				small = "GFX_idea_yuri_levitan"
 			}
 		}
 		advisor = {
-			slot = ic_SOV_yuri_levitan
-			idea_token = ic_SOV_nikita_khrushchyov
+			slot = political_advisor
+			idea_token = ic_SOV_yuri_levitan
 			available = {
 				has_completed_focus = SOV_wow
 			}

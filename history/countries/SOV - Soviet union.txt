@@ -36,6 +36,7 @@ recruit_character = ic_SOV_vyacheslav_molotov #future advisors
 recruit_character = ic_SOV_nikita_khrushchyov #future advisors
 recruit_character = ic_SOV_nikolay_kuznetsov #future advisors
 recruit_character = ic_SOV_aleksandr_novikov #future advisors
+recruit_character = ic_SOV_yuri_levitan #future advisors
 
 recruit_character = ic_SOV_stepan_krasovsky
 recruit_character = ic_SOV_sergey_khudyakov
