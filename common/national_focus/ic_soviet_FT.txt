@@ -993,7 +993,7 @@ focus_tree = {
 				name = SOV_tank_four
 				bonus = 0.25
 				uses = 1
-				technology = sov_basic_medium_tank_chassis
+				technology = sov_improved_medium_tank_chassis
 			}
 		}
 	}
