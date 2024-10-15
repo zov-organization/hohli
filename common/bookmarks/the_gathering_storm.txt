@@ -41,10 +41,14 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				
+				ic_versailles_bond
+				ic_nation_zombification_4
+				ic_ger_barbarossa
 			}
 			focuses = {
-				
+				GER_initial_focus
+				GER_general_mobilization
+				GER_drang_nach_osten
 			}
 		}
 		"ITA"={

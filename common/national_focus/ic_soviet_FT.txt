@@ -1509,19 +1509,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-			add_advisor_role = {
-				character = ic_SOV_konstantin_rokossovsky
-				advisor = {
-					slot = high_command
-					idea_token = ic_SOV_konstantin_rokossovsky
-					ledger = army
-					traits = {
-						army_armored_3
-					}
-					cost = 100
-				}
-			}
+			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
+			show_ideas_tooltip = ic_SOV_georgy_zhukov
 		}
 	}
 
