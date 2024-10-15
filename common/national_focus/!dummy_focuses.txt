@@ -4,10 +4,7 @@ focus_tree = {
 	
 	default = no
 
-	# I HAVE NO CLUE WHY DOES GER FOCUSES DISAPPEAR WHEN YOU ADD
-	# VANILLA GER_army_innovation focus, but that is how it is
-	#focus = { id = GER_army_innovation }
-
+	focus = { id = GER_army_innovation }
 	focus = { id = GER_oppose_hitler }
 	focus = { id = GER_air_innovation }
 	focus = { id = GER_west_wall }

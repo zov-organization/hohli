@@ -1413,7 +1413,7 @@
 	}
 
 	focus = {
-		id = ic_GER_army_modernization
+		id = ic_GER_army_innovation
 		icon = GFX_GER_army_innovation
 
 		prerequisite = { focus = GER_ss_regiments }
@@ -1438,7 +1438,7 @@
 		icon = GFX_GER_change_direction
 
 		prerequisite = { focus = GER_symbol_of_the_blitzkrieg }
-		prerequisite = { focus = GER_army_innovation }
+		prerequisite = { focus = ic_GER_army_innovation }
 		prerequisite = { focus = GER_new_main_tank }
 		relative_position_id = GER_symbol_of_the_blitzkrieg
 
