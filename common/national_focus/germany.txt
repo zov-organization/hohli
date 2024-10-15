@@ -1413,7 +1413,7 @@
 	}
 
 	focus = {
-		id = ic_GER_army_innovation
+		id = ic_GER_army_modernization
 		icon = GFX_GER_army_innovation
 
 		prerequisite = { focus = GER_ss_regiments }
