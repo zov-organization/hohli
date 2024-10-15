@@ -187,7 +187,7 @@ ideas = {
 			}
 			research_bonus = {
                 armor = -0.35
-				artillery = -0.2
+				#artillery = -0.2
             }
 			modifier = {
 				army_attack_factor = -0.05
