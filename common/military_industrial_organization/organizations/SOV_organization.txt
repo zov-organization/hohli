@@ -73,6 +73,16 @@ SOV_kirov_organization = {
 	allowed = {	
 		original_tag = SOV
 	}
+
+
+	initial_trait = {
+		name = generic_mio_initial_trait_medium_tank_designer
+		
+		production_bonus = {
+			production_capacity_factor = 0.12
+		}
+	}
+
 }
 
 
@@ -274,6 +284,14 @@ SOV_ilyushin_design_bureau_organization = {
 	
 	available = { }
 
+	initial_trait = {
+		name = generic_mio_initial_trait_light_aircraft_designer
+		
+		production_bonus = {
+			production_capacity_factor = 0.12
+		}
+	}
+
 	add_trait = { 
 		token = SOV_mio_trait_merge_plant_no_28
 		name = SOV_merge_aircraft_plant_1
@@ -361,6 +379,14 @@ SOV_tupolev_design_bureau_organization = {
 	icon = GFX_idea_tupolev_design_bureau
 	allowed = {	
 		original_tag = SOV
+	}
+	
+	initial_trait = {
+		name = generic_mio_initial_trait_heavy_aircraft_designer
+		
+		production_bonus = {
+			production_capacity_factor = 0.12
+		}
 	}
 
 	tree_header_text = {
@@ -597,6 +623,14 @@ SOV_grabin_design_bureau_organization = {
 			}
 		}
 	}
+	
+	initial_trait = {
+		name = generic_mio_initial_trait_artillery_manufacturer
+		
+		production_bonus = {
+			production_capacity_factor = 0.12
+		}
+	}
 
 	add_trait = { 
 		token = SOV_mio_trait_merge_plant_no_172
@@ -708,31 +742,18 @@ SOV_tula_arms_plant_organization = {
 	allowed = {	
 		original_tag = SOV
 	}
+	
+	initial_trait = {
+		name = generic_mio_initial_trait_infantry_manufacturer
+		
+		production_bonus = {
+			production_capacity_factor = 0.12
+		}
+	}
 
 	tree_header_text = {
 		text = mio_header_design_and_production
 		x = 2.5
-	}
-
-	override_trait = {
-		token = generic_mio_trait_armor_piercing_rounds
-		
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_quality_materials
-	}
-
-	override_trait = {
-		token = generic_mio_trait_advanced_barrel_forging
-		
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_drum_pattern_sights
-	}
-
-	override_trait = {
-		token = generic_mio_trait_reinforced_stocks
-		
-		position = { x=3 y=0 }
-		relative_position_id = generic_mio_trait_drum_pattern_sights
 	}
 
 	add_trait = { 

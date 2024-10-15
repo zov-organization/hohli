@@ -1,23 +1,23 @@
 characters = {                                                                                                    
 
-	ic_SOV_iosif_stalin = {
-		name = ic_SOV_iosif_stalin
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_iosif_stalin
-			}
-			army = {
-				large = GFX_portrait_SOV_iosif_stalin
-				small = GFX_portrait_SOV_iosif_stalin_small
-			}
-		}
-		country_leader = {
-			ideology = stalinism
-			traits = { stalin_heart_of_steel }
-			expire = "1953.3.1.1"
-			id = -1
-		}
-	}
+	#ic_SOV_iosif_stalin = {
+	#	name = ic_SOV_iosif_stalin
+	#	portraits = {
+	#		civilian = {
+	#			large = GFX_portrait_SOV_iosif_stalin
+	#		}
+	#		army = {
+	#			large = GFX_portrait_SOV_iosif_stalin
+	#			small = GFX_portrait_SOV_iosif_stalin_small
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = stalinism
+	#		traits = { stalin_heart_of_steel }
+	#		expire = "1953.3.1.1"
+	#		id = -1
+	#	}
+	#}
 
 	ic_SOV_nikolay_kuznetsov = {
 		name = ic_SOV_nikolay_kuznetsov

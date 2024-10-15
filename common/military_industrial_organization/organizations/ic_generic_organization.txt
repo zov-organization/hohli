@@ -283,7 +283,8 @@ ic_generic_medium_tank_organization = {
 		all_parents = { generic_mio_trait_all_round_cupola }
 		
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
+			production_efficiency_gain_factor = 0.02
 		}
 	}
 
@@ -343,7 +344,8 @@ ic_generic_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_power_traverse
 		
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.015
+			production_efficiency_gain_factor = 0.02
 		}
 	}
 
