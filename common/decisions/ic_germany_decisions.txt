@@ -55,8 +55,9 @@ GER_barb_category = {
 		days_mission_timeout = 10
         complete_effect = { }
         timeout_effect = {
-            remove_ideas = ic_ger_barbarossa
-			add_ideas = ic_ger_barb_stall_1
+            #remove_ideas = ic_ger_barbarossa
+			#add_ideas = ic_ger_barb_stall_1
+            complete_national_focus = GER_blitzkrieg_stalls
         }
     }
 
@@ -64,36 +65,16 @@ GER_barb_category = {
         icon = GFX_decision_generic_air
 		visible = {
 			has_active_mission = GER_send_scout_planes_mission
-            NOT = {
-                has_active_mission = GER_prep_1_mission
-            }
 		}
         fire_only_once = no
-        
-        complete_effect = {
-            activate_mission = GER_prep_1_mission
+
+        days_remove = 30
+
+        modifier = {
+            civilian_factory_use = 15
         }
-    }
-	GER_prep_1_mission = {
-        icon = GFX_decision_generic_air
 
-        available = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = { }
-        is_good = yes
-
-        fire_only_once = no
-        cancel_trigger = { }
-
-		days_mission_timeout = 30
-        complete_effect = { }
-        timeout_effect = {
+        remove_effect = {
             92 = {
                 #add_building_construction = {
                 #    type = radar_station
@@ -161,37 +142,17 @@ GER_barb_category = {
         icon = GFX_decision_generic_train
 		visible = {
 			has_active_mission = GER_send_scout_planes_mission
-            NOT = {
-                has_active_mission = GER_prep_2_mission
-            }
 		}
         fire_only_once = no
-        
-        complete_effect = {
-            activate_mission = GER_prep_2_mission
+
+        days_remove = 30
+
+        modifier = {
+            civilian_factory_use = 15
         }
-    }
-	GER_prep_2_mission = {
-        icon = GFX_decision_generic_train
 
-        available = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = { }
-        is_good = yes
-
-        fire_only_once = yes
-        cancel_trigger = {  }
-
-		days_mission_timeout = 30
-        complete_effect = {}
-        timeout_effect = {
-			build_railway = {   # Danzig - Siedlce
+        remove_effect = {
+            build_railway = {   # Danzig - Siedlce
 				path = {
 					362 3380 3351 6347 6321 9290 6567 524 402
 				}
@@ -628,8 +589,10 @@ GER_thousand_year_reich_category = {
         fire_only_once = yes
 
         available = {
-            6 = { is_controlled_by = GER }
-            34 = { is_controlled_by = GER }
+            912 = { is_controlled_by = GER }
+            911 = { is_controlled_by = GER }
+			99 = { is_controlled_by = GER }
+			37 = { is_controlled_by = GER }
         }
 
         visible = {
@@ -757,6 +720,8 @@ GER_thousand_year_reich_category = {
             34 = { is_controlled_by = GER }
         }
 
+        fire_only_once = yes
+
         visible = {
             ROOT = {
                 tag = GER
@@ -802,6 +767,8 @@ GER_thousand_year_reich_category = {
             has_completed_focus = GER_fra_cap
         }
 
+        fire_only_once = yes
+        
         visible = {
             ROOT = {
                 tag = GER
@@ -835,7 +802,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = yes
+        fire_only_once = no
 
         visible = {
             ROOT = {
@@ -858,10 +825,10 @@ GER_thousand_year_reich_category = {
 		}
 
         cost = 10
-        days_remove = 70
+        days_remove = 100
 
         modifier = {
-            civilian_factory_use = 10
+            civilian_factory_use = 15
         }
         remove_effect = {
             56 = {
@@ -993,7 +960,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = yes
+        fire_only_once = no
 
         visible = {
             ROOT = {
@@ -1021,7 +988,7 @@ GER_thousand_year_reich_category = {
         days_remove = 200
 
         modifier = {
-            civilian_factory_use = 10
+            civilian_factory_use = 20
         }
         remove_effect = {
             14 = {
@@ -1229,7 +1196,7 @@ GER_thousand_year_reich_category = {
 
         available = {  }
 
-        fire_only_once = yes
+        fire_only_once = no
 
         visible = {
             ROOT = {
@@ -1250,10 +1217,10 @@ GER_thousand_year_reich_category = {
 		}
 
         cost = 10
-        days_remove = 60
+        days_remove = 80
 
         modifier = {
-            civilian_factory_use = 10
+            civilian_factory_use = 15
         }
         remove_effect = {
             30 = {
@@ -1351,10 +1318,10 @@ GER_thousand_year_reich_category = {
         }
 
         cost = 10
-        days_remove = 2
+        days_remove = 70
 
         modifier = {
-            civilian_factory_use = 10
+            civilian_factory_use = 15
         }
         remove_effect = {
             16 = {
@@ -1432,6 +1399,8 @@ GER_thousand_year_reich_category = {
             19 = { is_controlled_by = GER }
         }
 
+        fire_only_once = yes
+
         visible = {
             ROOT = {
                 tag = GER
@@ -1494,7 +1463,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 17
@@ -1545,7 +1514,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 29
@@ -1607,7 +1576,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 14
@@ -1670,7 +1639,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 24
@@ -1745,7 +1714,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 27
@@ -1820,7 +1789,7 @@ GER_thousand_year_reich_category = {
 
         fire_only_once = yes
         cost = 75
-        days_remove = 100
+        days_remove = 180
         highlight_states = {
             highlight_state_targets = {
                 state = 19

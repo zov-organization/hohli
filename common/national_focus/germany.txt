@@ -481,7 +481,7 @@
 			}
 			add_tech_bonus = {
 				name = GER_luftwaffe
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				technology = aa_hmg
 				technology = aa_cannon_1
@@ -1384,8 +1384,8 @@
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_extra_sponsorship
-				bonus = 1.5
+				name = GER_new_main_tank
+				bonus = 0.75
 				uses = 1
 				category = cat_medium_armor
 			}
@@ -1466,7 +1466,6 @@
             NOT = {
 			    has_active_mission = GER_send_scout_planes_mission
             }
-			hidden_trigger = { always = no }
 		}
 
 		x = 0
