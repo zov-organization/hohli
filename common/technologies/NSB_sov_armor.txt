@@ -182,8 +182,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		#path = {
+		#	leads_to_tech = sov_basic_medium_tank_chassis
+		#	research_cost_coeff = 1
+		#}
+
 		path = {
-			leads_to_tech = sov_basic_medium_tank_chassis
+			leads_to_tech = sov_improved_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
