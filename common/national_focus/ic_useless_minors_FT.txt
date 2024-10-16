@@ -81,22 +81,6 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 50 }
 }
 focus_tree = {
-	id = czech_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = CZE
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
 	id = yugoslavian_focus
 	
 	country = {
@@ -112,40 +96,8 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 50 }
 }
-focus_tree = {
-	id = greek_focus
-
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = GRE
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
 
 # NORDIC
-focus_tree = { 
-	id = danish_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = DEN
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
 focus_tree = {
 	id = sweden_focus
 	
