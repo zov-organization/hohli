@@ -1,0 +1,181 @@
+# BALTICS
+focus_tree = {
+	id = latvia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LAT
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = lithuania_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIT
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = estonia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EST
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+
+# EUROPE
+focus_tree = {
+	id = polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = netherlands_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HOL
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = czech_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CZE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = yugoslavian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = greek_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+
+# NORDIC
+focus_tree = { 
+	id = danish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = sweden_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+
+focus_tree = {
+	id = norwegian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			NOR_AAT = yes
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}

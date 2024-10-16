@@ -3868,7 +3868,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ic_GER_mobilize_reich"
-		texturefile = "gfx/interface/ideas/inflexible.dds"
+		texturefile = "gfx/interface/ideas/GER/inflexible.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ic_nation_zombification_1"
@@ -3888,7 +3888,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ic_ss_idea"
-		# texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ic_old_german_working_culture"
@@ -6397,8 +6397,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_usa_conflict.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ic_SOV_stakhanovite_movement"
-		texturefile = "gfx/interface/ideas/idea_ic_SOV_stakhanovite_movement.dds"
+		name = "GFX_idea_SOV_stakhanovite_movement"
+		texturefile = "gfx/interface/ideas/idea_SOV_stakhanovite_movement.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SOV_war_heroes"

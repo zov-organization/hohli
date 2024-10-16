@@ -1,0 +1,18 @@
+focus_tree = {
+	id = spanish_focus	
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SPR
+			has_dlc = "La Resistance"
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+
+}
