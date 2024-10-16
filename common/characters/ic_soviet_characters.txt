@@ -214,11 +214,11 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
+			traits = { organizer trickster ranger }
 			skill = 4
-			attack_skill = 3
+			attack_skill = 5
 			defense_skill = 4
-			planning_skill = 2
+			planning_skill = 5
 			logistics_skill = 4
 		}	
 	}                                                                                 
@@ -460,7 +460,7 @@ characters = {
 			}
 		}
 
-		corps_commander = {
+		field_marshal = {
 			traits = { media_personality armor_officer war_hero winter_specialist }
 			skill = 5
 			attack_skill = 5
@@ -495,7 +495,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
+			traits = { organizer winter_specialist panzer_leader aggressive_assaulter }
 			skill = 5
 			attack_skill = 5
 			defense_skill = 2
@@ -514,14 +514,13 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
+			traits = { organizer infantry_leader infantry_expert winter_specialist bearer_of_artillery trickster }
 			skill = 3
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 3
-			planning_skill = 3
+			planning_skill = 4
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 

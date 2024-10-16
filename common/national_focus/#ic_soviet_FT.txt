@@ -1512,6 +1512,15 @@ focus_tree = {
 			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
 			show_ideas_tooltip = ic_SOV_yuri_levitan
+
+			ic_SOV_konstantin_rokossovsky = {
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = adaptable 
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist 
+			}
+
 		}
 	}
 
