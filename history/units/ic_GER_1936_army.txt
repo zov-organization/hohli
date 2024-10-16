@@ -152,17 +152,6 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = heavy_tank_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0
-		efficiency = 50
-		industrial_manufacturer = mio:GER_man_organization
-	}
-
-	add_equipment_production = {
-		equipment = {
 			type = small_plane_cas_airframe_1
 			creator = "GER" 
 		}
