@@ -588,7 +588,7 @@ ideas = {
 
 		ic_SOV_stakhanovite_movement = {
 
-			picture = GFX_idea_SOV_stakhanovite_movement
+			picture = SOV_stakhanovite_movement
 
 			removal_cost = -1
 
