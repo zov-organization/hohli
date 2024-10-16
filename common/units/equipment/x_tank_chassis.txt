@@ -1259,7 +1259,7 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -1292,7 +1292,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 9
@@ -1406,7 +1406,7 @@ equipments = {
 		visual_level = 2
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
@@ -1441,7 +1441,7 @@ equipments = {
 			tank_at_upgrade
 		}
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 8
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -1519,7 +1519,7 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
@@ -1557,7 +1557,7 @@ equipments = {
 			tank_aa_upgrade
 		}
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 8
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -1595,7 +1595,7 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 3
@@ -1630,7 +1630,7 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 8
 		reliability = 0.8
 
 		

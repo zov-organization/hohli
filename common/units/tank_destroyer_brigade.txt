@@ -36,9 +36,14 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.2
+		supply_consumption = 0.106
 
 		suppression = 1.0
+		
+		battalion_mult = {
+			category = category_tanks
+			hard_attack = 0.05
+		}
 
 		same_support_type = sp_td_art
 	}
@@ -80,9 +85,14 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.22
+		supply_consumption = 0.106
 		
 		suppression = 1.25
+		
+		battalion_mult = {
+			category = category_tanks
+			hard_attack = 0.05
+		}
 
 		same_support_type = sp_td_art
 	}
@@ -124,10 +134,15 @@ sub_units = {
 		default_morale = 0.3
 		max_strength = 0.6
 		weight = 1.5
-		supply_consumption = 0.3
+		supply_consumption = 0.106
 
 		suppression = 1.25
 		
+		battalion_mult = {
+			category = category_tanks
+			hard_attack = 0.05
+		}
+
 		same_support_type = sp_td_art
 	}
 }

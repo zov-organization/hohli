@@ -1296,6 +1296,13 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = SOV
+					has_war_with = GER
+				}
+				play_barbarossa_start_effect = yes
+			}
+			if = {
+				limit = {
 					tag = USA
 					has_war_with = JAP
 					NOT = { has_global_flag = day_of_infamy_happened }

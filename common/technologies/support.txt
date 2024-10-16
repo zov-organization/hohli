@@ -54,7 +54,7 @@ technologies = {
 			leads_to_tech = tech_flamethrower_sppt
 			research_cost_coeff = 1
 		}
-		research_cost = 1.0
+		research_cost = 1
 		start_year = 1918
 		folder = {
 			name = support_folder
@@ -78,7 +78,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -96,8 +96,11 @@ technologies = {
 		engineer = {	
 			entrenchment = 0.50
 			fort = {
-				defence = 0.10
-				attack = 0.10
+				defence = 0.05
+				attack = 0.05
+			}
+			river = {
+				attack = 0.05
 			}
 		}
 		
@@ -106,7 +109,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -123,9 +126,12 @@ technologies = {
 
 		engineer = {
 			entrenchment = 0.50
+			fort = {
+				defence = 0.05
+				attack = 0.05
+			}
 			river = {
-				attack = 0.1	
-				defence = 0.10
+				attack = 0.05
 			}
 		}
 		path = {
@@ -133,7 +139,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -143,30 +149,6 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
-		}
-		
-		ai_will_do = {
-			base = 4
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
 		}
 	}
 	
@@ -179,7 +161,7 @@ technologies = {
 				defence = 0.1
 			}
 		}
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -206,7 +188,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -258,7 +240,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -300,7 +282,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -337,7 +319,7 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -380,7 +362,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -390,48 +372,6 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-
-			modifier = {
-				factor = 10
-				tag = GER
-
-				POL = { has_capitulated = yes }
-				GER = { has_war = yes }
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ITA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
 		}
 	}
 	
@@ -447,7 +387,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -457,15 +397,6 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
 		}
 	}
 	
@@ -479,7 +410,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -490,15 +421,6 @@ technologies = {
 			support_tech
 			military_police_tech
 		}
-		
-		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
-		}
 	}
 	tech_military_police4 = {
 
@@ -506,7 +428,7 @@ technologies = {
 			suppression_factor = 0.1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -516,15 +438,6 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
 		}
 	}
 
@@ -553,7 +466,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -563,25 +476,6 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
 		}
 	}
 	
@@ -598,7 +492,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -647,7 +541,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -685,7 +579,7 @@ technologies = {
 			equipment_capture_factor = 0.05
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -732,7 +626,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -778,7 +672,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -823,7 +717,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -863,7 +757,7 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -930,7 +824,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -981,7 +875,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1031,7 +925,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1071,7 +965,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1122,7 +1016,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1158,7 +1052,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1201,7 +1095,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1239,7 +1133,7 @@ technologies = {
 			initiative = 0.12
 		}
 
-		research_cost = 2.0
+		research_cost = 1
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1264,7 +1158,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1287,6 +1181,9 @@ technologies = {
 			}
 			urban = {
 				attack = 0.1
+			}
+			forest = {
+				attack = 0.05
 			}
 		}
 
@@ -1324,6 +1221,9 @@ technologies = {
 			urban = {
 				attack = 0.1
 			}
+			forest = {
+				attack = 0.05
+			}
 		}
 		path = {
 			leads_to_tech = tech_flamethrower_sppt4
@@ -1354,6 +1254,9 @@ technologies = {
 			urban = {
 				attack = 0.1
 			}
+			forest = {
+				attack = 0.05
+			}
 		}
 		
 		research_cost = 1
@@ -1374,7 +1277,7 @@ technologies = {
 			train_equipment_1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1910
 		folder = {
 			name = support_folder
@@ -1401,7 +1304,7 @@ technologies = {
 			railway_gun_equipment_1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1412,23 +1315,6 @@ technologies = {
 			train_tech
 			artillery
 		}
-		
-		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				is_major = yes
-				factor = 1
-			}
-
-			modifier = {
-				OR = {
-					TAG = GER
-					tag = SOV
-				}
-				factor = 1.5
-			}
-		}
 	}
 
 	wartime_train = {
@@ -1436,7 +1322,7 @@ technologies = {
 			train_equipment_2
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1445,29 +1331,6 @@ technologies = {
 		
 		categories = {
 			train_tech
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				has_war = yes
-				factor = 20
-			}
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
-			}
 		}
 	}
 
@@ -1489,7 +1352,7 @@ technologies = {
 			has_dlc = "No Step Back"
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder

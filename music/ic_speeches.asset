@@ -1,0 +1,7 @@
+##### ic Speeches
+
+music = {
+	name = "ic_sfx_barbarossa"
+	file = "barbarossa.ogg"
+	volume = 1
+}
