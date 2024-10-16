@@ -14,6 +14,25 @@ on_actions = {
 				}
 			}
 
+			SPR = {
+				give_resource_rights = {
+					receiver = GER
+					state = 171
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 174
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 175
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 788
+				}
+			}
+
 			every_country = {
 				limit = {
 					is_playable_country = yes
