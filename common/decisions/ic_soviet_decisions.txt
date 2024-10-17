@@ -576,3 +576,222 @@ SOV_accelerate_industry = {
         }
     }
 }
+
+SOV_evac_industry_category = {
+	SOV_start_evacuate_ukranian_industry = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            NOT = {
+                has_active_mission = SOV_evacuate_ukranian_industry_mission
+            }
+        }
+
+		available = { 
+			#has_war_with = GER
+            IF = {
+                any_state = {
+                    AND = {
+                        is_core_of = SOV
+						ic_is_ukranian = yes
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+            }
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            activate_mission = SOV_evacuate_ukranian_industry_mission
+        }
+    }
+
+    SOV_stop_evacuate_ukranian_industry = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            has_active_mission = SOV_evacuate_ukranian_industry_mission
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            remove_mission = SOV_evacuate_ukranian_industry_mission
+        }
+    }
+
+	SOV_evacuate_ukranian_industry_mission = {
+
+        icon = GFX_decision_generic_army_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = {}
+
+		days_mission_timeout = 1
+        complete_effect = {}
+        
+        modifier = {
+            civilian_factory_use = 3
+        }
+
+        timeout_effect = {
+            random_state = {
+                limit = {
+                    AND = {
+                        is_core_of = SOV
+                        ic_is_ukranian = yes
+						ic_is_sov_from_evac_state = no
+                        is_controlled_by = SOV
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+
+                SOV = {
+                    random_core_state = {
+						limit = {
+							AND = {
+								ic_is_ukranian = no
+								ic_is_sov_from_evac_state = no
+							}
+						}
+						add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
+				        add_building_construction = { type = industrial_complex     level = PREV.PREV.industrial_complex_level     instant_build = yes }
+                        add_extra_state_shared_building_slots = PREV.PREV.arms_factory_level
+				        add_building_construction = { type = arms_factory           level = PREV.PREV.arms_factory_level           instant_build = yes }
+					}
+                }
+
+                remove_building = { type = industrial_complex level = industrial_complex_level }
+                remove_building = { type = arms_factory level = arms_factory_level }
+
+            }
+			activate_mission = SOV_evacuate_ukranian_industry_mission
+        }
+    }
+
+
+
+	SOV_start_evacuate_soviet_industry = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            NOT = {
+                has_active_mission = SOV_evacuate_soviet_industry_mission
+            }
+        }
+
+		available = { 
+			#has_war_with = GER
+            IF = {
+                any_state = {
+                    AND = {
+                        #is_core_of = SOV
+						ic_is_sov_from_evac_state = yes
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+            }
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            activate_mission = SOV_evacuate_soviet_industry_mission
+        }
+    }
+
+    SOV_stop_evacuate_soviet_industry = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            has_active_mission = SOV_evacuate_soviet_industry_mission
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            remove_mission = SOV_evacuate_soviet_industry_mission
+        }
+    }
+	
+	SOV_evacuate_soviet_industry_mission = {
+
+        icon = GFX_decision_generic_army_support
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = {}
+
+		days_mission_timeout = 1
+        complete_effect = {}
+        
+        modifier = {
+            civilian_factory_use = 3
+        }
+
+        timeout_effect = {
+            random_state = {
+                limit = {
+                    AND = {
+                        #is_core_of = SOV
+                        ic_is_ukranian = no
+						ic_is_sov_from_evac_state = yes
+                        is_controlled_by = SOV
+                        OR = {
+		                    arms_factory > 0
+		                    industrial_complex > 0
+                        }
+                    }
+                }
+
+                SOV = {
+                    random_core_state = {
+						limit = {
+							AND = {
+								ic_is_ukranian = no
+								ic_is_sov_from_evac_state = no
+							}
+						}
+						add_extra_state_shared_building_slots = PREV.PREV.industrial_complex_level
+				        add_building_construction = { type = industrial_complex     level = PREV.PREV.industrial_complex_level     instant_build = yes }
+                        add_extra_state_shared_building_slots = PREV.PREV.arms_factory_level
+				        add_building_construction = { type = arms_factory           level = PREV.PREV.arms_factory_level           instant_build = yes }
+					}
+                }
+
+                remove_building = { type = industrial_complex level = industrial_complex_level }
+                remove_building = { type = arms_factory level = arms_factory_level }
+
+            }
+			activate_mission = SOV_evacuate_soviet_industry_mission
+        }
+    }
+
+}
