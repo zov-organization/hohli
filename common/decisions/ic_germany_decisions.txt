@@ -35,32 +35,6 @@ GER_barb_category = {
         timeout_effect = {}
     }
 
-    GER_blitzkrieg_mission = {
-        icon = GFX_decision_generic_tank
-
-        available = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = {
-			hidden_trigger = { always = no }
-		}
-
-        activation = { }
-        is_good = yes
-
-        fire_only_once = yes
-        cancel_trigger = { }
-
-		days_mission_timeout = 10
-        complete_effect = { }
-        timeout_effect = {
-            #remove_ideas = ic_ger_barbarossa
-			#add_ideas = ic_ger_barb_stall_1
-            complete_national_focus = GER_blitzkrieg_stalls
-        }
-    }
-
     GER_prep_1 = {
         icon = GFX_decision_generic_air
 		visible = {
@@ -189,6 +163,93 @@ GER_barb_category = {
 			}
         }
     }
+
+    GER_blitzkrieg_mission = {
+        icon = GFX_decision_generic_tank
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = { }
+
+		days_mission_timeout = 10
+        complete_effect = { }
+        timeout_effect = {
+            swap_ideas = {
+                remove_idea = ic_ger_barb_stall_2
+                add_idea = ic_ger_barb_stall_3
+            }
+        }
+    }
+
+    GER_forty_two_summer_offencive_stalingrad = {
+        icon = GFX_decision_generic_tank
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = no
+
+        fire_only_once = yes
+        cancel_trigger = {
+            SOV = {
+                NOT = { has_full_control_of_state = 217 }
+            }
+        }
+
+		days_mission_timeout = 10
+        complete_effect = { }
+        timeout_effect = {
+            complete_national_focus = GER_blitzkrieg_stalls
+        }
+    }
+
+    GER_forty_two_summer_offencive_moscau = {
+        icon = GFX_decision_generic_tank
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = no
+
+        fire_only_once = yes
+        cancel_trigger = {
+            SOV = {
+                NOT = { has_full_control_of_state = 219 }
+            }
+        }
+
+		days_mission_timeout = 10
+        complete_effect = { }
+        timeout_effect = {
+            swap_ideas = {
+                remove_idea = ic_ger_barb_stall_2
+                add_idea = ic_ger_barb_stall_3
+            }
+        }
+    }
+
 }
 
 GER_plan_ost_category = {

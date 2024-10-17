@@ -324,6 +324,14 @@
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
 
+  SOV_evac_industry_category:0 "§HIndustry Evacuation§!"
+  SOV_start_evacuate_ukranian_industry:0 "Start Ukrain PromKompleks Evacuation"
+  SOV_stop_evacuate_ukranian_industry:0 "Stop Ukrain PromKompleks Evacuation"
+  SOV_evacuate_ukranian_industry_mission:0 "Ukrain PromKompleks Evacuation in progress..."
+  SOV_start_evacuate_soviet_industry:0 "Start European USSR Part Evacuation"
+  SOV_stop_evacuate_soviet_industry:0 "Stop European USSR Part Evacuation"
+  SOV_evacuate_soviet_industry_mission:0 "European USSR Part Evacuation in progress..."
+
   ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §R-5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §R-1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §R-2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §R-1.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
 
   SOV_accelerate_industry:0 "§OACCELERATE INDUSTRY§!"
@@ -385,7 +393,8 @@
   GER_barb_category:0 "§OOPERATION §R"BARBAROSSA"§!"
   GER_send_scout_planes:0 "Kommando Rowehl (start of preparations)"
   GER_send_scout_planes_mission:0 "§YOur spy planes are collecting info on USSR§!"
-  GER_blitzkrieg_mission:0 "Blitz them up!"
   GER_prep_1:0 "Prepare Air Fields"
-  GER_prep_1_mission:0 "Preparing Air Fields"
   GER_prep_2:0 "Prepare Railroads"
+  GER_blitzkrieg_mission:0 "Blitz them up!"
+  GER_forty_two_summer_offencive_moscau:0 "Aim: Moscau"
+  GER_forty_two_summer_offencive_stalingrad:0 "Aim: Stalingrad"

@@ -358,45 +358,70 @@ ideas = {
 			}
 		}
 
-		ic_ger_quality_tanks = {
-			name = ic_ger_quality_tanks
+		ic_ger_barb_stall_3 = {
+			name = ic_ger_barb_stall
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_quality_tanks
+			picture = GFX_idea_ic_ger_barb_stall
 
 			allowed = {
 				always = no
 			}
 
-			equipment_bonus = {
-				cas = {
-					build_cost_ic = -0.2 instant = yes
-					air_ground_attack = 0.11 instant = yes
-				}
+			modifier = {
+				army_defence_factor = 0.075
+				dig_in_speed_factor = 0.13
+				max_dig_in_factor = 0.12
+				org_loss_when_moving = 0.1
+				winter_attrition_factor = 0.3
 			}
-
-			modifier = { }
 		}
 
-		ic_ger_quantity_tanks = {
-			name = ic_ger_quantity_tanks
+		ic_aim_moscau_idea = {
+			name = ic_aim_moscau_idea
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_quantity_tanks
+			picture = GFX_idea_ic_ger_barb_stall
 
 			allowed = {
 				always = no
 			}
 
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = -0.2 instant = yes
-				}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 
-			modifier = { }
+			modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 168
+			}
+		}
+
+		ic_aim_stalingrad_idea = {
+			name = ic_aim_moscau_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_barb_stall
+
+			allowed = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.12
+				defense_bonus_against = 0.12
+			}
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 168
+			}
 		}
 
 	}
