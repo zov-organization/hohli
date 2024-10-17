@@ -1702,55 +1702,11 @@
 
 		x = 0
 		y = 3
-		cost = 3
+		cost = 10
 		completion_reward = {
-			
+			unlock_decision_tooltip = GER_prep_summer_offencive_moscau
+			unlock_decision_tooltip = GER_prep_summer_offencive_stalingrad
 		}
 	}
-
-	focus = {
-		id = GER_aim_moscau
-		icon = GFX_GER_new_main_tank
-
-		prerequisite = { focus = GER_plan_new_summer_offencive }
-		relative_position_id = GER_plan_new_summer_offencive
-
-		x = -1
-		y = 1
-		cost = 5
-		completion_reward = {
-			add_ideas = ic_aim_moscau_idea
-			activate_mission = GER_forty_two_summer_offencive_moscau
-		}
-	}
-
-	focus = {
-		id = GER_aim_stalingrad
-		icon = GFX_GER_new_main_tank
-
-		prerequisite = { focus = GER_plan_new_summer_offencive }
-		relative_position_id = GER_plan_new_summer_offencive
-
-		x = 1
-		y = 1
-		cost = 5
-		completion_reward = {
-			SPR = {
-				add_ideas = ic_aim_stalingrad_idea
-			}
-			ROM = {
-				add_ideas = ic_aim_stalingrad_idea
-			}
-			HUN = {
-				add_ideas = ic_aim_stalingrad_idea
-			}
-			BUL = {
-				add_ideas = ic_aim_stalingrad_idea
-			}
-			activate_mission = GER_forty_two_summer_offencive_stalingrad
-		}
-	}
-
-
   
 }

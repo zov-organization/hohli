@@ -52,6 +52,54 @@ ic_ger_has_completed_all_six_waves_of_industry_evac = {
 	}
 }
 
+ic_ger_is_moscau_offencive_state = {
+	custom_trigger_tooltip = {
+		tooltip = ic_ger_is_moscau_offencive_state_tt
+		AND = {
+			OR = {
+				state = 225
+				state = 220
+				state = 258
+				state = 257
+				state = 254
+				state = 222
+				state = 205
+				state = 224
+				state = 223
+				state = 219
+				state = 243
+				state = 242
+				state = 246
+				state = 247
+			}
+		}
+	}
+}
+ic_ger_is_stalingrad_offencive_state = {
+	custom_trigger_tooltip = {
+		tooltip = ic_ger_is_stalingrad_offencive_state_tt
+		AND = {
+			OR = {
+				state = 221
+				state = 200
+				state = 227
+				state = 218
+				state = 238
+				state = 237
+				state = 217
+				state = 829
+				state = 239
+				state = 265
+				state = 245
+				state = 228
+				state = 240
+				state = 260
+				state = 239
+			}
+		}
+	}
+}
+
 ic_is_ukranian = {
 	custom_trigger_tooltip = {
 		tooltip = ic_is_ukranian_tt

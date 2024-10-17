@@ -2717,9 +2717,16 @@
   DayOne_Efficiency:0 "Day 1 Efficiency"
   NoTradeback:0 "No Prewar Tradebacks"
 
+
+ # DYNAMIC MODIFIERS
+ ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
+ SOV_ukrain_prom_compleks:0 "Ukrain PromCompleks"
+ SOV_making_use_of_the_storehouse_of_russia:0 "Making Use of the Storehouse of Russia"
+ GER_summer_offencive_buff:0 "Axis Summer Offencive Buff"
+
+
  planned_economy:0 "Planned Economy"
  planned_economy_TT:0 ""
- ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
  SOV_red_airforces:0 "Red Airforces"
