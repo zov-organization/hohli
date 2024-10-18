@@ -1019,6 +1019,9 @@
 				target = POL
 				type = annex_everything
 			}
+			SPR = {
+				remove_ideas = NoTradeback
+			}
 			remove_ideas = ic_mefo_bills
 		}
 	}
@@ -1035,6 +1038,10 @@
 		cost = 5
 		completion_reward = {
 			add_ideas = ic_ss_idea
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			}
 		}
 	}
 
@@ -1204,9 +1211,21 @@
 
 		x = -2
 		y = 1
-		cost = 1
+		cost = 5
 		completion_reward = {
 			unlock_decision_tooltip = GER_alsace_lorraine_integration
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}
 		}
 	}
 
