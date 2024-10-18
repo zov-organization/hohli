@@ -30,6 +30,19 @@ SOV_making_use_of_the_storehouse_of_russia = {
 	local_resources_factor = 0.6
 }
 
+SOV_summer_defencive_buff = {
+	enable = { always = yes }
+
+	icon = ic_SOV_economy_is_on_war_footing
+
+	#attacker_modifier = yes
+	# if you add this, then `scope = <some_tag>` - wont work and the modifier will apply to EVERYONE in the state
+
+	army_defence_factor = 0.025
+	dig_in_speed_factor = 0.015
+	max_dig_in_factor = 0.005
+}
+
 
 
 GER_summer_offencive_buff = {

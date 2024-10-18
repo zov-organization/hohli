@@ -587,7 +587,7 @@ SOV_evac_industry_category = {
         }
 
 		available = { 
-			#has_war_with = GER
+			has_completed_focus = SOV_wow
             IF = {
                 any_state = {
                     AND = {
@@ -696,7 +696,7 @@ SOV_evac_industry_category = {
         }
 
 		available = { 
-			#has_war_with = GER
+			has_completed_focus = SOV_wow
             IF = {
                 any_state = {
                     AND = {

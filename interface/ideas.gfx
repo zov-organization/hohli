@@ -3769,6 +3769,18 @@ spriteTypes = {
 		name = "GFX_idea_SOV_red_army"
 		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_2"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_3"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_4"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ic_SOV_peaceful_building"
