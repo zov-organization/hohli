@@ -1,0 +1,49 @@
+add_namespace = ic_sov_events
+
+country_event = {
+    id = ic_sov_events.1
+    title = ic_sov_events.1.t
+    desc = ic_sov_events.1.d
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = ic_sov_events.1.a
+        every_state = {
+			limit = {
+				ic_sov_first_defence_states_north = yes
+			}
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff
+				scope = SOV
+				days = 45
+			}
+		}
+    }
+    option = {
+        name = ic_sov_events.1.b
+        every_state = {
+			limit = {
+				ic_sov_first_defence_states_center = yes
+			}
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff
+				scope = SOV
+				days = 45
+			}
+		}
+    }
+    option = {
+        name = ic_sov_events.1.c
+        every_state = {
+			limit = {
+				ic_is_ukranian = yes
+			}
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff
+				scope = SOV
+				days = 45
+			}
+		}
+    }
+}

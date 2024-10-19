@@ -3867,6 +3867,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ic_SOV_research_facility_2"
+		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
+	}
+
 
 
 

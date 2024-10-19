@@ -900,6 +900,10 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_red_army }
 		relative_position_id = SOV_the_red_army
 
+		x = 1
+		y = 1
+		cost = 5
+
 		bypass = {
 			if = {
 				AND = {
@@ -908,10 +912,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		x = 1
-		y = 1
-		cost = 5
 
 		available = {
 
@@ -1577,16 +1577,7 @@ focus_tree = {
 		cost = 3
 
 		available = {
-            or = {
-                and = {
-                    date < 1942.05.01
-                    date > 1942.02.01
-                }
-                and = {
-                    date < 1943.05.01
-                    date > 1943.02.01
-                }
-            }
+            ic_german_offencive_prep_date = yes
 		}
 
 		completion_reward = {
@@ -1616,16 +1607,7 @@ focus_tree = {
 		cost = 3
 
 		available = {
-            or = {
-                and = {
-                    date < 1942.05.01
-                    date > 1942.02.01
-                }
-                and = {
-                    date < 1943.05.01
-                    date > 1943.02.01
-                }
-            }
+            ic_german_offencive_prep_date = yes
 		}
 
 		completion_reward = {
@@ -1654,10 +1636,20 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		available = {}
+		bypass = {
+			if = {
+				date > 1941.11.01
+			}
+		}
+
+		available = {
+			ic_SOV_focusa_defensa_smol_date = yes
+		}
 
 		completion_reward = {
-			# idk what sanj wanted to see here
+            SOV = {
+                country_event = ic_sov_events.1
+            }
 		}
 	}
 
@@ -1699,6 +1691,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = ic_SOV_research_facility
+				add_idea = ic_SOV_research_facility_2
+			}
 		}
 	}
 
@@ -1741,6 +1737,17 @@ focus_tree = {
 		available = {}
 
 		completion_reward = {
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 1
+        	}
+			add_tech_bonus = {
+				name = SOV_dobicha_rezini
+				bonus = 1.5
+				uses = 2
+				category = synth_resources
+			}
 		}
 	}
 

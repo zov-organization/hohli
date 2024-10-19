@@ -1330,7 +1330,8 @@
 		id = GER_totaler_krieg
 		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
 
-		prerequisite = { focus = GER_aa_defences_of_remnants_of_the_reich focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
+		prerequisite = { focus = GER_aa_defences_of_remnants_of_the_reich }
+		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
 		relative_position_id = GER_support_our_allies_ita
 
 		x = 1
@@ -1654,6 +1655,8 @@
 		cost = 0
 		completion_reward = {
 			add_ideas = ic_ger_barbarossa
+			remove_ideas = ic_SOV_kama_tank_school
+			SOV = { remove_ideas = ic_SOV_kama_tank_school }
             activate_mission = GER_blitzkrieg_mission
             declare_war_on = {
                 target = SOV

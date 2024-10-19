@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ # ic_faq_events
  ic_faq_events.1.t:0 "FAQ for SOV"
  ic_faq_events.1.d:0 "Here is a guide to be"
  ic_faq_events.1.a:0 "mkay"
@@ -17,8 +19,18 @@
  
 
 
+ # ic_news
  ic_news.1.t:0 "German Scout planes Detected at Soviet Airspace"
  ic_news.1.d:0 "dap dap"
  ic_news.1.a:0 "I guess they just wann know their friends close..."
  ic_news.1.b:0 "Doesnt have to be SO loud!"
  ic_news.1.c:0 "Take it easy, we dont want war!"
+ 
+ 
+ 
+ # ic_sov_events
+ ic_sov_events.1.t:0 "Focus forces in one region"
+ ic_sov_events.1.d:0 "Germans are pushing too hard, we wont be able to secure all directions, so we have to pick one to enforce surely!"
+ ic_sov_events.1.a:0 "Enforce Nothern Front"
+ ic_sov_events.1.b:0 "Enforce Center Front"
+ ic_sov_events.1.c:0 "Enforce South Front"

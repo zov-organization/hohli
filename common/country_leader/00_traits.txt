@@ -10568,7 +10568,7 @@ leader_traits = {
 		stability_factor = 0.2
 		war_support_factor = 0.25
 		communism_drift = 0.1
-		political_power_factor = 0.3
+		political_power_factor = 0.45
 	}
 
 	navy_chief_kuznetsov = {
@@ -10634,7 +10634,7 @@ leader_traits = {
 		political_power_factor = 0.05
 		fascism_drift = 0.2
 		research_speed_factor = 0.08
-		stability_weekly = 0.0045
+		stability_weekly = 0.004
 	}
 
 	fuhrers_fireman = {
@@ -10654,6 +10654,7 @@ leader_traits = {
 	speer_trait = {
 		random = yes
 		sprite = 13
+		stability_weekly = 0.001
 		consumer_goods_expected_value = -0.01
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.1

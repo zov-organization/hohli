@@ -100,6 +100,52 @@ ic_ger_is_stalingrad_offencive_state = {
 	}
 }
 
+ic_sov_first_defence_states_north = {
+	custom_trigger_tooltip = {
+		tooltip = ic_sov_first_defence_states_north_tt
+		AND = {
+			OR = {
+				state = 814
+				state = 11
+				state = 189
+				state = 190
+				state = 809
+				state = 810
+				state = 808
+				state = 12
+				state = 191
+				state = 13
+				state = 812
+				state = 811
+				state = 813
+				state = 209
+				state = 210 
+			}
+		}
+	}
+}
+ic_sov_first_defence_states_center = {
+	custom_trigger_tooltip = {
+		tooltip = ic_sov_first_defence_states_center_tt
+		AND = {
+			OR = {
+				state = 94
+				state = 194
+				state = 97
+				state = 95
+				state = 204
+				state = 784
+				state = 96
+				state = 206
+				state = 207
+				state = 241
+				state = 242
+				state = 243
+				state = 224
+			}
+		}
+	}
+}
 ic_is_ukranian = {
 	custom_trigger_tooltip = {
 		tooltip = ic_is_ukranian_tt
@@ -176,6 +222,7 @@ ic_is_sov_from_evac_state = {
 				state = 194
 				state = 241
 				state = 224
+				state = 222
 				state = 220
 				state = 260
 				state = 263
@@ -220,5 +267,32 @@ ic_red_hordes_are_coming = {
 			SOV = { controls_state = 198 }
 			SOV = { controls_state = 192 }
 		}
+	}
+}
+
+
+
+ic_SOV_focusa_defensa_smol_date = {
+	custom_trigger_tooltip = {
+		tooltip = ic_SOV_focusa_defensa_smol_date_tt
+		and = {
+			date < 1941.11.01
+			date > 1941.06.01
+		}
+	}
+}
+ic_german_offencive_prep_date = {
+	custom_trigger_tooltip = {
+		tooltip = ic_german_offencive_prep_date_tt
+        or = {
+            and = {
+                date < 1942.05.01
+                date > 1942.02.01
+            }
+            and = {
+                date < 1943.05.01
+                date > 1943.02.01
+            }
+        }
 	}
 }

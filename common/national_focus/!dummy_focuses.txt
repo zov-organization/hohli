@@ -4,6 +4,9 @@ focus_tree = {
 	
 	default = no
 
+	# default
+	focus = { id = liberty_ethos }
+
 	# GER
 	#focus = { id = GER_army_innovation }
 	#focus = { id = GER_oppose_hitler }

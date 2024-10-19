@@ -410,6 +410,21 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		ic_SOV_research_facility_2 = {
+			name = ic_SOV_research_facility
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_SOV_research_facility_2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = 0.175
+			}
+		}
 
 		ic_SOV_military_reorg_1 = {
 			name = ic_SOV_military_reorg_1

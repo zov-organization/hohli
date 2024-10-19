@@ -167,6 +167,92 @@ SOV_forts_category = {
         }
     }
 
+	SOV_forts_zhytomyr_ukrep_rayon = {
+        icon = GFX_decision_generic_fortification 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 9493 3470 3570 9533 }
+		}
+        remove_effect = {
+            201 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9493
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3470
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3570
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9533
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_mozir_ukrep_rayon = {
+        icon = GFX_decision_generic_fortification 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 215 9554 6556 11453 }
+		}
+        remove_effect = {
+            194 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 215
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9554
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6556
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11453
+					instant_build = yes
+				}
+			}
+        }
+    }
+
 	SOV_forts_kiev_ukrep_rayon = {
         icon = GFX_decision_generic_fortification 
 		visible = {
@@ -178,7 +264,7 @@ SOV_forts_category = {
             civilian_factory_use = 6
         }
 		highlight_states = {
-			highlight_provinces = { 525 504 3543 3494 489 }
+			highlight_provinces = { 525 504 3543 3494 489 11454 }
 		}
         remove_effect = {
             202 = {
@@ -213,6 +299,171 @@ SOV_forts_category = {
 					instant_build = yes
 				}
 			}
+            203 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11454
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_dnepropetrovsk_ukrep_rayon = {
+        icon = GFX_decision_generic_fortification 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 11561 6423 9433 11437 9463 }
+		}
+        remove_effect = {
+			226 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11561
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6423
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9433
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11437
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9463
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_uzjni_buk_river_ukrep_rayon = {
+        icon = GFX_decision_generic_fortification 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 11409 434 6597 409 11546 }
+		}
+        remove_effect = {
+			203 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11409
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 434
+					instant_build = yes
+				}
+			}
+			197 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6597
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 409
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11546
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	SOV_forts_dnestr_river_ukrep_rayon = {
+        icon = GFX_decision_generic_fortification 
+		visible = {
+			has_completed_focus = SOV_forts
+		}
+        fire_only_once = yes
+        days_remove = 10
+        modifier = {
+            civilian_factory_use = 6
+        }
+		highlight_states = {
+			highlight_provinces = { 9576 754 741 11670 9698 3738 }
+		}
+        remove_effect = {
+			834 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9576
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 754
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 741
+					instant_build = yes
+				}
+			}
+			192 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11670
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9698
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3738
+					instant_build = yes
+				}
+			}
         }
     }
 
@@ -231,6 +482,11 @@ SOV_forts_category = {
 		}
         remove_effect = {
             219 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -252,6 +508,11 @@ SOV_forts_category = {
 				}
 			}
 			205 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -273,6 +534,11 @@ SOV_forts_category = {
 				}
 			}
 			247 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -300,6 +566,11 @@ SOV_forts_category = {
 				}
 			}
 			223 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -317,6 +588,27 @@ SOV_forts_category = {
 					type = bunker
 					level = 2
 					province = 11242
+					instant_build = yes
+				}
+			}
+			248 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			254 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -338,6 +630,11 @@ SOV_forts_category = {
 		}
         remove_effect = {
             219 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
 				# SECOND LINE
 				add_building_construction = {
 					type = bunker
@@ -371,6 +668,11 @@ SOV_forts_category = {
 				}
 			}
 			205 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# SECOND LINE
 				add_building_construction = {
 					type = bunker
@@ -380,6 +682,11 @@ SOV_forts_category = {
 				}
 			}
 			247 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# SECOND LINE
 				add_building_construction = {
 					type = bunker
@@ -401,6 +708,11 @@ SOV_forts_category = {
 				}
 			}
 			223 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 				# SECOND LINE
 				add_building_construction = {
 					type = bunker
@@ -433,6 +745,27 @@ SOV_forts_category = {
 					instant_build = yes
 				}
 			}
+			248 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			254 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
     }
 
@@ -451,6 +784,11 @@ SOV_forts_category = {
 		}
         remove_effect = {
             219 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
 				# MOSKOW IS NOT BEHIND, ITS HERE
 				add_building_construction = {
 					type = bunker
@@ -522,6 +860,48 @@ SOV_forts_category = {
 					type = bunker
 					level = 6
 					province = 3290
+					instant_build = yes
+				}
+			}
+			205 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			247 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			223 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			248 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			254 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -602,6 +982,12 @@ SOV_evac_industry_category = {
             }
         }
 
+        highlight_states = {
+            highlight_state_targets = {
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200 
+            }
+		}
+
         fire_only_once = no
         
         complete_effect = {
@@ -634,6 +1020,12 @@ SOV_evac_industry_category = {
 			hidden_trigger = { always = no }
 		}
 
+        highlight_states = {
+            highlight_state_targets = {
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200 
+            }
+		}
+
         activation = { }
         is_good = yes
 
@@ -642,10 +1034,6 @@ SOV_evac_industry_category = {
 
 		days_mission_timeout = 14
         complete_effect = {}
-        
-        modifier = {
-            civilian_factory_use = 3
-        }
 
         timeout_effect = {
             random_state = {
@@ -711,6 +1099,28 @@ SOV_evac_industry_category = {
             }
         }
 
+        highlight_states = {
+            highlight_state_targets = {
+				# estonia cores
+				state = 813 state = 812 state = 13 state = 191 state = 811
+
+				#latvia cores
+				state = 810 state = 12 state = 808 state = 809 state = 190 
+
+				#lithuania cores
+				state = 815 state = 11 state = 814 state = 189 state = 188 
+
+				#poland cores
+				state = 96 state = 784 state = 95 state = 97 state = 94 state = 93 state = 91 state = 89 
+				
+                #romania states
+				state = 80 state = 78 state = 766 
+
+                # sov cores, from leningrad till gomel, from minsk till invanov(right to moscow)
+				state = 194 state = 241 state = 224 state = 222 state = 220 state = 260 state = 263 state = 209 state = 242 state = 223 state = 258 state = 254 state = 253 state = 219 state = 205 state = 204 state = 243 state = 207 state = 206 state = 210 state = 246 state = 247 state = 248 state = 351 state = 264 state = 244 state = 208 state = 195
+            }
+		}
+
         fire_only_once = no
         
         complete_effect = {
@@ -743,6 +1153,28 @@ SOV_evac_industry_category = {
 			hidden_trigger = { always = no }
 		}
 
+        highlight_states = {
+            highlight_state_targets = {
+				# estonia cores
+				state = 813 state = 812 state = 13 state = 191 state = 811
+
+				#latvia cores
+				state = 810 state = 12 state = 808 state = 809 state = 190 
+
+				#lithuania cores
+				state = 815 state = 11 state = 814 state = 189 state = 188 
+
+				#poland cores
+				state = 96 state = 784 state = 95 state = 97 state = 94 state = 93 state = 91 state = 89 
+				
+                #romania states
+				state = 80 state = 78 state = 766 
+
+                # sov cores, from leningrad till gomel, from minsk till invanov(right to moscow)
+				state = 194 state = 241 state = 224 state = 222 state = 220 state = 260 state = 263 state = 209 state = 242 state = 223 state = 258 state = 254 state = 253 state = 219 state = 205 state = 204 state = 243 state = 207 state = 206 state = 210 state = 246 state = 247 state = 248 state = 351 state = 264 state = 244 state = 208 state = 195
+            }
+		}
+
         activation = { }
         is_good = yes
 
@@ -751,10 +1183,6 @@ SOV_evac_industry_category = {
 
 		days_mission_timeout = 14
         complete_effect = {}
-        
-        modifier = {
-            civilian_factory_use = 3
-        }
 
         timeout_effect = {
             random_state = {
