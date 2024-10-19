@@ -10634,6 +10634,7 @@ leader_traits = {
 		political_power_factor = 0.05
 		fascism_drift = 0.2
 		research_speed_factor = 0.08
+		stability_weekly = 0.0045
 	}
 
 	fuhrers_fireman = {
@@ -10649,4 +10650,14 @@ leader_traits = {
 		pocket_penalty = -0.15
 		max_dig_in_factor = 0.1
 	}
+	
+	speer_trait = {
+		random = yes
+		sprite = 13
+		consumer_goods_expected_value = -0.01
+		production_factory_efficiency_gain_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_arms_factory_factor = -0.2
+	}
+
 }

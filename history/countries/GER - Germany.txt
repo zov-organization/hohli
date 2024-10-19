@@ -31,7 +31,8 @@ create_country_leader = {
 
 recruit_character = ic_GER_adolf_hitler
 recruit_character = ic_GER_hjalmar_schacht
-recruit_character = ic_GER_walther_funk
+recruit_character = ic_GER_albert_speer
+recruit_character = ic_GER_fritz_todt
 recruit_character = ic_GER_albert_speer
 recruit_character = ic_GER_joseph_goebbels
 recruit_character = ic_GER_heinrich_himmler

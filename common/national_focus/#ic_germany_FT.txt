@@ -904,6 +904,10 @@
 		cost = 5
 		completion_reward = {
 			unlock_decision_category_tooltip = GER_the_question_category
+			swap_ideas = {
+				remove_idea = ic_nation_zombification_3
+				add_idea = ic_nation_zombification_4
+			}
 		}
 	}
 
@@ -1010,6 +1014,10 @@
 		prerequisite = { focus = GER_sturmgeshutz }
 		prerequisite = { focus = GER_army_expansion_two }
 		relative_position_id = GER_cze_annex
+
+		available = {
+			date > 1939.09.01
+		}
 
 		x = 0
 		y = 2
@@ -1121,6 +1129,126 @@
 	}
 
 	focus = {
+		id = GER_support_our_allies
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_silesian_industrial_region_2 }
+		relative_position_id = GER_silesian_industrial_region_2
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_hun
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_bul
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_spr
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_rom
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_rom_2
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies_rom }
+		relative_position_id = GER_support_our_allies_rom
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_ita
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = GER_support_our_allies_jap
+		icon = GFX_GER_silesian_industrial_region_2
+
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
+
+		x = 2
+		y = 2
+		cost = 5
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
 		id = GER_get_them_milzz
 		icon = GFX_GER_get_them_milzz
 
@@ -1132,7 +1260,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_ideas = ic_GER_mobilize_reich
+			add_ideas = ic_GER_try_autarky
 		}
 	}
 
@@ -1195,6 +1323,40 @@
 					}
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = GER_totaler_krieg
+		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+
+		prerequisite = { focus = GER_aa_defences_of_remnants_of_the_reich focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
+		relative_position_id = GER_support_our_allies_ita
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_nation_zombification_4
+				add_idea = ic_nation_zombification_5
+			}
+		}
+	}
+
+	focus = {
+		id = GER_autarky_failure
+		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+
+		prerequisite = { focus = GER_totaler_krieg }
+		relative_position_id = GER_totaler_krieg
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			remove_ideas = ic_GER_try_autarky
+			show_ideas_tooltip = ic_GER_albert_speer
 		}
 	}
 
@@ -1501,33 +1663,16 @@
 	}
 
 	focus = {
-		id = GER_plan_ost
+		id = GER_blitzkrieg_stalls
 		icon = GFX_GER_change_direction
 
 		prerequisite = { focus = GER_drang_nach_osten }
 		relative_position_id = GER_drang_nach_osten
 		
-		available = { }
+		available = {  }
 
 		x = 1
 		y = 1
-		cost = 5
-		completion_reward = {
-			unlock_decision_category_tooltip = GER_plan_ost_category
-		}
-	}
-
-	focus = {
-		id = GER_blitzkrieg_stalls
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_drang_nach_osten }
-		relative_position_id = GER_plan_ost
-		
-		available = {  }
-
-		x = 2
-		y = 0
 		cost = 10
 		completion_reward = {
 			add_ideas = ic_ger_barb_stall_1
@@ -1546,7 +1691,7 @@
 		available = { }
 
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		completion_reward = {
 			swap_ideas = {
@@ -1561,7 +1706,7 @@
 		icon = GFX_GER_change_direction
 
 		prerequisite = { focus = GER_drang_nach_osten }
-		relative_position_id = GER_plan_ost
+		relative_position_id = GER_drang_nach_osten
 		
 		available = {
 			controls_state = 11
@@ -1570,8 +1715,8 @@
 			has_idea = ic_ger_barbarossa
 		}
 
-		x = 4
-		y = 0
+		x = 3
+		y = 1
 		cost = 1
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -1629,6 +1774,23 @@
 				mission = GER_blitzkrieg_mission
 				days = 45
 			}
+		}
+	}
+
+	focus = {
+		id = GER_plan_ost
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_drang_nach_osten
+		
+		available = { }
+
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_plan_ost_category
 		}
 	}
 
@@ -1716,11 +1878,13 @@
 		id = GER_plan_new_summer_offencive
 		icon = GFX_GER_new_main_tank
 
+		#prerequisite = { focus = GER_oops_forgor_winter_equip } 
+		prerequisite = { focus = GER_barbarossa_moderate_succeses focus = GER_barbarossa_big_succeses }
 		prerequisite = { focus = GER_drang_nach_osten }
 		relative_position_id = GER_drang_nach_osten
 
 		x = 0
-		y = 3
+		y = 4
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = GER_prep_summer_offencive_moscau
