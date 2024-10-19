@@ -184,10 +184,7 @@ GER_barb_category = {
 		days_mission_timeout = 60
         complete_effect = { }
         timeout_effect = {
-            swap_ideas = {
-                remove_idea = ic_ger_barb_stall_2
-                add_idea = ic_ger_barb_stall_3
-            }
+            complete_national_focus = GER_blitzkrieg_stalls
         }
     }
 

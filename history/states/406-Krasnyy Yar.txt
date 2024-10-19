@@ -5,6 +5,10 @@ state={
 	manpower = 146494
 	state_category=rural
 	
+	resources={
+		aluminium = 40
+	}
+
 	history={
 		owner = SOV
 		buildings = {

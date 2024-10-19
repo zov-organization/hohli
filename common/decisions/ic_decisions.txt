@@ -320,6 +320,7 @@ ic_helpful_tips = {
                         state = 80
                         state = 78
                         state = 766
+                        state = 146
                     }
 				}
                 transfer_state_to = SOV

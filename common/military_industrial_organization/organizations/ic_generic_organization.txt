@@ -314,7 +314,7 @@ ic_generic_medium_tank_organization = {
 		all_parents = { generic_mio_trait_all_round_cupola }
 		
 		equipment_bonus = {
-			ap_attack = 0.05
+			ap_attack = 0.02
 		}
 	}
 
@@ -329,7 +329,7 @@ ic_generic_medium_tank_organization = {
 		any_parent = { generic_mio_trait_simplified_turret_design }
 		
 		equipment_bonus = {
-			ap_attack = 0.05
+			ap_attack = 0.02
 		}
 	}
 
@@ -360,7 +360,7 @@ ic_generic_medium_tank_organization = {
 		all_parents = { generic_mio_trait_armor_steel_working }
 		
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.06
 		}
 	}
 

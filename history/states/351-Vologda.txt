@@ -5,6 +5,10 @@ state={
 	manpower = 2352100
 	
 	state_category = town
+	
+	resources = {
+		tungsten = 20
+	}
 
 	history={
 		owner = SOV

@@ -5,6 +5,10 @@ state = {
 	manpower = 786030
 	
 	state_category = town
+	
+	resources={
+		steel = 70
+	}
 
 	history = {
 		victory_points = {

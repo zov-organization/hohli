@@ -1,6 +1,10 @@
 state={
 	id=407
 	name="STATE_407"
+	
+	resources={
+		aluminium = 50
+	}
 
 	history={
 		owner = SOV

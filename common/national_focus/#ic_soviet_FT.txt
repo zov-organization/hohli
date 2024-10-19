@@ -1511,6 +1511,8 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = SOV_evac_industry_category
 			show_ideas_tooltip = ic_SOV_yuri_levitan
+			activate_mission = SOV_evacuate_ukranian_industry_mission
+			activate_mission = SOV_evacuate_soviet_industry_mission
 		}
 	}
 

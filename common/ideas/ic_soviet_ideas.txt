@@ -187,6 +187,7 @@ ideas = {
 				army_org_factor = -0.30
 				planning_speed = -0.5
 				max_planning = -0.15
+				conscription = 0.015
 			}
 		}
 		SOV_red_army_2 = {
@@ -209,6 +210,7 @@ ideas = {
 				army_org_factor = -0.2
 				planning_speed = -0.3
 				max_planning = -0.1
+				conscription = 0.02
 			}
 		}
 		SOV_red_army_3 = {
@@ -227,6 +229,7 @@ ideas = {
 				army_org_factor = -0.1
 				planning_speed = -0.1
 				max_planning = -0.05
+				conscription = 0.025
 			}
 		}
 		SOV_red_army_4 = {
@@ -245,6 +248,7 @@ ideas = {
 				#army_org_factor = -0.1
 				planning_speed = 0.05
 				max_planning = 0.03
+				conscription = 0.03
 			}
 		}
 
