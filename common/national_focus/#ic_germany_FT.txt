@@ -1027,6 +1027,14 @@
 				target = POL
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
 			SPR = {
 				remove_ideas = NoTradeback
 			}

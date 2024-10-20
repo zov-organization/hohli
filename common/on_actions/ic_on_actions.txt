@@ -3,6 +3,10 @@ on_actions = {
 	on_startup = {
 
 		effect = {
+			POL = {
+				remove_ideas = POL_looming_peasants_strike
+				remove_mission = POL_looming_peasants_strike_mission
+			}
 			GER = {
 				give_resource_rights = {
 					receiver = FRA
@@ -14,7 +18,24 @@ on_actions = {
 				}
 			}
 
+			ROM = {
+				give_resource_rights = {
+					receiver = GER
+					state = 46
+				}
+			}
+
 			SPR = {
+				add_ideas = free_trade
+
+				every_owned_state = {
+					set_building_level = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+
 				give_resource_rights = {
 					receiver = GER
 					state = 171
@@ -30,6 +51,26 @@ on_actions = {
 				give_resource_rights = {
 					receiver = GER
 					state = 788
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 169
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 176
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 791
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 167
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 170
 				}
 			}
 
@@ -51,13 +92,13 @@ on_actions = {
 			}
 
 			every_country = {
-				limit = {
-					is_playable_country = no
-				}
+				#limit = { is_playable_country = no }
+				limit = { is_ai = yes }
 				add_ideas = {
 					ai_limiter
 					NoTradeback
 				}
+				delete_unit = { disband = yes }
 			}
 
 		}
