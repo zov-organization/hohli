@@ -41,21 +41,21 @@ ideas = {
 			}
 		}
 
-		ic_GER_mobilize_reich = {
-			name = ic_GER_mobilize_reich
+		ic_GER_try_autarky = {
+			name = ic_GER_try_autarky
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_GER_mobilize_reich
+			picture = GFX_idea_ic_GER_try_autarky
 
 			allowed = {
 				always = no
 			}
 
 			modifier = {
-				consumer_goods_expected_value = -0.03
-				production_factory_efficiency_gain_factor = 0.1
-				production_speed_arms_factory_factor = 0.15
+				consumer_goods_expected_value = -0.015
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 				production_speed_air_base_factor = 0.25
 				production_speed_rail_way_factor = 0.1
 			}
@@ -92,6 +92,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 				war_support_factor = 0.02
+				stability_weekly = -0.003
 			}
 		}
 
@@ -109,6 +110,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				war_support_factor = 0.05
+				stability_weekly = -0.004
 			}
 		}
 		ic_nation_zombification_3 = {
@@ -125,6 +127,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				war_support_factor = 0.08
+				stability_weekly = -0.004
 			}
 		}
 		ic_nation_zombification_4 = {
@@ -141,6 +144,24 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				war_support_factor = 0.12
+				stability_weekly = -0.005
+			}
+		}
+		ic_nation_zombification_5 = {
+			name = ic_nation_zombification_2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_nation_zombification_5
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.25
+				war_support_factor = 0.15
+				stability_weekly = -0.006
 			}
 		}
 
@@ -358,45 +379,70 @@ ideas = {
 			}
 		}
 
-		ic_ger_quality_tanks = {
-			name = ic_ger_quality_tanks
+		ic_ger_barb_stall_3 = {
+			name = ic_ger_barb_stall
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_quality_tanks
+			picture = GFX_idea_ic_ger_barb_stall
 
 			allowed = {
 				always = no
 			}
 
-			equipment_bonus = {
-				cas = {
-					build_cost_ic = -0.2 instant = yes
-					air_ground_attack = 0.11 instant = yes
-				}
+			modifier = {
+				army_defence_factor = 0.075
+				dig_in_speed_factor = 0.13
+				max_dig_in_factor = 0.12
+				org_loss_when_moving = 0.1
+				winter_attrition_factor = 0.3
 			}
-
-			modifier = { }
 		}
 
-		ic_ger_quantity_tanks = {
-			name = ic_ger_quantity_tanks
+		ic_aim_moscau_idea = {
+			name = ic_aim_moscau_idea
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_quantity_tanks
+			picture = GFX_idea_ic_ger_barb_stall
 
 			allowed = {
 				always = no
 			}
 
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = -0.2 instant = yes
-				}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 
-			modifier = { }
+			modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 168
+			}
+		}
+
+		ic_aim_stalingrad_idea = {
+			name = ic_aim_moscau_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ger_barb_stall
+
+			allowed = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.12
+				defense_bonus_against = 0.12
+			}
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 168
+			}
 		}
 
 	}

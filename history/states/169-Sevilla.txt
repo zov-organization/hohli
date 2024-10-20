@@ -1,6 +1,10 @@
 state={
 	id=169
 	name="STATE_169"
+	
+	resources={
+		tungsten = 20
+	}
 
 	history={
 		owner = SPR

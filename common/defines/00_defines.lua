@@ -309,13 +309,13 @@ NCountry = {
 	MAX_NON_CORE_MANPOWER_FACTOR = 1.0,				-- max clamp for recruitable local non core manpower factor for states
 	DEFAULT_STABILITY = 0.5,						-- Default stability if not scripted otherwise.
 	DEFAULT_WAR_SUPPORT = 0.5,						-- Default war support if not scripted otherwise.
-	BASE_STABILITY_WAR_FACTOR = -0.2,				-- Default stability war factor
-	BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.15,	-- Default stability rulling party popularity factor
+	BASE_STABILITY_WAR_FACTOR = 0,				-- Default stability war factor
+	BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.2,	-- Default stability rulling party popularity factor
 	MIN_COUP_STABILITY_FACTOR = 0.0,				-- Min value of coup factor in stability
 	MAX_COUP_STABILITY_FACTOR = 2.0,				-- Max value of coup factor in stability
 	MIN_COUP_SUCCESS_STABILITY = 0.8,				-- Max stability when coup will happen
-	WAR_SUPPORT_OFFNSIVE_WAR = -0.2,				-- Impact of being in offensive war
-	WAR_SUPPORT_DEFENSIVE_WAR = 0.2,				-- Impact of being in defensive war
+	WAR_SUPPORT_OFFNSIVE_WAR = -0.1,				-- Impact of being in offensive war
+	WAR_SUPPORT_DEFENSIVE_WAR = 0.1,				-- Impact of being in defensive war
 	WAR_SUPPORT_TENSION_IMPACT = 0.4,				-- Total impact of world tension
 	MIN_STABILITY = 0.0,
 	MAX_STABILITY = 1.0,
@@ -892,11 +892,11 @@ NMilitary = {
 	WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.002,  			-- war score deducted for every IC of lend lease received from allies
 	WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.002, 		-- war score deducted for every 100 units of fuel lend lease received from allies
 
-	CORPS_COMMANDER_DIVISIONS_CAP = 24,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+	CORPS_COMMANDER_DIVISIONS_CAP = 0,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 	DIVISION_SIZE_FOR_XP = 8,                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
 	CORPS_COMMANDER_ARMIES_CAP = -1,			-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
-	FIELD_MARSHAL_DIVISIONS_CAP = 24,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
-	FIELD_MARSHAL_ARMIES_CAP = 5,				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
+	FIELD_MARSHAL_DIVISIONS_CAP = 0,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+	FIELD_MARSHAL_ARMIES_CAP = 0,				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 
 	UNIT_LEADER_GENERATION_CAPITAL_CONTINENT_FACTOR = 100, --Integer factor to multiply manpower.
 
@@ -948,7 +948,7 @@ NMilitary = {
 	CHANCE_TO_AVOID_HIT_AT_NO_DEF = 75,	           -- chance to avoid hit if no defences left.
 	COMBAT_MOVEMENT_SPEED = 0.33,	               -- speed reduction base modifier in combat
 	TACTIC_SWAP_FREQUENCEY = 12,                   -- hours between tactic swaps
-	PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 5, -- Which level a field marhal or general has to be before they can pick their preferred tactic
+	PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1, -- Which level a field marhal or general has to be before they can pick their preferred tactic
 	COUNTRY_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.25,  -- extra weight multiplier for the country preferred tactic when doing weighted random
 	ARMY_GENERAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.5,   -- extra weight multiplier for the army general preferred tactic when doing weighted random
 	FIELD_MARSHAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.25, -- extra weight multiplier for the field marhsal preferred tactic when doing weighted random
@@ -966,9 +966,9 @@ NMilitary = {
 	BASE_FORT_PENALTY = -0.15, 					   -- fort penalty
 	MULTIPLE_COMBATS_PENALTY = -0.5,               -- defender penalty if attacked from multiple directions
 	DIG_IN_FACTOR = 0.02,						   -- bonus factor for each dug-in level
-	ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.1, -- XP gain per unit in combat
-	CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.5, -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
-	BASE_LEADER_TRAIT_GAIN_XP = 0.45,			   -- Base xp gain for traits per hour for armies
+	ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.0, -- XP gain per unit in combat
+	CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0, -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
+	BASE_LEADER_TRAIT_GAIN_XP = 0.0,			   -- Base xp gain for traits per hour for armies
 	MAX_NUM_TRAITS = -1,						   -- cant have more, -1 to disable
 	ENEMY_AIR_SUPERIORITY_IMPACT = -0.35,          -- effect on defense due to enemy air superiorty
 	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70,	       -- more AA attack will approach this amount of help (diminishing returns)
@@ -1117,7 +1117,7 @@ NMilitary = {
 	NUKE_DELAY_HOURS = 12,							-- How many hours does it take for the nuclear drop to happen
 	PARADROP_PENALTY = -0.3, 						-- Combat penalty when recently paradropped
 	PARADROP_HOURS = 48,							-- time paratroopers suffer penalties in combat
-	COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.25,     -- attack combat penalty for attacker if out of supply
+	COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.20,     -- attack combat penalty for attacker if out of supply
 	COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.65,     -- defend combat penalty for attacker if out of supply
 	COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.35,     -- attack combat penalty for defender if out of supply
 	COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15,     -- defend combat penalty for defender if out of supply
@@ -1164,9 +1164,9 @@ NMilitary = {
 	ACCLIMATIZATION_LOSS_SPEED_FACTOR = 2.0,		-- Loosing one acclimatization while being under affect of the opposite climate should cause it to drop down much faster than gaining.
 
 
-	PROMOTE_LEADER_CP_COST = 40.0,					-- cost of promoting a leader
+	PROMOTE_LEADER_CP_COST = 0.0,					-- cost of promoting a leader
 
-	FIELD_MARSHAL_ARMY_BONUS_RATIO = 0.5,           -- ratio to apply regular bonuses FM bonuses to armies
+	FIELD_MARSHAL_ARMY_BONUS_RATIO = 1,           -- ratio to apply regular bonuses FM bonuses to armies
 
 	FIELD_MARSHAL_XP_RATIO = 0.3,					-- xp gain ratio for army group leaders
 
@@ -1191,13 +1191,13 @@ NMilitary = {
 		0.0, -- operative
 	},
 
-	UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true,       -- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
+	UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false,       -- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 
 	HOURS_REQ_REJOIN_BORDER_WAR_FOR_INJURED_UNITS = 336, -- minimum hours required for units to rejoin border wars
 
 	NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {  -- chances to gain a personality trait for new generals
-		0.5, -- 50% for first trait
-		0.15  -- 15% for second trait after that
+		0.0,
+		0.0
 	},
 
 	NEW_COMMANDER_RANDOM_BASIC_TRAIT_CHANCES = {  -- chances to gain a basic trait for new generals
@@ -1233,13 +1233,13 @@ NMilitary = {
 
 
 	MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 4.0,			-- you gain more XP if you are doing more damage relative to enemy, this is the max relative amount to gain following RATe
-	XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 4.0,	-- XP factor scaling for max relative combat damage
+	XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 1.0,	-- XP factor scaling for max relative combat damage
 
 	XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.03,				-- you get reduced XP as combat drags
 	MIN_XP_RATE_TO_DECAY = 0.1,								-- minimum XP factor for dragged combats
 
-	XP_GAIN_PER_OVERRUN_UNIT = 35.0,						-- fixed XP gain per overrun unit
-	XP_GAIN_FOR_SHATTERING = 35.0,                          -- fixed XP gain per shattered unit
+	XP_GAIN_PER_OVERRUN_UNIT = 0.0,						-- fixed XP gain per overrun unit
+	XP_GAIN_FOR_SHATTERING = 0.0,                          -- fixed XP gain per shattered unit
 
 	UNIT_UPKEEP_ATTRITION = 0.00,							--Constant attrition value applied to armies.
 
@@ -1277,7 +1277,7 @@ NMilitary = {
 },
 
 NAir = {
-	AIR_WING_FLIGHT_SPEED_MULT = 0.02,					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
+	AIR_WING_FLIGHT_SPEED_MULT = 3,					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 	AIR_WING_MAX_STATS_ATTACK = 100,					-- Max stats
 	AIR_WING_MAX_STATS_DEFENCE = 100,
 	AIR_WING_MAX_STATS_AGILITY = 100,
@@ -1299,8 +1299,8 @@ NAir = {
 	COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 10000,        -- we can really pounce a naval strike and escalate
 	AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.04,           -- air superiority scale = superiority/(pixels*this)
 	COMBAT_MULTIPLANE_CAP = 3.0,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-	COMBAT_DAMAGE_SCALE = 1,							-- Higher value = more shot down planes
-	COMBAT_DAMAGE_SCALE_CARRIER = 5,					-- same as above but used inside naval combat for carrier battles
+	COMBAT_DAMAGE_SCALE = 0.2,							-- Higher value = more shot down planes
+	COMBAT_DAMAGE_SCALE_CARRIER = 4,					-- same as above but used inside naval combat for carrier battles
 	DETECT_CHANCE_FROM_OCCUPATION = 0.10, 				-- How much the controlled provinces in area affects the air detection base value.
 	DETECT_CHANCE_FROM_RADARS = 0.5, 					-- How much the radars in area affects detection chance.
 	DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000, -- Max amount of aircrafts in region to give full detection bonus.
@@ -1372,7 +1372,7 @@ NAir = {
 	ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1,					-- Anti Air Gun hit chance
 	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0,	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 	ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75,	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
-	AIR_DEPLOYMENT_DAYS = 2,							-- Days to deploy one air wing
+	AIR_DEPLOYMENT_DAYS = 0,							-- Days to deploy one air wing
 	NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03,		-- Max airbombers to do port strike comparing to strength
 	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05,		-- Max planes that can join a combat comparing to the total strength of the ships
 	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.2, -- max extra plane % that can join every day
@@ -1391,10 +1391,10 @@ NAir = {
 	EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.072,	-- How much efficiency to regain per day. Gain applied hourly.
 	EFFICIENCY_REGION_CHANGE_DAILY_GAIN_MARITIME_PATROL_PLANE = 1,
 
-	AIR_WING_XP_MAX = 1000.0, 											--Per plane XP.
-	AIR_WING_XP_LEVELS = { 100, 300, 700, 900 }, 						--Experience needed to progress to the next level
-	AIR_WING_XP_LOSS_WHEN_KILLED = 300,									--if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average.
-	AIR_WING_XP_TRAINING_MAX = 300.0, 									--Max average XP achieved with training.
+	AIR_WING_XP_MAX = 800.0, 											--Per plane XP.
+	AIR_WING_XP_LEVELS = { 50, 250, 475, 700}, 							--Experience needed to progress to the next level
+	AIR_WING_XP_LOSS_WHEN_KILLED = 100,									--if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average.
+	AIR_WING_XP_TRAINING_MAX = 250.0, 									--Max average XP achieved with training.
 
 	AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 7.0, 						--Daily gain when running training exercise mission
 	AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0.8, 							--Wings in combat gain extra XP
@@ -3976,42 +3976,42 @@ NSupply = {
 
 	--defines to calculate the capitals supply. This will be also used for max supply of other nodes depending on how well they are connected to capital. Using the formula:
 	--CapitalSupply = CAPITAL_SUPPLY_BASE + (NumberOfCivilianFactories * CAPITAL_SUPPLY_CIVILIAN_FACTORIES) + (NumberOfMilitaryFactories * CAPITAL_SUPPLY_MILITARY_FACTORIES) + (NumberOfDockyards * CAPITAL_SUPPLY_DOCKYARDS)
-	CAPITAL_SUPPLY_BASE = 5.0, -- base supply for capital
-	CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.3, -- supply from one civilian factory
-	CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.6, -- supply from one military factory
-	CAPITAL_SUPPLY_DOCKYARDS = 0.4, --supply from one naval factory
+	CAPITAL_SUPPLY_BASE = 8.0, -- base supply for capital
+	CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.9, -- supply from one civilian factory
+	CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.9, -- supply from one military factory
+	CAPITAL_SUPPLY_DOCKYARDS = 0.9, --supply from one naval factory
 
 	-- defines that are used for supply reach for capital
 	-- supply flow will start from INITIAL_SUPPLY_FLOW and will be reduced by a penalty on each province it travels (which depends on how far we are from our origin, terrain etc)
 	-- a supply reach >= 1.0 considered "perfect" and will be able to fully support units on that particular province (assuming you are not over capacity)
-	CAPITAL_INITIAL_SUPPLY_FLOW = 5.0, -- starting supply from
-	CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.5, -- starting penalty that will be added as supply moves away from its origin (modified by stuff like terrain)
-	CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
+	CAPITAL_INITIAL_SUPPLY_FLOW = 10.0, -- starting supply from
+	CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.25, -- starting penalty that will be added as supply moves away from its origin (modified by stuff like terrain)
+	CAPITAL_ADDED_PENALTY_PER_PROVINCE = 0.6, -- added penalty as we move away from origin
 
 	-- defines that are used for supply reach for built nodes
-	NODE_INITIAL_SUPPLY_FLOW = 2.8,
+	NODE_INITIAL_SUPPLY_FLOW = 4.2,
 	NODE_STARTING_PENALTY_PER_PROVINCE = 0.50,
 	NODE_ADDED_PENALTY_PER_PROVINCE = 0.70,
 
 	-- defines that are used for supply reach for dockyards
-	NAVAL_BASE_INITIAL_SUPPLY_FLOW = 3.3,
-	NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.84,
-	NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.1,
+	NAVAL_BASE_INITIAL_SUPPLY_FLOW = 7.0,
+	NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.5,
+	NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.5,
 
 	-- Node Flow (i.e. province caps) increase by this amount per railway level of the node's bottleneck
-	NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.34,
+	NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.7,
 
 	-- rivers will transfer in between nodes as if they were this level
 	RIVER_RAILWAY_LEVEL = 1,
 
 	-- defines that are used for supply reach for floating harbors
-	FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 2.6,
-	FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.8,
-	FLOATING_HARBOR_ADDED_PENALTY_PER_PROVINCE = 0.8,
+	FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 4,
+	FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.4,
+	FLOATING_HARBOR_ADDED_PENALTY_PER_PROVINCE = 0.6,
 
-	FLOATING_HARBOR_BASE_SUPPLY = 15.0, -- supply given by a floating harbor
-	FLOATING_HARBOR_BASE_DURATION = 21, -- duration of a full hp floating harbor
-	FLOATING_HARBOR_DURATION_RATIO_AT_MIN_HP = 0.0,  -- duration mult for a harbor that was reduced to 0 hp
+	FLOATING_HARBOR_BASE_SUPPLY = 20.0, -- supply given by a floating harbor
+	FLOATING_HARBOR_BASE_DURATION = 28, -- duration of a full hp floating harbor
+	FLOATING_HARBOR_DURATION_RATIO_AT_MIN_HP = 0.1,  -- duration mult for a harbor that was reduced to 0 hp
 
 	FLOATING_HARBOR_MIN_DECAY = 0.2, -- Always reduce Floating Harbor longevity by this many "hours" per hour
 	FLOATING_HARBOR_DECAY_MAX_AIR_BONUS = -0.1, -- At 100% Friendly Air superiourity, change decay rate by this many "hours" per hour
@@ -4020,41 +4020,41 @@ NSupply = {
 	FLOATING_HARBOR_DECAY_MAX_NAVAL_PENALTY = 0.5, -- At 100% Enemy Naval superiourity, change decay rate by this many "hours" per hour
 	FLOATING_HARBOR_DECAY_NO_CONTROL_PENALTY = 1.0, -- If adjacent land province is not held, change decay rate by this many "hours" per hour
 
-	SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30, -- max infrastructure level will reduce the supply flow drop off by this ratio
-	SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.20, -- crossing rivers introduces additional penalty
+	SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.60, -- max infrastructure level will reduce the supply flow drop off by this ratio
+	SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.05, -- crossing rivers introduces additional penalty
 
 	 -- node flow terrain falloff is scaled by logistics curve based on distance(d) (scalar / (1+e^(-k(d-midpoint))))
-	SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.3, -- How steep the curve is
+	SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.0, -- How steep the curve is
 	SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIDPOINT = 2.3, -- sigmoid inflection point
 	SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_SCALAR = 0.9, -- Max Penalty adjustment due to distance
 	SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIN_PENALTY_SCALE = 0.25, -- Logistics curve never reduces penalty facor below this limit
 
 	-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above.
-	SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2,
+	SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 3,
 	-- How many trucks does it cost to fully motorize a hub
-	SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 60.0,
+	SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 50.0,
 	-- For each additional level of motorization on a hub (i.e. contry with set motoriazation) reduce max bonus for next level by this amount
-	SUPPLY_HUB_MOTORIZATION_MARGINAL_EFFECT_DECAY = 1.6,
+	SUPPLY_HUB_MOTORIZATION_MARGINAL_EFFECT_DECAY = 1.0,
 
 
 	-- used for calculating "flow" for railways.
 	RAILWAY_BASE_FLOW = 10.0, 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
-	RAILWAY_FLOW_PER_LEVEL = 5.0, 	-- how much additional flow a railway level gives
+	RAILWAY_FLOW_PER_LEVEL = 7.0, 	-- how much additional flow a railway level gives
 	RAILWAY_FLOW_PENALTY_PER_DAMAGED = 5.0, -- penalty to flow per damaged railway
 	RAILWAY_MIN_FLOW = 5.0, 		-- minimum railway flow can be reduced to
 
 	-- used for calculating "flow" from a naval node to another naval node when it is connected via a convoy route
 	-- NAVAL_BASE_MAX_SUPPLY_FLOW_FACTOR = 0.9, -- flow of the parent node is factored to this ratio (so at most it can transfer parent naval node flow * this define)
 	NAVAL_BASE_FLOW = 5.0, -- max output/input of a naval node is limited by this base value + additional ratio for each level
-	NAVAL_FLOW_PER_LEVEL = 3.0, -- max output/input of a naval node is limited by previous base value + this define per its level
+	NAVAL_FLOW_PER_LEVEL = 5.0, -- max output/input of a naval node is limited by previous base value + this define per its level
 
 	SUPPLY_NODE_MIN_SUPPLY_THRESHOLD = 1.0, -- if supply of a node is below this value it will be set to 0 -- Currently unused? This should happen when enough damage occurs
 
-	INFRA_TO_SUPPLY = 0.3,							-- each level of infra gives this many supply
-	VP_TO_SUPPLY_BASE = 0.2,							-- Bonus to supply from a VP, no matter the level
+	INFRA_TO_SUPPLY = 0.6,							-- each level of infra gives this many supply
+	VP_TO_SUPPLY_BASE = 0.4,							-- Bonus to supply from a VP, no matter the level
 	VP_TO_SUPPLY_BONUS_CONVERSION = 0.05,			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
-	SUPPLY_FROM_DAMAGED_INFRA = 0.15,                -- damaged infrastructure counts as this in supply calcs
-	SUPPLY_BASE_MULT = 0.2,							-- multiplier on supply base values
+	SUPPLY_FROM_DAMAGED_INFRA = 0.2,                -- damaged infrastructure counts as this in supply calcs
+	SUPPLY_BASE_MULT = 0.4,							-- multiplier on supply base values
 	SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
 	RAILWAY_CONVERSION_COOLDOWN = 0, -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
@@ -4083,7 +4083,7 @@ NSupply = {
 	TRAIN_ANTI_AIR_HIT_ROLL_COUNT = 12, -- The air_attack of all attacked trains are accumulated, and then we do this many random rolls each with the hit chance set above to determine the fraction of the accumulated air_attack that hits.
 	TRAIN_ANTI_AIR_ATTACK_TO_AMOUNT = 0.001, -- Balancing value to convert the hitting air_attack to a percentage value of the attacking planes that are killed.
 
-	MIN_TRAIN_SUPPLY_FACTOR = 0.5, -- Having 0 trains in stockpile only applies this penalty factor, scaling up to 1.0 when need is met
+	MIN_TRAIN_SUPPLY_FACTOR = 0.2, -- Having 0 trains in stockpile only applies this penalty factor, scaling up to 1.0 when need is met
 	MIN_TRAIN_REQUIREMENT = 2, -- If total train need <= this, then don't apply any supply penalty, even if stockpile is insufficient
 
 	SUPPLY_FLOW_REDUCTION_THRESHOLD = 0.1, -- if supply flow is lower than this, it is not applied
@@ -4109,7 +4109,7 @@ NSupply = {
 
 	MIN_SURRENDER_LIMIT_TO_MOVE_SUPPLY_CAPITAL = 0.15, -- country needs to be above thos surrender ratio to be able to move its capital
 	COOLDOWN_DAYS_AFTER_MOVING_SUPPLY_CAPITAL = 30, -- cooldown for moving supply again after last move
-	DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 7,  -- the country will start gaining supply after this many days moving its capital
+	DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 4,  -- the country will start gaining supply after this many days moving its capital
 	DAYS_TO_START_GIVING_FULL_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL =  21, -- the country will reach max supply after this many days moving its capital
 
 	MIN_DIFF_FOR_AUTO_UPDATING_EXISTING_RAILWAYS = 5, -- while building railways, the system will prefer updating existing railway if new railway is close enough to existing one
@@ -4120,8 +4120,8 @@ NSupply = {
 	TRUCK_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.01, -- time factor for total truck distance
 	NAVAL_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.08, -- time factor for total naval distance
 
-	ALERT_VERY_LOW_SUPPLY_LEVEL = 0.2,			   -- At which point we show up the low and very low supply level alert. Value is in % of supplies supported vs required.
-	ALERT_LOW_SUPPLY_LEVEL = 0.5,
+	ALERT_LOW_SUPPLY_LEVEL = 0.9,
+	ALERT_VERY_LOW_SUPPLY_LEVEL = 0.5,			   -- At which point we show up the low and very low supply level alert. Value is in % of supplies supported vs required.
 
 	AI_FRONT_MINIMUM_UNITS_PER_PROVINCE_FOR_SUPPLY_CALCULATIONS = 1,    -- AI will try to keep this amount of divisions per province as a minimum when evaluating supply limitations for war fronts
 	AI_FRONT_DIVISIONS_PER_SUPPLY_POINT = 1.0, -- How many divisions should the AI consider it can supply per available supply point

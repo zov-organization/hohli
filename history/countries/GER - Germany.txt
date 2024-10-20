@@ -31,7 +31,8 @@ create_country_leader = {
 
 recruit_character = ic_GER_adolf_hitler
 recruit_character = ic_GER_hjalmar_schacht
-recruit_character = ic_GER_walther_funk
+recruit_character = ic_GER_albert_speer
+recruit_character = ic_GER_fritz_todt
 recruit_character = ic_GER_albert_speer
 recruit_character = ic_GER_joseph_goebbels
 recruit_character = ic_GER_heinrich_himmler
@@ -65,6 +66,7 @@ add_to_faction = ITA
 add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = BUL
+add_to_faction = SPR
 
 
 add_ideas = {
@@ -90,7 +92,7 @@ set_technology = {
 
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
-	basic_heavy_tank_chassis = 1
+	#basic_heavy_tank_chassis = 1
 
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -105,6 +107,12 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
+
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_submarine = 1
 }
 
 

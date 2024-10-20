@@ -29,3 +29,44 @@ SOV_making_use_of_the_storehouse_of_russia = {
 	state_production_speed_arms_factory_factor = 0.2
 	local_resources_factor = 0.6
 }
+
+SOV_summer_defencive_buff = {
+	enable = { always = yes }
+
+	icon = ic_SOV_economy_is_on_war_footing
+
+	#attacker_modifier = yes
+	# if you add this, then `scope = <some_tag>` - wont work and the modifier will apply to EVERYONE in the state
+
+	army_defence_factor = 0.025
+	dig_in_speed_factor = 0.015
+	max_dig_in_factor = 0.005
+}
+SOV_1941_defencive_buff = {
+	enable = { always = yes }
+
+	icon = ic_SOV_economy_is_on_war_footing
+
+	#attacker_modifier = yes
+	# if you add this, then `scope = <some_tag>` - wont work and the modifier will apply to EVERYONE in the state
+
+	army_defence_factor = 0.1
+	dig_in_speed_factor = 0.3
+	max_dig_in_factor = 0.1
+}
+
+
+
+GER_summer_offencive_buff = {
+	enable = { always = yes }
+
+	icon = ic_SOV_economy_is_on_war_footing
+
+	#attacker_modifier = yes
+	# if you add this, then `scope = <some_tag>` - wont work and the modifier will apply to EVERYONE in the state
+
+	army_attack_factor = 0.1
+	army_defence_factor = 0.1
+
+	#no_supply_grace = 168 - wont work
+}

@@ -12,7 +12,7 @@ leader_traits = {
 
 	dictator = {
 		random = no
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 	}
 
 	warrior_code = {
@@ -10548,6 +10548,12 @@ leader_traits = {
 		command_cap = 0
 	}
 
+
+	stalin_eblan = {
+		random = no
+		political_power_factor = -0.2
+	}
+
 	popular_figurehead_kalinin = {
 		sprite = 13
 		stability_factor = 0.15
@@ -10562,7 +10568,7 @@ leader_traits = {
 		stability_factor = 0.2
 		war_support_factor = 0.25
 		communism_drift = 0.1
-		political_power_factor = 0.3
+		political_power_factor = 0.45
 	}
 
 	navy_chief_kuznetsov = {
@@ -10625,9 +10631,10 @@ leader_traits = {
 	minister_of_proparanda = {
 		random = yes
 		sprite = 13
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 		fascism_drift = 0.2
 		research_speed_factor = 0.08
+		stability_weekly = 0.004
 	}
 
 	fuhrers_fireman = {
@@ -10643,4 +10650,15 @@ leader_traits = {
 		pocket_penalty = -0.15
 		max_dig_in_factor = 0.1
 	}
+	
+	speer_trait = {
+		random = yes
+		sprite = 13
+		stability_weekly = 0.001
+		consumer_goods_expected_value = -0.01
+		production_factory_efficiency_gain_factor = 0.08
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_arms_factory_factor = -0.2
+	}
+
 }

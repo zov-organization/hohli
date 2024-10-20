@@ -900,6 +900,10 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_red_army }
 		relative_position_id = SOV_the_red_army
 
+		x = 1
+		y = 1
+		cost = 5
+
 		bypass = {
 			if = {
 				AND = {
@@ -908,10 +912,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		x = 1
-		y = 1
-		cost = 5
 
 		available = {
 
@@ -1509,22 +1509,287 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
-			show_ideas_tooltip = ic_SOV_georgy_zhukov
+			unlock_decision_category_tooltip = SOV_evac_industry_category
 			show_ideas_tooltip = ic_SOV_yuri_levitan
+			activate_mission = SOV_evacuate_ukranian_industry_mission
+			activate_mission = SOV_evacuate_soviet_industry_mission
 		}
 	}
 
 	focus = {
-		id = SOV_bebra
+		id = SOV_snyatie_debaffov_i_gen
 
-		icon = GFX_SOV_forts
+		icon = GFX_SOV_wow
 
 		prerequisite = { focus = SOV_wow }
 		relative_position_id = SOV_wow
 
 		x = 0
-		y = 2
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_army
+				add_idea = SOV_red_army_2
+			}
+			ic_SOV_konstantin_rokossovsky = {
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = adaptable 
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_oust_nazi
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
+		relative_position_id = SOV_snyatie_debaffov_i_gen
+
+		x = -3
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			# plan iskra operation
+			show_ideas_tooltip = ic_SOV_georgy_zhukov
+		}
+	}
+
+	focus = {
+		id = SOV_further_back_defence_of_moscow
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_oust_nazi }
+		relative_position_id = SOV_oust_nazi
+
+		x = 0
+		y = 1
+		cost = 3
+
+		available = {
+            ic_german_offencive_prep_date = yes
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					ic_ger_is_moscau_offencive_state = yes
+				}
+				add_dynamic_modifier = {
+					modifier = SOV_summer_defencive_buff
+					scope = SOV
+					days = 120
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_further_back_defence_of_stalingrad
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_oust_nazi }
+		relative_position_id = SOV_oust_nazi
+
+		x = -2
+		y = 1
+		cost = 3
+
+		available = {
+            ic_german_offencive_prep_date = yes
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					ic_ger_is_stalingrad_offencive_state = yes
+				}
+				add_dynamic_modifier = {
+					modifier = SOV_summer_defencive_buff
+					scope = SOV
+					days = 120
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_focusa_defensa_smol
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
+		relative_position_id = SOV_snyatie_debaffov_i_gen
+
+		x = 0
+		y = 1
+		cost = 5
+
+		bypass = {
+			if = {
+				date > 1941.11.01
+			}
+		}
+
+		available = {
+			ic_SOV_focusa_defensa_smol_date = yes
+		}
+
+		completion_reward = {
+            SOV = {
+                country_event = ic_sov_events.1
+            }
+		}
+	}
+
+	focus = {
+		id = SOV_minus_debuff
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_focusa_defensa_smol }
+		relative_position_id = SOV_focusa_defensa_smol
+
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_army_2
+				add_idea = SOV_red_army_3
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_yacheika
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
+		relative_position_id = SOV_snyatie_debaffov_i_gen
+
+		x = 3
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = ic_SOV_research_facility
+				add_idea = ic_SOV_research_facility_2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_skidka_na_tank
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_yacheika }
+		relative_position_id = SOV_yacheika
+
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_skidka_na_tank
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_dobicha_rezini
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
+		relative_position_id = SOV_snyatie_debaffov_i_gen
+
+		x = 6
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 1
+        	}
+			add_tech_bonus = {
+				name = SOV_dobicha_rezini
+				bonus = 1.5
+				uses = 2
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_skidka_na_samolet
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_dobicha_rezini }
+		prerequisite = { focus = SOV_yacheika }
+		relative_position_id = SOV_dobicha_rezini
+
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_skidka_na_samolet
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = SOV_goy_da_rokossovskii
+
+		icon = GFX_SOV_forts
+
+		prerequisite = { focus = SOV_minus_debuff focus = SOV_skidka_na_tank }
+		relative_position_id = SOV_minus_debuff
+
+		x = 1
+		y = 1
 		cost = 5
 
 		available = {
@@ -1532,11 +1797,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_tooltip = SOV_forts_vitebsk_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_kiev_ukrep_rayon
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_first
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_second
-			unlock_decision_tooltip = SOV_forts_mojaisk_line_third
+			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
 		}
 	}
 

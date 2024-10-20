@@ -16,7 +16,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 3
 			dockyard = 1
 			arms_factory = 1
 			fuel_silo = 1
@@ -28,11 +28,6 @@ state={
 		}
 		
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
 	}
 
 	provinces={

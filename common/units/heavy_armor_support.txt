@@ -35,11 +35,11 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.6
 		weight = 1.5
-		supply_consumption = 0.3
+		supply_consumption = 0.106
 
-		plain = {
-		    attack = 0.05
-		}
+		#plain = {
+		#    attack = 0.05
+		#}
 		fort = {
 			attack = 0.1
 		}

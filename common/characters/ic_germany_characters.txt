@@ -18,38 +18,43 @@ characters={
 				captain_of_industry 
 			}
 		}
-	}	
-
-	ic_GER_walther_funk={
-		name=GER_walther_funk
-		portraits={
-			army={
-				small="GFX_idea_walther_funk"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ic_GER_walther_funk
-			traits = {
-				war_industrialist 
-			}
-		}		
 	}
 
-	ic_GER_albert_speer={ 
-		name=GER_albert_speer
-		portraits={
-			army={
-				small="GFX_idea_speer"
+	ic_GER_albert_speer = {
+		name = GER_albert_speer
+		portraits = {
+			army = {
+				small = "GFX_idea_speer"
 			}
 		}
 		advisor={
 			slot = political_advisor
 			idea_token = ic_GER_albert_speer
-			traits = {
-				armaments_organizer
+			cost = 75
+			available = {
+				has_completed_focus = GER_autarky_failure
 			}
-		}		
+			traits = {
+				speer_trait
+			}
+		}
+	}
+
+	ic_GER_fritz_todt={
+		name=GER_fritz_todt
+		portraits={
+			army={
+				small="GFX_idea_todt"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_GER_fritz_todt
+			traits = {
+				war_industrialist 
+			}
+		}
 	}
 
 	ic_GER_joseph_goebbels={
@@ -129,11 +134,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ brilliant_strategist armor_officer trickster trait_engineer }
+			traits={ trickster trait_engineer organizer panzer_leader combined_arms_expert ranger fortress_buster urban_assault_specialist adaptable }
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=6
 			logistics_skill=4
 			legacy_id=5
 		}
@@ -158,7 +163,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
+			traits={ organizer infantry_leader infantry_expert bearer_of_artillery trickster }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -395,7 +400,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
+			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine urban_assault_specialist }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -456,7 +461,7 @@ characters={
 			slot = air_chief
 			idea_token = ic_GER_ritter_von_greim
 			available = {
-				has_completed_focus = GER_barbarossa_recap
+				has_completed_focus = GER_plan_new_summer_offencive
 			}
 			traits = {
 				air_chief_all_weather_2

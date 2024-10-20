@@ -10,12 +10,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-		}
-		
-
-		1939.3.14 = {
-			owner = POL
-			controller = POL
+			arms_factory = 1
 		}
 	}
 

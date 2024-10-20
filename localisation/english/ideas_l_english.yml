@@ -2717,9 +2717,18 @@
   DayOne_Efficiency:0 "Day 1 Efficiency"
   NoTradeback:0 "No Prewar Tradebacks"
 
+
+ # DYNAMIC MODIFIERS
+ ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
+ SOV_ukrain_prom_compleks:0 "Ukrain PromCompleks"
+ SOV_making_use_of_the_storehouse_of_russia:0 "Making Use of the Storehouse of Russia"
+ SOV_summer_defencive_buff:0 "Soviet Defence In-Depth"
+ SOV_1941_defencive_buff:0 "Soviet 1941 Defencive Buff"
+ GER_summer_offencive_buff:0 "Axis Summer Offencive Buff"
+
+
  planned_economy:0 "Planned Economy"
  planned_economy_TT:0 ""
- ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
  SOV_red_airforces:0 "Red Airforces"
@@ -2761,3 +2770,10 @@
  ic_gray_wolf:0 "§gGray Wolf's in Den§!"
  ic_gray_wolf_golden_times:0 "§gGray Wolf: §YGolden Times!§!§!"
  ic_gray_wolf_its_over:0 "§gGray Wolf tucked its tail§!"
+ ic_GER_try_autarky:0 "Try Autarky"
+ ic_ger_barbarossa:0 "Operation: Barbarossa"
+ ic_ger_barb_stall_1:0 "Blitzkrieg stalls!"
+ ic_ger_barb_stall_2:0 "Blitzkrieg stalls!"
+ ic_ger_barb_stall_3:0 "Blitzkrieg stalls: 1942 Summer Offencive Failed"
+ ic_aim_moscau_idea:0 "1942 Summer Offencive on Moscau"
+ ic_aim_stalingrad_idea:0 "1942 Summer Offencive on Stalingrad"

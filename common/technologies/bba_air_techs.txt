@@ -667,7 +667,7 @@ technologies = {
 			lmg_defense_turret_2x
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1937
 
 		folder = {
@@ -700,7 +700,7 @@ technologies = {
 			hmg_defense_turret_2x
 		}
 		
-		research_cost = 2.5
+		research_cost = 3.5
 		start_year = 1938
 
 		folder = {
@@ -731,7 +731,7 @@ technologies = {
 			aircraft_cannon_1_2x
 		}
 		
-		research_cost = 2.5
+		research_cost = 3.5
 		start_year = 1939
 
 		folder = {
@@ -768,7 +768,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 2.5
+		research_cost = 3.5
 		start_year = 1940
 
 		folder = {

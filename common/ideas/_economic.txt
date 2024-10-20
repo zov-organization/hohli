@@ -623,7 +623,6 @@ ideas = {
 				army_intel_to_others = 100.0
 				navy_intel_to_others = 100.0
 				airforce_intel_to_others = 100.0
-				cic_construction_boost = 0.15
 			}
 
 			allowed_to_remove = {
@@ -701,7 +700,6 @@ ideas = {
 				army_intel_to_others = 100.0
 				navy_intel_to_others = 100.0
 				airforce_intel_to_others = 100.0
-				cic_construction_boost_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -746,7 +744,6 @@ ideas = {
 				army_intel_to_others = 100.0
 				navy_intel_to_others = 100.0
 				airforce_intel_to_others = 100.0
-				cic_construction_boost_factor = 0.1
 			}
 
 			default = yes
@@ -813,7 +810,6 @@ ideas = {
 				navy_intel_to_others = 100.0
 				airforce_intel_to_others = 100.0
 				lend_lease_tension = 0.20
-				cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -866,7 +862,6 @@ ideas = {
 				navy_intel_to_others = 100.0
 				airforce_intel_to_others = 100.0
 				lend_lease_tension = 0.40
-				cic_construction_boost = -0.1
 			}
 
 			cancel_if_invalid = no
@@ -889,9 +884,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0
-				industrial_capacity_factory = 0.05
+				min_export = 0.5
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.05
 				civilian_intel_to_others = 100.0
 				army_intel_to_others = 100.0
 				navy_intel_to_others = 100.0

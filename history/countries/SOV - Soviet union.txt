@@ -4,7 +4,7 @@ set_naval_oob = "ic_SOV_1936_fleet"
 set_country_flag = host
 
 
-set_research_slots = 2
+set_research_slots = 3
 navy_experience = 0
 
 set_convoys = 800
@@ -24,6 +24,9 @@ create_country_leader = {
 	picture = "GFX_portrait_SOV_iosif_stalin"
 	expire = "1953.3.1"
 	ideology = stalinism
+	traits = {
+		stalin_eblan
+	}
 }
 
 
@@ -133,7 +136,14 @@ set_technology = {
 
 	basic_machine_tools = 1
 	fuel_silos = 1
+	synth_oil_experiments = 1
 	fuel_refining = 1
+
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_submarine = 1
 }
 
 

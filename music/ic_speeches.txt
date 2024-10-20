@@ -1,0 +1,6 @@
+music_station = "ic_speeches"
+
+music = {
+	song = "ic_sfx_barbarossa"
+	chance = { factor = 0 }
+}

@@ -3769,6 +3769,18 @@ spriteTypes = {
 		name = "GFX_idea_SOV_red_army"
 		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_2"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_3"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_4"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ic_SOV_peaceful_building"
@@ -3855,6 +3867,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ic_SOV_research_facility_2"
+		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
+	}
+
 
 
 
@@ -3867,8 +3884,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ic_GER_mobilize_reich"
-		texturefile = "gfx/interface/ideas/inflexible.dds"
+		name = "GFX_idea_ic_GER_try_autarky"
+		texturefile = "gfx/interface/ideas/GER/inflexible.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ic_nation_zombification_1"
@@ -3887,8 +3904,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_5"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_ss_idea"
-		# texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ic_old_german_working_culture"
@@ -6397,8 +6418,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_usa_conflict.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ic_SOV_stakhanovite_movement"
-		texturefile = "gfx/interface/ideas/idea_ic_SOV_stakhanovite_movement.dds"
+		name = "GFX_idea_SOV_stakhanovite_movement"
+		texturefile = "gfx/interface/ideas/idea_SOV_stakhanovite_movement.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SOV_war_heroes"
