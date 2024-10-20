@@ -7,6 +7,9 @@ on_actions = {
 				remove_ideas = POL_looming_peasants_strike
 				remove_mission = POL_looming_peasants_strike_mission
 			}
+			RAJ = {
+				remove_ideas = RAJ_risk_of_famine
+			}
 			GER = {
 				give_resource_rights = {
 					receiver = FRA
