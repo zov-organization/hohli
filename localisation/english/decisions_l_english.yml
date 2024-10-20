@@ -332,13 +332,19 @@
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
 
+
   SOV_evac_industry_category:0 "§HIndustry Evacuation§!"
   SOV_start_evacuate_ukranian_industry:0 "Start Ukrain PromKompleks Evacuation"
   SOV_stop_evacuate_ukranian_industry:0 "Stop Ukrain PromKompleks Evacuation"
-  SOV_evacuate_ukranian_industry_mission:0 "Ukrain PromKompleks Evacuation in progress..."
+  SOV_evacuate_ukranian_civilian_industry_mission:0 "Ukrain £civ_factory §HCivs§! Evacuation in progress..."
+  SOV_evacuate_ukranian_military_industry_mission:0 "Ukrain £mil_factory §GMils§! Evacuation in progress..."
+
   SOV_start_evacuate_soviet_industry:0 "Start European USSR Part Evacuation"
   SOV_stop_evacuate_soviet_industry:0 "Stop European USSR Part Evacuation"
-  SOV_evacuate_soviet_industry_mission:0 "European USSR Part Evacuation in progress..."
+  SOV_evacuate_soviet_civilian_industry_mission:0 "European USSR Part £civ_factory §HCivs§! Evacuation in progress..."
+  SOV_evacuate_soviet_military_industry_mission:0 "European USSR Part £mil_factory §GMils§! Evacuation in progress..."
+
+
 
   ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §R-5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §R-1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §R-2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §R-1.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
 
@@ -393,6 +399,16 @@
   GER_discredit_ethnic_groups:0 "Discredit Eethnic Groups"
   GER_blame_the_nosies:0 "Blame the Nosies"
   GER_build_questiobable_camps:0 "Build Questionable Camps"
+
+  GER_start_evacuate_ukranian_industry:0 "Start Ukrainian PromKompleks Evacuation"
+  GER_stop_evacuate_ukranian_industry:0 "Stop Ukrainian PromKompleks Evacuation"
+  GER_evacuate_ukranian_civilian_industry_mission:0 "Ukrainian £civ_factory §HCivs§! Evacuation in progress..."
+  GER_evacuate_ukranian_military_industry_mission:0 "Ukrainian £mil_factory §GMils§! Evacuation in progress..."
+
+  GER_start_evacuate_soviet_industry:0 "Start European USSR Part Evacuation"
+  GER_stop_evacuate_soviet_industry:0 "Stop European USSR Part Evacuation"
+  GER_evacuate_soviet_civilian_industry_mission:0 "European USSR Part £civ_factory §HCivs§! Evacuation in progress..."
+  GER_evacuate_soviet_military_industry_mission:0 "European USSR Part £mil_factory §GMils§! Evacuation in progress..."
 
   GER_start_tact_bomber_production:0 "Start producting tactical bombers"
   GER_stop_tact_bomber_production:0 "Stop producting tactical bombers"
