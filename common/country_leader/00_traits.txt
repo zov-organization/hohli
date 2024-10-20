@@ -12,7 +12,7 @@ leader_traits = {
 
 	dictator = {
 		random = no
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 	}
 
 	warrior_code = {
@@ -10631,7 +10631,7 @@ leader_traits = {
 	minister_of_proparanda = {
 		random = yes
 		sprite = 13
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 		fascism_drift = 0.2
 		research_speed_factor = 0.08
 		stability_weekly = 0.004
