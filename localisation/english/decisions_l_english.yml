@@ -336,13 +336,13 @@
   SOV_evac_industry_category:0 "§HIndustry Evacuation§!"
   SOV_start_evacuate_ukranian_industry:0 "Start Ukrain PromKompleks Evacuation"
   SOV_stop_evacuate_ukranian_industry:0 "Stop Ukrain PromKompleks Evacuation"
-  SOV_evacuate_ukranian_civilian_industry_mission:0 "Ukrain Civs Evacuation in progress..."
-  SOV_evacuate_ukranian_military_industry_mission:0 "Ukrain Mils Evacuation in progress..."
+  SOV_evacuate_ukranian_civilian_industry_mission:0 "Ukrain £civ_factory §HCivs§! Evacuation in progress..."
+  SOV_evacuate_ukranian_military_industry_mission:0 "Ukrain £mil_factory §GMils§! Evacuation in progress..."
 
   SOV_start_evacuate_soviet_industry:0 "Start European USSR Part Evacuation"
   SOV_stop_evacuate_soviet_industry:0 "Stop European USSR Part Evacuation"
-  SOV_evacuate_soviet_civilian_industry_mission:0 "European USSR Part \nCivs Evacuation in progress..."
-  SOV_evacuate_soviet_military_industry_mission:0 "European USSR Part \nMils Evacuation in progress..."
+  SOV_evacuate_soviet_civilian_industry_mission:0 "European USSR Part £civ_factory §HCivs§! Evacuation in progress..."
+  SOV_evacuate_soviet_military_industry_mission:0 "European USSR Part £mil_factory §GMils§! Evacuation in progress..."
 
 
 

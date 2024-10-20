@@ -961,6 +961,7 @@ SOV_evac_industry_category = {
 	SOV_start_evacuate_ukranian_industry = {
         icon = GFX_decision_generic_army_support
         visible = {
+			is_debug = yes
             NOT = {
 				has_active_mission = SOV_evacuate_ukranian_civilian_industry_mission
 				has_active_mission = SOV_evacuate_ukranian_military_industry_mission
@@ -974,10 +975,10 @@ SOV_evac_industry_category = {
                     AND = {
                         is_core_of = SOV
 						ic_is_ukranian = yes
-                        OR = {
-		                    arms_factory > 0
-		                    industrial_complex > 0
-                        }
+						OR = {
+							arms_factory > 0
+							industrial_complex > 0
+						}
                     }
                 }
             }
@@ -1000,6 +1001,7 @@ SOV_evac_industry_category = {
     SOV_stop_evacuate_ukranian_industry = {
         icon = GFX_decision_generic_army_support
         visible = {
+			is_debug = yes
             has_active_mission = SOV_evacuate_ukranian_civilian_industry_mission
             has_active_mission = SOV_evacuate_ukranian_military_industry_mission
         }
@@ -1036,7 +1038,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 4
+		days_mission_timeout = 3
         complete_effect = {}
 
         timeout_effect = {
@@ -1071,7 +1073,19 @@ SOV_evac_industry_category = {
                 remove_building = { type = industrial_complex level = 1 }
 
             }
-			activate_mission = SOV_evacuate_ukranian_civilian_industry_mission
+			
+			if = {
+				limit = {
+					any_state = {
+						AND = {
+							is_core_of = SOV
+							ic_is_ukranian = yes
+							industrial_complex > 0
+						}
+					}
+				}
+				activate_mission = SOV_evacuate_ukranian_civilian_industry_mission
+			}
         }
     }
 
@@ -1099,7 +1113,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 3
+		days_mission_timeout = 2
         complete_effect = {}
 
         timeout_effect = {
@@ -1134,7 +1148,20 @@ SOV_evac_industry_category = {
                 remove_building = { type = arms_factory level = arms_factory_level }
 
             }
-			activate_mission = SOV_evacuate_ukranian_military_industry_mission
+			
+			if = {
+				limit = {
+					any_state = {
+						AND = {
+							is_core_of = SOV
+							ic_is_ukranian = yes
+							arms_factory > 0
+						}
+					}
+				}
+				activate_mission = SOV_evacuate_ukranian_military_industry_mission
+			}
+
         }
     }
 
@@ -1143,6 +1170,7 @@ SOV_evac_industry_category = {
 	SOV_start_evacuate_soviet_industry = {
         icon = GFX_decision_generic_army_support
         visible = {
+			is_debug = yes
             NOT = {
                 has_active_mission = SOV_evacuate_soviet_civilian_industry_mission
                 has_active_mission = SOV_evacuate_soviet_military_industry_mission
@@ -1198,6 +1226,7 @@ SOV_evac_industry_category = {
     SOV_stop_evacuate_soviet_industry = {
         icon = GFX_decision_generic_army_support
         visible = {
+			is_debug = yes
             has_active_mission = SOV_evacuate_soviet_civilian_industry_mission
             has_active_mission = SOV_evacuate_soviet_military_industry_mission
         }
@@ -1250,7 +1279,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 4
+		days_mission_timeout = 3
         complete_effect = {}
 
         timeout_effect = {
@@ -1285,7 +1314,19 @@ SOV_evac_industry_category = {
                 remove_building = { type = industrial_complex level = 1 }
 
             }
-			activate_mission = SOV_evacuate_soviet_civilian_industry_mission
+			if = {
+				limit = {
+					any_state = {
+						AND = {
+							ic_is_sov_from_evac_state = yes
+							OR = {
+								industrial_complex > 0
+							}
+						}
+					}
+				}
+				activate_mission = SOV_evacuate_soviet_civilian_industry_mission
+			}
         }
     }
 	
@@ -1329,7 +1370,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 3
+		days_mission_timeout = 2
         complete_effect = {}
 
         timeout_effect = {
@@ -1364,7 +1405,19 @@ SOV_evac_industry_category = {
                 remove_building = { type = arms_factory level = 1 }
 
             }
-			activate_mission = SOV_evacuate_soviet_military_industry_mission
+			if = {
+				limit = {
+					any_state = {
+						AND = {
+							ic_is_sov_from_evac_state = yes
+							OR = {
+								arms_factory > 0
+							}
+						}
+					}
+				}
+				activate_mission = SOV_evacuate_soviet_military_industry_mission
+			}
         }
     }
 
