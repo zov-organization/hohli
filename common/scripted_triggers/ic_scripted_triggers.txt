@@ -180,7 +180,6 @@ ic_is_sov_from_evac_state = {
 		tooltip = ic_is_sov_from_evac_state_tt
 		
 		AND = {
-			is_controlled_by = SOV
 			OR = {
 				# estonia cores
 				state = 813
