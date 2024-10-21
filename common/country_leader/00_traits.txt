@@ -10654,7 +10654,6 @@ leader_traits = {
 	speer_trait = {
 		random = yes
 		sprite = 13
-		stability_weekly = 0.001
 		consumer_goods_expected_value = -0.01
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.1
