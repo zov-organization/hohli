@@ -931,6 +931,12 @@
 		y = 1
 		cost = 10
 		completion_reward = {
+			
+			hidden_effect = {
+				load_oob = "ic_GER_anshluss_spawn_ins"
+			}
+			custom_effect_tooltip = ic_GER_anshluss_spawn_ins_tt
+
 			848 = { add_core_of = GER }
 			153 = { add_core_of = GER }
 			152 = { add_core_of = GER }
@@ -973,6 +979,12 @@
 		y = 1
 		cost = 10
 		completion_reward = {
+			
+			hidden_effect = {
+				load_oob = "ic_GER_cze_spawn_ins"
+			}
+			custom_effect_tooltip = ic_GER_cze_spawn_ins_tt
+
 			annex_country = {
 				target = CZE
 				transfer_troops = yes

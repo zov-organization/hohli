@@ -39,7 +39,7 @@ sub_units = {
 		
 		# Support nerfs to combat abilities
 		breakthrough = 0.15
-		soft_attack = 0.1		
+		soft_attack = 0.1
 
 		battalion_mult = {
 			category = category_support_tanks

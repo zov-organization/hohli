@@ -2433,5 +2433,21 @@ GER_the_question_category = {
         }
     }
 
+}
 
+GER_balance_of_powers_decisions = {
+    GER_in_bop_tip = {
+
+		icon = decision_generic_decision
+
+		allowed = { original_tag = GER }
+		
+        visible = {}
+
+        available = {
+			always = no
+		}
+
+		complete_effect = {}
+	}
 }

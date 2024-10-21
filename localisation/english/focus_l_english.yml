@@ -2526,8 +2526,10 @@
  GER_proclaim_german_supremacy:0 "Proclaim German Supremacy"
  GER_the_question:0 "The Question"
  GER_anshluss:0 "Anschluß"
+ ic_GER_anshluss_spawn_ins_tt:0 "Spawns 40 inf divisions of the latest equipment"
  GER_sudetenland:0 "Sudetenland"
  GER_cze_annex:0 "Fate of Czechoslovakia"
+ ic_GER_anshluss_spawn_ins_tt:0 "Spawns 4 tank divisions of the latest equipment"
  GER_expand_lebensraum:0 "Expand Lebensraum"
 
  GER_air_innovations:0 "Air Innovations"

@@ -363,8 +363,8 @@
   SOV_accelerate_industry_growth_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_growth_texticon  Production Efficiency growth: §G+8.00%§! \n "
   SOV_accelerate_industry_base_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_base_texticon  Production Efficiency Base: §G+5.00%§! \n "
 
-
-
+  GER_in_bop_tip:0 "Hower your mouse here to get info about Balance of Power system"
+  GER_in_bop_tip_desc:0 "Penis228_ya_em_spermu"
 
   GER_thousand_year_reich_category:0 "§YTHOUSAND-YEAR REICH§!"
   GER_thousand_year_reich_category_desc:0 " "

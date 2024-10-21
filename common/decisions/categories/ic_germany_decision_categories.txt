@@ -29,6 +29,6 @@ GER_the_question_category = {
 }
 
 GER_balance_of_powers_decisions = {
-	icon = decision_generic_construction
     visible = { TAG = GER }
+	icon = decision_generic_construction
 }

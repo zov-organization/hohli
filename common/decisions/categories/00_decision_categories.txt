@@ -35,8 +35,7 @@ war_measures = {
 	icon = generic_propaganda
 
 	visible = {
-		has_war = yes
-		has_war_with_non_exiled_country = yes  
+		hidden_trigger = { always = no }
 	}
 }
 operations = {
@@ -67,27 +66,6 @@ political_actions = {
 
 	allowed = {
 		always = no
-	}
-
-	visible = {
-		if = {
-			limit = {
-				has_dlc = "By Blood Alone"
-			}
-			NOT = { original_tag = SWI }
-			NOT = { has_country_flag = SWI_can_use_political_actions }
-		}
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			NOT = {
-				AND = {
-					original_tag = DEN
-					is_subject = yes
-				}
-			}
-		}
 	}
 }
 
@@ -270,7 +248,7 @@ demobilization = {
 
 economy_decisions = {
 	icon = generic_economy
-
+	visible = { hidden_trigger = { always = no } }
 }
 
 prospect_for_resources = {
