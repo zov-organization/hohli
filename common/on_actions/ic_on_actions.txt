@@ -108,183 +108,186 @@ on_actions = {
 
 	}
 	on_weekly_GER = {
-		if = {
-			limit = {
-				GER = {
-					has_power_balance = GER_balance_of_powers
+		effect = {
+			# мне пришлось делать такой иф элс 
+			# правда
+			# я ебал
+			IF = {
+				limit = {
+					casualties_k > 100
+					not = { has_country_flag = GER_bop_100 }
+				}
+				set_country_flag = GER_bop_100
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.25
 				}
 			}
-			effect = {
-				
-				# мне пришлось делать такой иф элс 
-				# правда
-				# я ебал
-				IF = {
-					limit = {
-						casualties_k > 100
-						not = { has_country_flag = GER_bop_100 }
-					}
-					set_country_flag = GER_bop_100
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.5
-					}
+			else_if = {
+				limit = {
+					casualties_k > 200
+					not = { has_country_flag = GER_bop_200 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 200
-						not = { has_country_flag = GER_bop_200 }
-					}
-					set_country_flag = GER_bop_200
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.25
-					}
+				set_country_flag = GER_bop_200
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.5
 				}
-				else_if = {
-					limit = {
-						casualties_k > 500
-						not = { has_country_flag = GER_bop_500 }
-					}
-					set_country_flag = GER_bop_500
-					set_country_flag = GER_bop_200
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 500
+					not = { has_country_flag = GER_bop_500 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 800
-						not = { has_country_flag = GER_bop_800 }
-					}
-					set_country_flag = GER_bop_800
-					set_country_flag = GER_bop_200
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+				set_country_flag = GER_bop_500
+				set_country_flag = GER_bop_200
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.25
 				}
-				else_if = {
-					limit = {
-						casualties_k > 1000
-						not = { has_country_flag = GER_bop_1000 }
-					}
-					set_country_flag = GER_bop_1000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 800
+					not = { has_country_flag = GER_bop_800 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 1500
-						not = { has_country_flag = GER_bop_1500 }
-					}
-					set_country_flag = GER_bop_1500
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+				set_country_flag = GER_bop_800
+				set_country_flag = GER_bop_200
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
 				}
-				else_if = {
-					limit = {
-						casualties_k > 2000
-						not = { has_country_flag = GER_bop_2000 }
-					}
-					set_country_flag = GER_bop_2000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 1000
+					not = { has_country_flag = GER_bop_1000 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 2500
-						not = { has_country_flag = GER_bop_2500 }
-					}
-					set_country_flag = GER_bop_2500
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+				set_country_flag = GER_bop_1000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
 				}
-				else_if = {
-					limit = {
-						casualties_k > 3000
-						not = { has_country_flag = GER_bop_3000 }
-					}
-					set_country_flag = GER_bop_3000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 1500
+					not = { has_country_flag = GER_bop_1500 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 3500
-						not = { has_country_flag = GER_bop_3500 }
-					}
-					set_country_flag = GER_bop_3500
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+				set_country_flag = GER_bop_1500
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
 				}
-				else_if = {
-					limit = {
-						casualties_k > 4000
-						not = { has_country_flag = GER_bop_4000 }
-					}
-					set_country_flag = GER_bop_4000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 2000
+					not = { has_country_flag = GER_bop_2000 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 4500
-						not = { has_country_flag = GER_bop_4500 }
-					}
-					set_country_flag = GER_bop_4500
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.05
-					}
+				set_country_flag = GER_bop_2000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
 				}
-				else_if = {
-					limit = {
-						casualties_k > 5000
-						not = { has_country_flag = GER_bop_5000 }
-					}
-					set_country_flag = GER_bop_5000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.08
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 2500
+					not = { has_country_flag = GER_bop_2500 }
 				}
-				else_if = {
-					limit = {
-						casualties_k > 5500
-						not = { has_country_flag = GER_bop_5500 }
-					}
-					set_country_flag = GER_bop_5500
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.08
-					}
+				set_country_flag = GER_bop_2500
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
 				}
-				else_if = {
-					limit = {
-						casualties_k > 6000
-						not = { has_country_flag = GER_bop_6000 }
-					}
-					set_country_flag = GER_bop_6000
-					add_power_balance_value = {
-						id = GER_balance_of_powers
-						value = -0.09
-					}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 3000
+					not = { has_country_flag = GER_bop_3000 }
+				}
+				set_country_flag = GER_bop_3000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 3500
+					not = { has_country_flag = GER_bop_3500 }
+				}
+				set_country_flag = GER_bop_3500
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 4000
+					not = { has_country_flag = GER_bop_4000 }
+				}
+				set_country_flag = GER_bop_4000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 4500
+					not = { has_country_flag = GER_bop_4500 }
+				}
+				set_country_flag = GER_bop_4500
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 5000
+					not = { has_country_flag = GER_bop_5000 }
+				}
+				set_country_flag = GER_bop_5000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.05
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 5500
+					not = { has_country_flag = GER_bop_5500 }
+				}
+				set_country_flag = GER_bop_5500
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.08
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 6000
+					not = { has_country_flag = GER_bop_6000 }
+				}
+				set_country_flag = GER_bop_6000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.08	
+				}
+			}
+			else_if = {
+				limit = {
+					casualties_k > 6500
+					not = { has_country_flag = GER_bop_6000 }
+				}
+				set_country_flag = GER_bop_6000
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.09
 				}
 			}
 		}

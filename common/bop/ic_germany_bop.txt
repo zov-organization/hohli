@@ -4,27 +4,6 @@ GER_balance_of_powers = {
 	right_side = GER_good_side
 	decision_category = GER_balance_of_powers_decisions
 
-	### Medium trust
-	range = {
-		id = GER_medium_range
-		min = -0.01
-		max = 0.01
-		modifier = {
-		}
-		on_activate = {
-			set_power_balance_gfx = {
-				id = GER_balance_of_powers
-				side = GER_bad_side
-				gfx = "GFX_bop_GER_neutral"
-			}
-			set_power_balance_gfx = {
-				id = GER_balance_of_powers
-				side = GER_good_side
-				gfx = "GFX_bop_GER_neutral"
-			}
-		}
-	}
-
 	### Bad Side
 	side = {
 		id = GER_bad_side
@@ -33,7 +12,7 @@ GER_balance_of_powers = {
 		range = {	#1 debuff
 			id = GER_first_debuff_range
 			min = -0.05
-			max = -0.01
+			max = 0
 			modifier = {
 				industrial_capacity_factory = -0.05
 				war_support_factor = -0.15
@@ -184,7 +163,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_seventh_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -203,7 +182,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_eigth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -222,7 +201,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_nineth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -241,7 +220,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_tenth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -260,7 +239,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_eleventh_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -279,7 +258,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_twelth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -298,7 +277,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_thirteenth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -317,7 +296,7 @@ GER_balance_of_powers = {
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
 					side = GER_bad_side
-					gfx = "GFX_bop_GER_sixth_debuff"
+					gfx = "GFX_bop_GER_fourteenth_debuff"
 				}
 				set_power_balance_gfx = {
 					id = GER_balance_of_powers
@@ -335,7 +314,7 @@ GER_balance_of_powers = {
 
 		range = {	#first buff
 			id = GER_first_buff_range
-			min = 0.01
+			min = 0
 			max = 0.25
 			modifier = {
 				stability_factor = 0.05

@@ -1028,7 +1028,7 @@
 				id = GER_balance_of_powers
 				left_side = GER_bad_side
 				right_side = GER_good_side
-				set_value = 1
+				set_value = 0.99
 			}
 
 			declare_war_on = {
