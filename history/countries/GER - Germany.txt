@@ -13,6 +13,12 @@ set_convoys = 800
 set_stability = 0.65
 set_war_support = 0.35
 
+set_popularities = {
+	democratic = 10
+	fascism = 75
+	communism = 15
+}
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.7.1"
@@ -54,11 +60,6 @@ recruit_character = ic_GER_albert_kesselring
 recruit_character = ic_GER_hermann_goring
 recruit_character = ic_GER_ritter_von_greim
 
-set_popularities = {
-	democratic = 10
-	fascism = 75
-	communism = 15
-}
 
 create_faction = Axis
 add_to_faction = GER

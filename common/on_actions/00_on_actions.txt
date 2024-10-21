@@ -1303,6 +1303,13 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = GER
+					has_war_with = POL
+				}
+				play_wwTwo_effect = yes
+			}
+			if = {
+				limit = {
 					tag = USA
 					has_war_with = JAP
 					NOT = { has_global_flag = day_of_infamy_happened }

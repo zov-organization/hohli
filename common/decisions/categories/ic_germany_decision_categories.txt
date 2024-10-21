@@ -27,3 +27,8 @@ GER_the_question_category = {
     icon = GFX_decision_category_eng_move_to_secure_the_dominions
     visible_when_empty = no
 }
+
+GER_balance_of_powers_decisions = {
+	icon = decision_generic_construction
+    visible = { TAG = GER }
+}

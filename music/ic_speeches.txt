@@ -4,3 +4,7 @@ music = {
 	song = "ic_sfx_barbarossa"
 	chance = { factor = 0 }
 }
+music = {
+	song = "ic_sfx_first_sept"
+	chance = { factor = 0 }
+}

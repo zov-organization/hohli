@@ -1,0 +1,6 @@
+play_barbarossa_start_effect = {
+	hidden_effect = { play_song = "ic_sfx_barbarossa" }
+}
+play_wwTwo_effect = {
+	hidden_effect = { play_song = "ic_sfx_first_sept" }
+}

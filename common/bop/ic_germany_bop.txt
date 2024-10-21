@@ -1,0 +1,406 @@
+GER_balance_of_powers = {
+	initial_value = 0
+	left_side = GER_bad_side
+	right_side = GER_good_side
+	decision_category = GER_balance_of_powers_decisions
+
+	### Medium trust
+	range = {
+		id = GER_medium_range
+		min = -0.01
+		max = 0.01
+		modifier = {
+		}
+		on_activate = {
+			set_power_balance_gfx = {
+				id = GER_balance_of_powers
+				side = GER_bad_side
+				gfx = "GFX_bop_GER_neutral"
+			}
+			set_power_balance_gfx = {
+				id = GER_balance_of_powers
+				side = GER_good_side
+				gfx = "GFX_bop_GER_neutral"
+			}
+		}
+	}
+
+	### Bad Side
+	side = {
+		id = GER_bad_side
+		icon = "GFX_bop_GER_first_debuff"
+
+		range = {	#1 debuff
+			id = GER_first_debuff_range
+			min = -0.05
+			max = -0.01
+			modifier = {
+				industrial_capacity_factory = -0.05
+				war_support_factor = -0.15
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				consumer_goods_expected_value = 0.02
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_first_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#2 debuff
+			id = GER_second_debuff_range
+			min = -0.1
+			max = -0.05
+			modifier = {
+				industrial_capacity_factory = -0.1
+				war_support_factor = -0.25
+				stability_factor = -0.07
+				political_power_gain = -0.1
+				consumer_goods_expected_value = 0.04
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_second_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#3 debuff
+			id = GER_third_debuff_range
+			min = -0.15
+			max = -0.1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				war_support_factor = -0.35
+				stability_factor = -0.1
+				political_power_gain = -0.15
+				consumer_goods_expected_value = 0.06
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_third_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#4 debuff
+			id = GER_fourth_debuff_range
+			min = -0.2
+			max = -0.15
+			modifier = {
+				industrial_capacity_factory = -0.2
+				war_support_factor = -0.45
+				stability_factor = -0.15
+				political_power_gain = -0.2
+				consumer_goods_expected_value = 0.08
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_fourth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#5 debuff
+			id = GER_fifth_debuff_range
+			min = -0.25
+			max = -0.2
+			modifier = {
+				industrial_capacity_factory = -0.25
+				war_support_factor = -0.6
+				stability_factor = -0.3
+				political_power_gain = -0.3
+				consumer_goods_expected_value = 0.1
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_fifth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#6 debuff
+			id = GER_sixth_debuff_range
+			min = -0.3
+			max = -0.25
+			modifier = {
+				industrial_capacity_factory = -0.3
+				war_support_factor = -0.8
+				stability_factor = -0.3
+				political_power_gain = -0.4
+				consumer_goods_expected_value = 0.12
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#7 debuff
+			id = GER_seventh_debuff_range
+			min = -0.35
+			max = -0.3
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#8 debuff
+			id = GER_eigth_debuff_range
+			min = -0.4
+			max = -0.35
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#9 debuff
+			id = GER_nineth_debuff_range
+			min = -0.45
+			max = -0.4
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#10 debuff
+			id = GER_tenth_debuff_range
+			min = -0.5
+			max = -0.45
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#11 debuff
+			id = GER_eleventh_debuff_range
+			min = -0.58
+			max = -0.5
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#12 debuff
+			id = GER_twelth_debuff_range
+			min = -0.66
+			max = -0.58
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#13 debuff
+			id = GER_thirteenth_debuff_range
+			min = -0.75
+			max = -0.66
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#14 debuff
+			id = GER_fourteenth_debuff_range
+			min = -1
+			max = -0.75
+			modifier = {
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_sixth_debuff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+	}
+
+	### Good Side
+	side = {
+		id = GER_good_side
+		icon = "GFX_bop_GER_first_buff"
+
+		range = {	#first buff
+			id = GER_first_buff_range
+			min = 0.01
+			max = 0.25
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.07
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_first_buff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#second buff
+			id = GER_second_buff_range
+			min = 0.25
+			max = 0.75
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_second_buff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+		range = {	#third buff
+			id = GER_third_buff_range
+			min = 0.75
+			max = 1
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_good_side
+					gfx = "GFX_bop_GER_third_buff"
+				}
+				set_power_balance_gfx = {
+					id = GER_balance_of_powers
+					side = GER_bad_side
+					gfx = "GFX_bop_GER_neutral"
+				}
+			}
+		}
+	}
+}
