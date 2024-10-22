@@ -1032,7 +1032,7 @@
 		}
 
 		x = 0
-		y = 2
+		y = 1
 		cost = 0.2
 		completion_reward = {
 			
@@ -1197,7 +1197,9 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			BUL = {
+				add_ideas = BUL_ger_investments
+			}
 		}
 	}
 
@@ -1212,7 +1214,21 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			SPR = {
+				every_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				add_tech_bonus = {
+					name = GER_support_our_allies_spr
+					bonus = 0.75
+					uses = 5
+					category = excavation_tech
+				}
+			}
 		}
 	}
 
@@ -1227,7 +1243,21 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 81
+			}
+			add_resource = {
+				type = oil
+				amount = 6
+				state = 79
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 46
+			}
 		}
 	}
 
@@ -1242,13 +1272,34 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			46 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			81 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			79 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 
 	focus = {
 		id = GER_support_our_allies_ita
-		icon = GFX_GER_silesian_industrial_region_2
+		icon = GFX_GER_support_our_allies_ita
 
 		prerequisite = { focus = GER_support_our_allies }
 		relative_position_id = GER_support_our_allies
@@ -1257,7 +1308,15 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			#
+			ITA = {
+				army_experience = 50
+				add_tech_bonus = {
+					name = GER_support_our_allies_ita
+					bonus = 1
+					uses = 1
+					technology = improved_medium_tank_chassis
+				}
+			}
 		}
 	}
 
@@ -1272,7 +1331,17 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			#
+			JAP = {
+				army_experience = 50
+				air_experience = 50
+				add_tech_bonus = {
+					name = GER_support_our_allies_jap
+					bonus = 1
+					uses = 1
+					category = heavy_armor
+				}
+			}
+			add_ideas = JAP_ger_investments
 		}
 	}
 
@@ -1370,6 +1439,7 @@
 				remove_idea = ic_nation_zombification_4
 				add_idea = ic_nation_zombification_5
 			}
+			unlock_decision_category_tooltip = GER_balance_of_powers_decisions
 		}
 	}
 
@@ -1442,41 +1512,18 @@
 	}
 
 	focus = {
-		id = GER_unsere_rommel
-		icon = GFX_GER_unsere_rommel
+		id = GER_air_innovations
+		icon = GFX_GER_change_direction
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_tiger
 
 		x = -2
 		y = 0
-		cost = 5
-		completion_reward = {
-			ITA = {
-				army_experience = 50
-				add_tech_bonus = {
-					name = GER_unsere_rommel
-					bonus = 1
-					uses = 1
-					technology = improved_medium_tank_chassis
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_air_innovations
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_fra_cap }
-		relative_position_id = GER_unsere_rommel
-
-		x = -2
-		y = 0
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_extra_sponsorship
+				name = GER_air_innovations
 				bonus = 1.25
 				uses = 1
 				category = light_air
@@ -1491,7 +1538,7 @@
 		prerequisite = { focus = GER_air_innovations }
 		relative_position_id = GER_air_innovations
 
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1733,82 +1780,6 @@
 	}
 
 	focus = {
-		id = GER_barbarossa_first_succeses
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_drang_nach_osten }
-		relative_position_id = GER_drang_nach_osten
-		
-		available = {
-			controls_state = 11
-			controls_state = 206
-			controls_state = 192
-			has_idea = ic_ger_barbarossa
-		}
-
-		x = 3
-		y = 1
-		cost = 1
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = GER_blitzkrieg_mission
-				days = 45
-			}
-		}
-	}
-
-	focus = {
-		id = GER_barbarossa_moderate_succeses
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_barbarossa_first_succeses }
-		relative_position_id = GER_barbarossa_first_succeses
-		
-		available = {
-			controls_state = 808
-			controls_state = 201
-			controls_state = 197
-			has_idea = ic_ger_barbarossa
-		}
-
-		x = 0
-		y = 1
-		cost = 1
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = GER_blitzkrieg_mission
-				days = 45
-			}
-		}
-	}
-
-	focus = {
-		id = GER_barbarossa_big_succeses
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_barbarossa_moderate_succeses }
-		relative_position_id = GER_barbarossa_moderate_succeses
-		
-		available = {
-			controls_state = 813
-			controls_state = 207
-			controls_state = 193
-			controls_state = 200
-			has_idea = ic_ger_barbarossa
-		}
-
-		x = 0
-		y = 1
-		cost = 1
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = GER_blitzkrieg_mission
-				days = 45
-			}
-		}
-	}
-
-	focus = {
 		id = GER_plan_ost
 		icon = GFX_GER_change_direction
 
@@ -1817,7 +1788,7 @@
 		
 		available = { }
 
-		x = 5
+		x = 3
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -1909,13 +1880,12 @@
 		id = GER_plan_new_summer_offencive
 		icon = GFX_GER_new_main_tank
 
-		#prerequisite = { focus = GER_oops_forgor_winter_equip } 
-		prerequisite = { focus = GER_barbarossa_moderate_succeses focus = GER_barbarossa_big_succeses }
 		prerequisite = { focus = GER_drang_nach_osten }
+		prerequisite = { focus = GER_oops_forgor_winter_equip }
 		relative_position_id = GER_drang_nach_osten
 
 		x = 0
-		y = 4
+		y = 3
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = GER_prep_summer_offencive_moscau

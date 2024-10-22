@@ -336,11 +336,11 @@ ideas = {
 		}
 
 		ic_ger_barb_stall_1 = {
-			name = ic_ger_barb_stall
+			name = ic_ger_barb_stall_1
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_barb_stall
+			picture = GFX_idea_ic_ger_barb_stall_1
 
 			allowed = {
 				always = no
@@ -356,11 +356,11 @@ ideas = {
 		}
 
 		ic_ger_barb_stall_2 = {
-			name = ic_ger_barb_stall
+			name = ic_ger_barb_stall_2
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_barb_stall
+			picture = GFX_idea_ic_ger_barb_stall_2
 
 			allowed = {
 				always = no
@@ -376,11 +376,11 @@ ideas = {
 		}
 
 		ic_ger_barb_stall_3 = {
-			name = ic_ger_barb_stall
+			name = ic_ger_barb_stall_3
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_barb_stall
+			picture = GFX_idea_ic_ger_barb_stall_3
 
 			allowed = {
 				always = no
@@ -395,49 +395,24 @@ ideas = {
 			}
 		}
 
-		ic_aim_moscau_idea = {
-			name = ic_aim_moscau_idea
+		GER_6th_army_destruction = {
+			name = GER_6th_army_destruction
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ger_barb_stall
+			picture = GFX_idea_GER_6th_army_destruction
 
 			allowed = {
 				always = no
 			}
 
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-
 			modifier = {
-				supply_consumption_factor = -0.1
-				no_supply_grace = 168
-			}
-		}
-
-		ic_aim_stalingrad_idea = {
-			name = ic_aim_moscau_idea
-
-			removal_cost = -1
-
-			picture = GFX_idea_ic_ger_barb_stall
-
-			allowed = {
-				always = no
-			}
-
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.12
-				defense_bonus_against = 0.12
-			}
-
-			modifier = {
-				supply_consumption_factor = -0.1
-				no_supply_grace = 168
+				army_org_factor = -0.05
+				army_defence_factor = -0.03
+				pocket_penalty = 0.2
+				winter_attrition_factor = 0.3
+				acclimatization_cold_climate_gain_factor = -0.3
+				air_fuel_consumption_factor = 0.05
 			}
 		}
 

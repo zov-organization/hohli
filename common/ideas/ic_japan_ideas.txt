@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+
+		JAP_ger_investments = {
+			name = ic_JAP_ger_investments
+
+			removal_cost = -1
+
+			picture = GFX_idea_JAP_ger_investments
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				navy_fuel_consumption_factor = -0.2
+			}
+		}
+
+	}
+}

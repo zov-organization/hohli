@@ -10072,11 +10072,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_unsere_rommel"
+		name = "GFX_GER_support_our_allies_ita"
 		texturefile = "gfx/interface/goals/ITA/ITA_heavy.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GER_unsere_rommel_shine"
+		name = "GFX_GER_support_our_allies_ita_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_heavy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
