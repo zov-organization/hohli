@@ -107,6 +107,43 @@ on_actions = {
 		}
 
 	}
+
+	on_nuke_drop = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_controlled_by = GER
+					}
+				}
+
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.1
+				}
+
+			}
+		}
+	}
+
+	on_naval_invasion = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						is_controlled_by = GER
+					}
+				}
+
+				add_power_balance_value = {
+					id = GER_balance_of_powers
+					value = -0.0046
+				}
+
+			}
+		}
+	}
+
 	on_weekly_GER = {
 		effect = {
 			# мне пришлось делать такой иф элс 
