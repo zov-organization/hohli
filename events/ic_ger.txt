@@ -1,0 +1,87 @@
+add_namespace = ic_ger_events
+
+country_event = {   # barb first success
+    id = ic_ger_events.1
+    title = ic_ger_events.1.t
+    desc = ic_ger_events.1.d
+    
+    fire_only_once = yes
+
+    trigger = {
+        SOV = {
+            not = {
+			    controls_state = 11
+			    controls_state = 206
+			    controls_state = 192
+            }
+        }
+        GER = {
+			has_idea = ic_ger_barbarossa
+        }
+    }
+
+    option = {
+        name = ic_ger_events.1.a
+		add_days_mission_timeout = {
+			mission = GER_blitzkrieg_mission
+			days = 45
+		}
+    }
+}
+country_event = {   # barb moderate success
+    id = ic_ger_events.2
+    title = ic_ger_events.2.t
+    desc = ic_ger_events.2.d
+    
+    fire_only_once = yes
+
+    trigger = {
+        SOV = {
+            not = {
+			    controls_state = 808
+			    controls_state = 201
+			    controls_state = 197
+            }
+        }
+        GER = {
+			has_idea = ic_ger_barbarossa
+        }
+    }
+
+    option = {
+        name = ic_ger_events.2.a
+		add_days_mission_timeout = {
+			mission = GER_blitzkrieg_mission
+			days = 45
+		}
+    }
+}
+country_event = {   # barb total success
+    id = ic_ger_events.3
+    title = ic_ger_events.3.t
+    desc = ic_ger_events.3.d
+    
+    fire_only_once = yes
+
+    trigger = {
+        SOV = {
+            not = {
+			    controls_state = 813
+			    controls_state = 207
+			    controls_state = 193
+			    controls_state = 200
+            }
+        }
+        GER = {
+			has_idea = ic_ger_barbarossa
+        }
+    }
+
+    option = {
+        name = ic_ger_events.3.a
+		add_days_mission_timeout = {
+			mission = GER_blitzkrieg_mission
+			days = 45
+		}
+    }
+}

@@ -1,0 +1,289 @@
+#formable_nations = {
+#
+#	icon = generic_formable_nations
+#
+#	allowed = {
+#		has_dlc = "Waking the Tiger"
+#	}
+#}
+
+form_scandinavia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_scandinavia
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_nordic_league_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_nordic_league
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_north_sea_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_north_sea_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_baltic_sea_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_baltic_sea_dominion
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_gran_colombia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_gran_colombia
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_austria_hungary_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_austria_hungary
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_commonwealth_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_commonwealth
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_united_netherlands_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_united_netherlands
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_united_central_america_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_united_central_america
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_baltic_federation_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_baltic_federation
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_ottoman_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_ottoman_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_european_union_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_european_union
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_mutapa_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_mutapa
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_roman_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_roman_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_persian_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_persian_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_byzantine_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_byzantine_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_arabia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_arabia
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_majapahit_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_majapahit_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_rattanakosin_kingdom_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_rattanakosin_kingdom
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_hre_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hre
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_greater_german_reich_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hre
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_andalusia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_arabia
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_polynesia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_polynesia
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_greater_greece_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_greater_greece
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_turan_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_macedonian_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_byzantine_empire
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_turkestan_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+
+form_mountainous_republic_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_transcaucasus_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_siberia_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_idel_ural_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_ethiopian_empire_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_east_africa_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+form_horn_of_africa_africa_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	visible = { hidden_trigger = { always = no } }
+}
+
+greater_italy_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_greater_italy
+	visible = { hidden_trigger = { always = no } }
+}

@@ -1,0 +1,10 @@
+technology_sharing_group = {
+
+	id =   ic_axis_research
+	name = ic_axis_research_name
+	desc = ic_axis_research_desc
+	picture = GFX_ic_axis_research
+    
+	research_sharing_per_country_bonus = 0.35
+
+}

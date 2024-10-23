@@ -1,0 +1,34 @@
+#################
+#### GERMANY ####
+#################
+
+GER_mefo_bills_category = {
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible = { hidden_trigger = { always = no } }
+}
+
+GER_case_anton_category = {
+	icon = military_operation
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+	visible = { hidden_trigger = { always = no } }
+}
+
+GER_reichskommissariats = {
+	visible = { hidden_trigger = { always = no } }
+}
+
+GER_military_buildup = {
+	icon = generic_political_actions
+	visible = { hidden_trigger = { always = no } }
+}
+
+GER_aid_hun_rom_democratic_civil_war = {
+	visible = { hidden_trigger = { always = no } }
+}
+
+GER_austro_hungarian_empire = {
+	visible = { hidden_trigger = { always = no } }
+}

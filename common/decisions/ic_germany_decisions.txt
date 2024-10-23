@@ -283,10 +283,7 @@ GER_barb_category = {
 		days_mission_timeout = 120
         complete_effect = { }
         timeout_effect = {
-            swap_ideas = {
-                remove_idea = ic_ger_barb_stall_2
-                add_idea = ic_ger_barb_stall_3
-            }
+            #pass
         }
     }
 
@@ -386,10 +383,7 @@ GER_barb_category = {
 		days_mission_timeout = 120
         complete_effect = { }
         timeout_effect = {
-            swap_ideas = {
-                remove_idea = ic_ger_barb_stall_2
-                add_idea = ic_ger_barb_stall_3
-            }
+            add_ideas = GER_6th_army_destruction
         }
     }
 
@@ -2433,5 +2427,111 @@ GER_the_question_category = {
         }
     }
 
+}
+
+GER_balance_of_powers_decisions = {
+    GER_in_bop_tip = {
+
+		icon = decision_generic_decision
+
+		allowed = { original_tag = GER }
+		
+        visible = {}
+
+        available = {
+			always = no
+		}
+
+		complete_effect = {}
+	}
+
+    
+    GER_deploy_hitlerjugend = {
+
+		icon = decision_generic_decision
+
+		allowed = { original_tag = GER }
+		
+        visible = {
+            has_completed_focus = GER_totaler_krieg
+        }
+
+        available = {}
+
+        cost = 20
+
+        days_remove = 70
+        modifier = {
+            weekly_manpower = -5000
+		    stability_weekly = -0.001
+			industrial_capacity_factory = -0.05
+			army_attack_factor = 0.05
+        }
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = GER_balance_of_powers
+				value = 0.05
+			}
+        }
+	}
+    GER_deploy_volkssturm = {
+
+		icon = decision_generic_decision
+
+		allowed = { original_tag = GER }
+		
+        visible = {
+            has_completed_focus = GER_totaler_krieg
+        }
+
+        available = {}
+
+        cost = 20
+
+        days_remove = 70
+        modifier = {
+            weekly_manpower = -5000
+		    stability_weekly = -0.001
+			industrial_capacity_factory = -0.05
+			army_attack_factor = 0.05
+        }
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = GER_balance_of_powers
+				value = 0.05
+			}
+        }
+	}
+    GER_deploy_werwolf = {
+
+		icon = decision_generic_decision
+
+		allowed = { original_tag = GER }
+		
+        visible = {
+            has_completed_focus = GER_totaler_krieg
+        }
+
+        available = {}
+
+        cost = 20
+
+        days_remove = 70
+        modifier = {
+            weekly_manpower = -5000
+		    stability_weekly = -0.001
+			industrial_capacity_factory = -0.05
+			army_attack_factor = 0.05
+        }
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = GER_balance_of_powers
+				value = 0.05
+			}
+        }
+	}
 
 }

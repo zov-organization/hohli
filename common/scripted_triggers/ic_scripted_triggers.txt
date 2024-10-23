@@ -21,6 +21,41 @@ is_playable_country = {
 		original_TAG = FRA
 		original_TAG = NZL
 		original_TAG = SOV
+
+		# left 'Entente' and 'Centrals' as my love to FFU2 knows no limits <3
+	}
+}
+
+is_axis = {
+	or = {
+		original_TAG = GER
+		original_TAG = ITA
+		original_TAG = HUN
+		original_TAG = ROM
+		original_TAG = BUL
+		original_TAG = SPR
+		original_TAG = FIN
+	}
+}
+
+is_jap = {
+	or = {
+		original_TAG = JAP
+		original_TAG = MAN
+	}
+}
+
+is_allies = {
+	or = {
+		original_TAG = ENG
+		original_TAG = USA
+		original_TAG = CAN
+		original_TAG = SAF
+		original_TAG = RAJ
+		original_TAG = AST
+		original_TAG = FRA
+		original_TAG = NZL
+		original_TAG = SOV
 	}
 }
 
