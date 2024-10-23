@@ -1167,7 +1167,9 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			GER = {
+				add_to_tech_sharing_group = ic_axis_research
+			}
 		}
 	}
 
@@ -1182,7 +1184,9 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			#
+			HUN = {
+				add_to_tech_sharing_group = ic_axis_research
+			}
 		}
 	}
 
@@ -1338,7 +1342,7 @@
 					name = GER_support_our_allies_jap
 					bonus = 1
 					uses = 1
-					category = heavy_armor
+					category = cat_heavy_armor
 				}
 			}
 			add_ideas = JAP_ger_investments
