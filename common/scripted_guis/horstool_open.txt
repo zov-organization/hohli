@@ -367,42 +367,6 @@ scripted_gui = {
 					}
 				}
 			}
-			add_compliance_click = { 
-				owner={
-					set_temp_variable = { ROOT.taker = this}
-					for_each_loop={
-						array=ROOT.marked_states
-						value=state
-						var:state = { add_compliance = 100}
-					}
-					ROOT = {
-						for_each_scope_loop={
-							array=marked_states
-							clear_variable=mark_status
-						}
-						clear_array=marked_states
-						clear_variable=first_marked_state
-					}
-				}
-			}
-			add_compliance1_click = { 
-				owner={
-					set_temp_variable = { ROOT.taker = this}
-					for_each_loop={
-						array=ROOT.marked_states
-						value=state
-						var:state = { add_compliance = -100}
-					}
-					ROOT = {
-						for_each_scope_loop={
-							array=marked_states
-							clear_variable=mark_status
-						}
-						clear_array=marked_states
-						clear_variable=first_marked_state
-					}
-				}
-			}
 			add_cover_click = { 
 				owner={
 					set_temp_variable = { ROOT.taker = this}
@@ -439,7 +403,7 @@ scripted_gui = {
 					}
 				}
 			}
-						fix_production_click = { owner = { news_event = { id = news.4003 } add_timed_idea = { idea = fix_production_idea days = 1 }}  }
+						fix_production_click = { owner = { news_event = { id = news.4003 } add_timed_idea = { idea = DayOne_Efficiency days = 1 }}  }
 						fix_xp_click = { owner = { news_event = { id = news.4113 } army_experience = 25 }  }
 						fix_xp2_click = { owner = { news_event = { id = news.4114 } navy_experience = 25 }  }
 						fix_xp3_click = { owner = { news_event = { id = news.4115 } air_experience = 25 }  }
@@ -491,27 +455,12 @@ scripted_gui = {
 					if={limit={check_variable={Root.selected_cheat=5}} add_stability  = 0.01 }
 					if={limit={check_variable={Root.selected_cheat=6}} add_war_support = 0.01 }
 					if={limit={check_variable={Root.selected_cheat=7}} add_research_slot = 1 }
-					if={limit={check_variable={Root.selected_cheat=10}} compliance 100 }
 					}
 				}
 				GER={
 					set_variable={this.target_country=Root.target_country}
 					set_variable={this.selected_cheat=Root.selected_cheat}
 					news_event={id=horsttool.1}
-				}
-				clear_variable = ROOT.taker
-			}
-			add_debuff_click = {
-				set_variable = { ROOT.taker = this}
-				var:taker = {
-				owner={set_variable={Root.target_country = this}
-					if={limit={check_variable={Root.selected_debuff=1}} generic_debuff_1 = yes }
-					if={limit={check_variable={Root.selected_debuff=2}} generic_debuff_2 = yes }
-					}
-				}
-				GER={
-					set_variable={this.target_country=Root.target_country}
-					set_variable={this.selected_debuff=Root.selected_debuff}
 				}
 				clear_variable = ROOT.taker
 			}
@@ -691,9 +640,7 @@ scripted_gui = {
 			States_resursed_alu1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_tungsten1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_chromium1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
-			add_compliance_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 			add_cover_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
-			add_compliance1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 			add_cover1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 			wt_add_click_enabled = {}
 			wt_remove_click_enabled = {}

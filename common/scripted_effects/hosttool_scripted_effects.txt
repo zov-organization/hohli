@@ -1,4 +1,3 @@
-
 generic_bonus_1 = {
 	add_tech_bonus = { 
 	name = "Generic 50 Bonus" bonus = 0.5 uses = 1

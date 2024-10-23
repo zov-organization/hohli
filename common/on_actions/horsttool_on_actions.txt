@@ -61,10 +61,10 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = FRA}}
 				set_variable={host = FRA.id}
 			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = SPR}}
-				set_variable={host = SPR.id}
-			}
+			#else_if = {
+			#	limit = {has_game_rule = {rule = horst_host_country option = SPR}}
+			#	set_variable={host = SPR.id}
+			#}
 			var:host = {
 				set_variable = { marked_states = 0 }
 				set_country_flag = host

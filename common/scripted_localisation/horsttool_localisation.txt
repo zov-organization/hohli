@@ -142,33 +142,6 @@ defined_text = { # global
 	}
 }
 
-
-defined_text = { # global
-	name = debuff_selected
-	text = {
-		trigger = {
-			check_variable = {Root.selected_debuff=0}
-			NOT={Root={has_country_flag=debuffing}}
-		}
-		localization_key = DEBUFF_SELECT
-	}
-	text = {
-		trigger = {
-			OR={check_variable = {Root.selected_debuff=1}
-			Root={has_country_flag=debuffing}}
-		}
-		localization_key = DEBUFF1
-	}
-	text = {
-		trigger = {
-			check_variable = {Root.selected_debuff=2}
-		}
-		localization_key = DEBUFF2
-	}
-}
-
-
-
 defined_text = { # global
 	name = color_selected
 	text = {
