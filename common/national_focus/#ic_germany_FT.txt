@@ -1187,6 +1187,13 @@
 			HUN = {
 				add_to_tech_sharing_group = ic_axis_research
 			}
+			every_country = {
+				limit = { is_axis = yes }
+				modify_tech_sharing_bonus = {
+					id = ic_axis_research
+					bonus = -0.05
+				}
+			}
 		}
 	}
 
@@ -1203,6 +1210,14 @@
 		completion_reward = {
 			BUL = {
 				add_ideas = BUL_ger_investments
+				add_to_tech_sharing_group = ic_axis_research
+			}
+			every_country = {
+				limit = { is_axis = yes }
+				modify_tech_sharing_bonus = {
+					id = ic_axis_research
+					bonus = -0.05
+				}
 			}
 		}
 	}
@@ -1232,6 +1247,14 @@
 					uses = 5
 					category = excavation_tech
 				}
+				add_to_tech_sharing_group = ic_axis_research
+			}
+			every_country = {
+				limit = { is_axis = yes }
+				modify_tech_sharing_bonus = {
+					id = ic_axis_research
+					bonus = -0.05
+				}
 			}
 		}
 	}
@@ -1247,20 +1270,23 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 8
-				state = 81
-			}
-			add_resource = {
-				type = oil
-				amount = 6
-				state = 79
-			}
-			add_resource = {
-				type = oil
-				amount = 10
-				state = 46
+			ROM = {
+				add_to_tech_sharing_group = ic_axis_research
+				add_resource = {
+					type = oil
+					amount = 8
+					state = 81
+				}
+				add_resource = {
+					type = oil
+					amount = 6
+					state = 79
+				}
+				add_resource = {
+					type = oil
+					amount = 10
+					state = 46
+				}
 			}
 		}
 	}
@@ -1297,7 +1323,13 @@
 					instant_build = yes
 				}
 			}
-
+			every_country = {
+				limit = { is_axis = yes }
+				modify_tech_sharing_bonus = {
+					id = ic_axis_research
+					bonus = -0.05
+				}
+			}
 		}
 	}
 
@@ -1319,6 +1351,14 @@
 					bonus = 1
 					uses = 1
 					technology = improved_medium_tank_chassis
+				}
+				add_to_tech_sharing_group = ic_axis_research
+			}
+			every_country = {
+				limit = { is_axis = yes }
+				modify_tech_sharing_bonus = {
+					id = ic_axis_research
+					bonus = -0.05
 				}
 			}
 		}
