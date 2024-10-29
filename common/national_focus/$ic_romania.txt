@@ -18,7 +18,7 @@ focus_tree = {
 focus = {
 		id = ic_ROM_Election_of_the_King
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 30
+		x = 22
 		y = 0
         cost = 10
         completion_reward = {
@@ -26,16 +26,231 @@ focus = {
             add_stability = 0.05
         }
 	}
+
 	focus = {
 		id = ic_ROM_Supervision_of_the_King's_expenses
 		x = -16
 		y = 1
 		prerequisite = { focus = ic_ROM_Election_of_the_King}
 		relative_position_id = ic_ROM_Election_of_the_King
-		cost = 10
+		cost = 5
 
         completion_reward = {
             add_stability = -0.025
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Interference_with_the_King's_expenses
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
+		cost = 5
+
+        completion_reward = {
+            add_stability = -0.05
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Mihai_the_first_looks_better
+		icon = GFX_focus_rom_coup
+		prerequisite = { focus = ic_ROM_Interference_with_the_King's_expenses }
+		x = 0
+		y = 1
+		relative_position_id = ic_ROM_Interference_with_the_King's_expenses
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ROM_king_carol_ii_hedonist
+				}
+				remove_ideas = ROM_king_carol_ii_hedonist
+			}
+
+		}
+	}
+
+	focus = {
+		id = ic_ROM_Romanian_Land_Forces
+		x = -8
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King }
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_experience_of_the_FWW
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_equipment
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_artillery
+		x = 2
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_automatic_machine
+		x = 4
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Navy_of_Greater_Romania
+		x = 5
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		x = 11
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Revenge_for_Bessarabia
+		x = 22
+		y = 7
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+	focus = {
+		id = ic_ROM_German_inancing
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+	focus = {
+		id = ic_ROM_German_officer_corps
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+	focus = {
+		id = ic_ROM_the_transition_to_military_rails
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+	focus = {
+		id = ic_ROM_More_more_oil!
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_German_inancing }
+		relative_position_id = ic_ROM_German_inancing
+        completion_reward = {
+        }
+	}
+	focus = {
+		id = ic_ROM_The_Black_Sea_-_Romania
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_the_transition_to_military_rails }
+		relative_position_id = ic_ROM_the_transition_to_military_rails
+        completion_reward = {
         }
 	}
 }
