@@ -1,0 +1,41 @@
+focus_tree = {
+	id = romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+			#always = no
+			has_dlc = "Death or Dishonor"
+		}
+	}
+	
+	default = no
+
+
+focus = {
+		id = ic_ROM_Election_of_the_King
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 30
+		y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 150
+            add_stability = 0.05
+        }
+	}
+	focus = {
+		id = ic_ROM_Supervision_of_the_King's_expenses
+		x = -16
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 10
+
+        completion_reward = {
+            add_stability = -0.025
+        }
+	}
+}
