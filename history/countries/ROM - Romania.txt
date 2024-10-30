@@ -1,43 +1,5 @@
 capital = 46
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ROM_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ROM_1936_nsb"
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ROM_1936_naval_mtg"
-	else = {
-		set_naval_oob = "ROM_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ROM_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			aa_lmg = 1
-			engines_1 = 1
-		}
-	else = {
-		set_air_oob = "ROM_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-
-		}
-	}
-}
-
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.6
@@ -56,7 +18,7 @@ recruit_character = ROM_gheorghe_potopeanu
 recruit_character = ic_ROM_gheorghe_mihail
 recruit_character = ic_ROM_nicolae_sova
 recruit_character = ROM_nicolae_malaxa
-recruit_character = ROM_mihail_sturdza
+recruit_character = ic_ROM_mihail_sturdza
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga

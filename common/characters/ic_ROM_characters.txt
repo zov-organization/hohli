@@ -147,5 +147,39 @@ characters {
 			id=-1
 		}
 	}
+	ic_ROM_mihail_sturdza={
+		name=ROM_mihail_sturdza
+		portraits={
+			army={
+				small="GFX_idea_ROM_mihail_sturdza"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_mihail_sturdza
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					has_completed_focus = ic_ROM_The_Iron_Guard
+				}
+				if = {
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
 
 }

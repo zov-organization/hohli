@@ -1,0 +1,593 @@
+focus_tree = {
+		id = romanian_focus
+		
+		country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+			#always = no
+			has_dlc = "Death or Dishonor"
+		}
+	}
+	
+	default = no
+
+
+focus = {
+		id = ic_ROM_Election_of_the_King
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 22
+		y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 150
+            add_stability = 0.05
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Supervision_of_the_King's_expenses
+		x = -16
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+            add_stability = -0.025
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Interference_with_the_King's_expenses
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
+		cost = 5
+
+        completion_reward = {
+            add_stability = -0.05
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Mihai_the_first_looks_better
+		icon = GFX_focus_rom_coup
+		prerequisite = { focus = ic_ROM_Interference_with_the_King's_expenses }
+		x = 0
+		y = 1
+		relative_position_id = ic_ROM_Interference_with_the_King's_expenses
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ROM_king_carol_ii_hedonist
+				}
+				remove_ideas = ROM_king_carol_ii_hedonist
+			}
+
+		}
+	}
+
+	focus = {
+		id = ic_ROM_Romanian_Land_Forces
+		x = -8
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King }
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_experience_of_the_FWW
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_equipment
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_artillery
+		x = 2
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_automatic_machine
+		x = 4
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Navy_of_Greater_Romania
+		x = 5
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		x = 11
+		y = 1
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Revenge_for_Bessarabia
+		x = 20
+		y = 7
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_inancing
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_officer_corps
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_the_transition_to_military_rails
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_More_more_oil!
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_German_inancing }
+		relative_position_id = ic_ROM_German_inancing
+        completion_reward = {
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Black_Sea_-_Romania
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = ic_ROM_the_transition_to_military_rails }
+		relative_position_id = ic_ROM_the_transition_to_military_rails
+        completion_reward = {
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_support_compaines
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_first_aid_kits_and_stews
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_support_compaines}
+		relative_position_id = ic_ROM_Modern_support_compaines
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_MP38_and_MG34
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_automatic_machine}
+		relative_position_id = ic_ROM_Modern_automatic_machine
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_leFH18
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Modern_artillery }
+		relative_position_id = ic_ROM_Modern_artillery
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Hungarian_Romanian_War
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_The_experience_of_the_FWW }
+		relative_position_id = ic_ROM_The_experience_of_the_FWW
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_true_descendants_of_the_Romans
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_The_Hungarian_Romanian_War }
+		relative_position_id = ic_ROM_The_Hungarian_Romanian_War
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Iron_Guard
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_Mihai_the_first_looks_better }
+		relative_position_id = ic_ROM_Mihai_the_first_looks_better
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Corneliu_intervenes
+		x = 2
+		y = 1
+		prerequisite = { focus = ic_ROM_The_Iron_Guard }
+		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
+		relative_position_id = ic_ROM_The_Iron_Guard
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Hitlers_visit_to_Ploiesti
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Corneliu_intervenes }
+		relative_position_id = ic_ROM_Corneliu_intervenes
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Full_connection_to_the_AXIS
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Hitlers_visit_to_Ploiesti }
+		relative_position_id = ic_ROM_Hitlers_visit_to_Ploiesti
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Wehrmacht_headquarters_in_Galati
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_German_officer_corps }
+		relative_position_id = ic_ROM_German_officer_corps
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_ammunition
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_German_officer_corps }
+		relative_position_id = ic_ROM_German_officer_corps
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_WAR
+		x = 4
+		y = 1
+		prerequisite = { focus = ic_ROM_German_ammunition }
+		prerequisite = { focus = ic_ROM_More_more_oil }
+		prerequisite = { focus = ic_ROM_The_Wehrmacht_headquarters_in_Galati }
+		prerequisite = { focus = ic_ROM_The_Black_Sea_-_Romania }
+		relative_position_id = ic_ROM_More_more_oil
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_siege_of_Odessa
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Recruitment_of_soldiers_to_the_SS
+		x = -2
+		y = 1
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_siege_of_Sevastopol
+		x = -1
+		y = 1
+		prerequisite = { focus = ic_ROM_The_siege_of_Odessa }
+		relative_position_id = ic_ROM_The_siege_of_Odessa
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Kerch
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_The_siege_of_Odessa }
+		relative_position_id = ic_ROM_The_siege_of_Odessa
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Battle_of_Black_Sea
+		x = 2
+		y = 1
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_support_in_the_Kerch
+		x = 3
+		y = 1
+		prerequisite = { focus = ic_ROM_Battle_of_Black_Sea }
+		relative_position_id = ic_ROM_Battle_of_Black_Sea
+		mutually_exclusive = { focus = ic_ROM_invasion_in_the_Kavkazzz }
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_invasion_in_the_Kavkazzz
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_ROM_Battle_of_Black_Sea }
+		relative_position_id = ic_ROM_Battle_of_Black_Sea
+		mutually_exclusive = { focus = ic_ROM_support_in_the_Kerch }
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Dockyard_in_Constanta
+		x = -4
+		y = 1
+		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
+		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_visit_Denitz_in_Romania
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_Dockyard_in_Constanta }
+		relative_position_id = ic_ROM_Dockyard_in_Constanta
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_plan_Bismark
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_visit_Denitz_in_Romania }
+		relative_position_id = ic_ROM_visit_Denitz_in_Romania
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_destroyers
+		x = -2
+		y = 1
+		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
+		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_screen
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_ROM_destroyers }
+		relative_position_id = ic_ROM_destroyers
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+}
