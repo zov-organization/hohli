@@ -15,7 +15,7 @@ focus_tree = {
 	default = no
 
 
-focus = {
+	focus = {
 		id = ic_ROM_Election_of_the_King
 		icon = GFX_focus_rom_royal_dictatorship
 		x = 22

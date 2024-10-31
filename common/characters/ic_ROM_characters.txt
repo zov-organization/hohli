@@ -8,12 +8,12 @@ characters {
 		}
 		advisor={
 			slot = high_command
-			idea_token = gheorghe_mihail
+			idea_token = ic_ROM_gheorghe_mihail
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				The_Ranger
+				army_commando_2
 			}
 			cost = 100
 		}
@@ -23,7 +23,7 @@ characters {
 
 		advisor = {
 			slot = high_command
-			idea_token = petre_dumitrescu
+			idea_token = ic_ROM_petre_dumitrescu
 			ledger = army
 			allowed = {
 				original_tag = ROM
@@ -44,13 +44,13 @@ characters {
 		}
 		advisor={	
 			slot = high_command
-			idea_token = ROM_gheorghe_avramescu
+			idea_token = ic_ROM_gheorghe_avramescu
 			ledger = army
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				Romanian_Infantry
+				army_infantry_2
 			}
 			cost = 100
 		}
@@ -73,7 +73,7 @@ characters {
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = ROM_nicolae_sova
+			idea_token = ic_ROM_nicolae_sova
 			allowed = {
 				original_tag = ROM
 			}
@@ -81,9 +81,6 @@ characters {
 				The_old_sailor
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
 	}
 	ic_ROM_horia_macellariu={
@@ -96,17 +93,14 @@ characters {
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = ROM_horia_macellariu
+			idea_token = ic_ROM_horia_macellariu
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				Tactics_of_Small_Seas
+				navy_screen_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
 		
 		navy_leader={
@@ -132,12 +126,12 @@ characters {
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ROM_armand_calinescu
+			idea_token = ic_ROM_armand_calinescu
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
-				Defender
+				defender_trait
 			}
 		}
 
@@ -156,28 +150,15 @@ characters {
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ROM_mihail_sturdza
+			idea_token = ic_ROM_mihail_sturdza
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ic_ROM_The_Iron_Guard
-				}
-				if = {
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				has_completed_focus = ic_ROM_The_Iron_Guard
 			}
 			allowed = {
 				original_tag = ROM
 			}
 			traits = {
 				fascist_demagogue 
-			}
-			ai_will_do = {
-				factor = 0.000
 			}
 		}
 	}
