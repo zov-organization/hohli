@@ -4,20 +4,12 @@ oob = "ic_GER_1936_army"
 set_naval_oob = "ic_GER_1936_fleet"
 set_country_flag = host
 
+set_convoys = 800
 
 set_research_slots = 4
-navy_experience = 0
-
-set_convoys = 800
 
 set_stability = 0.65
 set_war_support = 0.35
-
-set_popularities = {
-	democratic = 10
-	fascism = 75
-	communism = 15
-}
 
 set_politics = {
 	ruling_party = fascism
@@ -25,6 +17,13 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_popularities = {
+	democratic = 10
+	fascism = 75
+	communism = 15
+}
+
 
 create_country_leader = {
 	name = "Adolf Hitler"

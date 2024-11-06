@@ -1,15 +1,14 @@
-
 state = {
 	id=154
 	name="STATE_154"
 	manpower = 2735383
 
 	state_category = city
-
+	resources={aluminium=100}
 	history = {
 		owner = HUN
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 2

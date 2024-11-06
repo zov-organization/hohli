@@ -1,0 +1,162 @@
+ideas = {
+
+	country = {
+
+		HUN_ID_A_new_way = {
+			name = HUN_ID_A_new_way
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                fascism_drift = 0.15
+            }
+		}
+
+		HUN_ID_economic_intervention = {
+			name = HUN_ID_economic_intervention
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                political_power_factor = -0.25
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		HUN_ID_Invite_foreign_investors = {
+			name = HUN_ID_Invite_foreign_investors
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+            }
+		}
+
+		HUN_ID_From_a_drop_into_the_sea = {
+			name = HUN_ID_From_a_drop_into_the_sea
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                fuel_gain_factor = 0.5
+            }
+		}
+
+		HUN_ID_No_one_will_sit_idle= {
+			name = HUN_ID_No_one_will_sit_idle
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+            }	
+	    }
+
+		HUN_ID_economic_intervention_buff = {
+			name = HUN_ID_economic_intervention
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                political_power_factor = 0.25
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		HUN_ID_treaty_of_trianon = {
+			name = HUN_ID_treaty_of_trianon
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                production_speed_arms_factory_factor = -0.5	
+				mobilization_laws_cost_factor = 10
+				economy_cost_factor = 10
+			}
+		}
+
+		HUN_ID_our_future = {
+			name = HUN_ID_our_future
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                stability_weekly_factor = 0.003
+                war_support_weekly = 0.003
+				
+			}
+		}
+
+		HUN_ID_Rearmament = {
+			name = HUN_ID_Rearmament
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.1	
+			}
+		}
+
+		HUN_ID_German_advisors = {
+			name = HUN_ID_German_advisors
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                experience_gain_army = 0.05
+			}
+		}
+	}
+
+}

@@ -1,13 +1,10 @@
 ﻿capital = 219
 oob = "ic_SOV_1936_army"
 set_naval_oob = "ic_SOV_1936_fleet"
-set_country_flag = host
-
-
-set_research_slots = 3
-navy_experience = 0
 
 set_convoys = 800
+
+set_research_slots = 3
 
 set_stability = 0.4
 set_war_support = 0.3
@@ -18,6 +15,15 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_popularities = {
+	democratic = 20
+	fascism = 20
+	communism = 60
+}
+
+create_faction = Comintern
+add_to_faction = SOV
 
 create_country_leader = {
 	name = "Joseph Stalin"
@@ -79,14 +85,6 @@ recruit_character = ic_SOV_rodion_malinovsky
 recruit_character = ic_SOV_vasily_chuykov
 
 activate_advisor = ic_SOV_genrikh_yagoda
-
-set_popularities = {
-	democratic = 20
-	fascism = 20
-	communism = 60
-}
-create_faction = Comintern
-add_to_faction = SOV
 
 
 set_variable = { SOV_consumer_goods_expected_value				= -0.01 }
