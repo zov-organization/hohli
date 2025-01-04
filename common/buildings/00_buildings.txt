@@ -28,7 +28,6 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		max_level = 228
 		base_cost = 7200
 		base_cost_conversion = 4000
 		military_production = 1
@@ -40,11 +39,13 @@ buildings = {
 			shares_slots = yes
 			state_max = 50
 		}
+
+		# RETARD ASS DIGGA ONE LINE BELOW
+		gun_emplacement = yes
 	}
 
 	industrial_complex = {
 		show_on_map = 6
-		max_level = 1337
 		base_cost = 10800
 		base_cost_conversion = 9000
 		general_production = 1
@@ -109,7 +110,6 @@ buildings = {
 		always_shown = yes
 		base_cost = 5000
 		per_level_extra_cost = 1000
-		provincial = yes
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
@@ -198,8 +198,6 @@ buildings = {
 		icon_frame = 10
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 6 # This is the max unlock level
-		shares_slots = no
 		value = 5
 		infrastructure_construction_effect = yes
 		
@@ -220,7 +218,6 @@ buildings = {
 		show_on_map = 1
 		base_cost = 5000
 		icon_frame = 14
-		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
