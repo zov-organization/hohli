@@ -10549,6 +10549,51 @@ leader_traits = {
 	}
 
 
+	GER_reichskommissar_trait = {}
+	GER_reichsprotektor_trait = {}
+
+	GER_traditionalist = {}
+	GER_staunch_social_democrat = {}
+	GER_pragmatic_trade_unionist = {}
+	pan_africanist_socialist = {}
+	nyim_of_kuba = {}
+	ma_loango = {}
+	HUN_the_old_warden = {}
+	carlist_habsburg_pretender = {}
+	HUN_the_habsburg_hetman = {}
+	head_of_the_imperial_house_of_mexico_trait = {}
+	ban_of_croatia_slavonia = {}
+	HUN_popular_aviator = {}
+	HUN_the_hungarian_lenin = {}
+	HUN_christian_academic = {}
+	HUN_nemzetvezeto_trait = {}
+	GEO_vengeful_stalinist = {}
+
+	volksgruppenfurher_der_volksbund = {}
+	BEL_charles_king_of_belgians = {}
+	BEL_leopold_unknown_sympathies = {}
+	GER_inflexible_communist_organizer = {}
+	GER_oberste_heeresleitung_trait = {}
+	HUN_veteran_president = {}
+	ROM_conductor = {}
+	AUS_abolished_austrofascism = {}
+	AUS_king_of_liechtenstein = {}
+	AUS_fascist_propaganda_artist = {}
+	AUS_elizabeth = {}
+	BEL_le_patron = {}
+	unruly_falangist_marionette = {}
+	GER_high_admiral = {}
+
+	improved_railway_company = {}
+	banking_magnate_trait = {}
+	energy_company_trait = {}
+	diamond_extraction_company = {}
+	transport_company = {}
+	civilian_airway_company = {}
+	assault_gun_manufacturer = {}
+	aircraft_production_plant = {}
+	oil_extraction_company_trait = {}
+
 	stalin_eblan = {
 		random = no
 		political_power_factor = -0.2
