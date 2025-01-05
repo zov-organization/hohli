@@ -88,6 +88,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_2_1x
+			tank_buster_1
 		}
 	
 		path = {
@@ -132,6 +133,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_3_1x
+			heavy_bomb_locks
 		}
 	
 		path = {
@@ -176,6 +178,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_4_1x
+			tank_buster_2
 		}
 		
 		path = {
