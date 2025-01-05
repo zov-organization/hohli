@@ -47,7 +47,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 32
+		build_cost_ic = 62
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -217,7 +217,7 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 800
+		air_range = 700
 		maximum_speed = 400
 		air_attack = 10
 		air_agility = 35
@@ -236,15 +236,14 @@ equipments = {
 		parent = small_plane_airframe_0
 		priority = 5
 
-		air_range = 1100
+		air_range = 900
 		maximum_speed = 425
 		air_agility = 40
-		air_attack = 20
 		air_defence = 9
 		weight = 4
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 34
+		build_cost_ic = 75
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -260,17 +259,6 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
 
 			engine_type_slot = {
 				required = yes
@@ -314,14 +302,14 @@ equipments = {
 		parent = small_plane_airframe_1
 		priority = 5
 
-		air_range = 1500
+		air_range = 1200
 		maximum_speed = 450
 		air_agility = 45
 		air_defence = 12
 		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 36
+		build_cost_ic = 80
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -333,29 +321,6 @@ equipments = {
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
 					kamikaze_bomber_weapon
 				}
 			}
@@ -418,14 +383,14 @@ equipments = {
 		parent = small_plane_airframe_2
 		priority = 5
 
-		air_range = 1800
+		air_range = 1500
 		maximum_speed = 475
 		air_agility = 50
 		air_defence = 15
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 38
+		build_cost_ic = 84
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -438,37 +403,6 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					cas_weapon
 				}
 			}
 
@@ -541,14 +475,14 @@ equipments = {
 		parent = small_plane_airframe_3
 		priority = 5
 
-		air_range = 900
+		air_range = 1500
 		maximum_speed = 500
 		air_agility = 55
 		air_defence = 18
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 40
+		build_cost_ic = 95
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -560,40 +494,6 @@ equipments = {
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
 					kamikaze_bomber_weapon
 				}
 			}
@@ -707,7 +607,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 32
+		build_cost_ic = 65
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -723,18 +623,6 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -903,7 +791,7 @@ equipments = {
 		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 34
+		build_cost_ic = 80
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -912,17 +800,6 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -979,7 +856,7 @@ equipments = {
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 36
+		build_cost_ic = 85
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -991,29 +868,6 @@ equipments = {
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
 					kamikaze_bomber_weapon
 				}
 			}
@@ -1082,7 +936,7 @@ equipments = {
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 38
+		build_cost_ic = 95
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1095,37 +949,6 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					cas_weapon
 				}
 			}
 
@@ -1191,7 +1014,7 @@ equipments = {
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 40
+		build_cost_ic = 100
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1203,40 +1026,6 @@ equipments = {
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
 					kamikaze_bomber_weapon
 				}
 			}
@@ -1332,7 +1121,7 @@ equipments = {
 		lend_lease_cost = 10
 		manpower = 40
 		fuel_consumption = 0
-		build_cost_ic = 6
+		build_cost_ic = 50
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -1365,7 +1154,6 @@ equipments = {
 					mine_warfare_offense
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 				}
@@ -1376,7 +1164,6 @@ equipments = {
 					mine_warfare_offense
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 				}
@@ -1571,14 +1358,14 @@ equipments = {
 		parent = medium_plane_airframe_0
 		priority = 5
 
-		air_range = 900
+		air_range = 1650
 		maximum_speed = 325
 		air_agility = 30
 		air_defence = 18
 		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 8
+		build_cost_ic = 85
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1598,7 +1385,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1609,7 +1395,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1620,7 +1405,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1702,14 +1486,14 @@ equipments = {
 		parent = medium_plane_airframe_1
 		priority = 5
 
-		air_range = 1100
+		air_range = 1900
 		maximum_speed = 375
 		air_agility = 35
 		air_defence = 20
 		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 10
+		build_cost_ic = 90
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1729,7 +1513,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1740,7 +1523,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1751,7 +1533,6 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1850,14 +1631,14 @@ equipments = {
 		parent = medium_plane_airframe_2
 		priority = 5
 
-		air_range = 1300
+		air_range = 2100
 		maximum_speed = 425
 		air_agility = 40
 		air_defence = 24
 		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 13
+		build_cost_ic = 95
 		resources = {
 			aluminium = 5
 			rubber = 1
@@ -1876,7 +1657,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -1887,7 +1667,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -1898,7 +1677,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -1910,7 +1688,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -2010,7 +1787,7 @@ equipments = {
 		parent = medium_plane_airframe_3
 		priority = 5
 
-		air_range = 1500
+		air_range = 2200
 		maximum_speed = 500
 		air_agility = 45
 		air_defence = 24
@@ -2036,7 +1813,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
@@ -2047,7 +1823,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
@@ -2058,7 +1833,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
@@ -2070,7 +1844,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
