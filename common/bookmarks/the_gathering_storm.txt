@@ -37,6 +37,20 @@ bookmarks = {
 				
 			}
 		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				ic_SOV_fake_mass_production
+				ic_SOV_peaceful_building
+				ic_SOV_mehkorpusa
+			}
+			focuses = {
+				SOV_we-ll_be_ready
+				SOV_wow
+				SOV_stavka_organisation
+			}	
+		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -70,20 +84,6 @@ bookmarks = {
 			focuses = {
 				
 			}			
-		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				ic_SOV_fake_mass_production
-				ic_SOV_peaceful_building
-				ic_SOV_mehkorpusa
-			}
-			focuses = {
-				SOV_we-ll_be_ready
-				SOV_wow
-				SOV_stavka_organisation
-			}	
 		}
 
 		"---"={
