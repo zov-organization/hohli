@@ -1406,8 +1406,8 @@
 	}
 
 	focus = {
-		id = GER_aa_defences_of_life_important_industry
-		icon = GFX_GER_aa_defences_of_life_important_industry
+		id = GER_aa_defences_of_the_reich
+		icon = GFX_GER_aa_defences_of_the_reich
 
 		prerequisite = { focus = GER_get_them_milzz }
 		relative_position_id = GER_get_them_milzz
@@ -1427,11 +1427,11 @@
 	}
 
 	focus = {
-		id = GER_aa_defences_of_remnants_of_the_reich
-		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+		id = GER_aa_defences_of_the_atlantikwall
+		icon = GFX_GER_aa_defences_of_the_atlantikwall
 
-		prerequisite = { focus = GER_aa_defences_of_life_important_industry }
-		relative_position_id = GER_aa_defences_of_life_important_industry
+		prerequisite = { focus = GER_aa_defences_of_the_reich }
+		relative_position_id = GER_aa_defences_of_the_reich
 
 		x = 0
 		y = 1
@@ -1469,9 +1469,9 @@
 
 	focus = {
 		id = GER_totaler_krieg
-		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+		icon = GFX_GER_aa_defences_of_the_atlantikwall
 
-		prerequisite = { focus = GER_aa_defences_of_remnants_of_the_reich }
+		prerequisite = { focus = GER_aa_defences_of_the_atlantikwall }
 		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
 		relative_position_id = GER_support_our_allies_ita
 
@@ -1489,7 +1489,7 @@
 
 	focus = {
 		id = GER_autarky_failure
-		icon = GFX_GER_aa_defences_of_remnants_of_the_reich
+		icon = GFX_GER_aa_defences_of_the_atlantikwall
 
 		prerequisite = { focus = GER_totaler_krieg }
 		relative_position_id = GER_totaler_krieg

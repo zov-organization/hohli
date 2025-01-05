@@ -9967,11 +9967,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_aa_defences_of_life_important_industry"
+		name = "GFX_GER_aa_defences_of_the_reich"
 		texturefile = "gfx/interface/goals/GER/GER_FLAK.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GER_aa_defences_of_life_important_industry_shine"
+		name = "GFX_GER_aa_defences_of_the_reich_shine"
 		texturefile = "gfx/interface/goals/GER/GER_FLAK.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -10002,11 +10002,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_aa_defences_of_remnants_of_the_reich"
+		name = "GFX_GER_aa_defences_of_the_atlantikwall"
 		texturefile = "gfx/interface/goals/GER/GER_AA.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GER_aa_defences_of_remnants_of_the_reich_shine"
+		name = "GFX_GER_aa_defences_of_the_atlantikwall_shine"
 		texturefile = "gfx/interface/goals/GER/GER_AA.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
