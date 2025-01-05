@@ -10,11 +10,11 @@ types = {
 ################################################################
 
 	facility_strike = {
-		days_to_prepare = 90
+		days_to_prepare = 10
 
 		category = air_raids
 
-		command_power = 25
+		command_power = 0
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
@@ -56,13 +56,13 @@ types = {
 		unit_requirements = {
 			equipment = {
 				type = { tactical_bomber }
-				amount = { min = 70 }
+				amount = { min = 40 }
 			}
 		}
 		unit_requirements = {
 			equipment = {
 				type = { strategic_bomber }
-				amount = { min = 70 }
+				amount = { min = 40 }
 			}
 		}
 
@@ -782,11 +782,11 @@ types = {
 
 
 	oilfield_raid = {
-		days_to_prepare = 90
+		days_to_prepare = 10
 
 		category = air_raids
 
-		command_power = 20 # command power allocation cost
+		command_power = 0 # command power allocation cost
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
@@ -815,9 +815,7 @@ types = {
 
 		target_type = {
 			state = {
-				# Resouce amount needed to be eligible as raid target
-				oil > 24
-				# If the site has been hit recently you can't target it again
+				oil > 20
 				NOT = {
 					OR = {
 						has_dynamic_modifier = {
@@ -843,6 +841,12 @@ types = {
         }
 		launch_sound = raid_launch_air
 
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 40 }
+			}
+		}
 		unit_requirements = {
 			equipment = {
 				type = { strategic_bomber }
