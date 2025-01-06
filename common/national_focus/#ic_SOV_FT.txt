@@ -724,6 +724,14 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = SOV_forts_krasnaya_gorka
 			unlock_decision_tooltip = SOV_forts_maxim_gorki
+			137 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 705
+					instant_build = yes
+				}
+			}
 		}
 	}
 
