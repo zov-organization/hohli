@@ -1,210 +1,27 @@
-# BALTICS
 focus_tree = {
-	id = latvia_tree
-	
+	id = useless_minors_focus
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = LAT
-		}
+		modifier = { add = 60 tag = LAT }
+		modifier = { add = 60 tag = LIT }
+		modifier = { add = 60 tag = EST }
+
+		modifier = { add = 60 tag = AUS }
+		modifier = { add = 60 tag = POL }
+		modifier = { add = 60 tag = CZE }
+
+		modifier = { add = 60 tag = HOL }
+		modifier = { add = 60 tag = BEL }
+
+		modifier = { add = 60 tag = YUG }
+		modifier = { add = 60 tag = ALB }
+		modifier = { add = 60 tag = GRE }
+
+		modifier = { add = 60 tag = SWE }
+		modifier = { add = 60 tag = NOR }
+		modifier = { add = 60 tag = DEN }
+
+		modifier = { add = 60 tag = CHI }
 	}
-	
-
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = lithuania_tree
-	
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = LIT
-		}
-	}
-	
-
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = estonia_tree
-	
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = EST
-		}
-	}
-	
-
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-
-# EUROPE
-focus_tree = {
-	id = austria_focus_tree
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 60
-			tag = AUS
-		}
-	}
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = polish_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = POL
-		}
-	}
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = netherlands_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = HOL
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = yugoslavian_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = YUG
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = hungarian_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 60
-			tag = HUN
-		}
-	}
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = romanian_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 60
-			tag = ROM
-		}
-	}
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-focus_tree = {
-	id = bulgarian_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 60
-			tag = BUL
-		}
-	}
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-
-# NORDIC
-focus_tree = {
-	id = sweden_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = SWE
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-
-focus_tree = {
-	id = norwegian_focus
-
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			NOR_AAT = yes
-		}
-	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 50 }
-}
-
-
-focus_tree = {
-	id = china_nationalist_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 60
-			tag = CHI
-		}
-	}
-	default = no
-
 	continuous_focus_position = { x = 50 y = 50 }
 }
