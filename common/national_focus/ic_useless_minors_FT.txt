@@ -50,6 +50,21 @@ focus_tree = {
 
 # EUROPE
 focus_tree = {
+	id = austria_focus_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 60
+			tag = AUS
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
 	id = polish_focus
 	
 	country = {
@@ -96,6 +111,51 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 50 }
 }
+focus_tree = {
+	id = hungarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 60
+			tag = HUN
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 60
+			tag = ROM
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+focus_tree = {
+	id = bulgarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 60
+			tag = BUL
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
 
 # NORDIC
 focus_tree = {
@@ -127,6 +187,23 @@ focus_tree = {
 		}
 	}
 	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+}
+
+
+focus_tree = {
+	id = china_nationalist_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 60
+			tag = CHI
+		}
+	}
 	default = no
 
 	continuous_focus_position = { x = 50 y = 50 }

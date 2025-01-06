@@ -1524,9 +1524,6 @@ sp_land_stronghold_network = {
 	}
 	
 	available = {
-		FROM = {
-			has_tech = basic_fortification_tech
-		}
 	}
 	
 	prototype_time = sp_time.prototype.medium
@@ -1553,10 +1550,6 @@ sp_land_stronghold_network = {
 					BUILDING = stronghold_network
 					BUILDING_DESCRIPTION = stronghold_network_desc
 					ICON_FRAME = 23
-				}
-				set_technology = {
-					stronghold_network_tech = 1
-					popup = no
 				}
 			}
 		}
