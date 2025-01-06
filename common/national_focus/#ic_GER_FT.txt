@@ -479,13 +479,13 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = GER_luftwaffe
-				bonus = 0.5
-				uses = 3
-				technology = aa_hmg
-				technology = aa_cannon_1
-				technology = aa_cannon_3
+			54 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 9416
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -562,6 +562,14 @@
 			mio:GER_messerschmitt_organization = {
 				add_mio_funds = 1000
 			}
+			add_tech_bonus = {
+				name = GER_luftwaffe
+				bonus = 0.5
+				uses = 3
+				technology = aa_hmg
+				technology = aa_cannon_1
+				technology = aa_cannon_3
+			}
 		}
 	}
 
@@ -583,6 +591,14 @@
 				bonus = 0.75
 				uses = 3
 				category = infantry_weapons
+			}
+			64 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 6521
+					instant_build = yes
+				}
 			}
 		}
 	}
