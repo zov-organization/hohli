@@ -59,9 +59,10 @@ characters={
 
 	ic_GER_joseph_goebbels={
 		name=GER_joseph_goebbels
-		portraits={
-			army={
-				small="GFX_idea_joseph_goebbels"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_joseph_goebbels
+				small = GFX_portrait_GER_joseph_goebbels_small
 			}
 		}
 		advisor={
@@ -78,17 +79,14 @@ characters={
 
 	ic_GER_heinrich_himmler={
 		name=GER_heinrich_himmler
-		portraits={
-			army={
-				small="GFX_idea_heinrich_himmler"
-				large=GFX_portrait_GER_heinrich_himmler
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_heinrich_himmler_small
+				large = GFX_portrait_GER_heinrich_himmler
 			}
 			civilian = {
-				large=GFX_portrait_GER_heinrich_himmler
+				large = GFX_portrait_GER_heinrich_himmler
 			}
-		}
-		allowed_civil_war = {
-			has_government = fascism
 		}
 		advisor={
 			slot = political_advisor

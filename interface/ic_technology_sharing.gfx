@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ic_axis_research"
+		texturefile = "gfx/interface/technology_sharing/axis_research.dds"
+	}
+
+}

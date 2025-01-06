@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+	### categories
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_ic_pp_waste"
+		texturefile = "gfx/interface/decisions/decision_cat_pp_waste_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_SOV_forts"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_SOV_forts.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_SOV_accelerate_industry"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_SOV_accelerate_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_thousand_year_reich_category"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_GER_thousand_year_reich_category.dds"
+	}
+}

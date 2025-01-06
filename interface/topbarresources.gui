@@ -70,7 +70,7 @@ guiTypes = {
 			format = center
 			alwaystransparent=yes
 			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
-					}
+		}
 	
 		
 		iconType ={
