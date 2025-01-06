@@ -704,9 +704,25 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
 			GER = { add_ideas = { ic_SOV_kama_tank_school } }
-			add_research_slot = 1
+			GER = { add_research_slot = 1 }
+			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
+			258 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 6398
+					instant_build = yes
+				}
+			}
+			249 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 372
+					instant_build = yes
+				}
+			}
 		}
 	}
 

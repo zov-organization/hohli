@@ -918,8 +918,25 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
 			GER = { add_ideas = { ic_SOV_kama_tank_school } }
+			GER = { add_research_slot = 1 }
+			SOV = { add_ideas = { ic_SOV_kama_tank_school } }
+			258 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 6398
+					instant_build = yes
+				}
+			}
+			249 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 372
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1559,15 +1576,25 @@ focus_tree = {
 		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
 		relative_position_id = SOV_snyatie_debaffov_i_gen
 
-		x = -3
+		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 
-		available = {}
+		bypass = {
+			if = {
+				date > 1941.11.01
+			}
+		}
+
+		available = {
+			ic_SOV_focusa_defensa_smol_date = yes
+		}
 
 		completion_reward = {
-			# plan iskra operation
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
+            SOV = {
+                country_event = ic_sov_events.1
+            }
 		}
 	}
 
@@ -1579,7 +1606,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
 
-		x = 0
+		x = -1
 		y = 1
 		cost = 3
 
@@ -1609,7 +1636,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
 
-		x = -2
+		x = -3
 		y = 1
 		cost = 3
 
@@ -1632,7 +1659,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_focusa_defensa_smol
+		id = SOV_minus_debuff
 
 		icon = GFX_SOV_wow
 
@@ -1640,36 +1667,7 @@ focus_tree = {
 		relative_position_id = SOV_snyatie_debaffov_i_gen
 
 		x = 0
-		y = 1
-		cost = 5
-
-		bypass = {
-			if = {
-				date > 1941.11.01
-			}
-		}
-
-		available = {
-			ic_SOV_focusa_defensa_smol_date = yes
-		}
-
-		completion_reward = {
-            SOV = {
-                country_event = ic_sov_events.1
-            }
-		}
-	}
-
-	focus = {
-		id = SOV_minus_debuff
-
-		icon = GFX_SOV_wow
-
-		prerequisite = { focus = SOV_focusa_defensa_smol }
-		relative_position_id = SOV_focusa_defensa_smol
-
-		x = 0
-		y = 1
+		y = 2
 		cost = 5
 
 		available = {}

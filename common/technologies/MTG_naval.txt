@@ -745,6 +745,7 @@ technologies = {
 			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
+
 	basic_cruiser_armor_scheme = {
 
 		enable_equipment_modules = {
@@ -772,20 +773,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
+			position = { x = 0 y = 2 }
 		}
 
 		categories = {
@@ -796,6 +784,77 @@ technologies = {
 			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_carrier_and_modules
+		}
+	}
+
+	basic_heavy_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_bb_2
+			ship_armor_bc_2
+			ship_armor_cruiser_3
+		}
+
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = improved_heavy_armor_scheme
+			research_cost_coeff = 1
+		}
+
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1936
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
+		}
+	}
+
+	improved_heavy_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_bb_3
+			ship_armor_bc_3
+			ship_armor_cruiser_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.25
+		research_cost = 1.25
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 14 }
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -854,11 +913,6 @@ technologies = {
 			leads_to_tech = improved_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = basic_heavy_armor_scheme
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 
@@ -870,27 +924,6 @@ technologies = {
 		}
 		sub_technologies = {
 			ship_hull_super_heavy
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0
-			}
 		}
 
 		categories = {
@@ -991,124 +1024,10 @@ technologies = {
 			position = {  x = 0 y = 20 }
 		}
 
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-				tag = USA
-
-			}
-			modifier = {
-				is_major = no
-				factor = 0
-			}
-		}
-
 		categories = {
 			naval_equipment
 			bb_tech
 			bc_tech
-			mio_cat_tech_all_capital_ship_and_modules
-		}
-	}
-
-	basic_heavy_armor_scheme = {
-
-		enable_equipment_modules = {
-			ship_armor_bb_2
-			ship_armor_bc_2
-			ship_armor_cruiser_3
-		}
-
-
-		on_research_complete = {
-			custom_effect_tooltip = heavy_armor_advice_tt
-		}
-		path = {
-			leads_to_tech = improved_heavy_armor_scheme
-			research_cost_coeff = 1
-		}
-
-
-		xp_research_type = navy
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		research_cost = 1.25
-
-		start_year = 1936
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
-		}
-
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-			ship_modules_tech
-			mio_cat_tech_all_capital_ship_and_modules
-		}
-	}
-
-	improved_heavy_armor_scheme = {
-
-		enable_equipment_modules = {
-			ship_armor_bb_3
-			ship_armor_bc_3
-			ship_armor_cruiser_4
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = heavy_armor_advice_tt
-		}
-
-
-		xp_research_type = navy
-		xp_boost_cost = 50
-		xp_research_bonus = 1.25
-		research_cost = 1.25
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 14 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-			}
-			modifier = {
-				has_tech = improved_ship_hull_heavy
-				factor = 2
-			}
-		}
-
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-			ship_modules_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}

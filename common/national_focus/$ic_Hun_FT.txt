@@ -5,9 +5,8 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 50
 			tag = HUN
-			has_dlc = "La Resistance"
 		}
 	}
 

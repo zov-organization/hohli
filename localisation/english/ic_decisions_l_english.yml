@@ -1,6 +1,6 @@
 ﻿l_english:
 
-ic_helpful_tips:0 "§HHELPFUL TIPS§!"
+  ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
   GER_optimal_building_line:0 "Optimal starting building line"
 
@@ -34,6 +34,9 @@ ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   supply_buildup_cancel:0 "Cancel Logistical Preparations"
   supply_buildup:0 "Logistical Preparations"
 
+
+  SOV_great_patriotic_war_category:0 "§RGREAT PATRIOTIC WAR§!"
+  SOV_great_patriotic_war_category_desc:0 "_"
 
   SOV_forts_category:0 "§HSOVIET FORTS§!"
   SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war, for example fort Krasnaya Gorka near Leningrad was never captured by Germans outlining the front line with the range of its guns; Mojayskaya Defencive Line stopped German panzers advance towards Moscow during fall 1941; However Soviets werent able to build proper fort lines across the whole frontline.§!"

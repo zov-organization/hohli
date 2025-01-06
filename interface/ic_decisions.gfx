@@ -15,6 +15,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_picture_SOV_accelerate_industry.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_cat_picture_SOV_great_patriotic_war_category"
+		texturefile = "gfx/interface/decisions/decision_cat_great_patriotic_war.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_picture_GER_thousand_year_reich_category"
 		texturefile = "gfx/interface/decisions/decision_cat_picture_GER_thousand_year_reich_category.dds"
 	}

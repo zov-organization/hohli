@@ -1,3 +1,7 @@
+SOV_great_patriotic_war_category = {
+	
+}
+
 SOV_forts_category = {
 
 	SOV_forts_krasnaya_gorka = {

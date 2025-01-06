@@ -27,7 +27,7 @@ sp_air_bouncing_bomb = {
 				has_dlc = "By Blood Alone"
 			}
 			FROM = {
-				has_tech = heavy_bombs
+				#has_tech = heavy_bombs
 			}
 		}
 		else = {
@@ -204,7 +204,7 @@ sp_air_earthshaker_bomb = {
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
 			FROM = {
-				has_tech = heavy_bombs
+				#has_tech = heavy_bombs
 			}
 		}
 		else = {
