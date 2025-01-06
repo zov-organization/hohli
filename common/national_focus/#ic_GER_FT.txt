@@ -639,6 +639,14 @@
 					instant_build = yes
 				}
 			}
+			58 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 9347
+					instant_build = yes
+				}
+			}
 		}
 	}
 
