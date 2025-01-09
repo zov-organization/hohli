@@ -11,6 +11,7 @@ ic_helpful_tips = {
         visible = {
             ROOT = {
                 tag = SOV
+			    has_completed_focus = SOV_ukrain_prom_compleks
             }
         }
         priority = 1
@@ -79,6 +80,7 @@ ic_helpful_tips = {
         visible = {
             ROOT = {
                 tag = SOV
+			    has_completed_focus = SOV_making_use_of_the_storehouse_of_russia
             }
         }
         priority = 1
@@ -132,126 +134,6 @@ ic_helpful_tips = {
 				}
 			}
         }
-    }
-
-    SOV_secure_north_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 814
-				state = 815
-				state = 11
-				state = 189
-				state = 190
-				state = 809
-				state = 810
-				state = 808
-				state = 12
-				state = 191
-				state = 13
-				state = 812
-				state = 811
-				state = 813
-				state = 209
-				state = 210 
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
-    }
-    SOV_secure_center_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 94
-				state = 194
-				state = 97
-				state = 95
-				state = 204
-				state = 784
-				state = 96
-				state = 206
-				state = 207
-				state = 241
-				state = 242
-				state = 243
-				state = 224
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
-    }
-    SOV_secure_south_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 202
-				state = 199
-				state = 201
-				state = 202
-				state = 193
-				state = 225
-				state = 221
-				state = 227
-				state = 226
-				state = 259
-				state = 203
-				state = 198
-				state = 834
-				state = 192
-				state = 197
-				state = 196
-				state = 137
-				state = 200
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
     }
 
     SOV_debug_cze = {
