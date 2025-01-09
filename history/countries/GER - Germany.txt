@@ -126,7 +126,6 @@ create_equipment_variant = {
 	design_team = mio:GER_messerschmitt_organization
 	modules = {
 		fixed_main_weapon_slot = light_mg_4x
-		fixed_auxiliary_weapon_slot_1 = light_mg_4x
 		engine_type_slot = engine_2_1x
 	}
 }

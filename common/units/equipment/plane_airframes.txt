@@ -66,17 +66,6 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -201,7 +190,6 @@ equipments = {
 
 		default_modules = {
 			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
@@ -2216,7 +2204,7 @@ equipments = {
 		maximum_speed = 225
 		air_agility = 25
 		air_defence = 25
-		weight = 18
+		weight = 15
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 18
