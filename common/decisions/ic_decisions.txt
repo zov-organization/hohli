@@ -35,7 +35,8 @@ ic_helpful_tips = {
 		}
 
         cost = 0
-
+        
+		on_map_mode = decision_view_only
         complete_effect = {
             every_owned_state = {
 				limit = {
@@ -84,7 +85,8 @@ ic_helpful_tips = {
             }
         }
         priority = 1
-
+        
+		on_map_mode = decision_view_only
         highlight_states = {
             highlight_state_targets = {
                 state = 398
@@ -97,8 +99,10 @@ ic_helpful_tips = {
 				state = 578
 				state = 577
 				state = 568
-				state = 576
 				state = 571
+				state = 580
+				state = 570
+				state = 569
             }
 		}
 

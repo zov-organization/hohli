@@ -316,11 +316,13 @@ focus_tree = {
 						state = 572
 						state = 651
 						state = 582
-						state = 571
 						state = 578
 						state = 577
 						state = 568
-						state = 576
+						state = 571
+						state = 580
+						state = 570
+						state = 569
 					}
 				}
 				add_dynamic_modifier = {

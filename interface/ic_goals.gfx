@@ -355,7 +355,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_generic_construction_resources_rubber_synth.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_SOV_rubber_2"
+		name = "GFX_SOV_rubber_2_shine"
 		texturefile = "gfx/interface/goals/focus_generic_construction_resources_rubber_synth.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
