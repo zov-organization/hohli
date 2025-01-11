@@ -15,7 +15,6 @@ country_event = {
 			}
 			add_dynamic_modifier = {
 				modifier = SOV_1941_defencive_buff
-				scope = SOV
 				days = 45
 			}
 		}
@@ -28,7 +27,6 @@ country_event = {
 			}
 			add_dynamic_modifier = {
 				modifier = SOV_1941_defencive_buff
-				scope = SOV
 				days = 45
 			}
 		}
@@ -41,7 +39,6 @@ country_event = {
 			}
 			add_dynamic_modifier = {
 				modifier = SOV_1941_defencive_buff
-				scope = SOV
 				days = 45
 			}
 		}
