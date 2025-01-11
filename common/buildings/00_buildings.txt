@@ -125,27 +125,6 @@ buildings = {
 		only_costal = yes
 	}
 
-	
-	naval_base = {
-		show_on_map = 1
-		show_on_map_meshes = 3
-		always_shown = yes
-		base_cost = 5000
-		per_level_extra_cost = 1000
-		only_costal = yes
-		is_port = yes
-		icon_frame = 6
-		value = 1
-		allied_build = yes
-		infrastructure_construction_effect = yes
-
-		
-		spawn_point = naval_base_spawn
-		level_cap = {
-			province_max = 10
-		}
-	}
-
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
@@ -178,6 +157,26 @@ buildings = {
 			province_max = 10
 		}
 
+	}
+	
+	naval_base = {
+		show_on_map = 1
+		show_on_map_meshes = 3
+		always_shown = yes
+		base_cost = 5000
+		per_level_extra_cost = 1000
+		only_costal = yes
+		is_port = yes
+		icon_frame = 6
+		value = 1
+		allied_build = yes
+		infrastructure_construction_effect = yes
+
+		
+		spawn_point = naval_base_spawn
+		level_cap = {
+			province_max = 10
+		}
 	}
 
 	stronghold_network = {
@@ -239,27 +238,6 @@ buildings = {
 		}
 	}
 
-	synthetic_refinery = {
-		show_on_map = 1
-		base_cost = 8500
-		icon_frame = 10
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
-		refinery = yes
-		value = 5
-		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
-		country_modifiers = {
-			modifiers = {
-				fuel_gain_from_states = 9.16 #per hour
-			}
-		}
-
-		level_cap = {
-			state_max = 3
-		}
-	}
-
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
@@ -294,6 +272,27 @@ buildings = {
 
 		level_cap = {
 			state_max = 6 # This is the max unlock level
+		}
+	}
+
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 8500
+		icon_frame = 10
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				fuel_gain_from_states = 9.16 #per hour
+			}
+		}
+
+		level_cap = {
+			state_max = 3
 		}
 	}
 
