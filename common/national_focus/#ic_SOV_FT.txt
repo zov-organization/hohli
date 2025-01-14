@@ -1416,7 +1416,7 @@ focus_tree = {
 	focus = {
 		id = SOV_back_land_destruction
 
-		icon = GFX_SOV_back_land_destruction
+		icon = GFX_generic_strati
 
 		prerequisite = { focus = SOV_strati }
 		relative_position_id = SOV_strati

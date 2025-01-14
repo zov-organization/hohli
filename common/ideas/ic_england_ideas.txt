@@ -32,7 +32,6 @@ ideas = {
 
 			modifier = {
 				experience_gain_army = 0.1
-				experience_gain_air = 0.05
 			}
 		}
 

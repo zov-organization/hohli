@@ -17,7 +17,7 @@ focus_tree = {
 
 		prerequisite = {  }
 
-		x = 16
+		x = 17
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -28,7 +28,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_spawn_civs
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_spawn_civs
 
 		prerequisite = { focus = ENG_initial_focus }
 		relative_position_id = ENG_initial_focus
@@ -57,7 +57,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_keeping_up_with_germans
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_keeping_up_with_germans
 
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_spawn_civs
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_industrial_heartland_of_the_empire
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_industrial_heartland_of_the_empire
 
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_spawn_civs
@@ -138,7 +138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_birmingham_small_arms_company
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_birmingham_small_arms_company
 
 		prerequisite = { focus = ENG_industrial_heartland_of_the_empire }
 		prerequisite = { focus = ENG_keeping_up_with_germans }
@@ -228,7 +228,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_raj
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_dev_raj
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
@@ -277,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_canada
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_dev_canada
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
@@ -306,12 +306,12 @@ focus_tree = {
 
 	focus = {
 		id = ENG_sea_is_our_speciality
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_air_carrier
 
 		prerequisite = { focus = ENG_initial_focus }
 		relative_position_id = ENG_initial_focus
 
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -333,13 +333,13 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_dockyards
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_dockyards
 
 		prerequisite = { focus = ENG_sea_is_our_speciality }
 		relative_position_id = ENG_sea_is_our_speciality
 
 		x = -1
-		y = 2
+		y = 1
 		cost = 5
 		completion_reward = {
 			130 = {
@@ -361,25 +361,82 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_heavy_ships
-		icon = GFX_goal_support_democracy
+		id = ENG_naval_guns
+		icon = GFX_focus_NOR_drobak_coastal_fort
 
 		prerequisite = { focus = ENG_dockyards }
 		relative_position_id = ENG_dockyards
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_naval_guns_light
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_light_battery
+			}
+			add_tech_bonus = {
+				name = ENG_naval_guns_medium
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_medium_battery
+			}
+			add_tech_bonus = {
+				name = ENG_naval_guns_heavy
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_heavy_battery
+			}
+		}
+	}
+	focus = {
+		id = ENG_heavy_ships
+		icon = GFX_focus_SWE_Vasa_II
+
+		prerequisite = { focus = ENG_naval_guns }
+		relative_position_id = ENG_naval_guns
 
 		x = -1
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_heavy_ships
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+		}
 	}
 	focus = {
 		id = ENG_light_ships
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SWE_Vasa_II
 
-		prerequisite = { focus = ENG_dockyards }
-		relative_position_id = ENG_dockyards
+		prerequisite = { focus = ENG_naval_guns }
+		relative_position_id = ENG_naval_guns
 
 		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_heavy_ships
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = ENG_navys_at_queens_command
+		icon = GFX_focus_SMB_blue_water_fleet
+
+		prerequisite = { focus = ENG_light_ships focus = ENG_heavy_ships }
+		relative_position_id = ENG_light_ships
+
+		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {}
@@ -393,7 +450,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_initial_focus }
 		relative_position_id = ENG_initial_focus
 
-		x = 5
+		x = 7
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -407,7 +464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_6_pounder
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SWE_let_fly_all_guns
 
 		prerequisite = { focus = ENG_british_army }
 		relative_position_id = ENG_british_army
@@ -425,14 +482,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_english_infantry_men
-		icon = GFX_goal_support_democracy
+		id = ENG_english_infantrymen
+		icon = GFX_ENG_english_infantrymen
 
-		prerequisite = { focus = ENG_6_pounder }
+		prerequisite = { focus = ENG_british_army }
 		relative_position_id = ENG_6_pounder
 
-		x = 0
-		y = 1
+		x = 2
+		y = 0
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
@@ -445,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fortification
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_fortifications
 
 		prerequisite = { focus = ENG_british_army }
 		relative_position_id = ENG_6_pounder
@@ -459,9 +516,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_french_military_cooperation
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_french_military_cooperation
 
 		prerequisite = { focus = ENG_6_pounder }
+		prerequisite = { focus = ENG_english_infantrymen }
 		prerequisite = { focus = ENG_fortification }
 		relative_position_id = ENG_6_pounder
 
@@ -481,7 +539,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_research_slot_focus
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_research_slot_focus
 
 		prerequisite = { focus = ENG_british_army }
 		prerequisite = { focus = ENG_sea_is_our_speciality }
@@ -489,24 +547,70 @@ focus_tree = {
 
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 
+	
 	focus = {
-		id = ENG_announce_competition_for_modern_figher
-		icon = GFX_goal_support_democracy
+		id = ENG_raf
+		icon = GFX_ENG_RAF_focus
 
 		prerequisite = { focus = ENG_british_army }
-		prerequisite = { focus = ENG_research_slot_focus }
 		relative_position_id = ENG_british_army
 
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = ENG_material_base_destruction_plane
+		icon = GFX_ENG_material_base_destruction_plane
+
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_raf
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 1
+				uses = 1
+				technology = basic_medium_airframe
+			}
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 1
+				uses = 1
+				technology = basic_large_airframe
+			}
+		}
+	}
+	focus = {
+		id = ENG_announce_competition_for_modern_figher
+		icon = GFX_ENG_announce_competition_for_modern_figher
+
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_raf
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 0.75
+				uses = 1
+				technology = improved_small_airframe
+			}
+		}
 	}
 	focus = {
 		id = ENG_joint_air_exercises
@@ -523,32 +627,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_indiscriminate_bombing_policy
-		icon = GFX_goal_support_democracy
+		icon = GFX_generic_strati
 
-		prerequisite = { focus = ENG_research_slot_focus }
-		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
-		relative_position_id = ENG_announce_competition_for_modern_figher
+		prerequisite = { focus = ENG_material_base_destruction_plane }
+		relative_position_id = ENG_material_base_destruction_plane
 
-		x = -2
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
 			add_ideas = ic_SOV_indiscriminate_bombing_policy
 		}
-	}
-
-	focus = {
-		id = ENG_naval_guns
-		icon = GFX_goal_support_democracy
-
-		prerequisite = { focus = ENG_sea_is_our_speciality }
-		prerequisite = { focus = ENG_research_slot_focus }
-		relative_position_id = ENG_dockyards
-
-		x = 2
-		y = 0
-		cost = 5
-		completion_reward = {}
 	}
 
 }
