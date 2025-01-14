@@ -1,11 +1,7 @@
 spriteTypes = {	
 
 	### categories
-	
-	spriteType = {
-		name = "GFX_decision_cat_picture_ic_pp_waste"
-		texturefile = "gfx/interface/decisions/decision_cat_pp_waste_decisions.dds"
-	}
+
 	spriteType = {
 		name = "GFX_decision_cat_picture_SOV_forts"
 		texturefile = "gfx/interface/decisions/decision_cat_picture_SOV_forts.dds"
