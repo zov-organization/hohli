@@ -510,7 +510,7 @@
 
 	focus = {
 		id = GER_ural_bomber
-		icon = GFX_SOV_back_land_destruction
+		icon = GFX_generic_strati
 
 		prerequisite = { focus = GER_ju_87_stuka }
 		relative_position_id = GER_ju_87_stuka

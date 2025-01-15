@@ -160,7 +160,8 @@ ic_progon_mode = {
 
         cost = 0
 
-        complete_effect = {
+        days_remove = 70
+        remove_effect = {
             GER = {
                 complete_national_focus = GER_anshluss
             }
@@ -181,8 +182,9 @@ ic_progon_mode = {
         priority = 1
 
         cost = 0
-
-        complete_effect = {
+        
+        days_remove = 70
+        remove_effect = {
             GER = {
                 complete_national_focus = GER_sudetenland
                 complete_national_focus = GER_cze_annex
@@ -204,8 +206,9 @@ ic_progon_mode = {
         priority = 1
 
         cost = 0
-
-        complete_effect = {
+        
+        days_remove = 70
+        remove_effect = {
             GER = {
                 complete_national_focus = GER_expand_lebensraum
                 complete_national_focus = GER_fra_cap
@@ -237,8 +240,9 @@ ic_progon_mode = {
         priority = 1
 
         cost = 0
-
-        complete_effect = {
+        
+        days_remove = 70
+        remove_effect = {
             GER = {
                 HOL = {
 				    every_core_state = {
