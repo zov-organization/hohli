@@ -144,6 +144,27 @@ ic_helpful_tips = {
 ic_progon_mode = {
     
 
+    ic_progon_mode_blumen_kriege = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {}
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        days_remove = 35
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_blumen_kriege
+            }
+        }
+    }
     ic_progon_mode_aus = {
 
         icon = GFX_decision_generic_wreckers

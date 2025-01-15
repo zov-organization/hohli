@@ -15,6 +15,8 @@
 
 
   ic_progon_mode:0 "§HPROGON MODE§"
+  ic_progon_mode_blumen_kriege:0 "progon thingy for Blumen Kriege focus"
+  ic_progon_mode_blumen_kriege_desc:0 "typically GER would do this focus right before Anschluß itself"
   ic_progon_mode_aus:0 "progon thingy for AUS annex"
   ic_progon_mode_cze:0 "progon thingy for CZE annex"
   ic_progon_mode_pol:0 "progon thingy for WW2 start"
