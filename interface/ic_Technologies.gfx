@@ -1,0 +1,113 @@
+spriteTypes = {	
+
+	# SOV TANK RESEARCH
+
+	SpriteType = {
+		name = "GFX_sov_engine_tech_1_medium"
+		texturefile = "gfx/interface/technologies/nsb_engine_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_engine_tech_2_medium"
+		texturefile = "gfx/interface/technologies/nsb_engine_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_engine_tech_3_medium"
+		texturefile = "gfx/interface/technologies/nsb_engine_tech_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_engine_tech_4_medium"
+		texturefile = "gfx/interface/technologies/nsb_engine_tech_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_armor_tech_1_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_armor_tech_2_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_armor_tech_3_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_armor_tech_4_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_amphibious_drive_medium"
+		texturefile = "gfx/interface/technologies/nsb_amphibious_drive_tech.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_gwtank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
+	}
+
+	# EVERYONES TANK RESEARCH
+	
+	SpriteType = {
+		name = "GFX_final_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/generic_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_final_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/generic_medium_tank_chassis_3.dds"
+	}
+
+}
