@@ -1,3 +1,12 @@
 ﻿l_english:
  nsb_sov_armour_folder:0 "Armor"
  nsb_sov_armour_folder_desc:0 "Tanks and their variants."
+
+ tech_flamethrower_sppt:0 "Flamethrower Company I"
+ tech_flamethrower_sppt_desc:0 "Flamethrower squads provide a firey solution to fortifications, armor, and machine gun nests."
+ tech_flamethrower_sppt2:0 "Flamethrower Company II"
+ tech_flamethrower_sppt2_desc:0 "Division drills creates cohesion within the Division."
+ tech_flamethrower_sppt3:0 "Flamethrower Company III"
+ tech_flamethrower_sppt3_desc:0 "Improved weapons increases combat effectiveness."
+ tech_flamethrower_sppt4:0 "Flamethrower Company IV"
+ tech_flamethrower_sppt4_desc:0 "Advanced training provides the strategic edge."

@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	SpriteType = {
+        name = "GFX_SOV_heavy_tank_equipment_1_medium"
+        texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+    }
+	SpriteType = {
+        name = "GFX_SOV_heavy_tank_equipment_2_medium"
+        texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+    }
+	SpriteType = {
+        name = "GFX_SOV_heavy_tank_equipment_3_medium"
+        texturefile = "gfx/interface/technologies/heavy_is-2_43.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_SOV_medium_tank_equipment_2_medium"
+        texturefile = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+    }
+	SpriteType = {
+        name = "GFX_SOV_medium_tank_equipment_3_medium"
+        texturefile = "gfx/interface/technologies/medium_t-34-85_43_3.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_SOV_gw_tank_equipment_medium"
+        texturefile = "gfx/interface/technologies/SOV_gwtank.dds"
+    }
+	SpriteType = {
+        name = "GFX_SOV_light_tank_equipment_1_medium"
+        texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+    }
+	SpriteType = {
+        name = "GFX_SOV_light_tank_equipment_2_medium"
+        texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+    }
+}
