@@ -206,9 +206,8 @@ ic_progon_mode = {
         priority = 1
 
         cost = 0
-        
-        days_remove = 70
-        remove_effect = {
+
+        complete_effect = {
             GER = {
                 complete_national_focus = GER_expand_lebensraum
                 complete_national_focus = GER_fra_cap
@@ -240,9 +239,8 @@ ic_progon_mode = {
         priority = 1
 
         cost = 0
-        
-        days_remove = 70
-        remove_effect = {
+
+        complete_effect = {
             GER = {
                 HOL = {
 				    every_core_state = {
