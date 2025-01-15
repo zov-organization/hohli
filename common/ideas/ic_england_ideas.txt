@@ -14,6 +14,7 @@ ideas = {
 			}
 			
 			modifier = {
+				war_support_factor = 0.06
 				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.08
 			}

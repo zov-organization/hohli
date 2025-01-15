@@ -218,9 +218,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		completion_reward = {
+			add_ideas = ic_ENG_commonwealth_buff
 			ENG = {
 				every_allied_country = {
-					add_war_support = 0.06
 					add_ideas = ic_ENG_commonwealth_buff
 				}
 			}
