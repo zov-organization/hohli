@@ -10,7 +10,7 @@ spriteTypes = {
     }
 	SpriteType = {
         name = "GFX_SOV_heavy_tank_equipment_3_medium"
-        texturefile = "gfx/interface/technologies/heavy_is-2_43.dds"
+        texturefile = "gfx/interface/technologies/SOV tanks/heavy_is-2_43.dds"
     }
 
 	SpriteType = {
@@ -19,7 +19,7 @@ spriteTypes = {
     }
 	SpriteType = {
         name = "GFX_SOV_medium_tank_equipment_3_medium"
-        texturefile = "gfx/interface/technologies/medium_t-34-85_43_3.dds"
+        texturefile = "gfx/interface/technologies/SOV tanks/medium_t-34-85_43_3.dds"
     }
 
 	SpriteType = {

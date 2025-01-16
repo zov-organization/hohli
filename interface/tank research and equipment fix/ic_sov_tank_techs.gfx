@@ -36,7 +36,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_sov_amphibious_drive_medium"
-		texturefile = "gfx/interface/technologies/nsb_amphibious_drive_tech.dds"
+		texturefile = "gfx/interface/technologies/SOV_amphibious_tank_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_gwtank_chassis_medium"
@@ -64,7 +64,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_sov_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/medium_t-34-85_43_3.dds"
+		texturefile = "gfx/interface/technologies/SOV tanks/medium_t-34-85_43_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_basic_heavy_tank_chassis_medium"
@@ -76,7 +76,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_sov_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/heavy_is-2_43.dds"
+		texturefile = "gfx/interface/technologies/SOV tanks/heavy_is-2_43.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_super_heavy_tank_chassis_medium"
@@ -85,10 +85,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_sov_main_battle_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_sov_amphibious_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/SOV_amphibious_tank_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_final_medium_tank_chassis_medium"
