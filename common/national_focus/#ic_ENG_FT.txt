@@ -72,6 +72,14 @@ focus_tree = {
 				uses = 3
 				category = industry
 			}
+			338 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -86,51 +94,51 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			125 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			126 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			127 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			128 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			129 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			338 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 			123 = {
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -148,59 +156,35 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			125 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			126 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			127 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			125 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 			}
 			128 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			129 = {
-				add_extra_state_shared_building_slots = 5
+			126 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			338 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			123 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -238,7 +222,21 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			433 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ENG_australia
@@ -250,20 +248,46 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			674 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ENG_malaya_resources_base
 		icon = GFX_goal_support_democracy
 
-		prerequisite = { focus = ENG_australia }
-		prerequisite = { focus = ENG_raj }
+		prerequisite = { focus = ENG_australia focus = ENG_raj }
 		relative_position_id = ENG_australia
 
 		x = -1
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			336 = {
+				add_resource = {
+					type = rubber
+					amount = 300
+					state = THIS
+				}
+				add_resource = {
+					type = tungsten
+					amount = 200
+					state = THIS
+				}
+			}
+		}
 	}
 	focus = {
 		id = ENG_saf
@@ -275,7 +299,21 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			719 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ENG_canada
@@ -287,7 +325,21 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			276 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	
@@ -296,13 +348,16 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 
 		prerequisite = { focus = ENG_birmingham_small_arms_company }
-		prerequisite = { focus = ENG_saf focus = ENG_canada focus = ENG_malaya_resources_base }
+		prerequisite = { focus = ENG_malaya_resources_base }
+		prerequisite = { focus = ENG_saf focus = ENG_canada }
 		relative_position_id = ENG_birmingham_small_arms_company
 
 		x = -2
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			add_ideas = ic_ENG_shadow_scheme_idea
+		}
 	}
 
 
@@ -625,7 +680,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			add_ideas = ic_ENG_joint_air_exercises_idea
+		}
 	}
 	focus = {
 		id = ENG_indiscriminate_bombing_policy

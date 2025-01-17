@@ -5,7 +5,7 @@ set_naval_oob = "ic_ENG_1936_fleet"
 
 
 
-set_research_slots = 4
+set_research_slots = 3
 navy_experience = 0
 
 set_convoys = 800
@@ -46,7 +46,6 @@ create_country_leader = {
 	id = -1
 }
 
-recruit_character = ic_ENG_philip_kerr
 recruit_character = ic_ENG_alan_turing
 recruit_character = ic_ENG_leslie_hore_belisha
 recruit_character = ic_ENG_maxwell_aitken
@@ -84,7 +83,6 @@ set_technology = {
 
 	tech_support = 1
 	tech_engineers = 1
-	tech_military_police = 1
 	basic_train = 1
 
 	gwtank_chassis = 1
@@ -106,10 +104,25 @@ set_technology = {
 	fuel_refining = 1
 
 	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
 	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
 	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
 	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_light_shell = 1
+	basic_medium_battery = 1
+	basic_medium_shell = 1
+	basic_heavy_battery = 1
+	basic_heavy_shell = 1
+	basic_torpedo = 1
+	mtg_transport = 1
 }
 
 

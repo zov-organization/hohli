@@ -16,18 +16,6 @@ spriteTypes = {
 		noOfFrames = 18
 	}
 
-	spriteType = {
-		name = "GFX_idea_ic_gray_wolf"
-		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
-	}	
-	spriteType = {
-		name = "GFX_idea_ic_gray_wolf_golden_times"
-		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
-	}	
-	spriteType = {
-		name = "GFX_idea_ic_gray_wolf_its_over"
-		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
-	}
 
 	spriteType = {
 		name = "GFX_idea_ic_SOV_trotskyite_plot"
@@ -207,6 +195,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_gray_wolf"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_golden_times"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_its_over"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_ss_idea"
 		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
 	}
@@ -221,5 +221,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ic_ural_bomber"
 		texturefile = "gfx/interface/ideas/GER/ic_ural_bomber.dds"
+	}
+
+
+	
+	spriteType = {
+		name = "GFX_idea_ic_ENG_commonwealth_buff"
+		texturefile = "gfx/interface/ideas/idea_SOV_organize_wreckers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_french_military_cooperation_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_army_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_joint_air_exercises_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_airforce_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
 	}
 }
