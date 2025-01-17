@@ -5,6 +5,7 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 -- Diplomacy
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
+NDefines.NDiplomacy.WAR_SUPPORT_TENSION_IMPACT = 0.5
 
 -- Country
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
