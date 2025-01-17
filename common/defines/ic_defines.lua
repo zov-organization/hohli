@@ -81,6 +81,8 @@ NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4
 NDefines.NPolitics.ARMY_LEADER_COST = 1
 NDefines.NPolitics.NAVY_LEADER_COST = 1
 
+NDefines.NBuildings.MAX_SHARED_SLOTS = 50
+
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 6
 
 -- Military

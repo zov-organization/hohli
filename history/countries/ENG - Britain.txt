@@ -1,4 +1,9 @@
 capital = 126
+load_focus_tree = british_focus
+oob = "ic_ENG_1936_army"
+set_naval_oob = "ic_ENG_1936_fleet"
+
+
 
 set_research_slots = 4
 navy_experience = 0
@@ -8,17 +13,17 @@ set_convoys = 800
 set_stability = 0.8
 set_war_support = 0.1
 
+set_popularities = {
+	democratic = 98
+	fascism = 1
+	communism = 1
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
 }
 
 create_faction = Allies
@@ -105,4 +110,118 @@ set_technology = {
 	early_ship_hull_heavy = 1
 	early_ship_hull_carrier = 1
 	early_ship_hull_submarine = 1
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+
+create_equipment_variant = {
+	name = "Hawker Hurricane"
+	type = small_plane_airframe_1
+	design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_2_1x
+	}
+}
+create_equipment_variant = {
+	name = "Hawker Typhoon"
+	type = small_plane_cas_airframe_1
+	design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = dive_brakes_small
+	}
+}
+create_equipment_variant = {
+	name = "Fairey Gordon"
+	type = small_plane_naval_bomber_airframe_1
+	#design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = floats
+		special_type_slot_2 = lmg_defense_turret
+	}	
+}
+
+add_equipment_to_stockpile = {
+	type = gw_tank_equipment
+	amount = 200
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 15000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 25000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 300
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 500
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 750
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 200
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 100
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_airframe_1
+	amount = 300
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_cas_airframe_1
+	amount = 100
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_naval_bomber_airframe_1
+	amount = 100
+	producer = ENG
 }

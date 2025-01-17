@@ -20,6 +20,8 @@ state={
 			3150 1 #Dundee
 		}
 		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
 			infrastructure = 3 #was: 6
 			dockyard = 2
 		}
