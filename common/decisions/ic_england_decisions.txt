@@ -3,12 +3,10 @@ ENG_forts_category = {
 	ENG_gibraltar_forts = {
         icon = GFX_decision_generic_fortification
         fire_only_once = yes
-        days_remove = 10
-        modifier = {
-            civilian_factory_use = 6
-        }
+        days_remove = 30
+		cost = 20
 		highlight_states = {
-			highlight_provinces = { 4135 }
+			highlight_provinces = { 4135 13228 }
 		}
         remove_effect = {
             118 = {
@@ -19,6 +17,288 @@ ENG_forts_category = {
 					instant_build = yes
 				}
 			}
+            118 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 13228
+					instant_build = yes
+				}
+			}
+            118 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
         }
     }
+
+	ENG_malta_forts = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 30
+		cost = 20
+		highlight_states = {
+			highlight_provinces = { 12003 }
+		}
+        remove_effect = {
+            116 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 12003
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	ENG_suez_forts = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 30
+		cost = 20
+		highlight_states = {
+			highlight_provinces = { 9989 1071 4076 }
+		}
+        remove_effect = {
+            452 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 9989
+					instant_build = yes
+				}
+			}
+            447 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1071
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 4076
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	ENG_syria_forts = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 30
+		cost = 10
+		highlight_states = {
+			highlight_provinces = { 4206 792 }
+		}
+        remove_effect = {
+            454 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 4206
+					instant_build = yes
+				}
+			}
+            553 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 792
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	ENG_prep_egypt = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 60
+		cost = 50
+		highlight_states = {
+			highlight_state_targets = {
+				state = 452
+				state = 447
+				state = 907
+				state = 456
+				state = 457
+			}
+		}
+        remove_effect = {
+            452 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11910
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1901
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7148
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12816
+					instant_build = yes
+				}
+			}
+            447 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 1071
+					instant_build = yes
+				}
+			}
+            907 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1958
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12733
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12082
+					instant_build = yes
+				}
+			}
+            456 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+            457 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+	ENG_prep_malaya = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 60
+		cost = 50
+		highlight_states = {
+			highlight_provinces = { 7329 4310 7342 1376 4384 12255 12271 }
+		}
+        remove_effect = {
+            336 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 7329
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 10297
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 12299
+					instant_build = yes
+				}
+
+
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7329
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4310
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7342
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1376
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4384
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12255
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12271
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+        }
+    }
+
 }

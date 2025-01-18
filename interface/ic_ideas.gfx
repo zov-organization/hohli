@@ -238,6 +238,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_NORDIC_airforce_communist.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_ENG_queens_navy_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_navy_communist.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
 		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
 	}
