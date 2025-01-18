@@ -46,6 +46,7 @@ create_country_leader = {
 	id = -1
 }
 
+recruit_character = ic_ENG_philip_kerr
 recruit_character = ic_ENG_alan_turing
 recruit_character = ic_ENG_leslie_hore_belisha
 recruit_character = ic_ENG_maxwell_aitken
@@ -143,7 +144,7 @@ create_equipment_variant = {
 	type = small_plane_cas_airframe_1
 	design_team = mio:ENG_supermarine_organization
 	modules = {
-		fixed_main_weapon_slot = bomb_locks
+		fixed_main_weapon_slot = tank_buster_1
 		engine_type_slot = engine_2_1x
 		special_type_slot_1 = lmg_defense_turret
 		special_type_slot_2 = dive_brakes_small
