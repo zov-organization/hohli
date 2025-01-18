@@ -1071,32 +1071,14 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
-			build_cost_ic = 9
-			air_agility = -15
-			weight = 2
+			air_bombing = 40
+
+			build_cost_ic = 6
+			weight = 1
 		}
-		xp_cost = 2
+		xp_cost = 1
 		allow_mission_type = {
 			strategic_bomber
-			port_strike
-		}
-		mission_type_stats = {
-			limit = {
-				strategic_bomber
-			}
-			add_stats = {
-				air_bombing = 15
-				weight = 8
-			}
-		}
-		mission_type_stats = {
-			limit = {
-				port_strike
-			}
-			add_stats = {
-				naval_strike_attack = 2
-				weight = 8
-			}
 		}
 		dismantle_cost_ic = 12
 	}
@@ -1617,9 +1599,6 @@ equipment_modules = {
 			build_cost_ic = 5
 			weight = 9
 		}
-		multiply_stats = {
-			air_range = -0.1
-		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
 	}
@@ -1772,25 +1751,13 @@ equipment_modules = {
 		category = plane_special_module_air_ground_radar
 		gui_category = plane_special_module_electronics
 		sfx = sfx_ui_sd_module_turret
-
+		
 		add_stats = {
-				build_cost_ic = 2
-				weight = 2
-			}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-			}
-			add_stats = {
-				air_bombing = 4
-				night_penalty = -0.3
-				surface_detection = 10
-				sub_detection = 5
-			}
+			build_cost_ic = 3
+			weight = 1
+		}
+		multiply_stats = {
+			air_bombing = 0.1
 		}
 		xp_cost = 1
 	}
@@ -1803,23 +1770,11 @@ equipment_modules = {
 		parent = air_ground_radar_1
 
 		add_stats = {
-				build_cost_ic = 3.5
-				weight = 2
+			build_cost_ic = 3.5
+			weight = 1
 		}
-
-		mission_type_stats = {
-			limit = {
-				naval_bomber
-				port_strike
-				strategic_bomber
-				naval_patrol
-			}
-			add_stats = {
-				air_bombing = 6
-				night_penalty = -0.4
-				surface_detection = 20
-				sub_detection = 10
-			}
+		multiply_stats = {
+			air_bombing = 0.2
 		}
 		xp_cost = 1
 	}

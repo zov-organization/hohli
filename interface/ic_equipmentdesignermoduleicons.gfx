@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMSI_defencive_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/module_slots/icons/defencive_turret_slot.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_radar_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/radar.dds"
+	}
+}
