@@ -1,0 +1,435 @@
+characters={
+
+	ic_ENG_alan_turing={
+		name=ENG_alan_turing
+		portraits={
+			army={
+				small="GFX_idea_eng_alan_turing"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_ENG_alan_turing
+			traits  = {
+				technocrat
+			}
+		}
+	}
+	
+	ic_ENG_leslie_hore_belisha={
+		name=ENG_leslie_hore_belisha
+		portraits={
+			army={
+				small="GFX_idea_ENG_leslie_hore_belisha"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_ENG_leslie_hore_belisha
+			traits  = {
+				captain_of_industry
+			}
+		}
+	}
+	
+	ic_ENG_maxwell_aitken={
+		name=ENG_maxwell_aitken
+		portraits={
+			army={
+				small="GFX_idea_ENG_maxwell_aitken"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_ENG_maxwell_aitken
+			traits  = {
+				war_industrialist 
+			}
+		}
+	}
+
+	ic_ENG_ernest_bevin={
+		name=ENG_ernest_bevin
+		portraits={
+			army={
+				small="GFX_idea_ENG_ernest_bevin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_ENG_ernest_bevin
+			traits  = {
+				quartermaster_general 
+			}
+		}
+	}
+
+
+
+
+	ic_ENG_hugh_dowding={
+		name=ENG_hugh_dowding
+		portraits={
+			army={
+				small="GFX_idea_hugh_dowding"
+			}
+		}
+		advisor={
+			cost = 75
+			slot = theorist
+			idea_token = ic_ENG_hugh_dowding
+			ledger = air
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	ic_ENG_arthur_harris={
+		name=ENG_arthur_harris
+		portraits={
+			army={
+				small="GFX_idea_arthur_harris"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ic_ENG_arthur_harris
+			ledger = air
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+
+	ic_ENG_bernard_montgomery={
+		name=ENG_bernard_montgomery
+		portraits={
+			army={
+				small="GFX_idea_bernard_montgomery"
+			}
+			army={
+				large=GFX_portrait_ENG_bernard_montgomery
+			}
+		}
+		advisor={
+			cost = 75
+			slot = theorist
+			idea_token = ic_ENG_bernard_montgomery
+			ledger = army
+			traits = {
+				military_theorist
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=996
+		}
+	}
+	
+	ic_ENG_harold_alexander={
+		name=ENG_harold_alexander
+		portraits={
+			army={
+				small="GFX_idea_harold_alexander"
+			}
+			army={
+				large=GFX_portrait_ENG_harold_alexander
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ic_ENG_harold_alexander
+			ledger = army
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=995
+		}
+	}
+
+
+
+
+
+	ic_ENG_alan_brooke={
+		name=ENG_alan_brooke
+		portraits={
+			army={
+				small="GFX_idea_alan_brooke"
+			}
+			army={
+				large=GFX_portrait_ENG_alan_brooke
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_ENG_alan_brooke
+			traits = {
+				army_chief_maneuver_3
+			}
+			cost = 100
+		}
+		
+		field_marshal={
+			traits={ career_officer trait_cautious defensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=997
+		}
+	}
+	
+	ic_ENG_john_vereker={
+		name=ENG_john_vereker
+		portraits={
+			army={
+				large=GFX_portrait_ENG_john_vereker
+				small="GFX_idea_john_vereker"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_ENG_john_vereker
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+		}
+
+		corps_commander={
+			traits={ trait_cautious politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=994
+		}
+	}
+	
+	ic_ENG_edmund_ironside={
+		name=ENG_edmund_ironside
+		portraits={
+			army={
+				small="GFX_idea_edmund_ironside"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_ENG_edmund_ironside
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+		}
+	}
+
+
+
+
+	ic_ENG_andrew_cunningham={
+		name=ENG_andrew_cunningham
+		portraits={
+			navy={
+				small="GFX_idea_andrew_cunningham"
+			}
+			army={
+				large=GFX_portrait_ENG_andrew_cunningham
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_ENG_andrew_cunningham
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 100
+		}
+		
+		navy_leader={
+			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=985
+		}
+	}
+	
+	ic_ENG_ernle_chatfield={
+		name=ENG_ernle_chatfield
+		portraits={
+			army={
+				small="GFX_idea_ernle_chatfield"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_ENG_ernle_chatfield
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_ENG_dudley_pound={
+		name=ENG_dudley_pound
+		portraits={
+			army={
+				small="GFX_idea_dudley_pound"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_ENG_dudley_pound
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+		}
+	}
+
+
+
+
+	ic_ENG_cyril_newall={
+		name=ENG_cyril_newall
+		portraits={
+			army={
+				small="GFX_idea_cyril_newall"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ic_ENG_cyril_newall
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_ENG_charles_portal={
+		name=ENG_charles_portal
+		portraits={
+			army={
+				small="GFX_idea_charles_portal"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ic_ENG_charles_portal
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_ENG_edward_ellington={
+		name=ENG_edward_ellington
+		portraits={
+			army={
+				small="GFX_idea_edward_ellington"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ic_ENG_edward_ellington
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+		}		
+	}
+
+
+
+
+	ic_ENG_kenneth_anderson={
+		name=ENG_kenneth_anderson
+		portraits={
+			army={
+				small="GFX_idea_kenneth_anderson"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_ENG_kenneth_anderson
+			ledger = army
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+	}
+
+	ic_ENG_henry_harwood={
+		name=ENG_henry_harwood
+		portraits={
+			navy={
+				small="GFX_idea_henry_harwood"
+			}
+			army={
+				large=GFX_portrait_ENG_henry_harwood
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_ENG_henry_harwood
+			ledger = navy
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+		}
+		
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=984
+		}
+	}
+	
+	ic_ENG_sholto_douglas={
+		name=ENG_sholto_douglas
+		portraits={
+			army={
+				small="GFX_idea_sholto_douglas"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ic_ENG_sholto_douglas
+			ledger = air
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+		}
+	}
+}

@@ -986,6 +986,10 @@
 				transfer_troops = yes
 			}
 			add_war_support = 0.2
+			add_named_threat = {
+				threat = 15
+				name = GER_anshluss
+			}
 		}
 	}
 
@@ -1005,6 +1009,10 @@
 			74 = { add_core_of = GER }
 			69 = { add_core_of = GER }
 			add_war_support = 0.2
+			add_named_threat = {
+				threat = 15
+				name = GER_sudetenland
+			}
 		}
 	}
 
@@ -1042,6 +1050,10 @@
 				71 = { add_core_of = HUN }
 			}
 			add_war_support = 0.2
+			add_named_threat = {
+				threat = 20
+				name = GER_cze_annex
+			}
 
 			SOV = {
 				swap_ideas = {

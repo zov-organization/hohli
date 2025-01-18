@@ -1,0 +1,72 @@
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######  
+
+
+
+ENG_harland_wolff_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_harland_wolff
+	
+	allowed = {	
+		tag = ENG
+	}
+}
+
+########  ##          ###    ##    ## ########  ######  
+##     ## ##         ## ##   ###   ## ##       ##    ## 
+##     ## ##        ##   ##  ####  ## ##       ##       
+########  ##       ##     ## ## ## ## ######    ######  
+##        ##       ######### ##  #### ##             ## 
+##        ##       ##     ## ##   ### ##       ##    ## 
+##        ######## ##     ## ##    ## ########  ######  
+
+
+ENG_supermarine_organization = {
+	include = ic_generic_light_aircraft_organization
+	icon = GFX_idea_supermarine
+	
+	allowed = {	
+		tag = ENG
+	}
+}
+
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
+
+ENG_rsaf_enfield_organization = {
+	include = ic_generic_infantry_equipment_organization
+	icon = GFX_idea_rsaf_enfield
+
+	allowed = {	
+		tag = ENG 
+	}
+}
+
+
+ENG_royal_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_royal_arsenal
+	allowed = {
+		tag = ENG
+	}
+}
+
+ENG_vauxhall_automotive_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_vauxhall
+	name = ENG_vauxhall_organization
+	
+	allowed = {	
+		tag = ENG
+	}
+}
