@@ -193,7 +193,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_reinforce_commonwealth
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_reinforce_commonwealth
 
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_keeping_up_with_germans
@@ -240,7 +240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_australia
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_australia
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_malaya_resources_base
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_malaya_resources_base
 
 		prerequisite = { focus = ENG_australia focus = ENG_raj }
 		relative_position_id = ENG_australia
@@ -278,7 +278,7 @@ focus_tree = {
 			336 = {
 				add_resource = {
 					type = rubber
-					amount = 300
+					amount = 250
 					state = THIS
 				}
 				add_resource = {
@@ -286,12 +286,29 @@ focus_tree = {
 					amount = 200
 					state = THIS
 				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			333 = {
+				add_resource = {
+					type = aluminium
+					amount = 300
+					state = THIS
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 	}
 	focus = {
 		id = ENG_saf
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_saf
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
@@ -345,7 +362,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_shadow_scheme
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_shadow_scheme
 
 		prerequisite = { focus = ENG_birmingham_small_arms_company }
 		prerequisite = { focus = ENG_malaya_resources_base }
@@ -673,7 +690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_joint_air_exercises
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_joint_air_exercises
 
 		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
 		prerequisite = { focus = ENG_french_military_cooperation }

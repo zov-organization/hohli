@@ -1087,30 +1087,39 @@
 		y = 1
 		cost = 0.2
 		completion_reward = {
-			
-			set_power_balance = {
-				id = GER_balance_of_powers
-				left_side = GER_bad_side
-				right_side = GER_good_side
-				set_value = 0.99
-			}
+			GER = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
 
-			declare_war_on = {
-				target = POL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = ENG
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = FRA
-				type = annex_everything
+				remove_ideas = ic_mefo_bills
+
+				set_power_balance = {
+					id = GER_balance_of_powers
+					left_side = GER_bad_side
+					right_side = GER_good_side
+					set_value = 0.99
+				}
+
 			}
 			SPR = {
 				remove_ideas = NoTradeback
 			}
-			remove_ideas = ic_mefo_bills
+			ENG = {
+				remove_ideas = {
+					ic_ENG_joint_air_exercises_idea
+					ic_ENG_shadow_scheme_idea
+				}
+			}
 		}
 	}
 	

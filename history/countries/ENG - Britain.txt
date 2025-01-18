@@ -41,7 +41,6 @@ create_country_leader = {
 	name = ENG_stanley_baldwin
 	picture = "GFX_portrait_ENG_stanley_baldwin"
 	ideology=liberalism
-	expire="1938.1.1.1"
 	traits={ conservative_grandee }
 	id = -1
 }
