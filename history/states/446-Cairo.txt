@@ -5,32 +5,7 @@ state = {
 	state_category = wasteland
 
 	history = {
-
-		owner = ENG
-		
-
-		buildings = {
-			infrastructure = 3
-			
-			12049 = {
-				naval_base = 2
-			}
-			4073 = {
-				naval_base = 1
-			}
-
-		}
-		
-		victory_points = {
-			12049 5 
-		}
-		
-		victory_points = {
-			4073 3 
-		}
-
 	}
-
 	provinces = {
 		  1961
 	}
