@@ -4,10 +4,8 @@ sp_nuclear_reactor = {
 	complexity = sp_complexity.large 
 
 	project_tags = sp_tag_nuclear_power
-
-	allowed = {
-		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	available = { 
 		FROM = { has_tech = atomic_research }
 	}
@@ -272,9 +270,7 @@ sp_commercial_nuclear_reactor = {
 	resource_cost = {
 		resources = { steel=6 tungsten=4 chromium=7 }
 	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	available = { 
 		FROM = {
 			has_tech = construction4
@@ -416,9 +412,7 @@ sp_nuclear_engines = {
 	special_project_parent = {
 		sp_commercial_nuclear_reactor
 	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	available = { 
 		
 	}
@@ -471,9 +465,7 @@ sp_nuclear_bomb = {
 	special_project_parent = {
 		sp_nuclear_reactor
 	}
-	allowed = {
-		
-	}
+	allowed = { hidden_trigger = { always = no } }
 	available = { 
 		
 	}
@@ -690,9 +682,7 @@ sp_thermo_nuclear_bomb = {
 	special_project_parent = {
 		sp_nuclear_bomb
 	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	available = { 
 		
 	}
@@ -793,9 +783,7 @@ sp_nuclear_warheads = {
 		# Country must have Medium range ballistic missiles to be able to start this project
 		sp_rockets_medium_range_ballistic_missile
 	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	available = {
 	}
 	

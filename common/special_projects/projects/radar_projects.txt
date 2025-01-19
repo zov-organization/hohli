@@ -12,6 +12,8 @@ sp_air_radar = {
 	}
 
 	project_tags = sp_tag_radar
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = { has_tech = electronic_mechanical_engineering }

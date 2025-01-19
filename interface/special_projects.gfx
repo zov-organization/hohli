@@ -1,0 +1,20 @@
+spriteTypes = {
+	
+	spriteType = { 
+		name = "GFX_ic_sp_aa_hmg"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_aa_hmg.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_aa_cannon_1"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_aa_cannon_1.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_aa_cannon_3"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_aa_cannon_3.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_sov_ptab"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_sov_ptab.dds"
+	}
+
+}

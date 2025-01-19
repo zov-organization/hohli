@@ -18,9 +18,8 @@ sp_naval_cruiser_submarine = {
 	
 	complexity = sp_complexity.medium
 	prototype_time = sp_time.prototype.medium 
-	allowed = {
-		#FREE PROJECT
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		
@@ -178,10 +177,8 @@ sp_naval_fleet_submarine = {
 	
 
 	project_tags = sp_tag_submarine
-
-	allowed = {
-		#FREE PROJECT
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	complexity = sp_complexity.medium
 	prototype_time = sp_time.prototype.long
@@ -364,9 +361,7 @@ sp_naval_nuclear_submarine = {
 
 	complexity = sp_complexity.insane
 	prototype_time = sp_time.prototype.long	
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		sp_naval_fleet_submarine
@@ -554,9 +549,7 @@ sp_naval_rocket_launching_submarine = {
 	}	
 	complexity = sp_complexity.medium 
 	prototype_time = sp_time.prototype.long
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		sp_naval_fleet_submarine
@@ -745,9 +738,7 @@ sp_naval_nuclear_missile_submarine = {
 	}	
 	complexity = sp_complexity.large 
 	prototype_time = sp_time.prototype.very_long 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		sp_naval_nuclear_submarine
@@ -921,13 +912,8 @@ sp_naval_nuclear_torpedo = {
 	
 	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.long
-
-	allowed = {
-		AND = {
-			has_dlc= "Gotterdammerung"
-			has_dlc = "Man the Guns"
-		}
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 		FROM = { has_tech = modern_ship_torpedo_launcher }
@@ -1040,10 +1026,8 @@ sp_naval_midget_submarine = {
 	project_tags = {
 		sp_tag_submarine
 	}
-
-	allowed = {
-		#FREE
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = { 
 		FROM = {
@@ -1307,10 +1291,8 @@ sp_naval_aip_engine = {
 		sp_tag_surface_ship
 		sp_tag_submarine
 	}
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = { 
 		FROM = {
@@ -1467,10 +1449,8 @@ sp_naval_anechoic_tiles = {
 
 	project_tags = sp_tag_submarine
 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = { 
 		FROM = {
@@ -1632,10 +1612,8 @@ sp_naval_torpedo_cruiser = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		#FREE
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	available = {
 		FROM = {
 			if = {
@@ -1822,10 +1800,8 @@ sp_naval_super_heavy_battleship = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		#FREE
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = {
 		FROM = {
@@ -2170,10 +2146,8 @@ sp_naval_modern_battleship = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-	has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 		FROM = {
@@ -2509,10 +2483,8 @@ sp_naval_modern_carrier = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 		FROM = {
@@ -2841,10 +2813,8 @@ sp_naval_ice_carrier = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 				FROM = {
@@ -3044,10 +3014,8 @@ sp_naval_underway_replenishment = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 		FROM = {
@@ -3178,10 +3146,8 @@ sp_naval_proximity_fuze = {
 
 	project_tags = sp_tag_surface_ship
 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = {
 		FROM = {

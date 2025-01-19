@@ -29,6 +29,8 @@ sp_rockets_flying_bomb = {
 	}
 
 	complexity = sp_complexity.medium
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -335,6 +337,8 @@ sp_rockets_ballistic_missile = {
 			chromium = 9
 		}
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -546,6 +550,8 @@ sp_rockets_medium_range_ballistic_missile = {
 	special_project_parent = {
 		sp_rockets_ballistic_missile
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		
@@ -691,15 +697,14 @@ sp_rockets_long_range_ballistic_missile = {
 			chromium = 12
 		}
 	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
 
 	special_project_parent = {
 		sp_rockets_medium_range_ballistic_missile
 		# ICBMs are intended to be only nuclear warhead carriers, so need to be able to do create these in order to complete project
 		sp_nuclear_warheads
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = {
 	}
@@ -861,13 +866,11 @@ sp_rockets_ground_to_air_missile = {
 	}	
 	complexity = sp_complexity.large 
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
-
 	special_project_parent = {
 		sp_rockets_ballistic_missile
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -1055,6 +1058,8 @@ sp_rocket_interceptor = {
 			chromium = 6
 		}
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {

@@ -78,6 +78,8 @@ recruit_character = ic_SOV_andrey_grechko
 recruit_character = ic_SOV_rodion_malinovsky
 recruit_character = ic_SOV_vasily_chuykov
 
+recruit_character = ic_SOV_ivan_larionov
+
 activate_advisor = ic_SOV_genrikh_yagoda
 
 set_popularities = {

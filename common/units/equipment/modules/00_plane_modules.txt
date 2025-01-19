@@ -1095,7 +1095,7 @@ equipment_modules = {
 			weight = 8
 			air_agility = -15
 		}
-		xp_cost = 2
+		xp_cost = 1
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1115,12 +1115,30 @@ equipment_modules = {
 			weight = 12
 			air_agility = -20
 		}
-		xp_cost = 2
+		xp_cost = 1
 		allow_mission_type = {
 			cas
 			attack_logistics
 		}
 		dismantle_cost_ic = 3.5
+	}
+
+	ptab_module = {
+		abbreviation = "ptab"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			air_ground_attack = 35
+			build_cost_ic = 4
+			weight = 12
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			cas
+		}
+		dismantle_cost_ic = 1.5
 	}
 
 	torpedo_mounting = {

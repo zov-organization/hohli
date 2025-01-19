@@ -14,10 +14,8 @@ sp_air_bouncing_bomb = {
 		sp_tag_aircraft
 		sp_tag_bomb
 	}
-
-	allowed = {
-		has_dlc = "Gotterdammerung"		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		# FROM is country 
@@ -195,10 +193,8 @@ sp_air_earthshaker_bomb = {
 		sp_tag_aircraft
 		sp_tag_bomb
 	}
-
-	allowed = {
-		has_dlc = "Gotterdammerung"		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		if = {
@@ -389,10 +385,8 @@ sp_air_intercontinental_bomber = {
 	icon = GFX_sp_air_intercontinental_bomber
 
 	project_tags = sp_tag_aircraft
-
-	allowed = {
-		has_dlc = "Gotterdammerung"	
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -590,10 +584,8 @@ sp_air_mothership_aircraft = {
 	project_tags = sp_tag_aircraft
 
 	complexity = sp_complexity.medium 
-
-	allowed = {
-		has_dlc = "Gotterdammerung"		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	generic_prototype_rewards = {
 		sp_air_political_interference_generic_reward
@@ -798,6 +790,8 @@ sp_air_jet_engine = {
 		sp_tag_aircraft
 		sp_tag_jet
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -1078,6 +1072,8 @@ sp_air_axial_jet_engine = {
 	special_project_parent = {
 		sp_air_jet_engine
 	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	available = { 
 		FROM = {
@@ -1368,10 +1364,8 @@ sp_air_supersonic_jet = {
 	}
 
 	complexity = sp_complexity.large
-
-	allowed = {
-		has_dlc = "Gotterdammerung"		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 	
 	breakthrough_cost = {
 		specialization_air = 2
@@ -1573,10 +1567,8 @@ sp_air_helicopter = {
 		sp_tag_aircraft
 		sp_tag_helicopter
 	}
-
-	allowed = {
-		has_dlc = "Gotterdammerung"		
-	}
+	
+	allowed = { hidden_trigger = { always = no } }
 
 	breakthrough_cost = {
 		specialization_air = 2

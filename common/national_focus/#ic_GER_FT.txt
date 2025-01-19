@@ -1054,6 +1054,8 @@
 				threat = 20
 				name = GER_cze_annex
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			SOV = {
 				swap_ideas = {
@@ -1100,8 +1102,12 @@
 					target = FRA
 					type = annex_everything
 				}
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
 
 				remove_ideas = ic_mefo_bills
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
 
 				set_power_balance = {
 					id = GER_balance_of_powers
@@ -1111,9 +1117,15 @@
 				}
 
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			SPR = {
 				remove_ideas = NoTradeback
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ENG = {
 				remove_ideas = {
 					ic_ENG_joint_air_exercises_idea

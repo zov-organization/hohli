@@ -15,10 +15,9 @@ technologies = {
 		
 		enable_equipment_modules = {
 			engine_1_1x
-			bomb_locks
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+			#bomb_locks
+			#small_bomb_bay
+			#medium_bomb_bay
 			torpedo_mounting
 		}
 	
@@ -44,11 +43,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = survivability_studies
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = aa_lmg
 			research_cost_coeff = 1
 		}
 		
@@ -296,6 +290,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_2_2x
+			large_bomb_bay
 		}
 	
 		path = {
@@ -658,6 +653,8 @@ technologies = {
 	}
 
 	aa_lmg = {
+		
+		allow = { hidden_trigger = { always = no } }
 
 		enable_equipment_modules = {
 			light_mg_2x
@@ -673,11 +670,6 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 13 y = 4 }
 		}
-
-		path = {
-			leads_to_tech = aa_hmg
-			research_cost_coeff = 1
-		}
 		
 		categories = {
 			air_equipment
@@ -691,6 +683,8 @@ technologies = {
 	}
 
 	aa_hmg = {
+		
+		allow = { hidden_trigger = { always = no } }
 
 		enable_equipment_modules = {
 			heavy_mg_2x
@@ -707,11 +701,6 @@ technologies = {
 			position = { x = 13 y = 6 }
 		}
 
-		path = {
-			leads_to_tech = aa_cannon_1
-			research_cost_coeff = 1
-		}
-
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -724,6 +713,8 @@ technologies = {
 	}
 
 	aa_cannon_1 = {
+		
+		allow = { hidden_trigger = { always = no } }
 
 		enable_equipment_modules = {
 			aircraft_cannon_1_1x
@@ -736,15 +727,6 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 13 y = 8 }
-		}
-		path = {
-			leads_to_tech = aa_cannon_2
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = aa_cannon_3
-			research_cost_coeff = 1
 		}
 
 		categories = {
@@ -759,6 +741,8 @@ technologies = {
 	}
 
 	aa_cannon_3 = {
+		
+		allow = { hidden_trigger = { always = no } }
 
 		enable_equipment_modules = {
 			aircraft_cannon_2_1x

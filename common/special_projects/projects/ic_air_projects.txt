@@ -1,0 +1,132 @@
+ic_sp_aa_hmg = {
+	specialization = specialization_air
+	icon = GFX_ic_sp_aa_hmg
+	
+	project_tags = {
+		ic_sp_tag_fighter_armament
+		sp_tag_aircraft
+	}
+
+	available = {
+		if = {
+			FROM = { has_tech = aa_lmg }
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_fighter_armament
+
+	complexity = sp_complexity.ic_fighter_armament
+
+	breakthrough_cost = {
+		specialization_air = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				aa_hmg = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_aa_cannon_1 = {
+	specialization = specialization_air
+	icon = GFX_ic_sp_aa_cannon_1
+	
+	project_tags = {
+		ic_sp_tag_fighter_armament
+		sp_tag_aircraft
+	}
+
+	available = {
+		if = {
+			FROM = { has_tech = aa_hmg }
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_fighter_armament
+
+	complexity = sp_complexity.ic_fighter_armament
+
+	breakthrough_cost = {
+		specialization_air = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				aa_cannon_1 = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_aa_cannon_3 = {
+	specialization = specialization_air
+	icon = GFX_ic_sp_aa_cannon_3
+
+	project_tags = {
+		ic_sp_tag_fighter_armament
+		sp_tag_aircraft
+	}
+
+	available = {
+		if = {
+			FROM = { has_tech = aa_cannon_1 }
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_fighter_armament
+
+	complexity = sp_complexity.ic_fighter_armament
+
+	breakthrough_cost = {
+		specialization_air = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				aa_cannon_3 = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_sov_ptab = {
+	specialization = specialization_air
+	icon = GFX_ic_sp_sov_ptab
+	
+	project_tags = {
+		sp_tag_aircraft
+	}
+
+	allowed = {
+		tag = SOV
+	}
+
+	available = {}
+	
+	prototype_time = sp_time.prototype.ic_fighter_armament
+
+	complexity = sp_complexity.ic_fighter_armament
+
+	breakthrough_cost = {
+		specialization_air = 0
+	}
+	
+	project_output = {
+		enable_equipment_modules = {
+			ptab_module
+		}
+	}
+
+	generic_prototype_rewards = {}
+}

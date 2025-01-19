@@ -141,11 +141,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_SOV_i_16"
+		name = "GFX_SOV_revising_i_16"
 		texturefile = "gfx/interface/goals/focus_SOV_expand_the_airforce.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_SOV_i_16_shine"
+		name = "GFX_SOV_revising_i_16_shine"
 		texturefile = "gfx/interface/goals/focus_SOV_expand_the_airforce.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

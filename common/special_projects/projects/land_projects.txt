@@ -12,6 +12,8 @@ sp_land_military_engineering_vehicles = {
 
 	project_tags = sp_tag_tank
 	
+	allowed = { hidden_trigger = { always = no } }
+
 	available = {
 		FROM = {
 			has_tech = tech_engineers
@@ -102,9 +104,7 @@ sp_land_land_cruiser = {
 
 	project_tags = sp_tag_tank
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	available = {
 		if = {
@@ -815,9 +815,7 @@ sp_land_super_heavy_howitzer = {
 
 	project_tags = sp_tag_artillery
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 		FROM = {
@@ -951,9 +949,7 @@ sp_land_self_propelled_super_heavy_howitzer = {
 	project_tags = sp_tag_artillery
 
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		sp_land_military_engineering_vehicles
@@ -1079,9 +1075,7 @@ sp_land_super_heavy_railway_gun = {
 
 	project_tags = sp_tag_artillery
 
-	allowed = {
-		has_dlc = "No Step Back"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	available = {
 		FROM = {
@@ -1168,9 +1162,7 @@ sp_land_multi_charge_large_caliber_gun = {
 
 	project_tags = sp_tag_artillery
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 
 	special_project_parent = {
 		sp_land_super_heavy_howitzer
@@ -1412,9 +1404,7 @@ sp_land_stronghold_network = {
 
 	project_tags = sp_tag_artillery
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	allowed = { hidden_trigger = { always = no } }
 	
 	available = {
 	}

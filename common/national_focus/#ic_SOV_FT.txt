@@ -22,7 +22,7 @@ focus_tree = {
 		available = { }
 
 		completion_reward = {
-			 add_political_power = 150
+			add_political_power = 150
 		}
 	}
 
@@ -856,16 +856,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_stavka_organisation
+
+		icon = GFX_SOV_stavka_organisation
+		
+		prerequisite = { focus = SOV_the_red_army }
+		prerequisite = { focus = SOV_revising_i_16 }
+		relative_position_id = SOV_the_red_army
+		
+		x = 4
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ic_SOV_stavka
+			show_ideas_tooltip = ic_SOV_semyon_timoshenko
+		}
+	}
+
+	focus = {
 		id = SOV_halkin_gol
 
 		icon = GFX_SOV_SOV_halkin_gol
-
-		prerequisite = { focus = SOV_the_red_army }
-		prerequisite = { focus = SOV_i_16 }
-		relative_position_id = SOV_the_red_army
-
-		x = 4
-		y = 1
+		
+		prerequisite = { focus = SOV_stavka_organisation }
+		relative_position_id = SOV_stavka_organisation
+		
+		x = 0
+		y = 3
 		cost = 5
 
 		available = {
@@ -877,28 +899,6 @@ focus_tree = {
 			show_ideas_tooltip = ic_SOV_ivan_konev
 			show_ideas_tooltip = ic_SOV_stepan_krasovsky
 			show_ideas_tooltip = ic_SOV_sergey_khudyakov
-		}
-	}
-
-	focus = {
-		id = SOV_stavka_organisation
-
-		icon = GFX_SOV_stavka_organisation
-
-		prerequisite = { focus = SOV_halkin_gol }
-		relative_position_id = SOV_halkin_gol
-
-		x = 0
-		y = 3
-		cost = 5
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_ideas = ic_SOV_stavka
-			show_ideas_tooltip = ic_SOV_semyon_timoshenko
 		}
 	}
 
@@ -1300,9 +1300,9 @@ focus_tree = {
 	# AVIATION
 
 	focus = {
-		id = SOV_i_16
+		id = SOV_revising_i_16
 
-		icon = GFX_SOV_i_16
+		icon = GFX_SOV_revising_i_16
 
 		prerequisite = { focus = SOV_initial_focus }
 		relative_position_id = SOV_the_red_army
@@ -1315,10 +1315,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = SOV_i_16
-				bonus = 1.5
+				name = SOV_revising_i_16
+				bonus = 0.5
 				uses = 1
-				technology = basic_small_airframe
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -1328,8 +1328,8 @@ focus_tree = {
 
 		icon = GFX_SOV_strati
 
-		prerequisite = { focus = SOV_i_16 }
-		relative_position_id = SOV_i_16
+		prerequisite = { focus = SOV_revising_i_16 }
+		relative_position_id = SOV_revising_i_16
 
 		x = -3
 		y = 1
@@ -1344,8 +1344,8 @@ focus_tree = {
 				name = SOV_strati
 				bonus = 2
 				uses = 2
-				technology = basic_medium_airframe
-				technology = basic_large_airframe 
+				technology = improved_medium_airframe
+				technology = improved_large_airframe 
 			}
 		}
 	}
@@ -1355,8 +1355,8 @@ focus_tree = {
 
 		icon = GFX_SOV_soveit_airplane_school
 
-		prerequisite = { focus = SOV_i_16 }
-		relative_position_id = SOV_i_16
+		prerequisite = { focus = SOV_revising_i_16 }
+		relative_position_id = SOV_revising_i_16
 
 		x = 1
 		y = 1
@@ -1490,7 +1490,7 @@ focus_tree = {
 		icon = GFX_SOV_novikov
 
 		prerequisite = { focus = SOV_aluminum_for_planes focus = SOV_back_land_destruction }
-		prerequisite = { focus = SOV_stavka_organisation }
+		prerequisite = { focus = SOV_halkin_gol }
 		relative_position_id = SOV_aviadoka_2
 
 		x = -1
@@ -1505,12 +1505,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_red_airforces_2
 				add_idea = SOV_red_airforces_3
-			}
-			add_tech_bonus = {
-				name = SOV_novikov
-				bonus = 0.5
-				uses = 1
-				technology = improved_small_airframe
 			}
 			show_ideas_tooltip = ic_SOV_aleksandr_novikov
 		}
@@ -1788,6 +1782,36 @@ focus_tree = {
 				uses = 1
 				category = light_air
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_ptab_focus
+
+		icon = GFX_SOV_wow
+
+		prerequisite = { focus = SOV_skidka_na_samolet }
+		relative_position_id = SOV_skidka_na_samolet
+
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+
+			custom_effect_tooltip = {
+				localization_key = available_scientist_one_line_tt
+				CHARACTER = ic_SOV_ivan_larionov
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			sp:ic_sp_sov_ptab = {
+			  add_project_progress_ratio = 0.9
+			}
+
 		}
 	}
 

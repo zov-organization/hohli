@@ -1021,4 +1021,30 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
+
+	ic_SOV_ivan_larionov = {
+		name = ic_SOV_ivan_larionov
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_SOV_ivan_larionov
+			}
+		}
+
+		scientist = {
+			traits = { ic_scientist_trait_aircraft_genius }
+			skills = {
+				specialization_air = 5
+			}
+
+			visible = {
+				owner = { #Yes, this is needed, otherwise you get a scope error as the game checks if the scientist have completed the focus... they haven't :D
+					OR = {
+						has_completed_focus = SOV_ptab_focus
+					}
+				}
+			}
+
+		}
+	}
+
 }
