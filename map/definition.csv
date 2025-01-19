@@ -5062,7 +5062,7 @@
 5061;51;165;78;land;false;plains;2
 5062;51;165;128;land;false;mountain;6
 5063;51;165;183;land;false;plains;6
-5064;51;168;43;land;false;hills;6
+5064;51;168;43;land;true;hills;6
 5065;51;168;98;land;true;plains;5
 5066;51;168;148;land;true;hills;2
 5067;51;171;8;land;false;mountain;7
@@ -12869,7 +12869,7 @@
 12868;177;177;172;land;false;plains;6
 12869;177;177;227;land;false;jungle;3
 12870;177;180;87;land;false;desert;7
-12871;177;180;137;land;false;hills;7
+12871;177;180;137;land;true;hills;7
 12872;177;180;192;land;false;mountain;3
 12873;177;183;52;land;true;mountain;2
 12874;177;183;157;land;false;forest;5

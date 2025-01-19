@@ -59,7 +59,7 @@ adjacency_rule = {
 	offset = { 1 0 -6 }
 }
 adjacency_rule = {
-	name = "ADEN_STRAIT"
+	name = "BAB_AL-MANDAB_STRAIT"
 
 	contested =
 	{
@@ -92,8 +92,8 @@ adjacency_rule = {
 	
 	required_provinces = { 4985 5074 }
 	
-	icon = 4324
-	offset = { 7.0 0.0 -80.0 }
+	icon = 2776
+	offset = { -15 0 14 }
 }
 
 #Gibraltar Strait
@@ -133,7 +133,7 @@ adjacency_rule =
 	required_provinces = { 4135 9945 }
 	
 	icon = 5407	
-	offset = { -31.0 0.0 -2.0 }
+	offset = { -23.5 0.0 0 }
 }
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
