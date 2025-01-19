@@ -1385,7 +1385,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = 6
+			air_defence = 5
 			build_cost_ic = 1
 			weight = 1
 		}

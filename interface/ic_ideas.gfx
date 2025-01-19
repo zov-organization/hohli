@@ -230,6 +230,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_SOV_organize_wreckers.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_ENG_research_buff"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_ENG_french_military_cooperation_idea"
 		texturefile = "gfx/interface/ideas/idea_NORDIC_army_communist.dds"
 	}

@@ -67,7 +67,9 @@
 
 
  ic_ENG_commonwealth_buff:0 "Commonwealth Ties"
+ ic_ENG_research_buff:0 "Progress Sciency Policy"
  ic_ENG_french_military_cooperation_idea:0 "French Military Cooperation"
  ic_ENG_joint_air_exercises_idea:0 "Joint Air Eexercises"
  ic_ENG_queens_navy_idea:0 "Queens Navy"
  ic_ENG_shadow_scheme_idea:0 "Shadow Scheme"
+ ic_ENG_fighter_cheaper:0 "Winged Protectors of the Isle"

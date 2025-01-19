@@ -20,6 +20,23 @@ ideas = {
 			}
 		}
 
+		ic_ENG_research_buff = {
+			name = ic_ENG_research_buff
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ENG_research_buff
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+				special_project_speed_factor = 0.1
+			}
+		}
+
 		ic_ENG_french_military_cooperation_idea = {
 			name = ic_ENG_french_military_cooperation_idea
 
@@ -90,6 +107,26 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				consumer_goods_expected_value = -0.02
 			}
+		}
+
+		ic_ENG_fighter_cheaper = {
+			name = ic_ENG_fighter_cheaper
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ENG_fighter_cheaper
+
+			allowed = {
+				always = no
+			}
+			
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.04 instant = yes
+					air_agility = 0.1 instant = yes
+				}
+			}
+
 		}
 
 	}

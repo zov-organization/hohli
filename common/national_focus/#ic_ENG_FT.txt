@@ -621,11 +621,29 @@ focus_tree = {
 		prerequisite = { focus = ENG_sea_is_our_speciality }
 		relative_position_id = ENG_sea_is_our_speciality
 
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ENG_research_buff_focus
+		icon = GFX_goal_generic_scientific_exchange
+
+		prerequisite = { focus = ENG_research_slot_focus }
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_research_slot_focus
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = {
+				ic_ENG_research_buff
+			}
 		}
 	}
 
@@ -642,6 +660,14 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			air_experience = 50
+			128 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 7239
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -715,6 +741,21 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_ideas = ic_SOV_indiscriminate_bombing_policy
+		}
+	}
+
+	focus = {
+		id = ENG_our_second_key_to_survive
+		icon = GFX_ENG_our_second_key_to_survive
+
+		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
+		relative_position_id = ENG_announce_competition_for_modern_figher
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = ic_ENG_fighter_cheaper
 		}
 	}
 
