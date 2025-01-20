@@ -145,7 +145,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=4
-			legacy_id=996
 		}
 	}
 	
@@ -175,7 +174,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=5
-			legacy_id=995
 		}
 	}
 
@@ -209,7 +207,6 @@ characters={
 			defense_skill=5
 			planning_skill=5
 			logistics_skill=3
-			legacy_id=997
 		}
 	}
 	
@@ -237,7 +234,6 @@ characters={
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=994
 		}
 	}
 	
@@ -287,7 +283,6 @@ characters={
 			defense_skill=4
 			maneuvering_skill=3
 			coordination_skill=4
-			legacy_id=985
 		}
 	}
 	
@@ -427,7 +422,6 @@ characters={
 			defense_skill=2
 			maneuvering_skill=3
 			coordination_skill=2
-			legacy_id=984
 		}
 	}
 	
