@@ -64,6 +64,7 @@ leader_traits = {
 	resource_development_company = {}
 	industrial_steel_mills_trait = {}
 	resource_development_company = {}
+	AUS_prince_of_starhemberg = {}
 
 	dictator = {
 		random = no

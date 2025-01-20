@@ -1,0 +1,14 @@
+whatever_category = {
+	visible = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+}
+
+hispaniola_category = {}
+peru_bolivia_category = {}
+guianas_category = {}
+unite_hispaniola = {}
+reunite_peru_bolivia = {}
+unite_guiana = {}

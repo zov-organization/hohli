@@ -5,5 +5,13 @@ focus_tree = {
 	
 	default = yes
 
-	continuous_focus_position = { x = 50 y = 50 }
+	continuous_focus_position = { x = 50 y = 200}
+
+	focus = {
+		id = liberty_ethos
+		cost = 1
+		available = {
+			is_ai = no
+		}
+	}
 }

@@ -417,127 +417,22 @@ ROM_dividing_yugo = {
 
 	ROM_present_ultimatum = {
 
-		icon = decision_generic_nationalism
-		
-		allowed = { hidden_trigger = { always = no } }
-		visible = { hidden_trigger = { always = no } }
-		available  = { hidden_trigger = { always = no } }
-
-		cost = 0
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			YUG = {
-				country_event = DOD_romania.60
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
 	}
 
 	# Invite Germany
 
 	ROM_invite_germany = {
 
-		icon = decision_generic_nationalism
-
-		allowed = {
-		}
-
-		
-		allowed = { hidden_trigger = { always = no } }
-		visible = { hidden_trigger = { always = no } }
-		available  = { hidden_trigger = { always = no } }
-
-		cost = 0
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			GER = {
-				country_event = DOD_romania.601
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
 	}
 
 	# Invite Italy
 
 	ROM_invite_italy = {
-
-		icon = decision_generic_nationalism
-		
-		allowed = { hidden_trigger = { always = no } }
-		visible = { hidden_trigger = { always = no } }
-		available  = { hidden_trigger = { always = no } }
-
-		cost = 0
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			ITA = {
-				country_event = DOD_romania.601
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
 	}
 
 	# Invite Hungary
 
 	ROM_invite_hungary = {
-
-		icon = decision_generic_nationalism
-
-		allowed = {
-		}
-
-		available = {
-			HUN = {
-				NOT = { has_country_flag = invited_to_split_yugo }
-				any_owned_state = {
-					any_neighbor_state = {
-						owner = {
-					OR = {
-						tag = YUG
-						is_subject_of = YUG
-					}
-				}
-					}
-				}
-			}
-		}
-		
-		visible = {
-			original_tag = ROM
-		}
-
-		cost = 0
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			HUN = {
-				country_event = DOD_romania.601
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
 	}
 
 	# Claiming Vojvodina

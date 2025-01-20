@@ -17,6 +17,7 @@ equipment_modules = {
 	lc_stabilizers = {}
 	lc_super_heavy_railway_gun = {}
 	lc_radar = {}
+	lc_super_heavy_howitzer = {}
 	ship_light_battery_sub = {}
 	sub_missile_launcher = {}
 	slbm_launcher = {}
