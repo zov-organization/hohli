@@ -9,6 +9,61 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
+	
+
+	# DUMMY-TRAITS (error fix)
+	BEL_leopold_prisoner_king = {}
+	BEL_leopold_king_of_the_belgians = {}
+	pro_allied_governor_general = {}
+	pro_allied_governor_general_2 = {}
+	GER_der_fuhrer = {}
+	GER_der_fuhrer_neurath = {}
+	GER_der_fuhrer_fuhrerprinzip = {}
+	GER_der_fuhrer_fuhrerprinzip_neurath = {}
+	GER_loyalty_of_wehrmacht = {}
+	GER_supreme_commander_armed_forces = {}
+	GER_supreme_leader = {}
+	GER_der_fuhrer_wehrmacht = {}
+	GER_der_fuhrer_fuhrerprinzip_wehrmacht = {}
+	GER_staunch_stalinist_leader = {}
+	HUN_the_regent = {}
+	HUN_the_regent_2 = {}
+	HUN_the_regent_undermined = {}
+	HUN_the_regent_3 = {}
+	GER_stern_communist = {}
+	HUN_the_apostolic_king = {}
+	HUN_duke_of_sormland_king_of_hungarians = {}
+	BEL_royal_appointee = {}
+	BEL_belgian_inquisitor = {}
+	BEL_determined_prime_minister = {}
+	BEL_royal_regent = {}
+	manikongo_of_kongo = {}
+	the_rwandan_collaborstionist_king = {}
+	HUN_duke_and_king_of_mecklenburg = {}
+	AUS_under_german_pressure = {}
+	GER_iron_maiden = {}
+	GER_revolutionary_nationalist = {}
+	BEL_diplomatic_titan = {}
+	BEL_man_with_a_plan_leader = {}
+	GER_todt_fuhrer = {}
+	GER_speer_fuhrer = {}
+	GER_goring_fuhrer = {}
+	GER_himmler_fuhrer_abwehr = {}
+	GER_himmler_fuhrer_ss = {}
+	GER_goebbels_fuhrer_no_lar = {}
+	GER_goebbels_fuhrer = {}
+	GER_hess_fuhrer_no_aat = {}
+	GER_hess_fuhrer = {}
+	GER_bormann_fuhrer = {}
+	HUN_popular_among_paramilitaries = {}
+	HUN_the_habsburg_prince = {}
+	AUS_king_of_austria = {}
+	BEL_belgian_fuhrer = {}
+	AUS_embraced_fascism = {}
+	steelworks_and_machining_trait = {}
+	resource_development_company = {}
+	industrial_steel_mills_trait = {}
+	resource_development_company = {}
 
 	dictator = {
 		random = no

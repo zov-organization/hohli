@@ -647,4 +647,16 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
 	supersonic_fighter_equipment_1
+
+	# error fix
+	heavy_fighter_equipment
+	fighter_equipment
+	cas_equipment
+	cv_fighter_equipment
+	cv_cas_equipment
+	cv_nav_bomber_equipment
+	nav_bomber_equipment
+	tac_bomber_equipment
+	strat_bomber_equipment
+	scout_plane_equipment
 }
