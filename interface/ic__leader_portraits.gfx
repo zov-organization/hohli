@@ -7,8 +7,4 @@ spriteTypes = {
 		name = "GFX_portrait_SOV_dmitry_pavlov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Dmitry_Pavlov.dds"
 	}
-	spriteType = {
-		name = "GFX_portrait_ic_SOV_ivan_larionov"
-		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Dmitry_Pavlov.dds"
-	}
 }
