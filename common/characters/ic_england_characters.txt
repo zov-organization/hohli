@@ -164,7 +164,7 @@ characters={
 			idea_token = ic_ENG_harold_alexander
 			ledger = army
 			traits = {
-				grand_battle_plan_expert
+				superior_firepower_expert
 			}
 		}
 		corps_commander={
@@ -194,6 +194,9 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = ic_ENG_alan_brooke
+			available = {
+				has_completed_focus = ENG_general_command_staff
+			}
 			traits = {
 				army_chief_maneuver_3
 			}
@@ -387,6 +390,9 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = ic_ENG_kenneth_anderson
+			available = {
+				has_completed_focus = ENG_general_command_staff
+			}
 			ledger = army
 			traits = {
 				army_infantry_2

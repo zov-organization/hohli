@@ -7070,7 +7070,6 @@ leader_traits = {
 		cat_mobile_warfare_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
-
 	blitzkrieg_theorist = {
 		sprite = 14
 
@@ -7078,6 +7077,8 @@ leader_traits = {
 			armor = {
 				instant = yes
 				maximum_speed = 0.10
+				soft_attack = 0.02
+				hard_attack = 0.02
 			}
 		}
 		cat_mobile_warfare_cost_factor = -0.15
@@ -7086,18 +7087,31 @@ leader_traits = {
 
 	superior_firepower_expert = {
 		sprite = 14
+
+		equipment_bonus = {
+			artillery = {
+				instant = yes
+				soft_attack = 0.05
+				hard_attack = 0.05
+			}
+		}
 		cat_superior_firepower_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
 
 	grand_battle_plan_expert = {
 		sprite = 14
+
+		army_defence_factor = 0.05
 		cat_grand_battle_plan_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
 
 	mass_assault_expert = {
 		sprite = 14
+
+		army_org_factor = 0.05
+		army_org_regain = 0.05
 		cat_mass_assault_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
@@ -7116,7 +7130,7 @@ leader_traits = {
 				air_ground_attack = 0.1
 			}
 		}
-		cat_battlefield_support_cost_factor = -0.10
+		cat_battlefield_support_cost_factor = -0.15
 		experience_gain_air = @experience_gain_medium
 
 		ai_will_do = {

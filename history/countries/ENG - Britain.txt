@@ -71,6 +71,8 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	limited_conscription
+
+	george_v
 }
 
 set_technology = {
@@ -162,12 +164,6 @@ create_equipment_variant = {
 }
 
 add_equipment_to_stockpile = {
-	type = gw_tank_equipment
-	amount = 200
-	producer = ENG
-}
-
-add_equipment_to_stockpile = {
 	type = support_equipment
 	amount = 500
 	producer = ENG
@@ -175,49 +171,43 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 15000
+	amount = 5000
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 25000
+	amount = 10000
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = train_equipment_1
-	amount = 300
+	amount = 100
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 500
+	amount = 350
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 750
+	amount = 500
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 200
+	amount = 900
 	producer = ENG
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1000
-	producer = ENG
-}
-
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 100
+	amount = 1280
 	producer = ENG
 }
 

@@ -3,9 +3,11 @@
   ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
   GER_optimal_building_line:0 "Optimal starting building line"
+  ENG_optimal_building_line:0 "Optimal starting building line"
 
   SOV_faq_event:0 "faq - SOV"
   GER_faq_event:0 "faq - GER"
+  ENG_faq_event:0 "faq - ENG"
 
   SOV_secure_north_1941_tip:0 "Show states affected by \n§HSoviet North Defence In-Depth§!"
   SOV_secure_center_1941_tip:0 "Show states affected by \n§HSoviet Center Defence In-Depth§!"
