@@ -774,7 +774,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_declare_war_in_YUG
 
-		x = 0
+		x = 3
 		y = 1
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
@@ -790,7 +790,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_declare_war_in_GRE
 
-		x = 2
+		x = 5
 		y = 1
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
@@ -802,21 +802,7 @@ focus_tree = {
            
         }
 	}
-	focus = {
-		id = ic_ROM_declare_war_in_GRE
 
-		x = 2
-		y = 1
-
-		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
-		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
-		
-		cost = 5
-
-        completion_reward = {
-           
-        }
-	}
 	focus = {
 		id = ic_ROM_old_friends
 
@@ -841,6 +827,54 @@ focus_tree = {
 
 		prerequisite = { focus = ic_ROM_old_friends }
 		relative_position_id = ic_ROM_old_friends
+		
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+	focus = {
+		id = ic_ROM_Support_for_German_policy
+
+		x = -2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		mutually_exclusive = { focus = ic_ROM_Not_Support_for_German_policy }
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Not_Support_for_German_policy
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		mutually_exclusive = { focus = ic_ROM_Support_for_German_policy }
+		
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+	
+	focus = {
+		id = ic_ROM_open_decision_germany
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Support_for_German_policy }
+		relative_position_id = ic_ROM_Support_for_German_policy
 		
 		cost = 5
 
