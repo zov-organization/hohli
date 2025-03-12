@@ -1,0 +1,4 @@
+sub_units = {
+	assault_engineer = {}
+	super_heavy_railway_gun = {}
+}

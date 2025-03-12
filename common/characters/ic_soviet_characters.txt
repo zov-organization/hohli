@@ -1,26 +1,7 @@
 characters = {                                                                                                    
 
-	#ic_SOV_iosif_stalin = {
-	#	name = ic_SOV_iosif_stalin
-	#	portraits = {
-	#		civilian = {
-	#			large = GFX_portrait_SOV_iosif_stalin
-	#		}
-	#		army = {
-	#			large = GFX_portrait_SOV_iosif_stalin
-	#			small = GFX_portrait_SOV_iosif_stalin_small
-	#		}
-	#	}
-	#	country_leader = {
-	#		ideology = stalinism
-	#		traits = { stalin_heart_of_steel }
-	#		expire = "1953.3.1.1"
-	#		id = -1
-	#	}
-	#}
-
 	ic_SOV_nikolay_kuznetsov = {
-		name = ic_SOV_nikolay_kuznetsov
+		name = SOV_nikolay_kuznetsov
 		portraits = {
 			army = {
 				small = "GFX_idea_nikolay_kuznetsov"
@@ -40,7 +21,7 @@ characters = {
 	}
 
 	ic_SOV_genrikh_yagoda = {
-		name = ic_SOV_genrikh_yagoda
+		name = SOV_genrikh_yagoda
 
 		portraits = {
 			army = {
@@ -80,7 +61,7 @@ characters = {
 	}
 
 	ic_SOV_nikolay_voznesensky = {
-		name = ic_SOV_nikolay_voznesensky
+		name = SOV_nikolay_voznesensky
 
 		portraits = {
 			army = {
@@ -90,7 +71,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ic_SOV_nikolay_voznesensky
-			name = "Nikolay Voznesensky"
 			available = {
 				has_completed_focus = SOV_ensure_loyatly_of_those_who_left
 			}
@@ -101,7 +81,7 @@ characters = {
 	}
 
 	ic_SOV_vyacheslav_molotov = {
-		name = ic_SOV_vyacheslav_molotov
+		name = SOV_vyacheslav_molotov
 
 		portraits = {
 			army = {
@@ -111,7 +91,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ic_SOV_vyacheslav_molotov
-			name = "Vyacheslav Molotov"
 			available = {
 				has_completed_focus = SOV_ensure_loyatly_of_those_who_left
 			}
@@ -122,7 +101,7 @@ characters = {
 	}
 
 	ic_SOV_nikita_khrushchyov = {
-		name = ic_SOV_nikita_khrushchyov
+		name = SOV_nikita_khrushchyov
 		portraits = {
 			army = {
 				small = "GFX_idea_nikita_khrushchev"
@@ -141,7 +120,7 @@ characters = {
 	}
 
 	ic_SOV_yuri_levitan = {
-		name = "Yuri Levitan"
+		name = ic_SOV_yuri_levitan
 		portraits = {
 			army = {
 				small = "GFX_idea_yuri_levitan"
@@ -163,7 +142,7 @@ characters = {
 
 
 	ic_SOV_aleksandr_novikov = {
-		name = ic_SOV_aleksandr_novikov
+		name = SOV_aleksandr_novikov
 		portraits = {
 			army = {
 				small = "GFX_idea_alexander_novikov"
@@ -172,7 +151,6 @@ characters = {
 		advisor = {
 			slot = air_chief
 			idea_token = ic_SOV_aleksandr_novikov
-			name = "Aleksandr Novikov"
 			available = {
 				has_completed_focus = SOV_novikov
 			}
@@ -192,7 +170,7 @@ characters = {
             
 
 	ic_SOV_konstantin_rokossovsky = {
-		name = ic_SOV_konstantin_rokossovsky
+		name = SOV_konstantin_rokossovsky
 
 		portraits = {
 			army = {
@@ -226,7 +204,7 @@ characters = {
 	
 
 	ic_SOV_aleksandr_vasilevsky = {
-		name = ic_SOV_aleksandr_vasilevsky
+		name = SOV_aleksandr_vasilevsky
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_aleksandr_vasilevsky"
@@ -253,12 +231,11 @@ characters = {
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 407
 		}
 	}
 
 	ic_SOV_ivan_konev = {
-		name = ic_SOV_ivan_konev
+		name = SOV_ivan_konev
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_ivan_konev"
@@ -285,12 +262,11 @@ characters = {
 			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 5
-			legacy_id = 408
 		}
 	}
 
 	ic_SOV_boris_shaposhnikov = {
-		name = ic_SOV_boris_shaposhnikov
+		name = SOV_boris_shaposhnikov
 		portraits = {
 			army = {
 				small = "GFX_idea_boris_shaposhnikov"
@@ -314,13 +290,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_semyon_timoshenko = {
-		name = ic_SOV_semyon_timoshenko
+		name = SOV_semyon_timoshenko
 		portraits = {
 			army = {
 				small = "GFX_idea_semyon_timoshenko"
@@ -345,13 +320,12 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 3
-			legacy_id = 404
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_kliment_voroshilov = {
-		name = ic_SOV_kliment_voroshilov
+		name = SOV_kliment_voroshilov
 
 		portraits = {
 			army = {
@@ -375,13 +349,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 405
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_mikhail_tukhachevsky = {
-		name = ic_SOV_mikhail_tukhachevsky
+		name = SOV_mikhail_tukhachevsky
 		portraits = {
 			army = {
 				small = "GFX_idea_mikhail_tukhachevsky"
@@ -405,7 +378,6 @@ characters = {
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 2
-			legacy_id = 401
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
@@ -468,12 +440,11 @@ characters = {
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 5
-			legacy_id = 410
 		}	
 	}
 	
 	ic_SOV_georgy_zhukov = {
-		name = ic_SOV_georgy_zhukov
+		name = SOV_georgy_zhukov
 
 		portraits = {
 			army = {
@@ -502,12 +473,11 @@ characters = {
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 5
-			legacy_id = 410
 		}
 	}
 
 	ic_SOV_nikolay_vatutin = {
-		name = ic_SOV_nikolay_vatutin
+		name = SOV_nikolay_vatutin
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_nikolay_vatutin
@@ -521,12 +491,11 @@ characters = {
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 3
-			legacy_id = 0
 		}
 	}
 
 	ic_SOV_semyon_budyonny = {
-		name = ic_SOV_semyon_budyonny
+		name = SOV_semyon_budyonny
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_semyon_budyonny"
@@ -540,13 +509,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_ivan_chernyakhovsky = {
-		name = ic_SOV_ivan_chernyakhovsky
+		name = SOV_ivan_chernyakhovsky
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_ivan_chernyakhovsky"
@@ -560,13 +528,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 413
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_issa_pliyev = {
-		name = ic_SOV_issa_pliyev
+		name = SOV_issa_pliyev
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_issa_pliyev"
@@ -580,13 +547,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_leonid_govorov = {
-		name = ic_SOV_leonid_govorov
+		name = SOV_leonid_govorov
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_leonid_govorov"
@@ -599,13 +565,12 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_grigory_kulik = {
-		name = ic_SOV_grigory_kulik
+		name = SOV_grigory_kulik
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_grigory_kulik
@@ -619,13 +584,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_kirill_meretskov = {
-		name = ic_SOV_kirill_meretskov
+		name = SOV_kirill_meretskov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_kirill_meretskov
@@ -639,13 +603,12 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_filipp_golikov = {
-		name = ic_SOV_filipp_golikov
+		name = SOV_filipp_golikov
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_filipp_golikov"
@@ -659,13 +622,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_andrey_yeryomenko = {
-		name = ic_SOV_andrey_yeryomenko
+		name = SOV_andrey_yeryomenko
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_andrey_yeryomenko"
@@ -679,13 +641,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 412
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_georgy_zakharov = {
-		name = ic_SOV_georgy_zakharov
+		name = SOV_georgy_zakharov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_georgy_zakharov
@@ -699,13 +660,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_yakov_cherevichenko = {
-		name = ic_SOV_yakov_cherevichenko
+		name = SOV_yakov_cherevichenko
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_yakov_cherevichenko"
@@ -719,13 +679,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_maks_reyter = {
-		name = ic_SOV_maks_reyter
+		name = SOV_maks_reyter
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_maks_reyter"
@@ -739,13 +698,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_nikandr_chibisov = {
-		name = ic_SOV_nikandr_chibisov
+		name = SOV_nikandr_chibisov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_nikandr_chibisov
@@ -759,13 +717,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_vasily_kuznetsov = {
-		name = ic_SOV_vasily_kuznetsov
+		name = SOV_vasily_kuznetsov
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_vasily_kuznetsov"
@@ -779,13 +736,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_andrey_vlasov = {
-		name = ic_SOV_andrey_vlasov
+		name = SOV_andrey_vlasov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_andrey_vlasov
@@ -799,12 +755,11 @@ characters = {
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 3
-			legacy_id = 0
 		}
 	}
 
 	ic_SOV_ivan_fedyuninsky = {
-		name = ic_SOV_ivan_fedyuninsky
+		name = SOV_ivan_fedyuninsky
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_ivan_fedyuninsky
@@ -818,13 +773,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_maksim_purkayev = {
-		name = ic_SOV_maksim_purkayev
+		name = SOV_maksim_purkayev
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_maksim_purkayev
@@ -838,13 +792,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_kuzma_galitsky = {
-		name = ic_SOV_kuzma_galitsky
+		name = SOV_kuzma_galitsky
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_kuzma_galitsky
@@ -858,13 +811,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_markian_popov = {
-		name = ic_SOV_markian_popov
+		name = SOV_markian_popov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_markian_popov
@@ -878,13 +830,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_nikolay_berzarin = {
-		name = ic_SOV_nikolay_berzarin
+		name = SOV_nikolay_berzarin
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_nikolay_berzarin
@@ -898,13 +849,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_aleksandr_gorbatov = {
-		name = ic_SOV_aleksandr_gorbatov
+		name = SOV_aleksandr_gorbatov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_aleksandr_gorbatov
@@ -918,13 +868,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_kirill_moskalenko = {
-		name = ic_SOV_kirill_moskalenko
+		name = SOV_kirill_moskalenko
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_kirill_moskalenko
@@ -937,13 +886,12 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_dmitry_lelyushenko = {
-		name = ic_SOV_dmitry_lelyushenko
+		name = SOV_dmitry_lelyushenko
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_dmitry_lelyushenko
@@ -957,13 +905,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_andrey_grechko = {
-		name = ic_SOV_andrey_grechko
+		name = SOV_andrey_grechko
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_andrey_grechko"
@@ -977,13 +924,12 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_rodion_malinovsky = {
-		name = ic_SOV_rodion_malinovsky
+		name = SOV_rodion_malinovsky
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_rodion_malinovsky
@@ -997,13 +943,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
 	ic_SOV_vasily_chuykov = {
-		name = ic_SOV_vasily_chuykov
+		name = SOV_vasily_chuykov
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_vasily_chuykov
@@ -1017,8 +962,33 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
+
+	ic_SOV_ivan_larionov = {
+		name = ic_SOV_ivan_larionov
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_SOV_ivan_larionov
+			}
+		}
+
+		scientist = {
+			traits = { ic_scientist_trait_aircraft_genius }
+			skills = {
+				specialization_air = 5
+			}
+
+			visible = {
+				owner = { #Yes, this is needed, otherwise you get a scope error as the game checks if the scientist have completed the focus... they haven't :D
+					OR = {
+						has_completed_focus = SOV_ptab_focus
+					}
+				}
+			}
+
+		}
+	}
+
 }

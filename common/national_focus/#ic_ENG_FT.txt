@@ -1,0 +1,797 @@
+focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = ENG
+		}
+	}
+	default = no
+
+	focus = {
+		id = ENG_initial_focus
+		icon = GFX_goal_support_democracy
+
+		prerequisite = {  }
+
+		x = 17
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+
+	focus = {
+		id = ENG_spawn_civs
+		icon = GFX_ENG_spawn_civs
+
+		prerequisite = { focus = ENG_initial_focus }
+		relative_position_id = ENG_initial_focus
+
+		x = -5
+		y = 1
+		cost = 10
+		completion_reward = {
+			128 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			129 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_issue_gasmasks
+		icon = GFX_goal_generic_construct_military
+
+		prerequisite = { focus = ENG_spawn_civs }
+		relative_position_id = ENG_spawn_civs
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = -150
+			add_stability = -0.1
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = ENG_keeping_up_with_germans
+		icon = GFX_ENG_keeping_up_with_germans
+
+		prerequisite = { focus = ENG_spawn_civs }
+		relative_position_id = ENG_spawn_civs
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_keeping_up_with_germans
+				bonus = 0.75
+				uses = 3
+				category = industry
+			}
+			338 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_industrial_heartland_of_the_empire
+		icon = GFX_ENG_industrial_heartland_of_the_empire
+
+		prerequisite = { focus = ENG_spawn_civs }
+		relative_position_id = ENG_spawn_civs
+
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			125 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			126 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			127 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			128 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			129 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			338 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			123 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_birmingham_small_arms_company
+		icon = GFX_ENG_birmingham_small_arms_company
+
+		prerequisite = { focus = ENG_industrial_heartland_of_the_empire }
+		prerequisite = { focus = ENG_keeping_up_with_germans }
+		relative_position_id = ENG_industrial_heartland_of_the_empire
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			127 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			125 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			128 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_reinforce_commonwealth
+		icon = GFX_ENG_reinforce_commonwealth
+
+		prerequisite = { focus = ENG_spawn_civs }
+		relative_position_id = ENG_keeping_up_with_germans
+
+		x = -3
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = ic_ENG_commonwealth_buff
+			ENG = {
+				every_allied_country = {
+					add_political_power = 100
+					add_ideas = ic_ENG_commonwealth_buff
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_raj
+		icon = GFX_ENG_dev_raj
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			433 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_australia
+		icon = GFX_ENG_australia
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			674 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_malaya_resources_base
+		icon = GFX_ENG_malaya_resources_base
+
+		prerequisite = { focus = ENG_australia focus = ENG_raj }
+		relative_position_id = ENG_australia
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			336 = {
+				add_resource = {
+					type = rubber
+					amount = 250
+					state = THIS
+				}
+				add_resource = {
+					type = tungsten
+					amount = 200
+					state = THIS
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+			333 = {
+				add_resource = {
+					type = aluminium
+					amount = 300
+					state = THIS
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_saf
+		icon = GFX_ENG_saf
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+
+		x = -1
+		y = 2
+		cost = 5
+		completion_reward = {
+			719 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_canada
+		icon = GFX_ENG_dev_canada
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+
+		x = 1
+		y = 2
+		cost = 5
+		completion_reward = {
+			276 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	
+	focus = {
+		id = ENG_shadow_scheme
+		icon = GFX_ENG_shadow_scheme
+
+		prerequisite = { focus = ENG_birmingham_small_arms_company }
+		prerequisite = { focus = ENG_malaya_resources_base }
+		prerequisite = { focus = ENG_saf focus = ENG_canada }
+		relative_position_id = ENG_birmingham_small_arms_company
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_ENG_shadow_scheme_idea
+		}
+	}
+
+
+	focus = {
+		id = ENG_sea_is_our_speciality
+		icon = GFX_focus_generic_air_carrier
+
+		prerequisite = { focus = ENG_initial_focus }
+		relative_position_id = ENG_initial_focus
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			127 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 9458
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_dockyards
+		icon = GFX_ENG_dockyards
+
+		prerequisite = { focus = ENG_sea_is_our_speciality }
+		relative_position_id = ENG_sea_is_our_speciality
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			130 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			122 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_naval_guns
+		icon = GFX_focus_NOR_drobak_coastal_fort
+
+		prerequisite = { focus = ENG_dockyards }
+		relative_position_id = ENG_dockyards
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_naval_guns_light
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_light_battery
+			}
+			add_tech_bonus = {
+				name = ENG_naval_guns_medium
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_medium_battery
+			}
+			add_tech_bonus = {
+				name = ENG_naval_guns_heavy
+				bonus = 0.5
+				uses = 1
+				category = cat_ship_heavy_battery
+			}
+		}
+	}
+	focus = {
+		id = ENG_heavy_ships
+		icon = GFX_focus_SWE_Vasa_II
+
+		prerequisite = { focus = ENG_naval_guns }
+		relative_position_id = ENG_naval_guns
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_heavy_ships
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = ENG_light_ships
+		icon = GFX_focus_SWE_Vasa_II
+
+		prerequisite = { focus = ENG_naval_guns }
+		relative_position_id = ENG_naval_guns
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_heavy_ships
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = ENG_navis_at_queens_command
+		icon = GFX_focus_SMB_blue_water_fleet
+
+		prerequisite = { focus = ENG_light_ships focus = ENG_heavy_ships }
+		relative_position_id = ENG_light_ships
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_ENG_queens_navy_idea
+		}
+	}
+
+
+	focus = {
+		id = ENG_british_army
+		icon = GFX_ENG_british_army
+
+		prerequisite = { focus = ENG_initial_focus }
+		relative_position_id = ENG_initial_focus
+
+		x = 7
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ENG_6_pounder
+		icon = GFX_focus_SWE_let_fly_all_guns
+
+		prerequisite = { focus = ENG_british_army }
+		relative_position_id = ENG_british_army
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_6_pounder
+				bonus = 0.5
+				uses = 4
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ENG_english_infantrymen
+		icon = GFX_ENG_english_infantrymen
+
+		prerequisite = { focus = ENG_british_army }
+		relative_position_id = ENG_6_pounder
+
+		x = 2
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_british_army
+				bonus = 0.5
+				uses = 4
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = ENG_fortification
+		icon = GFX_ENG_fortifications
+
+		prerequisite = { focus = ENG_british_army }
+		relative_position_id = ENG_6_pounder
+
+		x = 4
+		y = 0
+		cost = 5
+		completion_reward = {
+			unlock_decision_category_tooltip = ENG_forts_category
+		}
+	}
+	focus = {
+		id = ENG_french_military_cooperation
+		icon = GFX_ENG_french_military_cooperation
+
+		prerequisite = { focus = ENG_6_pounder }
+		prerequisite = { focus = ENG_english_infantrymen }
+		prerequisite = { focus = ENG_fortification }
+		relative_position_id = ENG_6_pounder
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			ENG = {
+				add_ideas = ic_ENG_french_military_cooperation_idea
+			}
+			FRA = {
+				add_ideas = ic_ENG_french_military_cooperation_idea
+			}
+		}
+	}
+	focus = {
+		id = ENG_general_command_staff
+		icon = GFX_ENG_general_command_staff
+
+		prerequisite = { focus = ENG_6_pounder }
+		prerequisite = { focus = ENG_english_infantrymen }
+		prerequisite = { focus = ENG_fortification }
+		relative_position_id = ENG_6_pounder
+
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = extensive_conscription
+			show_ideas_tooltip = ic_ENG_kenneth_anderson
+			show_ideas_tooltip = ic_ENG_alan_brooke
+		}
+	}
+
+
+	focus = {
+		id = ENG_research_slot_focus
+		icon = GFX_ENG_research_slot_focus
+
+		prerequisite = { focus = ENG_british_army }
+		prerequisite = { focus = ENG_sea_is_our_speciality }
+		relative_position_id = ENG_sea_is_our_speciality
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ENG_research_buff_focus
+		icon = GFX_goal_generic_scientific_exchange
+
+		prerequisite = { focus = ENG_research_slot_focus }
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_research_slot_focus
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = {
+				ic_ENG_research_buff
+			}
+		}
+	}
+
+	
+	focus = {
+		id = ENG_raf
+		icon = GFX_ENG_RAF_focus
+
+		prerequisite = { focus = ENG_british_army }
+		relative_position_id = ENG_british_army
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			air_experience = 50
+			128 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 7239
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_material_base_destruction_plane
+		icon = GFX_ENG_material_base_destruction_plane
+
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_raf
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 1
+				uses = 1
+				technology = basic_medium_airframe
+			}
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 1
+				uses = 1
+				technology = basic_large_airframe
+			}
+		}
+	}
+	focus = {
+		id = ENG_announce_competition_for_modern_figher
+		icon = GFX_ENG_announce_competition_for_modern_figher
+
+		prerequisite = { focus = ENG_raf }
+		relative_position_id = ENG_raf
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_announce_competition_for_modern_figher
+				bonus = 0.75
+				uses = 1
+				technology = improved_small_airframe
+			}
+		}
+	}
+	focus = {
+		id = ENG_joint_air_exercises
+		icon = GFX_ENG_joint_air_exercises
+
+		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
+		prerequisite = { focus = ENG_french_military_cooperation }
+		prerequisite = { focus = ENG_general_command_staff }
+		relative_position_id = ENG_announce_competition_for_modern_figher
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_ENG_joint_air_exercises_idea
+		}
+	}
+	focus = {
+		id = ENG_indiscriminate_bombing_policy
+		icon = GFX_generic_strati
+
+		prerequisite = { focus = ENG_material_base_destruction_plane }
+		relative_position_id = ENG_material_base_destruction_plane
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_SOV_indiscriminate_bombing_policy
+		}
+	}
+
+	focus = {
+		id = ENG_our_second_key_to_survive
+		icon = GFX_ENG_our_second_key_to_survive
+
+		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
+		relative_position_id = ENG_announce_competition_for_modern_figher
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = ic_ENG_fighter_cheaper
+		}
+	}
+
+}

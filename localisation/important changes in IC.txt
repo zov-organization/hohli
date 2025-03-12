@@ -1,0 +1,5 @@
+MODIFIER_ARMY_BONUS_AIR_SUPERIORITY_FACTOR:1 "£army_air_superiority_texticon  Air Superiority in-battle effect"
+
+modifier_state_production_speed_infrastructure_factor:0 "£construction_speed_infrastructure_texticon  §Y$infrastructure$§! construction speed"
+
+modifier_state_production_speed_arms_factory_factor:0 "$modifier_state_production_arms_factory_factor$" ДОЛЖЕН БЫТЬ В DLC_modifiericons_l_english.yml А НЕ В КАКОМ-ТО КАЙЗЕРРЕЙХОВСКОМ ФАЙЛЕ

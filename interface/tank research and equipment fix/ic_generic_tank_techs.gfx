@@ -1,0 +1,54 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_amphibious_drive_medium"
+        texturefile = "gfx/interface/technologies/GER_amphibious_tank_1.dds"
+    }
+    SpriteType = {
+        name = "GFX_gwtank_chassis_medium"
+        texturefile = "gfx/interface/technologies/GER_gw_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_basic_light_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_basic_light_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_improved_light_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_advanced_light_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_basic_medium_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_basic_main_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_improved_medium_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_advanced_medium_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_basic_heavy_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_basic_heavy_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_improved_heavy_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_imp_heavy_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_advanced_heavy_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_adv_heavy_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_super_heavy_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_main_battle_tank_chassis_medium"
+        texturefile = "gfx/interface/technologies/GER_main_battle_tank.dds"
+    }
+}

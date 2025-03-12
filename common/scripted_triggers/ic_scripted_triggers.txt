@@ -141,6 +141,7 @@ ic_sov_first_defence_states_north = {
 		AND = {
 			OR = {
 				state = 814
+				state = 815
 				state = 11
 				state = 189
 				state = 190
@@ -154,7 +155,7 @@ ic_sov_first_defence_states_north = {
 				state = 811
 				state = 813
 				state = 209
-				state = 210 
+				state = 210
 			}
 		}
 	}

@@ -1,0 +1,9 @@
+state = {
+	id = 982
+	name = "STATE_982"
+	history = {}
+	provinces = { 10849 } 
+	manpower = 1
+	state_category = wasteland
+	local_supplies = 0.0 
+}

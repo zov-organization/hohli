@@ -1,0 +1,55 @@
+spriteTypes = {	
+	# GER TANK RESEARCH
+	SpriteType = {
+		name = "GFX_GER_amphibious_drive_medium"
+		texturefile = "gfx/interface/technologies/GER_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_gw_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_main_battle_tank.dds"
+	}
+}

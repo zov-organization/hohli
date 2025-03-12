@@ -77,6 +77,10 @@ on_actions = {
 				}
 			}
 
+			ENG = {
+				country_event = { id = ic_eng_events.1 days = 513 }	# 28 may 1937 - Chamberlain become prime minister
+			}
+
 			every_country = {
 				limit = {
 					is_ai = no

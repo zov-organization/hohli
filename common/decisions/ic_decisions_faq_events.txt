@@ -44,6 +44,28 @@ ic_helpful_tips = {
         }
     }
 
+    ENG_faq_event = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        visible = {
+            ROOT = {
+                tag = ENG
+            }
+        }
+        priority = 99
+
+        cost = 0
+
+        complete_effect = {
+            ENG = {
+                country_event = ic_faq_events.4
+            }
+        }
+    }
+
     USA_faq_event = {
 
         icon = GFX_decision_generic_operation

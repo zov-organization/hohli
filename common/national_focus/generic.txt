@@ -4,4 +4,14 @@ focus_tree = {
 	country = { factor = 1 }
 	
 	default = yes
+
+	continuous_focus_position = { x = 50 y = 200}
+
+	focus = {
+		id = liberty_ethos
+		cost = 1
+		available = {
+			is_ai = no
+		}
+	}
 }

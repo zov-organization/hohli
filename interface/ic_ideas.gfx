@@ -1,0 +1,252 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_NoTradeback"
+		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_planned_economy"
+		texturefile = "gfx/interface/ideas/idea_FIN_finnish_federation_of_trade_unions_heavy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 18
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_trotskyite_plot"
+		texturefile = "gfx/interface/ideas/SOV_trotskyite_plot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_mass_production"
+		texturefile = "gfx/interface/ideas/idea_ic_SOV_mass_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_fake_mass_production"
+		texturefile = "gfx/interface/ideas/idea_ic_SOV_mass_production.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ic_SOV_kuznetsov_reforms"
+		texturefile = "gfx/interface/ideas/SOV_red_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_airforces"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_airforces_2"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_airforces_3"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_red_army"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_2"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_3"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_red_army_4"
+		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_peaceful_building"
+		texturefile = "gfx/interface/ideas/generic_construction_repair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_economy_is_on_war_footing"
+		texturefile = "gfx/interface/ideas/SOV_defense_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_politburo"
+		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_politburo_2"
+		texturefile = "gfx/interface/ideas/SOV_the_politburo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_1"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_2"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_3"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_4"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_5"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_military_reorg_6"
+		texturefile = "gfx/interface/ideas/SOV_politicized_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_kama_tank_school"
+		texturefile = "gfx/interface/ideas/barbarossa.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_mehkorpusa"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ic_SOV_indiscriminate_bombing_policy"
+		texturefile = "gfx/interface/ideas/SOV_strati_idea.dds"	
+	}	
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_all_union_trainings"
+		texturefile = "gfx/interface/ideas/SOV_rehabilitated_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_stavka"
+		texturefile = "gfx/interface/ideas/SOV_the_local_soviets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_gulag"
+		texturefile = "gfx/interface/ideas/SOV_smersh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_research_facility"
+		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_research_facility_2"
+		texturefile = "gfx/interface/ideas/SOV_ussr_academy_of_sciences.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_idea_ic_versailles_bond"
+		texturefile = "gfx/interface/ideas/GER/spell_of_versailles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_mefo_bills"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_GER_try_autarky"
+		texturefile = "gfx/interface/ideas/GER/inflexible.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_1"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_2"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_3"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_4"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_nation_zombification_5"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_golden_times"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ic_gray_wolf_its_over"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ss_idea"
+		texturefile = "gfx/interface/ideas/GER/ic_nation_zombification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_old_german_working_culture"
+		texturefile = "gfx/interface/ideas/GER/ic_old_german_working_culture.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_stuka"
+		texturefile = "gfx/interface/ideas/GER/ic_stuka.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ural_bomber"
+		texturefile = "gfx/interface/ideas/GER/ic_ural_bomber.dds"
+	}
+
+
+	
+	spriteType = {
+		name = "GFX_idea_ic_ENG_commonwealth_buff"
+		texturefile = "gfx/interface/ideas/idea_SOV_organize_wreckers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_research_buff"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_french_military_cooperation_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_army_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_joint_air_exercises_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_airforce_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_queens_navy_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_navy_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+}

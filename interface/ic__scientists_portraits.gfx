@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_portrait_ic_SOV_ivan_larionov"
+		texturefile = "gfx/leaders/SOV/scientists/portrait_ic_SOV_ivan_larionov.dds"
+	}
+}

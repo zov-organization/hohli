@@ -59,9 +59,10 @@ characters={
 
 	ic_GER_joseph_goebbels={
 		name=GER_joseph_goebbels
-		portraits={
-			army={
-				small="GFX_idea_joseph_goebbels"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_joseph_goebbels
+				small = GFX_portrait_GER_joseph_goebbels_small
 			}
 		}
 		advisor={
@@ -78,17 +79,14 @@ characters={
 
 	ic_GER_heinrich_himmler={
 		name=GER_heinrich_himmler
-		portraits={
-			army={
-				small="GFX_idea_heinrich_himmler"
-				large=GFX_portrait_GER_heinrich_himmler
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_heinrich_himmler_small
+				large = GFX_portrait_GER_heinrich_himmler
 			}
 			civilian = {
-				large=GFX_portrait_GER_heinrich_himmler
+				large = GFX_portrait_GER_heinrich_himmler
 			}
-		}
-		allowed_civil_war = {
-			has_government = fascism
 		}
 		advisor={
 			slot = political_advisor
@@ -140,7 +138,6 @@ characters={
 			defense_skill=3
 			planning_skill=6
 			logistics_skill=4
-			legacy_id=5
 		}
 	}
 
@@ -169,7 +166,6 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=6
 		}
 	}
 
@@ -289,7 +285,6 @@ characters={
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=5
-			legacy_id=26
 		}
 	}
 
@@ -323,7 +318,6 @@ characters={
 			defense_skill=4
 			maneuvering_skill=3
 			coordination_skill=3
-			legacy_id=27
 		}
 	}
 
@@ -352,7 +346,6 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=4
 		}
 	}
 
@@ -406,7 +399,6 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=10
 		}
 	}
 

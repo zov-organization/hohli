@@ -1,0 +1,77 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_GER_first_buff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_first_buff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_second_buff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_second_buff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_third_buff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_third_buff.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_bop_GER_neutral"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_third_buff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_GER_first_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_first_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_second_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_second_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_third_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_third_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_fourth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_fourth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_fifth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_fifth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_sixth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_sixth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_seventh_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_seventh_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_eigth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_eigth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_nineth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_nineth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_tenth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_tenth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_eleventh_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_eleventh_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_twelth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_twelth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_thirteenth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_thirteenth_debuff.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_GER_fourteenth_debuff"
+		texturefile = "gfx/interface/bop/GER/GFX_bop_GER_fourteenth_debuff.dds"
+	}
+}
