@@ -117,7 +117,7 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           	army_experience = 100
         }
 	}
 
@@ -132,8 +132,17 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+		    date > 1937.1.1
+		}
+
         completion_reward = {
-           
+           	army_experience = 50
+
+			swap_ideas = {
+				remove_idea = ic_Ground_forces_Romania
+				add_idea = ic_Ground_forces_Romania2
+			}
         }
 	}
 
@@ -165,7 +174,12 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = GER_army_expansion_two
+				bonus = 0.5
+				uses = 5
+				category = artillery
+			}
         }
 	}
 
@@ -221,8 +235,12 @@ focus_tree = {
 		y = 7
 		cost = 5
 
+		available = {
+		    date > 1941.4.1
+		}
+
         completion_reward = {
-           
+           add_ideas = ic_Glory_to_Romania
         }
 	}
 
@@ -231,13 +249,16 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
 
         completion_reward = {
-           
+           swap_ideas = {
+				remove_idea = ic_Glory_to_Romania
+				add_idea = ic_Glory_to_Romania_2
+			}
         }
 	}
 
@@ -246,13 +267,13 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
 
         completion_reward = {
-           
+			add_ideas = ic_Headquarters_of_the_eleven_Army
         }
 	}
 
@@ -261,13 +282,13 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
 
         completion_reward = {
-           
+    
         }
 	}
 
@@ -277,11 +298,16 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 1
 		prerequisite = { focus = ic_ROM_German_inancing }
 		relative_position_id = ic_ROM_German_inancing
 
         completion_reward = {
+			add_resource = {
+					type = oil
+					amount = 25
+					state = 46
+			}
         }
 	}
 
@@ -291,7 +317,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 1
 
 		prerequisite = { focus = ic_ROM_the_transition_to_military_rails }
 		relative_position_id = ic_ROM_the_transition_to_military_rails
@@ -312,7 +338,12 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = ic_ROM_Modern_support_compaines
+				bonus = 0.5
+				uses = 5
+				category = support_tech
+			}
         }
 	}
 
@@ -375,8 +406,16 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+		    date > 1938.1.1
+		}
+
         completion_reward = {
-           
+           army_experience = 50
+			swap_ideas = {
+				remove_idea = ic_Ground_forces_Romania2
+				add_idea = ic_Ground_forces_Romania3
+			}
         }
 	}
 
@@ -391,8 +430,13 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+		    date > 1939.1.1
+		}
+
         completion_reward = {
-           
+           remove_ideas = ic_Ground_forces_Romania3
+		   add_ideas = ic_ROM_The_true_descendants_of_the_Romans
         }
 	}
 
@@ -408,7 +452,11 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+
+        	add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
         }
 	}
 
@@ -418,15 +466,18 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		prerequisite = { focus = ic_ROM_The_Iron_Guard }
-		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
+		prerequisite = { focus = ic_ROM_The_Iron_Guard focus = ic_ROM_The_true_descendants_of_the_Romans } 
 		relative_position_id = ic_ROM_The_Iron_Guard
 
 		cost = 5
 
         completion_reward = {
-           
-        }
+
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
 	}
 
 	focus = {
@@ -441,7 +492,11 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_political_power = 100
+		   add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
         }
 	}
 
@@ -470,10 +525,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_German_officer_corps }
 		relative_position_id = ic_ROM_German_officer_corps
 
-		cost = 5
+		cost = 1
 
         completion_reward = {
-           
+           swap_ideas = {
+				remove_idea = ic_Headquarters_of_the_eleven_Army
+				add_idea = ic_Headquarters_of_the_eleven_Army2
+			}
         }
 	}
 
@@ -486,15 +544,21 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_German_officer_corps }
 		relative_position_id = ic_ROM_German_officer_corps
 
-		cost = 5
+		cost = 1
 
         completion_reward = {
-           
+           	ROM = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GER } }
+			ROM = { add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 1000 producer = GER } }
+			ROM = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = GER } }
         }
 	}
 
 	focus = {
 		id = ic_ROM_WAR
+
+		available = {
+		    date > 1941.6.22
+		}
 
 		x = 4
 		y = 1
@@ -505,7 +569,7 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_Black_Sea_-_Romania }
 		relative_position_id = ic_ROM_More_more_oil
 
-		cost = 5
+		cost = 0
 
         completion_reward = {
            
@@ -780,10 +844,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		
-		cost = 5
+		cost = 3
 
         completion_reward = {
-           
+           declare_war_on = {
+					target = YUG
+					type = annex_everything
+				}
         }
 	}
 	
@@ -796,10 +863,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		
-		cost = 5
+		cost = 3
 
         completion_reward = {
-           
+           declare_war_on = {
+					target = GRE
+					type = annex_everything
+				}
         }
 	}
 
@@ -815,7 +885,8 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           	add_political_power = 100
+        	add_stability = 0.08
         }
 	}
 
@@ -830,8 +901,15 @@ focus_tree = {
 		
 		cost = 5
 
+		available = {
+		    date > 1939.7.10
+		}
+
         completion_reward = {
-           
+			custom_effect_tooltip = ic_ROM_italian_ammunication_tt
+           	ROM = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 5000 producer = ITA } }
+			ROM = { add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 300 producer = ITA } }
+			ROM = { add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 300 producer = ITA } }
         }
 	}
 	focus = {
@@ -882,5 +960,4 @@ focus_tree = {
            
         }
 	}
-
 }
