@@ -1196,11 +1196,11 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Agrarian_reform2
 
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 
 		prerequisite = { focus = ic_ROM_Agrarian_reform }
-		relative_position_id = ic_ROM_light_industry
+		relative_position_id = ic_ROM_Agrarian_reform
 		
 		cost = 5
 
