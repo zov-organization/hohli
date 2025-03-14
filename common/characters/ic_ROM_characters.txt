@@ -163,4 +163,37 @@ characters {
 		}
 	}
 
+	ic_ROM_karl_donitz={
+		name=GER_karl_donitz
+		portraits={
+			army={
+				large=GFX_portrait_GER_karl_donitz
+				small=GFX_portrait_GER_karl_donitz_small
+			}
+			army={
+				small="GFX_idea_donitz"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ic_GER_karl_donitz
+			available = {
+				has_completed_focus = ic_ROM_visit_Denitz_in_Romania
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 50
+		}
+		
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+		}
+	}
+
 }

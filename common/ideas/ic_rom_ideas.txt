@@ -163,5 +163,146 @@ ideas {
 
 			}
 		}
+
+		ic_ROM_The_Navy_of_Greater_Romania = {
+			name = ic_ROM_The_Navy_of_Greater_Romania
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                refit_ic_cost = -0.10
+				refit_speed = 0.10
+				repair_speed_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				navy_org_factor = 0.05
+				experience_gain_navy_factor = 0.1
+				experience_gain_navy_unit_factor = 0.1
+				production_speed_dockyard_factor = 0.1	
+			}
+		}
+
+		 ic_escort_effort_focus_Rom = {
+			name = ic_escort_effort_focus_Rom
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+    
+			}
+
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		ic_ROM_school_f_bombing_from_the_sea = {
+			name = ic_ROM_school_f_bombing_from_the_sea
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_doctrine_cost_factor = -0.15
+				shore_bombardment_bonus = 0.30
+			}
+		}
+
+		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary = {
+			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				consumer_goods_expected_value = 0.1
+			}
+		}
+
+		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2 = {
+			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				consumer_goods_expected_value = 0.05
+			}
+		}
+
+		ic_ROM_We_are_better_than_Austria_Hungary = {
+			name = ic_ROM_We_are_better_than_Austria_Hungary
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+
+		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3 = {
+			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.025
+				consumer_goods_expected_value = 0.05
+				war_support_factor = 0.15
+					add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+				}
+			}
+		}
+
+		ic_ROM_AXIS = {
+			name = ic_ROM_AXIS
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
     }
 }

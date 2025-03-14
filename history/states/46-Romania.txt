@@ -2,12 +2,12 @@
 state={
 	id=46
 	name="STATE_46" # Muntenia
-	manpower = 4461400
+	manpower = 10000000
 	resources={
 		oil=44 # was: 70
 	}
 
-	state_category = city
+	state_category = megalopolis
 
 	history={
 		owner = ROM
@@ -15,10 +15,10 @@ state={
 		victory_points = { 3663 5 }
 		victory_points = { 657 3 }
 		buildings = {
-			infrastructure = 3
+			infrastructure = 8
 			arms_factory = 4
 			industrial_complex = 1
-			air_base = 3
+			air_base = 10
 			657 = {
 				naval_base = 8
 			}

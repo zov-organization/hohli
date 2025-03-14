@@ -1,8 +1,8 @@
 capital = 46
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.6
+set_stability = 0.48
+set_war_support = 0.3
 
 recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_constantin_ion_parhon
@@ -23,6 +23,7 @@ recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
 recruit_character = ic_ROM_petre_dumitrescu
+recruit_character = ic_ROM_karl_donitz
 
 # Starting tech
 set_technology = {
@@ -36,6 +37,30 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
+	interwar_antitank = 1
+
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	improved_airplane_launcher = 1
+	basic_dp_light_battery = 1
+
 }
 
 if = {
@@ -85,22 +110,8 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 		ic_Ground_forces_Romania
+		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
 	}
-	give_guarantee = CZE
-	give_guarantee = GRE
-	give_guarantee = TUR
-	give_guarantee = YUG
-}
-if = {
-	limit = {
-		AND = {  
-			NOT = { has_dlc = "Death or Dishonor" }
-			has_dlc = "Battle for the Bosporus"
-		}
-	}
-	give_guarantee = GRE
-	give_guarantee = TUR
-	give_guarantee = YUG
 }
 
 #Kick off kings crazy life
@@ -141,7 +152,7 @@ if = {
 		modifier = BFTB_balkan_pact_enemy
 	}
 }
-set_convoys = 10
+set_convoys = 150
 set_popularities = {
 	democratic = 60
 	fascism = 18

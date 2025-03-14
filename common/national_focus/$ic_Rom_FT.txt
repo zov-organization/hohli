@@ -25,7 +25,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-            add_political_power = 150
+            add_political_power = 200
             add_stability = 0.05
         }
 	}
@@ -48,10 +48,13 @@ focus_tree = {
 
 	focus = {
 		id = ic_ROM_Interference_with_the_King's_expenses
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
 		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
+
 		cost = 5
 
         completion_reward = {
@@ -158,7 +161,13 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 0.5
+				uses = 6
+				category = land_doctrine
+			}
         }
 	}
 
@@ -195,35 +204,48 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = ROM_inf_one
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
         }
 	}
 
 	focus = {
 		id = ic_ROM_The_Navy_of_Greater_Romania
-		x = 5
+
+		x = 4
 		y = 1
+
 		prerequisite = { focus = ic_ROM_Election_of_the_King}
 		relative_position_id = ic_ROM_Election_of_the_King
+
 		cost = 5
 
         completion_reward = {
-           
+			navy_experience = 200
+           add_ideas = ic_ROM_The_Navy_of_Greater_Romania	
         }
 	}
 
 	focus = {
 		id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 
-		x = 11
+		x = 9
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Election_of_the_King}
 		relative_position_id = ic_ROM_Election_of_the_King
 
-		cost = 5
+		cost = 10
 
         completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
+				add_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+			}
            
         }
 	}
@@ -512,7 +534,7 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_ideas = ic_ROM_AXIS		
         }
 	}
 
@@ -572,6 +594,7 @@ focus_tree = {
 		cost = 0
 
         completion_reward = {
+			add_war_support = 1
            
         }
 	}
@@ -702,7 +725,23 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           navy_experience = 100
+			46 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			77 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
         }
 	}
 
@@ -718,7 +757,7 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           custom_effect_tooltip = ic_ROM_visit_Denitz_in_Romania_tt
         }
 	}
 
@@ -734,7 +773,56 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			set_technology = {
+				ship_hull_super_heavy = 1
+				improved_heavy_armor_scheme = 1
+			}
+
+			create_equipment_variant = {
+				name = "Bismarck"
+				type = ship_hull_super_heavy_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_super_heavy_battery_1
+					front_2_custom_slot = ship_super_heavy_battery_1
+					mid_1_custom_slot = dp_ship_secondaries_2
+					mid_2_custom_slot = dp_ship_secondaries_2
+					mid_3_custom_slot = dp_ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_super_heavy_battery_1
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ROM" 
+					version_name = "Bismarck"
+				}
+				name = "Bismarck" 
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ROM" 
+					version_name = "Bismarck"
+				}
+				name = "Bismarck" 
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
         }
 	}
 
@@ -751,7 +839,8 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			navy_experience = 100
+           add_ideas = ic_escort_effort_focus_Rom
         }
 	}
 
@@ -767,7 +856,13 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = USA_atlanta
+				bonus = 2.0
+				uses = 2
+				category = cl_tech	
+				category = ca_tech	
+			}
         }
 	}
 
@@ -783,7 +878,18 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = USA_fleet_submarines
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
         }
 	}
 
@@ -800,7 +906,13 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			navy_experience = 100
+           	add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
         }
 	}
 	focus = {
@@ -815,7 +927,7 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_ideas = ic_ROM_school_f_bombing_from_the_sea
         }
 	}
 
@@ -831,20 +943,36 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           add_tech_bonus = {
+				name = USA_naval_radar
+				uses = 4
+				bonus = 1.0
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				name = GER_cheap_civilian_radios
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
         }
 	}
 
 	focus = {
 		id = ic_ROM_declare_war_in_YUG
 
-		x = 3
+		x = 2
 		y = 1
+
+		available = {
+			has_completed_focus = ic_ROM_open_focus_romania
+			date > 1939.9.1
+		}
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		
-		cost = 3
+		cost = 1
 
         completion_reward = {
            declare_war_on = {
@@ -857,13 +985,18 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_declare_war_in_GRE
 
-		x = 5
+		x = 4
 		y = 1
+
+		available = {
+			has_completed_focus = ic_ROM_open_focus_romania
+		    date > 1939.9.1
+		}
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		
-		cost = 3
+		cost = 1
 
         completion_reward = {
            declare_war_on = {
@@ -924,7 +1057,10 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			swap_ideas = {
+				remove_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+				add_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3
+			}
         }
 	}
 
@@ -934,6 +1070,10 @@ focus_tree = {
 		x = 0
 		y = 1
 
+		available = {
+		    date > 1939.9.1
+		}
+
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		mutually_exclusive = { focus = ic_ROM_Support_for_German_policy }
@@ -941,12 +1081,13 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			remove_ideas = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+			add_ideas = ic_ROM_We_are_better_than_Austria_Hungary
         }
 	}
 	
 	focus = {
-		id = ic_ROM_open_decision_germany
+		id = ic_ROM_open_focus_romania
 
 		x = 0
 		y = 1
@@ -957,7 +1098,84 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+           custom_effect_tooltip = ic_ROM_open_focus_romania_tt
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Industrialization
+
+		x = 18
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Election_of_the_King }
+		relative_position_id = ic_ROM_Election_of_the_King
+		
+		cost = 10
+
+        completion_reward = {
+           	add_tech_bonus = {
+				name = ic_ROM_Industrialization
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_light_industry
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Industrialization }
+		relative_position_id = ic_ROM_Industrialization
+		
+		cost = 5
+
+        completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_heavy_industry
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Industrialization }
+		relative_position_id = ic_ROM_Industrialization
+		
+		cost = 5
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
         }
 	}
 }
