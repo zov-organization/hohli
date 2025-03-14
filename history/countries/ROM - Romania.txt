@@ -110,7 +110,7 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 		ic_Ground_forces_Romania
-		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
+		ic_ROM_collapse_of_AusHun
 	}
 }
 

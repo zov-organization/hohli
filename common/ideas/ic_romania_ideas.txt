@@ -220,8 +220,8 @@ ideas {
 			}
 		}
 
-		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary = {
-			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
+		ic_ROM_collapse_of_AusHun = {
+			name = ic_ROM_collapse_of_AusHun
 
 			removal_cost = -1
 
@@ -236,8 +236,8 @@ ideas {
 			}
 		}
 
-		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2 = {
-			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+		ic_ROM_collapse_of_AusHun2 = {
+			name = ic_ROM_collapse_of_AusHun2
 
 			removal_cost = -1
 
@@ -252,8 +252,8 @@ ideas {
 			}
 		}
 
-		ic_ROM_We_are_better_than_Austria_Hungary = {
-			name = ic_ROM_We_are_better_than_Austria_Hungary
+		ic_ROM_better_than_AusHun = {
+			name = ic_ROM_better_than_AusHun
 
 			removal_cost = -1
 
@@ -268,8 +268,8 @@ ideas {
 			}
 		}
 
-		ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3 = {
-			name = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3
+		ic_ROM_collapse_of_AusHun3 = {
+			name = ic_ROM_collapse_of_AusHun3
 
 			removal_cost = -1
 
@@ -282,10 +282,6 @@ ideas {
 				stability_factor = -0.025
 				consumer_goods_expected_value = 0.05
 				war_support_factor = 0.15
-					add_popularity = {
-				ideology = fascism
-				popularity = 0.2
-				}
 			}
 		}
 

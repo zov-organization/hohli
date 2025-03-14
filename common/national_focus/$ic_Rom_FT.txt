@@ -31,7 +31,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Supervision_of_the_King's_expenses
+		id = ic_ROM_Supervision_of_the_Kings_expenses
 
 		x = -16
 		y = 1
@@ -47,13 +47,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Interference_with_the_King's_expenses
+		id = ic_ROM_Interference_with_the_Kings_expenses
 
 		x = 0
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
-		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
+		prerequisite = { focus = ic_ROM_Supervision_of_the_Kings_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_Kings_expenses
 
 		cost = 5
 
@@ -65,16 +65,12 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Mihai_the_first_looks_better
 		icon = GFX_focus_rom_coup
-		prerequisite = { focus = ic_ROM_Interference_with_the_King's_expenses }
+		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
 		x = 0
 		y = 1
-		relative_position_id = ic_ROM_Interference_with_the_King's_expenses
+		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
 
 		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
 
 		bypass = {
 
@@ -243,8 +239,8 @@ focus_tree = {
 
         completion_reward = {
 			swap_ideas = {
-				remove_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary
-				add_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
+				remove_idea = ic_ROM_collapse_of_AusHun
+				add_idea = ic_ROM_collapse_of_AusHun2
 			}
            
         }
@@ -1058,8 +1054,8 @@ focus_tree = {
 
         completion_reward = {
 			swap_ideas = {
-				remove_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
-				add_idea = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary3
+				remove_idea = ic_ROM_collapse_of_AusHun2
+				add_idea = ic_ROM_collapse_of_AusHun3
 			}
         }
 	}
@@ -1081,8 +1077,10 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-			remove_ideas = ic_ROM_Consequences_of_the_collapse_of_Austria_Hungary2
-			add_ideas = ic_ROM_We_are_better_than_Austria_Hungary
+			swap_ideas = {
+				remove_idea = ic_ROM_collapse_of_AusHun2
+				add_idea = ic_ROM_better_than_AusHun
+			}
         }
 	}
 	
@@ -1136,7 +1134,7 @@ focus_tree = {
 
         completion_reward = {
 			81 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1164,7 +1162,7 @@ focus_tree = {
 
         completion_reward = {
 			79 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
