@@ -304,5 +304,34 @@ ideas {
 				min_export = -0.1
 			}
 		}
+
+		ic_ROM_Agrarian_reform = {
+			name = ic_ROM_Agrarian_reform
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		ic_ROM_Agrarian_reform2 = {
+			name = ic_ROM_Agrarian_reform2
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				weekly_manpower = 1000
+			}
+		}
     }
 }

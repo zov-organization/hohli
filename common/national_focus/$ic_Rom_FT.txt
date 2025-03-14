@@ -1095,7 +1095,7 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_Support_for_German_policy }
 		relative_position_id = ic_ROM_Support_for_German_policy
 		
-		cost = 5
+		cost = 3
 
         completion_reward = {
            custom_effect_tooltip = ic_ROM_open_focus_romania_tt
@@ -1175,6 +1175,41 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Agrarian_reform
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+        completion_reward = {
+			add_ideas = ic_ROM_Agrarian_reform 
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Agrarian_reform2
+
+		x = -1
+		y = 2
+
+		prerequisite = { focus = ic_ROM_Agrarian_reform }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_Agrarian_reform
+				add_idea = ic_ROM_Agrarian_reform2
 			}
         }
 	}
