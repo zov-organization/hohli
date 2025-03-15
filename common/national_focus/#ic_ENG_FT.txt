@@ -640,11 +640,30 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_ideas = extensive_conscription
-			show_ideas_tooltip = ic_ENG_kenneth_anderson
+			add_ideas = volunteer_only
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ic_ENG_alan_brooke
+			show_ideas_tooltip = ic_ENG_kenneth_anderson
 		}
 	}
+	focus = {
+		id = ENG_bebra
+		icon = GFX_ENG_general_command_staff
+
+		prerequisite = { focus = ENG_french_military_cooperation }
+		prerequisite = { focus = ENG_general_command_staff }
+		relative_position_id = ENG_french_military_cooperation
+
+		x = 1
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+
 
 
 	focus = {

@@ -546,9 +546,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_mikhail_kalinin
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_nikolay_voznesensky
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_vyacheslav_molotov
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_nikita_khrushchyov
 		}
 	}
@@ -820,6 +829,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = { ic_SOV_kuznetsov_reforms }
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_chief_of_navy
 			show_ideas_tooltip = ic_SOV_nikolay_kuznetsov
 		}
 	}
@@ -874,6 +886,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ic_SOV_stavka
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = ic_SOV_semyon_timoshenko
 		}
 	}
@@ -895,9 +910,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = available_military_high_command
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_aleksandr_vasilevsky
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_ivan_konev
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_stepan_krasovsky
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			show_ideas_tooltip = ic_SOV_sergey_khudyakov
 		}
 	}
@@ -1506,6 +1530,8 @@ focus_tree = {
 				remove_idea = SOV_red_airforces_2
 				add_idea = SOV_red_airforces_3
 			}
+			
+			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ic_SOV_aleksandr_novikov
 		}
 	}
@@ -1530,8 +1556,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SOV_evac_industry_category
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ic_SOV_yuri_levitan
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_category_tooltip = SOV_evac_industry_category
 			activate_decision = SOV_start_evacuate_ukranian_industry
 			activate_decision = SOV_start_evacuate_soviet_industry
 
@@ -1595,7 +1625,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
             SOV = {
                 country_event = ic_sov_events.1
             }
@@ -1834,6 +1868,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = ic_SOV_konstantin_rokossovsky
 		}
 	}
