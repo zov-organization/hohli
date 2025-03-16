@@ -1,87 +1,414 @@
 add_namespace = ic_ger_events
 
-country_event = {   # barb first success
-    id = ic_ger_events.1
-    title = ic_ger_events.1.t
-    desc = ic_ger_events.1.d
-    
-    fire_only_once = yes
-
-    trigger = {
-        SOV = {
-            not = {
-			    controls_state = 11
-			    controls_state = 206
-			    controls_state = 192
+news_event = {  # Kaunas falls
+	id = ic_ger_events.1
+	title = ic_ger_events.1.t
+	desc = ic_ger_events.1.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 11 = { is_controlled_by = SOV } }
+		not = { has_global_flag = kaunas_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = kaunas_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
             }
         }
-        GER = {
-			has_idea = ic_ger_barbarossa
-        }
-    }
-
-    option = {
-        name = ic_ger_events.1.a
-		add_days_mission_timeout = {
-			mission = GER_blitzkrieg_mission
-			days = 45
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
 		}
-    }
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
 }
-country_event = {   # barb moderate success
-    id = ic_ger_events.2
-    title = ic_ger_events.2.t
-    desc = ic_ger_events.2.d
-    
-    fire_only_once = yes
-
-    trigger = {
-        SOV = {
-            not = {
-			    controls_state = 808
-			    controls_state = 201
-			    controls_state = 197
+news_event = {  # Riga falls
+	id = ic_ger_events.2
+	title = ic_ger_events.2.t
+	desc = ic_ger_events.2.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 808 = { is_controlled_by = SOV } }
+		not = { has_global_flag = riga_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = riga_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
             }
         }
-        GER = {
-			has_idea = ic_ger_barbarossa
-        }
-    }
-
-    option = {
-        name = ic_ger_events.2.a
-		add_days_mission_timeout = {
-			mission = GER_blitzkrieg_mission
-			days = 45
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
 		}
-    }
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
 }
-country_event = {   # barb total success
-    id = ic_ger_events.3
-    title = ic_ger_events.3.t
-    desc = ic_ger_events.3.d
-    
-    fire_only_once = yes
-
-    trigger = {
-        SOV = {
-            not = {
-			    controls_state = 813
-			    controls_state = 207
-			    controls_state = 193
-			    controls_state = 200
+news_event = {  # Outskirts of Leningrad
+	id = ic_ger_events.3
+	title = ic_ger_events.3.t
+	desc = ic_ger_events.3.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 208 = { is_controlled_by = SOV } }
+		not = { has_global_flag = outskirts_of_leningrad }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = outskirts_of_leningrad
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
             }
         }
-        GER = {
-			has_idea = ic_ger_barbarossa
-        }
-    }
-
-    option = {
-        name = ic_ger_events.3.a
-		add_days_mission_timeout = {
-			mission = GER_blitzkrieg_mission
-			days = 45
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
 		}
-    }
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+
+news_event = {  # Minsk falls
+	id = ic_ger_events.4
+	title = ic_ger_events.4.t
+	desc = ic_ger_events.4.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 206 = { is_controlled_by = SOV } }
+		not = { has_global_flag = minsk_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = minsk_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+news_event = {  # Smolensk falls
+	id = ic_ger_events.5
+	title = ic_ger_events.5.t
+	desc = ic_ger_events.5.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 242 = { is_controlled_by = SOV } }
+		not = { has_global_flag = smolensk_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = smolensk_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+
+news_event = {  # Zhytomyr falls
+	id = ic_ger_events.6
+	title = ic_ger_events.6.t
+	desc = ic_ger_events.6.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 201 = { is_controlled_by = SOV } }
+		not = { has_global_flag = zhytomyr_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = zhytomyr_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+news_event = {  # Odessa falls
+	id = ic_ger_events.7
+	title = ic_ger_events.7.t
+	desc = ic_ger_events.7.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 192 = { is_controlled_by = SOV } }
+		not = { has_global_flag = odessa_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = odessa_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+news_event = {  # Chernigov falls
+	id = ic_ger_events.8
+	title = ic_ger_events.8.t
+	desc = ic_ger_events.8.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 193 = { is_controlled_by = SOV } }
+		not = { has_global_flag = chernigov_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = chernigov_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+news_event = {  # Zaporozhe falls
+	id = ic_ger_events.9
+	title = ic_ger_events.9.t
+	desc = ic_ger_events.9.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 200 = { is_controlled_by = SOV } }
+		not = { has_global_flag = zaporozhe_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = zaporozhe_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
+}
+news_event = {  # Orel falls
+	id = ic_ger_events.10
+	title = ic_ger_events.10.t
+	desc = ic_ger_events.10.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+		not = { 222 = { is_controlled_by = SOV } }
+		not = { has_global_flag = orel_fell }
+        GER = { has_idea = ic_ger_barbarossa }
+	}
+	
+	immediate = {
+		set_global_flag = orel_fell
+        GER = {
+            add_days_mission_timeout = {
+                mission = GER_blitzkrieg_mission
+                days = 10
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ic_ger_events.1.a
+		trigger = {
+			NOT = {
+				is_axis = yes
+			}
+		}
+	}
+	option = {
+		name = ic_ger_events.1.b
+		trigger = { is_axis = yes }
+	}
 }
