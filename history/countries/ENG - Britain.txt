@@ -70,7 +70,7 @@ recruit_character = ic_ENG_sholto_douglas
 add_ideas = {
 	civilian_economy
 	export_focus
-	limited_conscription
+	disarmed_nation
 
 	george_v
 }

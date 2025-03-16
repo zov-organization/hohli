@@ -217,7 +217,11 @@ ic_progon_mode = {
         icon = GFX_decision_generic_wreckers
 
         available = {
-		    date > 1939.9.1
+            count_triggers = {
+                amount = 1
+		        date > 1939.9.1
+                is_debug = yes
+            }
         }
 
         fire_only_once = yes
@@ -247,9 +251,17 @@ ic_progon_mode = {
         icon = GFX_decision_generic_wreckers
 
         available = {
-		    date > 1939.9.1
-            GER = {
-                has_completed_focus = GER_expand_lebensraum
+            count_triggers = {
+                amount = 1
+
+                and = {
+                    date > 1939.9.1
+                    GER = {
+                        has_completed_focus = GER_expand_lebensraum
+                    }
+                }
+
+                is_debug = yes
             }
         }
 

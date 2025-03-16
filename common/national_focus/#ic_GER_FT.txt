@@ -57,6 +57,9 @@
 		cost = 3
 		completion_reward = {
 			add_ideas = ic_nation_zombification_1
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ic_GER_joseph_goebbels
 		}
 	}
@@ -87,6 +90,7 @@
 		y = 0
 		cost = 3
 		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = krupp
 		}
 	}
@@ -102,13 +106,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			show_ideas_tooltip = ic_GER_hjalmar_schacht
 			add_tech_bonus = {
 				name = GER_extra_sponsorship
 				bonus = 0.5
 				uses = 4
 				category = electronics
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ic_GER_hjalmar_schacht
 		}
 	}
 
@@ -1572,6 +1579,9 @@
 		cost = 10
 		completion_reward = {
 			remove_ideas = ic_GER_try_autarky
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ic_GER_albert_speer
 		}
 	}
