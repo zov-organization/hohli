@@ -60,7 +60,7 @@ NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.68
 	
 	-- Fog tweaks
 	NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 475 		-- 25 above GB_CAM_MAX. Prevents transitional luminance flicker.
-	NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 100
+	NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 450
 
 ---
 --- Lighting rework
@@ -92,6 +92,3 @@ NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.68
 	NDefines.NGraphics.STRATEGIC_AIR_COLOR_GOOD_WHILE_HIGHLIGHTING_HOLD = {1,1,1,1}
 	NDefines.NGraphics.STRATEGIC_AIR_COLOR_AVERAGE_WHILE_HIGHLIGHTING_HOLD = {1,1,1,1}
 	NDefines.NGraphics.STRATEGIC_AIR_COLOR_NEUTRAL_WHILE_HIGHLIGHTING_HOLD = {1,1,1,1}
-	
-	
-	
