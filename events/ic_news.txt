@@ -34,3 +34,23 @@ news_event = {
 	}
 
 }
+
+country_event = {
+	# WW2 Start!
+	id = ic_news.2
+	title = ic_news.2.t
+	desc = ic_news.2.d
+	#picture = GFX_news_event_royal_visit
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		GER = {
+			complete_national_focus = GER_expand_lebensraum
+		}
+	}
+
+	option = {
+		name = ic_news.2.a
+	}
+}

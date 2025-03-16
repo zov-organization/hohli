@@ -1,0 +1,3 @@
+RAJ_population_decisions = {
+	RAJ_industrialize_state = {}
+}

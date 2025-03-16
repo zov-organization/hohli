@@ -1,0 +1,19 @@
+﻿l_english:
+ ic_sp_tag_fighter_armament:0 "Aircraft Armament Researches (special projects)"
+ ic_sp_tag_fighter_armament_speed_factor:0 "Aircraft Armament Researches Speed"
+
+
+ ic_sp_aa_hmg:0 "Heavy Machine Guns"
+ ic_sp_aa_hmg_desc:0 ""
+ ic_sp_aa_cannon_1:0 "Cannon I"
+ ic_sp_aa_cannon_1_desc:0 ""
+ ic_sp_aa_cannon_3:0 "Cannon II"
+ ic_sp_aa_cannon_3_desc:0 ""
+
+ ic_sp_sov_ptab:0 "PTAB"
+ ic_sp_sov_ptab_desc:0 "Protivo-Tankovaya Aviabomba Kumulyativnogo Deystvia.\nAntitank Aviation Bomb was a Soviet high-explosive anti-tank (HEAT) shaped charge bomb."
+
+
+
+ ic_scientist_trait_fighter_armament:0 "Fighter Armament Specialist"
+ ic_scientist_trait_aircraft_genius:0 "Aircraft Genuis"

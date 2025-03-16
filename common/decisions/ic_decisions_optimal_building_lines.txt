@@ -159,6 +159,57 @@ ic_helpful_tips = {
         }
     }
 
+    ENG_optimal_building_line = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = ENG
+                date < 1936.02.01
+            }
+        }
+        priority = 100
+
+        cost = 0
+
+        complete_effect = {
+            132 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 6
+					instant_build = no
+				}
+            }
+            130 = {
+                add_building_construction = {
+					type = infrastructure
+					level = 6
+					instant_build = no
+				}
+            }
+
+            132 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+            130 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = no
+				}
+            }
+        }
+    }
+
     USA_optimal_building_line = {
 
         icon = GFX_decision_generic_operation

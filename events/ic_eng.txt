@@ -1,0 +1,25 @@
+add_namespace = ic_eng_events
+
+country_event = {	# 28 may 1937 - Chamberlain become prime minister
+	id = ic_eng_events.1
+	title = ic_eng_events.1.t
+	desc = ic_eng_events.1.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = ic_eng_events.1.a
+		
+		create_country_leader = {
+			name = ENG_neville_chamberlain
+			picture = "GFX_portrait_ENG_neville_chamberlain"
+			ideology=liberalism
+			traits={ chamberlain_appeaser rearmer }
+			id = -1
+		}
+
+	}
+}

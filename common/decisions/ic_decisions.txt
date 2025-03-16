@@ -11,6 +11,7 @@ ic_helpful_tips = {
         visible = {
             ROOT = {
                 tag = SOV
+			    has_completed_focus = SOV_ukrain_prom_compleks
             }
         }
         priority = 1
@@ -34,7 +35,8 @@ ic_helpful_tips = {
 		}
 
         cost = 0
-
+        
+		on_map_mode = decision_view_only
         complete_effect = {
             every_owned_state = {
 				limit = {
@@ -79,10 +81,12 @@ ic_helpful_tips = {
         visible = {
             ROOT = {
                 tag = SOV
+			    has_completed_focus = SOV_making_use_of_the_storehouse_of_russia
             }
         }
         priority = 1
-
+        
+		on_map_mode = decision_view_only
         highlight_states = {
             highlight_state_targets = {
                 state = 398
@@ -95,8 +99,10 @@ ic_helpful_tips = {
 				state = 578
 				state = 577
 				state = 568
-				state = 576
 				state = 571
+				state = 580
+				state = 570
+				state = 569
             }
 		}
 
@@ -133,408 +139,205 @@ ic_helpful_tips = {
 			}
         }
     }
-
-    SOV_secure_north_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 814
-				state = 815
-				state = 11
-				state = 189
-				state = 190
-				state = 809
-				state = 810
-				state = 808
-				state = 12
-				state = 191
-				state = 13
-				state = 812
-				state = 811
-				state = 813
-				state = 209
-				state = 210 
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
-    }
-    SOV_secure_center_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 94
-				state = 194
-				state = 97
-				state = 95
-				state = 204
-				state = 784
-				state = 96
-				state = 206
-				state = 207
-				state = 241
-				state = 242
-				state = 243
-				state = 224
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
-    }
-    SOV_secure_south_1941_tip = {
-
-        icon = GFX_decision_generic_operation
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        highlight_states = {
-            highlight_state_targets = {
-				state = 202
-				state = 199
-				state = 201
-				state = 202
-				state = 193
-				state = 225
-				state = 221
-				state = 227
-				state = 226
-				state = 259
-				state = 203
-				state = 198
-				state = 834
-				state = 192
-				state = 197
-				state = 196
-				state = 137
-				state = 200
-            }
-		}
-
-        cost = 0
-
-        complete_effect = { }
-    }
-
-    SOV_debug_cze = {
-
-        icon = GFX_decision_generic_wreckers
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        cost = 0
-
-        complete_effect = {
-            swap_ideas = {
-                remove_idea = ic_SOV_peaceful_building
-                add_idea = ic_SOV_economy_is_on_war_footing
-            }
-        }
-    }
-
-    SOV_debug_pol = {
-
-        icon = GFX_decision_generic_wreckers
-
-        available = { }
-
-        fire_only_once = no
-
-        visible = {
-            ROOT = {
-                tag = SOV
-            }
-        }
-        priority = 1
-
-        cost = 0
-
-        complete_effect = {
-            annex_country = {
-                target = LIT
-            }
-             annex_country = {
-                target = LAT
-            }
-             annex_country = {
-                target = EST
-            }
-            every_state = {
-				limit = {
-					OR = {
-						state = 96
-                        state = 784
-                        state = 95
-                        state = 97
-                        state = 94
-                        state = 93
-                        state = 91
-                        state = 89
-                        state = 80
-                        state = 78
-                        state = 766
-                        state = 146
-                    }
-				}
-                transfer_state_to = SOV
-			}
-        }
-    }
 }
 
+ic_progon_mode = {
+    
 
+    ic_progon_mode_blumen_kriege = {
 
-ic_pp_waste = {
+        icon = GFX_decision_generic_wreckers
 
-    invest_in_civ_industries = {
+        available = {}
 
-        icon = GFX_decision_generic_factory
+        fire_only_once = yes
 
-        available = { }
+        visible = {}
 
-        fire_only_once = no
-        days_re_enable = 180
+        priority = 1
 
-        visible = {
-            ROOT = {
-                is_ai = no
+        cost = 0
+
+        days_remove = 35
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_blumen_kriege
             }
         }
-
-        cost = 150
-
-        complete_effect = {
-            add_offsite_building= { type = industrial_complex level = 2 }
-	    }
     }
-	
-	
-    invest_in_arms_factory = {
+    ic_progon_mode_aus = {
 
-        icon = GFX_decision_generic_factory
+        icon = GFX_decision_generic_wreckers
 
         available = {
-       
+		    date > 1938.4.1
         }
 
-        fire_only_once = no
-        days_re_enable = 180
+        fire_only_once = yes
 
-        visible = {
-            ROOT = {
-                is_ai = no
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        days_remove = 70
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_anshluss
             }
         }
-
-        cost = 150
-
-        complete_effect = {
-            add_offsite_building= { type = arms_factory level = 2 }
-	    }
     }
-	
-    invest_in_shipyards = {
-	    icon = GFX_decision_generic_merge_plant_ship
-	    available = { }
-	    fire_only_once = yes
-	    days_re_enable = 180
-	    cost = 25
-	    complete_effect = {
-		    add_timed_idea = {
-			    idea = shipyard_investment
-			    days = 180
-		    }
-	    }
-    }
-	
-    industrialization_effort = {
+    ic_progon_mode_cze = {
 
-        icon = GFX_decision_generic_construction
+        icon = GFX_decision_generic_wreckers
 
         available = {
-       
+		    date > 1938.8.18
         }
 
-        fire_only_once = no
-        days_re_enable = 365
+        fire_only_once = yes
 
-        visible = {
-            ROOT = {
-                is_ai = no
-            }
-        }
+        visible = {}
 
-        cost = 100
+        priority = 1
 
-        complete_effect = {
-            add_timed_idea = {
-                idea = industrialization_efforts
-                days = 365
-            }
-        }
-    }
-
-	
-	
-    invest_in_military_staff = {
-
-        icon = GFX_decision_generic_army_support
-
-        available = {
-       
-        }
-
-        fire_only_once = no
-        days_re_enable = 90
-
-        visible = {
-            ROOT = {
-                is_ai = no
-            }
-        }
-
-        cost = 100
-
-        complete_effect = {
-            army_experience = 50
-	    }
-    }
-	
-	invest_in_research = {
-
-        icon = GFX_decision_generic_research
-
-        available = {
-       
-        }
-
-        fire_only_once = no
-        days_re_enable = 365
-
-        visible = {
-            ROOT = {
-                is_ai = no
-            }
-        }
-
-        cost = 100
-
-        complete_effect = {
-            add_timed_idea = {
-                idea = research_bonus_effort
-                days = 365
-            }
-        }
-	}
-    production_effort = {
-
-        icon = GFX_decision_ger_military_buildup
-
-        available = {
-        }
-
-        fire_only_once = no
-        days_re_enable = 365
-
-        visible = {
-            ROOT = {
-                is_ai = no
-            }
-        }
-
-        cost = 150
-
-        complete_effect = {
-            add_timed_idea = {
-                idea = production_efforts
-                days = 365
+        cost = 0
+        
+        days_remove = 70
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_sudetenland
+                complete_national_focus = GER_cze_annex
             }
         }
     }
+    ic_progon_mode_pol = {
 
-	supply_buildup = {
-		icon = GFX_decision_generic_train
-		available = {
-			
-		}
-		visible = {
-		}
-		fire_only_once = no
-		days_remove = -1
-		cost = 5
-		modifier = {
-			production_speed_rail_way_factor = 0.4
-			production_speed_supply_node_factor = 0.4
-			production_speed_naval_base_factor = 0.4
-			production_speed_air_base_factor = 0.4
-			consumer_goods_expected_value = 0.03
-		}
-		ai_will_do = {
-			base = 0
-		}
-		remove_effect = {
-		}
-		complete_effect = {
-		}
-	}
-	supply_buildup_cancel = {
-		icon = GFX_decision_generic_train
-		available = {
-		}
-		visible = {
-			has_decision = supply_buildup
-		}
-		fire_only_once = no
-		cost = 5
-		complete_effect = {
-			remove_decision = supply_buildup
-		}
-	}
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+		        date > 1939.9.1
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        complete_effect = {
+            GER = {
+                complete_national_focus = GER_expand_lebensraum
+                complete_national_focus = GER_fra_cap
+                complete_national_focus = GER_ss_regiments
+            }
+            ENG = {
+                add_to_faction = HOL
+                add_to_faction = BEL
+                add_to_faction = LUX
+                add_to_faction = DEN
+            }
+        }
+    }
+    ic_progon_mode_ww2_simulation = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+
+                and = {
+                    date > 1939.9.1
+                    GER = {
+                        has_completed_focus = GER_expand_lebensraum
+                    }
+                }
+
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        complete_effect = {
+            GER = {
+                HOL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    LUX = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    BEL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    FRA = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    DEN = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    POL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+                }
+            }
+
+            SOV = {
+                annex_country = {
+                    target = LIT
+                }
+                 annex_country = {
+                    target = LAT
+                }
+                 annex_country = {
+                    target = EST
+                }
+                every_state = {
+				    limit = {
+					    OR = {
+						    state = 96
+                            state = 784
+                            state = 95
+                            state = 97
+                            state = 94
+                            state = 93
+                            state = 91
+                            state = 89
+                            state = 80
+                            state = 78
+                            state = 766
+                            state = 146
+                        }
+				    }
+                    transfer_state_to = SOV
+			    }
+            }
+
+        }
+    }
 }

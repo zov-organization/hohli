@@ -1,3 +1,0 @@
-spriteTypes = {	
-	spriteType = { name = "GFX_unit_flamethrower_sppt_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_flamethrower_sppt_icon.dds" noOfFrames = 2 }
-}

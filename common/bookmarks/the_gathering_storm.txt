@@ -31,11 +31,29 @@ bookmarks = {
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				ic_ENG_commonwealth_buff
+				ic_ENG_shadow_scheme_idea
+				ic_ENG_joint_air_exercises_idea
 			}
 			focuses = {
-				
+				ENG_fortification
+				ENG_shadow_scheme
+				ENG_birmingham_small_arms_company
 			}
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				ic_SOV_fake_mass_production
+				ic_SOV_peaceful_building
+				ic_SOV_mehkorpusa
+			}
+			focuses = {
+				SOV_we-ll_be_ready
+				SOV_wow
+				SOV_stavka_organisation
+			}	
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
@@ -70,20 +88,6 @@ bookmarks = {
 			focuses = {
 				
 			}			
-		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				ic_SOV_fake_mass_production
-				ic_SOV_peaceful_building
-				ic_SOV_mehkorpusa
-			}
-			focuses = {
-				SOV_we-ll_be_ready
-				SOV_wow
-				SOV_stavka_organisation
-			}	
 		}
 
 		"---"={

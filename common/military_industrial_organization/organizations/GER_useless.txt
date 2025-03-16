@@ -152,3 +152,102 @@ GER_dornier_organization = {
 
 	available = { hidden_trigger = { always = no } }
 }
+
+GER_alkett_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_auto_union_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_arado_flugzeugwerke_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_focke_achgelis_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_fieseler_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_kriegsmarinewerft_wilhelmshaven_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_deutsche_werke_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_deschimag_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+GER_hdw_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}

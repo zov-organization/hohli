@@ -25,6 +25,10 @@
  ic_news.1.a:0 "I guess they just wann know their friends close..."
  ic_news.1.b:0 "Doesnt have to be SO loud!"
  ic_news.1.c:0 "Take it easy, we dont want war!"
+
+ ic_news.2.t:0 "Germany violates Polish border"
+ ic_news.2.d:0 ""
+ ic_news.2.a:0 "And so it begins..."
  
  
  
@@ -36,12 +40,36 @@
  ic_sov_events.1.c:0 "Enforce South Front"
 
  #ic_ger_events
- ic_ger_events.1.t:0 "Barbarossa: First Successes"
+ ic_ger_events.1.a:0 "Germans needs to be stopped at once!"
+ ic_ger_events.1.b:0 "We'll proceed on pushing!"
+
+ ic_ger_events.1.t:0 "Kaunas Falls!"
  ic_ger_events.1.d:0 ""
- ic_ger_events.1.a:0 "We'll proceed on pushing!'"
- ic_ger_events.2.t:0 "Barbarossa: Moderate Success"
+ ic_ger_events.2.t:0 "Riga Falls!"
  ic_ger_events.2.d:0 ""
- ic_ger_events.2.a:0 "We'll proceed on pushing!'"
- ic_ger_events.3.t:0 "Barbarossa: Total Success"
+ ic_ger_events.3.t:0 "We are on the outskirts of Leningrad!"
  ic_ger_events.3.d:0 ""
- ic_ger_events.3.a:0 "Everything went according to the plan!"
+
+ ic_ger_events.4.t:0 "Minsk Falls!"
+ ic_ger_events.4.d:0 ""
+ ic_ger_events.4.a:0 "We'll proceed on pushing!"
+ ic_ger_events.5.t:0 "Smolensk Falls!"
+ ic_ger_events.5.d:0 ""
+
+ ic_ger_events.6.t:0 "Zhytomyr Falls!"
+ ic_ger_events.6.d:0 ""
+ ic_ger_events.7.t:0 "Odessa Falls!"
+ ic_ger_events.7.d:0 ""
+ ic_ger_events.8.t:0 "Chernigov Falls!"
+ ic_ger_events.8.d:0 ""
+ ic_ger_events.9.t:0 "Zaporozhe Falls!"
+ ic_ger_events.9.d:0 ""
+ ic_ger_events.10.t:0 "Orel Falls!"
+ ic_ger_events.10.d:0 ""
+
+
+
+ #ic_eng_events
+ ic_eng_events.1.t:0 "Neville Chamberlain becomes new Prime Minister"
+ ic_eng_events.1.d:0 "Awesome"
+ ic_eng_events.1.a:0 "Lovely innit fucking faggot"

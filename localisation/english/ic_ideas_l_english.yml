@@ -1,0 +1,75 @@
+﻿l_english:
+
+ peace_training:0 "Peacetime Training"
+ DayOne_Efficiency:0 "Day 1 Efficiency"
+ NoTradeback:0 "No Prewar Tradebacks"
+
+
+ # DYNAMIC MODIFIERS
+ ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
+ SOV_ukrain_prom_compleks:0 "Ukrain PromCompleks"
+ SOV_making_use_of_the_storehouse_of_russia:0 "Making Use of the Storehouse of Russia"
+ SOV_summer_defencive_buff:0 "Soviet Defence In-Depth"
+ SOV_1941_defencive_buff:0 "Soviet 1941 Defencive Buff"
+ GER_summer_offencive_buff:0 "Axis Summer Offencive Buff"
+
+
+ planned_economy:0 "Planned Economy"
+ planned_economy_TT:0 ""
+ ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
+ ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
+ SOV_red_airforces:0 "Red Airforces"
+ SOV_red_airforces_2:0 "Red Airforces"
+ SOV_red_airforces_3:0 "Red Airforces"
+ SOV_red_army:0 "Red Army"
+ ic_SOV_peaceful_building:0 "Peaceful Building"
+ ic_SOV_economy_is_on_war_footing:0 "Economy is on war footing"
+ ic_SOV_politburo:0 "Politburo"
+ ic_SOV_politburo_2:0 "Politburo"
+ ic_SOV_gulag:0 "Glavnoe Upravlenie Lageryami"
+ ic_SOV_research_facility:0 "Russian Research Facility"
+ ic_SOV_kama_tank_school:0 "KAMA and Lipetsk militaty schools"
+ ic_SOV_mehkorpusa:0 "Mehkorpusa Expansion"
+ ic_SOV_all_union_trainings:0 "All Union Trainings"
+ ic_SOV_stavka:0 "STAVKA High Command"
+ ic_SOV_military_reorg_1:0 "Military Reorganization Stage: 1"
+ ic_SOV_military_reorg_2:0 "Military Reorganization Stage: 2"
+ ic_SOV_military_reorg_3:0 "Military Reorganization Stage: 3"
+ ic_SOV_military_reorg_4:0 "Military Reorganization Stage: 4"
+ ic_SOV_military_reorg_5:0 "Military Reorganization Stage: 5"
+ ic_SOV_military_reorg_6:0 "Military Reorganization Stage: 6"
+ ic_SOV_indiscriminate_bombing_policy:0 "Indiscriminate Bombing Policy"
+
+
+
+
+ ic_versailles_bond:0 "Versailles Bond"
+ ic_mefo_bills:0 "MEFO Bills"
+ ic_old_german_working_culture:0 "Old German Working Culture"
+ ic_nation_zombification_1:0 "RMVP"
+ ic_nation_zombification_2:0 "RMVP"
+ ic_nation_zombification_3:0 "RMVP"
+ ic_nation_zombification_4:0 "RMVP"
+ ic_ss_idea:0 "SS"
+ ic_stuka:0 "Achtung Stuka!"
+ ic_ural_bomber:0 "Ural Bomber"
+ ic_ural_bomber_programm:0 "Building heavy bombers require some investments"
+ ic_gray_wolf:0 "§gGray Wolf's in Den§!"
+ ic_gray_wolf_golden_times:0 "§gGray Wolf: §YGolden Times!§!§!"
+ ic_gray_wolf_its_over:0 "§gGray Wolf tucked its tail§!"
+ ic_GER_try_autarky:0 "Try Autarky"
+ ic_ger_barbarossa:0 "Operation: Barbarossa"
+ ic_ger_barb_stall_1:0 "Blitzkrieg stalls!"
+ ic_ger_barb_stall_2:0 "Blitzkrieg stalls!"
+ ic_ger_barb_stall_3:0 "Blitzkrieg stalls: 1942 Summer Offencive Failed"
+
+
+
+
+ ic_ENG_commonwealth_buff:0 "Commonwealth Ties"
+ ic_ENG_research_buff:0 "Progress Sciency Policy"
+ ic_ENG_french_military_cooperation_idea:0 "French Military Cooperation"
+ ic_ENG_joint_air_exercises_idea:0 "Joint Air Eexercises"
+ ic_ENG_queens_navy_idea:0 "Queens Navy"
+ ic_ENG_shadow_scheme_idea:0 "Shadow Scheme"
+ ic_ENG_fighter_cheaper:0 "Winged Protectors of the Isle"
