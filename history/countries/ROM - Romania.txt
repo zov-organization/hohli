@@ -24,6 +24,7 @@ recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
 recruit_character = ic_ROM_petre_dumitrescu
 recruit_character = ic_ROM_karl_donitz
+recruit_character = ic_ROM_Michael_Romniceanu
 
 # Starting tech
 set_technology = {

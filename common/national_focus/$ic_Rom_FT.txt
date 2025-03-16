@@ -31,7 +31,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Supervision_of_the_Kings_expenses
+		id = ic_ROM_Supervision_of_the_King's_expenses
 
 		x = -16
 		y = 1
@@ -47,13 +47,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Interference_with_the_Kings_expenses
+		id = ic_ROM_Interference_with_the_King's_expenses
 
 		x = 0
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Supervision_of_the_Kings_expenses}
-		relative_position_id = ic_ROM_Supervision_of_the_Kings_expenses
+		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
 
 		cost = 5
 
@@ -65,12 +65,16 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Mihai_the_first_looks_better
 		icon = GFX_focus_rom_coup
-		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
+		prerequisite = { focus = ic_ROM_Interference_with_the_King's_expenses }
 		x = 0
 		y = 1
-		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
+		relative_position_id = ic_ROM_Interference_with_the_King's_expenses
 
 		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
 
 		bypass = {
 
@@ -306,7 +310,7 @@ focus_tree = {
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
 
         completion_reward = {
-    
+           custom_effect_tooltip = ic_ROM_the_transition_to_military_rails_tt
         }
 	}
 
@@ -1134,7 +1138,7 @@ focus_tree = {
 
         completion_reward = {
 			81 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1162,7 +1166,7 @@ focus_tree = {
 
         completion_reward = {
 			79 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1180,13 +1184,13 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Agrarian_reform
 
-		x = -1
+		x = -2
 		y = 1
 
 		prerequisite = { focus = ic_ROM_light_industry }
 		relative_position_id = ic_ROM_light_industry
 		
-		cost = 5
+		cost = 10
 
         completion_reward = {
 			add_ideas = ic_ROM_Agrarian_reform 
@@ -1196,11 +1200,11 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Agrarian_reform2
 
-		x = 0
-		y = 1
+		x = -2
+		y = 2
 
 		prerequisite = { focus = ic_ROM_Agrarian_reform }
-		relative_position_id = ic_ROM_Agrarian_reform
+		relative_position_id = ic_ROM_light_industry
 		
 		cost = 5
 
@@ -1210,5 +1214,121 @@ focus_tree = {
 				add_idea = ic_ROM_Agrarian_reform2
 			}
         }
+	}
+
+	focus = {
+		id = ic_ROM_Malaxa
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ROM_malaxa_IC
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Steel_shortage
+
+		x = 0
+		y = 1
+
+		available = {
+			date > 1941.6.1
+		}
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 10
+
+        completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 25
+				state = 84
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Infra_for_steel_and_alum
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Steel_shortage }
+		prerequisite = { focus = ic_ROM_Alum_for_romania }
+		relative_position_id = ic_ROM_Steel_shortage
+		
+		cost = 5
+
+        completion_reward = {
+			84 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+				}
+			}	
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Alum_for_romania
+
+		x = 0
+		y = 1
+
+		available = {
+			date > 1941.6.1
+		}
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 10
+
+        completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 84
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Excavation
+
+		x = 2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 10
+
+		completion_reward = {
+		add_tech_bonus = {
+			name = ROM_resourses
+			bonus = 1
+			uses = 3
+			category = excavation_tech
+			}
+		}
 	}
 }

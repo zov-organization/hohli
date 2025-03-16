@@ -196,4 +196,24 @@ characters {
 		}
 	}
 
+	ic_ROM_Michael_Romniceanu={
+		name= ROM_Michael_Romniceanu
+		portraits={
+			army={
+				small=
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ic_ROM_Michael_Romniceanu
+			available = {
+				has_completed_focus = ic_ROM_the_transition_to_military_rails
+			}
+			traits = {
+				war_industrialist 
+			}
+		}
+	}
+
 }
