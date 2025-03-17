@@ -1,0 +1,101 @@
+################
+##### ETH ######
+################
+
+ETH_defeat_italy_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+### Balance of Power
+ETH_centralization_balance_of_power_category = { 
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+### Italian Occupation 
+ETH_italian_occupation_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+# Irregular Levies
+ETH_chitet_category = { 
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_second_italo_ethiopian_war_category = { 
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_improve_country_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_anti_colonialism_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+#ETH_social_reforms_category = {
+#	icon = GFX_decision_category_SOV_propaganda
+#	allowed = 
+#	{
+#		original_tag = ETH
+#		has_dlc = "By Blood Alone"
+#		
+#	}
+#	priority = {
+#		base = 10
+#	}
+#	visible = {
+#		has_completed_focus = ETH_social_reforms
+#	}
+#	visible_when_empty = yes
+#}
+
+ETH_freedom_at_gunpoint_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_exploit_french_weakness_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_reintegrate_former_territory_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_italo-ethiopian_empire_decisions = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_consolidate_east_africa_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+ETH_improve_the_horn_of_africa_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
