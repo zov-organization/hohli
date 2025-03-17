@@ -31,7 +31,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Supervision_of_the_King's_expenses
+		id = ic_ROM_Supervision_of_the_Kings_expenses
 
 		x = -16
 		y = 1
@@ -47,13 +47,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Interference_with_the_King's_expenses
+		id = ic_ROM_Interference_with_the_Kings_expenses
 
 		x = 0
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Supervision_of_the_King's_expenses}
-		relative_position_id = ic_ROM_Supervision_of_the_King's_expenses
+		prerequisite = { focus = ic_ROM_Supervision_of_the_Kings_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_Kings_expenses
 
 		cost = 5
 
@@ -65,10 +65,10 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Mihai_the_first_looks_better
 		icon = GFX_focus_rom_coup
-		prerequisite = { focus = ic_ROM_Interference_with_the_King's_expenses }
+		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
 		x = 0
 		y = 1
-		relative_position_id = ic_ROM_Interference_with_the_King's_expenses
+		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
 
 		cost = 10
 
@@ -315,7 +315,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_More_more_oil!
+		id = ic_ROM_More_more_oil
 
 		x = -2
 		y = 1
@@ -345,6 +345,7 @@ focus_tree = {
 		relative_position_id = ic_ROM_the_transition_to_military_rails
 
         completion_reward = {
+			add_ideas = ic_ROM_Navy_romania
         }
 	}
 

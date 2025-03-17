@@ -953,7 +953,7 @@ focus_tree = {
 	}	
 
 	focus = {
-		id = ic_USA_Lets_give_the_Filipinos_a_сhance
+		id = ic_USA_Lets_give_the_Filipinos_a_chance
 		x = -14
 		y = 1
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
@@ -968,7 +968,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
 		relative_position_id = ic_USA_Continuation_of_the_Roosevelt_course
-		mutually_exclusive = { focus = ic_USA_Lets_give_the_Filipinos_a_сhance }
+		mutually_exclusive = { focus = ic_USA_Lets_give_the_Filipinos_a_chance }
 		cost = 1
 	}
 
@@ -976,8 +976,8 @@ focus_tree = {
 		id = ic_USA_Investments_in_the_Philippine_industry
 		x = 0
 		y = 1
-		prerequisite = { focus = ic_USA_Lets_give_the_Filipinos_a_сhance }
-		relative_position_id = ic_USA_Lets_give_the_Filipinos_a_сhance
+		prerequisite = { focus = ic_USA_Lets_give_the_Filipinos_a_chance }
+		relative_position_id = ic_USA_Lets_give_the_Filipinos_a_chance
 		cost = 2
 	}
 

@@ -329,5 +329,24 @@ ideas {
 				weekly_manpower = 1000
 			}
 		}
+
+		ic_ROM_Navy_romania = {
+			name = ic_ROM_Navy_romania
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.1
+				screening_efficiency = 0.05
+				naval_coordination = 0.05
+				naval_detection = 0.1
+				spotting_chance = 0.1
+				naval_critical_score_chance_factor = 0.1
+			}
+		}
     }
 }
