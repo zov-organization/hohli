@@ -348,5 +348,23 @@ ideas {
 				naval_critical_score_chance_factor = 0.1
 			}
 		}
+
+		ic_ROM_ss_idea = {
+			name = ic_ROM_ss_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ss_idea
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.01
+				weekly_manpower = 100
+				army_morale_factor = 0.01
+			}
+		}
     }
 }
