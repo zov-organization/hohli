@@ -427,8 +427,8 @@ focus_tree = {
         y = 2
         cost = 10
         completion_reward = {
-            #remove_ideas = HUN_ID_treaty_of_trianon
-            #add_ideas = HUN_ID_our_future
+            remove_ideas = HUN_ID_treaty_of_trianon
+            add_ideas = HUN_ID_our_future
         }
     }
 
@@ -451,9 +451,14 @@ focus_tree = {
 
         x = 0
         y = 1
-        cost = 5
+
+        cost = 3    
+
         completion_reward = {
-            
+            664 = { add_core_of = HUN }
+            70 = { add_core_of = HUN }
+            71 = { add_core_of = HUN }
+            73 = { add_core_of = HUN }
         }
 	}
 	focus = {
@@ -465,7 +470,9 @@ focus_tree = {
 
         x = 2
         y = 1
+
         cost = 5
+
         completion_reward = {
             
         }
@@ -479,9 +486,12 @@ focus_tree = {
 
         x = -2
         y = 1
-        cost = 5
+
+        cost = 3
+
         completion_reward = {
-            
+            45 = { add_core_of = HUN }
+			764 = { add_core_of = HUN }
         }
 	}
 	focus = {
