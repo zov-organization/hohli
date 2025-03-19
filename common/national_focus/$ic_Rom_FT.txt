@@ -241,6 +241,8 @@ focus_tree = {
 
 		cost = 10
 
+		icon = GFX_focus_AUS_the_danubian_federation
+
         completion_reward = {
 			swap_ideas = {
 				remove_idea = ic_ROM_collapse_of_AusHun
@@ -982,7 +984,7 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = ic_ROM_open_focus_romania
-			date > 1939.9.1
+			date > 1941.4.1
 		}
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
@@ -1008,7 +1010,7 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = ic_ROM_open_focus_romania
-		    date > 1939.9.1
+		    date > 1941.4.1
 		}
 
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
