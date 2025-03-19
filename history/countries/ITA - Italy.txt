@@ -114,6 +114,8 @@ add_ideas = {
 	vittorio_emanuele
 	ic_ITA_vittorio_mutilata
 	ic_ITA_agrarian_economy1
+	ic_ITA_regio_esercito
+	ic_ITA_poor_motorized_army1
 }
 
 set_technology = {

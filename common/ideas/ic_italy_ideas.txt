@@ -18,6 +18,51 @@ ideas = {
 			}
 		}
 
+		ic_ITA_regio_esercito = {
+			name = ic_ITA_regio_esercito
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = -0.2
+				planning_speed = -0.5
+				max_planning = 0.1
+				army_speed_factor = -0.2
+			}
+		}
+
+		ic_ITA_poor_motorized_army1 = {
+			name = ic_ITA_poor_motorized_army1
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = 0.5 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.5 instant = yes
+				}
+			}
+
+			modifier = {
+				army_speed_factor = -0.2
+				army_org_regain = -0.15
+			}
+		}
+
 		ic_ITA_agrarian_economy1 = {
 			name = ic_ITA_agrarian_economy
 
@@ -88,6 +133,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.08
 				industrial_capacity_dockyard = 0.08
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 

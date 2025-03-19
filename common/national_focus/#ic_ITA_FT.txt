@@ -401,7 +401,7 @@
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = ic_ITA_building_up_colonies_bonus
 		}
 	}
 	focus = {
