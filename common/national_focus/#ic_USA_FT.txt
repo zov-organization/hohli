@@ -20,10 +20,14 @@ focus_tree = {
 
     focus = {
 		id = ic_USA_Continuation_of_the_Roosevelt_course
+
 		x = 20
 		y = 0
+
 		cost = 10
+
         icon = GFX_focus_ARG_strengthening_the_concordancia
+
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -31,11 +35,16 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_neutrality_act
+
 		icon = GFX_goal_generic_neutrality_focus
+
 		x = 24
 		y = 1
+
 		cost = 10
+
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
+		
 		completion_reward = {
 			add_political_power = 200
 			add_war_support = -0.05
@@ -84,7 +93,7 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_WPA
-		icon = GFX_USA_WPA
+		icon = GFX_ic_USA_WPA
 		x = -5
 		y = 1
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
@@ -97,12 +106,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_agricultural_adjustment_act
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_WPA }
 		relative_position_id = ic_USA_WPA
+
 		cost = 10
+
 		icon = GFX_focus_generic_farmland
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -137,12 +151,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_fair_labour_standards_act
+
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_agricultural_adjustment_act }
 		relative_position_id = ic_USA_agricultural_adjustment_act
+
 		cost = 10 
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -177,7 +196,7 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_federal_housing_act
-		icon = GFX_USA_federalhousing
+		icon = GFX_ic_USA_federal_housing_act
 		x = 0
 		y = 1
 		prerequisite = { focus = ic_USA_fair_labour_standards_act }
@@ -285,11 +304,16 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_research_slot
+
 		x = 17
 		y = 2
+
 		prerequisite = { focus = ic_USA_WPA }	
+
 		cost = 10
+
 		icon = GFX_focus_ARG_develop_the_electricity_sector
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -297,12 +321,16 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_rubber
+
 		available = {
 		    date > 1941.1.1
 		}
+
 		x = 20
 		y = 2
+
 		cost = 10
+
 		icon = GFX_focus_generic_rubber
 
 		completion_reward = {
@@ -331,7 +359,7 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_neutrality_act }
 		relative_position_id = ic_USA_neutrality_act
 		cost = 10
-		icon = GFX_USA_industry
+		icon = GFX_ic_USA_arsenal_of_democracy
 		completion_reward = {
 			navy_experience = 50
 			army_experience = 50
@@ -411,12 +439,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_military_construction
+
 		x = 2
 		y = 1
+
 		prerequisite = { focus = ic_USA_arsenal_of_democracy }
 		relative_position_id = ic_USA_arsenal_of_democracy
+
 		cost = 5
+
 		icon = GFX_focus_generic_tank_production
+
 		completion_reward = {
 			army_experience = 10
 			random_owned_controlled_state = {
@@ -659,12 +692,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_the_giant_wakes
+
 		x = 0
 		y = 2
+
 		prerequisite = { focus = ic_USA_arsenal_of_democracy }
 		relative_position_id = ic_USA_arsenal_of_democracy
+
 		cost = 5
+
 		icon = GFX_focus_ARG_anti_american_propaganda
+
 		available = {
 			OR = {
 				has_war = yes
@@ -697,12 +735,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_wartime_industry
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_the_giant_wakes }
 		relative_position_id = ic_USA_the_giant_wakes
+
 		cost = 5
+
 		icon = GFX_focus_generic_reorient_production
+
 		completion_reward = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
@@ -712,12 +755,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_USACE_projects
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_military_construction}
 		relative_position_id = ic_USA_military_construction
+
 		cost = 5
+
 		icon = GFX_goal_generic_production
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -807,12 +855,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_manhattan_project
+
 		x = 0
+
 		y = 1
 		prerequisite = { focus = ic_USA_research_slot2 }
 		relative_position_id = ic_USA_research_slot2
+
 		cost = 10
+
 		icon = GFX_focus_generic_university_3
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
@@ -836,12 +889,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_lend_lease_act
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_arsenal_of_democracy }
 		relative_position_id = ic_USA_arsenal_of_democracy
+
 		cost = 2
+
 		icon = GFX_focus_generic_treaty
+
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -915,12 +973,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_suspend_the_presecution
+
 		x = -9
 		y = 1
+
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course}
 		relative_position_id = ic_USA_Continuation_of_the_Roosevelt_course
+
 		cost = 5
+
 		icon = GFX_focus_usa_union_representation_act
+
 		completion_reward = {
 			add_stability = -0.07
 		}
@@ -928,12 +991,17 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_reach_out_to_the_ware_group
+
 		x = 0
 		y = 2
+
 		prerequisite = { focus = ic_USA_suspend_the_presecution }
 		relative_position_id = ic_USA_suspend_the_presecution
+
 		cost = 5
+
 		icon = GFX_goal_generic_propaganda
+
 		completion_reward = {
 		add_stability = -0.05
 		}
@@ -946,14 +1014,14 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_reach_out_to_the_ware_group }
 		relative_position_id = ic_USA_reach_out_to_the_ware_group
 		cost = 5
-		icon = GFX_USALL1
+		icon = GFX_ic_USA_us_ussr_economcooperation
 		completion_reward = {
 			
 		}
 	}	
 
 	focus = {
-		id = ic_USA_Lets_give_the_Filipinos_a_сhance
+		id = ic_USA_Lets_give_the_Filipinos_a_chance
 		x = -14
 		y = 1
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
@@ -968,7 +1036,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ic_USA_Continuation_of_the_Roosevelt_course }
 		relative_position_id = ic_USA_Continuation_of_the_Roosevelt_course
-		mutually_exclusive = { focus = ic_USA_Lets_give_the_Filipinos_a_сhance }
+		mutually_exclusive = { focus = ic_USA_Lets_give_the_Filipinos_a_chance }
 		cost = 1
 	}
 
@@ -976,8 +1044,8 @@ focus_tree = {
 		id = ic_USA_Investments_in_the_Philippine_industry
 		x = 0
 		y = 1
-		prerequisite = { focus = ic_USA_Lets_give_the_Filipinos_a_сhance }
-		relative_position_id = ic_USA_Lets_give_the_Filipinos_a_сhance
+		prerequisite = { focus = ic_USA_Lets_give_the_Filipinos_a_chance }
+		relative_position_id = ic_USA_Lets_give_the_Filipinos_a_chance
 		cost = 2
 	}
 
@@ -992,34 +1060,48 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_war_plans_division
+
 		x = 34
 		y = 0
+
 		cost = 5
+
 		icon = GFX_goal_generic_position_armies
+
 		completion_reward = {
 			unlock_decision_category_tooltip = ic_USA_war_plans
 		}
 	}
 	focus = {
 		id = ic_USA_intervention_in_europe
+
 		x = -4
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_plans_division }
 		relative_position_id = ic_USA_war_plans_division
+
 		cost = 1
+
 		icon = GFX_focus_usa_focus_on_europe
+
 		completion_reward = {
 			add_political_power = 25
 		}
 	}
 	focus = {
 		id = ic_USA_war_plan_gold
+
 		x = 2
 		y = 1
+
 		prerequisite = { focus = ic_USA_intervention_in_europe }
 		relative_position_id = ic_USA_intervention_in_europe
+
 		cost = 1
+
 		icon = GFX_focus_generic_attack_vichy_france
+
 		completion_reward = {
 			IF = {
 				limit = {
@@ -1032,12 +1114,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_war_plan_silver
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_intervention_in_europe }
 		relative_position_id = ic_USA_intervention_in_europe
+
 		cost = 1
+
 		icon = GFX_focus_ITA_depose_mussolini
+
 		completion_reward = {
 			IF = {
 				limit = {
@@ -1055,7 +1142,7 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_intervention_in_europe }
 		relative_position_id = ic_USA_intervention_in_europe
 		cost = 1
-		icon = GFX_USA_DDay
+		icon = GFX_ic_USA_war_plan_black
 		completion_reward = {
 			GER = {
 				add_opinion_modifier = { target = USA modifier = war_plan_black }
@@ -1083,12 +1170,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_war_plan_orange
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_intervention_in_asia }
 		relative_position_id = ic_USA_intervention_in_asia
+
 		cost = 1
+
 		icon = GFX_focus_AST_war_japan
+
 		completion_reward = {
 			JAP = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
@@ -1103,36 +1195,49 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_war_plan_orange }
 		relative_position_id = ic_USA_war_plan_orange
 		cost = 5
-		icon = GFX_USA_island_hopping
+		icon = GFX_ic_USA_defense_of_the_pacific
 	}
 	focus = {
 		id = ic_USA_destroyers_for_bases
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_plan_black }
 		relative_position_id = ic_USA_war_plan_black
+
 		cost = 5
+
 		icon = GFX_goal_generic_navy_cruiser
 		
 	}
 	focus = {
 		id = ic_USA_war_department
+
 		x = 46
 		y = 0
+
 		cost = 10
+
 		icon = GFX_goal_generic_military_sphere
+
 		completion_reward = {
 			add_ideas = USA_war_department
 		}
 	}
 	focus = {
 		id = ic_USA_selective_training_act
+
 		x = -7
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_department }
 		relative_position_id = ic_USA_war_department
+
 		cost = 5
+
 		icon = GFX_focus_usa_honor_the_confederacy
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1162,12 +1267,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_louisiana_maneuvers
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_selective_training_act }
 		relative_position_id = ic_USA_selective_training_act
+
 		cost = 5
+
 		icon = GFX_goal_generic_cavalry
+
 		completion_reward = {
 			army_experience = 35
 			add_doctrine_cost_reduction = {
@@ -1180,12 +1290,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_first_special_service_force
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_selective_training_act }
 		relative_position_id = ic_USA_selective_training_act
+
 		cost = 5
+
 		icon = GFX_focus_eng_special_air_service
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1207,24 +1322,34 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_army_of_the_united_states
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_louisiana_maneuvers }
 		relative_position_id = ic_USA_louisiana_maneuvers
+
 		cost = 5
+
 		icon = GFX_focus_usa_recruit_the_free_corps
+
 		completion_reward = {
 			add_ideas = USA_army_of_the_united_states
 		}
 	}
 	focus = {
 		id = ic_USA_airborne_divisions
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_louisiana_maneuvers }
 		relative_position_id = ic_USA_louisiana_maneuvers
+
 		cost = 5
+
 		icon = GFX_focus_generic_paratrooper
+
 		completion_reward = {
 			if = {
 				add_doctrine_cost_reduction = {
@@ -1238,24 +1363,34 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_womens_armed_service_integration_act
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_army_of_the_united_states }
 		relative_position_id = ic_USA_army_of_the_united_states
+
 		cost = 5
-		icon = GFX_focus_generic_little_entente
+
+		icon = GFX_girls_usa
+
 		completion_reward = {
 			add_ideas = USA_womens_armed_service_integration_act
 		}
 	}
 	focus = {
 		id = ic_USA_tank_experiments
+
 		x = 4
 		y = 1
+
 		prerequisite = { focus = ic_USA_selective_training_act }
 		relative_position_id = ic_USA_selective_training_act
+
 		cost = 10
-		icon = GFX_USA_tanks
+
+		icon = GFX_ic_USA_tank_experiments
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -1267,12 +1402,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_tank_destroyer_doctrine
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_tank_experiments }
 		relative_position_id = ic_USA_tank_experiments
+
 		cost = 5
+
 		icon = GFX_focus_usa_tank_destroyer_doctrine
+
 		completion_reward = {
 			IF = {
 				limit = {
@@ -1293,12 +1433,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_support_rock_island
+
 		x = 2
+
 		y = 1
 		prerequisite = { focus = ic_USA_selective_training_act }
 		relative_position_id = ic_USA_selective_training_act
+
 		cost = 10
+
 		icon = GFX_focus_SWE_let_fly_all_guns
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
@@ -1311,12 +1456,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_armored_infantry
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_tank_destroyer_doctrine}
 		relative_position_id = ic_USA_tank_destroyer_doctrine
+
 		cost = 5
-		icon = GFX_USA_armored
+
+		icon = GFX_ic_USA_armored_infantry
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -1328,12 +1478,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_the_pentagon
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_department}
 		relative_position_id = ic_USA_war_department
+
 		cost = 5
+
 		icon = GFX_focus_usa_build_the_pentagon
+
 		completion_reward = {
 			add_ideas = USA_the_pentagon
 		}
@@ -1355,12 +1510,17 @@ focus_tree = {
 }
 	focus = {
 		id = ic_USA_air_war_plans_division
+
 		x = 3
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_department }
 		relative_position_id = ic_USA_war_department
+
 		cost = 5
+
 		icon = GFX_goal_generic_build_airforce
+
 		completion_reward = {
 			air_experience = 25
 			add_doctrine_cost_reduction = {
@@ -1374,12 +1534,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_air_support
+
 		x = -1
 		y = 1
+
 		prerequisite = { focus = ic_USA_air_war_plans_division }
 		relative_position_id = ic_USA_air_war_plans_division
+
 		cost = 5
+
 		icon = GFX_focus_generic_tank_air_support
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
@@ -1387,12 +1552,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_strategbombing
+
 		x = 1
 		y = 1
+
 		prerequisite = { focus = ic_USA_air_war_plans_division }
 		relative_position_id = ic_USA_air_war_plans_division
+
 		cost = 5
+
 		icon = GFX_goal_generic_air_bomber
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = strategic_bombing_focus
@@ -1400,23 +1570,32 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_combined_bomber_offensive
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_strategbombing }
 		relative_position_id = ic_USA_strategbombing
+
 		cost = 5
+
 		icon = GFX_focus_SWE_marauder_bombers
+
 		completion_reward = {
 			add_ideas = combined_bomber_offensive
 		}
 	}
 	focus = {
 		id = ic_USA_The_best_bomber
+
 		x = 1
 		y = 1
+
 		prerequisite = { focus = ic_USA_combined_bomber_offensive }
 		relative_position_id = ic_USA_combined_bomber_offensive
+
 		cost = 5
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1430,13 +1609,18 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_The_equivalent_of_a_Spitfire
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_air_support }
 		relative_position_id = ic_USA_air_support
 		mutually_exclusive = { focus = ic_USA_CAS }
+
 		cost = 5
+
 		icon = GFX_focus_chi_flying_tigers
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
@@ -1449,13 +1633,18 @@ focus_tree = {
 
 	focus = {
 		id = ic_USA_CAS
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_air_support }
 		relative_position_id = ic_USA_air_support
 		mutually_exclusive = { focus = ic_USA_The_equivalent_of_a_Spitfire}
+
 		cost = 5
+
 		icon = GFX_goal_generic_CAS
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_effort
@@ -1467,12 +1656,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_pacifbomber
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_CAS }
 		relative_position_id = ic_USA_CAS
+
 		cost = 5
+
 		icon = GFX_focus_generic_multi_role_aircraft
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_TAC
@@ -1484,27 +1678,37 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_us_air_force
+
 		x = 3
 		y = 1
+
 		prerequisite = {
 			focus = ic_USA_combined_bomber_offensive
 			focus = ic_USA_The_equivalent_of_a_Spitfire
 		}
 		relative_position_id = ic_USA_CAS
+
 		cost = 5
+
 		icon = GFX_focus_generic_strike_at_democracy1
+
 		completion_reward = {
 			add_ideas = ic_USA_us_airforce
 		}
 	}
 	focus = {
 		id = ic_USA_Two_ocean_navy_act
+
 		x = 10
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_department}
 		relative_position_id = ic_USA_war_department
+
 		cost = 10
+
 		icon = GFX_focus_generic_navy_battleship2
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1554,36 +1758,51 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_Martime_commission
+
 		x = -3
 		y = 1
+
 		prerequisite = { focus = ic_USA_Two_ocean_navy_act }
 		relative_position_id = ic_USA_Two_ocean_navy_act
+
 		cost = 10
+
 		icon = GFX_goal_generic_construct_naval_dockyard
+
 		completion_reward = {
 			add_ideas = USA_maritime_commission
 		}
 	}
 	focus = {
 		id = ic_USA_liberty_ships
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_Martime_commission }
 		relative_position_id = ic_USA_Martime_commission
+
 		cost = 3
+
 		icon = GFX_focus_generic_refit_civilian_ships
+
 		completion_reward = {
 			add_ideas = liberty_ships_focus
 		}
 	}
 	focus = {
 		id = ic_USA_Bureau_of_ships
+
 		x = 2
 		y = 1
+
 		prerequisite = { focus = ic_USA_Two_ocean_navy_act }
 		relative_position_id = ic_USA_Two_ocean_navy_act
+
 		cost = 5
+
 		icon = GFX_focus_SWE_italian_destroyers
+
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
@@ -1595,12 +1814,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_battleship
+
 		x = -3
 		y = 1
+
 		prerequisite = { focus = ic_USA_Bureau_of_ships }
 		relative_position_id = ic_USA_Bureau_of_ships
+
 		cost = 5
+
 		icon = GFX_goal_generic_navy_battleship
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
@@ -1612,11 +1836,15 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_carrier
+
 		x = -1
 		y = 1
+
 		prerequisite = { focus = ic_USA_Bureau_of_ships }
 		relative_position_id = ic_USA_Bureau_of_ships
+
 		cost = 5
+
 		icon = GFX_goal_generic_navy_carrier
 		completion_reward = {
 			add_tech_bonus = {
@@ -1629,12 +1857,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_escort
+
 		x = 1
 		y = 1
+
 		prerequisite = { focus = ic_USA_Bureau_of_ships }
 		relative_position_id = ic_USA_Bureau_of_ships
+
 		cost = 5
+
 		icon = GFX_focus_generic_destroyer
+
 		completion_reward = {
 			add_ideas = escort_effort_focus
 			
@@ -1642,12 +1875,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_submarines
+
 		x = 3
 		y = 1
+
 		prerequisite = { focus = ic_USA_Bureau_of_ships }
 		relative_position_id = ic_USA_Bureau_of_ships
+
 		icon = GFX_goal_generic_navy_submarine
+
 		cost = 5
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
@@ -1665,12 +1903,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_naval_doctrine
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_battleship }
 		relative_position_id = ic_USA_battleship
+
 		cost = 5
+
 		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_fund_the_navy
@@ -1682,12 +1925,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_advanced_base
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_naval_doctrine }
 		relative_position_id = ic_USA_naval_doctrine
+
 		cost = 2
+
 		icon = GFX_goal_generic_construct_military
+
 		completion_reward = {
 			638 = {
 				add_building_construction = {
@@ -1718,12 +1966,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_bureau_of_aeronautics
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_carrier }
 		relative_position_id = ic_USA_carrier
+
 		cost = 5
+
 		icon = GFX_focus_generic_cryptologic_bomb
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
@@ -1732,16 +1985,29 @@ focus_tree = {
 				category = naval_bomber
 				category = naval_air
 			}
+			378 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 9713
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = ic_USA_naval_radar
+
 		x = 0
 		y = 1
+		
 		prerequisite = { focus = ic_USA_bureau_of_aeronautics }
 		relative_position_id = ic_USA_bureau_of_aeronautics
+
 		cost = 5
+
 		icon = GFX_goal_generic_radar
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_radar
@@ -1753,12 +2019,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_cruisers_Atlanta
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_escort }
 		relative_position_id = ic_USA_escort
+
 		cost = 10
-		icon = GFX_USA_battleship
+
+		icon = GFX_ic_USA_cruisers_Atlanta
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_atlanta
@@ -1771,12 +2042,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_better_than_the_Germans
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_submarines }
 		relative_position_id = ic_USA_submarines
+
 		cost = 5
+
 		icon = GFX_goal_generic_navy_anti_submarine
+
 		completion_reward = {
 			add_ideas = USA_unrestricted_submarine_warfare
 		}
@@ -1812,12 +2088,17 @@ focus_tree = {
 	}	
 	focus = {
 		id = ic_USA_We_were_born_Marines
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_more_more_and_more_dockyards }
 		relative_position_id = ic_USA_more_more_and_more_dockyards
+
 		cost = 5
+
 		icon = GFX_goal_generic_amphibious_assault
+
 		completion_reward = {
 			army_experience = 35
 			add_tech_bonus = {
@@ -1832,12 +2113,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_advanced_amphibians
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_We_were_born_Marines }
 		relative_position_id = ic_USA_We_were_born_Marines
+
 		cost = 5
+
 		icon = GFX_focus_generic_merchant_fleet
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_amphibious_operations
@@ -1849,12 +2135,17 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_MAGIC
+
 		x = 2
 		y = 1
+
 		prerequisite = { focus = ic_USA_We_were_born_Marines }
 		relative_position_id = ic_USA_We_were_born_Marines
+
 		cost = 5
-		icon = GFX_USA_sonar
+
+		icon = GFX_ic_USA_MAGIC
+
 		completion_reward = {
 			add_ideas = USA_magic
 		}
@@ -1870,20 +2161,28 @@ focus_tree = {
 	}
 	focus = {
 		id = ic_USA_Operation_Husky
+
 		x = 0
 		y = 1
+
 		prerequisite = { focus = ic_USA_operation_torch }
 		relative_position_id = ic_USA_operation_torch
+
 		cost = 2
+
 		icon = GFX_focus_ITA_southern_industry
 	}
 	focus = {
 		id = ic_USA_Day_D
+
 		x = -2
 		y = 1
+
 		prerequisite = { focus = ic_USA_war_plan_black }
 		relative_position_id = ic_USA_war_plan_black
+
 		cost = 2
+
 		icon = GFX_focus_focus_fra_border
 	}
 }
