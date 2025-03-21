@@ -150,3 +150,14 @@
   ENG_syria_forts:0 "Syria Anti-Naval Invasion"
   ENG_prep_egypt:0 "Suez Fortification"
   ENG_prep_malaya:0 "Prepare Malaya"
+
+
+
+  ic_give_refuge_ita:0 "Italian scientists"
+  ic_give_refuge_ger:0 "Germans scientists"
+  ic_USA_research_grants_category:0 "Scientists"
+  ic_USA_war_plans_category:0 "War plans"
+  ic_USA_execute_war_plan_silver:0 "War plans silver"
+  ic_USA_execute_war_plan_orange:0 "War plans orange"
+  ic_USA_execute_war_plan_gold:0 "War plans gold"
+  ic_USA_execute_war_plan_black:0 "War plans black"

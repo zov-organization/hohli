@@ -41,6 +41,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_rom_abdicate
+
         completion_reward = {
             add_stability = -0.025
         }
@@ -56,6 +58,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Supervision_of_the_Kings_expenses
 
 		cost = 5
+
+		icon = GFX_focus_rom_handle_king
 
         completion_reward = {
             add_stability = -0.05
@@ -117,7 +121,9 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_Election_of_the_King }
 		relative_position_id = ic_ROM_Election_of_the_King
 
-		cost = 5
+		cost = 10
+
+		icon = GFX_ROM_army
 
         completion_reward = {
            	army_experience = 100
@@ -134,6 +140,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Romanian_Land_Forces
 
 		cost = 5
+
+		icon = GFX_focus_generic_total_war
 
 		available = {
 		    date > 1937.1.1
@@ -158,7 +166,9 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
 		relative_position_id = ic_ROM_Romanian_Land_Forces
 
-		cost = 5
+		cost = 10
+
+		icon = GFX_ROM_rifle
 
         completion_reward = {
 			army_experience = 50
@@ -182,6 +192,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_goal_generic_army_artillery2
+
         completion_reward = {
            add_tech_bonus = {
 				name = GER_army_expansion_two
@@ -202,6 +214,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Modern_equipment
 
 		cost = 5
+
+		icon = GFX_ROM_weapons
 
         completion_reward = {
            add_tech_bonus = {
@@ -224,9 +238,11 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_GER_navy
+
         completion_reward = {
 			navy_experience = 200
-           add_ideas = ic_ROM_The_Navy_of_Greater_Romania	
+           	add_ideas = ic_ROM_The_Navy_of_Greater_Romania	
         }
 	}
 
@@ -257,10 +273,13 @@ focus_tree = {
 
 		x = 20
 		y = 7
+
 		cost = 5
 
+		icon = GFX_revenge_bessarabia_war
+
 		available = {
-		    date > 1941.4.1
+		    date > 1941.3.1
 		}
 
         completion_reward = {
@@ -277,6 +296,8 @@ focus_tree = {
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+
+		icon = GFX_focus_GER_subjugate_romanian_economy
 
         completion_reward = {
            swap_ideas = {
@@ -295,6 +316,8 @@ focus_tree = {
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+		
+		icon = GFX_focus_GER_appease_the_wehrmacht
 
         completion_reward = {
 			add_ideas = ic_Headquarters_of_the_eleven_Army
@@ -306,13 +329,25 @@ focus_tree = {
 
 		x = 2
 		y = 1
+
 		cost = 1
+
+		icon = GFX_focus_generic_military_industry
 
 		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
 		relative_position_id = ic_ROM_Revenge_for_Bessarabia
 
         completion_reward = {
            custom_effect_tooltip = ic_ROM_the_transition_to_military_rails_tt
+
+		   79 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
         }
 	}
 
@@ -349,6 +384,8 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_the_transition_to_military_rails }
 		relative_position_id = ic_ROM_the_transition_to_military_rails
 
+		icon = GFX_focus_generic_black_sea_focus
+
         completion_reward = {
 			add_ideas = ic_ROM_Navy_romania
         }
@@ -364,6 +401,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Modern_equipment
 
 		cost = 5
+
+		icon = GFX_IEA_gun
 
         completion_reward = {
            add_tech_bonus = {
@@ -434,6 +473,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_generic_attack_hungary
+
 		available = {
 		    date > 1938.1.1
 		}
@@ -487,7 +528,7 @@ focus_tree = {
 
         	add_popularity = {
 				ideology = fascism
-				popularity = 0.2
+				popularity = 0.4
 			}
         }
 	}
@@ -502,6 +543,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_The_Iron_Guard
 
 		cost = 5
+
+		icon = GFX_goal_continuous_suppression
 
         completion_reward = {
 
@@ -529,7 +572,7 @@ focus_tree = {
            add_political_power = 100
 		   add_popularity = {
 				ideology = fascism
-				popularity = 0.2
+				popularity = 0.4
 			}
         }
 	}
@@ -544,6 +587,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Hitlers_visit_to_Ploiesti
 
 		cost = 5
+
+		icon = GFX_goal_baltic_cross
 
         completion_reward = {
            add_ideas = ic_ROM_AXIS		
@@ -560,6 +605,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_German_officer_corps
 
 		cost = 1
+
+		icon = GFX_focus_ger_oppose_hitler
 
         completion_reward = {
            swap_ideas = {
@@ -579,6 +626,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_German_officer_corps
 
 		cost = 1
+
+		icon = GFX_focus_GER_support_the_proletarian_uprising
 
         completion_reward = {
            	ROM = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GER } }
@@ -740,6 +789,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_goal_generic_construct_naval_dockyard
+
         completion_reward = {
            navy_experience = 100
 			46 = {
@@ -789,6 +840,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_visit_Denitz_in_Romania
 
 		cost = 5
+
+		icon = GFX_focus_GER_trade_interdiction_historical
 
         completion_reward = {
 			set_technology = {
@@ -856,6 +909,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_generic_destroyer
+
         completion_reward = {
 			navy_experience = 100
            add_ideas = ic_escort_effort_focus_Rom
@@ -872,6 +927,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_destroyers
 
 		cost = 5
+
+		icon = GFX_screen
 
         completion_reward = {
            add_tech_bonus = {
@@ -894,6 +951,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_screen
 
 		cost = 5
+
+		icon = GFX_GER_sub
 
         completion_reward = {
            add_tech_bonus = {
@@ -923,6 +982,8 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_goal_generic_navy_battleship
+
         completion_reward = {
 			navy_experience = 100
            	add_tech_bonus = {
@@ -944,8 +1005,13 @@ focus_tree = {
 		
 		cost = 5
 
+		icon = GFX_focus_NOR_drobak_coastal_fort
+
         completion_reward = {
-           add_ideas = ic_ROM_school_f_bombing_from_the_sea
+			swap_ideas = {
+			remove_idea = ic_ROM_The_Navy_of_Greater_Romania	
+           	add_idea = ic_ROM_school_f_bombing_from_the_sea
+			}
         }
 	}
 
@@ -959,6 +1025,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_school_f_bombing_from_the_sea
 		
 		cost = 5
+
+		icon = GFX_goal_generic_radar
 
         completion_reward = {
            add_tech_bonus = {
@@ -1037,11 +1105,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
 		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
 		
-		cost = 5
+		cost = 10
+
+		icon = GFX_goal_generic_improve_relations
 
         completion_reward = {
            	add_political_power = 100
-        	add_stability = 0.08
+        	add_stability = 0.1
         }
 	}
 
@@ -1078,7 +1148,10 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		mutually_exclusive = { focus = ic_ROM_Not_Support_for_German_policy }
+
 		cost = 5
+
+		icon = GFX_focus_GER_propaganda_master
 
         completion_reward = {
 			swap_ideas = {
@@ -1103,6 +1176,8 @@ focus_tree = {
 		mutually_exclusive = { focus = ic_ROM_Support_for_German_policy }
 		
 		cost = 5
+
+		icon = GFX_focus_GER_subdue_the_wehrmacht_historical
 
         completion_reward = {
 			swap_ideas = {
@@ -1131,13 +1206,15 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Industrialization
 
-		x = 18
+		x = 20
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Election_of_the_King }
 		relative_position_id = ic_ROM_Election_of_the_King
 		
 		cost = 10
+
+		icon = GFX_goal_generic_production
 
         completion_reward = {
            	add_tech_bonus = {
@@ -1158,13 +1235,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_Industrialization }
 		relative_position_id = ic_ROM_Industrialization
 		
-		cost = 5
+		cost = 7
 
 		icon = GFX_goal_generic_construct_civ_factory
 
         completion_reward = {
 			81 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1180,6 +1257,31 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ic_ROM_light_industry2
+
+		x = -4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+		icon = GFX_goal_generic_construct_civ_factory
+
+        completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
 		id = ic_ROM_heavy_industry
 
 		x = 1
@@ -1188,13 +1290,13 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_Industrialization }
 		relative_position_id = ic_ROM_Industrialization
 		
-		cost = 5
+		cost = 7
 
 		icon = GFX_goal_generic_construct_mil_factory
 
         completion_reward = {
 			79 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1203,6 +1305,31 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_heavy_industry2
+
+		x = 4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 5
+
+		icon = GFX_goal_generic_construct_mil_factory
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1287,6 +1414,8 @@ focus_tree = {
 		
 		cost = 10
 
+		icon = GFX_focus_generic_construction_resources_steel
+
         completion_reward = {
 			add_resource = {
 				type = steel
@@ -1299,7 +1428,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Infra_for_steel_and_alum
 
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Steel_shortage }
@@ -1307,6 +1436,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Steel_shortage
 		
 		cost = 5
+
+		icon = GFX_goal_generic_construct_infrastructure
 
         completion_reward = {
 			84 = {
@@ -1334,6 +1465,8 @@ focus_tree = {
 		
 		cost = 10
 
+		icon = GFX_focus_generic_construction_resources_aluminium
+
         completion_reward = {
 			add_resource = {
 				type = aluminium
@@ -1353,6 +1486,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_heavy_industry
 		
 		cost = 10
+
+		icon = GFX_SOV_rubber
 
 		completion_reward = {
 		add_tech_bonus = {

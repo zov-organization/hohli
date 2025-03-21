@@ -10782,6 +10782,7 @@ leader_traits = {
 		army_core_attack_factor = 0.08
 		army_core_defence_factor = 0.08
 		conscription = 0.03
+		war_support_weekly = 0.001
 	}
 
 }

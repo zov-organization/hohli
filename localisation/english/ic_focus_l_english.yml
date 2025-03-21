@@ -275,7 +275,9 @@ ic_ROM_open_focus_romania:0 "Open focus romania"
 ic_ROM_open_focus_romania_tt:0 "§YOpens tricks for declaring war on Yugoslavia and Greece§"
 ic_ROM_Industrialization:0 "Industrialization"
 ic_ROM_light_industry:0 "Light industry"
+ic_ROM_light_industry2:0 "New plants in Moldova"
 ic_ROM_heavy_industry:0 "Heavy industry"
+ic_ROM_heavy_industry2:0 "New factories in Oltenia"
 ic_ROM_Agrarian_reform:0 "Agrarian reform"
 ic_ROM_Agrarian_reforms:0 "Increased birth rate"
 ic_ROM_Malaxa:0 "Malaxa"
@@ -283,6 +285,7 @@ ic_ROM_Steel_shortage:0 "Steel shortage"
 ic_ROM_Infra_for_steel_and_alum:0 "Infra"
 ic_ROM_Alum_for_romania:0 "Aluminum shortage"
 ic_ROM_Excavation:0 "Excavation"
+ic_ROM_screen:0 "Screen"
 
 
 

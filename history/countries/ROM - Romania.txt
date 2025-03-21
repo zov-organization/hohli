@@ -1,7 +1,7 @@
 capital = 46
 
 set_research_slots = 4
-set_stability = 0.48
+set_stability = 0.75
 set_war_support = 0.3
 
 recruit_character = ROM_gheorghe_tatarescu
@@ -156,7 +156,8 @@ if = {
 set_convoys = 150
 set_popularities = {
 	democratic = 60
-	fascism = 18
-	communism = 2
+	fascism = 20
+	communism = 0
 	neutrality = 20
 }
+
