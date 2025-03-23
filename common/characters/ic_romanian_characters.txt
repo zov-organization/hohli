@@ -91,7 +91,7 @@ characters {
 		}
 	}
 	ic_ROM_Michael_Romniceanu={
-		name= ROM_Michael_Romniceanu
+		name= ic_ROM_Michael_Romniceanu
 		portraits={
 			army={
 				small=
