@@ -7,6 +7,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_Glory_to_Romania
+
 			allowed = {
 				always = no
 			}
@@ -23,6 +25,8 @@ ideas {
 			name = ic_Glory_to_Romania
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_Glory_to_Romania2
 
 			allowed = {
 				always = no
@@ -42,6 +46,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_Headquarters_of_the_eleven_Army
+
 			allowed = {
 				always = no
 			}
@@ -56,6 +62,8 @@ ideas {
 			name = ic_Headquarters_of_the_eleven_Army
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_Headquarters_of_the_eleven_Army2
 
 			allowed = {
 				always = no
@@ -72,6 +80,8 @@ ideas {
 			name = ic_Ground_forces_Romania
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_Ground_forces_Romania
 
 			allowed = {
 				always = no
@@ -150,6 +160,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_The_true_descendants_of_the_Romans
+
 			allowed = {
 				always = no
 			}
@@ -168,6 +180,8 @@ ideas {
 			name = ic_ROM_The_Navy_of_Greater_Romania
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_The_Navy_of_Greater_Romania
 
 			allowed = {
 				always = no
@@ -210,6 +224,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_school_f_bombing_from_the_sea
+
 			allowed = {
 				always = no
 			}
@@ -233,6 +249,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun
+
 			allowed = {
 				always = no
 			}
@@ -248,6 +266,8 @@ ideas {
 			name = ic_ROM_collapse_of_AusHun2
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun2
 
 			allowed = {
 				always = no
@@ -265,6 +285,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_better_than_AusHun
+
 			allowed = {
 				always = no
 			}
@@ -280,6 +302,8 @@ ideas {
 			name = ic_ROM_collapse_of_AusHun3
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun3
 
 			allowed = {
 				always = no
@@ -298,6 +322,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_AXIS
+
 			allowed = {
 				always = no
 			}
@@ -314,6 +340,8 @@ ideas {
 
 			removal_cost = -1
 
+			picture = GFX_idea_ic_ROM_Agrarian_reform
+
 			allowed = {
 				always = no
 			}
@@ -327,6 +355,8 @@ ideas {
 			name = ic_ROM_Agrarian_reform2
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_Agrarian_reform2
 
 			allowed = {
 				always = no
@@ -342,6 +372,8 @@ ideas {
 			name = ic_ROM_Navy_romania
 
 			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_Navy_romania
 
 			allowed = {
 				always = no
