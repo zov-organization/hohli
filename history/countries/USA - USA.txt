@@ -4,41 +4,6 @@ oob = "USA_1936"
 
 starting_train_buffer = 5
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "USA_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			engines_1 = 1
-			engines_2 = 1
-			aa_lmg = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			air_torpedoe_1 = 1
-		}
-	else = {
-		set_air_oob = "USA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			cv_CAS1 = 1
-			naval_bomber1 = 1
-			CAS1 = 1
-			early_bomber = 1
-		}
-	}
-}
 
 set_research_slots = 4
 set_stability = 0.75
@@ -56,90 +21,7 @@ USA = {
 	country_event = { id = usa.50 days = 2 }
 	country_event = { id = usa.51 days = 2 }
 }
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_trucks = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	superior_firepower = 1
-	base_strike = 1
-	motorised_infantry = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	marines = 1
-	basic_train = 1
-	engine_tech_1 = 1
-}
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-	add_ideas = bureau_of_ordnance_spirit
-}
-
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		basic_carrier = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		basic_ship_hull_carrier = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_torpedo = 1
-		sonar = 1
-		basic_depth_charges = 1
-		basic_cruiser_armor_scheme = 1
-		basic_heavy_armor_scheme = 1
-		mtg_transport = 1
-		improved_airplane_launcher = 1
-		basic_dp_light_battery = 1
-	}
-}
 set_convoys = 700
 
 set_politics = {
@@ -168,85 +50,120 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
-recruit_character = USA_william_dudley_pelley
-recruit_character = USA_franklin_delano_roosevelt
-recruit_character = USA_george_s_patton
-recruit_character = USA_omar_bradley
-recruit_character = USA_dwight_d_eisenhower
-recruit_character = USA_geoffrey_keyes
-recruit_character = USA_lucian_truscott
-recruit_character = USA_mark_clark
-recruit_character = USA_douglas_macarthur
-recruit_character = ic_USA_walter_krueger
-recruit_character = USA_lloyd_fredendall
-recruit_character = USA_leslie_mcnair
-recruit_character = USA_jonathan_wainwright
-recruit_character = USA_russell_hartle
-recruit_character = USA_leonard_gerow
-recruit_character = USA_edward_brooks
-recruit_character = USA_clarence_huebner
-recruit_character = USA_alexander_patch
-recruit_character = USA_william_simpson
-recruit_character = USA_j_lawton_collins
-recruit_character = ic_USA_courtney_hodges
-recruit_character = USA_joseph_stilwell
-recruit_character = USA_oscar_griswold
-recruit_character = USA_maurice_rose
-recruit_character = USA_alexander_vandegrift
-recruit_character = ic_USA_ernest_king
-recruit_character = ic_USA_chester_w_nimitz
-recruit_character = USA_frank_jack_fletcher
-recruit_character = USA_raymond_a_spruance
-recruit_character = USA_harold_rainsford_stark
-recruit_character = USA_arleigh_burke
-recruit_character = USA_charles_m_cooke_jr
-recruit_character = USA_carnot_wheeler
-recruit_character = USA_robert_goddard
-recruit_character = USA_curtis_lemay
-recruit_character = ic_USA_thomas_kinkaid
-recruit_character = ic_USA_henry_arnold
-recruit_character = USA_dewitt_clinton_ramsey
-recruit_character = USA_harold_mcclelland
-recruit_character = ic_USA_george_kenney
-recruit_character = USA_john_cannon
-recruit_character = USA_george_marshall
-recruit_character = USA_carl_spaatz
-recruit_character = USA_marc_mitscher
-recruit_character = USA_claire_lee_chennault
-recruit_character = USA_henry_morgenthau
-recruit_character = USA_robert_taft
-recruit_character = USA_donald_nelson
-recruit_character = ic_USA_joseph_mccarthy
+create_country_leader = {
+	name = "Franklin Delano Roosevelt"
+	picture = "GFX_portrait_USA_franklin_delano_roosevelt"
+	ideology = liberalism
+	expire = "1947.1.1.1"
+	id = -1
+	traits = { dislikes_germany }
+}
+
+recruit_character = ic_USA_robert_taft			
+recruit_character = ic_USA_henry_stimson
+recruit_character = ic_USA_donald_nelson
 recruit_character = ic_USA_william_regnery
 recruit_character = ic_USA_joseph_patterson
-recruit_character = USA_henry_stimson
-recruit_character = ic_USA_victor_perlo
-recruit_character = USA_native_american_council
-recruit_character = ic_USA_jimmy_doolittle
-recruit_character = ic_USA_robert_oppenheimer
+recruit_character = ic_USA_victor_perlo	
+recruit_character = ic_USA_joseph_mccarthy
+recruit_character = ic_USA_henry_morgenthau		#Political advisor
 
 
-if = {
-	limit = { has_dlc = "La Resistance" }
-	create_operative_leader = {
-		name = "Josephine Baker"
-		GFX = GFX_portrait_josephine_baker
-		traits = { operative_well_groomed }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
 
-	create_operative_leader = {
-		name = "Virginia Hall"
-		GFX = GFX_portrait_virginia_hall
-		traits = { operative_demolition_expert }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
+recruit_character = ic_USA_george_s_patton		
+recruit_character = ic_USA_omar_bradley
+recruit_character = ic_USA_dewitt_clinton_ramsey
+recruit_character = ic_USA_marc_mitscher
+recruit_character = ic_USA_curtis_lemay
+recruit_character = ic_USA_harold_mcclelland
+recruit_character = ic_USA_robert_oppenheimer	#Theorists
+
+
+
+recruit_character = ic_USA_dwight_d_eisenhower	
+recruit_character = ic_USA_douglas_macarthur
+recruit_character = ic_USA_george_marshall
+recruit_character = ic_USA_walter_krueger		#Chief of Army
+
+
+
+recruit_character = ic_USA_ernest_king		
+recruit_character = ic_USA_chester_w_nimitz		#Chief of Navy
+
+
+
+recruit_character = ic_USA_carl_spaatz			
+recruit_character = ic_USA_henry_arnold
+recruit_character = ic_USA_george_kenney		#Chief of Airforce
+
+
+
+recruit_character = ic_USA_mark_clark			
+recruit_character = ic_USA_joseph_stilwell
+recruit_character = ic_USA_frank_jack_fletcher
+recruit_character = ic_USA_raymond_a_spruance
+recruit_character = ic_USA_john_cannon
+recruit_character = ic_USA_claire_lee_chennault
+recruit_character = ic_USA_courtney_hodges
+recruit_character = ic_USA_jimmy_doolittle		#High Command
+
+	
+recruit_character = ic_USA_geoffrey_keyes			
+recruit_character = ic_USA_lucian_truscott
+recruit_character = ic_USA_lloyd_fredendall
+recruit_character = ic_USA_leslie_mcnair
+recruit_character = ic_USA_jonathan_wainwright
+recruit_character = ic_USA_russell_hartle
+recruit_character = ic_USA_leonard_gerow
+recruit_character = ic_USA_edward_brooks
+recruit_character = ic_USA_clarence_huebner
+recruit_character = ic_USA_alexander_patch
+recruit_character = ic_USA_william_simpson
+recruit_character = ic_USA_j_lawton_collins
+recruit_character = ic_USA_oscar_griswold
+recruit_character = ic_USA_maurice_rose
+recruit_character = ic_USA_alexander_vandegrift
+recruit_character = ic_USA_harold_rainsford_stark
+recruit_character = ic_USA_arleigh_burke
+recruit_character = ic_USA_charles_m_cooke_jr	#Generals
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	armored_car1 = 1
+
+	tech_support = 1
+	tech_military_police = 1
+	basic_train = 1
+
+	sov_gwtank_chassis = 1
+	sov_basic_heavy_tank_chassis = 1
+	sov_engine_tech_1 = 1
+
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	basic_medium_airframe = 1
+	basic_large_airframe = 1
+	aa_lmg = 1
+
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_submarine = 1
 }
 
 
