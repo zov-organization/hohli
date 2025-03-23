@@ -333,4 +333,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_GER_german_trade.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ic_ROM_AXIS"
+		texturefile = "gfx/interface/ideas/ROM/Waffen_SS.dds"
+	}
+
 }

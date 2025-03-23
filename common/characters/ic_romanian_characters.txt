@@ -1,4 +1,4 @@
-characters {
+characters = {
 
 	# Country Leaders
 
@@ -92,12 +92,6 @@ characters {
 	}
 	ic_ROM_Michael_Romniceanu={
 		name= ic_ROM_Michael_Romniceanu
-		portraits={
-			army={
-				small=
-			}
-			
-		}
 		advisor={
 			slot = political_advisor
 			idea_token = ic_ROM_Michael_Romniceanu
