@@ -1,4 +1,18 @@
 characters {
+	ic_ROM_gheorghe_tatarescu={
+		name=ROM_gheorghe_tatarescu
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_gheorghe_tatarescu"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	ic_ROM_gheorghe_mihail={
 		name = "Gheorghe Mihail"
 		portraits={
@@ -9,9 +23,6 @@ characters {
 		advisor={
 			slot = high_command
 			idea_token = ic_ROM_gheorghe_mihail
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				army_commando_2
 			}
@@ -25,9 +36,6 @@ characters {
 			slot = high_command
 			idea_token = ic_ROM_petre_dumitrescu
 			ledger = army
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				army_regrouping_3
 			}
@@ -46,9 +54,6 @@ characters {
 			slot = high_command
 			idea_token = ic_ROM_gheorghe_avramescu
 			ledger = army
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				army_infantry_2
 			}
@@ -74,9 +79,6 @@ characters {
 		advisor={
 			slot = navy_chief
 			idea_token = ic_ROM_nicolae_sova
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				The_old_sailor
 			}
@@ -94,9 +96,6 @@ characters {
 		advisor={
 			slot = navy_chief
 			idea_token = ic_ROM_horia_macellariu
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				navy_screen_2
 			}
@@ -127,9 +126,6 @@ characters {
 		advisor={
 			slot = political_advisor
 			idea_token = ic_ROM_armand_calinescu
-			allowed = {
-				original_tag = ROM
-			}
 			traits = {
 				defender_trait
 			}
@@ -153,9 +149,6 @@ characters {
 			idea_token = ic_ROM_mihail_sturdza
 			available = {
 				has_completed_focus = ic_ROM_The_Iron_Guard
-			}
-			allowed = {
-				original_tag = ROM
 			}
 			traits = {
 				fascist_demagogue 

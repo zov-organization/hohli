@@ -1,32 +1,70 @@
 capital = 46
+load_focus_tree = romanian_focus
+oob = "ic_ROM_1936_army"
+set_naval_oob = "ic_ROM_1936_fleet"
 
-set_research_slots = 4
+
+set_research_slots = 3
+navy_experience = 0
+
+set_convoys = 100
+
 set_stability = 0.75
 set_war_support = 0.3
 
-recruit_character = ROM_gheorghe_tatarescu
-recruit_character = ROM_constantin_ion_parhon
-recruit_character = ic_ROM_armand_calinescu
-recruit_character = ROM_corneliu_codreanu
-recruit_character = ROM_petre_dumitrescu
+set_popularities = {
+	democratic = 60
+	fascism = 20
+	communism = 0
+	neutrality = 20
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = ic_ROM_gheorghe_tatarescu		# Country Leaders
 recruit_character = ROM_ion_antonescu
-recruit_character = ROM_ioan_mihail_racovita
-recruit_character = ic_ROM_gheorghe_avramescu
-recruit_character = ROM_constantin_sanatescu
-recruit_character = ic_ROM_horia_macellariu
-recruit_character = ROM_gheorghe_potopeanu
-recruit_character = ic_ROM_gheorghe_mihail
-recruit_character = ic_ROM_nicolae_sova
+
+recruit_character = ROM_gheorghe_argeseanu			# Political Advisors
+recruit_character = ic_ROM_armand_calinescu
+recruit_character = ic_ROM_Michael_Romniceanu
 recruit_character = ROM_nicolae_malaxa
 recruit_character = ic_ROM_mihail_sturdza
-recruit_character = ROM_gheorghe_argeseanu
-recruit_character = ROM_king_michael
-recruit_character = ROM_octavian_goga
-recruit_character = ic_ROM_petre_dumitrescu
-recruit_character = ic_ROM_karl_donitz
-recruit_character = ic_ROM_Michael_Romniceanu
 
-# Starting tech
+recruit_character = ROM_gheorghe_potopeanu			# Theorists
+
+recruit_character = ROM_constantin_sanatescu		# Army Chiefs
+
+recruit_character = ic_ROM_horia_macellariu			# Navy Chiefs
+recruit_character = ic_ROM_nicolae_sova
+
+recruit_character = ic_ROM_gheorghe_avramescu		# High Command
+recruit_character = ic_ROM_gheorghe_mihail
+
+recruit_character = ROM_ioan_mihail_racovita		# Generals
+
+# questionable
+recruit_character = ROM_octavian_goga
+recruit_character = ROM_corneliu_codreanu
+recruit_character = ROM_king_michael
+
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ic_ROM_petre_dumitrescu
+
+recruit_character = ic_ROM_karl_donitz
+
+
+add_ideas = {
+	partial_economic_mobilisation
+	ROM_king_carol_ii_hedonist
+	ic_Ground_forces_Romania
+	ic_ROM_collapse_of_AusHun
+}
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -61,59 +99,6 @@ set_technology = {
 	mtg_transport = 1
 	improved_airplane_launcher = 1
 	basic_dp_light_battery = 1
-
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-	}
-}
-
-#Ideas
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		partial_economic_mobilisation
-		ROM_king_carol_ii_hedonist
-		ic_Ground_forces_Romania
-		ic_ROM_collapse_of_AusHun
-	}
 }
 
 #Kick off kings crazy life
@@ -128,37 +113,3 @@ if = {
 		}
 	}
 }
-
-if = {
-	limit = {
-		#has_dlc = Battle for the Bosporus
-	}
-	add_opinion_modifier = { 
-		target = GRE
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = TUR
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = YUG
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = BUL
-		modifier = BFTB_balkan_pact_enemy
-	}
-	add_opinion_modifier = { 
-		target = HUN
-		modifier = BFTB_balkan_pact_enemy
-	}
-}
-set_convoys = 150
-set_popularities = {
-	democratic = 60
-	fascism = 20
-	communism = 0
-	neutrality = 20
-}
-
