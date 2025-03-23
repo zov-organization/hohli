@@ -44,6 +44,7 @@ recruit_character = ic_ROM_nicolae_sova
 
 recruit_character = ic_ROM_gheorghe_avramescu		# High Command
 recruit_character = ic_ROM_gheorghe_mihail
+recruit_character = ic_ROM_petre_dumitrescu
 
 recruit_character = ic_ROM_ioan_mihail_racovita		# Generals
 
@@ -51,9 +52,6 @@ recruit_character = ic_ROM_ioan_mihail_racovita		# Generals
 recruit_character = ROM_octavian_goga
 recruit_character = ROM_corneliu_codreanu
 recruit_character = ROM_king_michael
-
-recruit_character = ROM_petre_dumitrescu
-recruit_character = ic_ROM_petre_dumitrescu
 
 recruit_character = ic_ROM_karl_donitz
 
