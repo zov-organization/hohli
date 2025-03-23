@@ -222,6 +222,33 @@ characters = {
 		
 	}
 
+	ic_ROM_ioan_antonescu = {
+		name = ic_ROM_ioan_antonescu
+		portraits = {
+			army = {
+				small = "GFX_idea_ROM_ion_antonescu"
+				large = "GFX_Portrait_romania_ion_antonescu"
+			}
+			civilian = {
+				large = "GFX_Portrait_romania_ion_antonescu"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ROM_ioan_antonescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 
  	# Navy Chiefs
 
