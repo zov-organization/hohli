@@ -9,8 +9,8 @@ navy_experience = 0
 
 set_convoys = 800
 
-set_stability = 0.6
-set_war_support = 0.4
+set_stability = 0.4
+set_war_support = 0.35
 
 set_popularities = {
 	democratic = 20
@@ -112,7 +112,6 @@ add_ideas = {
 	limited_conscription
 
 	vittorio_emanuele
-	ic_ITA_vittorio_mutilata
 	ic_ITA_agrarian_economy1
 	ic_ITA_regio_esercito
 	ic_ITA_poor_motorized_army1

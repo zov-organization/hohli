@@ -120,6 +120,10 @@
 				idea = ic_ITA_building_up_colonies
 				days = 365
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ITA_build_up_colonies_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_ideas_tooltip = ic_ITA_building_up_colonies_bonus
 		}
 	}
 	focus = {
@@ -384,7 +388,10 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ic_ITA_tax_reform
+				days = 365
+			}
 		}
 	}
 
@@ -401,7 +408,7 @@
 		y = 2
 		cost = 10
 		completion_reward = {
-			add_ideas = ic_ITA_building_up_colonies_bonus
+			add_ideas = ic_ITA_vittorio_mutilata
 		}
 	}
 	focus = {
@@ -414,8 +421,72 @@
 		x = -1
 		y = 1
 		cost = 10
+
+		available = {
+			GER = {
+				focus_progress = {
+					focus = GER_anschluss
+					progress > 0.1
+				}
+			}
+		}
+
 		completion_reward = {
-			
+			add_stability = -0.15
+			39 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6675
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9630
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11615
+					instant_build = yes
+				}
+			}
+			850 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			160 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3657
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9613
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -461,6 +532,13 @@
 		cost = 10
 		completion_reward = {
 			
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_1
+					days = 180
+				}
+			}
+			custom_effect_tooltip = ITA_reorganize_retards_tt
 		}
 	}
 
@@ -475,11 +553,24 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ITA_army
+				bonus = 0.5
+				uses = 4
+				category = infantry_weapons
+			}
+			157 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 3910
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = ITA_l3_project
+		id = ITA_l6_project
 		#icon = 
 
 		prerequisite = { focus = ITA_army }
@@ -489,7 +580,12 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ITA_l6_project
+				bonus = 1.5
+				uses = 1
+				technology = improved_light_tank_chassis
+			}
 		}
 	}
 	focus = {
@@ -503,7 +599,10 @@
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ic_ITA_regio_esercito
+				add_idea = ic_ITA_regio_esercito_2
+			}
 		}
 	}
 
@@ -518,7 +617,15 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			air_experience = 50
+			161 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 9752
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -532,7 +639,7 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			unlock_decision_tooltip = ITA_start_tact_bomber_production
 		}
 	}
 	
