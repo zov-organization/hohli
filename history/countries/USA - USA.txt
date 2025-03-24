@@ -59,56 +59,56 @@ create_country_leader = {
 	traits = { dislikes_germany }
 }
 
-recruit_character = ic_USA_robert_taft			
+recruit_character = ic_USA_robert_taft			#Political advisor			
 recruit_character = ic_USA_henry_stimson
 recruit_character = ic_USA_donald_nelson
 recruit_character = ic_USA_william_regnery
 recruit_character = ic_USA_joseph_patterson
 recruit_character = ic_USA_victor_perlo	
 recruit_character = ic_USA_joseph_mccarthy
-recruit_character = ic_USA_henry_morgenthau		#Political advisor
+recruit_character = ic_USA_henry_morgenthau	
 
 
 
-recruit_character = ic_USA_george_s_patton		
+recruit_character = ic_USA_george_s_patton		#Theorists	
 recruit_character = ic_USA_omar_bradley
 recruit_character = ic_USA_dewitt_clinton_ramsey
 recruit_character = ic_USA_marc_mitscher
 recruit_character = ic_USA_curtis_lemay
 recruit_character = ic_USA_harold_mcclelland
-recruit_character = ic_USA_robert_oppenheimer	#Theorists
+recruit_character = ic_USA_robert_oppenheimer
 
 
 
-recruit_character = ic_USA_dwight_d_eisenhower	
+recruit_character = ic_USA_dwight_d_eisenhower	#Chief of Army
 recruit_character = ic_USA_douglas_macarthur
 recruit_character = ic_USA_george_marshall
-recruit_character = ic_USA_walter_krueger		#Chief of Army
+recruit_character = ic_USA_walter_krueger
 
 
 
-recruit_character = ic_USA_ernest_king		
-recruit_character = ic_USA_chester_w_nimitz		#Chief of Navy
+recruit_character = ic_USA_ernest_king			#Chief of Navy
+recruit_character = ic_USA_chester_w_nimitz		
 
 
 
-recruit_character = ic_USA_carl_spaatz			
+recruit_character = ic_USA_carl_spaatz			#Chief of Airforce		
 recruit_character = ic_USA_henry_arnold
-recruit_character = ic_USA_george_kenney		#Chief of Airforce
+recruit_character = ic_USA_george_kenney	
 
 
 
-recruit_character = ic_USA_mark_clark			
+recruit_character = ic_USA_mark_clark			#High Command
 recruit_character = ic_USA_joseph_stilwell
 recruit_character = ic_USA_frank_jack_fletcher
 recruit_character = ic_USA_raymond_a_spruance
 recruit_character = ic_USA_john_cannon
 recruit_character = ic_USA_claire_lee_chennault
 recruit_character = ic_USA_courtney_hodges
-recruit_character = ic_USA_jimmy_doolittle		#High Command
+recruit_character = ic_USA_jimmy_doolittle	
 
 	
-recruit_character = ic_USA_geoffrey_keyes			
+recruit_character = ic_USA_geoffrey_keyes		#Generals	
 recruit_character = ic_USA_lucian_truscott
 recruit_character = ic_USA_lloyd_fredendall
 recruit_character = ic_USA_leslie_mcnair
@@ -125,7 +125,7 @@ recruit_character = ic_USA_maurice_rose
 recruit_character = ic_USA_alexander_vandegrift
 recruit_character = ic_USA_harold_rainsford_stark
 recruit_character = ic_USA_arleigh_burke
-recruit_character = ic_USA_charles_m_cooke_jr	#Generals
+recruit_character = ic_USA_charles_m_cooke_jr	
 
 
 set_technology = {
