@@ -9,6 +9,7 @@ ic_SOV_mass_production = {
 	production_factory_start_efficiency_factor	=	SOV_production_factory_start_efficiency_factor
 	production_factory_efficiency_gain_factor	=	SOV_production_factory_efficiency_gain_factor
 	production_factory_max_efficiency_factor	=	SOV_production_factory_max_efficiency_factor
+	industrial_capacity_factory					=	SOV_industrial_capacity_factory
 }
 
 SOV_ukrain_prom_compleks = {
