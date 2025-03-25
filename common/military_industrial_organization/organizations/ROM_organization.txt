@@ -1,0 +1,87 @@
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+ROM_constanta_shipyard_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
+	allowed = { 
+		tag = ROM
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+ROM_cugir_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ROM_cugir  #used with permission from Turning Point mod
+	allowed = { 
+		tag = ROM
+	}
+}
+
+ROM_resita_works_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+	allowed = { 
+		tag = ROM
+	}
+}
+
+ROM_malaxa_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_ROM_malaxa
+	allowed = { 
+		tag = ROM
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}
+
+ROM_mauser_organization = {
+	include = ic_generic_infantry_equipment_organization
+	icon = GFX_idea_mauser
+
+    available = {
+        has_completed_focus = ic_ROM_German_MP38_and_MG34
+        has_completed_focus = ic_ROM_German_first_aid_kits_and_stews
+    }
+
+	allowed = {	
+		tag = ROM
+	}
+}
+
+ROM_rheinmetall_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_rheinmetall
+
+    available = {
+
+        has_completed_focus = ic_ROM_German_leFH18
+
+    }
+
+	allowed = {	
+		tag = ROM
+	}
+}

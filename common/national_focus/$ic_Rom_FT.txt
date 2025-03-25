@@ -68,10 +68,14 @@ focus_tree = {
 
 	focus = {
 		id = ic_ROM_Mihai_the_first_looks_better
+
 		icon = GFX_focus_rom_coup
+
 		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
+
 		x = 0
 		y = 1
+
 		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
 
 		cost = 10
@@ -425,8 +429,10 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_generic_field_hostpital
+
         completion_reward = {
-           
+           custom_effect_tooltip = ic_ROM_German_first_aid_kits_and_stewstt
         }
 	}
 
@@ -441,8 +447,10 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_GER_gebirgsjager
+
         completion_reward = {
-           
+           custom_effect_tooltip = ic_ROM_German_MP38_and_MG34tt
         }
 	}
 
@@ -457,8 +465,10 @@ focus_tree = {
 
 		cost = 5
 
+		icon = GFX_focus_SMB_mountain_guns
+
         completion_reward = {
-           
+           custom_effect_tooltip = ic_ROM_German_leFH18tt
         }
 	}
 
@@ -1197,6 +1207,8 @@ focus_tree = {
 		relative_position_id = ic_ROM_Support_for_German_policy
 		
 		cost = 3
+
+		icon = GFX_goal_generic_forceful_treaty
 
         completion_reward = {
            custom_effect_tooltip = ic_ROM_open_focus_romania_tt
