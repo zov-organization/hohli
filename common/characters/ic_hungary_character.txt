@@ -79,17 +79,9 @@ characters = {
 
 			idea_token = HUN_gusztav_gratz
 
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
 
 			traits = {
 				war_industrialist
-			}
-
-			ai_will_do = {
-				base = 1
 			}
 		}
 	}
@@ -328,7 +320,7 @@ characters = {
 				ledger = army
 
 				traits = {
-					army_infantry_1
+					army_infantry_2
             }
         }
 	}
@@ -465,7 +457,7 @@ characters = {
 				idea_token = HUN_sandor_magyarossy
 
 				traits = {
-					
+					army_commando_2
             }
         }
 	}
