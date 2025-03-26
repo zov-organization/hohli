@@ -28,10 +28,47 @@ ROM_constanta_shipyard_organization = {
 ###################################
 
 ROM_cugir_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_ROM_cugir  #used with permission from Turning Point mod
+	include = ic_generic_infantry_equipment_organization
+	icon = GFX_idea_ROM_cugir  
 	allowed = { 
 		tag = ROM
+	}
+
+	add_trait = {
+		token = ROM_mio_mp34_mp40
+		name = ROM_mio_mp34_mp40
+		icon = GFX_generic_mio_department_icon_facilities
+
+		relative_position_id = generic_mio_trait_quality_materials
+		position = { x = 2 y = 0 }
+
+		available = {
+			FROM = {
+				has_completed_focus = ic_ROM_German_MP38_and_MG34
+			}
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+	add_trait = {
+		token = ROM_mio_first_aid_kits_and_stews
+		name = ROM_mio_first_aid_kits_and_stews
+		icon = GFX_generic_mio_department_icon_facilities
+
+		relative_position_id = ROM_mio_mp34_mp40
+		position = { x = 0 y = -1 }
+
+		available = {
+			FROM = {
+				has_completed_focus = ic_ROM_German_first_aid_kits_and_stews
+			}
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
 	}
 }
 
@@ -40,6 +77,24 @@ ROM_resita_works_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_1
 	allowed = { 
 		tag = ROM
+	}
+	add_trait = {
+		token = ROM_mio_German_leFH18
+		name = ROM_mio_German_leFH18
+		icon = GFX_generic_mio_department_icon_facilities
+
+		relative_position_id = generic_mio_trait_super_charges
+		position = { x = 0 y = 1 }
+
+		available = {
+			FROM = {
+				has_completed_focus = ic_ROM_German_leFH18
+			}
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
 	}
 }
 
@@ -54,39 +109,5 @@ ROM_malaxa_organization = {
 			military_industrial_organization_research_bonus = -0.03
 			military_industrial_organization_funds_gain = -0.1
 		}
-	}
-}
-
-ROM_mauser_organization = {
-	include = ic_generic_infantry_equipment_organization
-	icon = GFX_idea_mauser
-
-    available = {
-		FROM = {
-			OR = {
-			has_completed_focus = ic_ROM_German_MP38_and_MG34
-        	has_completed_focus = ic_ROM_German_first_aid_kits_and_stews
-			}
-		}
-    }
-
-	allowed = {	
-		tag = ROM
-	}
-}
-
-ROM_rheinmetall_organization = {
-	include = generic_artillery_organization
-	
-	icon = GFX_idea_rheinmetall
-
-    available = {
-
-        has_completed_focus = ic_ROM_German_leFH18
-
-    }
-
-	allowed = {	
-		tag = ROM
 	}
 }

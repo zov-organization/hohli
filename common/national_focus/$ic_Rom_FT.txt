@@ -432,7 +432,11 @@ focus_tree = {
 		icon = GFX_focus_generic_field_hostpital
 
         completion_reward = {
-           custom_effect_tooltip = ic_ROM_German_first_aid_kits_and_stewstt
+		   mio:ROM_cugir_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_first_aid_kits_and_stews
+				}
+			}
         }
 	}
 
@@ -450,7 +454,11 @@ focus_tree = {
 		icon = GFX_focus_GER_gebirgsjager
 
         completion_reward = {
-           custom_effect_tooltip = ic_ROM_German_MP38_and_MG34tt
+			mio:ROM_cugir_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_mp34_mp40
+				}
+			}
         }
 	}
 
@@ -468,7 +476,11 @@ focus_tree = {
 		icon = GFX_focus_SMB_mountain_guns
 
         completion_reward = {
-           custom_effect_tooltip = ic_ROM_German_leFH18tt
+			mio:ROM_resita_works_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_German_leFH18
+				}
+			}
         }
 	}
 
