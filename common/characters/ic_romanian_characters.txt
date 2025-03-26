@@ -28,12 +28,6 @@ characters = {
 			}
 		}
 		
-		country_leader={
-			ideology=fascism
-			expire="1965.1.1.1"
-			id=-1
-		}
-		
 		field_marshal={
 			traits={ offensive_doctrine }
 			skill=4

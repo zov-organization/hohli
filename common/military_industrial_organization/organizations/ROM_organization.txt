@@ -62,8 +62,12 @@ ROM_mauser_organization = {
 	icon = GFX_idea_mauser
 
     available = {
-        has_completed_focus = ic_ROM_German_MP38_and_MG34
-        has_completed_focus = ic_ROM_German_first_aid_kits_and_stews
+		FROM = {
+			OR = {
+			has_completed_focus = ic_ROM_German_MP38_and_MG34
+        	has_completed_focus = ic_ROM_German_first_aid_kits_and_stews
+			}
+		}
     }
 
 	allowed = {	
@@ -73,6 +77,7 @@ ROM_mauser_organization = {
 
 ROM_rheinmetall_organization = {
 	include = generic_artillery_organization
+	
 	icon = GFX_idea_rheinmetall
 
     available = {

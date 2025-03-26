@@ -363,18 +363,9 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
+
 			idea_token = ic_USA_dwight_d_eisenhower
-			allowed = {
-				OR = {
-					original_tag = USA
-					is_literally_china = yes
-				}
-			}
-			available = {
-				NOT = {
-					has_country_flag = dwight_d_eisenhower_sent_to_china
-				}
-			}
+
 			traits = {
 				army_chief_offensive_2
 			}
@@ -391,7 +382,7 @@ characters = {
 			defense_skill=3
 			planning_skill=5
 			logistics_skill=5
-			legacy_id=602
+			legacy_id=603
 		}
 	}
 
@@ -408,23 +399,7 @@ characters = {
 		advisor={
 			slot = army_chief
 			idea_token = ic_USA_douglas_macarthur
-			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = USA
-				}
-			}
-			available = {
-				NOT = {
-					OR = {
-						has_country_flag = douglas_macarthur_sent_to_china
-						has_country_leader = {
-							ruling_only = yes
-							character = USA_douglas_macarthur
-						}
-					}
-				}
-			}
+		
 			traits = {
 				army_chief_morale_2
 			}
@@ -441,7 +416,7 @@ characters = {
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=2
-			legacy_id=57
+			legacy_id=59
 		}
 	}
 
@@ -726,17 +701,7 @@ characters = {
 			slot = high_command
 			idea_token = ic_USA_joseph_stilwell
 			ledger = army
-			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = USA
-				}
-			}
-			available = {
-				NOT = {
-					has_country_flag = joseph_stilwell_sent_to_china
-				}
-			}
+
 			traits = {
 				army_logistics_2
 			}
@@ -753,7 +718,7 @@ characters = {
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=601
+			legacy_id=600
 		}
 	}
 

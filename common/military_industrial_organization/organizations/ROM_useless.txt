@@ -1,0 +1,42 @@
+ROM_leonidas_works_organization = {
+    include = generic_infantry_tank_organization
+	icon = GFX_idea_ROM_leonidas_works
+
+    allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_galati_shipyard_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_coastal_navy
+
+    allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_Braila_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_sea_focused_navy
+
+    allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_iar_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_ROM_iar
+    allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
