@@ -175,7 +175,7 @@ characters = {
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ic_ROM_gheorghe_potopeanu
 			ledger = army
@@ -201,7 +201,7 @@ characters = {
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 		}
 
 		corps_commander={
@@ -260,7 +260,7 @@ characters = {
 			traits = {
 				navy_screen_2
 			}
-			cost = 100
+			cost = 150
 		}
 		
 		navy_leader={
@@ -286,7 +286,7 @@ characters = {
 			traits = {
 				The_old_sailor
 			}
-			cost = 100
+			cost = 150
 		}
 	}
 
@@ -308,7 +308,7 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 		}
 
 		corps_commander={
@@ -333,7 +333,7 @@ characters = {
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 		}
 	}
 	ic_ROM_petre_dumitrescu= {
