@@ -21,36 +21,41 @@ set_popularities = {
 	neutrality = 44
 }
 
-recruit_character = HUN_miklos_horthy
+create_country_leader = {
+	name = "Miklos Horthy"
+	picture = "GFX_Portrait_hungary_miklos_horthy"
+	ideology = nazism
+	expire = "1965.1.1.1"
+	id = -1
+	traits = { dictator }
+}
+
+recruit_character = ic_HUN_lajos_remenyi_schneller	#Political advisor
+recruit_character = ic_HUN_jozsef_szell
+recruit_character = ic_HUN_gusztav_gratz			
+
+
+recruit_character = ic_HUN_shvoy_kalman				#Theorist
+
+
+recruit_character = ic_HUN_karoly_beregfy			#Chief of Army
+recruit_character = ic_HUN_ferenc_szombathelyi
+recruit_character = ic_HUN_hugo_sonyi
+recruit_character = ic_HUN_vilmos_roder
+
+recruit_character = ic_HUN_gusztav_jany				#High Command
+recruit_character = ic_HUN_jeno_ratz
+recruit_character = ic_HUN_dezso_laszlo
+recruit_character = ic_HUN_henrik_werth
+recruit_character = ic_HUN_ivan_hindy
+recruit_character = ic_HUN_sandor_magyarossy
+
 recruit_character = HUN_matyas_rakosi
 recruit_character = HUN_arpad_szakasits
 recruit_character = HUN_geza_lakatos
-recruit_character = HUN_ivan_hindy
-recruit_character = HUN_karoly_beregfy
 recruit_character = HUN_lajos_veress
-recruit_character = HUN_ferenc_feketehalmyczeydner
 recruit_character = HUN_istvan_szechenyi
-recruit_character = HUN_francois_deak
-recruit_character = HUN_gyorgy_jendrassik
-recruit_character = HUN_jeno_ratz
-recruit_character = HUN_henrik_werth
-recruit_character = HUN_hugo_sonyi
-recruit_character = HUN_ferenc_szombathelyi
-recruit_character = HUN_gusztav_jany
-recruit_character = HUN_dezso_laszlo
-recruit_character = HUN_reszo_kastner
-recruit_character = HUN_shvoy_kalman
-recruit_character = HUN_sandor_magyarossy
-recruit_character = HUN_bela_rakosi
-recruit_character = HUN_kalman_kanya
-recruit_character = HUN_jozsef_szell
-recruit_character = HUN_vilmos_roder
 recruit_character = HUN_zoltan_tildy
-recruit_character = HUN_laszlo_rajk
-recruit_character = HUN_kalman_daranyi
-recruit_character = HUN_lajos_remenyi_schneller
-recruit_character = HUN_gusztav_gratz
-recruit_character = HUN_gyula_gombos_de_jakfa
 recruit_character = HUN_otto_von_habsburg
 recruit_character = HUN_franz_friedrich
 

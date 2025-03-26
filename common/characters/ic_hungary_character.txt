@@ -1,0 +1,472 @@
+characters = {
+
+    #Political advisor
+
+    ic_HUN_lajos_remenyi_schneller = {
+
+			name = HUN_lajos_remenyi_schneller
+
+			portraits = {
+				army = {
+					small = "GFX_idea_HUN_lajos_remenyi_schneller"
+				}
+			}
+
+			advisor = {
+				slot = political_advisor
+
+				idea_token = HUN_lajos_remenyi_schneller
+
+				allowed = {
+					original_tag = HUN
+				}
+
+				traits = {
+					captain_of_industry 
+            }
+        }
+	}
+
+    ic_HUN_jozsef_szell = {
+
+		name = HUN_jozsef_szell
+
+		portraits = {
+			army = {
+				small = "GFX_idea_HUN_jozsef_szell"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_jozsef_szell
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = {
+				silent_workhorse
+			}
+
+			ai_will_do = {
+				base = 3
+			}
+		}
+	}
+
+    ic_HUN_gusztav_gratz = {
+
+		name = HUN_gusztav_gratz
+
+		portraits = {
+			army = {
+				small = "GFX_idea_HUN_gusztav_gratz"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_gusztav_gratz
+
+			allowed = {
+				original_tag = HUN
+				has_dlc = "Death or Dishonor"
+			}
+
+			traits = {
+				war_industrialist
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+
+    #Theorist
+
+    ic_HUN_shvoy_kalman = {
+    
+        name = HUN_shvoy_kalman
+
+        portraits = {
+            army = {
+                small = "GFX_idea_HUN_shvoy_kalman"
+            }
+        }
+
+        advisor = {
+            cost = 150
+            slot = theorist
+            idea_token = HUN_shvoy_kalman
+            ledger = army
+            
+            traits = {
+                military_theorist
+            }
+        }
+    }
+
+    #Chief of Army
+
+    ic_HUN_karoly_beregfy = {
+
+			name = HUN_karoly_beregfy
+
+			portraits = {
+				army = {
+					large = "GFX_Portrait_hungary_karoly_beregfy"
+					small = "GFX_idea_HUN_karoly_beregfy"
+				}
+			}
+			
+			corps_commander = {
+				traits = { trait_HUN_fascist_sympathies }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				legacy_id = -1
+			}
+
+            advisor = {
+
+                slot = army_chief
+
+                idea_token = HUN_karoly_beregfy
+
+                traits = {
+                    army_chief_drill_2
+			}
+            cost =  150
+		}
+	}
+
+    ic_HUN_ferenc_szombathelyi = {
+
+			name = HUN_ferenc_szombathelyi
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_ferenc_szombathelyi
+					small = GFX_portrait_HUN_ferenc_szombathelyi_small
+				}
+			}
+
+			corps_commander = {
+				traits = { hill_fighter }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+				legacy_id = -1
+			}
+
+			advisor = {
+
+				slot = army_chief
+
+				idea_token = HUN_ferenc_szombathelyi
+
+				traits = {
+					army_chief_defensive_2
+            }
+            cost = 150
+        }
+	}
+
+    ic_HUN_hugo_sonyi = {
+
+			name = HUN_hugo_sonyi
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_hugo_sonyi
+					small = GFX_portrait_HUN_hugo_sonyi_small
+				}
+			}
+
+			corps_commander = {
+				traits = { trait_HUN_vitez trait_engineer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+				legacy_id = -1
+			}
+
+			advisor = {
+
+				slot = army_chief
+
+				idea_token = HUN_hugo_sonyi
+
+				traits = {
+					army_chief_offensive_2
+            }
+            cost = 150
+        }
+    }
+
+    ic_HUN_vilmos_roder = {
+
+			name = HUN_vilmos_roder
+
+
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_vilmos_roder
+					small = GFX_portrait_HUN_vilmos_roder_small
+				}
+			}
+
+			corps_commander = {
+				traits = { infantry_officer }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				legacy_id = -1 
+			}
+
+			advisor = {
+			
+				slot = army_chief
+
+				idea_token = HUN_vilmos_roder
+
+				traits = {
+					army_chief_organizational_2
+            }
+            cost = 150
+        }
+	}
+
+    #High Command
+
+    ic_HUN_gusztav_jany = {
+	
+            name = HUN_gusztav_jany
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_gusztav_jany
+					small = GFX_portrait_HUN_gusztav_jany_small
+				}
+			}
+
+			corps_commander = {
+				traits = { trait_HUN_vitez infantry_leader armor_officer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1
+				legacy_id = -1
+			}
+
+			advisor = {
+                cost =  150
+
+				slot = high_command
+
+				idea_token = HUN_gusztav_jany
+
+				ledger = army
+
+				traits = {
+					army_armored_3
+			}
+		}
+	}
+
+    ic_HUN_jeno_ratz = {
+		
+			name = HUN_jeno_ratz
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_jeno_ratz
+					small = GFX_portrait_HUN_jeno_ratz_small
+				}
+			}
+
+			corps_commander = {
+				traits = { trait_HUN_vitez infantry_leader }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				legacy_id = -1
+				#visible = {
+				#}
+			}
+
+			advisor = {
+                cost = 150
+				slot = high_command
+
+				idea_token = HUN_jeno_ratz
+
+				ledger = army
+
+				traits = {
+					army_infantry_1
+            }
+        }
+	}
+
+    ic_HUN_dezso_laszlo = {
+		
+			name = HUN_dezso_laszlo
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_dezso_laszlo
+					small = GFX_portrait_HUN_dezso_laszlo_small
+				}
+			}
+
+			corps_commander = {
+				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies organizer }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				legacy_id = -1
+				#visible = {
+				#}
+			}
+
+			advisor = {
+
+                cost = 150
+
+				slot = high_command
+
+				idea_token = HUN_dezso_laszlo
+
+				ledger = army
+
+				traits = {
+					army_regrouping_2
+            }
+        }
+	}
+
+    ic_HUN_henrik_werth = {
+		
+		
+			name = HUN_henrik_werth
+
+			portraits = {
+				army = {
+					large = GFX_portrait_HUN_henrik_werth
+					small = GFX_portrait_HUN_henrik_werth_small
+				}
+			}
+
+			field_marshal = {
+				traits = { trait_HUN_fascist_sympathies }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				legacy_id = -1
+			
+			}
+
+			advisor = {
+
+                cost = 150
+            
+				slot = high_command
+
+				idea_token = HUN_henrik_werth
+
+				ledger = army
+
+				traits = {
+					army_entrenchment_2
+            }
+        }
+	}
+
+    ic_HUN_ivan_hindy = {
+
+			name = HUN_ivan_hindy
+
+			portraits = {
+				army = {
+					large = "GFX_Portrait_hungary_ivan_hindy"
+					small = "GFX_idea_HUN_ivan_hindy"
+				}
+			}
+
+			corps_commander = {
+				traits = { trickster }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+				legacy_id = -1
+			}
+
+			advisor = {
+
+                cost =  150
+
+				slot = high_command
+				idea_token = HUN_ivan_hindy
+
+				
+				traits = {
+					army_logistics_3
+            }		
+        }
+	}
+
+    ic_HUN_sandor_magyarossy = {
+		
+			name = HUN_sandor_magyarossy
+
+			portraits = {
+				army = {
+					small = "GFX_idea_HUN_sandor_magyarossy"
+				}
+			}
+			
+			advisor = {
+
+                cost =  150
+
+				slot = high_command
+
+				idea_token = HUN_sandor_magyarossy
+
+				traits = {
+					
+            }
+        }
+	}
+}
