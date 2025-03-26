@@ -101,7 +101,6 @@ recruit_character = ic_USA_george_kenney
 recruit_character = ic_USA_mark_clark			#High Command
 recruit_character = ic_USA_joseph_stilwell
 recruit_character = ic_USA_frank_jack_fletcher
-recruit_character = ic_USA_raymond_a_spruance
 recruit_character = ic_USA_john_cannon
 recruit_character = ic_USA_claire_lee_chennault
 recruit_character = ic_USA_courtney_hodges
@@ -281,7 +280,6 @@ if = {
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			engine_type_slot = engine_1_1x
 		}
 		obsolete = yes
@@ -291,7 +289,7 @@ if = {
 		type = cv_small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
+			engine_type_slot = engine_2_2x
 			special_type_slot_1 = dive_brakes_small
 		}
 		obsolete = yes
@@ -311,7 +309,6 @@ if = {
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
@@ -323,33 +320,10 @@ if = {
 		type = small_plane_cas_airframe_1
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
 		icon = "GFX_USA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "P-35A" #
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_light_plane_4_medium"
-	}
-	create_equipment_variant = {
-		name = "P-36A" #
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_fighter1_medium"
 	}
 	create_equipment_variant = {
 		name = "B-6A" #also covers other Keystone bombers
