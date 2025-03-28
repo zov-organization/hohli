@@ -48,8 +48,8 @@ ideas = {
             }
 		}
 
-		HUN_ID_From_a_drop_into_the_sea = {
-			name = HUN_ID_From_a_drop_into_the_sea
+		HUN_ID_Invite_foreign_investors2 = {
+			name = HUN_ID_Invite_foreign_investors
 
             removal_cost = -1
 
@@ -59,24 +59,27 @@ ideas = {
                 always = no
 			}
             modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_arms_factory_factor = 0.4
+            }	
+	    }
+
+        HUN_ID_Invite_foreign_investors3 = {
+			name = HUN_ID_Invite_foreign_investors3
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_arms_factory_factor = 0.4
                 fuel_gain_factor = 0.5
             }
 		}
-
-		HUN_ID_No_one_will_sit_idle= {
-			name = HUN_ID_No_one_will_sit_idle
-
-            removal_cost = -1
-
-            #picture = 
-
-            allowed = {
-                always = no
-			}
-            modifier = {
-                production_speed_arms_factory_factor = 0.1
-            }	
-	    }
 
 		HUN_ID_economic_intervention_buff = {
 			name = HUN_ID_economic_intervention
@@ -157,6 +160,37 @@ ideas = {
                 experience_gain_army = 0.05
 			}
 		}
-	}
 
+        HUN_Urbanization = {
+			name = HUN_Urbanization
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                weekly_manpower = 1000
+            }
+		}
+
+        HUN_Urbanization2 = {
+			name = HUN_Urbanization
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                weekly_manpower = 1000
+                conscription = 0.025
+                industrial_capacity_factory = 0.025
+            }
+		}
+	}
 }

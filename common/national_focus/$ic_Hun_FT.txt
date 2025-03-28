@@ -31,6 +31,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_Economic_intervention
+
 		#icon = 
 
 		prerequisite = { focus = HUN_A_new_way }
@@ -38,7 +39,9 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+
+		cost = 10
+
 		completion_reward = {
             add_ideas = { HUN_ID_economic_intervention }
 		}
@@ -80,6 +83,7 @@ focus_tree = {
 
 	focus = {
         id = HUN_Support_domestic_industry
+
         #icon = 
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
@@ -87,13 +91,15 @@ focus_tree = {
 
         x = 1
         y = 1
+
         cost = 5
+
         completion_reward = {
             155 = {
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = industrial_complex
-                    level = 3
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -102,6 +108,7 @@ focus_tree = {
 
 	focus = {
         id = HUN_Support_urbanization
+
         #icon = 
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
@@ -109,17 +116,58 @@ focus_tree = {
 
         x = 3
         y = 1
+
         cost = 5
+
         completion_reward = {
-            43 = {
-                add_extra_state_shared_building_slots = 5
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
+			43 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_category = metropolis
+			}
+		}
+    }
+
+    focus = {
+        id = HUN_Budapest_is_center_of_Balkans
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Support_urbanization }
+        relative_position_id = HUN_Support_urbanization
+
+        x = 1
+        y = 1
+
+        cost = 5
+
+        completion_reward = {
+			add_ideas = HUN_Urbanization
+		}
+    }
+
+    focus = {
+        id = HUN_Hungarian_mentality
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Budapest_is_center_of_Balkans }
+        relative_position_id = HUN_Budapest_is_center_of_Balkans
+
+        x = 1
+        y = 1
+
+        cost = 5
+
+        completion_reward = {
+			swap_ideas = {
+                remove_idea = HUN_Urbanization
+                add_idea = HUN_Urbanization2
             }
-        }
+		}
     }
 
 	focus = {
@@ -144,6 +192,40 @@ focus_tree = {
             add_ideas = {HUN_ID_Invite_foreign_investors}
         }
     }
+
+    focus = {
+        id = HUN_Hungarian_military_industry
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Invite_foreign_investors }
+        relative_position_id = HUN_Invite_foreign_investors
+
+        x = -1
+        y = 1
+
+        available = {
+            has_completed_focus = HUN_Strenghten_fascists
+        }
+
+        cost = 10
+        
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HUN_ID_Invite_foreign_investors
+                add_idea = HUN_ID_Invite_foreign_investors2
+            }
+            155 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
 	focus = {
         id = HUN_From_our_depths
         #icon = 
@@ -154,6 +236,7 @@ focus_tree = {
         x = -3
         y = 1
         cost = 5
+
         completion_reward = {
             155 = {
                 add_extra_state_shared_building_slots = 2
@@ -162,22 +245,6 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
-            }
-
-            add_resource = {
-                type = steel
-                amount = 10
-                state = 155
-            }
-            add_resource = {
-                type = tungsten
-                amount = 10
-                state = 155
-            }
-            add_resource = { 
-                type = chromium
-                amount = 10
-                state = 155
             }
          
         }
@@ -189,13 +256,13 @@ focus_tree = {
         prerequisite = { focus = HUN_From_our_depths }
         relative_position_id = HUN_From_our_depths
 
-        x = 0
+        x = -1
         y = 1
         cost = 5
         completion_reward = {
             add_resource = {
                 type = oil
-                amount = 10
+                amount = 15
                 state = 155
             }
         }
@@ -205,13 +272,17 @@ focus_tree = {
         #icon = 
 
         prerequisite = { focus = HUN_hungarian_oil }
+        prerequisite = { focus = HUN_Hungarian_military_industry  }
         relative_position_id = HUN_hungarian_oil
 
-        x = 0
+        x = 1
         y = 1
         cost = 5
         completion_reward = {
-            add_ideas = {HUN_ID_From_a_drop_into_the_sea}
+            swap_ideas = {
+                remove_idea = HUN_ID_Invite_foreign_investors2
+                add_idea = HUN_ID_Invite_foreign_investors3
+            }
         }
     }
 	focus = {
@@ -258,7 +329,8 @@ focus_tree = {
 
         x = 0
         y = 1
-        cost = 10
+        cost = 5
+
         completion_reward = {
 
             set_politics = { ruling_party = fascism }
@@ -283,12 +355,14 @@ focus_tree = {
 
         x = 2
         y = 1
-        cost = 15
+
+        cost = 10
+
         completion_reward = {
             add_tech_bonus = {
                 bonus = 1
                 uses = 3
-                category = industry
+                category = electronics
             }
         }
     }
@@ -301,17 +375,19 @@ focus_tree = {
 
         x = -2
         y = 1
-        cost = 15
+
+        cost = 10
         completion_reward = {
             add_tech_bonus = {
                 bonus = 1
                 uses = 3
-                category = industry
+                category = synth_resources
             }
         }
     }
 	focus = {
         id = HUN_Domestic_arms_industry
+
         #icon = 
 
         prerequisite = { focus = HUN_Strenghten_fascists }
@@ -319,13 +395,14 @@ focus_tree = {
 
         x = 1
         y = 1
+
         cost = 10
         completion_reward = {  
             154 = {
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
-                    level = 3
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -349,24 +426,7 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
-            }
-
-            add_resource = {
-                type = steel
-                amount = 10
-                state = 155
-            }
-            add_resource = {
-                type = tungsten
-                amount = 10
-                state = 155
-            }
-            add_resource = { 
-                type = chromium
-                amount = 10
-                state = 155
-            }
-            
+            }    
         }
     }
 	focus = {
@@ -378,10 +438,12 @@ focus_tree = {
 
         x = 3
         y = 1
+
         cost = 10
+
         completion_reward = {
             43 = {
-                add_extra_state_shared_building_slots = 5
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
                     level = 2
@@ -401,7 +463,6 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            add_ideas = { HUN_ID_No_one_will_sit_idle }
             155 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -511,42 +572,45 @@ focus_tree = {
             
         }
 	}
-	focus = {
-        id = HUN_Fuel_for_Germany
-        #icon = 
-        x = 12
-        y = 5
-        cost = 5
-        completion_reward = {
-            
-        }
-	}
+
 	focus = {
         id = HUN_Hungarian_SS
+
         #icon = 
-        x = 14
-        y = 5
+
+        x = 16
+        y = 3
+
         cost = 5
+
         completion_reward = {
             
         }
 	}
 	focus = {
         id = HUN_Hungarian_Workers
+
         #icon = 
+
         x = 16
         y = 5
+
         cost = 5
+
         completion_reward = {
             
         }
 	}
         focus = {
         id = HUN_Aluminium_for_Germany
+
         #icon = 
+
         x = 18
         y = 5
+
         cost = 5
+
         completion_reward = {
             
         }
@@ -554,10 +618,14 @@ focus_tree = {
 
 	focus = {
         id = HUN_Secret_rearmament
+
         #icon = 
+
         x = 27
         y = 0
+
         cost = 5
+
         completion_reward = {
             army_experience = 50
             add_ideas = {HUN_ID_Rearmament}
@@ -876,13 +944,13 @@ focus_tree = {
             
         }
 	}
+
 	focus = {
         id = HUN_Armored_Infantry_Carriers
 
         #icon = 
 
-        prerequisite = { focus = HUN_Cavalry_is_in_the_past  
-	focus = HUN_Maintainance_and_Supply}
+        prerequisite = { focus = HUN_Cavalry_is_in_the_past focus = HUN_Maintainance_and_Supply}
         relative_position_id = HUN_Cavalry_is_in_the_past
 
         x = 0
@@ -892,6 +960,7 @@ focus_tree = {
             
         }
 	}
+
 	focus = {
         id = HUN_Strong_armor_and_powerful_guns
 
@@ -908,6 +977,7 @@ focus_tree = {
             
         }
 	}
+
 	focus = {
         id = HUN_All_efforts_on_tanks
 
@@ -924,4 +994,5 @@ focus_tree = {
 		
         }
 	}
+
 }
