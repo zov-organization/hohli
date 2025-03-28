@@ -439,7 +439,7 @@ focus_tree = {
         x = 3
         y = 1
 
-        cost = 10
+        cost = 5
 
         completion_reward = {
             43 = {
@@ -449,6 +449,9 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
+            }
+            add_ideas = {
+                partial_economic_mobilisation
             }
         }
     }
