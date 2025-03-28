@@ -1,7 +1,94 @@
+HUN_hti_turan_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_HUN_hti_turan
+	
+	allowed = {	hidden_trigger = { always = no } }
 
-HUN_mwg_raba_organization = {
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_HUN_mwg_raba
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_mavag_assault_guns_organization = {
+	include = generic_assault_guns_organization
+	icon = GFX_idea_HUN_mavag_assault_gun
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_fiat_tankettes_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_fiat
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_ganz_danubius_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_HUN_ganz_danubius
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_mw_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_mw_aircraft
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_mavag_aircraft_organization = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_HUN_mavag_aircraft
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_mrt_aircraft_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_HUN_mrt_aircraft
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_obudai_hajogyar_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_HUN_obudai_hajogyar
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+HUN_femaru_fegyver_es_gepgyar_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_HUN_femaru_fegyver_es_gepgyar
 	
 	allowed = {	hidden_trigger = { always = no } }
 

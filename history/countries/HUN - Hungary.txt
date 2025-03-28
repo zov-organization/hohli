@@ -32,7 +32,8 @@ create_country_leader = {
 
 recruit_character = ic_HUN_lajos_remenyi_schneller	#Political advisor
 recruit_character = ic_HUN_jozsef_szell
-recruit_character = ic_HUN_gusztav_gratz			
+recruit_character = ic_HUN_gusztav_gratz	
+recruit_character = ic_HUN_zoltan_tildy		
 
 
 recruit_character = ic_HUN_shvoy_kalman				#Theorist
@@ -50,14 +51,9 @@ recruit_character = ic_HUN_henrik_werth
 recruit_character = ic_HUN_ivan_hindy
 recruit_character = ic_HUN_sandor_magyarossy
 
-recruit_character = HUN_matyas_rakosi
-recruit_character = HUN_arpad_szakasits
-recruit_character = HUN_geza_lakatos
-recruit_character = HUN_lajos_veress
-recruit_character = HUN_istvan_szechenyi
-recruit_character = HUN_zoltan_tildy
-recruit_character = HUN_otto_von_habsburg
-recruit_character = HUN_franz_friedrich
+recruit_character = ic_HUN_geza_lakatos				#Generals
+recruit_character = ic_HUN_lajos_veress
+
 
 add_ideas = {
 	civilian_economy

@@ -461,4 +461,78 @@ characters = {
             }
         }
 	}
+
+
+
+	#Generals
+
+	ic_HUN_geza_lakatos = {
+
+		name = HUN_geza_lakatos
+
+		portraits = {
+			army = {
+				large = "GFX_Portrait_hungary_geza_lakatos"
+				small = "GFX_idea_HUN_geza_lakatos"
+			}
+		}
+			
+		corps_commander = {
+			traits = { trait_HUN_vitez infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1 
+		}
+	}
+
+	ic_HUN_lajos_veress = {
+
+		name = HUN_lajos_veress
+
+		portraits = {
+			army = {
+				large = "GFX_Portrait_hungary_lajos_veress"
+				small = "GFX_idea_HUN_lajos_veress"
+			}
+		}
+		
+		corps_commander = {
+			traits = { armor_officer cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	ic_HUN_zoltan_tildy = {
+
+		name = HUN_zoltan_tildy
+
+		portraits = {
+			army = {
+				small="GFX_idea_HUN_zoltan_tildy"
+			}
+		}
+
+		advisor = {
+
+			slot = political_advisor
+
+			idea_token = HUN_zoltan_tildy
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			traits = {
+				democratic_reformer 
+			}
+		}
+	}
 }
