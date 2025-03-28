@@ -392,6 +392,7 @@ focus_tree = {
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
+        mutually_exclusive = { focus = HUN_Better_steel_for_the_best_weapon }
 
         x = 1
         y = 1
@@ -406,6 +407,13 @@ focus_tree = {
                     instant_build = yes
                 }
             }
+
+			#add_ideas = ic_ger_quality_tanks
+			mio:HUN_henschel_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quality_tanks
+				}
+			}
         }
     }
 	focus = {
@@ -414,6 +422,7 @@ focus_tree = {
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
+        mutually_exclusive = { focus = HUN_Domestic_arms_industry }
 
         x = -1
         y = 1
@@ -426,7 +435,14 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
-            }    
+            }
+
+            #add_ideas = ic_ger_quantity_tanks
+			mio:HUN_henschel_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quantity_tanks
+				}
+			} 
         }
     }
 	focus = {
@@ -481,10 +497,9 @@ focus_tree = {
         id = HUN_Renounce_the_Treaty_of_Trianon
         #icon = 
 
-        prerequisite = { focus = HUN_Domestic_arms_industry }
 		prerequisite = { focus = HUN_No_one_will_sit_idle }
 		prerequisite = { focus = HUN_Militarized_economy }
-		prerequisite = { focus = HUN_Better_steel_for_the_best_weapon }
+		prerequisite = { focus = HUN_Better_steel_for_the_best_weapon focus = HUN_Domestic_arms_industry }
         relative_position_id = HUN_Strenghten_fascists
 
         x = 0
@@ -914,7 +929,13 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_tech_bonus = {
+				name = HUN_panzerwaffe
+				bonus = 1.75
+				uses = 2
+				technology = improved_light_tank_chassis
+				technology = basic_medium_tank_chassis
+			}
         }
 	}
 	focus = {
@@ -929,7 +950,12 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_tech_bonus = {
+				name = HUN_extra_sponsorship
+				bonus = 1
+				uses = 2    
+				category = mio_cat_tech_all_motorized_mechanized
+			}
         }
 	}
 	focus = {
