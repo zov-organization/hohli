@@ -24,26 +24,26 @@ set_popularities = {
 create_country_leader = {
 	name = "Miklos Horthy"
 	picture = "GFX_portrait_HUN_miklos_horthy"
-	ideology = nazism
+	ideology = despotism
 	expire = "1965.1.1.1"
 	id = -1
 	traits = { dictator }
 }
 
 create_country_leader = {
-	name = "Otto Von Habsburg"
-	picture = "GFX_portrait_HUN_oto_von_habsburg"
-	ideology = despotism
+	name = "Miklos Horthy"
+	picture = "GFX_portrait_HUN_miklos_horthy"
+	ideology = nazism
 	expire = "1965.1.1.1"
 	id = -1
-	traits = { HUN_the_habsburg_prince }
+	traits = { dictator }
 }
 
 
 recruit_character = ic_HUN_lajos_remenyi_schneller	#Political advisor
 recruit_character = ic_HUN_jozsef_szell
-recruit_character = ic_HUN_gusztav_gratz	
-recruit_character = ic_HUN_zoltan_tildy		
+recruit_character = ic_HUN_gusztav_gratz
+recruit_character = ic_HUN_zoltan_tildy	
 
 
 recruit_character = ic_HUN_shvoy_kalman				#Theorist
