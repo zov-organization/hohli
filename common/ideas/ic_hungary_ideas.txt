@@ -228,7 +228,22 @@ ideas = {
             modifier = {
                 stability_weekly = -0.01
             }
+		}
 
+        HUN_Increased_sales = {
+
+            name = HUN_Increased_sales
+			
+			allowed = {
+				
+			}
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				mobilization_laws_cost_factor = -0.5
+				trade_laws_cost_factor = -0.5
+			}
 		}
 	}
 }

@@ -1082,4 +1082,22 @@ focus_tree = {
         }
 	}
 
+    focus = {
+        id = HUN_Increase_sales_resources_for_Germany
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Aluminium_for_Germany } 
+        relative_position_id = HUN_Aluminium_for_Germany
+
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_ideas = {
+                HUN_Increased_sales
+            }
+        }
+	}
+
 }
