@@ -202,10 +202,11 @@ focus_tree = {
 			custom_effect_tooltip = ic_SOV_mass_production_tt_focus_civ
 
 			add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.01	}
-			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = -0.05	}
-			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = -0.01	}
-			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = -0.02	}
-			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = -0.01	}
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.05	}
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.01	}
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.02	}
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.01	}
+			add_to_variable = { var = SOV_industrial_capacity_factory					value = 0.05	}
 			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}			
 
 			every_owned_state = {
@@ -306,6 +307,17 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			
+			custom_effect_tooltip = ic_SOV_mass_production_tt_focus_civ
+
+			add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.01	}
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.05	}
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.01	}
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.02	}
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.01	}
+			add_to_variable = { var = SOV_industrial_capacity_factory					value = 0.05	}
+			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}
+			
 			every_owned_state = {
 				limit = {
 					OR = {
@@ -328,7 +340,7 @@ focus_tree = {
 				add_dynamic_modifier = {
 					modifier = SOV_making_use_of_the_storehouse_of_russia
 					scope = SOV
-					days = 365
+					days = 730
 				}
 			}
 		}
@@ -490,10 +502,11 @@ focus_tree = {
 			custom_effect_tooltip = ic_SOV_mass_production_tt_focus_civ
 
 			add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.01	}
-			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = -0.05	}
-			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = -0.01	}
-			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = -0.02	}
-			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = -0.01	}
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.05	}
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.01	}
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.02	}
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.01	}
+			add_to_variable = { var = SOV_industrial_capacity_factory					value = 0.05	}
 			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}
 
 			add_ideas = { ic_SOV_gulag }
@@ -1279,10 +1292,11 @@ focus_tree = {
 			custom_effect_tooltip = ic_SOV_mass_production_tt_focus_civ
 
 			add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.01	}
-			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = -0.05	}
-			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = -0.01	}
-			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = -0.02	}
-			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = -0.01	}
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.05	}
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.01	}
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.02	}
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.01	}
+			add_to_variable = { var = SOV_industrial_capacity_factory					value = 0.05	}
 			add_to_variable = { var = SOV_production_speed_industrial_complex_factor	value = 0.05	}
 			
 			mio:SOV_kirov_organization = {
