@@ -1109,7 +1109,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 3
+		days_mission_timeout = 1
         complete_effect = {}
 
         timeout_effect = {
@@ -1184,7 +1184,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 2
+		days_mission_timeout = 1
         complete_effect = {}
 
         timeout_effect = {
@@ -1348,7 +1348,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 3
+		days_mission_timeout = 1
         complete_effect = {}
 
         timeout_effect = {
@@ -1439,7 +1439,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 2
+		days_mission_timeout = 1
         complete_effect = {}
 
         timeout_effect = {

@@ -1407,6 +1407,18 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 	#####################################
+
+	juggle = {
+		# units with radios can more efficiently join combats when there is room
+		research_cost = 0
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = -0 }
+		}
+		on_research_complete = {
+			set_technology = { Juggle=0 }
+		}
+	}
 	
 	construction1 = {
 		
