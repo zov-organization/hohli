@@ -146,7 +146,7 @@ GER_army_expansion_two:0 "Army Expansion 2"
 GER_cheap_civilian_radios:0 "Cheap Civilian Radios"
 GER_proclaim_german_supremacy:0 "Proclaim German Supremacy"
 GER_the_question:0 "The Question"
-GER_anshluss:0 "Anschluß"
+ic_GER_anshluss:0 "Anschluß"
 ic_GER_anshluss_spawn_ins_tt:0 "Spawns 40 inf divisions of the latest equipment"
 GER_sudetenland:0 "Sudetenland"
 GER_cze_annex:0 "Fate of Czechoslovakia"
@@ -218,6 +218,8 @@ ENG_indiscriminate_bombing_policy:0 "Indiscriminate Bombing Policy"
 ENG_our_second_key_to_survive:0 "Our Second Key to Survive"
 
 
+
+ITA_initial_focus:0 "Forza Italia! Forza Duce!"
 
 
 ITA_build_up_colonies:0 "Build up Colonies"

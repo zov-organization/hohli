@@ -15,7 +15,7 @@
 
 	focus = {
 		id = ITA_initial_focus
-		#icon = 
+		icon = GFX_ITA_initial_focus
 
 		prerequisite = {  }
 
@@ -23,7 +23,7 @@
 		y = 0
 		cost = 5
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 	}
 
@@ -246,7 +246,7 @@
 			159 = {
 				add_resource = {
 					type = oil
-					amount = 30
+					amount = 8
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -335,7 +335,7 @@
 	}
 	focus = {
 		id = ITA_alfa_romeo_deal
-		#icon = 
+		icon = GFX_ITA_alfa_romeo_deal
 
 		prerequisite = { focus = ITA_search_for_more_oil }
 		prerequisite = { focus = ITA_edison_electricity }
@@ -399,7 +399,7 @@
 	# Political
 	focus = {
 		id = ITA_continue_building_fascist_state
-		#icon = 
+		icon = GFX_ITA_continue_building_fascist_state
 
 		prerequisite = { focus = ITA_initial_focus }
 		relative_position_id = ITA_initial_focus
@@ -413,7 +413,7 @@
 	}
 	focus = {
 		id = ITA_oppose_anschluss
-		#icon = 
+		icon = GFX_ITA_oppose_anschluss
 
 		prerequisite = { focus = ITA_continue_building_fascist_state }
 		relative_position_id = ITA_continue_building_fascist_state
@@ -425,7 +425,7 @@
 		available = {
 			GER = {
 				focus_progress = {
-					focus = GER_anschluss
+					focus = ic_GER_anshluss
 					progress > 0.1
 				}
 			}
@@ -491,21 +491,21 @@
 	}
 	focus = {
 		id = ITA_idea_of_romans
-		#icon = 
+		icon = GFX_ITA_idea_of_romans
 
 		prerequisite = { focus = ITA_oppose_anschluss }
 		relative_position_id = ITA_oppose_anschluss
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
-			
+			add_ideas = ic_ITA_romans_idea
 		}
 	}
 	focus = {
 		id = ITA_albania_occupation
-		#icon = 
+		icon = GFX_ITA_albania_occupation
 
 		prerequisite = { focus = ITA_idea_of_romans }
 		relative_position_id = ITA_idea_of_romans
@@ -514,7 +514,12 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			add_stability = -0.1
+			annex_country = {
+				target = ALB
+				transfer_troops = no
+			}
+			remove_ideas = vittorio_emanuele
 		}
 	}
 
@@ -551,13 +556,19 @@
 
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_army
 				bonus = 0.5
-				uses = 4
+				uses = 2
 				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_army
+				bonus = 0.5
+				uses = 2
+				category = artillery
 			}
 			157 = {
 				add_building_construction = {
@@ -597,11 +608,82 @@
 
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ic_ITA_regio_esercito
 				add_idea = ic_ITA_regio_esercito_2
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_fighting_xp_eth
+		#icon = 
+
+		prerequisite = { focus = ITA_army }
+		relative_position_id = ITA_army
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fighting_xp_spr
+		#icon = 
+
+		prerequisite = { focus = ITA_fighting_xp_eth }
+		relative_position_id = ITA_fighting_xp_eth
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ITA_poor_mechanized_army
+		#icon = 
+
+		prerequisite = { focus = ITA_fighting_xp_spr }
+		prerequisite = { focus = ITA_get_rid_of_ww1_legacy }
+		relative_position_id = ITA_get_rid_of_ww1_legacy
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ITA_poor_motorized_army_1
+				add_idea = ic_ITA_poor_motorized_army_2
+			}
+			swap_ideas = {
+				remove_idea = ic_ITA_regio_esercito_2
+				add_idea = ic_ITA_regio_esercito_3
 			}
 		}
 	}
@@ -613,9 +695,9 @@
 		prerequisite = { focus = ITA_reorganize_retards }
 		relative_position_id = ITA_reorganize_retards
 
-		x = 1
+		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			air_experience = 50
 			161 = {
@@ -635,57 +717,11 @@
 		prerequisite = { focus = ITA_air }
 		relative_position_id = ITA_air
 
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = ITA_start_tact_bomber_production
-		}
-	}
-	
-	focus = {
-		id = ITA_fighting_xp_eth
-		#icon = 
-
-		prerequisite = { focus = ITA_army }
-		prerequisite = { focus = ITA_air }
-		relative_position_id = ITA_army
-
-		x = 2
-		y = 1
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_fighting_xp_spr
-		#icon = 
-
-		prerequisite = { focus = ITA_fighting_xp_eth }
-		relative_position_id = ITA_fighting_xp_eth
-
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = ITA_poor_mechanized_army
-		#icon = 
-
-		prerequisite = { focus = ITA_fighting_xp_spr }
-		prerequisite = { focus = ITA_get_rid_of_ww1_legacy }
-		relative_position_id = ITA_get_rid_of_ww1_legacy
-
-		x = 2
-		y = 1
-		cost = 10
-		completion_reward = {
-			
 		}
 	}
 	
@@ -698,7 +734,7 @@
 
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			
 		}
@@ -712,7 +748,7 @@
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			
 		}
@@ -726,7 +762,7 @@
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			
 		}
@@ -740,7 +776,7 @@
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		completion_reward = {
 			
 		}
