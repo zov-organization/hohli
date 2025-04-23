@@ -62,7 +62,7 @@ ideas = {
 			}
             modifier = {
                 production_speed_industrial_complex_factor = 0.1
-                production_speed_arms_factory_factor = 0.4
+                production_speed_arms_factory_factor = 0.2
             }	
 	    }
 
@@ -127,7 +127,7 @@ ideas = {
                 always = no
 			}
             modifier = {
-                stability_weekly = 0.008
+                stability_weekly = 0.004
                 war_support_weekly = 0.001
 				
 			}
@@ -227,12 +227,14 @@ ideas = {
 
             modifier = {
                 stability_weekly = -0.01
+                industrial_capacity_factory = 0.10
+                production_factory_max_efficiency_factor = 0.05
             }
 		}
 
         HUN_Increased_sales = {
 
-            name = HUN_Increased_sales
+            name = HUN_Increased_sales_1
 			
 			allowed = {
 				
@@ -244,6 +246,44 @@ ideas = {
 				mobilization_laws_cost_factor = -0.5
 				trade_laws_cost_factor = -0.5
 			}
+		}
+        
+        HUN_Suppression_the_opposition_2 = {
+			name = HUN_Suppression_the_opposition_2
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+
+            modifier = {
+                stability_weekly = -0.009
+                industrial_capacity_factory = 0.15
+                production_factory_max_efficiency_factor = 0.05
+            }
+		}
+
+        HUN_Suppression_the_opposition_3 = {
+			name = HUN_Suppression_the_opposition_2
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+
+            modifier = {
+                stability_weekly = -0.008
+                industrial_capacity_factory = 0.15
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.05
+                fascism_drift = 0.30
+            }
 		}
 	}
 }

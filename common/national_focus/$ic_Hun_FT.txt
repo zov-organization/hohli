@@ -517,7 +517,7 @@ focus_tree = {
 	focus = {
         id = HUN_dream_about_great_hungary
         #icon = 
-        x = 15
+        x = 16
         y = 0
         cost = 5
         completion_reward = {
@@ -635,10 +635,13 @@ focus_tree = {
 
         #icon = 
 
-        x = 16
-        y = 7
+        prerequisite = { focus = HUN_Totalis_haboru focus = HUN_Elite_forces focus = HUN_All_efforts_on_tanks}
+        relative_position_id = HUN_Elite_forces
 
-        cost = 5
+        x = 0
+        y = 1
+
+        cost = 10
 
         completion_reward = {
             add_ideas = ic_ss_idea
@@ -649,12 +652,19 @@ focus_tree = {
 
         #icon = 
 
-        x = 16
-        y = 6
+        prerequisite = { focus = HUN_Total_war }
+        relative_position_id = HUN_Total_war 
 
-        cost = 5
+        x = 0
+        y = 1
+
+        cost = 10d
 
         completion_reward = {
+            swap_ideas = {
+                remove_idea = HUN_Suppression_the_opposition_2
+                add_idea = HUN_Suppression_the_opposition_3
+            }
             
         }
 	}
@@ -795,9 +805,11 @@ focus_tree = {
 
         x = 0
         y = 1
+
         cost = 5
+
         completion_reward = {
-            
+            army_experience = 100
         }
 	}
 	focus = {
@@ -892,7 +904,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            army_experience = 100
         }
 	}
 	focus = {
@@ -994,6 +1006,7 @@ focus_tree = {
 				technology = improved_light_tank_chassis
 				technology = basic_medium_tank_chassis
 			}
+            army_experience = 100
         }
 	}
 	focus = {
@@ -1044,7 +1057,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            set_technology = {
             
+            }
         }
 	}
 
@@ -1100,4 +1115,67 @@ focus_tree = {
         }
 	}
 
+    focus = {
+        id = HUN_Total_war
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Crush_potential_rebels } 
+        relative_position_id = HUN_Crush_potential_rebels
+
+        available = {
+            date > 1941.06.22
+        }
+
+        x = 0
+        y = 1
+
+        cost = 10
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HUN_Suppression_the_opposition
+                add_idea = HUN_Suppression_the_opposition_2
+            }
+            add_war_support = 0.05
+        }
+	}
+
+    focus = {
+        id = HUN_Would_that_be_enough
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Hungarian_Workers } 
+		mutually_exclusive = { focus = HUN_Listen_to_Goebbels_speeches }
+        relative_position_id = HUN_Hungarian_Workers
+
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_ideas = {
+                
+            }
+        }
+	}
+
+    focus = {
+        id = HUN_Listen_to_Goebbels_speeches
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Hungarian_Workers } 
+		mutually_exclusive = { focus = HUN_Would_that_be_enough }
+        relative_position_id = HUN_Hungarian_Workers
+
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_ideas = {
+                
+            }
+        }
+	}
 }
