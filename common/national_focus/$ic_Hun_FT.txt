@@ -1058,7 +1058,6 @@ focus_tree = {
         cost = 5
         completion_reward = {
             set_technology = {
-            
             }
         }
 	}
