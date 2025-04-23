@@ -90,10 +90,11 @@ activate_advisor = ic_SOV_genrikh_yagoda
 
 
 set_variable = { SOV_consumer_goods_expected_value				= -0.01 }
-set_variable = { SOV_line_change_production_efficiency_factor	= -0.2 }
-set_variable = { SOV_production_factory_max_efficiency_factor	= -0.05 }	
-set_variable = { SOV_production_factory_efficiency_gain_factor	= -0.15 }
-set_variable = { SOV_production_factory_start_efficiency_factor	= -0.05 }
+set_variable = { SOV_line_change_production_efficiency_factor	= -0.35 }
+set_variable = { SOV_production_factory_max_efficiency_factor	= -0.08 }	
+set_variable = { SOV_production_factory_efficiency_gain_factor	= -0.21 }
+set_variable = { SOV_production_factory_start_efficiency_factor	= -0.08 }
+set_variable = { SOV_industrial_capacity_factory				= -0.05 }
 set_variable = { SOV_production_speed_industrial_complex_factor = 0.05 }
 
 add_dynamic_modifier = {

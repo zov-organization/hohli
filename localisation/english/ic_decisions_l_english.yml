@@ -57,7 +57,7 @@
 
 
 
-  ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §R-5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §R-1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §R-2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §R-1.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
+  ic_SOV_mass_production_tt_focus_civ:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-1.0%§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §G+5.00%§! \n £prod_eff_cap  Production Efficiency Cap: §G+1.00%§! \n £efficiency_growth_texticon  Production Efficiency growth: §G+2.00%§! \n £efficiency_base_texticon  Production Efficiency Base: §G+1.00§! \n £factory_output_texticon  Factory Output: §G+5.00§! \n £construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed: §G+5.00%§! \n "
 
   SOV_accelerate_industry:0 "§OACCELERATE INDUSTRY§!"
   SOV_accelerate_industry_desc:0 "§gIt is now obvious - Hitler is planning "drang nach osten".\nWe can no longer wait, that's the time for us to mobilize our industry.\nIf Germany wants a war of attrition - they will get it!§!"
