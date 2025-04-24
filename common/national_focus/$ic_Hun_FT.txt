@@ -1041,7 +1041,20 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_tech_bonus = {
+				bonus = 2.00
+				uses = 1
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+			}
+            add_tech_bonus = {
+				bonus = 2.00
+				uses = 1
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+			}
         }
 	}
 
@@ -1057,7 +1070,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            set_technology = {
+            add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = cat_armored_cars
             }
         }
 	}
@@ -1075,7 +1091,17 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_tech_bonus = {
+                bonus = 1.00
+				uses = 3
+				category = armor 
+            }
+
+            add_tech_bonus = {
+                bonus = 1.00
+				uses = 3
+                category = engine
+            }
         }
 	}
 
