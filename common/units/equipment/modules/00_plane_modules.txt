@@ -1066,9 +1066,9 @@ equipment_modules = {
 
 	large_bomb_bay = {
 		abbreviation = "lbb"
-		category = strat_weapon
+		category = tac_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = strategic_bomber
+		add_equipment_type = { tactical_bomber strategic_bomber }
 
 		add_stats = {
 			air_bombing = 40
@@ -1078,6 +1078,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		allow_mission_type = {
+			tactical_bomber
 			strategic_bomber
 		}
 		dismantle_cost_ic = 12

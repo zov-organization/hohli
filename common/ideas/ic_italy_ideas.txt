@@ -1,0 +1,456 @@
+ideas = {
+
+	country = {
+
+		ic_ITA_vittorio_mutilata = {
+			name = vittorio_mutilata
+
+			removal_cost = -1
+
+			picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				party_popularity_stability_factor = 0.05
+				fascism_drift = 0.2
+				war_support_factor = 0.06
+			}
+		}
+
+		ic_ITA_romans_idea = {
+			name = ic_ITA_romans_idea
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_weekly = 0.003
+				conscription = 0.01
+				war_support_factor = 0.06
+			}
+		}
+
+		ic_ITA_regio_esercito = {
+			name = ic_ITA_regio_esercito
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = -0.2
+				planning_speed = -0.5
+				max_planning = 0.1
+				army_speed_factor = -0.2
+
+				experience_gain_army_factor = -0.1
+				max_training = -0.6
+				experience_gain_army_unit_factor = -0.5
+				experience_loss_factor = 0.2
+			}
+		}
+		ic_ITA_regio_esercito_2 = {
+			name = ic_ITA_regio_esercito
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = -0.1
+				planning_speed = -0.2
+				max_planning = 0.1
+				army_speed_factor = -0.1
+
+				experience_gain_army_factor = -0.05
+				max_training = -0.5
+				experience_gain_army_unit_factor = -0.2
+				experience_loss_factor = 0.1
+			}
+		}
+		ic_ITA_regio_esercito_3 = {
+			name = ic_ITA_regio_esercito
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.2
+				max_planning = 0.15
+				army_speed_factor = -0.05
+
+				experience_gain_army_factor = -0.05
+				max_training = -0.4
+				experience_gain_army_unit_factor = -0.1
+				experience_loss_factor = 0.1
+			}
+		}
+
+		ic_ITA_poor_motorized_army_1 = {
+			name = ic_ITA_poor_motorized_army_1
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = 0.5 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.5 instant = yes
+				}
+			}
+
+			modifier = {
+				army_speed_factor = -0.2
+				army_org_regain = -0.15
+			}
+		} 
+		ic_ITA_poor_motorized_army_2 = {
+			name = ic_ITA_poor_motorized_army_2
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.25 instant = yes
+				}
+			}
+
+			modifier = {
+				army_speed_factor = -0.1
+				army_org_regain = -0.05
+			}
+		} 
+		
+		ic_ITA_bomber_programm = {
+			name = ic_ITA_bomber_programm
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_gray_wolf
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.25
+			}
+		}
+
+		ic_ITA_military_reorg_1 = {
+			name = ic_ITA_military_reorg_1
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_1
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_2
+					days = 180
+				}
+            }
+
+			modifier = {
+				experience_gain_army_factor = -0.2
+				experience_gain_air_factor = -0.2
+				land_reinforce_rate = -0.05
+				max_command_power = -20
+				land_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				army_speed_factor = -0.4
+				army_morale_factor = -0.12
+				army_attack_factor = -0.5
+				army_defence_factor = -0.17
+				army_org_factor = -0.3
+				planning_speed = -0.5
+				max_planning = -0.15
+			}
+		}
+
+		ic_ITA_military_reorg_2 = {
+			name = ic_ITA_military_reorg_2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_2
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_3
+					days = 180
+				}
+            }
+
+			modifier = {
+				experience_gain_army_factor = -0.18
+				experience_gain_air_factor = -0.18
+				land_reinforce_rate = -0.04
+				max_command_power = -18
+				land_doctrine_cost_factor = 0.09
+				air_doctrine_cost_factor = 0.09
+				army_speed_factor = -0.35
+				army_morale_factor = -0.09
+				army_attack_factor = -0.40
+				army_defence_factor = -0.15
+				army_org_factor = -0.25
+				planning_speed = -0.4
+				max_planning = -0.1
+			}
+		}
+
+		ic_ITA_military_reorg_3 = {
+			name = ic_ITA_military_reorg_3
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_3
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_4
+					days = 180
+				}
+            }
+
+			modifier = {
+				experience_gain_army_factor = -0.15
+				experience_gain_air_factor = -0.15
+				land_reinforce_rate = -0.04
+				max_command_power = -15
+				land_doctrine_cost_factor = 0.08
+				air_doctrine_cost_factor = 0.08
+				army_speed_factor = -0.20
+				army_morale_factor = -0.01
+				army_attack_factor = -0.38
+				army_defence_factor = -0.05
+				army_org_factor = -0.23
+				planning_speed = -0.4
+			}
+		}
+
+		ic_ITA_military_reorg_4 = {
+			name = ic_ITA_military_reorg_4
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_4
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_5
+					days = 180
+				}
+            }
+
+			modifier = {
+				experience_gain_army_factor = -0.1
+				experience_gain_air_factor = -0.1
+				land_reinforce_rate = -0.02
+				max_command_power = -10
+				land_doctrine_cost_factor = 0.07
+				air_doctrine_cost_factor = 0.07
+				army_speed_factor = -0.19
+				army_attack_factor = -0.30
+				army_org_factor = -0.22
+			}
+		}
+
+		ic_ITA_military_reorg_5 = {
+			name = ic_ITA_military_reorg_5
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_5
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_6
+					days = 180
+				}
+            }
+
+			modifier = {
+				experience_gain_army_factor = -0.05
+				experience_gain_air_factor = -0.05
+				land_reinforce_rate = -0.01
+				max_command_power = -8
+				land_doctrine_cost_factor = 0.05
+				air_doctrine_cost_factor = 0.05
+				army_speed_factor = -0.18
+				army_attack_factor = -0.30
+				army_org_factor = -0.20
+			}
+		}
+
+		ic_ITA_military_reorg_6 = {
+			name = ic_ITA_military_reorg_6
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ITA_military_reorg_6
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army_factor = -0.01
+				experience_gain_air_factor = -0.01
+				max_command_power = -5
+				land_doctrine_cost_factor = 0.02
+				air_doctrine_cost_factor = 0.02
+				army_speed_factor = -0.1
+				army_attack_factor = -0.1
+				army_org_factor = -0.15
+			}
+		}
+
+		ic_ITA_agrarian_economy1 = {
+			name = ic_ITA_agrarian_economy
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.07
+			}
+		}
+
+		ic_ITA_agrarian_economy2 = {
+			name = ic_ITA_agrarian_economy
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.02
+			}
+		}
+
+		ic_ITA_building_up_colonies = {
+			name = ic_ITA_building_up_colonies
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+            on_remove = {
+				add_timed_idea = {
+					idea = ic_ITA_building_up_colonies_bonus
+					days = 545
+				}
+            }
+
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+        
+		ic_ITA_building_up_colonies_bonus = {
+			name = ic_ITA_building_up_colonies_bonus
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		ic_ITA_tax_reform = {
+			name = ic_ITA_tax_reform
+
+			removal_cost = -1
+
+			#picture = vittoria_mutilata
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+    }
+
+}

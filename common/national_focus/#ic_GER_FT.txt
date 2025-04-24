@@ -963,8 +963,8 @@
 
 
 	focus = {
-		id = GER_anshluss
-		icon = GFX_GER_anshluss
+		id = ic_GER_anshluss
+		icon = GFX_ic_GER_anshluss
 		
 		available = {
 		    date > 1938.4.1
@@ -995,7 +995,7 @@
 			add_war_support = 0.2
 			add_named_threat = {
 				threat = 15
-				name = GER_anshluss
+				name = ic_GER_anshluss
 			}
 		}
 	}
@@ -1004,8 +1004,8 @@
 		id = GER_sudetenland
 		icon = GFX_goal_demand_sudetenland
 
-		prerequisite = { focus = GER_anshluss }
-		relative_position_id = GER_anshluss
+		prerequisite = { focus = ic_GER_anshluss }
+		relative_position_id = ic_GER_anshluss
 
 		x = 0
 		y = 1

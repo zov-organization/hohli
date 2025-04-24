@@ -146,7 +146,7 @@ GER_army_expansion_two:0 "Army Expansion 2"
 GER_cheap_civilian_radios:0 "Cheap Civilian Radios"
 GER_proclaim_german_supremacy:0 "Proclaim German Supremacy"
 GER_the_question:0 "The Question"
-GER_anshluss:0 "Anschluß"
+ic_GER_anshluss:0 "Anschluß"
 ic_GER_anshluss_spawn_ins_tt:0 "Spawns 40 inf divisions of the latest equipment"
 GER_sudetenland:0 "Sudetenland"
 GER_cze_annex:0 "Fate of Czechoslovakia"
@@ -217,6 +217,10 @@ ENG_joint_air_exercises:0 "Joint Air Exercises"
 ENG_indiscriminate_bombing_policy:0 "Indiscriminate Bombing Policy"
 ENG_our_second_key_to_survive:0 "Our Second Key to Survive"
 
+
+
+
+
 ic_ROM_Election_of_the_King:0 "Election of the King"
 ic_ROM_Supervision_of_the_Kings_expenses:0 "Supervision of the Kings expenses"
 ic_ROM_Interference_with_the_Kings_expenses:0 "Interference with the Kings expenses"
@@ -286,6 +290,7 @@ ic_ROM_Infra_for_steel_and_alum:0 "Infra"
 ic_ROM_Alum_for_romania:0 "Aluminum shortage"
 ic_ROM_Excavation:0 "Excavation"
 ic_ROM_screen:0 "Screen"
+
 
 
 
@@ -364,3 +369,15 @@ ic_USA_Day_D:0 "Day D"
 ic_USA_Operation_Husky:0 "Operation Husky"
 ic_USA_liberty_ships:0 "Liberty ships"
 ic_USA_neutrality_act:0 "Neutrality act"
+
+
+
+
+
+ITA_initial_focus:0 "Forza Italia! Forza Duce!"
+
+
+ITA_build_up_colonies:0 "Build up Colonies"
+ITA_build_up_colonies_tt:0 "After losing "§Y$ic_ITA_building_up_colonies$§!" idea you will recieve "§Y$ic_ITA_building_up_colonies_bonus$§!" idea for §Y545§! days."
+
+ITA_reorganize_retards_tt:0 "§CWill start a chain of Military Reorganization of 6 debuffs, each of which will be removing one after another every 180 days (in total will take 1080 days = 3 years)§"

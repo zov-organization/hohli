@@ -1,0 +1,785 @@
+﻿focus_tree = {
+	id = italian_focus
+	continuous_focus_position = { x = 2700 y = 50 }
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			OR = { tag = ITA tag = RSI tag = RDS }
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = ITA_initial_focus
+		icon = GFX_ITA_initial_focus
+
+		prerequisite = {  }
+
+		x = 16
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	# Industrial
+
+	focus = {
+		id = ITA_huge_agrarian_sector
+		#icon = 
+
+		prerequisite = { focus = ITA_initial_focus }
+		relative_position_id = ITA_initial_focus
+
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ITA_agrarian_economy1
+				add_idea = ic_ITA_agrarian_economy2
+			}
+		}
+	}
+	focus = {
+		id = ITA_slow_industrialization
+		#icon = 
+
+		prerequisite = { focus = ITA_huge_agrarian_sector }
+		relative_position_id = ITA_huge_agrarian_sector
+
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_build_up_colonies
+		#icon = 
+
+		prerequisite = { focus = ITA_slow_industrialization }
+		relative_position_id = ITA_slow_industrialization
+
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_timed_idea = {
+				idea = ic_ITA_building_up_colonies
+				days = 365
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ITA_build_up_colonies_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_ideas_tooltip = ic_ITA_building_up_colonies_bonus
+		}
+	}
+	focus = {
+		id = ITA_build_up_libya
+		#icon = 
+
+		prerequisite = { focus = ITA_build_up_colonies }
+		relative_position_id = ITA_build_up_colonies
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			448 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			449 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			450 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			451 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			663 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_build_up_ethiopia
+		#icon = 
+
+		prerequisite = { focus = ITA_build_up_colonies }
+		relative_position_id = ITA_build_up_colonies
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			271 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			843 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	
+	focus = {
+		id = ITA_search_for_more_oil
+		#icon = 
+
+		prerequisite = { focus = ITA_slow_industrialization }
+		relative_position_id = ITA_slow_industrialization
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_edison_electricity
+		#icon = 
+
+		prerequisite = { focus = ITA_slow_industrialization }
+		relative_position_id = ITA_slow_industrialization
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_alfa_romeo_deal
+		icon = GFX_ITA_alfa_romeo_deal
+
+		prerequisite = { focus = ITA_search_for_more_oil }
+		prerequisite = { focus = ITA_edison_electricity }
+		relative_position_id = ITA_search_for_more_oil
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_yacheika
+		#icon = 
+
+		prerequisite = { focus = ITA_alfa_romeo_deal }
+		relative_position_id = ITA_alfa_romeo_deal
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ITA_another_tax_reform
+		#icon = 
+
+		prerequisite = { focus = ITA_alfa_romeo_deal }
+		relative_position_id = ITA_alfa_romeo_deal
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = ic_ITA_tax_reform
+				days = 365
+			}
+		}
+	}
+
+
+	# Political
+	focus = {
+		id = ITA_continue_building_fascist_state
+		icon = GFX_ITA_continue_building_fascist_state
+
+		prerequisite = { focus = ITA_initial_focus }
+		relative_position_id = ITA_initial_focus
+
+		x = -2
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = ic_ITA_vittorio_mutilata
+		}
+	}
+	focus = {
+		id = ITA_oppose_anschluss
+		icon = GFX_ITA_oppose_anschluss
+
+		prerequisite = { focus = ITA_continue_building_fascist_state }
+		relative_position_id = ITA_continue_building_fascist_state
+
+		x = -1
+		y = 1
+		cost = 10
+
+		available = {
+			GER = {
+				focus_progress = {
+					focus = ic_GER_anshluss
+					progress > 0.1
+				}
+			}
+		}
+
+		completion_reward = {
+			add_stability = -0.15
+			39 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6675
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9630
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11615
+					instant_build = yes
+				}
+			}
+			850 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			160 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3657
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9613
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_idea_of_romans
+		icon = GFX_ITA_idea_of_romans
+
+		prerequisite = { focus = ITA_oppose_anschluss }
+		relative_position_id = ITA_oppose_anschluss
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_ITA_romans_idea
+		}
+	}
+	focus = {
+		id = ITA_albania_occupation
+		icon = GFX_ITA_albania_occupation
+
+		prerequisite = { focus = ITA_idea_of_romans }
+		relative_position_id = ITA_idea_of_romans
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = -0.1
+			annex_country = {
+				target = ALB
+				transfer_troops = no
+			}
+			remove_ideas = vittorio_emanuele
+		}
+	}
+
+
+	# Military
+	focus = {
+		id = ITA_reorganize_retards
+		#icon = 
+
+		prerequisite = { focus = ITA_initial_focus }
+		relative_position_id = ITA_initial_focus
+
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ic_ITA_military_reorg_1
+					days = 180
+				}
+			}
+			custom_effect_tooltip = ITA_reorganize_retards_tt
+		}
+	}
+
+	focus = {
+		id = ITA_army
+		#icon = 
+
+		prerequisite = { focus = ITA_reorganize_retards }
+		relative_position_id = ITA_reorganize_retards
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ITA_army
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_army
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			157 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 3910
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_l6_project
+		#icon = 
+
+		prerequisite = { focus = ITA_army }
+		relative_position_id = ITA_army
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = ITA_l6_project
+				bonus = 1.5
+				uses = 1
+				technology = improved_light_tank_chassis
+			}
+		}
+	}
+	focus = {
+		id = ITA_get_rid_of_ww1_legacy
+		#icon = 
+
+		prerequisite = { focus = ITA_army }
+		relative_position_id = ITA_army
+
+		x = -1
+		y = 2
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ITA_regio_esercito
+				add_idea = ic_ITA_regio_esercito_2
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = ITA_get_rid_of_ww1_legacy
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_fighting_xp_eth
+		#icon = 
+
+		prerequisite = { focus = ITA_army }
+		relative_position_id = ITA_army
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_fighting_xp_spr
+		#icon = 
+
+		prerequisite = { focus = ITA_fighting_xp_eth }
+		relative_position_id = ITA_fighting_xp_eth
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ITA_poor_mechanized_army
+		#icon = 
+
+		prerequisite = { focus = ITA_fighting_xp_spr }
+		prerequisite = { focus = ITA_get_rid_of_ww1_legacy }
+		relative_position_id = ITA_get_rid_of_ww1_legacy
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ITA_poor_motorized_army_1
+				add_idea = ic_ITA_poor_motorized_army_2
+			}
+			swap_ideas = {
+				remove_idea = ic_ITA_regio_esercito_2
+				add_idea = ic_ITA_regio_esercito_3
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_air
+		#icon = 
+
+		prerequisite = { focus = ITA_reorganize_retards }
+		relative_position_id = ITA_reorganize_retards
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			air_experience = 50
+			161 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 9752
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_scrap_long_going_bombers
+		#icon = 
+
+		prerequisite = { focus = ITA_air }
+		relative_position_id = ITA_air
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			unlock_decision_tooltip = ITA_start_tact_bomber_production
+		}
+	}
+	
+	focus = {
+		id = ITA_navy
+		#icon = 
+
+		prerequisite = { focus = ITA_reorganize_retards }
+		relative_position_id = ITA_reorganize_retards
+
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_end_reffiting_conte_di_cavour
+		#icon = 
+
+		prerequisite = { focus = ITA_navy }
+		relative_position_id = ITA_navy
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_proper_escorts
+		#icon = 
+
+		prerequisite = { focus = ITA_end_reffiting_conte_di_cavour }
+		relative_position_id = ITA_end_reffiting_conte_di_cavour
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_think_of_littorio
+		#icon = 
+
+		prerequisite = { focus = ITA_end_reffiting_conte_di_cavour }
+		relative_position_id = ITA_end_reffiting_conte_di_cavour
+
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+}
