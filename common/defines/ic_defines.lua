@@ -373,7 +373,7 @@ NDefines.NSupply.ALERT_LOW_SUPPLY_LEVEL = 0.9
 NDefines.NSupply.ALERT_VERY_LOW_SUPPLY_LEVEL = 0.5
 
 --MIO
-NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0
+NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.12
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1
 
 --Special Projects
