@@ -1,0 +1,131 @@
+ITA_cantiere_oto_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_ITA_oto
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_navalmeccanica_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_ITA_navalmeccanica
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+} 
+
+ITA_cantiere_navale_di_ancona_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_ITA_cantera_navale_di_ancona
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_cantieri_navali_tosi_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_ITA_cantieri_navali_tosi
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_macchi_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_macchi
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_caproni_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_caproni
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_piaggio_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_piaggio
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_imam_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_ITA_imam
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_crda_cant_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_ITA_crda_cant
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_fiat_aviazione_organization = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_ITA_fiat_aviazione
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_lancia_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_lancia
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+ITA_brescia_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ITA_brescia_arsenal
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
