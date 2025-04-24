@@ -184,7 +184,7 @@ ic_progon_mode = {
         days_remove = 70
         remove_effect = {
             GER = {
-                complete_national_focus = GER_anshluss
+                complete_national_focus = ic_GER_anshluss
             }
         }
     }

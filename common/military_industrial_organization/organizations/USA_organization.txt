@@ -447,7 +447,7 @@ USA_douglas_aircraft_company_organization = {
 }
 
 USA_boeing_organization = {
-	include = generic_heavy_aircraft_organization
+	include = ic_generic_heavy_aircraft_organization
 	icon = GFX_idea_boeing
 	
 	allowed = {	

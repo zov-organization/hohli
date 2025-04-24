@@ -51,7 +51,7 @@ ITA_crda_organization = {
 ###########################
 
 ITA_savoia_marchetti_organization = {
-	include = generic_heavy_aircraft_organization
+	include = ic_generic_heavy_aircraft_organization
 	icon = GFX_idea_savoia_marchetti
 
 	allowed = {	

@@ -375,7 +375,7 @@ SOV_ilyushin_design_bureau_organization = {
 }
 
 SOV_tupolev_design_bureau_organization = {
-	include = generic_heavy_aircraft_organization
+	include = ic_generic_heavy_aircraft_organization
 	icon = GFX_idea_tupolev_design_bureau
 	allowed = {	
 		original_tag = SOV
