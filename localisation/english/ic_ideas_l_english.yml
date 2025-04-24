@@ -66,6 +66,7 @@
 
 
 
+
  ic_ENG_commonwealth_buff:0 "Commonwealth Ties"
  ic_ENG_research_buff:0 "Progress Sciency Policy"
  ic_ENG_french_military_cooperation_idea:0 "French Military Cooperation"
@@ -77,6 +78,32 @@
 
 
 
+
+ ic_Glory_to_Romania:0 "Glory to Romania"
+ ic_Glory_to_Romania_2:0 "Glory to Romania"
+ ic_Headquarters_of_the_eleven_Army:0 "Headquarters of the eleven Army"
+ ic_Headquarters_of_the_eleven_Army2:0 "Headquarters of the eleven Army"
+ ic_Ground_forces_Romania:0 "Ground forces Romania"
+ ic_Ground_forces_Romania2:0 "Ground forces Romania"
+ ic_Ground_forces_Romania3:0 "Ground forces Romania"
+ ic_Ground_forces_Romania4:0 "Ground forces Romania"
+ ic_ROM_The_true_descendants_of_the_Romans:0 "The true descendants of the Romans"
+ ic_ROM_The_Navy_of_Greater_Romania:0 "The Navy of Greater Romania"
+ ic_escort_effort_focus_Rom:0 "Escort effort focus Romania"
+ ic_ROM_school_f_bombing_from_the_sea:0 "School bombing"
+ ic_ROM_collapse_of_AusHun:0 "Collapse of AusHun"
+ ic_ROM_collapse_of_AusHun2:0 "Collapse of AusHun"
+ ic_ROM_better_than_AusHun:0 "Better than AusHun"
+ ic_ROM_collapse_of_AusHun3:0 "Collapse of AusHun"
+ ic_ROM_AXIS:0 "AXIS"
+ ic_ROM_Agrarian_reform:0 "Agrarian reform"
+ ic_ROM_Agrarian_reform2:0 "Agrarian reform"
+ ic_ROM_Navy_romania:0 "Navy romania"
+ ic_ROM_ss_idea:0 "SS"
+ 
+ 
+ 
+ 
 
  ic_ITA_building_up_colonies:0 "Building up Colonies"
  ic_ITA_building_up_colonies_bonus:0 "Colonies pay off!"

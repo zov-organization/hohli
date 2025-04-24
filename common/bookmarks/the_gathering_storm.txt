@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "SOV"
 		default = yes
-		
+
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -21,10 +21,13 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				great_depression
+				home_of_the_free
 			}
 			focuses = {
-				
+				ic_USA_womens_armed_service_integration_act
+				ic_USA_WPA
+				ic_USA_Continuation_of_the_Roosevelt_course
 			}
 		}
 		"ENG"={

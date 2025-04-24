@@ -8924,7 +8924,7 @@ leader_traits = {
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.10
-		special_forces_cap_flat = 6
+		special_forces_defence_factor = 0.10
 		experience_gain_army = @experience_gain_medium
 
 		command_power = 0
@@ -10762,6 +10762,16 @@ leader_traits = {
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.1
 		production_speed_arms_factory_factor = -0.2
+	}
+
+	defender_trait = {
+		random = no
+		sprite = 5
+		war_support_factor = 0.1
+		army_core_attack_factor = 0.08
+		army_core_defence_factor = 0.08
+		conscription = 0.03
+		war_support_weekly = 0.001
 	}
 
 }

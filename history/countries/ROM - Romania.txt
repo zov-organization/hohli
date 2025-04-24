@@ -1,0 +1,114 @@
+capital = 46
+load_focus_tree = romanian_focus
+oob = "ic_ROM_1936_army"
+set_naval_oob = "ic_ROM_1936_fleet"
+
+
+set_research_slots = 3
+navy_experience = 0
+
+set_convoys = 100
+
+set_stability = 0.75
+set_war_support = 0.3
+
+set_popularities = {
+	democratic = 60
+	fascism = 20
+	communism = 0
+	neutrality = 20
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = ic_ROM_gheorghe_tatarescu		# Country Leaders
+recruit_character = ic_ROM_ion_antonescu
+
+recruit_character = ic_ROM_gheorghe_argeseanu		# Political Advisors
+recruit_character = ic_ROM_armand_calinescu
+recruit_character = ic_ROM_Michael_Romniceanu
+recruit_character = ic_ROM_nicolae_malaxa
+recruit_character = ic_ROM_mihail_sturdza
+
+recruit_character = ic_ROM_gheorghe_potopeanu		# Theorists
+
+recruit_character = ic_ROM_constantin_sanatescu
+recruit_character =	ic_ROM_ioan_antonescu			# Army Chiefs
+
+recruit_character = ic_ROM_horia_macellariu			# Navy Chiefs
+recruit_character = ic_ROM_nicolae_sova
+
+recruit_character = ic_ROM_gheorghe_avramescu		# High Command
+recruit_character = ic_ROM_gheorghe_mihail
+recruit_character = ic_ROM_petre_dumitrescu
+
+recruit_character = ic_ROM_ioan_mihail_racovita		# Generals
+
+# questionable
+recruit_character = ROM_octavian_goga
+recruit_character = ROM_corneliu_codreanu
+recruit_character = ROM_king_michael
+
+recruit_character = ic_ROM_karl_donitz
+
+
+add_ideas = {
+	partial_economic_mobilisation
+	ROM_king_carol_ii_hedonist
+	ic_Ground_forces_Romania
+	ic_ROM_collapse_of_AusHun
+}
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	interwar_antitank = 1
+
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	improved_airplane_launcher = 1
+	basic_dp_light_battery = 1
+}
+
+#Kick off kings crazy life
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	ROM = {
+		#Pick from list of the sane events first
+		random_list = {
+			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
+		}
+	}
+}

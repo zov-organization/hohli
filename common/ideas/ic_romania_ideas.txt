@@ -1,0 +1,412 @@
+ideas = {
+
+    country = {
+
+        ic_Glory_to_Romania = {
+			name = ic_Glory_to_Romania
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_Glory_to_Romania
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.1
+                army_attack_factor = 0.025
+				army_defence_factor = 0.025
+			}
+		}
+
+        ic_Glory_to_Romania_2 = {
+			name = ic_Glory_to_Romania
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_Glory_to_Romania2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+                consumer_goods_expected_value = -0.1
+                war_support_factor = 0.1
+                army_attack_factor = 0.025
+				army_defence_factor = 0.025
+			}
+		}
+
+        ic_Headquarters_of_the_eleven_Army = {
+			name = ic_Headquarters_of_the_eleven_Army
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_Headquarters_of_the_eleven_Army
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = 0.2
+				max_planning = 0.08
+			}
+		}
+
+        ic_Headquarters_of_the_eleven_Army2 = {
+			name = ic_Headquarters_of_the_eleven_Army
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_Headquarters_of_the_eleven_Army2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = 0.2
+				max_planning = 0.08
+                army_org_factor = 0.1
+			}
+		}
+
+        ic_Ground_forces_Romania = {
+			name = ic_Ground_forces_Romania
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_Ground_forces_Romania
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = -0.2
+				max_planning = -0.1
+                army_org_factor = -0.15
+                experience_gain_army_factor = -0.15
+                conscription = -0.01
+
+			}
+		}
+
+        ic_Ground_forces_Romania2 = {
+			name = ic_Ground_forces_Romania2
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = -0.1
+				max_planning = -0.05
+                army_org_factor = -0.1
+                experience_gain_army_factor = -0.1
+                conscription = -0.005
+
+			}
+		}
+
+        ic_Ground_forces_Romania3 = {
+			name = ic_Ground_forces_Romania3
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = -0.01
+				max_planning = -0.005
+                army_org_factor = -0.01
+                experience_gain_army_factor = -0.01
+                conscription = 0.0005
+
+			}
+
+		}
+
+        ic_Ground_forces_Romania4 = {
+			name = ic_Ground_forces_Romania
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = -0.2
+				max_planning = -0.1
+                army_org_factor = -0.15
+                experience_gain_army_factor = -0.15
+                conscription = -0.01
+
+			}
+		}
+
+        ic_ROM_The_true_descendants_of_the_Romans = {
+			name = ic_ROM_The_true_descendants_of_the_Romans
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_The_true_descendants_of_the_Romans
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                planning_speed = 0.1
+				max_planning = 0.05
+                army_org_factor = 0.05
+                experience_gain_army_factor = 0.1
+                conscription = 0.015
+
+			}
+		}
+
+		ic_ROM_The_Navy_of_Greater_Romania = {
+			name = ic_ROM_The_Navy_of_Greater_Romania
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_The_Navy_of_Greater_Romania
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                refit_ic_cost = -0.10
+				refit_speed = 0.10
+				repair_speed_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				navy_org_factor = 0.05
+				experience_gain_navy_factor = 0.1
+				experience_gain_navy_unit_factor = 0.1
+				production_speed_dockyard_factor = 0.1	
+			}
+		}
+
+		 ic_escort_effort_focus_Rom = {
+			name = ic_escort_effort_focus_Rom
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+    
+			}
+
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		ic_ROM_school_f_bombing_from_the_sea = {
+			name = ic_ROM_school_f_bombing_from_the_sea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_school_f_bombing_from_the_sea
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				refit_ic_cost = -0.10
+				refit_speed = 0.10
+				repair_speed_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				navy_org_factor = 0.05
+				experience_gain_navy_factor = 0.1
+				experience_gain_navy_unit_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				naval_doctrine_cost_factor = -0.15
+				shore_bombardment_bonus = 0.30
+			}
+		}
+
+		ic_ROM_collapse_of_AusHun = {
+			name = ic_ROM_collapse_of_AusHun
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				consumer_goods_expected_value = 0.1
+			}
+		}
+
+		ic_ROM_collapse_of_AusHun2 = {
+			name = ic_ROM_collapse_of_AusHun2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				consumer_goods_expected_value = 0.05
+			}
+		}
+
+		ic_ROM_better_than_AusHun = {
+			name = ic_ROM_better_than_AusHun
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_better_than_AusHun
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+
+		ic_ROM_collapse_of_AusHun3 = {
+			name = ic_ROM_collapse_of_AusHun3
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_collapse_of_AusHun3
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.025
+				consumer_goods_expected_value = 0.05
+				war_support_factor = 0.15
+			}
+		}
+
+		ic_ROM_AXIS = {
+			name = ic_ROM_AXIS
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_AXIS
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
+
+		ic_ROM_Agrarian_reform = {
+			name = ic_ROM_Agrarian_reform
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_Agrarian_reform
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		ic_ROM_Agrarian_reform2 = {
+			name = ic_ROM_Agrarian_reform2
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_Agrarian_reform2
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				weekly_manpower = 1000
+			}
+		}
+
+		ic_ROM_Navy_romania = {
+			name = ic_ROM_Navy_romania
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ROM_Navy_romania
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.1
+				screening_efficiency = 0.05
+				naval_coordination = 0.05
+				naval_detection = 0.1
+				spotting_chance = 0.1
+				naval_critical_score_chance_factor = 0.1
+			}
+		}
+
+		ic_ROM_ss_idea = {
+			name = ic_ROM_ss_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ss_idea
+
+			picture = GFX_idea_ic_ss_idea
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.01
+				weekly_manpower = 100
+				army_morale_factor = 0.01
+			}
+		}
+    }
+}

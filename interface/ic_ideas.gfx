@@ -249,4 +249,93 @@ spriteTypes = {
 		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
 		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
 	}
+
+
+
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_collapse_of_AusHun"
+		texturefile = "gfx/interface/ideas/idea_HUN_apostolic_kingdom_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_Ground_forces_Romania"
+		texturefile = "gfx/interface/ideas/idea_tur_disorganised_armed_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_The_Navy_of_Greater_Romania"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_school_f_bombing_from_the_sea"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_collapse_of_AusHun2"
+		texturefile = "gfx/interface/ideas/idea_HUN_apostolic_kingdom_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_Headquarters_of_the_eleven_Army"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_Headquarters_of_the_eleven_Army2"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_collapse_of_AusHun3"
+		texturefile = "gfx/interface/ideas/idea_hol_caved_to_the_germans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_better_than_AusHun"
+		texturefile = "gfx/interface/ideas/idea_rom_preserve_greater_romania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_The_true_descendants_of_the_Romans"
+		texturefile = "gfx/interface/ideas/idea_ITA_new_roman_empire_ns.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_Agrarian_reform"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_Agrarian_reform2"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_Glory_to_Romania"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_workers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_Glory_to_Romania2"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_workers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_Navy_romania"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_AXIS"
+		texturefile = "gfx/interface/ideas/idea_GER_german_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_ROM_AXIS"
+		texturefile = "gfx/interface/ideas/ROM/Waffen_SS.dds"
+	}
+
 }
