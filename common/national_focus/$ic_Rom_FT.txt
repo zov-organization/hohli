@@ -1,17 +1,1525 @@
 focus_tree = {
-	id = romanian_focus	
-	
-	country = {
+		id = romanian_focus
+		
+		country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
 			tag = ROM
+			#always = no
+		}
+	}
+	
+	default = no
+
+
+	focus = {
+		id = ic_ROM_Election_of_the_King
+
+		icon = GFX_focus_rom_royal_dictatorship
+
+		x = 22
+		y = 0
+
+        cost = 10
+
+        completion_reward = {
+            add_political_power = 200
+            add_stability = 0.05
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Supervision_of_the_Kings_expenses
+
+		x = -16
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+
+		cost = 5
+
+		icon = GFX_focus_rom_abdicate
+
+        completion_reward = {
+            add_stability = -0.025
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Interference_with_the_Kings_expenses
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Supervision_of_the_Kings_expenses}
+		relative_position_id = ic_ROM_Supervision_of_the_Kings_expenses
+
+		cost = 5
+
+		icon = GFX_focus_rom_handle_king
+
+        completion_reward = {
+            add_stability = -0.05
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Mihai_the_first_looks_better
+
+		icon = GFX_focus_rom_coup
+
+		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
+
+		x = 0
+		y = 1
+
+		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ROM_king_carol_ii_hedonist
+				}
+				remove_ideas = ROM_king_carol_ii_hedonist
+			}
+
 		}
 	}
 
-	default = no
+	focus = {
+		id = ic_ROM_Romanian_Land_Forces
 
-	continuous_focus_position = { x = 50 y = 50 }
+		x = -8
+		y = 1
 
+		prerequisite = { focus = ic_ROM_Election_of_the_King }
+		relative_position_id = ic_ROM_Election_of_the_King
+
+		cost = 10
+
+		icon = GFX_ROM_army
+
+        completion_reward = {
+           	army_experience = 100
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_experience_of_the_FWW
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+
+		cost = 5
+
+		icon = GFX_focus_generic_total_war
+
+		available = {
+		    date > 1937.1.1
+		}
+
+        completion_reward = {
+           	army_experience = 50
+
+			swap_ideas = {
+				remove_idea = ic_Ground_forces_Romania
+				add_idea = ic_Ground_forces_Romania2
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_equipment
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Romanian_Land_Forces }
+		relative_position_id = ic_ROM_Romanian_Land_Forces
+
+		cost = 10
+
+		icon = GFX_ROM_rifle
+
+        completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 0.5
+				uses = 6
+				category = land_doctrine
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_artillery
+
+		x = 2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+
+		cost = 5
+
+		icon = GFX_goal_generic_army_artillery2
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = GER_army_expansion_two
+				bonus = 0.5
+				uses = 5
+				category = artillery
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_automatic_machine
+
+		x = 4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+
+		cost = 5
+
+		icon = GFX_ROM_weapons
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = ROM_inf_one
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Navy_of_Greater_Romania
+
+		x = 4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+
+		cost = 5
+
+		icon = GFX_focus_GER_navy
+
+        completion_reward = {
+			navy_experience = 200
+           	add_ideas = ic_ROM_The_Navy_of_Greater_Romania	
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+
+		x = 9
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Election_of_the_King}
+		relative_position_id = ic_ROM_Election_of_the_King
+
+		cost = 10
+
+		icon = GFX_focus_AUS_the_danubian_federation
+
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_collapse_of_AusHun
+				add_idea = ic_ROM_collapse_of_AusHun2
+			}
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Revenge_for_Bessarabia
+
+		x = 20
+		y = 7
+
+		cost = 5
+
+		icon = GFX_revenge_bessarabia_war
+
+		available = {
+		    date > 1941.3.1
+		}
+
+        completion_reward = {
+           add_ideas = ic_Glory_to_Romania
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_inancing
+
+		x = -2
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+
+		icon = GFX_focus_GER_subjugate_romanian_economy
+
+        completion_reward = {
+           swap_ideas = {
+				remove_idea = ic_Glory_to_Romania
+				add_idea = ic_Glory_to_Romania_2
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_officer_corps
+
+		x = 0
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+		
+		icon = GFX_focus_GER_appease_the_wehrmacht
+
+        completion_reward = {
+			add_ideas = ic_Headquarters_of_the_eleven_Army
+        }
+	}
+
+	focus = {
+		id = ic_ROM_the_transition_to_military_rails
+
+		x = 2
+		y = 1
+
+		cost = 1
+
+		icon = GFX_focus_generic_military_industry
+
+		prerequisite = { focus = ic_ROM_Revenge_for_Bessarabia }
+		relative_position_id = ic_ROM_Revenge_for_Bessarabia
+
+        completion_reward = {
+           custom_effect_tooltip = ic_ROM_the_transition_to_military_rails_tt
+
+		   79 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_More_more_oil
+
+		x = -2
+		y = 1
+
+		cost = 1
+
+		prerequisite = { focus = ic_ROM_German_inancing }
+		relative_position_id = ic_ROM_German_inancing
+
+		icon = GFX_goal_Basic_Oil
+
+        completion_reward = {
+			add_resource = {
+					type = oil
+					amount = 25
+					state = 46
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Black_Sea_-_Romania
+
+		x = 2
+		y = 1
+
+		cost = 1
+
+		prerequisite = { focus = ic_ROM_the_transition_to_military_rails }
+		relative_position_id = ic_ROM_the_transition_to_military_rails
+
+		icon = GFX_focus_generic_black_sea_focus
+
+        completion_reward = {
+			add_ideas = ic_ROM_Navy_romania
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_support_compaines
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_equipment }
+		relative_position_id = ic_ROM_Modern_equipment
+
+		cost = 5
+
+		icon = GFX_IEA_gun
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = ic_ROM_Modern_support_compaines
+				bonus = 0.5
+				uses = 5
+				category = support_tech
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_first_aid_kits_and_stews
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_support_compaines}
+		relative_position_id = ic_ROM_Modern_support_compaines
+
+		cost = 5
+
+		icon = GFX_focus_generic_field_hostpital
+
+        completion_reward = {
+		   mio:ROM_cugir_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_first_aid_kits_and_stews
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_MP38_and_MG34
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_automatic_machine}
+		relative_position_id = ic_ROM_Modern_automatic_machine
+
+		cost = 5
+
+		icon = GFX_focus_GER_gebirgsjager
+
+        completion_reward = {
+			mio:ROM_cugir_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_mp34_mp40
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_leFH18
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_artillery }
+		relative_position_id = ic_ROM_Modern_artillery
+
+		cost = 5
+
+		icon = GFX_focus_SMB_mountain_guns
+
+        completion_reward = {
+			mio:ROM_resita_works_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_German_leFH18
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Hungarian_Romanian_War
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_experience_of_the_FWW }
+		relative_position_id = ic_ROM_The_experience_of_the_FWW
+
+		cost = 5
+
+		icon = GFX_focus_generic_attack_hungary
+
+		available = {
+		    date > 1938.1.1
+		}
+
+        completion_reward = {
+           army_experience = 50
+			swap_ideas = {
+				remove_idea = ic_Ground_forces_Romania2
+				add_idea = ic_Ground_forces_Romania3
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_true_descendants_of_the_Romans
+
+		x = -1
+
+		y = 1
+		prerequisite = { focus = ic_ROM_The_Hungarian_Romanian_War }
+		relative_position_id = ic_ROM_The_Hungarian_Romanian_War
+
+		cost = 5
+
+		icon = GFX_spqr
+
+		available = {
+		    date > 1939.1.1
+		}
+
+        completion_reward = {
+           remove_ideas = ic_Ground_forces_Romania3
+		   add_ideas = ic_ROM_The_true_descendants_of_the_Romans
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Iron_Guard
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Mihai_the_first_looks_better }
+		relative_position_id = ic_ROM_Mihai_the_first_looks_better
+
+		cost = 5
+
+		icon = GFX_goal_flag_iron_guard_romania
+
+        completion_reward = {
+
+        	add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Corneliu_intervenes
+
+		x = 2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Iron_Guard focus = ic_ROM_The_true_descendants_of_the_Romans } 
+		relative_position_id = ic_ROM_The_Iron_Guard
+
+		cost = 5
+
+		icon = GFX_goal_continuous_suppression
+
+        completion_reward = {
+
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = ic_ROM_Hitlers_visit_to_Ploiesti
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Corneliu_intervenes }
+		relative_position_id = ic_ROM_Corneliu_intervenes
+
+		cost = 5
+
+		icon = GFX_Hitler_in_Ploesti
+
+        completion_reward = {
+           add_political_power = 100
+		   add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Full_connection_to_the_AXIS
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Hitlers_visit_to_Ploiesti }
+		relative_position_id = ic_ROM_Hitlers_visit_to_Ploiesti
+
+		cost = 5
+
+		icon = GFX_goal_baltic_cross
+
+        completion_reward = {
+           add_ideas = ic_ROM_AXIS		
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_Wehrmacht_headquarters_in_Galati
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_German_officer_corps }
+		relative_position_id = ic_ROM_German_officer_corps
+
+		cost = 1
+
+		icon = GFX_focus_ger_oppose_hitler
+
+        completion_reward = {
+           swap_ideas = {
+				remove_idea = ic_Headquarters_of_the_eleven_Army
+				add_idea = ic_Headquarters_of_the_eleven_Army2
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_ammunition
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_German_officer_corps }
+		relative_position_id = ic_ROM_German_officer_corps
+
+		cost = 1
+
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+
+        completion_reward = {
+           	ROM = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GER } }
+			ROM = { add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 1000 producer = GER } }
+			ROM = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = GER } }
+        }
+	}
+
+	focus = {
+		id = ic_ROM_WAR
+
+		available = {
+		    date > 1941.6.22
+		}
+
+		x = 4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_German_ammunition }
+		prerequisite = { focus = ic_ROM_More_more_oil }
+		prerequisite = { focus = ic_ROM_The_Wehrmacht_headquarters_in_Galati }
+		prerequisite = { focus = ic_ROM_The_Black_Sea_-_Romania }
+		relative_position_id = ic_ROM_More_more_oil
+
+		cost = 0
+
+		icon = GFX_AST_Prepare_for_defense
+
+        completion_reward = {
+			add_war_support = 1
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_siege_of_Odessa
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Recruitment_of_soldiers_to_the_SS
+
+		x = -2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+
+		cost = 5
+
+		icon = GFX_GER_ss_regiments
+
+        completion_reward = {
+           add_ideas = ic_ROM_ss_idea
+        }
+	}
+
+	focus = {
+		id = ic_ROM_The_siege_of_Sevastopol
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_siege_of_Odessa }
+		relative_position_id = ic_ROM_The_siege_of_Odessa
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Kerch
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_siege_of_Odessa }
+		relative_position_id = ic_ROM_The_siege_of_Odessa
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Battle_of_Black_Sea
+
+		x = 2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_WAR }
+		relative_position_id = ic_ROM_WAR
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_support_in_the_Kerch
+
+		x = 3
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Battle_of_Black_Sea }
+		relative_position_id = ic_ROM_Battle_of_Black_Sea
+		mutually_exclusive = { focus = ic_ROM_invasion_in_the_Kavkazzz }
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_invasion_in_the_Kavkazzz
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Battle_of_Black_Sea }
+		relative_position_id = ic_ROM_Battle_of_Black_Sea
+		mutually_exclusive = { focus = ic_ROM_support_in_the_Kerch }
+
+		cost = 5
+
+        completion_reward = {
+           
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Dockyard_in_Constanta
+
+		x = -4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
+		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
+
+		cost = 5
+
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+        completion_reward = {
+           navy_experience = 100
+			46 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			77 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_visit_Denitz_in_Romania
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Dockyard_in_Constanta }
+		relative_position_id = ic_ROM_Dockyard_in_Constanta
+
+		cost = 5
+
+		icon = GFX_visit_doenitz
+
+        completion_reward = {
+           custom_effect_tooltip = ic_ROM_visit_Denitz_in_Romania_tt
+        }
+	}
+
+	focus = {
+		id = ic_ROM_plan_Bismark
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_visit_Denitz_in_Romania }
+		relative_position_id = ic_ROM_visit_Denitz_in_Romania
+
+		cost = 5
+
+		icon = GFX_focus_GER_trade_interdiction_historical
+
+        completion_reward = {
+			set_technology = {
+				ship_hull_super_heavy = 1
+				improved_heavy_armor_scheme = 1
+			}
+
+			create_equipment_variant = {
+				name = "Bismarck"
+				type = ship_hull_super_heavy_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_super_heavy_battery_1
+					front_2_custom_slot = ship_super_heavy_battery_1
+					mid_1_custom_slot = dp_ship_secondaries_2
+					mid_2_custom_slot = dp_ship_secondaries_2
+					mid_3_custom_slot = dp_ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_super_heavy_battery_1
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ROM" 
+					version_name = "Bismarck"
+				}
+				name = "Bismarck" 
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ROM" 
+					version_name = "Bismarck"
+				}
+				name = "Bismarck" 
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_destroyers
+
+		x = -2
+		y = 1 
+
+		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
+		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
+		mutually_exclusive = { focus = ic_ROM_Battleship }
+
+		cost = 5
+
+		icon = GFX_focus_generic_destroyer
+
+        completion_reward = {
+			navy_experience = 100
+           add_ideas = ic_escort_effort_focus_Rom
+        }
+	}
+
+	focus = {
+		id = ic_ROM_screen
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_destroyers }
+		relative_position_id = ic_ROM_destroyers
+
+		cost = 5
+
+		icon = GFX_screen
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = USA_atlanta
+				bonus = 2.0
+				uses = 2
+				category = cl_tech	
+				category = ca_tech	
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_germans_Uboat
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_screen }
+		relative_position_id = ic_ROM_screen
+
+		cost = 5
+
+		icon = GFX_GER_sub
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = USA_fleet_submarines
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Battleship
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
+		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania 
+		mutually_exclusive = { focus = ic_ROM_destroyers }
+
+		cost = 5
+
+		icon = GFX_goal_generic_navy_battleship
+
+        completion_reward = {
+			navy_experience = 100
+           	add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+        }
+	}
+	focus = {
+		id = ic_ROM_school_f_bombing_from_the_sea
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Battleship }
+		relative_position_id = ic_ROM_Battleship
+		
+		cost = 5
+
+		icon = GFX_focus_NOR_drobak_coastal_fort
+
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = ic_ROM_The_Navy_of_Greater_Romania	
+           	add_idea = ic_ROM_school_f_bombing_from_the_sea
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_radar_and_radio
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_school_f_bombing_from_the_sea }
+		relative_position_id = ic_ROM_school_f_bombing_from_the_sea
+		
+		cost = 5
+
+		icon = GFX_goal_generic_radar
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = USA_naval_radar
+				uses = 4
+				bonus = 1.0
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				name = GER_cheap_civilian_radios
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_declare_war_in_YUG
+
+		x = 2
+		y = 1
+
+		available = {
+			has_completed_focus = ic_ROM_open_focus_romania
+			date > 1941.4.1
+		}
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		
+		cost = 1
+
+		icon = GFX_focus_generic_attack_yugoslavia
+
+        completion_reward = {
+           declare_war_on = {
+					target = YUG
+					type = annex_everything
+				}
+        }
+	}
+	
+	focus = {
+		id = ic_ROM_declare_war_in_GRE
+
+		x = 4
+		y = 1
+
+		available = {
+			has_completed_focus = ic_ROM_open_focus_romania
+		    date > 1941.4.1
+		}
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		
+		cost = 1
+
+		icon = GFX_focus_generic_attack_greece
+
+        completion_reward = {
+           declare_war_on = {
+					target = GRE
+					type = annex_everything
+				}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_old_friends
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
+		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
+		
+		cost = 10
+
+		icon = GFX_goal_generic_improve_relations
+
+        completion_reward = {
+           	add_political_power = 100
+        	add_stability = 0.1
+        }
+	}
+
+	focus = {
+		id = ic_ROM_italian_ammunication
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_old_friends }
+		relative_position_id = ic_ROM_old_friends
+		
+		cost = 5
+
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+
+		available = {
+		    date > 1939.7.10
+		}
+
+        completion_reward = {
+			custom_effect_tooltip = ic_ROM_italian_ammunication_tt
+           	ROM = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 5000 producer = ITA } }
+			ROM = { add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 300 producer = ITA } }
+			ROM = { add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 300 producer = ITA } }
+        }
+	}
+	focus = {
+		id = ic_ROM_Support_for_German_policy
+
+		x = -2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		mutually_exclusive = { focus = ic_ROM_Not_Support_for_German_policy }
+
+		cost = 5
+
+		icon = GFX_focus_GER_propaganda_master
+
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_collapse_of_AusHun2
+				add_idea = ic_ROM_collapse_of_AusHun3
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Not_Support_for_German_policy
+
+		x = 0
+		y = 1
+
+		available = {
+		    date > 1939.9.1
+		}
+
+		prerequisite = { focus = ic_ROM_The_Balkans_as_a_sphere_of_influence }
+		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
+		mutually_exclusive = { focus = ic_ROM_Support_for_German_policy }
+		
+		cost = 5
+
+		icon = GFX_focus_GER_subdue_the_wehrmacht_historical
+
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_collapse_of_AusHun2
+				add_idea = ic_ROM_better_than_AusHun
+			}
+        }
+	}
+	
+	focus = {
+		id = ic_ROM_open_focus_romania
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Support_for_German_policy }
+		relative_position_id = ic_ROM_Support_for_German_policy
+		
+		cost = 3
+
+		icon = GFX_goal_generic_forceful_treaty
+
+        completion_reward = {
+           custom_effect_tooltip = ic_ROM_open_focus_romania_tt
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Industrialization
+
+		x = 20
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Election_of_the_King }
+		relative_position_id = ic_ROM_Election_of_the_King
+		
+		cost = 10
+
+		icon = GFX_goal_generic_production
+
+        completion_reward = {
+           	add_tech_bonus = {
+				name = ic_ROM_Industrialization
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_light_industry
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Industrialization }
+		relative_position_id = ic_ROM_Industrialization
+		
+		cost = 7
+
+		icon = GFX_goal_generic_construct_civ_factory
+
+        completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_light_industry2
+
+		x = -4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+		icon = GFX_goal_generic_construct_civ_factory
+
+        completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_heavy_industry
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Industrialization }
+		relative_position_id = ic_ROM_Industrialization
+		
+		cost = 7
+
+		icon = GFX_goal_generic_construct_mil_factory
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_heavy_industry2
+
+		x = 4
+		y = 1
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 5
+
+		icon = GFX_goal_generic_construct_mil_factory
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Agrarian_reform
+
+		x = -2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 10
+
+		icon = GFX_goal_agrarian_reform
+
+        completion_reward = {
+			add_ideas = ic_ROM_Agrarian_reform 
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Agrarian_reforms
+
+		x = -2
+		y = 2
+
+		prerequisite = { focus = ic_ROM_Agrarian_reform }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+		icon = GFX_focus_generic_population_growth
+
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ROM_Agrarian_reform
+				add_idea = ic_ROM_Agrarian_reform2
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Malaxa
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 5
+
+        completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ROM_malaxa_IC
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Steel_shortage
+
+		x = 0
+		y = 1
+
+		available = {
+			date > 1941.6.1
+		}
+
+		prerequisite = { focus = ic_ROM_light_industry }
+		relative_position_id = ic_ROM_light_industry
+		
+		cost = 10
+
+		icon = GFX_focus_generic_construction_resources_steel
+
+        completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 25
+				state = 84
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Infra_for_steel_and_alum
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Steel_shortage }
+		prerequisite = { focus = ic_ROM_Alum_for_romania }
+		relative_position_id = ic_ROM_Steel_shortage
+		
+		cost = 5
+
+		icon = GFX_goal_generic_construct_infrastructure
+
+        completion_reward = {
+			84 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+				}
+			}	
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Alum_for_romania
+
+		x = 0
+		y = 1
+
+		available = {
+			date > 1941.6.1
+		}
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 10
+
+		icon = GFX_focus_generic_construction_resources_aluminium
+
+        completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 84
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Excavation
+
+		x = 2
+		y = 1
+
+		prerequisite = { focus = ic_ROM_heavy_industry }
+		relative_position_id = ic_ROM_heavy_industry
+		
+		cost = 10
+
+		icon = GFX_SOV_rubber
+
+		completion_reward = {
+		add_tech_bonus = {
+			name = ROM_resourses
+			bonus = 1
+			uses = 3
+			category = excavation_tech
+			}
+		}
+	}
 }
