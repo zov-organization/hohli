@@ -377,7 +377,7 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.15
 				stability_weekly = 0.001
 			}
 		}
@@ -394,7 +394,7 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.15
 				stability_weekly = 0.001
 				war_support_weekly = 0.0025
 			}

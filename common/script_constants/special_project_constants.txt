@@ -33,7 +33,7 @@ sp_complexity = {
         max = 10
     }
 
-    ic_fighter_armament = {
+    ic_ten_fractions = {
         min = 10
         max = 10
     }
@@ -55,7 +55,8 @@ sp_time = {
         long = 90
         very_long = 180
 
-        ic_fighter_armament = 100
+        ic_five_hundred_days = 50
+        ic_thousand_days = 100
     }
 }
 

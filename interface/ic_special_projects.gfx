@@ -16,5 +16,9 @@ spriteTypes = {
 		name = "GFX_ic_sp_sov_ptab"
 		texturefile = "gfx/interface/special_project/project_icons/ic_sp_sov_ptab.dds"
 	}
-
+	
+	spriteType = { 
+		name = "GFX_ic_sp_motorized_rocket_arty"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_motorized_rocket_arty.dds"
+	}
 }
