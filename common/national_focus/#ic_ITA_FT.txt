@@ -31,7 +31,7 @@
 
 	focus = {
 		id = ITA_huge_agrarian_sector
-		#icon = 
+		icon = GFX_ITA_huge_agrarian_sector
 
 		prerequisite = { focus = ITA_initial_focus }
 		relative_position_id = ITA_initial_focus
@@ -48,7 +48,7 @@
 	}
 	focus = {
 		id = ITA_slow_industrialization
-		#icon = 
+		icon = GFX_ITA_slow_industrialization
 
 		prerequisite = { focus = ITA_huge_agrarian_sector }
 		relative_position_id = ITA_huge_agrarian_sector
@@ -107,7 +107,7 @@
 
 	focus = {
 		id = ITA_build_up_colonies
-		#icon = 
+		icon = GFX_focus_ITA_ministry_of_italian_africa
 
 		prerequisite = { focus = ITA_slow_industrialization }
 		relative_position_id = ITA_slow_industrialization
@@ -128,7 +128,7 @@
 	}
 	focus = {
 		id = ITA_build_up_libya
-		#icon = 
+		icon = GFX_ITA_build_up_libya
 
 		prerequisite = { focus = ITA_build_up_colonies }
 		relative_position_id = ITA_build_up_colonies
@@ -181,7 +181,7 @@
 	}
 	focus = {
 		id = ITA_build_up_ethiopia
-		#icon = 
+		icon = GFX_ITA_build_up_ethiopia
 
 		prerequisite = { focus = ITA_build_up_colonies }
 		relative_position_id = ITA_build_up_colonies
@@ -220,7 +220,7 @@
 	
 	focus = {
 		id = ITA_search_for_more_oil
-		#icon = 
+		icon = GFX_goal_generic_oil_refinery
 
 		prerequisite = { focus = ITA_slow_industrialization }
 		relative_position_id = ITA_slow_industrialization
@@ -272,7 +272,7 @@
 	}
 	focus = {
 		id = ITA_edison_electricity
-		#icon = 
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 
 		prerequisite = { focus = ITA_slow_industrialization }
 		relative_position_id = ITA_slow_industrialization
@@ -365,7 +365,7 @@
 	}
 	focus = {
 		id = ITA_yacheika
-		#icon = 
+		icon = GFX_SOV_scientific_reborn
 
 		prerequisite = { focus = ITA_alfa_romeo_deal }
 		relative_position_id = ITA_alfa_romeo_deal
@@ -379,7 +379,7 @@
 	}
 	focus = {
 		id = ITA_another_tax_reform
-		#icon = 
+		icon = GFX_focus_ITA_devaluate_the_lire
 
 		prerequisite = { focus = ITA_alfa_romeo_deal }
 		relative_position_id = ITA_alfa_romeo_deal
@@ -388,6 +388,7 @@
 		y = 1
 		cost = 10
 		completion_reward = {
+			add_stability = -0.05
 			add_timed_idea = {
 				idea = ic_ITA_tax_reform
 				days = 365
@@ -515,11 +516,11 @@
 		cost = 10
 		completion_reward = {
 			add_stability = -0.1
+			remove_ideas = vittorio_emanuele
 			annex_country = {
 				target = ALB
 				transfer_troops = no
 			}
-			remove_ideas = vittorio_emanuele
 		}
 	}
 
@@ -527,7 +528,7 @@
 	# Military
 	focus = {
 		id = ITA_reorganize_retards
-		#icon = 
+		icon = GFX_ITA_reorganize_retards
 
 		prerequisite = { focus = ITA_initial_focus }
 		relative_position_id = ITA_initial_focus
@@ -549,7 +550,7 @@
 
 	focus = {
 		id = ITA_army
-		#icon = 
+		icon = GFX_ITA_army
 
 		prerequisite = { focus = ITA_reorganize_retards }
 		relative_position_id = ITA_reorganize_retards
@@ -601,7 +602,7 @@
 	}
 	focus = {
 		id = ITA_get_rid_of_ww1_legacy
-		#icon = 
+		icon = GFX_ITA_get_rid_of_ww1_legacy
 
 		prerequisite = { focus = ITA_army }
 		relative_position_id = ITA_army
@@ -616,7 +617,7 @@
 			}
 			add_tech_bonus = {
 				name = ITA_get_rid_of_ww1_legacy
-				bonus = 0
+				bonus = 0.75
 				ahead_reduction = 1
 				uses = 1
 				category = infantry_weapons
@@ -638,7 +639,7 @@
 	
 	focus = {
 		id = ITA_fighting_xp_eth
-		#icon = 
+		icon = GFX_focus_ETH_the_second_italo_ethiopian_war
 
 		prerequisite = { focus = ITA_army }
 		relative_position_id = ITA_army
@@ -652,7 +653,7 @@
 	}
 	focus = {
 		id = ITA_fighting_xp_spr
-		#icon = 
+		icon = GFX_focus_ITA_garibaldi_legion
 
 		prerequisite = { focus = ITA_fighting_xp_eth }
 		relative_position_id = ITA_fighting_xp_eth
@@ -667,7 +668,7 @@
 	
 	focus = {
 		id = ITA_poor_mechanized_army
-		#icon = 
+		icon = GFX_ITA_poor_mechanized_army
 
 		prerequisite = { focus = ITA_fighting_xp_spr }
 		prerequisite = { focus = ITA_get_rid_of_ww1_legacy }
@@ -712,7 +713,7 @@
 	}
 	focus = {
 		id = ITA_scrap_long_going_bombers
-		#icon = 
+		icon = GFX_ITA_scrap_long_going_bombers
 
 		prerequisite = { focus = ITA_air }
 		relative_position_id = ITA_air
@@ -727,7 +728,7 @@
 	
 	focus = {
 		id = ITA_navy
-		#icon = 
+		icon = GFX_focus_ITA_new_horizons
 
 		prerequisite = { focus = ITA_reorganize_retards }
 		relative_position_id = ITA_reorganize_retards
@@ -736,7 +737,34 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			158 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			2 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			117 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -755,7 +783,7 @@
 	}
 	focus = {
 		id = ITA_proper_escorts
-		#icon = 
+		icon = GFX_focus_ITA_modernize_ansaldo_facilities
 
 		prerequisite = { focus = ITA_end_reffiting_conte_di_cavour }
 		relative_position_id = ITA_end_reffiting_conte_di_cavour
@@ -769,7 +797,7 @@
 	}
 	focus = {
 		id = ITA_think_of_littorio
-		#icon = 
+		icon = GFX_focus_SWE_italian_destroyers
 
 		prerequisite = { focus = ITA_end_reffiting_conte_di_cavour }
 		relative_position_id = ITA_end_reffiting_conte_di_cavour
