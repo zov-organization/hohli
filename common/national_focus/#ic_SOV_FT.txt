@@ -1545,6 +1545,14 @@ focus_tree = {
 			
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ic_SOV_aleksandr_novikov
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:SOV_ilyushin_design_bureau_organization = {
+				complete_mio_trait = {
+					trait = SOV_mio_trait_merge_vef_plant
+				}
+			}
+
 		}
 	}
 

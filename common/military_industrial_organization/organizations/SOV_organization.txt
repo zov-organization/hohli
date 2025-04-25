@@ -361,7 +361,7 @@ SOV_ilyushin_design_bureau_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = SOV_merge_aircraft_plants
+				has_completed_focus = SOV_novikov
 			}
 		}
 
