@@ -238,5 +238,62 @@ ic_helpful_tips = {
             }
         }
     }
+    
+    ITA_optimal_building_line = {
+
+        icon = GFX_decision_generic_operation
+
+        available = { }
+
+        fire_only_once = yes
+
+        visible = {
+            ROOT = {
+                tag = ITA
+                date < 1936.02.01
+            }
+        }
+        priority = 100
+
+        cost = 0
+
+        complete_effect = {
+            2 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = no
+				}
+            }
+            162 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = no
+				}
+            }
+            161 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = no
+				}
+            }
+            159 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = no
+				}
+            }
+            157 = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = no
+				}
+            }
+        }
+    }
 
 }

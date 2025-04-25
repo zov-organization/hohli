@@ -2243,11 +2243,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_GER_anshluss"
+		name = "GFX_ic_GER_anshluss"
 		texturefile = "gfx/interface/goals/GER/GER_anschluss.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GER_anshluss_shine"
+		name = "GFX_ic_GER_anshluss_shine"
 		texturefile = "gfx/interface/goals/GER/GER_anschluss.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

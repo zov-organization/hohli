@@ -13,9 +13,9 @@ ic_sp_aa_hmg = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_fighter_armament
+	prototype_time = sp_time.prototype.ic_thousand_days
 
-	complexity = sp_complexity.ic_fighter_armament
+	complexity = sp_complexity.ic_ten_fractions
 
 	breakthrough_cost = {
 		specialization_air = 0
@@ -47,9 +47,9 @@ ic_sp_aa_cannon_1 = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_fighter_armament
+	prototype_time = sp_time.prototype.ic_thousand_days
 
-	complexity = sp_complexity.ic_fighter_armament
+	complexity = sp_complexity.ic_ten_fractions
 
 	breakthrough_cost = {
 		specialization_air = 0
@@ -81,9 +81,9 @@ ic_sp_aa_cannon_3 = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_fighter_armament
+	prototype_time = sp_time.prototype.ic_thousand_days
 
-	complexity = sp_complexity.ic_fighter_armament
+	complexity = sp_complexity.ic_ten_fractions
 
 	breakthrough_cost = {
 		specialization_air = 0
@@ -114,9 +114,9 @@ ic_sp_sov_ptab = {
 
 	available = {}
 	
-	prototype_time = sp_time.prototype.ic_fighter_armament
+	prototype_time = sp_time.prototype.ic_thousand_days
 
-	complexity = sp_complexity.ic_fighter_armament
+	complexity = sp_complexity.ic_ten_fractions
 
 	breakthrough_cost = {
 		specialization_air = 0

@@ -1082,13 +1082,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_katusha
-				ahead_reduction = 2
-				bonus = 1.5
-				uses = 1
-				technology = motorized_rocket_unit
+
+			sp:ic_sp_motorized_rocket_arty = {
+			  add_project_progress_ratio = 0.8
 			}
+
 		}
 	}
 

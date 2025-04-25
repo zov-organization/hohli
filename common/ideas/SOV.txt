@@ -9597,13 +9597,13 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.1
+				industry = 0.15
 			}
 
 			traits = { industrial_concern }
 
 			modifier = {
-				custom_modifier_tooltip = SOV_industrial_concern_upgrade_tt
+				industrial_concern_cost_factor = -1
 			}
 		}
 
@@ -9652,13 +9652,13 @@ ideas = {
 			}
 
 			research_bonus = {
-				electronics = 0.1
+				electronics = 0.15
 			}
 
 			traits = { electronics_concern }
 
 			modifier = {
-				custom_modifier_tooltip = SOV_industrial_concern_upgrade_tt
+				industrial_concern_cost_factor = -1
 			}
 		}
 

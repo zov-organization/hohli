@@ -1822,6 +1822,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
 			}
+
+			gridboxtype = {
+				name = "motorized_rocket_unit_tree"
+				position = { x = 1600 y = 300 }
+				size = { width = 200 height = 400 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
