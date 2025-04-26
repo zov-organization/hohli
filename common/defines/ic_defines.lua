@@ -251,37 +251,54 @@ NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 1.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
 
--- Air/Military -- CAS Defines --
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.16
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.06
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.06
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.001
-
 -- Air
-NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5
-NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1
-NDefines.NAir.ACCIDENT_CHANCE_RELIABILITY_MULT = 5.0
-NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
-NDefines.NAir.SECONDARY_DAMAGE_STRAT = 0.1
-NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {
-	0.0, -- AIR_SUPERIORITY
-	0.0, -- CAS
-	0.0, -- INTERCEPTION
-	0.0, -- STRATEGIC_BOMBER
-	0.0, -- NAVAL_BOMBER
-	0.0, -- DROP_NUKE
-	0.0, -- PARADROP
-	0.0, -- NAVAL_KAMIKAZE
-    0.0, -- PORT_STRIKE
-	0.0, -- ATTACK_LOGISTICS
-	0.0, -- AIR_SUPPLY
-	0.0, -- TRAINING
-	0.0, -- NAVAL_MINES_PLANTING
-	0.0, -- NAVAL_MINES_SWEEPING
-	0.0, -- RECON
-	0.0, -- NAVAL_PATROL
-}
+NDefines.NAir.AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0     --Reduction on XP loss over friendly territory
+NDefines.NAir.AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0                             --Wings in combat gain extra XP
+NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0                    --Bombers bombing, CAS cassing, NBs nbing, kamikazees kamikazeeing, etc.
+NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0                    --recon mission
+NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0                                    --if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average. 
+NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 2.0                           --Max average XP achieved with training.
+NDefines.NAir.AIR_WING_XP_MAX = 0                                             --Per plane XP.
+NDefines.NAir.AIR_WING_XP_LEVELS = { 0 }                         --Experience needed to progress to the next level
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 0.2
+NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0				-- Base chance % for ace pilot die when an airplane is shot down in the Ace wing.
+NDefines.NAir.ACE_DEATH_BY_OTHER_ACE_CHANCE = 0				-- chance to an ace dying by another ace if it was hit by ace in combat
+NDefines.NAir.ACE_DEATH_CHANCE_PLANES_MULT = 0		-- The more airplanes was lost in a single airplanes (more bloody it was) the higher chance of Ace to die.
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0				-- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
+NDefines.NAir.ACE_EARN_CHANCE_PLANES_MULT = 0	
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.28				-- How much supply planes need
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.8 -- original 0.8 Anti Air Gun Damage factor. DOES NOTHING 
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1 -- original 0.1 Anti Air Gun hit chance. DOES NOTHING 
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- original 1.00 Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.8 -- .8 ( og GDU 0.75 ) Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES = 2000
+NDefines.NAir.FUEL_COST_MULT = 0.34
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.4
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 3.0 -- makes redeployement of fighters faster vanilla is 0.02
+NDefines.NAir.CAPACITY_PENALTY = 3.3 -- 33% Airfield overstack Penalty (from 20%)
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 500.0 -- Disables ground crews. They're cancerous. 
+NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.0
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05 -- Vanilla = 1
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1.5
+NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
+NDefines.NAir.AIR_WING_MAX_SIZE = 3200
+NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
+NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.5
+NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 20.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
+NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
+NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6
+NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+
 NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 	1.0, -- AIR_SUPERIORITY
 	1.0, -- CAS
@@ -300,31 +317,55 @@ NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 	1.0, -- RECON
 	1.0, -- NAVAL_PATROL
 }
-NDefines.NAir.AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0     
-NDefines.NAir.AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0                            
-NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0                 
-NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0                  
-NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0       
-NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 2.0                         
-NDefines.NAir.AIR_WING_XP_MAX = 0                                             
-NDefines.NAir.AIR_WING_XP_LEVELS = { 0 }
-NDefines.NAir.MAX_QUICK_WING_SELECTION = 5
-NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 0.2
-NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.4
-NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0				
-NDefines.NAir.ACE_DEATH_BY_OTHER_ACE_CHANCE = 0				
-NDefines.NAir.ACE_DEATH_CHANCE_PLANES_MULT = 0		
-NDefines.NAir.ACE_EARN_CHANCE_BASE = 0				
-NDefines.NAir.ACE_EARN_CHANCE_PLANES_MULT = 0	
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0.28				
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.01 
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.01
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 1.2
-NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
-NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2.0
-NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.0
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+	0.0, -- AIR_SUPERIORITY
+	0.0, -- CAS		
+	0.0, -- INTERCEPTION	
+	0.0, -- STRATEGIC_BOMBER
+	0.0, -- NAVAL_BOMBER	
+	0.0, -- DROP_NUKE		
+	0.0, -- PARADROP		
+	0.0, -- NAVAL_KAMIKAZE	
+    0.0, -- PORT_STRIKE		
+	0.0, -- AIR_SUPPLY		
+	0.0, -- TRAINING
+	0.0, -- NAVAL_MINES_PLANTING
+	0.0, -- NAVAL_MINES_SWEEPING
+}
+
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 4.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
+NDefines.NAir.HOURS_DELAY_AFTER_EACH_COMBAT = 4					-- How many hours needs the wing to be ready for the next combat. Use for tweaking if combats happens too often. (generally used as double because of roundtrip)
+NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.08		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
+NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 6         	-- how often carrier planes do battle inside naval combat
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR	= 0
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_INFRA_DAMAGE_SPILL_FACTOR	= 0
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0 
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DISRUPTION_MIN_DAMAGE_FACTOR	= 0 
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER	= 0
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR	 =  0
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0 
+
+--- AA and CAS defines:
+
+--- TWO MOST IMPORTANT CAS DEFINES
+-- basically, what it says, is that cas will work even with red air and while being disturbed, but will give a little less ground attack at last. 
+NDefines.NAir.DISRUPTION_FACTOR = 1  -- vanilla - 4
+-- here we state that escorted cas will work kinda better and will suffer less losses
+NDefines.NAir.ESCORT_FACTOR = 5 -- vanilla - 2
+
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.22
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.09   -- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.09    -- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5 -- how many CAS/TAC can enter a combat depending on enemy width there
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+
+--- Tacts, strats - bombing defines
+
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.888
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.888

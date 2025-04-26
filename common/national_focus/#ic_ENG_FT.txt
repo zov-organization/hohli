@@ -649,8 +649,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_bebra
-		icon = GFX_ENG_general_command_staff
+		id = ENG_reinforce_expeditionary_force
+		icon = GFX_ENG_reinforce_expeditionary_force
 
 		prerequisite = { focus = ENG_french_military_cooperation }
 		prerequisite = { focus = ENG_general_command_staff }
@@ -761,7 +761,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_announce_competition_for_modern_figher
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				technology = improved_small_airframe
 			}
@@ -812,5 +812,229 @@ focus_tree = {
 			add_ideas = ic_ENG_fighter_cheaper
 		}
 	}
+	
+
+
+
+	focus = {
+		id = ENG_no_peace_for_our_time
+		icon = GFX_ENG_no_peace_for_our_time
+
+		prerequisite = { focus = ENG_shadow_scheme }
+		prerequisite = { focus = ENG_navis_at_queens_command }
+		prerequisite = { focus = ENG_our_second_key_to_survive }
+		prerequisite = { focus = ENG_reinforce_expeditionary_force }
+		relative_position_id = ENG_navis_at_queens_command
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_ENG_no_peace_for_our_time_idea
+		}
+	}
+
+	focus = {
+		id = ENG_enhanced_naval_patrols
+		icon = GFX_ENG_enhanced_naval_patrols
+
+		prerequisite = { focus = ENG_no_peace_for_our_time }
+		relative_position_id = ENG_no_peace_for_our_time
+
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = small_plane_naval_bomber_airframe_1
+				amount = 200
+				producer = ENG
+			}
+		}
+	}
+	focus = {
+		id = ENG_counter_german_subs
+		icon = GFX_ENG_counter_german_subs
+
+		prerequisite = { focus = ENG_enhanced_naval_patrols }
+		relative_position_id = ENG_enhanced_naval_patrols
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			custom_effect_tooltip = "allowed if x2 dds of german subs"
+		}
+	}
+	
+	focus = {
+		id = ENG_prepare_for_blockade
+		icon = GFX_ENG_prepare_for_blockade
+
+		prerequisite = { focus = ENG_no_peace_for_our_time }
+		relative_position_id = ENG_no_peace_for_our_time
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			123 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			125 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_home_defence_measures
+		icon = GFX_ENG_home_defence_measures
+
+		prerequisite = { focus = ENG_prepare_for_blockade }
+		relative_position_id = ENG_prepare_for_blockade
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			123 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			125 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_isle_protected
+		icon = GFX_ENG_isle_protected
+
+		prerequisite = { focus = ENG_home_defence_measures }
+		relative_position_id = ENG_home_defence_measures
+
+		available = {
+
+			123 = {
+				days_since_last_strategic_bombing > 1
+			}
+			338 = {
+				days_since_last_strategic_bombing > 1
+			}
+			127 = {
+				days_since_last_strategic_bombing > 1
+			}
+			126 = {
+				days_since_last_strategic_bombing > 1
+			}
+			125 = {
+				days_since_last_strategic_bombing > 1
+			}
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+
+		x = 0
+		y = 1
+		cost = 15
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ENG_fighter_cheaper
+				add_idea = ic_ENG_put_an_end_to_german_bombings
+			}
+		}
+	}
+	focus = {
+		id = ENG_industrial_fix
+		icon = GFX_ENG_industrial_fix
+
+		prerequisite = { focus = ENG_isle_protected }
+		relative_position_id = ENG_isle_protected
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = ic_ENG_fix_after_bombings
+		}
+	}
+	focus = {
+		id = ENG_our_turn_now
+		icon = GFX_ENG_industrial_fix
+
+		prerequisite = { focus = ENG_isle_protected }
+		relative_position_id = ENG_isle_protected
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			custom_effect_tooltip = "should add tact/strats research bonuses, better decision to produce then (not 20/mon but 40/mon or smth), some idea prob"
+		}
+	}
+
+
+	focus = {
+		id = ENG_motion_of_no_confidence
+		icon = GFX_ENG_motion_of_no_confidence
+
+		#prerequisite = { focus = ENG_shadow_scheme }
+		relative_position_id = ENG_shadow_scheme
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = "should give churchill"
+		}
+	}
+
+
+
 
 }
