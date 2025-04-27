@@ -1154,6 +1154,9 @@
 		cost = 5
 		completion_reward = {
 			add_ideas = ic_ss_idea
+            ENG = {
+                add_to_faction = DEN
+            }
 			declare_war_on = {
 				target = DEN
 				type = annex_everything
@@ -1602,6 +1605,13 @@
 		cost = 5
 		completion_reward = {
 			unlock_decision_tooltip = GER_alsace_lorraine_integration
+			
+            ENG = {
+                add_to_faction = HOL
+                add_to_faction = BEL
+                add_to_faction = LUX
+            }
+
 			declare_war_on = {
 				target = HOL
 				type = annex_everything
@@ -1639,34 +1649,14 @@
 	}
 
 	focus = {
-		id = GER_air_innovations
-		icon = GFX_GER_change_direction
+		id = GER_battle_for_england
+		icon = GFX_GER_battle_for_england
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_tiger
 
 		x = -2
 		y = 0
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_air_innovations
-				bonus = 1.25
-				uses = 1
-				category = light_air
-			}
-		}
-	}
-
-	focus = {
-		id = GER_battle_for_england
-		icon = GFX_GER_battle_for_england
-
-		prerequisite = { focus = GER_air_innovations }
-		relative_position_id = GER_air_innovations
-
-		x = -1
-		y = 1
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = GER_start_tact_bomber_production
@@ -1711,7 +1701,26 @@
 					instant_build = yes
 				}
 			}
+		}
+	}
 
+	focus = {
+		id = GER_air_innovations
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_battle_for_england }
+		relative_position_id = GER_battle_for_england
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_air_innovations
+				bonus = 1.25
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 
@@ -1719,8 +1728,8 @@
 		id = GER_high_individual_scores
 		icon = GFX_GER_battle_for_england
 
-		prerequisite = { focus = GER_battle_for_england }
-		relative_position_id = GER_battle_for_england
+		prerequisite = { focus = GER_air_innovations }
+		relative_position_id = GER_air_innovations
 
 		x = 0
 		y = 2
@@ -1828,7 +1837,7 @@
 
 		x = 0
 		y = 2
-		cost = 12
+		cost = 10
 		completion_reward = {
 			unlock_decision_category_tooltip = GER_barb_category
 		}
