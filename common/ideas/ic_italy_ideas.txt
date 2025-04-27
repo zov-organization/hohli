@@ -25,7 +25,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_romans_idea
 
 			allowed = {
 				always = no
@@ -43,7 +43,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_regio_esercito
 
 			allowed = {
 				always = no
@@ -66,7 +66,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_regio_esercito_2
 
 			allowed = {
 				always = no
@@ -89,7 +89,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_regio_esercito_3
 
 			allowed = {
 				always = no
@@ -113,7 +113,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_poor_motorized_army_1
 
 			allowed = {
 				always = no
@@ -134,11 +134,11 @@ ideas = {
 			}
 		} 
 		ic_ITA_poor_motorized_army_2 = {
-			name = ic_ITA_poor_motorized_army_2
+			name = ic_ITA_poor_motorized_army_1
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_poor_motorized_army_2
 
 			allowed = {
 				always = no
@@ -164,7 +164,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_gray_wolf
+			picture = GFX_idea_ic_ITA_bomber_programm
 
 			allowed = {
 				always = no
@@ -365,7 +365,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_agrarian_economy1
 
 			allowed = {
 				always = no
@@ -382,7 +382,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_agrarian_economy2
 
 			allowed = {
 				always = no
@@ -399,7 +399,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_building_up_colonies
 
 			allowed = {
 				always = no
@@ -421,7 +421,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_building_up_colonies_bonus
 
 			allowed = {
 				always = no
@@ -440,7 +440,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = vittoria_mutilata
+			picture = GFX_idea_ic_ITA_tax_reform
 
 			allowed = {
 				always = no

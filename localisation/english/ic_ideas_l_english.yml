@@ -73,8 +73,11 @@
  ic_ENG_joint_air_exercises_idea:0 "Joint Air Eexercises"
  ic_ENG_queens_navy_idea:0 "Queens Navy"
  ic_ENG_shadow_scheme_idea:0 "Shadow Scheme"
- ic_ENG_fighter_cheaper:0 "Winged Protectors of the Isle"
-
+ ic_ENG_fighter_cheaper_1:0 "Winged Protectors of the Isle"
+ ic_ENG_atlantic_war:0 "Atlantic Raids"
+ ic_ENG_no_peace_for_our_time_idea:0 "No Peace for Our Time"
+ ic_ENG_fix_after_bombings:0 "Like a Phoenix from Ashes!"
+ ic_ENG_bomber_programm:0 "Building heavy bombers require some investments"
 
 
 
@@ -104,6 +107,18 @@
  
  
  
-
+ vittorio_mutilata:0 "Vittorio Mutilata"
+ ic_ITA_romans_idea:0 "Romans Idea"
+ ic_ITA_regio_esercito:0 "Regio Esercito"
+ ic_ITA_poor_motorized_army_1:0 "Poor Motorized Army"
+ ic_ITA_bomber_programm:0 "Building heavy bombers require some investments"
+ ic_ITA_military_reorg_1:0 "Military Reorganization Stage: 1"
+ ic_ITA_military_reorg_2:0 "Military Reorganization Stage: 2"
+ ic_ITA_military_reorg_3:0 "Military Reorganization Stage: 3"
+ ic_ITA_military_reorg_4:0 "Military Reorganization Stage: 4"
+ ic_ITA_military_reorg_5:0 "Military Reorganization Stage: 5"
+ ic_ITA_military_reorg_6:0 "Military Reorganization Stage: 6"
+ ic_ITA_agrarian_economy:0 "Agraria Economy"
+ ic_ITA_tax_reform:0 "Tax Reform"
  ic_ITA_building_up_colonies:0 "Building up Colonies"
  ic_ITA_building_up_colonies_bonus:0 "Colonies pay off!"

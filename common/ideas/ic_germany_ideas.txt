@@ -233,7 +233,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_gray_wolf
+			picture = GFX_idea_ic_ural_bomber_programm
 
 			allowed = {
 				always = no

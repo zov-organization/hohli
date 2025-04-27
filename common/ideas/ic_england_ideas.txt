@@ -92,7 +92,7 @@ ideas = {
 		ic_ENG_queens_navy_idea_2 = {
 			name = ic_ENG_queens_navy_idea
 
-			picture = GFX_idea_ic_ENG_queens_navy_idea
+			picture = GFX_idea_ic_ENG_queens_navy_idea_2
 
 			removal_cost = -1
 
@@ -120,7 +120,7 @@ ideas = {
 		ic_ENG_queens_navy_idea_3 = {
 			name = ic_ENG_queens_navy_idea
 
-			picture = GFX_idea_ic_ENG_queens_navy_idea
+			picture = GFX_idea_ic_ENG_queens_navy_idea_3
 
 			removal_cost = -1
 
@@ -190,12 +190,12 @@ ideas = {
 			}
 		}
 
-		ic_ENG_fighter_cheaper = {
-			name = ic_ENG_fighter_cheaper
+		ic_ENG_fighter_cheaper_1 = {
+			name = ic_ENG_fighter_cheaper_1
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ENG_fighter_cheaper
+			picture = GFX_idea_ic_ENG_fighter_cheaper_1
 
 			allowed = {
 				always = no
@@ -209,13 +209,12 @@ ideas = {
 			}
 
 		}
-
-		ic_ENG_put_an_end_to_german_bombings = {
-			name = ic_ENG_put_an_end_to_german_bombings
+		ic_ENG_fighter_cheaper_2 = {
+			name = ic_ENG_fighter_cheaper_1
 
 			removal_cost = -1
 
-			picture = GFX_idea_ic_ENG_fighter_cheaper
+			picture = GFX_idea_ic_ENG_fighter_cheaper_2
 
 			allowed = {
 				always = no

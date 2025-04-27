@@ -145,6 +145,12 @@
 
 
 
+
+  ENG_main_category:0 "§HEmpire Management§!"
+  ENG_start_tact_bomber_production:0 "Start producting tactical bombers"
+  ENG_stop_tact_bomber_production:0 "Stop producting tactical bombers"
+  ENG_start_tact_bomber_production_mission:0 "Next batch is expected in..."
+
   ENG_forts_category:0 "§HEmpire Fortification§!"
   ENG_gibraltar_forts:0 "Rock Defences"
   ENG_malta_forts:0 "The Middeterenian Outpost"
@@ -152,6 +158,20 @@
   ENG_syria_forts:0 "Syria Anti-Naval Invasion"
   ENG_prep_egypt:0 "Suez Fortification"
   ENG_prep_malaya:0 "Prepare Malaya"
+
+
+  
+
+
+
+
+  ITA_main_category:0 "§HEmpire Management§!"
+  ITA_start_tact_bomber_production:0 "Start producting tactical bombers"
+  ITA_stop_tact_bomber_production:0 "Stop producting tactical bombers"
+  ITA_start_tact_bomber_production_mission:0 "Next batch is expected in..."
+
+
+
 
 
 

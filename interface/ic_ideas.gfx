@@ -222,6 +222,10 @@ spriteTypes = {
 		name = "GFX_idea_ic_ural_bomber"
 		texturefile = "gfx/interface/ideas/GER/ic_ural_bomber.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ic_ural_bomber_programm"
+		texturefile = "gfx/interface/ideas/idea_generic_air_payment.dds"
+	}
 
 
 	
@@ -246,93 +250,185 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_NORDIC_navy_communist.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_ENG_queens_navy_idea_2"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_navy_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_queens_navy_idea_3"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_navy_communist.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
 		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_atlantic_war"
+		texturefile = "gfx/interface/ideas/FRA_army_of_aggression_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_fighter_cheaper_1"
+		texturefile = "gfx/interface/ideas/generic_air_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_fighter_cheaper_2"
+		texturefile = "gfx/interface/ideas/generic_air_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_no_peace_for_our_time_idea"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_fix_after_bombings"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ENG_bomber_programm"
+		texturefile = "gfx/interface/ideas/idea_generic_air_payment.dds"
 	}
 
 
 
+	
+	spriteType = {
+		name = "GFX_idea_ic_ITA_romans_idea"
+		texturefile = "gfx/interface/ideas/idea_ITA_shadow_of_mussolini.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_regio_esercito"
+		texturefile = "gfx/interface/ideas/idea_ITA_regio_esercito_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_regio_esercito_2"
+		texturefile = "gfx/interface/ideas/idea_ITA_regio_esercito_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_regio_esercito_3"
+		texturefile = "gfx/interface/ideas/idea_ITA_regio_esercito_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_poor_motorized_army_1"
+		texturefile = "gfx/interface/ideas/idea_ITA_bandits_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_poor_motorized_army_2"
+		texturefile = "gfx/interface/ideas/idea_ITA_bandits_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_1"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_2"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_3"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_4"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_5"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_military_reorg_6"
+		texturefile = "gfx/interface/ideas/idea_chi_incompetent_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_bomber_programm"
+		texturefile = "gfx/interface/ideas/idea_generic_air_payment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_agrarian_economy1"
+		texturefile = "gfx/interface/ideas/idea_ITA_hardened_irregular_bands.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_agrarian_economy2"
+		texturefile = "gfx/interface/ideas/idea_ITA_hardened_irregular_bands.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_building_up_colonies"
+		texturefile = "gfx/interface/ideas/idea_ETH_customs_barrier_ITA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_building_up_colonies_bonus"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_ITA_tax_reform"
+		texturefile = "gfx/interface/ideas/idea_ITA_devaluated_lira.dds"
+	}
+
+
+	
 
 	spriteType = {
 		name = "GFX_idea_ic_ROM_collapse_of_AusHun"
 		texturefile = "gfx/interface/ideas/idea_HUN_apostolic_kingdom_idea.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_Ground_forces_Romania"
 		texturefile = "gfx/interface/ideas/idea_tur_disorganised_armed_forces.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_The_Navy_of_Greater_Romania"
 		texturefile = "gfx/interface/ideas/idea_generic_coastal_navy.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_school_f_bombing_from_the_sea"
 		texturefile = "gfx/interface/ideas/idea_generic_coastal_navy.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_collapse_of_AusHun2"
 		texturefile = "gfx/interface/ideas/idea_HUN_apostolic_kingdom_idea.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_Headquarters_of_the_eleven_Army"
 		texturefile = "gfx/interface/ideas/german_advisors.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_Headquarters_of_the_eleven_Army2"
 		texturefile = "gfx/interface/ideas/german_advisors.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_collapse_of_AusHun3"
 		texturefile = "gfx/interface/ideas/idea_hol_caved_to_the_germans.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_better_than_AusHun"
 		texturefile = "gfx/interface/ideas/idea_rom_preserve_greater_romania.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_The_true_descendants_of_the_Romans"
 		texturefile = "gfx/interface/ideas/idea_ITA_new_roman_empire_ns.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_Agrarian_reform"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_Agrarian_reform2"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_Glory_to_Romania"
 		texturefile = "gfx/interface/ideas/idea_generic_fascist_workers.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_Glory_to_Romania2"
 		texturefile = "gfx/interface/ideas/idea_generic_fascist_workers.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_Navy_romania"
 		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_AXIS"
 		texturefile = "gfx/interface/ideas/idea_GER_german_trade.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_ic_ROM_AXIS"
 		texturefile = "gfx/interface/ideas/ROM/Waffen_SS.dds"

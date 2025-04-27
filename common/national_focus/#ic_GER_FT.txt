@@ -659,7 +659,7 @@
 
 	focus = {
 		id = GER_subs
-		icon = GFX_GER_subs
+		icon = GFX_focus_BRA_german_submarine_development
 
 		prerequisite = { focus = GER_kriegsmarine }
 		relative_position_id = GER_kriegsmarine
