@@ -61,7 +61,6 @@ recruit_character = ic_GER_ritter_von_greim
 
 create_faction = Axis
 add_to_faction = GER
-add_to_faction = ITA
 add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = BUL

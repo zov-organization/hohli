@@ -511,6 +511,11 @@
 		prerequisite = { focus = ITA_idea_of_romans }
 		relative_position_id = ITA_idea_of_romans
 
+		
+		available = {
+			date > 1939.2.1
+		}
+
 		x = 1
 		y = 1
 		cost = 10
@@ -601,6 +606,33 @@
 		}
 	}
 	focus = {
+		id = ITA_what_if_will_fight_in_africa
+		#icon = 
+
+		prerequisite = { focus = ITA_army }
+		relative_position_id = ITA_army
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			161 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			663 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = ITA_get_rid_of_ww1_legacy
 		icon = GFX_ITA_get_rid_of_ww1_legacy
 
@@ -644,11 +676,11 @@
 		prerequisite = { focus = ITA_army }
 		relative_position_id = ITA_army
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -658,11 +690,11 @@
 		prerequisite = { focus = ITA_fighting_xp_eth }
 		relative_position_id = ITA_fighting_xp_eth
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 	
@@ -718,8 +750,8 @@
 		prerequisite = { focus = ITA_air }
 		relative_position_id = ITA_air
 
-		x = 1
-		y = 1
+		x = 0
+		y = 3
 		cost = 10
 		completion_reward = {
 			unlock_decision_tooltip = ITA_start_tact_bomber_production
@@ -809,5 +841,111 @@
 			
 		}
 	}
+
+
+	
+	focus = {
+		id = ITA_enter_the_war
+		icon = GFX_ITA_think_of_littorio
+
+		prerequisite = { focus = ITA_think_of_littorio focus = ITA_poor_mechanized_army focus = ITA_scrap_long_going_bombers focus = ITA_albania_occupation focus = ITA_another_tax_reform focus = ITA_yacheika }
+		relative_position_id = ITA_poor_mechanized_army
+
+		available = {
+			GER = { 
+				has_war_with = ENG
+			}
+		}
+
+		x = -2
+		y = 1
+		cost = 1
+		completion_reward = {
+			
+            GER = {
+                add_to_faction = ITA
+            }
+
+		}
+	}
+	
+	focus = {
+		id = ITA_learn_from_germans
+		icon = GFX_ITA_think_of_littorio
+
+		prerequisite = { focus = ITA_enter_the_war }
+		relative_position_id = ITA_enter_the_war
+
+		available = {	
+        
+            452 = {
+                is_controlled_by = ITA
+            }
+        
+		}
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_learn_from_germans
+		icon = GFX_ITA_think_of_littorio
+
+		prerequisite = { focus = ITA_enter_the_war }
+		relative_position_id = ITA_enter_the_war
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+			custom_effect_tooltip = "some general gets buffed"
+		}
+	}
+
+	focus = {
+		id = ITA_balkan_expansion
+		icon = GFX_ITA_think_of_littorio
+
+		prerequisite = { focus = ITA_enter_the_war }
+		relative_position_id = ITA_enter_the_war
+
+		available = {
+		}
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_greece_cap
+		icon = GFX_ITA_think_of_littorio
+
+		prerequisite = { focus = ITA_balkan_expansion }
+		relative_position_id = ITA_balkan_expansion
+
+		available = {
+			date > 1940.8.1
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+            ENG = {
+                add_to_faction = GRE
+            }
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
+		}
+	}
+
 
 }
