@@ -56,7 +56,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_issue_gasmasks
+		id = ic_ENG_issue_gasmasks
 		icon = GFX_goal_generic_construct_military
 
 		prerequisite = { focus = ENG_spawn_civs }
@@ -1020,8 +1020,8 @@ focus_tree = {
 
 
 	focus = {
-		id = ENG_motion_of_no_confidence
-		icon = GFX_ENG_motion_of_no_confidence
+		id = ic_ENG_motion_of_no_confidence
+		icon = GFX_ic_ENG_motion_of_no_confidence
 
 		#prerequisite = { focus = ENG_shadow_scheme }
 		relative_position_id = ENG_shadow_scheme

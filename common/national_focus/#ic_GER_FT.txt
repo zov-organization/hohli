@@ -1548,7 +1548,7 @@
 	}
 
 	focus = {
-		id = GER_totaler_krieg
+		id = ic_GER_totaler_krieg
 		icon = GFX_GER_aa_defences_of_the_atlantikwall
 
 		prerequisite = { focus = GER_aa_defences_of_the_atlantikwall }
@@ -1571,8 +1571,8 @@
 		id = GER_autarky_failure
 		icon = GFX_GER_aa_defences_of_the_atlantikwall
 
-		prerequisite = { focus = GER_totaler_krieg }
-		relative_position_id = GER_totaler_krieg
+		prerequisite = { focus = ic_GER_totaler_krieg }
+		relative_position_id = ic_GER_totaler_krieg
 
 		x = 0
 		y = 1

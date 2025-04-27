@@ -185,7 +185,7 @@ GER_plan_new_summer_offencive:0 "Plan New Summer Offencive"
 
 ENG_initial_focus:0 "Initial Focus"
 ENG_spawn_civs:0 "Civilian industry"
-ENG_issue_gasmasks:0 "Issue Gasmasks"
+ic_ENG_issue_gasmasks:0 "Issue Gasmasks"
 ENG_keeping_up_with_germans:0 "Keeping up with Germans"
 ENG_industrial_heartland_of_the_empire:0 "Industrial Heartland of the Empire"
 ENG_birmingham_small_arms_company:0 "Birmingham Small Arms Company"
