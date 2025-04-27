@@ -336,5 +336,20 @@ on_actions = {
 		}
 		
 	}
+	
+	
+	on_daily_ENG = {
+		effect = {
 
+			set_variable = {
+				var = ger_subs_count
+				value = GER.num_ships_with_type@submarine
+			}
+			multiply_variable = {
+				var = ger_subs_count
+				value = 2
+			}
+			
+		}
+	}
 }

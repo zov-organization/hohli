@@ -201,7 +201,7 @@ ENG_dockyards:0 "Naval expansion"
 ENG_naval_guns:0 "Bigger Guns"
 ENG_heavy_ships:0 "Bigger Ship"
 ENG_light_ships:0 "Smaller Ships"
-ENG_navis_at_queens_command:0 "Navis at Queens Command"
+ENG_navis_at_queens_command:0 "Navy at The Queens Command"
 ENG_british_army:0 "British Army"
 ENG_6_pounder:0 "6 pounder"
 ENG_english_infantrymen:0 "English Infantrymen"
@@ -218,7 +218,7 @@ ENG_indiscriminate_bombing_policy:0 "Indiscriminate Bombing Policy"
 ENG_our_second_key_to_survive:0 "Our Second Key to Survive"
 
 
-
+ENG_counter_german_subs_tt_trigger:0 "Requires to have x2 §Yscreen ships§! to §Ygerman submarines§! count.\n - §gGerman submarines count:§! [?GER.num_ships_with_type@submarine|0R] ([?ger_subs_count|0R] - x2) \n - §CEnglish screen ships count:§! [?ENG.num_ships_with_type@screen|0R]\n\n"
 
 
 ic_ROM_Election_of_the_King:0 "Election of the King"

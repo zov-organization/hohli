@@ -735,13 +735,13 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
-				name = ENG_announce_competition_for_modern_figher
+				name = ENG_material_base_destruction_plane
 				bonus = 1
 				uses = 1
 				technology = basic_medium_airframe
 			}
 			add_tech_bonus = {
-				name = ENG_announce_competition_for_modern_figher
+				name = ENG_material_base_destruction_plane
 				bonus = 1
 				uses = 1
 				technology = basic_large_airframe
@@ -835,35 +835,166 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_enhanced_naval_patrols
-		icon = GFX_ENG_enhanced_naval_patrols
+		id = ENG_enforce_destroyers_fleet
+		icon = GFX_ENG_enforce_destroyers_fleet
 
 		prerequisite = { focus = ENG_no_peace_for_our_time }
 		relative_position_id = ENG_no_peace_for_our_time
 
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 		completion_reward = {
+		
+			add_tech_bonus = {
+				name = ENG_enforce_destroyers_fleet
+				bonus = 1.5
+				uses = 3
+				category = dd_tech
+			}
+
+			swap_ideas = {
+				remove_idea = ic_ENG_queens_navy_idea
+				add_idea = ic_ENG_queens_navy_idea_2
+			}
+		}
+	}
+	focus = {
+		id = ENG_enhanced_naval_patrols
+		icon = GFX_ENG_enhanced_naval_patrols
+
+		prerequisite = { focus = ENG_enforce_destroyers_fleet }
+		relative_position_id = ENG_enforce_destroyers_fleet
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
 			add_equipment_to_stockpile = {
 				type = small_plane_naval_bomber_airframe_1
 				amount = 200
 				producer = ENG
 			}
+
+			swap_ideas = {
+				remove_idea = ic_ENG_queens_navy_idea_2
+				add_idea = ic_ENG_queens_navy_idea_3
+			}
+
+		}
+	}
+	focus = {
+		id = ENG_keeping_an_eye_on_sea
+		icon = GFX_ENG_keeping_an_eye_on_sea
+
+		prerequisite = { focus = ENG_enforce_destroyers_fleet }
+		relative_position_id = ENG_enforce_destroyers_fleet
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+			131 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			118 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			698 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			308 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			702 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			331 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			696 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 	focus = {
 		id = ENG_counter_german_subs
 		icon = GFX_ENG_counter_german_subs
 
-		prerequisite = { focus = ENG_enhanced_naval_patrols }
-		relative_position_id = ENG_enhanced_naval_patrols
+		prerequisite = { focus = ENG_enforce_destroyers_fleet }
+		relative_position_id = ENG_enforce_destroyers_fleet
+		
+		available = {
+			and = {
+				has_idea = ic_ENG_atlantic_war
+
+				# for modder to understand - there is on_daily_ENG in `ic_on_actions.txt`, there it creates the variable to store german subs count, and also there multiplies it by 2
+				# in this focus it just checks if: english screen > ger subs x2
+				custom_trigger_tooltip = {
+					tooltip = ENG_counter_german_subs_tt_trigger
+
+					check_variable = {
+						var = ENG.num_ships_with_type@screen
+						value = ger_subs_count
+						compare = greater_than_or_equals
+					}
+				}
+
+			}
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
 
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = {
-			custom_effect_tooltip = "allowed if x2 dds of german subs"
+			remove_ideas = ic_ENG_atlantic_war
+            every_allied_country = {
+                remove_ideas = ic_ENG_atlantic_war
+            }
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GER = {
+				swap_ideas = {
+					remove_idea = ic_gray_wolf_golden_times
+					add_idea = ic_gray_wolf_its_over
+				}
+			}
 		}
 	}
 	
@@ -1014,7 +1145,15 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			custom_effect_tooltip = "should add tact/strats research bonuses, better decision to produce then (not 20/mon but 40/mon or smth), some idea prob"
+			add_tech_bonus = {
+				name = ENG_our_turn_now
+				bonus = 1.5
+				uses = 2
+				technology = improved_medium_airframe
+				technology = improved_large_airframe
+			}
+			
+			unlock_decision_tooltip = ENG_start_tact_bomber_production
 		}
 	}
 

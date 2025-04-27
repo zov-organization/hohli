@@ -1890,6 +1890,12 @@ GER_thousand_year_reich_category = {
                 remove_idea = ic_gray_wolf
                 add_idea = ic_gray_wolf_golden_times
             }
+            ENG = {
+                add_ideas = ic_ENG_atlantic_war
+                every_allied_country = {
+                    add_ideas = ic_ENG_atlantic_war
+                }
+            }
             19 = { 
                 add_extra_state_shared_building_slots = 4
 				add_building_construction = {
