@@ -16,4 +16,5 @@ project_tags = {
 	sp_tag_radar
 
 	ic_sp_tag_fighter_armament
+	ic_sp_tag_infantry
 }
