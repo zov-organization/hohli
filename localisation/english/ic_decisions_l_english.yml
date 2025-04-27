@@ -157,6 +157,7 @@
   ENG_suez_forts:0 "Suez Anti-Naval Invasion"
   ENG_syria_forts:0 "Syria Anti-Naval Invasion"
   ENG_prep_egypt:0 "Suez Fortification"
+  ENG_defend_iraq_oil:0 "Defend Iraq Oilfields"
   ENG_prep_malaya:0 "Prepare Malaya"
 
 

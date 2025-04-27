@@ -218,6 +218,45 @@ ENG_forts_category = {
         }
     }
 
+	ENG_defend_iraq_oil = {
+        icon = GFX_decision_generic_fortification
+        fire_only_once = yes
+        days_remove = 60
+		cost = 40
+		highlight_states = {
+			highlight_state_targets = {
+				state = 676
+				state = 291
+			}
+		}
+        remove_effect = {
+            676 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+            291 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+        }
+    }
+
 	ENG_prep_malaya = {
         icon = GFX_decision_generic_fortification
         fire_only_once = yes
