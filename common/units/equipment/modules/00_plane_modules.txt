@@ -1082,7 +1082,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		allow_mission_type = {
-			tactical_bomber
+			#tactical_bomber
 			strategic_bomber
 		}
 		dismantle_cost_ic = 12
