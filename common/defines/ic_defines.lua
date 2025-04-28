@@ -258,7 +258,7 @@ NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0                    -
 NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0                    --recon mission
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0                                    --if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average. 
 NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 2.0                           --Max average XP achieved with training.
-NDefines.NAir.AIR_WING_XP_MAX = 0                                             --Per plane XP.
+NDefines.NAir.AIR_WING_XP_MAX = -1                                             --Per plane XP.
 NDefines.NAir.AIR_WING_XP_LEVELS = { 0 }                         --Experience needed to progress to the next level
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 0.2
@@ -418,7 +418,7 @@ NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.12
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1
 
 --Special Projects
-NDefines.NProject.DEFAULT_STOP_PROJECT_DAYS = 0
+NDefines.NProject.DEFAULT_STOP_PROJECT_DAYS = 1	-- 0 wont work - prints an error :(
 NDefines.NProject.DAYS_TO_REMOVE_SCIENTIST = 0
 NDefines.NProject.DEFAULT_PROJECT_COMPLETION_SCIENTIST_EXPERIENCE_GAIN = 0
 NDefines.NProject.RECRUIT_SCIENTIST_ONE_TRAIT_CHANCE = 0
