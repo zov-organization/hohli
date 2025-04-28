@@ -1376,6 +1376,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = SOV_start_tact_bomber_production
+
 			add_tech_bonus = {
 				name = SOV_strati
 				bonus = 2
@@ -1466,6 +1468,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+                type = medium_plane_airframe
+                amount = 500
+                producer = SOV
+            }
+
 			add_ideas = ic_SOV_indiscriminate_bombing_policy
 		}
 	}
@@ -1595,7 +1603,7 @@ focus_tree = {
 	focus = {
 		id = SOV_snyatie_debaffov_i_gen
 
-		icon = GFX_SOV_wow
+		icon = GFX_goal_generic_cavalry
 
 		prerequisite = { focus = SOV_wow }
 		relative_position_id = SOV_wow
@@ -1625,7 +1633,7 @@ focus_tree = {
 	focus = {
 		id = SOV_oust_nazi
 
-		icon = GFX_SOV_wow
+		icon = GFX_goal_generic_fortify_city
 
 		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
 		relative_position_id = SOV_snyatie_debaffov_i_gen
@@ -1644,6 +1652,8 @@ focus_tree = {
 			ic_SOV_focusa_defensa_smol_date = yes
 		}
 
+		continue_if_invalid = yes
+
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
@@ -1659,7 +1669,7 @@ focus_tree = {
 	focus = {
 		id = SOV_further_back_defence_of_moscow
 
-		icon = GFX_SOV_wow
+		icon = GFX_goal_generic_fortify_city
 
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
@@ -1671,6 +1681,8 @@ focus_tree = {
 		available = {
             ic_german_offencive_prep_date = yes
 		}
+
+		continue_if_invalid = yes
 
 		completion_reward = {
 			every_state = {
@@ -1689,7 +1701,7 @@ focus_tree = {
 	focus = {
 		id = SOV_further_back_defence_of_stalingrad
 
-		icon = GFX_SOV_wow
+		icon = GFX_goal_generic_fortify_city
 
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
@@ -1701,6 +1713,8 @@ focus_tree = {
 		available = {
             ic_german_offencive_prep_date = yes
 		}
+
+		continue_if_invalid = yes
 
 		completion_reward = {
 			every_state = {
@@ -1719,7 +1733,7 @@ focus_tree = {
 	focus = {
 		id = SOV_minus_debuff
 
-		icon = GFX_SOV_wow
+		icon = GFX_goal_generic_cavalry
 
 		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
 		relative_position_id = SOV_snyatie_debaffov_i_gen
@@ -1741,7 +1755,7 @@ focus_tree = {
 	focus = {
 		id = SOV_yacheika
 
-		icon = GFX_SOV_wow
+		icon = GFX_focus_generic_socialist_science
 
 		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
 		relative_position_id = SOV_snyatie_debaffov_i_gen
@@ -1764,7 +1778,7 @@ focus_tree = {
 	focus = {
 		id = SOV_skidka_na_tank
 
-		icon = GFX_SOV_wow
+		icon = GFX_focus_generic_license_production
 
 		prerequisite = { focus = SOV_yacheika }
 		relative_position_id = SOV_yacheika
@@ -1817,7 +1831,7 @@ focus_tree = {
 	focus = {
 		id = SOV_skidka_na_samolet
 
-		icon = GFX_SOV_wow
+		icon = GFX_focus_generic_air_research_boost
 
 		prerequisite = { focus = SOV_dobicha_rezini }
 		prerequisite = { focus = SOV_yacheika }
@@ -1842,7 +1856,7 @@ focus_tree = {
 	focus = {
 		id = SOV_ptab_focus
 
-		icon = GFX_SOV_wow
+		icon = GFX_focus_generic_cas_aircraft
 
 		prerequisite = { focus = SOV_skidka_na_samolet }
 		relative_position_id = SOV_skidka_na_samolet
@@ -1893,6 +1907,69 @@ focus_tree = {
 		}
 	}
 
+
+	
+	focus = {
+		id = SOV_we_held_off
+
+		icon = GFX_focus_generic_advanced_military_studies
+		
+		prerequisite = { focus = SOV_oust_nazi }
+		prerequisite = { focus = SOV_goy_da_rokossovskii }
+		prerequisite = { focus = SOV_minus_debuff }
+		relative_position_id = SOV_goy_da_rokossovskii
+
+		x = -2
+		y = 1
+		cost = 10
+
+		available = {
+		
+            count_triggers = {
+                amount = 1
+
+		        date > 1942.9.1
+
+				and = {
+					controls_state = 195
+					controls_state = 219
+					controls_state = 217
+				}
+            }
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_army_3
+				add_idea = SOV_red_army_4
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_kuban_air_battle
+
+		icon = GFX_goal_generic_air_fighter2
+
+		prerequisite = { focus = SOV_goy_da_rokossovskii }
+		prerequisite = { focus = SOV_ptab_focus }
+		relative_position_id = SOV_goy_da_rokossovskii
+
+		x = 2
+		y = 1
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_red_airforces_3
+				add_idea = SOV_red_airforces_4
+			}
+		}
+	}
 
 
 

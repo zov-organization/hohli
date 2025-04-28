@@ -1,3 +1,67 @@
+SOV_tacti_strati_category = {
+
+	SOV_start_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_completed_focus = SOV_strati
+            NOT = {
+                has_active_mission = SOV_start_tact_bomber_production_mission
+            }
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            activate_mission = SOV_start_tact_bomber_production_mission
+            add_ideas = ic_SOV_bomber_programm
+        }
+    }
+
+    SOV_stop_tact_bomber_production = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+            has_active_mission = SOV_start_tact_bomber_production_mission
+        }
+
+        fire_only_once = no
+        
+        complete_effect = {
+            remove_mission = SOV_start_tact_bomber_production_mission
+            remove_ideas = ic_SOV_bomber_programm
+        }
+    }
+
+	SOV_start_tact_bomber_production_mission = {
+        icon = GFX_decision_SWE_set_air_budget
+
+        available = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = {
+			hidden_trigger = { always = no }
+		}
+
+        activation = { }
+        is_good = yes
+
+        fire_only_once = no
+        cancel_trigger = {  }
+
+		days_mission_timeout = 30
+        complete_effect = {}
+        timeout_effect = {
+            add_equipment_to_stockpile = {
+                type = medium_plane_airframe
+                amount = 20
+                producer = SOV
+            }
+            activate_mission = SOV_start_tact_bomber_production_mission
+        }
+    }
+
+}
+
 SOV_great_patriotic_war_category = {
 
 	SOV_secure_north_1941_tip = {

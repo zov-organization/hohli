@@ -4,6 +4,8 @@
  DayOne_Efficiency:0 "Day 1 Efficiency"
  NoTradeback:0 "No Prewar Tradebacks"
 
+ ic_bomber_programm:0 "Building heavy bombers require some investments"
+
 
  # DYNAMIC MODIFIERS
  ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
@@ -19,8 +21,6 @@
  ic_SOV_trotskyite_plot:0 "Trotskyite Plot"
  ic_SOV_kuznetsov_reforms:0 "Admiral Kuznetsovs Reforms"
  SOV_red_airforces:0 "Red Airforces"
- SOV_red_airforces_2:0 "Red Airforces"
- SOV_red_airforces_3:0 "Red Airforces"
  SOV_red_army:0 "Red Army"
  ic_SOV_peaceful_building:0 "Peaceful Building"
  ic_SOV_economy_is_on_war_footing:0 "Economy is on war footing"
@@ -53,7 +53,6 @@
  ic_ss_idea:0 "SS"
  ic_stuka:0 "Achtung Stuka!"
  ic_ural_bomber:0 "Ural Bomber"
- ic_ural_bomber_programm:0 "Building heavy bombers require some investments"
  ic_gray_wolf:0 "§gGray Wolf's in Den§!"
  ic_gray_wolf_golden_times:0 "§gGray Wolf: §YGolden Times!§!§!"
  ic_gray_wolf_its_over:0 "§gGray Wolf tucked its tail§!"
@@ -77,7 +76,6 @@
  ic_ENG_atlantic_war:0 "Atlantic Raids"
  ic_ENG_no_peace_for_our_time_idea:0 "No Peace for Our Time"
  ic_ENG_fix_after_bombings:0 "Like a Phoenix from Ashes!"
- ic_ENG_bomber_programm:0 "Building heavy bombers require some investments"
 
 
 
@@ -111,7 +109,6 @@
  ic_ITA_romans_idea:0 "Romans Idea"
  ic_ITA_regio_esercito:0 "Regio Esercito"
  ic_ITA_poor_motorized_army_1:0 "Poor Motorized Army"
- ic_ITA_bomber_programm:0 "Building heavy bombers require some investments"
  ic_ITA_military_reorg_1:0 "Military Reorganization Stage: 1"
  ic_ITA_military_reorg_2:0 "Military Reorganization Stage: 2"
  ic_ITA_military_reorg_3:0 "Military Reorganization Stage: 3"

@@ -160,7 +160,7 @@ ideas = {
 		} 
 		
 		ic_ITA_bomber_programm = {
-			name = ic_ITA_bomber_programm
+			name = ic_bomber_programm
 
 			removal_cost = -1
 

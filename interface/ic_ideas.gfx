@@ -53,6 +53,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SOV_red_airforces_4"
+		texturefile = "gfx/interface/ideas/SOV_red_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ic_SOV_bomber_programm"
+		texturefile = "gfx/interface/ideas/idea_generic_air_payment.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_SOV_red_army"
 		texturefile = "gfx/interface/ideas/SOV_red_army.dds"
 	}

@@ -1,5 +1,13 @@
 ﻿l_english:
 
+  ic_progon_mode:0 "§HPROGON MODE§"
+  ic_progon_mode_blumen_kriege:0 "progon thingy for Blumen Kriege focus"
+  ic_progon_mode_blumen_kriege_desc:0 "typically GER would do this focus right before Anschluß itself.\n2 march 1938!"
+  ic_progon_mode_aus:0 "progon thingy for AUS annex"
+  ic_progon_mode_cze:0 "progon thingy for CZE annex"
+  ic_progon_mode_pol:0 "progon thingy for WW2 start"
+  ic_progon_mode_ww2_simulation:0 "progon thingy for GER europe conquest and SOV prewar annexes"
+
   ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"
   GER_optimal_building_line:0 "Optimal starting building line"
@@ -16,15 +24,12 @@
   SOV_secure_south_1941_tip:0 "Show states affected by \n§HSoviet South Defence In-Depth§!"
   SOV_ukrain_promkompleks_tip:0 "Show states affected by §HUkrain PromKomplect§!"
   SOV_russian_storehouse_tip:0 "Show states affected by §HRussian Storehouse§!"
+  
+  
+  SOV_start_tact_bomber_production:0 "Start producting tactical bombers"
+  SOV_stop_tact_bomber_production:0 "Stop producting tactical bombers"
+  SOV_start_tact_bomber_production_mission:0 "Next batch is expected in..."
 
-
-  ic_progon_mode:0 "§HPROGON MODE§"
-  ic_progon_mode_blumen_kriege:0 "progon thingy for Blumen Kriege focus"
-  ic_progon_mode_blumen_kriege_desc:0 "typically GER would do this focus right before Anschluß itself.\n2 march 1938!"
-  ic_progon_mode_aus:0 "progon thingy for AUS annex"
-  ic_progon_mode_cze:0 "progon thingy for CZE annex"
-  ic_progon_mode_pol:0 "progon thingy for WW2 start"
-  ic_progon_mode_ww2_simulation:0 "progon thingy for GER europe conquest and SOV prewar annexes"
 
   SOV_great_patriotic_war_category:0 "§RGREAT PATRIOTIC WAR§!"
   SOV_great_patriotic_war_category_desc:0 "_"

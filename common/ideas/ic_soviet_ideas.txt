@@ -90,7 +90,7 @@ ideas = {
 		}
 
 		SOV_red_airforces_2 = {
-			name = SOV_red_airforces_2
+			name = SOV_red_airforces
 
 			removal_cost = -1
 
@@ -125,7 +125,7 @@ ideas = {
 		}
 
 		SOV_red_airforces_3 = {
-			name = SOV_red_airforces_3
+			name = SOV_red_airforces
 
 			removal_cost = -1
 
@@ -156,6 +156,43 @@ ideas = {
 				air_mission_efficiency = -0.3
 				air_training_xp_gain_factor = -0.2
 				air_untrained_pilots_penalty_factor = 0.65
+			}
+		}
+
+		SOV_red_airforces_4 = {
+			name = SOV_red_airforces
+
+			removal_cost = -1
+
+			picture = GFX_idea_SOV_red_airforces_4
+
+			allowed = {
+				always = no
+			}
+
+			research_bonus = {
+				air_equipment = -0.05
+            }
+			modifier = {
+				air_accidents_factor = 0.1
+				air_mission_efficiency = -0.05
+			}
+		}
+		
+		ic_SOV_bomber_programm = {
+			name = ic_bomber_programm
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_SOV_bomber_programm
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.05
 			}
 		}
 
@@ -246,7 +283,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.01
 				army_defence_factor = 0.02
-				#army_org_factor = -0.1
+				army_org_factor = 0.03
 				planning_speed = 0.05
 				max_planning = 0.03
 				conscription = 0.03

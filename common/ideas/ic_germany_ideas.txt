@@ -229,7 +229,7 @@ ideas = {
 		}
 
 		ic_ural_bomber_programm = {
-			name = ic_ural_bomber_programm
+			name = ic_bomber_programm
 
 			removal_cost = -1
 
