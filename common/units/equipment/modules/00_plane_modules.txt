@@ -674,14 +674,14 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-			limit = {
-				#attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 1
-			}
-		}
+		#mission_type_stats = {
+		#	limit = {
+		#		#attack_logistics
+		#	}
+		#	add_stats = {
+		#		air_ground_attack = 1
+		#	}
+		#}
 		can_convert_from = {
 			module = heavy_mg_2x
 			convert_cost_ic = 2
@@ -724,14 +724,14 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-			limit = {
-				#attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 2
-			}
-		}
+		#mission_type_stats = {
+		#	limit = {
+		#		#attack_logistics
+		#	}
+		#	add_stats = {
+		#		air_ground_attack = 2
+		#	}
+		#}
 		can_convert_from = {
 			module = aircraft_cannon_1_1x
 			convert_cost_ic = 3
@@ -774,14 +774,14 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-			limit = {
-				#attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 2
-			}
-		}
+		#mission_type_stats = {
+		#	limit = {
+		#		#attack_logistics
+		#	}
+		#	add_stats = {
+		#		air_ground_attack = 2
+		#	}
+		#}
 		can_convert_from = {
 			module = aircraft_cannon_2_1x
 			convert_cost_ic = 4
@@ -824,14 +824,14 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-			limit = {
-				#attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 2
-			}
-		}
+		#mission_type_stats = {
+		#	limit = {
+		#		#attack_logistics
+		#	}
+		#	add_stats = {
+		#		air_ground_attack = 2
+		#	}
+		#}
 		can_convert_from = {
 			module = aircraft_cannon_2_1x
 			convert_cost_ic = 4
