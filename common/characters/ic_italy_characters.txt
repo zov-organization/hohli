@@ -58,6 +58,9 @@ characters = {
 			traits = {
 				grand_battle_plan_expert
 			}
+			available = {
+				has_completed_focus = ITA_learn_from_germans
+			}
 		}
 		
 		corps_commander = {
@@ -452,6 +455,9 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
+			available = {
+				has_completed_focus = ITA_learn_from_germans
+			}
 			cost = 100
 		}
 		
@@ -589,7 +595,7 @@ characters = {
 			idea_token = ic_ITA_marziale_cerutti
 			ledger = air
 			traits = {
-				air_air_combat_training_2
+				cas_reduction_trait
 			}
 			cost = 100
 		}		

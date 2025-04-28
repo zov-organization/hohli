@@ -681,6 +681,12 @@
 		cost = 5
 		completion_reward = {
 			army_experience = 25
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			sp:ic_sp_ita_militia = {
+			  add_project_progress_ratio = 0.5
+			}
 		}
 	}
 	focus = {
@@ -886,22 +892,15 @@
 
 		x = 0
 		y = 1
-		cost = 1
+		cost = 5
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = ITA_learn_from_germans
-		icon = GFX_ITA_think_of_littorio
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = ic_ITA_giovanni_messe
 
-		prerequisite = { focus = ITA_enter_the_war }
-		relative_position_id = ITA_enter_the_war
+			custom_effect_tooltip = generic_skip_one_line_tt
 
-		x = 0
-		y = 1
-		cost = 1
-		completion_reward = {
-			custom_effect_tooltip = "some general gets buffed"
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = ic_ITA_alfredo_guzzoni
 		}
 	}
 
@@ -919,7 +918,62 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_stability = -0.1
+			736 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11595
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 599
+					instant_build = yes
+				}
+			}
+			852 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11735
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11564
+					instant_build = yes
+				}
+			}
+			163 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3943
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 	focus = {

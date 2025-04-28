@@ -270,6 +270,8 @@ technologies = {
 	}
 	
 	paratroopers = {
+		
+		allow = { hidden_trigger = { always = no } }
 
 		enable_subunits = {
 			paratrooper
@@ -351,7 +353,9 @@ technologies = {
 	}
 	
 	marines = {
-
+	
+		allow = { hidden_trigger = { always = no } }
+		
 		enable_subunits = {
 			marine
 		}
@@ -430,7 +434,9 @@ technologies = {
 	}	
 	
 	tech_mountaineers = {
-
+	
+		allow = { hidden_trigger = { always = no } }
+		
 		enable_subunits = {
 			mountaineers
 		}

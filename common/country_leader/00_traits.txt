@@ -10774,4 +10774,10 @@ leader_traits = {
 		war_support_weekly = 0.001
 	}
 
+	cas_reduction_trait = {
+		random = no
+		sprite = 5
+		cas_damage_reduction = 0.25
+	}
+
 }

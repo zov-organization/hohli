@@ -66,3 +66,102 @@ ic_sp_ita_militia = {
 
 	generic_prototype_rewards = {}
 }
+ic_sp_paratroopers = {
+	specialization = specialization_land
+	icon = GFX_ic_sp_ita_militia
+
+	project_tags = { 
+		sp_tag_artillery
+		ic_sp_tag_infantry
+	}
+
+	available = {
+		not = {
+			has_tech = paratroopers
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_five_hundred_days
+
+	complexity = sp_complexity.ic_ten_fractions
+
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				paratroopers = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+ic_sp_marines = {
+	specialization = specialization_land
+	icon = GFX_ic_sp_ita_militia
+
+	project_tags = { 
+		sp_tag_artillery
+		ic_sp_tag_infantry
+	}
+	
+	available = {
+		not = {
+			has_tech = marines
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_five_hundred_days
+
+	complexity = sp_complexity.ic_ten_fractions
+
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				marines = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+ic_sp_mountaneers = {
+	specialization = specialization_land
+	icon = GFX_ic_sp_ita_militia
+
+	project_tags = { 
+		sp_tag_artillery
+		ic_sp_tag_infantry
+	}
+
+	available = {
+		not = {
+			has_tech = tech_mountaineers
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_five_hundred_days
+
+	complexity = sp_complexity.ic_ten_fractions
+
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				tech_mountaineers = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
