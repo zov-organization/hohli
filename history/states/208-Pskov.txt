@@ -11,8 +11,15 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 3
+			11186 ={
+				naval_base = 5
+				coastal_bunker = 2
+			}
 		}
 		add_core_of = SOV
+		victory_points = {
+			9097 5
+		}
 		victory_points = {
 			9098 1
 		}
