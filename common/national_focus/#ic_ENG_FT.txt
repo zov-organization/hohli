@@ -826,6 +826,10 @@ focus_tree = {
 		prerequisite = { focus = ENG_reinforce_expeditionary_force }
 		relative_position_id = ENG_navis_at_queens_command
 
+		available = {
+			has_war_with = GER
+		}
+
 		x = 1
 		y = 1
 		cost = 5

@@ -67,3 +67,16 @@ GER_summer_offencive_buff = {
 
 	#no_supply_grace = 168 - wont work
 }
+
+
+
+ic_refinery_lightly_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	state_resources_oil_factor = -0.1
+}  
+ic_refinery_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	state_resources_oil_factor = -0.25
+} 

@@ -783,14 +783,14 @@ types = {
 
 	oilfield_raid = {
 		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 90
+
 
 		category = air_raids
 
 		command_power = 0 # command power allocation cost
 
-		allowed = {
-			has_dlc = "Gotterdammerung"
-		}
 		# Raid Type is visible
 		visible = {
 
@@ -816,19 +816,6 @@ types = {
 		target_type = {
 			state = {
 				oil > 20
-				NOT = {
-					OR = {
-						has_dynamic_modifier = {
-							modifier = refinery_damaged_modifier
-						}
-						has_dynamic_modifier = {
-							modifier = refinery_critically_damaged_modifier
-						}
-						has_dynamic_modifier = {
-							modifier = refinery_lightly_damaged_modifier
-						}
-					}
-				}
 			}
 		}
 		target_icon = GFX_oilfield_target_icon
@@ -863,50 +850,31 @@ types = {
 				base = 0.65
 
 				# Raiding unit modifiers
-				experience = {
-					weight = 0.1
-					start_weight = -0.1
-					reference = 1.0
-				}
-				air_agility = {
-					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
-					weight = 0.1 # At 0 agility, the modifier will have negative effect.
-					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
-				}
-				reliability = {
-					reference = 1
-					weight = 0.1
-					start_weight = -0.1
-				}
-				air_defence = {
-					reference = 100
-					weight = 0.05
-					start_weight = -0.05
-				}
 				air_superiority = {
 					reference = 1
-					weight = 0.2
-					start_weight = -0.2
+					weight = 0.4
+					start_weight = -0.4
 				}
 
 				### Target Modifiers
 				anti_air = {
 					reference = 5
-					weight = -0.25
+					weight = -0.3
 				}
 				interception = {
-					reference = 500 # More than 500 fighters won't really make any difference
-					weight = -0.2
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.15
 				}
-				intel = {
-					weight = 0.3
-					reference = 100
-				}
+			}
+			
+			critical = {
+				base = 0.1
 			}
 
-			critical = {
-				base = 0.15
+			disaster = {
+				base = 0.2
 			}
+
 		}
 
 		success_levels = {
@@ -920,8 +888,8 @@ types = {
 						plane_loss = 0.95
 						ratio = yes
 					}
-					raid_add_unit_experience = 0.05
 				}
+
 				visual_effect = {
 					entity = "nuke_entity"
 					animation = "attack"
@@ -929,28 +897,26 @@ types = {
 				visual_effect = {
 					entity = "raid_failed_entity"
 					animation = "attack"
-					}
+				}
 			}
 			limited_success = {
 			    victim_effects = {
 					# Damage to Target
 					var:target_state = {
 						add_dynamic_modifier = {
-							modifier = refinery_lightly_damaged_modifier
-							days = 90
+							modifier = ic_refinery_lightly_damaged_modifier
+							days = 180
 						}
 					}
 			    }
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.65
+						plane_loss = 0.5
 						ratio = yes
 					}
-
-					# XP etc
-					raid_add_unit_experience = 0.1
 				}
+
 				visual_effect = {
 					entity = "air_raids_2_limited_success_entity"
 					animation = "attack"
@@ -961,7 +927,7 @@ types = {
 					# Damage to Target
 					var:target_state = {
 						add_dynamic_modifier = {
-							modifier = refinery_damaged_modifier
+							modifier = ic_refinery_damaged_modifier
 							days = 180
 						}
 					}
@@ -973,13 +939,11 @@ types = {
 						ratio = yes
 					}
 
-					# XP etc
-					raid_add_unit_experience = 0.2
-
 					var:actor_country = {
 						air_experience = 10
 					}
 				}
+
 				visual_effect = {
 					entity = "air_raids_2_success_entity"
 					animation = "attack"
@@ -990,8 +954,13 @@ types = {
 					# Damage to Target
 					var:target_state = {
 						add_dynamic_modifier = {
-							modifier = refinery_critically_damaged_modifier
-							days = 360
+							modifier = ic_refinery_damaged_modifier
+							days = 180
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 5
+							repair_speed_modifier = -0.5
 						}
 					}
 			    }
@@ -1001,14 +970,11 @@ types = {
 						plane_loss = 0.1
 						ratio = yes
 					}
-
-					# XP etc
-					raid_add_unit_experience = 0.35
-
 					var:actor_country = {
 						air_experience = 20
 					}
 				}
+
 				visual_effect = {
 					entity = "air_raids_2_critical_success_entity"
 					animation = "attack"
