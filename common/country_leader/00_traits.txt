@@ -943,13 +943,9 @@ leader_traits = {
 
 	anti_democrat = {
 		random = no
-		democratic_acceptance = -50
 		democratic_drift = -0.02
-		stability_factor = 0.10
+		stability_factor = 0.025
 
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	emergency_powers = {
 		random = no
@@ -5732,7 +5728,7 @@ leader_traits = {
 		random = no
 		# Boosts Fascism
 		sprite = 13
-		fascism_drift = 0.1
+		fascism_drift = 0.75
 	}
 
 	staunch_monarchist = {

@@ -25,7 +25,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-            add_political_power = 200
+            add_political_power = 100
             add_stability = 0.05
         }
 	}
@@ -33,7 +33,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Supervision_of_the_Kings_expenses
 
-		x = -16
+		x = -15
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Election_of_the_King}
@@ -44,14 +44,18 @@ focus_tree = {
 		icon = GFX_focus_rom_abdicate
 
         completion_reward = {
-            add_stability = -0.025
+            add_stability = -0.075
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
         }
 	}
 
 	focus = {
 		id = ic_ROM_Interference_with_the_Kings_expenses
 
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Supervision_of_the_Kings_expenses}
@@ -62,7 +66,11 @@ focus_tree = {
 		icon = GFX_focus_rom_handle_king
 
         completion_reward = {
-            add_stability = -0.05
+            add_stability = -0.075
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.025
+			}
         }
 	}
 
@@ -73,7 +81,7 @@ focus_tree = {
 
 		prerequisite = { focus = ic_ROM_Interference_with_the_Kings_expenses }
 
-		x = 0
+		x = 1
 		y = 1
 
 		relative_position_id = ic_ROM_Interference_with_the_Kings_expenses
@@ -119,7 +127,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Romanian_Land_Forces
 
-		x = -8
+		x = -5
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Election_of_the_King }
@@ -188,11 +196,11 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Modern_artillery
 
-		x = 2
+		x = 1
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Modern_equipment }
-		relative_position_id = ic_ROM_Modern_equipment
+		prerequisite = { focus = ic_ROM_The_Hungarian_Romanian_War }
+		relative_position_id = ic_ROM_The_Hungarian_Romanian_War
 
 		cost = 5
 
@@ -211,11 +219,11 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Modern_automatic_machine
 
-		x = 4
+		x = 1
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Modern_equipment }
-		relative_position_id = ic_ROM_Modern_equipment
+		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
+		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
 
 		cost = 5
 
@@ -275,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Revenge_for_Bessarabia
 
-		x = 20
+		x = 22
 		y = 7
 
 		cost = 5
@@ -371,7 +379,7 @@ focus_tree = {
         completion_reward = {
 			add_resource = {
 					type = oil
-					amount = 25
+					amount = 15
 					state = 46
 			}
         }
@@ -398,10 +406,11 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_Modern_support_compaines
 
-		x = 0
+		x = -1
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Modern_equipment }
+		prerequisite = { focus = ic_ROM_The_experience_of_the_FWW }
 		relative_position_id = ic_ROM_Modern_equipment
 
 		cost = 5
@@ -421,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_German_first_aid_kits_and_stews
 
-		x = 0
+		x = 1	
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Modern_support_compaines}
@@ -443,7 +452,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_German_MP38_and_MG34
 
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Modern_automatic_machine}
@@ -465,7 +474,7 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_German_leFH18
 
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { focus = ic_ROM_Modern_artillery }
@@ -550,7 +559,7 @@ focus_tree = {
 
         	add_popularity = {
 				ideology = fascism
-				popularity = 0.4
+				popularity = 0.2
 			}
         }
 	}
@@ -594,7 +603,7 @@ focus_tree = {
            add_political_power = 100
 		   add_popularity = {
 				ideology = fascism
-				popularity = 0.4
+				popularity = 0.2
 			}
         }
 	}
@@ -696,7 +705,13 @@ focus_tree = {
 		cost = 5
 
         completion_reward = {
-           
+			192 = {
+				add_dynamic_modifier = {
+					modifier = ROM_Siege_of_Odessa
+					scope = ROM
+					days = 120
+				}
+			}
         }
 	}
 
@@ -809,7 +824,7 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_The_Navy_of_Greater_Romania }
 		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
 
-		cost = 5
+		cost = 10
 
 		icon = GFX_goal_generic_construct_naval_dockyard
 
@@ -861,7 +876,7 @@ focus_tree = {
 		prerequisite = { focus = ic_ROM_visit_Denitz_in_Romania }
 		relative_position_id = ic_ROM_visit_Denitz_in_Romania
 
-		cost = 5
+		cost = 10
 
 		icon = GFX_focus_GER_trade_interdiction_historical
 
@@ -929,7 +944,7 @@ focus_tree = {
 		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania
 		mutually_exclusive = { focus = ic_ROM_Battleship }
 
-		cost = 5
+		cost = 10
 
 		icon = GFX_focus_generic_destroyer
 
@@ -974,7 +989,7 @@ focus_tree = {
 
 		cost = 5
 
-		icon = GFX_GER_sub
+		icon = GFX_focus_BRA_german_submarine_development
 
         completion_reward = {
            add_tech_bonus = {
@@ -1002,7 +1017,7 @@ focus_tree = {
 		relative_position_id = ic_ROM_The_Navy_of_Greater_Romania 
 		mutually_exclusive = { focus = ic_ROM_destroyers }
 
-		cost = 5
+		cost = 10
 
 		icon = GFX_goal_generic_navy_battleship
 
@@ -1022,10 +1037,16 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = ic_ROM_Battleship }
-		relative_position_id = ic_ROM_Battleship
+		prerequisite = { focus = ic_ROM_radar_and_radio }
+		relative_position_id = ic_ROM_radar_and_radio
 		
 		cost = 5
+		
+		available = {
+			and = {
+					controls_state = 192
+				}
+		}
 
 		icon = GFX_focus_NOR_drobak_coastal_fort
 
@@ -1043,10 +1064,10 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = ic_ROM_school_f_bombing_from_the_sea }
-		relative_position_id = ic_ROM_school_f_bombing_from_the_sea
+		prerequisite = { focus = ic_ROM_Battleship }
+		relative_position_id = ic_ROM_Battleship
 		
-		cost = 5
+		cost = 10
 
 		icon = GFX_goal_generic_radar
 
@@ -1062,6 +1083,12 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category = electronics
+			}
+			46 = {
+				add_building_construction = {
+					type = radar_station
+					level = 5
+				}
 			}
         }
 	}
@@ -1121,8 +1148,8 @@ focus_tree = {
 	focus = {
 		id = ic_ROM_old_friends
 
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 
 		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
 		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
@@ -1133,7 +1160,7 @@ focus_tree = {
 
         completion_reward = {
            	add_political_power = 100
-        	add_stability = 0.1
+        	add_stability = 0.05
         }
 	}
 
@@ -1197,7 +1224,7 @@ focus_tree = {
 		relative_position_id = ic_ROM_The_Balkans_as_a_sphere_of_influence
 		mutually_exclusive = { focus = ic_ROM_Support_for_German_policy }
 		
-		cost = 5
+		cost = 7
 
 		icon = GFX_focus_GER_subdue_the_wehrmacht_historical
 
