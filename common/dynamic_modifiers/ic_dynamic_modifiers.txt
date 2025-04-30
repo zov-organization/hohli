@@ -43,6 +43,7 @@ SOV_summer_defencive_buff = {
 	army_attack_factor = -0.15
 	max_dig_in = 5
 }
+
 SOV_1941_defencive_buff = {
     enable = { always = yes }
 
@@ -68,7 +69,15 @@ GER_summer_offencive_buff = {
 	#no_supply_grace = 168 - wont work
 }
 
+ROM_Siege_of_Odessa = {
+    enable = { always = yes }
 
+    #icon = 
+
+    attacker_modifier = yes
+
+    army_attack_factor = 0.075
+}
 
 ic_refinery_lightly_damaged_modifier = {
 	enable = { always = yes }

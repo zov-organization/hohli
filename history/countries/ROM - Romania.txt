@@ -28,6 +28,7 @@ set_politics = {
 
 recruit_character = ic_ROM_gheorghe_tatarescu		# Country Leaders
 recruit_character = ic_ROM_ion_antonescu
+recruit_character = ic_ROM_octavian_goga
 
 recruit_character = ic_ROM_gheorghe_argeseanu		# Political Advisors
 recruit_character = ic_ROM_armand_calinescu
@@ -42,6 +43,7 @@ recruit_character =	ic_ROM_ioan_antonescu			# Army Chiefs
 
 recruit_character = ic_ROM_horia_macellariu			# Navy Chiefs
 recruit_character = ic_ROM_nicolae_sova
+recruit_character = ic_ROM_karl_donitz
 
 recruit_character = ic_ROM_gheorghe_avramescu		# High Command
 recruit_character = ic_ROM_gheorghe_mihail
@@ -50,11 +52,9 @@ recruit_character = ic_ROM_petre_dumitrescu
 recruit_character = ic_ROM_ioan_mihail_racovita		# Generals
 
 # questionable
-recruit_character = ROM_octavian_goga
 recruit_character = ROM_corneliu_codreanu
 recruit_character = ROM_king_michael
 
-recruit_character = ic_ROM_karl_donitz
 
 
 add_ideas = {

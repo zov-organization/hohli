@@ -49,7 +49,7 @@ ROM_cugir_organization = {
 		}
 
 		equipment_bonus = {
-			build_cost_ic = -0.1
+			build_cost_ic = -0.05
 		}
 	}
 	add_trait = {
@@ -93,7 +93,7 @@ ROM_resita_works_organization = {
 		}
 
 		equipment_bonus = {
-			build_cost_ic = -0.1
+			build_cost_ic = -0.05
 		}
 	}
 }

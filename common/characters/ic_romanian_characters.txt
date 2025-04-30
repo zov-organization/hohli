@@ -39,6 +39,21 @@ characters = {
 		}
 	}
 
+	ic_ROM_octavian_goga={
+		name=ROM_octavian_goga
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_octavian_goga"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ anti_democrat }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	
 	# Political advisors
 	
@@ -380,5 +395,6 @@ characters = {
 			legacy_id=-1
 		}
 	}
+
 
 }
