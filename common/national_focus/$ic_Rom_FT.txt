@@ -1116,10 +1116,10 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_yugoslavia
 
         completion_reward = {
-           declare_war_on = {
-					target = YUG
-					type = annex_everything
-				}
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
         }
 	}
 	
@@ -1143,9 +1143,9 @@ focus_tree = {
 
         completion_reward = {
            declare_war_on = {
-					target = GRE
-					type = annex_everything
-				}
+				target = GRE
+				type = annex_everything
+			}
         }
 	}
 
