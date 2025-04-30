@@ -194,52 +194,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_Modern_artillery
-
-		x = 1
-		y = 1
-
-		prerequisite = { focus = ic_ROM_The_Hungarian_Romanian_War }
-		relative_position_id = ic_ROM_The_Hungarian_Romanian_War
-
-		cost = 5
-
-		icon = GFX_goal_generic_army_artillery2
-
-        completion_reward = {
-           add_tech_bonus = {
-				name = GER_army_expansion_two
-				bonus = 0.5
-				uses = 5
-				category = artillery
-			}
-        }
-	}
-
-	focus = {
-		id = ic_ROM_Modern_automatic_machine
-
-		x = 1
-		y = 1
-
-		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
-		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
-
-		cost = 5
-
-		icon = GFX_ROM_weapons
-
-        completion_reward = {
-           add_tech_bonus = {
-				name = ROM_inf_one
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-        }
-	}
-
-	focus = {
 		id = ic_ROM_The_Navy_of_Greater_Romania
 
 		x = 4
@@ -539,6 +493,52 @@ focus_tree = {
         completion_reward = {
            remove_ideas = ic_Ground_forces_Romania3
 		   add_ideas = ic_ROM_The_true_descendants_of_the_Romans
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_automatic_machine
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_true_descendants_of_the_Romans }
+		relative_position_id = ic_ROM_The_true_descendants_of_the_Romans
+
+		cost = 5
+
+		icon = GFX_ROM_weapons
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = ROM_inf_one
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_Modern_artillery
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_The_Hungarian_Romanian_War }
+		relative_position_id = ic_ROM_The_Hungarian_Romanian_War
+
+		cost = 5
+
+		icon = GFX_goal_generic_army_artillery2
+
+        completion_reward = {
+           add_tech_bonus = {
+				name = GER_army_expansion_two
+				bonus = 0.5
+				uses = 5
+				category = artillery
+			}
         }
 	}
 
@@ -1034,32 +1034,6 @@ focus_tree = {
 			}
         }
 	}
-	focus = {
-		id = ic_ROM_school_f_bombing_from_the_sea
-
-		x = 0
-		y = 1
-
-		prerequisite = { focus = ic_ROM_radar_and_radio }
-		relative_position_id = ic_ROM_radar_and_radio
-		
-		cost = 5
-		
-		available = {
-			and = {
-					controls_state = 192
-				}
-		}
-
-		icon = GFX_focus_NOR_drobak_coastal_fort
-
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = ic_ROM_The_Navy_of_Greater_Romania	
-           	add_idea = ic_ROM_school_f_bombing_from_the_sea
-			}
-        }
-	}
 
 	focus = {
 		id = ic_ROM_radar_and_radio
@@ -1092,6 +1066,33 @@ focus_tree = {
 					type = radar_station
 					level = 5
 				}
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_school_f_bombing_from_the_sea
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_ROM_radar_and_radio }
+		relative_position_id = ic_ROM_radar_and_radio
+		
+		cost = 5
+		
+		available = {
+			and = {
+					controls_state = 192
+				}
+		}
+
+		icon = GFX_focus_NOR_drobak_coastal_fort
+
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = ic_ROM_The_Navy_of_Greater_Romania	
+           	add_idea = ic_ROM_school_f_bombing_from_the_sea
 			}
         }
 	}
