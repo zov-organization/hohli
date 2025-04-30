@@ -58,7 +58,7 @@ recruit_character = ROM_king_michael
 
 
 add_ideas = {
-	partial_economic_mobilisation
+	low_economic_mobilisation
 	ROM_king_carol_ii_hedonist
 	ic_Ground_forces_Romania
 	ic_ROM_collapse_of_AusHun

@@ -404,50 +404,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ROM_German_MP38_and_MG34
-
-		x = 1
-		y = 1
-
-		prerequisite = { focus = ic_ROM_Modern_automatic_machine}
-		relative_position_id = ic_ROM_Modern_automatic_machine
-
-		cost = 5
-
-		icon = GFX_focus_GER_gebirgsjager
-
-        completion_reward = {
-			mio:ROM_cugir_organization = {
-				complete_mio_trait = {
-					trait = ROM_mio_mp34_mp40
-				}
-			}
-        }
-	}
-
-	focus = {
-		id = ic_ROM_German_leFH18
-
-		x = 1
-		y = 1
-
-		prerequisite = { focus = ic_ROM_Modern_artillery }
-		relative_position_id = ic_ROM_Modern_artillery
-
-		cost = 5
-
-		icon = GFX_focus_SMB_mountain_guns
-
-        completion_reward = {
-			mio:ROM_resita_works_organization = {
-				complete_mio_trait = {
-					trait = ROM_mio_German_leFH18
-				}
-			}
-        }
-	}
-
-	focus = {
 		id = ic_ROM_The_Hungarian_Romanian_War
 
 		x = -1
@@ -520,6 +476,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ic_ROM_German_MP38_and_MG34
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_automatic_machine}
+		relative_position_id = ic_ROM_Modern_automatic_machine
+
+		cost = 5
+
+		icon = GFX_focus_GER_gebirgsjager
+
+        completion_reward = {
+			mio:ROM_cugir_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_mp34_mp40
+				}
+			}
+        }
+	}
+
+	focus = {
 		id = ic_ROM_Modern_artillery
 
 		x = 1
@@ -538,6 +516,28 @@ focus_tree = {
 				bonus = 0.5
 				uses = 5
 				category = artillery
+			}
+        }
+	}
+
+	focus = {
+		id = ic_ROM_German_leFH18
+
+		x = 1
+		y = 1
+
+		prerequisite = { focus = ic_ROM_Modern_artillery }
+		relative_position_id = ic_ROM_Modern_artillery
+
+		cost = 5
+
+		icon = GFX_focus_SMB_mountain_guns
+
+        completion_reward = {
+			mio:ROM_resita_works_organization = {
+				complete_mio_trait = {
+					trait = ROM_mio_German_leFH18
+				}
 			}
         }
 	}
