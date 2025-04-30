@@ -54,3 +54,24 @@ country_event = {
 		name = ic_news.2.a
 	}
 }
+
+
+news_event = {
+	# Soviet bombing of Berlin
+	id = ic_news.3
+	title = ic_news.3.t
+	desc = ic_news.3.d
+	picture = GFX_news_podarok_gitleru
+	
+	major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = has_successfully_bombed_berlin
+	}
+
+
+	option = {
+		name = ic_news.3.a
+	}
+}

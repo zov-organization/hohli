@@ -30,6 +30,12 @@
  ic_news.2.d:0 ""
  ic_news.2.a:0 "And so it begins..."
  
+ ic_news.3.t:0 "Bombing of Berlin! Who?"
+ ic_news.3.d:0 " Today german Imperial Ministry of Public Enlightenment and Propaganda published new radio report: "On the night of [GetDateText], large forces of English aviation, 150 aircraft in total, attempted to bomb our capital... Of the 15 aircraft that broke through to the city, 9 were shot down".\n However BBC replied soon after: "The German report of the bombing of Berlin is interesting and mysterious, since on [GetDateText], the British aviation did not fly over Berlin".\n Soviet "Izvestiya" magazine wrote: "The bombing resulted in fires and explosions. All our aircraft returned to their bases without losses"."
+ ic_news.3.a:0 "Defentely, Soviet Bear wont fall witout a fight!"
+
+
+
  
  
  # ic_sov_events
