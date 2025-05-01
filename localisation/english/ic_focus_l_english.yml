@@ -106,8 +106,8 @@ SOV_aviadoka_2:0 "China volunteers experience"
 SOV_aviadoka_2_desc:0 ""
 SOV_novikov:0 "Put Novikov in charge"
 SOV_novikov_desc:0 ""
-SOV_wow:0 "Great Patriotic War"
-SOV_wow_desc:0 ""
+SOV_VOV:0 "Great Patriotic War"
+SOV_VOV_desc:0 ""
 
 
 GER_initial_focus:0 "Rhineland Remilitarization"

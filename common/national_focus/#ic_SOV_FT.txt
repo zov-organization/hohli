@@ -1565,12 +1565,12 @@ focus_tree = {
 	}
 
 
-	# WOW
+	# VOV - Velikaya Otechestvennaya Voyna
 
 	focus = {
-		id = SOV_wow
+		id = SOV_VOV
 
-		icon = GFX_SOV_wow
+		icon = GFX_SOV_VOV
 
 		prerequisite = { focus = SOV_steel focus = SOV_aluminum focus = SOV_rubber_2 focus = SOV_forts focus = SOV_new_infantry focus = SOV_kv_1 focus = SOV_novikov }
 		relative_position_id = SOV_forts
@@ -1599,14 +1599,38 @@ focus_tree = {
 			#activate_mission = SOV_evacuate_soviet_military_industry_mission
 		}
 	}
+	focus = {	# This focus is a workaround to make the event fire only once
+		id = SOV_bombing_of_berlin
+
+		icon = GFX_SOV_VOV
+
+		prerequisite = { focus = SOV_VOV }
+		relative_position_id = SOV_VOV
+
+		x = -3
+		y = 1
+		cost = 0
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		completion_reward = {
+		
+			SOV = {
+				news_event = ic_news.3
+			}
+
+		}
+	}
 
 	focus = {
 		id = SOV_snyatie_debaffov_i_gen
 
 		icon = GFX_goal_generic_cavalry
 
-		prerequisite = { focus = SOV_wow }
-		relative_position_id = SOV_wow
+		prerequisite = { focus = SOV_VOV }
+		relative_position_id = SOV_VOV
 
 		x = 0
 		y = 1
@@ -1802,7 +1826,7 @@ focus_tree = {
 	focus = {
 		id = SOV_dobicha_rezini
 
-		icon = GFX_SOV_wow
+		icon = GFX_SOV_VOV
 
 		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
 		relative_position_id = SOV_snyatie_debaffov_i_gen

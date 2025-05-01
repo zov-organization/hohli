@@ -1611,11 +1611,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_SOV_wow"
+		name = "GFX_SOV_VOV"
 		texturefile = "gfx/interface/goals/focus_SOV_great_patriotic_war.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_SOV_wow_shine"
+		name = "GFX_SOV_VOV_shine"
 		texturefile = "gfx/interface/goals/focus_SOV_great_patriotic_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

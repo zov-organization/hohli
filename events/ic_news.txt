@@ -62,15 +62,11 @@ news_event = {
 	title = ic_news.3.t
 	desc = ic_news.3.d
 	picture = GFX_news_podarok_gitleru
-	
+
 	major = yes
+
+	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-		has_country_flag = has_successfully_bombed_berlin
-	}
-
-
 	option = {
 		name = ic_news.3.a
 	}

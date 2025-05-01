@@ -1,7 +1,7 @@
 SOV_great_patriotic_war_category = {
     visible = {
         tag = SOV
-        has_completed_focus = SOV_wow
+        has_completed_focus = SOV_VOV
     }
     priority = 100
     icon = GFX_decision_category_picture
@@ -12,7 +12,7 @@ SOV_great_patriotic_war_category = {
 SOV_evac_industry_category = {
     visible = {
         tag = SOV
-		has_completed_focus = SOV_wow
+		has_completed_focus = SOV_VOV
     }
     priority = 70
     icon = GFX_decision_category_picture

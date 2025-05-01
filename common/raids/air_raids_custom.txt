@@ -68,7 +68,10 @@ types = {
 				}
 				actor_effects = {
 					var:actor_country = {
-						set_country_flag = has_successfully_bombed_berlin
+						complete_national_focus = {
+							focus = SOV_bombing_of_berlin
+							use_side_message = no
+						}
 
 						air_experience = 50
 					}

@@ -54,7 +54,7 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_we-ll_be_ready
-				SOV_wow
+				SOV_VOV
 				SOV_stavka_organisation
 			}	
 		}

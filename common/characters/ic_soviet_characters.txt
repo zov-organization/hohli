@@ -130,7 +130,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ic_SOV_yuri_levitan
 			available = {
-				has_completed_focus = SOV_wow
+				has_completed_focus = SOV_VOV
 			}
 			traits = {
 				stalins_horn
