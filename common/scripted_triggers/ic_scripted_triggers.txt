@@ -59,6 +59,50 @@ is_allies = {
 	}
 }
 
+ic_is_african_state = {
+	and = {
+		or = {
+			state = 290
+			state = 461
+			state = 462
+			state = 783
+			state = 513
+			state = 459
+			state = 460
+			state = 458
+			state = 665
+			state = 448
+			state = 661
+			state = 449
+			state = 662
+			state = 450
+			state = 663
+			state = 451
+			state = 452
+			state = 447
+			state = 907
+			state = 453
+			state = 456
+			state = 457
+			state = 883
+			state = 551
+			state = 886
+			state = 549
+			state = 887
+			state = 454
+			state = 455
+			state = 553
+			state = 554
+			state = 677
+			state = 680
+			state = 675
+			state = 676
+			state = 291
+			state = 656
+		}
+	}
+}
+
 ic_jap_chi_war_started = {
 	custom_trigger_tooltip = {
 		tooltip = ic_jap_chi_war_started_tt

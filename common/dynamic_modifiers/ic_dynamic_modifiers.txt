@@ -89,3 +89,10 @@ ic_refinery_damaged_modifier = {
 	icon = GFX_modifiers_sabotaged_resource	
 	state_resources_oil_factor = -0.25
 } 
+
+ic_no_railways_africa = {
+	enable = { always = yes }
+	icon = GFX_ic_no_railways_africa
+	state_production_speed_rail_way_factor = -3
+	state_production_speed_supply_node_factor = -3
+} 

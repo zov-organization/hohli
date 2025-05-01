@@ -81,6 +81,15 @@ on_actions = {
 			ENG = {
 				country_event = { id = ic_eng_events.1 days = 513 }	# 28 may 1937 - Chamberlain become prime minister
 			}
+			
+			every_state = {
+				limit = {
+					ic_is_african_state = yes
+				}
+				add_dynamic_modifier = {
+					modifier = ic_no_railways_africa
+				}
+			}
 
 			every_country = {
 				limit = {
