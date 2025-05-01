@@ -1628,8 +1628,8 @@
 	}
 
 	focus = {
-		id = GER_tiger
-		icon = GFX_GER_tiger
+		id = GER_new_main_tank
+		icon = GFX_GER_new_main_tank
 
 		prerequisite = { focus = GER_fra_cap }
 		relative_position_id = GER_fra_cap
@@ -1638,12 +1638,11 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			army_experience = 50
 			add_tech_bonus = {
-				name = GER_tiger
-				bonus = 0.5
+				name = GER_new_main_tank
+				bonus = 0.75
 				uses = 1
-				technology = improved_heavy_tank_chassis
+				category = cat_medium_armor
 			}
 		}
 	}
@@ -1653,7 +1652,7 @@
 		icon = GFX_GER_battle_for_england
 
 		prerequisite = { focus = GER_fra_cap }
-		relative_position_id = GER_tiger
+		relative_position_id = GER_new_main_tank
 
 		x = -2
 		y = 0
@@ -1765,22 +1764,23 @@
 	}
 
 	focus = {
-		id = GER_new_main_tank
-		icon = GFX_GER_new_main_tank
+		id = GER_tiger
+		icon = GFX_GER_tiger
 
-		prerequisite = { focus = GER_tiger }
+		prerequisite = { focus = GER_new_main_tank }
 		prerequisite = { focus = GER_symbol_of_the_blitzkrieg }
-		relative_position_id = GER_tiger
+		relative_position_id = GER_new_main_tank
 
 		x = 1
 		y = 1
 		cost = 10
 		completion_reward = {
+			army_experience = 50
 			add_tech_bonus = {
-				name = GER_new_main_tank
-				bonus = 0.75
+				name = GER_tiger
+				bonus = 0.5
 				uses = 1
-				category = cat_medium_armor
+				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
@@ -1789,8 +1789,8 @@
 		id = GER_auxiliary_tanks
 		icon = GFX_GER_new_main_tank
 
-		prerequisite = { focus = GER_new_main_tank }
-		relative_position_id = GER_new_main_tank
+		prerequisite = { focus = GER_tiger }
+		relative_position_id = GER_tiger
 
 		x = -2
 		y = 2
@@ -1832,7 +1832,7 @@
 
 		prerequisite = { focus = GER_symbol_of_the_blitzkrieg }
 		prerequisite = { focus = ic_GER_army_innovation }
-		prerequisite = { focus = GER_new_main_tank }
+		prerequisite = { focus = GER_tiger }
 		relative_position_id = GER_symbol_of_the_blitzkrieg
 
 		x = 0

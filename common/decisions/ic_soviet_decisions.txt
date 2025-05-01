@@ -1110,6 +1110,7 @@ SOV_evac_industry_category = {
                     AND = {
                         is_core_of = SOV
 						ic_is_ukranian = yes
+                        is_controlled_by = SOV
 						OR = {
 							arms_factory > 0
 							industrial_complex > 0
@@ -1215,6 +1216,7 @@ SOV_evac_industry_category = {
 						AND = {
 							is_core_of = SOV
 							ic_is_ukranian = yes
+							is_controlled_by = SOV
 							industrial_complex > 0
 						}
 					}
@@ -1290,6 +1292,7 @@ SOV_evac_industry_category = {
 						AND = {
 							is_core_of = SOV
 							ic_is_ukranian = yes
+							is_controlled_by = SOV
 							arms_factory > 0
 						}
 					}
@@ -1317,6 +1320,7 @@ SOV_evac_industry_category = {
                     AND = {
                         #is_core_of = SOV
 						ic_is_sov_from_evac_state = yes
+                        is_controlled_by = SOV
                         OR = {
 		                    arms_factory > 0
 		                    industrial_complex > 0
@@ -1452,6 +1456,7 @@ SOV_evac_industry_category = {
 					any_state = {
 						AND = {
 							ic_is_sov_from_evac_state = yes
+							is_controlled_by = SOV
 							OR = {
 								industrial_complex > 0
 							}
@@ -1543,6 +1548,7 @@ SOV_evac_industry_category = {
 					any_state = {
 						AND = {
 							ic_is_sov_from_evac_state = yes
+							is_controlled_by = SOV
 							OR = {
 								arms_factory > 0
 							}
