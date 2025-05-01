@@ -9,7 +9,7 @@ NDefines.NDiplomacy.WAR_SUPPORT_TENSION_IMPACT = 0.5
 
 -- Country
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
-NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 1
+NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 30.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30.0
 NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = 0
 NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.2
@@ -361,8 +361,8 @@ NDefines.NAir.DISRUPTION_FACTOR = 1  -- vanilla - 4
 NDefines.NAir.ESCORT_FACTOR = 5 -- vanilla - 2
 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.22
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.09   -- air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.09    -- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.033	-- air global damage modifier (almost vanilla)
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.033	-- global damage modifier (almost vanilla)
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5 -- how many CAS/TAC can enter a combat depending on enemy width there
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
