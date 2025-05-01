@@ -648,6 +648,10 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_2
 	supersonic_fighter_equipment_1
 
+	# mod new equipment
+	railway_gun_equipment_stationary_battery
+	railway_gun_equipment_stationary_battery_1
+
 	# error fix
 	heavy_fighter_equipment
 	fighter_equipment

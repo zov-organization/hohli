@@ -1,0 +1,50 @@
+equipments = {
+
+	railway_gun_equipment_stationary_battery = {
+		year = 1936
+
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_artillery_equipment		
+		type = railway_gun
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+
+		#Misc Abilities
+		reliability = 0.7
+		maximum_speed = -20
+
+		#Offensive Abilities
+		railway_gun_attack = 40
+
+		# range is set with an index in define array RAILWAY_GUN_POSSIBLE_RANGES (default is index 0)
+		railway_gun_attack_range_index_in_define = 1
+		
+		manpower = 1500
+
+		lend_lease_cost = 70
+	}
+
+	railway_gun_equipment_stationary_battery_1 = {
+		year = 1934
+
+		archetype = railway_gun_equipment_stationary_battery
+		is_buildable = no
+		priority = 50
+		visual_level = 0
+		active = yes
+
+		#Offensive Abilities
+		railway_gun_attack = 25
+
+		build_cost_ic = 800.0
+		resources = {
+			steel = 4
+			tungsten = 2
+			chromium = 2
+		}
+	}
+}

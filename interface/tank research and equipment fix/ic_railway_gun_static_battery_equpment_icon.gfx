@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	SpriteType = {
+        name = "GFX_railway_gun_equipment_stationary_battery_medium"
+        texturefile = "gfx/interface/technologies/GFX_railway_gun_equipment_stationary_battery_medium.dds"
+    }
+
+}
