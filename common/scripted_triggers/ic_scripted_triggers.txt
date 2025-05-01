@@ -291,15 +291,18 @@ ic_is_sov_from_evac_state = {
 ic_red_hordes_are_coming = {
 	custom_trigger_tooltip = {
 		tooltip = ic_red_hordes_are_coming_tt
+		
 		date > 1942.1.1
-		OR = {
+		count_triggers = {
+			amount = 1
 			SOV = { controls_state = 188 }
-			SOV = { controls_state = 817 }
+			SOV = { controls_state = 763 }
 			SOV = { controls_state = 97 }
 			SOV = { controls_state = 94 }
 			SOV = { controls_state = 93 }
 			SOV = { controls_state = 199 }
 			SOV = { controls_state = 198 }
+			SOV = { controls_state = 834 }
 			SOV = { controls_state = 192 }
 		}
 	}

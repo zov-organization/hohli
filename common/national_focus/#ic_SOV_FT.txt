@@ -769,7 +769,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {}
 
@@ -934,8 +934,7 @@ focus_tree = {
 
 		icon = GFX_ic_SOV_kuznetsov_reforms
 
-		prerequisite = { focus = SOV_navy_two }
-		prerequisite = { focus = SOV_navy_three }
+		prerequisite = { focus = SOV_navy_two focus = SOV_navy_three }
 		relative_position_id = SOV_navy_three
 
 		x = -1
@@ -1232,7 +1231,7 @@ focus_tree = {
 
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 
