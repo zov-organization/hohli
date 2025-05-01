@@ -600,6 +600,112 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_war_with_fin
+
+		icon = GFX_SOV_propaganda
+
+		prerequisite = { focus = SOV_propaganda }
+		relative_position_id = SOV_propaganda
+
+		x = 1
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+
+		completion_reward = {
+			SOV = {
+                every_state = {
+				    limit = {
+					    OR = {
+						    state = 722
+						    state = 147
+                            state = 146
+                            
+						    state = 96
+                            state = 784
+                            state = 95
+                            state = 97
+                            state = 94
+                            state = 93
+                            state = 91
+                            state = 89
+                        }
+				    }
+                    transfer_state_to = SOV
+			    }
+			}
+		}
+	}
+	focus = {
+		id = SOV_take_pribaltika
+
+		icon = GFX_SOV_propaganda
+
+		prerequisite = { focus = SOV_war_with_fin }
+		relative_position_id = SOV_war_with_fin
+
+		x = 1
+		y = 1
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			SOV = {
+                annex_country = {
+                    target = LIT
+                }
+                 annex_country = {
+                    target = LAT
+                }
+                 annex_country = {
+                    target = EST
+                }
+			}
+			188 = {
+                transfer_state_to = GER
+			}
+		}
+	}
+	focus = {
+		id = SOV_take_bessarabia
+
+		icon = GFX_SOV_propaganda
+
+		prerequisite = { focus = SOV_take_pribaltika }
+		relative_position_id = SOV_take_pribaltika
+
+		x = 0
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+
+		completion_reward = {
+			SOV = {
+                every_state = {
+				    limit = {
+					    OR = {
+                            state = 80
+                            state = 78
+                            state = 766
+                        }
+				    }
+                    transfer_state_to = SOV
+			    }
+			}
+			
+		}
+	}
+
+	focus = {
 		id = SOV_scientific_reborn
 
 		icon = GFX_SOV_scientific_reborn
@@ -1470,7 +1576,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
                 type = medium_plane_airframe
-                amount = 500
+                amount = 250
                 producer = SOV
             }
 

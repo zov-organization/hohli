@@ -1853,9 +1853,7 @@
 		relative_position_id = GER_change_direction
 		
 		available = { 
-			SOV = {
-				has_completed_focus = SOV_accelerate_industry_focus
-			}
+			ic_ger_spy_planes_caught = yes
             NOT = {
 			    has_active_mission = GER_send_scout_planes_mission
             }

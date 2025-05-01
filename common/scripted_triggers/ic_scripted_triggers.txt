@@ -72,7 +72,7 @@ ic_ger_spy_planes_caught = {
 	custom_trigger_tooltip = {
 		tooltip = ic_ger_spy_planes_caught_tt
 		GER = {
-			has_active_mission = GER_send_scout_planes_mission
+			has_country_flag = GER_sent_scout_planes
 		}
 	}
 }

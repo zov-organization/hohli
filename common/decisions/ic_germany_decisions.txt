@@ -9,6 +9,7 @@ GER_barb_category = {
 
         complete_effect = {
             activate_mission = GER_send_scout_planes_mission
+            set_country_flag = GER_sent_scout_planes
             news_event = ic_news.1
         } 
     }
