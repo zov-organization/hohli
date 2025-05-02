@@ -278,12 +278,8 @@ governments_in_exile = {
 			has_dlc = "By Blood Alone"
 		}
 	}
-
-	visible = {
-		NOT = {
-			has_completed_focus = NOR_the_kings_no 
-		}
-	}
+	
+	visible = { hidden_trigger = { always = no } }
 
 	priority = 7
 }
@@ -298,6 +294,7 @@ category_exile_forces = {
 			has_dlc = "By Blood Alone"
 		}
 	}
+	visible = { hidden_trigger = { always = no } }
 	priority = 6
 }
 category_test_decisions = {

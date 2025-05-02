@@ -397,8 +397,8 @@ ENG_main_category = {
         timeout_effect = {
             add_equipment_to_stockpile = {
                 type = medium_plane_airframe
-                amount = 40
-                producer = EMG
+                amount = 20
+                producer = ENG
             }
             activate_mission = ENG_start_tact_bomber_production_mission
         }

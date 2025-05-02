@@ -530,6 +530,10 @@
 			add_ideas = {
 				ic_ural_bomber
 			}
+			set_technology = {
+				basic_medium_airframe = 1
+				popup = yes
+			}
 		}
 	}
 
@@ -1658,12 +1662,31 @@
 		y = 0
 		cost = 10
 		completion_reward = {
-			unlock_decision_tooltip = GER_start_tact_bomber_production
+		
+			create_equipment_variant = {
+				name = "He-111"
+				type = medium_plane_airframe_1
+				design_team = mio:GER_messerschmitt_organization
+				modules = {
+					fixed_main_weapon_slot = large_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+					fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+					fixed_auxiliary_weapon_slot_3 = large_bomb_bay
+					engine_type_slot = engine_2_2x
+					special_type_slot_1 = armor_plate_medium
+					special_type_slot_2 = armor_plate_medium
+					special_type_slot_3 = self_sealing_fuel_tanks_medium
+				}
+			}
 			add_equipment_to_stockpile = {
-                type = medium_plane_airframe
-                amount = 200
-                producer = GER
-            }
+				type = medium_plane_airframe
+				amount = 200
+				producer = GER
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			unlock_decision_tooltip = GER_start_tact_bomber_production
 			15 = {
 				add_building_construction = {
 					type = radar_station

@@ -184,9 +184,9 @@ ideas = {
 
 			modifier = {
 				political_power_factor = -0.1
-				production_factory_max_efficiency_factor = 0.07
+				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
-				consumer_goods_expected_value = -0.02
+				consumer_goods_expected_value = -0.01
 			}
 		}
 
@@ -265,9 +265,10 @@ ideas = {
 				political_power_factor = -0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.15
-				consumer_goods_expected_value = -0.025
+				consumer_goods_expected_value = -0.015
 				global_building_slots = 5
-				industry_free_repair_factor = 0.25
+				industry_free_repair_factor = 25
+				industry_repair_factor = 25
 			}
 		}
 
@@ -284,7 +285,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.2
 				political_power_factor = -0.3
 			}
 		}

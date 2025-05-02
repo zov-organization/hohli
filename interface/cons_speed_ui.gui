@@ -33,8 +33,18 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "air_base_speed"   
+			name = "synthetic_refinery_speed"   
 			position = { x = 442 y = -66 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "air_base_speed"   
+			position = { x = 488 y = -66 } # 369
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_air_base_factor|%0=+]"	   
 			maxWidth = 50  
@@ -42,9 +52,10 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
+		
 		instantTextBoxType = {
 			name = "anti_air_building_speed"   
-			position = { x = 488 y = -66 } # 369
+			position = { x = 534 y = -66 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_anti_air_building_factor|%0=+]"	   
 			maxWidth = 50  
@@ -52,23 +63,12 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
-		
-		instantTextBoxType = {
-			name = "radar_station_speed"   
-			position = { x = 534 y = -66 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_radar_station_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
 
 		instantTextBoxType = {
-			name = "synthetic_refinery_speed"   
+			name = "radar_station_speed"   
 			position = { x = 396 y = -23 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
+			text = "[?modifier@production_speed_radar_station_factor|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -99,7 +99,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "dockyard_speed"   
-			position = { x = 534 y = 66 } 
+			position = { x = 488 y = 66 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_dockyard_factor|%0=+]"	   
 			maxWidth = 50  
@@ -110,7 +110,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "fuel_silo_speed"   
-			position = { x = 396 y = 109 } 
+			position = { x = 534 y = 109 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
 			maxWidth = 50  

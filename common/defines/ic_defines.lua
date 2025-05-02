@@ -288,7 +288,7 @@ NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 3.0 -- makes redeployement of fighter
 NDefines.NAir.CAPACITY_PENALTY = 3.3 -- 33% Airfield overstack Penalty (from 20%)
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 500.0 -- Disables ground crews. They're cancerous. 
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.0
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05 -- Vanilla = 1
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1 -- Vanilla = 1
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1.5
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
@@ -296,13 +296,12 @@ NDefines.NAir.AIR_WING_MAX_SIZE = 3200
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.5
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.18 -- -0.12 vanilla, per level AA state, so -90% in total
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 20.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
-NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6
-NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.5  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
@@ -360,10 +359,9 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0
 --- AA and CAS defines:
 
 --- TWO MOST IMPORTANT CAS DEFINES
--- basically, what it says, is that cas will work even with red air and while being disturbed, but will give a little less ground attack at last. 
-NDefines.NAir.DISRUPTION_FACTOR = 1  -- vanilla - 4
--- here we state that escorted cas will work kinda better and will suffer less losses
-NDefines.NAir.ESCORT_FACTOR = 5 -- vanilla - 2
+NDefines.NAir.DISRUPTION_FACTOR = 4  -- vanilla - 4
+NDefines.NAir.ESCORT_FACTOR = 2 -- vanilla - 2
+-- yeah for some reason vanilla does it the best lol
 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.22
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.033	-- air global damage modifier (almost vanilla)
@@ -373,11 +371,15 @@ NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to de
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 
 --- Tacts, strats - bombing defines
-
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 2	--vanilla - 2
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0
+NDefines.NAir.BOMBING_PROV_BUILD_PRIO_SCALE = 200
+NDefines.NAir.BOMBING_STATE_BUILD_PRIO_SCALE = 200
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.888
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.888
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.888
+
+NDefines.NAir.MAX_QUICK_WING_SELECTION = 5
 
 --Focus
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
