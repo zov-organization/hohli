@@ -132,10 +132,10 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trickster trait_engineer organizer panzer_leader combined_arms_expert ranger fortress_buster urban_assault_specialist adaptable }
+			traits={ trickster trait_engineer organizer panzer_leader combined_arms_expert ranger fortress_buster urban_assault_specialist }
 			skill=4
-			attack_skill=3
-			defense_skill=3
+			attack_skill=4
+			defense_skill=4
 			planning_skill=6
 			logistics_skill=4
 		}
@@ -393,12 +393,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine urban_assault_specialist }
+			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
 			skill=3
-			attack_skill=2
+			attack_skill=3
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
+			planning_skill=4
+			logistics_skill=4
 		}
 	}
 

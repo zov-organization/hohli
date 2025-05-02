@@ -1,0 +1,3 @@
+﻿l_english:
+ PRODUCTION_CONSUMER_GOODS_DESC:2 "With our current Economic Policy, the people expect $PERCENTAGE|H1%$ of our $TOTAL_FACTORIES|H$ Civilian and Military Factories to produce Consumer Goods. This need is filled by our $GENERAL_FACTORIES|H$ Civilian Factories, leaving us with $OPERATIONAL|H$ factories where $TRADE_USABLE|H$ can be used for trade."
+ 

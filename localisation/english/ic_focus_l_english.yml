@@ -109,6 +109,10 @@ SOV_novikov_desc:0 ""
 SOV_VOV:0 "Great Patriotic War"
 SOV_VOV_desc:0 ""
 
+SOV_further_back_defence_of_stalingrad_tt:0 "§RGerman offencive on Stalingrad is over§!."
+SOV_further_back_defence_of_moscow_tt:0 "§RGerman offencive on Moscow is over§!."
+SOV_further_back_defence_tt:0 "If §Cyear is 1942§!, then: §YAfter 1:00, 1 Oct, 1942§!.\n   If §Cyear is 1943§!, then: §YAfter 1:00, 1 Oct, 1943§!."
+
 
 GER_initial_focus:0 "Rhineland Remilitarization"
 GER_versailles_break_down:0 "Break Versailles Bonds"

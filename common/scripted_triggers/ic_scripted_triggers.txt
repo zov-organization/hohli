@@ -368,11 +368,11 @@ ic_german_offencive_prep_date = {
 		tooltip = ic_german_offencive_prep_date_tt
         or = {
             and = {
-                date < 1942.05.01
+                date < 1942.09.01
                 date > 1942.02.01
             }
             and = {
-                date < 1943.05.01
+                date < 1943.09.01
                 date > 1943.02.01
             }
         }

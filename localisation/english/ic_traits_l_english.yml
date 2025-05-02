@@ -1,4 +1,16 @@
 ﻿l_english:
+ 
+	plus_one_attack_1:0 "§G+1§! £attack_texticon Attack."
+	plus_one_attack_2:0 "§G+1§! £attack_texticon Attack."
+	plus_one_attack_3:0 "§G+1§! £attack_texticon Attack."
+	plus_one_attack_4:0 "§G+1§! £attack_texticon Attack."
+	plus_one_attack_5:0 "§G+1§! £attack_texticon Attack."
+	plus_one_defense_1:0 "§G+1§! £defence_texticon Defense."
+	plus_one_defense_2:0 "§G+1§! £defence_texticon Defense."
+	plus_one_defense_3:0 "§G+1§! £defence_texticon Defense."
+	plus_one_defense_4:0 "§G+1§! £defence_texticon Defense."
+	plus_one_defense_5:0 "§G+1§! £defence_texticon Defense."
+
 
  air_chief_reform_4:0 "Air Reformer\n(Esporter)"
  air_chief_safety_4:0 "Air Safety\n(Esporter)"

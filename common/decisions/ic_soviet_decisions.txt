@@ -1049,7 +1049,7 @@ SOV_accelerate_industry = {
         days_remove = 90
         modifier = {}
         remove_effect = {
-			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.08	tooltip = SOV_accelerate_industry_growth_tt }
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.03	tooltip = SOV_accelerate_industry_growth_tt }
         }
     }
 	SOV_accelerate_industry_base = {

@@ -7,4 +7,47 @@ spriteTypes = {
 		name = "GFX_ic_scientist_trait_aircraft_genius"
 		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_aircraft_specialist.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_trait_plus_one_attack_1"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_attack_2"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_attack_3"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_attack_4"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_attack_5"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_plus_one_defense_1"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_defense_2"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_defense_3"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_defense_4"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_plus_one_defense_5"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+
 }

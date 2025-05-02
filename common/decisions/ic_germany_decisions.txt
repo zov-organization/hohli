@@ -279,7 +279,9 @@ GER_barb_category = {
         icon = GFX_decision_generic_tank
 
         available = {
-			hidden_trigger = { always = no }
+            SOV = {
+                NOT = { has_full_control_of_state = 219 }
+            }
 		}
 
         activation = {
@@ -290,16 +292,13 @@ GER_barb_category = {
         is_good = no
 
         fire_only_once = yes
-        cancel_trigger = {
-            SOV = {
-                NOT = { has_full_control_of_state = 219 }
-            }
-        }
 
-		days_mission_timeout = 120
-        complete_effect = { }
+		days_mission_timeout = 30
+        complete_effect = {
+            set_country_flag = won_offencive_on_moscau
+        }
         timeout_effect = {
-            #pass
+            set_country_flag = lost_offencive_on_moscau
         }
     }
 
@@ -379,7 +378,9 @@ GER_barb_category = {
         icon = GFX_decision_generic_tank
 
         available = {
-			hidden_trigger = { always = no }
+            SOV = {
+                NOT = { has_full_control_of_state = 217 }
+            }
 		}
 
         activation = {
@@ -390,16 +391,14 @@ GER_barb_category = {
         is_good = no
 
         fire_only_once = yes
-        cancel_trigger = {
-            SOV = {
-                NOT = { has_full_control_of_state = 217 }
-            }
-        }
 
-		days_mission_timeout = 120
-        complete_effect = { }
+		days_mission_timeout = 30
+        complete_effect = {
+            set_country_flag = won_offencive_on_stalingrad
+        }
         timeout_effect = {
             add_ideas = GER_6th_army_destruction
+            set_country_flag = lost_offencive_on_stalingrad
         }
     }
 

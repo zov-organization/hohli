@@ -68,27 +68,6 @@ leader_traits = {
 			max_dig_in = 1
 		}
 		
-		non_shared_modifier = {
-			experience_gain_factor = -0.25
-		}
-
-		new_commander_weight = {
-			factor = 1
-
-			modifier = {
-				FROM = { has_idea = best_of_the_best_spirit }
-				factor = 0
-			}
-			modifier = {
-				FROM = { has_idea = academy_scholarships_spirit }
-				factor = 0
-			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-		}
-		
 	}
 	
 	
@@ -3620,6 +3599,80 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0
 		}
+	}
+
+	
+	
+	plus_one_attack_1 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		attack_skill = 1
+	}
+	plus_one_attack_2 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		attack_skill = 1
+	}
+	plus_one_attack_3 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		attack_skill = 1
+	}
+	plus_one_attack_4 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		attack_skill = 1
+	}
+	plus_one_attack_5 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		attack_skill = 1
+	}
+	
+	plus_one_defense_1 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		defense_skill = 1
+	}
+	plus_one_defense_2 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		defense_skill = 1
+	}
+	plus_one_defense_3 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		defense_skill = 1
+	}
+	plus_one_defense_4 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		defense_skill = 1
+	}
+	plus_one_defense_5 = { 
+		type = land
+		trait_type = personality_trait
+		
+		show_in_combat = no
+		defense_skill = 1
 	}
 
 }

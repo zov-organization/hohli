@@ -1730,7 +1730,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_snyatie_debaffov_i_gen
+		id = SOV_snyatie_debaffov_1
 
 		icon = GFX_goal_generic_cavalry
 
@@ -1748,14 +1748,6 @@ focus_tree = {
 				remove_idea = SOV_red_army
 				add_idea = SOV_red_army_2
 			}
-			ic_SOV_konstantin_rokossovsky = {
-				add_unit_leader_trait = trait_engineer
-				add_unit_leader_trait = panzer_leader
-				add_unit_leader_trait = adaptable 
-				add_unit_leader_trait = fortress_buster
-				add_unit_leader_trait = urban_assault_specialist
-			}
-
 		}
 	}
 
@@ -1764,8 +1756,8 @@ focus_tree = {
 
 		icon = GFX_goal_generic_fortify_city
 
-		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
-		relative_position_id = SOV_snyatie_debaffov_i_gen
+		prerequisite = { focus = SOV_snyatie_debaffov_1 }
+		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = -2
 		y = 1
@@ -1784,7 +1776,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_military_high_command
+			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = ic_SOV_georgy_zhukov
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1808,7 +1800,50 @@ focus_tree = {
 		cost = 3
 
 		available = {
-            ic_german_offencive_prep_date = yes
+			217 = {
+				not = {
+					has_dynamic_modifier = {
+						modifier = SOV_summer_defencive_buff
+						scope = SOV
+					}
+				}
+			}
+            or = {
+			
+				custom_trigger_tooltip = {
+					tooltip = SOV_further_back_defence_of_moscow_tt
+					or = {
+						GER = { has_active_mission = GER_summer_offencive_moscau_mission }
+						GER = { has_country_flag = won_offencive_on_moscau }
+						GER = { has_country_flag = lost_offencive_on_moscau }
+					}
+				}
+
+				# IF year is 1942:
+				#	after october 1942
+				# ELSE IF year is 1943:
+				#	after october 1943
+				custom_trigger_tooltip = {
+					tooltip = SOV_further_back_defence_tt
+
+					if = {
+						limit = {
+							date > 1942.01.01
+							date < 1943.01.01
+						}
+						date > 1942.10.01
+					}
+					else_if = {
+						limit = {
+							date > 1943.01.01
+							date < 1944.01.01
+						}
+						date > 1943.10.01
+					}
+
+				}
+
+			}
 		}
 
 		continue_if_invalid = yes
@@ -1826,6 +1861,50 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SOV_moscow_our
+
+		icon = GFX_goal_generic_fortify_city
+
+		prerequisite = { focus = SOV_further_back_defence_of_moscow }
+		relative_position_id = SOV_further_back_defence_of_moscow
+
+		x = 0
+		y = 1
+		cost = 3
+
+		available = {
+			219 = {
+				not = {
+					has_dynamic_modifier = {
+						modifier = SOV_summer_defencive_buff
+						scope = SOV
+					}
+				}
+			}
+		}
+
+		continue_if_invalid = yes
+
+		completion_reward = {
+
+			ic_SOV_nikolay_vatutin = {
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			ic_SOV_georgy_zhukov = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			ic_SOV_mihail_katukov = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+				add_unit_leader_trait = organizer
+				add_unit_leader_trait = thorough_planner
+				add_unit_leader_trait = ranger
+			}
+
+		}
+	}
 
 	focus = {
 		id = SOV_further_back_defence_of_stalingrad
@@ -1840,7 +1919,51 @@ focus_tree = {
 		cost = 3
 
 		available = {
-            ic_german_offencive_prep_date = yes
+			219 = {
+				not = {
+					has_dynamic_modifier = {
+						modifier = SOV_summer_defencive_buff
+						scope = SOV
+					}
+				}
+			}
+            or = {
+
+				custom_trigger_tooltip = {
+					tooltip = SOV_further_back_defence_of_stalingrad_tt
+					or = {
+						GER = { has_active_mission = GER_summer_offencive_stalingrad_mission }
+						GER = { has_country_flag = won_offencive_on_stalingrad }
+						GER = { has_country_flag = lost_offencive_on_stalingrad }
+					}
+				}
+
+				# IF year is 1942:
+				#	after october 1942
+				# ELSE IF year is 1943:
+				#	after october 1943
+
+				custom_trigger_tooltip = {
+					tooltip = SOV_further_back_defence_tt
+
+					if = {
+						limit = {
+							date > 1942.01.01
+							date < 1943.01.01
+						}
+						date > 1942.10.01
+					}
+					else_if = {
+						limit = {
+							date > 1943.01.01
+							date < 1944.01.01
+						}
+						date > 1943.10.01
+					}
+
+				}
+
+			}
 		}
 
 		continue_if_invalid = yes
@@ -1858,14 +1981,59 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SOV_stalingrad_our
+
+		icon = GFX_goal_generic_fortify_city
+
+		prerequisite = { focus = SOV_further_back_defence_of_stalingrad }
+		relative_position_id = SOV_further_back_defence_of_stalingrad
+
+		x = 0
+		y = 1
+		cost = 3
+
+		available = {
+			217 = {
+				not = {
+					has_dynamic_modifier = {
+						modifier = SOV_summer_defencive_buff
+						scope = SOV
+					}
+				}
+			}
+		}
+
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
+			
+			ic_SOV_nikolay_vatutin = {
+				add_unit_leader_trait = plus_one_defense_2
+			}
+			ic_SOV_georgy_zhukov = {
+				add_unit_leader_trait = plus_one_attack_2
+				add_unit_leader_trait = plus_one_defense_2
+			}
+			ic_SOV_mihail_katukov = {
+				add_unit_leader_trait = plus_one_attack_2
+				add_unit_leader_trait = plus_one_defense_2
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
+			}
+
+		}
+	}
 
 	focus = {
-		id = SOV_minus_debuff
+		id = SOV_snyatie_debaffov_2
 
 		icon = GFX_goal_generic_cavalry
 
-		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
-		relative_position_id = SOV_snyatie_debaffov_i_gen
+		prerequisite = { focus = SOV_snyatie_debaffov_1 }
+		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = 0
 		y = 2
@@ -1886,8 +2054,8 @@ focus_tree = {
 
 		icon = GFX_focus_generic_socialist_science
 
-		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
-		relative_position_id = SOV_snyatie_debaffov_i_gen
+		prerequisite = { focus = SOV_snyatie_debaffov_1 }
+		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = 3
 		y = 1
@@ -1933,8 +2101,8 @@ focus_tree = {
 
 		icon = GFX_SOV_VOV
 
-		prerequisite = { focus = SOV_snyatie_debaffov_i_gen }
-		relative_position_id = SOV_snyatie_debaffov_i_gen
+		prerequisite = { focus = SOV_snyatie_debaffov_1 }
+		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = 6
 		y = 1
@@ -2019,8 +2187,8 @@ focus_tree = {
 
 		icon = GFX_SOV_forts
 
-		prerequisite = { focus = SOV_minus_debuff focus = SOV_skidka_na_tank }
-		relative_position_id = SOV_minus_debuff
+		prerequisite = { focus = SOV_snyatie_debaffov_2 focus = SOV_skidka_na_tank }
+		relative_position_id = SOV_snyatie_debaffov_2
 
 		x = 1
 		y = 1
@@ -2045,7 +2213,8 @@ focus_tree = {
 		
 		prerequisite = { focus = SOV_oust_nazi }
 		prerequisite = { focus = SOV_goy_da_rokossovskii }
-		prerequisite = { focus = SOV_minus_debuff }
+		prerequisite = { focus = SOV_snyatie_debaffov_2 }
+		prerequisite = { focus = SOV_moscow_our focus = SOV_stalingrad_our }
 		relative_position_id = SOV_goy_da_rokossovskii
 
 		x = -2
@@ -2072,6 +2241,18 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_red_army_3
 				add_idea = SOV_red_army_4
+			}
+			
+			ic_SOV_nikolay_vatutin = {
+				add_unit_leader_trait = plus_one_attack_1
+			}
+			ic_SOV_georgy_zhukov = {
+				add_unit_leader_trait = plus_one_attack_3
+				add_unit_leader_trait = plus_one_defense_3
+			}
+			ic_SOV_mihail_katukov = {
+				add_unit_leader_trait = plus_one_attack_3
+				add_unit_leader_trait = plus_one_defense_3
 			}
 		}
 	}

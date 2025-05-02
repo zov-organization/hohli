@@ -973,7 +973,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_light_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}
 		
 		#enable_tactic = tactic_delay
@@ -1015,7 +1015,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			defense = 0.10
+			defense = 0.075
 		}
 		
 		#enable_tactic = tactic_elastic_defense
@@ -1068,7 +1068,7 @@ technologies = {
 		}
 
 	
-		category_support_battalions = {
+		category_support_tanks = {
 			max_organisation = 10
 			soft_attack = 0.25
 		}
@@ -1119,7 +1119,7 @@ technologies = {
 	regimental_combat_teams = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_support_battalions = {
+		category_support_tanks = {
 			max_organisation = 10
 			soft_attack = 0.25
 		}

@@ -78,7 +78,7 @@
   SOV_accelerate_industry_consumer_goods_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £consumer_goods_texticon  Consumer Goods: §H-0.5%§! \n "
   SOV_accelerate_industry_retention_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £production_efficiency_loss_texticon  Production Efficiency Retention: §G+10.00%§! \n "
   SOV_accelerate_industry_cap_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £prod_eff_cap  Production Efficiency Cap: §G+3.00%§! \n "
-  SOV_accelerate_industry_growth_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_growth_texticon  Production Efficiency growth: §G+8.00%§! \n "
+  SOV_accelerate_industry_growth_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_growth_texticon  Production Efficiency growth: §G+3.00%§! \n "
   SOV_accelerate_industry_base_tt:0 "§HModify§! §ORussian MASS PRODUCTION:§! \n £efficiency_base_texticon  Production Efficiency Base: §G+5.00%§! \n "
 
 

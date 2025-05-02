@@ -97,6 +97,7 @@ NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 8.0
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 6
 
 -- Military
+NDefines.NMilitary.PLANNING_MAX = 0.1
 NDefines.NMilitary.PIERCING_THRESHOLDS = {
 	1.00,
 	0.75,
@@ -229,9 +230,7 @@ NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 75
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4
-NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.0
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 1
@@ -255,6 +254,13 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {
 NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 1.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
+
+-- Generals stats/xp defines
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.0	-- no general-xp from combats
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.0	-- no traits farming
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4	-- num stats gained on level up
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = { 1, 1, 1, 1 }	-- level up stat random base weights attack, defense, maneuvering, coordination
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 
 NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 30, 20, 45 }
 
