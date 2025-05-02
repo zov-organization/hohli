@@ -110,7 +110,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "fuel_silo_speed"   
-			position = { x = 534 y = 109 } 
+			position = { x = 534 y = 66 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
 			maxWidth = 50  

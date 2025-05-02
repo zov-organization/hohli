@@ -612,7 +612,7 @@ focus_tree = {
 		cost = 1
 
 		available = {
-
+			GER = { controls_state = 10 }
 		}
 
 		completion_reward = {
@@ -652,7 +652,7 @@ focus_tree = {
 		cost = 2
 
 		available = {
-
+			date > 1940.6.1
 		}
 
 		completion_reward = {
