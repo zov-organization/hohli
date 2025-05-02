@@ -620,7 +620,7 @@ SOV_forts_category = {
 			has_completed_focus = SOV_forts
 		}
         fire_only_once = yes
-        days_remove = 10
+        days_remove = 20
         modifier = {
             civilian_factory_use = 10
         }
@@ -629,11 +629,6 @@ SOV_forts_category = {
 		}
         remove_effect = {
             219 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -655,11 +650,6 @@ SOV_forts_category = {
 				}
 			}
 			205 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -681,11 +671,6 @@ SOV_forts_category = {
 				}
 			}
 			247 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -713,11 +698,6 @@ SOV_forts_category = {
 				}
 			}
 			223 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
 				# FIRST LINE
 				add_building_construction = {
 					type = bunker
@@ -738,27 +718,6 @@ SOV_forts_category = {
 					instant_build = yes
 				}
 			}
-			248 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			253 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			254 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
     }
 
@@ -768,7 +727,7 @@ SOV_forts_category = {
 			has_completed_focus = SOV_forts
 		}
         fire_only_once = yes
-        days_remove = 10
+        days_remove = 20
         modifier = {
             civilian_factory_use = 20
         }
@@ -779,7 +738,7 @@ SOV_forts_category = {
             219 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				# SECOND LINE
@@ -922,9 +881,9 @@ SOV_forts_category = {
 			has_completed_focus = SOV_forts
 		}
         fire_only_once = yes
-        days_remove = 10
+        days_remove = 20
         modifier = {
-            civilian_factory_use = 25
+            civilian_factory_use = 30
         }
 		highlight_states = {
 			highlight_provinces = { 6380 6414 9348 9282 11236 6283 6378 11268 11330 9378 301 3290 }
