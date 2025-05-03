@@ -1,0 +1,984 @@
+types = {
+
+	bomb_alkett = {
+		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 0
+
+
+		category = air_raids
+
+		command_power = 0 # command power allocation cost
+
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		show_target = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			state = {
+				state = 64
+			}
+			NOT = {
+				has_idea = {
+					modifier = GER_alkett_bombed_idea
+				}
+			}
+		}
+		target_icon = GFX_other_target_icon
+		target_loc_key = raid_target_name_oil_field
+		arrow = {
+		    type = line
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 100 }
+			}
+		}
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 100 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				interception = {
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.05
+				}
+			}
+			
+			critical = {
+				base = 0.1
+			}
+
+			disaster = {
+				base = 0.2
+			}
+
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					var:victim_country = {
+						
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.7
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_alkett_bombed_idea
+							days = 15
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.4
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_alkett_bombed_idea
+							days = 45
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
+					}
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_alkett_bombed_idea
+							days = 60
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.1
+						ratio = yes
+					}
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	bomb_krupp = {
+		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 0
+
+
+		category = air_raids
+
+		command_power = 0 # command power allocation cost
+
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		show_target = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			state = {
+				state = 972
+			}
+			NOT = {
+				has_idea = {
+					modifier = GER_krupp_bombed_idea
+				}
+			}
+		}
+		target_icon = GFX_other_target_icon
+		target_loc_key = raid_target_name_oil_field
+		arrow = {
+		    type = line
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 100 }
+			}
+		}
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 100 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				interception = {
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.05
+				}
+			}
+			
+			critical = {
+				base = 0.1
+			}
+
+			disaster = {
+				base = 0.2
+			}
+
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					var:victim_country = {
+						
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.7
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_krupp_bombed_idea
+							days = 15
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.4
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_krupp_bombed_idea
+							days = 45
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
+					}
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_krupp_bombed_idea
+							days = 60
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.1
+						ratio = yes
+					}
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	bomb_bayerische_flugzeugwerke = {
+		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 0
+
+
+		category = air_raids
+
+		command_power = 0 # command power allocation cost
+
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		show_target = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			state = {
+				state = 973
+			}
+			NOT = {
+				has_idea = {
+					modifier = GER_bayerische_flugzeugwerke_bombed_idea
+				}
+			}
+		}
+		target_icon = GFX_other_target_icon
+		target_loc_key = raid_target_name_oil_field
+		arrow = {
+		    type = line
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 100 }
+			}
+		}
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 100 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				interception = {
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.05
+				}
+			}
+			
+			critical = {
+				base = 0.1
+			}
+
+			disaster = {
+				base = 0.2
+			}
+
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					var:victim_country = {
+						
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.7
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_bayerische_flugzeugwerke_bombed_idea
+							days = 15
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.4
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_bayerische_flugzeugwerke_bombed_idea
+							days = 45
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
+					}
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_bayerische_flugzeugwerke_bombed_idea
+							days = 60
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.1
+						ratio = yes
+					}
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	bomb_bayerische_flugzeugwerke = {
+		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 0
+
+
+		category = air_raids
+
+		command_power = 0 # command power allocation cost
+
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		show_target = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			state = {
+				state = 971
+			}
+			NOT = {
+				has_idea = {
+					modifier = GER_henschel_bombed_idea
+				}
+			}
+		}
+		target_icon = GFX_other_target_icon
+		target_loc_key = raid_target_name_oil_field
+		arrow = {
+		    type = line
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 100 }
+			}
+		}
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 100 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				interception = {
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.05
+				}
+			}
+			
+			critical = {
+				base = 0.1
+			}
+
+			disaster = {
+				base = 0.2
+			}
+
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					var:victim_country = {
+						
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.7
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_henschel_bombed_idea
+							days = 15
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.4
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_henschel_bombed_idea
+							days = 45
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
+					}
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_henschel_bombed_idea
+							days = 60
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.1
+						ratio = yes
+					}
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	bomb_bayerische_flugzeugwerke = {
+		days_to_prepare = 10
+		fire_only_once = no
+		days_re_enable = 0
+
+
+		category = air_raids
+
+		command_power = 0 # command power allocation cost
+
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		show_target = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			state = {
+				state = 42
+			}
+			NOT = {
+				has_idea = {
+					modifier = GER_ruhr_bombed_idea
+				}
+			}
+		}
+		target_icon = GFX_other_target_icon
+		target_loc_key = raid_target_name_oil_field
+		arrow = {
+		    type = line
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 100 }
+			}
+		}
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 100 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				interception = {
+					reference = 200 # More than 200 fighters won't really make any difference
+					weight = -0.05
+				}
+			}
+			
+			critical = {
+				base = 0.1
+			}
+
+			disaster = {
+				base = 0.2
+			}
+
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+					var:victim_country = {
+						
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.7
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_ruhr_bombed_idea
+							days = 15
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.4
+						ratio = yes
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_ruhr_bombed_idea
+							days = 45
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
+					}
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:victim_country = {
+						add_timed_idea = {
+							idea = GER_ruhr_bombed_idea
+							days = 60
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.1
+						ratio = yes
+					}
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+}
