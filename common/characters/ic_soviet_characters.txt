@@ -488,7 +488,7 @@ characters = {
 
 		field_marshal = {
 			traits = { organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
-			skill = 3
+			skill = 4
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 4
@@ -506,7 +506,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
-			skill = 3
+			skill = 4
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2

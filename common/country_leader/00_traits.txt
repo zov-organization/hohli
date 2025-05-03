@@ -5983,14 +5983,8 @@ leader_traits = {
 		sprite = 10
 		random = yes
 		production_speed_air_base_factor = 0.15
-		production_speed_naval_base_factor = 0.15
-		production_speed_rocket_site_factor = 0.15
+		production_speed_anti_air_building_factor = 0.15
 		production_speed_radar_station_factor = 0.15
-		production_speed_nuclear_reactor_factor = 0.15
-
-		ai_will_do = {
-			factor = 0.2
-		}
 	}
 
 	rocket_scientist = {
@@ -8386,7 +8380,8 @@ leader_traits = {
 
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
-		experience_gain_army_unit_factor = 0.05
+		experience_gain_army_unit_factor = 0.1
+		experience_loss_factor = -0.1
 		experience_gain_army = @experience_gain_low
 
 		command_power = 0
@@ -8394,7 +8389,8 @@ leader_traits = {
 
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
-		experience_gain_army_unit_factor = 0.1
+		experience_gain_army_unit_factor = 0.15
+		experience_loss_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 
 		command_power = 0
@@ -8402,7 +8398,8 @@ leader_traits = {
 
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
-		experience_gain_army_unit_factor = 0.15
+		experience_gain_army_unit_factor = 0.2
+		experience_loss_factor = -0.2
 		experience_gain_army = @experience_gain_high
 
 		command_power = 0
@@ -10758,6 +10755,8 @@ leader_traits = {
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.1
 		production_speed_arms_factory_factor = -0.2
+		production_speed_anti_air_building_factor = 0.25
+		industry_air_damage_factor = -0.8
 	}
 
 	defender_trait = {

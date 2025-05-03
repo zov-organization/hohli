@@ -394,8 +394,8 @@ characters={
 		}
 		field_marshal={
 			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
-			skill=3
-			attack_skill=3
+			skill=4
+			attack_skill=1
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=4

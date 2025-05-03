@@ -1440,6 +1440,14 @@
 					technology = improved_medium_tank_chassis
 				}
 				add_to_tech_sharing_group = ic_axis_research
+				
+				every_core_state = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 			every_country = {
 				limit = { is_axis = yes }
@@ -1898,6 +1906,102 @@
 	}
 
 	focus = {
+		id = GER_further_tank_improvements
+		icon = GFX_GER_new_main_tank
+		
+		prerequisite = { focus = GER_drang_nach_osten }
+		prerequisite = { focus = GER_auxiliary_tanks }
+		relative_position_id = GER_drang_nach_osten
+
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_further_tank_improvements
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_quality_tanks
+		icon = GFX_GER_change_direction
+		
+		prerequisite = { focus = GER_further_tank_improvements }
+		relative_position_id = GER_further_tank_improvements
+		
+		mutually_exclusive = { focus = GER_quantity_tanks }
+
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			#add_ideas = ic_ger_quality_tanks
+			mio:GER_man_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quality_tanks
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_quantity_tanks
+		icon = GFX_GER_change_direction
+		
+		prerequisite = { focus = GER_further_tank_improvements }
+		relative_position_id = GER_further_tank_improvements
+
+		mutually_exclusive = { focus = GER_quality_tanks }
+
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			#add_ideas = ic_ger_quantity_tanks
+			mio:GER_man_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quantity_tanks
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_plan_ost
+		icon = GFX_GER_change_direction
+
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_drang_nach_osten
+		
+		available = { }
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_plan_ost_category
+		}
+	}
+
+	focus = {
 		id = GER_blitzkrieg_stalls
 		icon = GFX_GER_change_direction
 
@@ -1917,8 +2021,8 @@
 	}
 
 	focus = {
-		id = GER_oops_forgor_winter_equip
-		icon = GFX_GER_change_direction
+		id = GER_medal_for_barb
+		icon = GFX_GER_medal_for_barb
 
 		prerequisite = { focus = GER_blitzkrieg_stalls }
 		relative_position_id = GER_blitzkrieg_stalls
@@ -1930,106 +2034,77 @@
 		cost = 10
 		completion_reward = {
 			swap_ideas = {
-				add_idea = ic_ger_barb_stall_2
 				remove_idea = ic_ger_barb_stall_1
+				add_idea = ic_ger_barb_stall_2
 			}
 		}
 	}
 
 	focus = {
-		id = GER_plan_ost
-		icon = GFX_GER_change_direction
+		id = GER_medal_for_moscau
+		icon = GFX_GER_medal_for_moscau
 
-		prerequisite = { focus = GER_drang_nach_osten }
-		relative_position_id = GER_drang_nach_osten
+		prerequisite = { focus = GER_blitzkrieg_stalls }
+		relative_position_id = GER_blitzkrieg_stalls
 		
-		available = { }
-
-		x = 3
-		y = 1
-		cost = 5
-		completion_reward = {
-			unlock_decision_category_tooltip = GER_plan_ost_category
-		}
-	}
-
-	focus = {
-		id = GER_quality_tanks
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_drang_nach_osten }
-		prerequisite = { focus = GER_auxiliary_tanks }
-		relative_position_id = GER_drang_nach_osten
-		
-		mutually_exclusive = { focus = GER_quantity_tanks }
-
-		available = { hidden_trigger = { always = no } }		
-		bypass = {
-			if = {
-				has_war_with = SOV
-			}
-		}
-
-		x = -3
-		y = 1
-		cost = 10
-		completion_reward = {
-			#add_ideas = ic_ger_quality_tanks
-			mio:GER_man_organization = {
-				complete_mio_trait = {
-					trait = GER_mio_quality_tanks
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_quantity_tanks
-		icon = GFX_GER_change_direction
-
-		prerequisite = { focus = GER_drang_nach_osten }
-		prerequisite = { focus = GER_auxiliary_tanks }
-		relative_position_id = GER_quality_tanks
-
-		mutually_exclusive = { focus = GER_quality_tanks }
-
-		available = { hidden_trigger = { always = no } }		
-		bypass = {
-			if = {
-				has_war_with = SOV
+		available = {
+			GER = {
+				has_full_control_of_state = 219
 			}
 		}
 
 		x = 2
-		y = 0
+		y = 1
 		cost = 10
 		completion_reward = {
-			#add_ideas = ic_ger_quantity_tanks
-			mio:GER_man_organization = {
-				complete_mio_trait = {
-					trait = GER_mio_quantity_tanks
-				}
+
+			ic_GER_walter_model = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
 			}
+			ic_GER_erich_von_manstein = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			ic_GER_heinz_guderian = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+
 		}
 	}
 
 	focus = {
-		id = GER_further_tank_improvements
-		icon = GFX_GER_new_main_tank
+		id = GER_medal_for_stalingrad
+		icon = GFX_GER_medal_for_stalingrad
 
-		prerequisite = { focus = GER_quantity_tanks focus = GER_quality_tanks }
-		relative_position_id = GER_quality_tanks
+		prerequisite = { focus = GER_blitzkrieg_stalls }
+		relative_position_id = GER_blitzkrieg_stalls
+		
+		available = {
+			GER = {
+				has_full_control_of_state = 217
+			}
+		}
 
-		x = 1
+		x = 4
 		y = 1
 		cost = 10
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_further_tank_improvements
-				bonus = 0.25
-				uses = 1
-				category = cat_medium_armor
+
+			ic_GER_walter_model = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
 			}
+			ic_GER_erich_von_manstein = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			ic_GER_heinz_guderian = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+
 		}
 	}
 
@@ -2037,14 +2112,18 @@
 		id = GER_plan_new_summer_offencive
 		icon = GFX_GER_new_main_tank
 
+		prerequisite = { focus = GER_medal_for_barb }
 		prerequisite = { focus = GER_drang_nach_osten }
-		prerequisite = { focus = GER_oops_forgor_winter_equip }
 		relative_position_id = GER_drang_nach_osten
 
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ger_barb_stall_2
+				add_idea = ic_ger_barb_stall_3
+			}
 			unlock_decision_tooltip = GER_prep_summer_offencive_moscau
 			unlock_decision_tooltip = GER_prep_summer_offencive_stalingrad
 		}
