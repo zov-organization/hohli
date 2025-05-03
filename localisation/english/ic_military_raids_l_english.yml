@@ -1,2 +1,11 @@
 ﻿l_english:
  raid_type_SOV_berlin_bombing:0 "Bomb Nazi Lair"
+
+ raid_type_bomb_alkett:0 "Bomb Alkett Factories"
+ raid_type_bomb_krupp:0 "Bomb Krupp Factories"
+ raid_type_bomb_bayerische_flugzeugwerke:0 "Bomb Bayerische Flugzeugwerke"
+ raid_type_bomb_henschel:0 "Bomb Henschel Factories "
+ raid_type_bomb_ruhr:0 "Bomb Ruhr Mines"
+
+
+ raid_target_name_factories: "£mil_factory §HFactories§! in $LOCATION|H$"

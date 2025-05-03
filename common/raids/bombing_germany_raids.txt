@@ -7,43 +7,35 @@ types = {
 
 
 		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_mine_sabotage_raid
 
 		command_power = 0 # command power allocation cost
 
 		# Raid Type is visible
 		visible = {
-
-		}
-		# Specific Target is visible
-		show_target = {
-			NOT = {
-				is_in_faction_with = FROM
+			and = {
+				tag = ENG
+				has_war_with = GER
 			}
 		}
 
-		# Can prepare
-		available = {
-
-		}
-
-
 		# Can launch a raid
 		launchable = {
-			has_war_with = FROM
+			FROM = {
+				NOT = {
+					has_idea = GER_alkett_bombed_idea
+				}
+			}
 		}
 
 		target_type = {
 			state = {
 				state = 64
 			}
-			NOT = {
-				has_idea = {
-					modifier = GER_alkett_bombed_idea
-				}
-			}
 		}
-		target_icon = GFX_other_target_icon
-		target_loc_key = raid_target_name_oil_field
+
+		target_icon = GFX_facility_icon
+		target_loc_key = raid_target_name_factories
 		arrow = {
 		    type = line
 		}
@@ -104,7 +96,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.7
+						plane_loss = 0.4
 						ratio = yes
 					}
 				}
@@ -131,7 +123,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.4
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
@@ -203,43 +195,33 @@ types = {
 
 
 		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_facility_raid
 
 		command_power = 0 # command power allocation cost
 
 		# Raid Type is visible
 		visible = {
-
+			tag = ENG
+			has_war_with = GER
 		}
-		# Specific Target is visible
-		show_target = {
-			NOT = {
-				is_in_faction_with = FROM
-			}
-		}
-
-		# Can prepare
-		available = {
-
-		}
-
 
 		# Can launch a raid
 		launchable = {
-			has_war_with = FROM
+			FROM = {
+				NOT = {
+					has_idea = GER_krupp_bombed_idea
+				}
+			}
 		}
 
 		target_type = {
 			state = {
 				state = 972
 			}
-			NOT = {
-				has_idea = {
-					modifier = GER_krupp_bombed_idea
-				}
-			}
 		}
-		target_icon = GFX_other_target_icon
-		target_loc_key = raid_target_name_oil_field
+
+		target_icon = GFX_facility_icon
+		target_loc_key = raid_target_name_factories
 		arrow = {
 		    type = line
 		}
@@ -300,7 +282,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.7
+						plane_loss = 0.4
 						ratio = yes
 					}
 				}
@@ -327,7 +309,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.4
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
@@ -399,43 +381,33 @@ types = {
 
 
 		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_facility_raid
 
 		command_power = 0 # command power allocation cost
 
 		# Raid Type is visible
 		visible = {
-
+			tag = ENG
+			has_war_with = GER
 		}
-		# Specific Target is visible
-		show_target = {
-			NOT = {
-				is_in_faction_with = FROM
-			}
-		}
-
-		# Can prepare
-		available = {
-
-		}
-
 
 		# Can launch a raid
 		launchable = {
-			has_war_with = FROM
+			FROM = {
+				NOT = {
+					has_idea = GER_bayerische_flugzeugwerke_bombed_idea
+				}
+			}
 		}
 
 		target_type = {
 			state = {
 				state = 973
 			}
-			NOT = {
-				has_idea = {
-					modifier = GER_bayerische_flugzeugwerke_bombed_idea
-				}
-			}
 		}
-		target_icon = GFX_other_target_icon
-		target_loc_key = raid_target_name_oil_field
+
+		target_icon = GFX_facility_icon
+		target_loc_key = raid_target_name_factories
 		arrow = {
 		    type = line
 		}
@@ -496,7 +468,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.7
+						plane_loss = 0.4
 						ratio = yes
 					}
 				}
@@ -523,7 +495,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.4
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
@@ -588,50 +560,40 @@ types = {
 			}
 		}
 	}
-	bomb_bayerische_flugzeugwerke = {
+	bomb_henschel = {
 		days_to_prepare = 10
 		fire_only_once = no
 		days_re_enable = 0
 
 
 		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_facility_raid
 
 		command_power = 0 # command power allocation cost
 
 		# Raid Type is visible
 		visible = {
-
+			tag = ENG
+			has_war_with = GER
 		}
-		# Specific Target is visible
-		show_target = {
-			NOT = {
-				is_in_faction_with = FROM
-			}
-		}
-
-		# Can prepare
-		available = {
-
-		}
-
 
 		# Can launch a raid
 		launchable = {
-			has_war_with = FROM
+			FROM = {
+				NOT = {
+					has_idea = GER_henschel_bombed_idea
+				}
+			}
 		}
 
 		target_type = {
 			state = {
 				state = 971
 			}
-			NOT = {
-				has_idea = {
-					modifier = GER_henschel_bombed_idea
-				}
-			}
 		}
-		target_icon = GFX_other_target_icon
-		target_loc_key = raid_target_name_oil_field
+
+		target_icon = GFX_facility_icon
+		target_loc_key = raid_target_name_factories
 		arrow = {
 		    type = line
 		}
@@ -692,7 +654,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.7
+						plane_loss = 0.4
 						ratio = yes
 					}
 				}
@@ -719,7 +681,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.4
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
@@ -784,50 +746,40 @@ types = {
 			}
 		}
 	}
-	bomb_bayerische_flugzeugwerke = {
+	bomb_ruhr = {
 		days_to_prepare = 10
 		fire_only_once = no
 		days_re_enable = 0
 
 
 		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_mine_sabotage_raid
 
 		command_power = 0 # command power allocation cost
 
 		# Raid Type is visible
 		visible = {
-
+			tag = ENG
+			has_war_with = GER
 		}
-		# Specific Target is visible
-		show_target = {
-			NOT = {
-				is_in_faction_with = FROM
-			}
-		}
-
-		# Can prepare
-		available = {
-
-		}
-
 
 		# Can launch a raid
 		launchable = {
-			has_war_with = FROM
+			FROM = {
+				NOT = {
+					has_idea = GER_ruhr_bombed_idea
+				}
+			}
 		}
 
 		target_type = {
 			state = {
 				state = 42
 			}
-			NOT = {
-				has_idea = {
-					modifier = GER_ruhr_bombed_idea
-				}
-			}
 		}
-		target_icon = GFX_other_target_icon
-		target_loc_key = raid_target_name_oil_field
+
+		target_icon = GFX_mine_target_icon
+		target_loc_key = raid_target_name_factories
 		arrow = {
 		    type = line
 		}
@@ -888,7 +840,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.7
+						plane_loss = 0.4
 						ratio = yes
 					}
 				}
@@ -915,7 +867,7 @@ types = {
 				actor_effects = {
 					# Damage to raiding units
 					raid_damage_units = {
-						plane_loss = 0.4
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
