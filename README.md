@@ -2,9 +2,7 @@
 
 ### motto of the mod:
 everybody is gangsta, until Russia hits ***massproduction***
-
-
-
+<br/><br/><br/>
 `descriptor.mod` file:
 ```
 replace_path="history/states"
