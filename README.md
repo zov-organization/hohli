@@ -1,5 +1,7 @@
 # hohli
-motto of the mod: everybody is gangsta, until Russia hits massproduction
+
+### motto of the mod:
+everybody is gangsta, until Russia hits ***massproduction***
 
 `descriptor.mod` file:
 ```
