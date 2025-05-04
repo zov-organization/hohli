@@ -2,6 +2,7 @@
 motto of the mod: everybody is gangsta, until Russia hits massproduction
 
 `descriptor.mod` file:
+```
   replace_path="history/states"
   replace_path="map/strategicregions"
   
@@ -12,4 +13,5 @@ motto of the mod: everybody is gangsta, until Russia hits massproduction
   name="ya bachu"
   picture="Thumbnail.png"
   supported_version="1.16.*"
-  remote_file_id="3313652758"	
+  remote_file_id="3313652758"
+```
