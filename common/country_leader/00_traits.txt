@@ -8332,14 +8332,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_low
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_offensive_2 = { # +10 Offensive efficiency
@@ -8348,14 +8340,6 @@ leader_traits = {
 		experience_gain_army = @experience_gain_medium
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_offensive_3 = { # +15 Offensive efficiency
@@ -8364,28 +8348,12 @@ leader_traits = {
 		experience_gain_army = @experience_gain_high
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		experience_gain_army = @experience_gain_low
 		max_command_power = 10
-
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	army_chief_drill_1 = { # Decreases training time for ground units
