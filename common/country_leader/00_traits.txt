@@ -65,6 +65,16 @@ leader_traits = {
 	industrial_steel_mills_trait = {}
 	resource_development_company = {}
 	AUS_prince_of_starhemberg = {}
+	AFG_popular_figurehead = {}
+	AFG_provisional_government_trait = {}
+	likes_mexico = {}
+	IRQ_british_lackey = {}
+	IRQ_social_reformer_pm = {}
+	AFG_red_prince = {}
+	AFG_continuity_pm = {}
+	AFG_reactionary_pm = {}
+	IRQ_hashemite_regent = {}
+	GER_pragmatic_socialist = {}
 
 	dictator = {
 		random = no

@@ -22,6 +22,8 @@ focus_tree = {
 		modifier = { add = 60 tag = DEN }
 
 		modifier = { add = 60 tag = CHI }
+		modifier = { add = 60 tag = MON }
+		modifier = { add = 60 tag = MAN }
 	}
 	continuous_focus_position = { x = 50 y = 50 }
 }
