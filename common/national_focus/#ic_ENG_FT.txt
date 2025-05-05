@@ -968,17 +968,224 @@ focus_tree = {
 					has_completed_focus = ENG_isle_protected
 				}
 
-				# for modder to understand - there is on_daily_ENG in `ic_on_actions.txt`, there it creates the variable to store german subs count, and also there multiplies it by 2
-				# in this focus it just checks if: english screen > ger subs x2
-				custom_trigger_tooltip = {
-					tooltip = ENG_humble_gray_wolf_tt_trigger
+				
+				count_triggers = {
+					amount = 1
+					if = {
+						limit = {
+							check_variable = { 50 > ger_subs_count }
+						}
+						#any_country = {
+						GER = {
+							count_triggers = {
+							amount = 2
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 4
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 4
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 4
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 4
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							and = {
+								check_variable = { 50 < ger_subs_count }
+								check_variable = { 50 = ger_subs_count }
+								check_variable = { 100 > ger_subs_count }
+							}
+						}
+						#any_country = {
+						GER = {
+							count_triggers = {
+							amount = 2
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 12
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 12
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 12
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 12
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							and = {
+								check_variable = { 100 < ger_subs_count }
+								check_variable = { 100 = ger_subs_count }
+								check_variable = { 150 > ger_subs_count }
+							}
+						}
+						#any_country = {
+						
+						GER = {
+							count_triggers = {
+								amount = 2
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 25
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 25
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 25
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 25
+								}
+							}
+						}
 
-					check_variable = {
-						var = ENG.num_ships_with_type@screen
-						value = ger_subs_count
-						compare = greater_than_or_equals
+					}
+					else_if = {
+						limit = {
+							and = {
+								check_variable = { 150 < ger_subs_count }
+								check_variable = { 150 = ger_subs_count }
+								check_variable = { 200 > ger_subs_count }
+							}
+						}
+						#any_country = {
+						GER = {
+							count_triggers = {
+							amount = 2
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 39
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 39
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 39
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 39
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							and = {
+								check_variable = { 200 < ger_subs_count }
+								check_variable = { 200 = ger_subs_count }
+								check_variable = { 250 > ger_subs_count }
+							}
+						}
+						#any_country = {
+						GER = {
+							count_triggers = {
+							amount = 2
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 52
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 52
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 52
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 52
+								}
+							}
+						}
+					}
+					else = {
+						#any_country = {
+						GER = {
+							count_triggers = {
+							amount = 3
+								ships_in_area = {
+									type = submarine
+									area = 61
+									size < 65
+								}
+								ships_in_area = {
+									type = submarine
+									area = 49
+									size < 65
+								}
+								ships_in_area = {
+									type = submarine
+									area = 57
+									size < 65
+								}
+								ships_in_area = {
+									type = submarine
+									area = 47
+									size < 65
+								}
+							}
+						}
+					}
+
+					# for modder to understand - there is on_daily_ENG in `ic_on_actions.txt`, there it creates the variable to store german subs count, and also there multiplies it by 2
+					# in this focus it just checks if: english screen > ger subs x1.5
+					custom_trigger_tooltip = {
+						tooltip = ENG_humble_gray_wolf_tt_trigger
+					
+						check_variable = {
+							var = ENG.num_ships_with_type@screen
+							value = ger_subs_count_x1_5
+							compare = greater_than_or_equals
+						}
 					}
 				}
+				
 
 			}
 

@@ -354,9 +354,13 @@ on_actions = {
 				var = ger_subs_count
 				value = GER.num_ships_with_type@submarine
 			}
+			set_variable = {
+				var = ger_subs_count_x1_5
+				value = GER.num_ships_with_type@submarine
+			}
 			multiply_variable = {
-				var = ger_subs_count
-				value = 2
+				var = ger_subs_count_x1_5
+				value = 1.5
 			}
 			
 		}
