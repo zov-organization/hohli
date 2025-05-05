@@ -16,12 +16,23 @@
 
 
  
+ 
+ ic_sp_paratroopers:0 "Paratroopers"
+ ic_sp_paratroopers_desc:0 ""
+ ic_sp_marines:0 "Marines"
+ ic_sp_marines_desc:0 ""
+ ic_sp_mountaneers:0 "Mountaneers"
+ ic_sp_mountaneers_desc:0 ""
+ ic_sp_ita_militia:0 "Armed Militia"
+ ic_sp_ita_militia_desc:0 ""
 
  ic_sp_motorized_rocket_arty:0 "BM-13"
  ic_sp_motorized_rocket_arty_desc:0 "Katyusha"
 
-
-
+ ic_sp_ship_armor_dd:0 "Destroyer Armor"
+ ic_sp_ship_armor_dd_desc:0 ""
+ ic_sp_dp_sub_secondaries_1:0 "Submarine Dual-Purpose Battery"
+ ic_sp_dp_sub_secondaries_1_desc:0 ""
 
  ic_scientist_trait_fighter_armament:0 "Fighter Armament Specialist"
  ic_scientist_trait_aircraft_genius:0 "Aircraft Genuis"

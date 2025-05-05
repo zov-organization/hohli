@@ -23,7 +23,27 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ic_sp_ita_militia"
-		textureFile = "gfx/interface/counters/divisions_large/unit_irregular_infantry_icon.dds"
-		noOfFrames = 2
+		textureFile = "gfx/interface/special_project/project_icons/ic_sp_ita_militia.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_paratroopers"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_paratroopers.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_marines"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_marines.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_mountaneers"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_mountaneers.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ic_sp_ship_armor_dd"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_ship_armor_dd.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_dp_sub_secondaries_1"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_dp_sub_secondaries_1.dds"
 	}
 }

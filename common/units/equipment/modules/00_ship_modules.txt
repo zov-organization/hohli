@@ -17,7 +17,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 1
-			build_cost_ic = 90	
+			build_cost_ic = 100
 		}
 		multiply_stats = {
 			naval_speed = -0.01
@@ -954,6 +954,25 @@ equipment_modules = {
 		critical_parts = { damaged_secondaries }
 	}
 
+	ic_dp_sub_secondaries_1 = {
+		abbreviation = "sax"
+		category = sub_dp_secondaries
+		gui_category = ship_secondaries
+		gfx = dp_secondary_battery_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 3
+			anti_air_attack = 2
+			build_cost_ic = 250
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 2
+		}
+
+		critical_parts = { damaged_secondaries }
+	}
 
  ##  #  # ### ###      ##  ### ###  
 #  # ## #  #   #      #  #  #  #  # 
@@ -1269,7 +1288,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.10
-			build_cost_ic = 0.125
+			#build_cost_ic = 0.125
 		}
 		
 		can_convert_from = {
@@ -1294,7 +1313,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			build_cost_ic = 0.15
+			#build_cost_ic = 0.15
 		}
 		
 		can_convert_from = {
@@ -1323,7 +1342,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.20
-			build_cost_ic = 0.175
+			#build_cost_ic = 0.175
 		}
 		
 		can_convert_from = {
@@ -1351,7 +1370,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = 0.25
-			build_cost_ic = 0.20
+			#build_cost_ic = 0.20
 		}
 		
 		can_convert_from = {
@@ -1378,7 +1397,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			build_cost_ic = 0.1
+			#build_cost_ic = 0.1
 
 		}
 
@@ -1404,7 +1423,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			build_cost_ic = 0.125
+			#build_cost_ic = 0.125
 			sub_visibility = -0.05
 		}
 		
@@ -1434,7 +1453,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			build_cost_ic = 0.15
+			#build_cost_ic = 0.15
 			sub_visibility = -0.1
 		}
 		
@@ -1463,7 +1482,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			build_cost_ic = 0.20
+			#build_cost_ic = 0.20
 			sub_visibility = -0.15
 		}
 		
@@ -1928,11 +1947,11 @@ equipment_modules = {
 		
 		add_stats = {
 			torpedo_attack = 14
-			build_cost_ic = 80
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			naval_speed = -0.01			
+			#naval_speed = -0.01			
 		}
 		
 		build_cost_resources = {
@@ -1950,12 +1969,12 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 18
-			build_cost_ic = 100
+			build_cost_ic = 250
 			naval_torpedo_hit_chance_factor = 0.01
 		}
 
 		multiply_stats = {
-			naval_speed = -0.02			
+			#naval_speed = -0.02			
 		}
 		
 		build_cost_resources = {
@@ -1977,12 +1996,12 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 22
-			build_cost_ic = 120
+			build_cost_ic = 300
 			naval_torpedo_hit_chance_factor = 0.015
 		}
 
 		multiply_stats = {
-			naval_speed = -0.03			
+			#naval_speed = -0.03			
 		}
 
 		can_convert_from = {
@@ -2001,12 +2020,12 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 28
-			build_cost_ic = 140
+			build_cost_ic = 350
 			naval_torpedo_hit_chance_factor = 0.02
 		}
 
 		multiply_stats = {
-			naval_speed = -0.04			
+			#naval_speed = -0.04			
 		}
 
 		can_convert_from = {
@@ -2093,7 +2112,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 8
-			build_cost_ic = 90
+			build_cost_ic = 150
 		}
 
 		can_convert_from = {
@@ -2114,12 +2133,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 12
-			build_cost_ic = 120
-		}
-
-		can_convert_from = {
-			module_category = ship_depth_charge
-			convert_cost_ic = 90
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
@@ -2134,13 +2148,8 @@ equipment_modules = {
 		parent = ship_depth_charge_2
 		
 		add_stats = {
-			sub_attack = 16
-			build_cost_ic = 150
-		}
-
-		can_convert_from = {
-			module_category = ship_depth_charge
-			convert_cost_ic = 120
+			sub_attack = 14
+			build_cost_ic = 250
 		}
 
 		multiply_stats = {
@@ -2307,7 +2316,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 6
-			build_cost_ic = 40
+			build_cost_ic = 150
 		}
 	}
 
@@ -2319,11 +2328,7 @@ equipment_modules = {
 		parent = ship_sonar_1
 		add_stats = {
 			sub_detection = 10.0
-			build_cost_ic = 60
-		}
-		can_convert_from = {
-			module_category = ship_sonar
-			convert_cost_ic = 25
+			build_cost_ic = 300
 		}
 	}
  ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 
@@ -2597,4 +2602,20 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 2500
 	}
+	ic_ship_armor_dd = {
+		abbreviation = "sde"
+		category = ship_dd_armor
+		gfx = ship_armor_thin_1
+		
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			build_cost_ic = 350
+			armor_value = 4
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+			naval_torpedo_damage_reduction_factor = 0.1
+		}
+	}
+
 }

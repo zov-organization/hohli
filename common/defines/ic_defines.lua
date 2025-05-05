@@ -387,6 +387,22 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.888
 
 NDefines.NAir.MAX_QUICK_WING_SELECTION = 5
 
+
+
+-- Navy
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
+NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
+NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
+
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+
+
+
+
+
 --Focus
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 

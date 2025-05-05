@@ -1,0 +1,79 @@
+ic_sp_ship_armor_dd = {
+	specialization = specialization_naval
+	icon = GFX_ic_sp_ship_armor_dd
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.ic_ten_fractions
+	prototype_time = sp_time.prototype.ic_five_hundred_days
+	
+	#allowed = { hidden_trigger = { always = no } }
+
+	special_project_parent = {
+		
+	}
+
+	available = { 
+		FROM = {
+			has_tech = basic_ship_hull_light
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 0
+	}
+
+	#resource_cost = {
+	#	resources = { 
+	#		steel = 8
+	#	 }
+	#}
+	
+	project_output = {
+		enable_equipment_modules = {
+			ic_ship_armor_dd 
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_dp_sub_secondaries_1 = {
+	specialization = specialization_naval
+	icon = GFX_ic_sp_dp_sub_secondaries_1
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.ic_ten_fractions
+	prototype_time = sp_time.prototype.ic_five_hundred_days
+	
+	#allowed = { hidden_trigger = { always = no } }
+
+	special_project_parent = {
+		
+	}
+
+	available = { 
+		FROM = {
+			has_tech = basic_ship_hull_submarine
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 0
+	}
+
+	#resource_cost = {
+	#	resources = { 
+	#		steel = 8
+	#	 }
+	#}
+	
+	project_output = {
+		enable_equipment_modules = {
+			ic_dp_sub_secondaries_1 
+		}
+	}
+
+	generic_prototype_rewards = {}
+}

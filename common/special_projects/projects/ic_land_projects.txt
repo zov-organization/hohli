@@ -34,7 +34,7 @@ ic_sp_motorized_rocket_arty = {
 
 ic_sp_paratroopers = {
 	specialization = specialization_land
-	icon = GFX_ic_sp_ita_militia
+	icon = GFX_ic_sp_paratroopers
 
 	project_tags = { 
 		sp_tag_artillery
@@ -69,7 +69,7 @@ ic_sp_paratroopers = {
 }
 ic_sp_marines = {
 	specialization = specialization_land
-	icon = GFX_ic_sp_ita_militia
+	icon = GFX_ic_sp_marines
 
 	project_tags = { 
 		sp_tag_artillery
@@ -104,7 +104,7 @@ ic_sp_marines = {
 }
 ic_sp_mountaneers = {
 	specialization = specialization_land
-	icon = GFX_ic_sp_ita_militia
+	icon = GFX_ic_sp_mountaneers
 
 	project_tags = { 
 		sp_tag_artillery

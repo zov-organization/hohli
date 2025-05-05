@@ -254,7 +254,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 1.5
 
 		start_year = 1922
@@ -301,7 +301,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 1.5
 
 		start_year = 1936
@@ -347,7 +347,7 @@ technologies = {
 		}
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 1.5
 
 		start_year = 1940
@@ -390,7 +390,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 1.5
 
 		start_year = 1944
@@ -766,7 +766,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 0.5
 
 		start_year = 1922
@@ -807,7 +807,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 1.25
 
 		start_year = 1936
@@ -1436,7 +1436,7 @@ early_ship_hull_carrier = {
 
 		xp_research_type = navy
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.50
 		research_cost = 2
 
 		start_year = 1944

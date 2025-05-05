@@ -530,10 +530,6 @@
 			add_ideas = {
 				ic_ural_bomber
 			}
-			set_technology = {
-				basic_medium_airframe = 1
-				popup = yes
-			}
 		}
 	}
 
@@ -1668,9 +1664,13 @@
 
 		x = -2
 		y = 0
-		cost = 10
+		cost = 5
 		completion_reward = {
 		
+			set_technology = {
+				basic_medium_airframe = 1
+				popup = yes
+			}
 			create_equipment_variant = {
 				name = "He-111"
 				type = medium_plane_airframe_1

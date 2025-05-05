@@ -189,10 +189,13 @@ SOV_forts_category = {
 					instant_build = yes
 				}
 			}
-			create_railway_gun = {
-				equipment = railway_gun_equipment_stationary_battery_1
-				name = "Fort Krasnaya Gorka"
-				location = 11186
+			custom_override_tooltip = {
+				tooltip = SOV_forts_krasnaya_gorka_tt
+				create_railway_gun = {
+					equipment = railway_gun_equipment_stationary_battery_1
+					name = "Fort Krasnaya Gorka"
+					location = 11186
+				}
 			}
         }
     }
@@ -230,10 +233,13 @@ SOV_forts_category = {
 					instant_build = yes
 				}
 			}
-			create_railway_gun = {
-				equipment = railway_gun_equipment_stationary_battery_1
-				name = "Armoured Coastal Batteries No.30 aka Maxim Gorky I"
-				location = 3686
+			custom_override_tooltip = {
+				tooltip = SOV_forts_maxim_gorki_tt
+				create_railway_gun = {
+					equipment = railway_gun_equipment_stationary_battery_1
+					name = "Armoured Coastal Batteries No.30 aka Maxim Gorky I"
+					location = 3686
+				}
 			}
         }
     }
