@@ -401,7 +401,7 @@ characters={
 			logistics_skill=4
 		}
 	}
-
+	
 	ic_GER_albert_kesselring={
 		name=GER_albert_kesselring
 		portraits={
@@ -419,6 +419,43 @@ characters={
 				air_chief_reform_2
 			}
 			cost = 100
+		}
+	}
+
+	ic_GER_kurt_student = {
+		name = GER_kurt_student
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_kurt_student
+				small = GFX_idea_kurt_student
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ic_GER_kurt_student
+			ledger = air
+			traits = {
+				air_airborne_3
+			}
+			cost = 100
+
+			available = {
+				has_completed_focus = ic_GER_fallschirmjager
+			}
+		}
+		
+		corps_commander = {
+			traits={ }
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster	# inf traits
+						commando paratrooper }													# and paratrooper traits
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			visible = {
+				has_completed_focus = ic_GER_fallschirmjager
+			}
 		}
 	}
 

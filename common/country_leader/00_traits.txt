@@ -9733,53 +9733,38 @@ leader_traits = {
 
 	air_airborne_1 = {
 		sprite = 1
-		paradrop_organization_factor = 1.2
-		paratrooper_aa_defense = 0.1
+		
+		paradrop_organization_factor = 0.3
+		modifier_army_sub_unit_paratrooper_attack_factor = 0.05
+		modifier_army_sub_unit_paratrooper_defence_factor = 0.01
+
 		experience_gain_air = @experience_gain_low
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	air_airborne_2 = {
 		sprite = 1
-		paradrop_organization_factor = 1.5
-		paratrooper_aa_defense = 0.15
+		
+		paradrop_organization_factor = 0.6
+		modifier_army_sub_unit_paratrooper_attack_factor = 0.1
+		modifier_army_sub_unit_paratrooper_defence_factor = 0.15
+
 		experience_gain_air = @experience_gain_medium
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	air_airborne_3 = {
 		sprite = 1
-		paradrop_organization_factor = 1.8
-		paratrooper_aa_defense = 0.25
+		
+		paradrop_organization_factor = 1
+		modifier_army_sub_unit_paratrooper_attack_factor = 0.15
+		modifier_army_sub_unit_paratrooper_defence_factor = 0.2
+
 		experience_gain_air = @experience_gain_high
 
 		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	air_pilot_training_1 = {

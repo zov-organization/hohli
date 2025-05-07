@@ -57,6 +57,7 @@ recruit_character = ic_GER_walter_model
 recruit_character = ic_GER_albert_kesselring
 recruit_character = ic_GER_hermann_goring
 recruit_character = ic_GER_ritter_von_greim
+recruit_character = ic_GER_kurt_student
 
 
 create_faction = Axis

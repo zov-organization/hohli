@@ -1,0 +1,151 @@
+types = {
+
+	prepare_crete_for_paradrop = {
+		days_to_prepare = 10
+
+		category = paratrooper_raids
+
+		command_power = 0
+
+		# Raid Type is visible
+		visible = {
+			and = {
+				tag = GER
+				has_war_with = ENG
+				has_tech = paratroopers
+			}
+		}
+
+		unit_requirements = {
+			battalion_types = {
+				paratrooper = { min = 20 }
+			}
+		}
+
+		target_type = {
+			state = {
+				state = 182
+			}
+		}
+
+
+		target_icon = GFX_mine_target_icon
+		target_loc_key = raid_target_name_mine
+
+		launch_sound = raid_launch_paratrooper
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = transport
+        }
+
+		starting_point = {
+			types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.7
+
+				### Target Modifiers
+				air_superiority = {
+					reference = 1
+					weight = 0.25
+					start_weight = -0.25
+				}
+
+				interception = {
+					reference = 200 # More than 500 fighters won't really make any difference
+					weight = -0.2
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+
+			failure = {
+			    victim_effects = {}
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						damage = 0.8
+						ratio = yes
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+
+			limited_success = {
+			    victim_effects = {
+					var:target_state = {
+						every_state_division = {
+							set_unit_organization = 0.8
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						damage = 0.6
+						ratio = yes
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_limited_success_entity"
+					animation = "attack"
+				}
+			}
+
+			success = {
+			    victim_effects = {
+					var:target_state = {
+						every_state_division = {
+							set_unit_organization = 0.6
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						damage = 0.3
+						ratio = yes
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_success_entity"
+					animation = "attack"
+				}
+			}
+
+			critical_success = {
+			    victim_effects = {
+					var:target_state = {
+						every_state_division = {
+							set_unit_organization = 0.3
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to unit
+					raid_damage_units = {
+						damage = 0.05
+						ratio = yes
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_paradrop_critical_success_entity"
+					animation = "attack"
+				}
+			}
+
+		}
+	}
+}

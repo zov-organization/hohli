@@ -313,6 +313,10 @@ technologies = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
+
+		enable_subunits = {
+			airborne_light_armor
+		}
 		
 		path = {
 			leads_to_tech = paratroopers3

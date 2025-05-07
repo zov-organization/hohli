@@ -21,8 +21,8 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 1
 NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 300.0
 NDefines.NCountry.ATTACHE_XP_SHARE = 0
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.06
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 0
 NDefines.NCountry.STARTING_FUEL_RATIO = 1
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 3.4
 
@@ -209,8 +209,8 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {
 }
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.15
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 10
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 10
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 0
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
@@ -244,9 +244,8 @@ NDefines.NMilitary.NAVAL_EQUIPMENT_BASE_COST = 0
 NDefines.NMilitary.NAVAL_EQUIPMENT_RAMP_COST = 0
 NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 0
 NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0
-NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.0
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 1000.0
 NDefines.NMilitary.FIELD_MARSHAL_ARMY_BONUS_RATIO = 1
-NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false
 NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {
 	0.0,
 	0.0
@@ -286,7 +285,6 @@ NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.8 -- original 0.8 Anti Air Gun Da
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1 -- original 0.1 Anti Air Gun hit chance. DOES NOTHING 
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1 -- original 1.00 Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.8 -- .8 ( og GDU 0.75 ) Maximum damage reduction factor applied to incoming air attacks against units with AA.
-NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES = 2000
 NDefines.NAir.FUEL_COST_MULT = 0.34
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.4
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.00
@@ -387,6 +385,27 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_NAVAL_BOMBER = 0.888
 
 NDefines.NAir.MAX_QUICK_WING_SELECTION = 5
 
+
+-- Paratroopers defines
+NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES = 2000	-- makes paratroopers undroppable as they wight sooo much. however how it works is: special paratroopers generals have a trait, that removes this thing on troops they command
+NDefines.NMilitary.PARADROP_PENALTY = 0	-- Combat penalty when recently paradropped
+NDefines.NMilitary.PARADROP_HOURS = 0	-- time paratroopers suffer penalties in combat
+NDefines.NAir.MIN_PLANE_COUNT_PARADROP = 0
+NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.4	-- Min ratio of air superiority for paradropping
+
+NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 50.0			-- When the transport plane was shot down, we drop unit with almost NONE equipment
+NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 100.0			-- When the transport plane was shot down, we drop unit with almost NONE manpower
+NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 10.0					-- When the transport plane was shot down, we drop unit with almost NONE strenght
+
+NDefines.NMilitary.PARACHUTE_DISRUPTED_EQUIPMENT_DIV = 1.5			-- When the transport plane was hit, we drop unit with reduced equipment. Penalty is higher as more hits was received (and AA guns was in the state).
+NDefines.NMilitary.PARACHUTE_DISRUPTED_MANPOWER_DIV = 1.9			-- When the transport plane was hit, we drop unit with reduced manpower. Penalty is higher as more hits was received (and AA guns was in the state).
+NDefines.NMilitary.PARACHUTE_DISRUPTED_STR_DIV = 2.2				-- When the transport plane was hit, we drop unit with reduced strength. Penalty is higher as more hits was received (and AA guns was in the state).
+NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 0				-- How much the Air defence in the state (from AA buildings level * air_defence) is scaled to affect overall disruption (equipment,manpower,str).	
+
+NDefines.NMilitary.PARACHUTE_PENALTY_RANDOMNESS = 0					-- Random factor for str,manpower,eq penalties.
+NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.5						-- Organisation value (in %) after unit being dropped, regardless if failed, disrupted, or successful.	
+NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 0		-- penalty in org regain after being parachuted. Value is in hours.	
+NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org regain after being parachuted.
 
 
 -- Navy

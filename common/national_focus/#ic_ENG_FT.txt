@@ -643,8 +643,11 @@ focus_tree = {
 			add_ideas = volunteer_only
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_political_advisor
+			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = ic_ENG_alan_brooke
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = ic_ENG_kenneth_anderson
 		}
 	}

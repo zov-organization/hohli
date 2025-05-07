@@ -671,7 +671,8 @@
 			add_ideas = { ic_gray_wolf }
 			add_tech_bonus = {
 				name = GER_subs
-				bonus = 0.75
+				bonus = 2
+				ahead_reduction = 1
 				uses = 2
 				category = ss_tech
 			}
@@ -1853,6 +1854,42 @@
 				uses = 4
 				category = infantry_weapons
 			}
+		}
+	}
+	
+	focus = {
+		id = ic_GER_fallschirmjager
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = ic_GER_army_innovation }
+		relative_position_id = ic_GER_army_innovation
+
+		available = {
+			has_tech = paratroopers
+		}
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			load_oob = ic_GER_crete_paratroopers
+			custom_effect_tooltip  = ic_GER_fallschirmjager_tt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = ic_GER_kurt_student
+
+		}
+	}
+	focus = {
+		id = ic_GER_fallschirmjager_2
+		icon = GFX_GER_new_main_tank
+
+		prerequisite = { focus = ic_GER_fallschirmjager }
+		relative_position_id = ic_GER_fallschirmjager
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
 		}
 	}
 
