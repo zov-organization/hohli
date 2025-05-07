@@ -353,6 +353,13 @@ characters = {
 	}
 	ic_ROM_petre_dumitrescu= {
 		name = ROM_petre_dumitrescu
+		
+		portraits={
+			army={
+				large="GFX_Portrait_romania_petre_dumitrescu"
+				small="GFX_idea_ROM_petre_dumitrescu"
+			}
+		}
 
 		advisor = {
 			slot = high_command
