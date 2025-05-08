@@ -4,7 +4,7 @@ characters={
 		name = GER_hjalmar_schacht
 		portraits = {
 			army = {
-				small = "GFX_idea_hjalmar_schacht"
+				small = "GFX_idea_Hjiamal_Schaht"
 			}
 		}
 		advisor={
@@ -24,7 +24,7 @@ characters={
 		name = GER_albert_speer
 		portraits = {
 			army = {
-				small = "GFX_idea_speer"
+				small = "GFX_portrait_ic_GER_albert_speer_small"
 			}
 		}
 		advisor={
@@ -44,7 +44,7 @@ characters={
 		name=GER_fritz_todt
 		portraits={
 			army={
-				small="GFX_idea_todt"
+				small="GFX_idea_Fritz_Todt"
 			}
 			
 		}
@@ -101,7 +101,7 @@ characters={
 		name=GER_martin_bormann
 		portraits={
 			army={
-				small="GFX_idea_martin_bormann"
+				small="GFX_idea_Martin_Borman"
 			}
 		}
 		advisor={

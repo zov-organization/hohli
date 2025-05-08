@@ -11,4 +11,33 @@ spriteTypes = {
 		name = "GFX_portrait_ic_SOV_mihail_katukov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Mahail_Katukov.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_Martin_Borman"
+		texturefile = "gfx/interface/ideas/GER/advisors/GFX_idea_Martin_Borman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Joseph_Gebbels"
+		texturefile = "gfx/interface/ideas/GER/advisors/GFX_idea_Joseph_Gebbels.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_heinrich_himmler"
+		texturefile = "gfx/leaders/GER/portrait_GER_heinrich_himmler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Fritz_Todt"
+		texturefile = "gfx/interface/ideas/GER/advisors/GFX_idea_Fritz_Todt.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_joseph_goebbels"
+		texturefile = "gfx/leaders/GER/portrait_GER_joseph_goebbels.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Hjiamal_Schaht"
+		texturefile = "gfx/interface/ideas/GER/advisors/GFX_idea_Hjiamal_Schaht.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ic_GER_albert_speer_small"
+		texturefile = "gfx/interface/ideas/GER/advisors/GFX_portrait_ic_GER_albert_speer_small.dds"
+	}
+
 }
