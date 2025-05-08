@@ -28,7 +28,6 @@ set_politics = {
 
 recruit_character = ic_ROM_gheorghe_tatarescu		# Country Leaders
 recruit_character = ic_ROM_ion_antonescu
-recruit_character = ic_ROM_octavian_goga
 
 recruit_character = ic_ROM_gheorghe_argeseanu		# Political Advisors
 recruit_character = ic_ROM_armand_calinescu
