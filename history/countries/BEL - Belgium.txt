@@ -1,0 +1,22 @@
+capital = 6
+
+oob = "ic_useless_minor_army"
+
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0
+
+set_technology = {}
+
+recruit_character = BEL_paul_van_zeeland
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1" #Was 1932.11.27 but changed to allow for Government Resigns focus to simulate this election.
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 83
+	fascism = 11
+	communism = 6
+}

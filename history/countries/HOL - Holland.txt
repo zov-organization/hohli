@@ -1,0 +1,28 @@
+capital = 7
+
+oob = "ic_useless_minor_army"
+
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0
+
+set_technology = {}
+
+recruit_character = HOL_hendrikus_colijn
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 93
+	fascism = 4
+	communism = 3
+}
+
+
+set_autonomy = {
+	target = INS
+	autonomous_state = autonomy_integrated_puppet
+}
