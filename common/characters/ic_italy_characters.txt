@@ -31,12 +31,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
-			skill = 2
+			traits = { organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine fortress_buster desert_fox urban_assault_specialist }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 0
 		}
 	}
@@ -64,12 +64,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer war_hero }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
+			traits = { trickster trait_engineer organizer panzer_leader combined_arms_expert fortress_buster desert_fox urban_assault_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 4
+			logistics_skill = 3
 			legacy_id = 0
 		}
 	}
@@ -1230,12 +1230,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { irregulars_officer desert_fox cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
+			traits = { irregulars_officer organizer infantry_leader infantry_expert bearer_of_artillery trickster }  # Irregulars, Cavalry. Comandante Diavolo trait?
 			skill = 3
-			attack_skill = 3
+			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}

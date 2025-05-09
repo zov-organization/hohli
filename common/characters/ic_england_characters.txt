@@ -139,12 +139,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
-			skill=4
+			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine fortress_buster desert_fox urban_assault_specialist }
+			skill=3
 			attack_skill=2
-			defense_skill=4
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=4
+			logistics_skill=3
 		}
 	}
 	
@@ -168,12 +168,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ politically_connected }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
+			traits={ organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 
@@ -203,14 +203,14 @@ characters={
 			cost = 100
 		}
 		
-		field_marshal={
-			traits={ career_officer trait_cautious defensive_doctrine }
-			skill=5
-			attack_skill=3
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=3
-		}
+		#field_marshal={
+		#	traits={ career_officer trait_cautious defensive_doctrine }
+		#	skill=5
+		#	attack_skill=3
+		#	defense_skill=5
+		#	planning_skill=5
+		#	logistics_skill=3
+		#}
 	}
 	
 	ic_ENG_john_vereker={
@@ -231,12 +231,12 @@ characters={
 		}
 
 		corps_commander={
-			traits={ trait_cautious politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
+			traits={ trickster trait_engineer organizer panzer_leader combined_arms_expert fortress_buster desert_fox urban_assault_specialist }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 	

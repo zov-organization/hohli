@@ -7,6 +7,8 @@
   ic_progon_mode_cze:0 "progon thingy for CZE annex"
   ic_progon_mode_pol:0 "progon thingy for WW2 start"
   ic_progon_mode_ww2_simulation:0 "progon thingy for GER europe conquest and SOV prewar annexes"
+  ic_progon_mode_eng_tanks_variants:0 "progon thingy for ENG to get tank variants"
+  ic_progon_mode_eng_tanks_spawnins:0 "progon thingy for ENG to spawn 2 light tank divs"
 
   ic_helpful_tips:0 "§HHELPFUL TIPS§!"
   SOV_optimal_building_line:0 "Optimal starting building line"

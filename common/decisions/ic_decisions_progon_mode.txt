@@ -1,0 +1,314 @@
+ic_progon_mode = {
+    
+
+    ic_progon_mode_blumen_kriege = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {}
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        days_remove = 35
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_blumen_kriege
+            }
+        }
+    }
+    ic_progon_mode_aus = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+		    date > 1938.4.1
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        days_remove = 70
+        remove_effect = {
+            GER = {
+                complete_national_focus = ic_GER_anshluss
+            }
+        }
+    }
+    ic_progon_mode_cze = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+		    date > 1938.8.18
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+        
+        days_remove = 70
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_sudetenland
+                complete_national_focus = GER_cze_annex
+            }
+        }
+    }
+    ic_progon_mode_pol = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+		        date > 1939.9.1
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        complete_effect = {
+            GER = {
+                complete_national_focus = GER_expand_lebensraum
+                complete_national_focus = GER_fra_cap
+                complete_national_focus = GER_ss_regiments
+            }
+            ENG = {
+                add_to_faction = HOL
+                add_to_faction = BEL
+                add_to_faction = LUX
+                add_to_faction = DEN
+            }
+        }
+    }
+    ic_progon_mode_ww2_simulation = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+
+                and = {
+                    date > 1939.9.1
+                    GER = {
+                        has_completed_focus = GER_expand_lebensraum
+                    }
+                }
+
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+
+        complete_effect = {
+            GER = {
+                HOL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    LUX = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    BEL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    FRA = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    DEN = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+			    }
+			    POL = {
+				    every_core_state = {
+                        set_state_controller_to = GER
+				    }
+                }
+            }
+
+            SOV = {
+                annex_country = {
+                    target = LIT
+                }
+                 annex_country = {
+                    target = LAT
+                }
+                 annex_country = {
+                    target = EST
+                }
+                every_state = {
+				    limit = {
+					    OR = {
+						    state = 96
+                            state = 784
+                            state = 95
+                            state = 97
+                            state = 94
+                            state = 93
+                            state = 91
+                            state = 89
+                            state = 80
+                            state = 78
+                            state = 766
+                            state = 146
+                        }
+				    }
+                    transfer_state_to = SOV
+			    }
+            }
+
+        }
+    }
+    ic_progon_mode_eng_tanks_variants = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+		        date > 1939.9.1
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+        
+        complete_effect = {
+
+            create_equipment_variant = {
+	            type = light_tank_equipment_2
+                allow_without_tech = yes
+            }
+            create_equipment_variant = {
+	            type = light_tank_destroyer_equipment_2
+                allow_without_tech = yes
+            }
+            create_equipment_variant = {
+	            type = light_tank_artillery_equipment_2
+                allow_without_tech = yes
+            }
+            create_equipment_variant = {
+	            type = light_tank_aa_equipment_2
+                allow_without_tech = yes
+            }
+
+            create_equipment_variant = {
+	            type = heavy_tank_equipment_1
+                allow_without_tech = yes
+            }
+
+            division_template = {
+	            name = "no minors :("
+	            division_names_group = ENG_MEC_01
+	            regiments = {
+		            light_armor = { x = 0 y = 0 }
+		            light_armor = { x = 0 y = 1 }
+		            light_armor = { x = 0 y = 2 }
+		            light_armor = { x = 0 y = 3 }
+		            light_armor = { x = 0 y = 4 }
+
+		            light_armor = { x = 1 y = 0 }
+		            light_armor = { x = 1 y = 1 }
+		            light_armor = { x = 1 y = 2 }
+		            light_armor = { x = 1 y = 3 }
+		            light_armor = { x = 1 y = 4 }
+
+		            motorized = { x = 2 y = 0 }
+		            motorized = { x = 2 y = 1 }
+		            motorized = { x = 2 y = 2 }
+		            motorized = { x = 2 y = 3 }
+
+		            motorized = { x = 3 y = 0 }
+		            motorized = { x = 3 y = 1 }
+		            motorized = { x = 3 y = 2 }
+		            motorized = { x = 3 y = 3 }
+
+		            light_armor = { x = 4 y = 0 }
+		            light_armor = { x = 4 y = 1 }
+	            }
+	            support = {
+		            engineer = { x = 0 y = 0 }
+		            field_hospital = { x = 0 y = 1 }
+		            signal_company = { x = 0 y = 2 }
+		            light_tank_recon = { x = 0 y = 3 }
+		            light_sp_artillery_brigade = { x = 0 y = 4 }
+
+		            artillery = { x = 1 y = 0 }
+		            anti_tank = { x = 1 y = 1 }
+		            flamethrower_sppt = { x = 1 y = 2 }
+		            heavy_armor_brigade = { x = 1 y = 3 }
+		            light_sp_anti_air_brigade = { x = 1 y = 4 }
+	            }
+            }
+
+        }
+    }
+    ic_progon_mode_eng_tanks_spawnins = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+            count_triggers = {
+                amount = 1
+		        date > 1939.9.1
+                is_debug = yes
+            }
+        }
+
+        fire_only_once = no
+
+        visible = {}
+
+        priority = 1
+
+        cost = 0
+        
+        complete_effect = {
+            load_oob = "ic_ENG_no_minor_army"
+        }
+    }
+}
