@@ -1,0 +1,10 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_moscow_defence_anim"
+		texturefile = "gfx/event_pictures/anim/moscow_defence_anim.dds"
+		noOfFrames = 41
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+	}
+}

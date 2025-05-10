@@ -45,6 +45,12 @@
  ic_sov_events.1.b:0 "Enforce Center Front"
  ic_sov_events.1.c:0 "Enforce South Front"
 
+ ic_sov_events.2.t:0 "Soviet Winter Counter Offencive!"
+ ic_sov_events.2.d:0 "Red Army, recently suffering heavies imaginable losses was not broken at all. It was able not just to stop German Offencive towards USSR capital, but did some local counteroffencive. However German operation "Taifun" hardened Russians ever more and today they decided to answer german invaders. First large soviet counter-offencive started!"
+ ic_sov_events.2.a:0 "We shall see how that ends."
+ ic_sov_events.2.b:0 "Nicht funi."
+ ic_sov_events.2.c:0 "Pizda huesosam"
+
  #ic_ger_events
  ic_ger_events.1.a:0 "Germans needs to be stopped at once!"
  ic_ger_events.1.b:0 "We'll proceed on pushing!"

@@ -44,3 +44,35 @@ country_event = {
 		}
     }
 }
+
+news_event = {
+    id = ic_sov_events.2
+    title = ic_sov_events.2.t
+    desc = ic_sov_events.2.d
+
+	picture = "GFX_moscow_defence_anim"
+    
+    is_triggered_only = yes
+    
+	option = {
+        name = ic_sov_events.2.a
+		trigger = { 
+			AND = {
+				NOT = {
+					TAG = GER
+				}
+				NOT = {
+					TAG = SOV
+				}
+			}
+		}
+	}
+	option = {
+        name = ic_sov_events.2.b
+		trigger = { TAG = GER }
+	}
+	option = {
+        name = ic_sov_events.2.c
+		trigger = { TAG = SOV }
+	}
+}
