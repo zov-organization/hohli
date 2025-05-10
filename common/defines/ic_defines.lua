@@ -261,7 +261,7 @@ NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4	-- num stats gained on leve
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = { 1, 1, 1, 1 }	-- level up stat random base weights attack, defense, maneuvering, coordination
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 
-NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 30, 20, 45 }
+NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 30, 13, 45 }
 
 
 -- Air
