@@ -204,7 +204,7 @@ ic_progon_mode = {
         available = {
             count_triggers = {
                 amount = 1
-		        date > 1939.9.1
+                tag = ENG
                 is_debug = yes
             }
         }
@@ -294,7 +294,7 @@ ic_progon_mode = {
         available = {
             count_triggers = {
                 amount = 1
-		        date > 1939.9.1
+                tag = ENG
                 is_debug = yes
             }
         }
