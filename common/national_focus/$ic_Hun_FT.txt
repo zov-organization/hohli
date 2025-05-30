@@ -905,6 +905,10 @@ focus_tree = {
         cost = 5
         completion_reward = {
             army_experience = 100
+            swap_ideas = {
+                remove_idea = HUN_ID_German_advisors
+                add_idea = HUN_ID_German_advisors_2
+            }
         }
 	}
 	focus = {
@@ -934,7 +938,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = HUN_ID_German_advisors_2
+                add_idea = HUN_ID_German_advisors_3
+            }
         }
 	}
 	focus = {
@@ -1098,9 +1105,9 @@ focus_tree = {
             }
 
             add_tech_bonus = {
-                bonus = 1.00
-				uses = 3
-                category = engine
+                bonus = 0.25
+                uses = 2
+                category = artillery
             }
         }
 	}

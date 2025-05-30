@@ -79,7 +79,6 @@ characters = {
 
 			idea_token = HUN_gusztav_gratz
 
-
 			traits = {
 				war_industrialist
 			}
@@ -282,6 +281,10 @@ characters = {
 
 				ledger = army
 
+				available = {
+				has_completed_focus = HUN_A_New_Way_of_War
+			}
+
 				traits = {
 					army_armored_3
 			}
@@ -318,6 +321,10 @@ characters = {
 				idea_token = HUN_jeno_ratz
 
 				ledger = army
+				
+				available = {
+					has_completed_focus = HUN_Every_man_is_a_soldier
+				}
 
 				traits = {
 					army_infantry_2
@@ -358,6 +365,10 @@ characters = {
 
 				ledger = army
 
+				available = {
+					has_completed_focus = HUN_Special_forces
+				}
+
 				traits = {
 					army_regrouping_2
             }
@@ -397,6 +408,10 @@ characters = {
 
 				ledger = army
 
+				available = {
+					has_completed_focus = HUN_Every_man_is_a_soldier
+				}
+
 				traits = {
 					army_entrenchment_2
             }
@@ -431,6 +446,10 @@ characters = {
 				slot = high_command
 				idea_token = HUN_ivan_hindy
 
+				available = {
+					has_completed_focus = HUN_A_New_Way_of_War
+				}
+
 				
 				traits = {
 					army_logistics_3
@@ -455,6 +474,10 @@ characters = {
 				slot = high_command
 
 				idea_token = HUN_sandor_magyarossy
+
+				available = {
+					has_completed_focus = HUN_Special_forces
+				}
 
 				traits = {
 					army_commando_2
@@ -531,7 +554,7 @@ characters = {
 			}
 
 			traits = {
-				democratic_reformer 
+				harsh_propagandist 
 			}
 		}
 	}
