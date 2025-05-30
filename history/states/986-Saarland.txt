@@ -1,27 +1,23 @@
 state={
-	id=42
-	name="STATE_42"
-	resources={
-		steel=20.000
-	}
+	id=986
+	name="STATE_986"
 	provinces={
-		563 3423 3558 11435 11470 11494 11547 11560 
+		9575 11531 13367
 	}
 
 	history={
 		owner = GER
-		victory_points = { 11435 1 }
+		victory_points = { 11531 5 }
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 3
 
 		}
 		add_core_of = GER
 	
 		set_demilitarized_zone = yes
 	}
-
-	manpower=2897374
+	manpower=130326
 	buildings_max_level_factor=1
-	state_category=metropolis
 	local_supplies=0
 }
