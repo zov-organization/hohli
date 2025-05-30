@@ -1,0 +1,25 @@
+state={
+	id=987
+	name="STATE_987"
+	provinces={
+		575 
+	}
+	history={
+		owner = FRA
+		victory_points = {
+			575 5
+		}
+		
+		buildings = {
+			infrastructure = 4
+			575 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = FRA
+	}
+
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
