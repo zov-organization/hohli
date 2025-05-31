@@ -1,6 +1,6 @@
 focus_tree = {
 	id = french_focus
-	continuous_focus_position = { x = 50 y = 50 }
+	continuous_focus_position = { x = 2500 y = 50 }
 	
 	country = {
 		factor = 0
@@ -12,4 +12,649 @@ focus_tree = {
 	}
 	
 	default = no
+
+	focus = {
+		id = FRA_form_popular_front
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = {  }
+
+		x = 14
+		y = 0
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_devalue_of_franc
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_form_popular_front }
+		relative_position_id = FRA_form_popular_front
+
+		x = -4
+		y = 1
+		cost = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_print_money
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_devalue_of_franc }
+		relative_position_id = FRA_devalue_of_franc
+
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_start_reforms
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_form_popular_front }
+		relative_position_id = FRA_form_popular_front
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_pause_reforms
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_start_reforms }
+		relative_position_id = FRA_start_reforms
+
+		x =	-1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_raise_salaries
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_start_reforms }
+		relative_position_id = FRA_start_reforms
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	
+	
+
+	focus = {
+		id = FRA_reassure_businesses
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_form_popular_front }
+		relative_position_id = FRA_form_popular_front
+
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_subsidies
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_reassure_businesses }
+		relative_position_id = FRA_reassure_businesses
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	# end of crisis?
+
+	focus = {
+		id = FRA_end_crisis
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = 
+		{ 
+			focus = FRA_subsidies
+			focus = FRA_print_money 
+			focus = FRA_pause_reforms 
+			focus = FRA_raise_salaries 
+		}
+		relative_position_id = FRA_raise_salaries
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	# reform amry
+
+	focus = {
+		id = FRA_boost_army_morale
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_end_crisis }
+		relative_position_id = FRA_end_crisis
+
+		x = -6
+		y = 1
+		cost = 2
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_improve_armor_technology
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_boost_army_morale }
+		relative_position_id = FRA_boost_army_morale
+		mutually_exclusive = { focus = FRA_bet_on_artillery }
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_make_more_tanks
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_improve_armor_technology }
+		relative_position_id = FRA_improve_armor_technology
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_somua_sm
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_improve_armor_technology }
+		relative_position_id = FRA_improve_armor_technology
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_b2
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_improve_armor_technology }
+		relative_position_id = FRA_improve_armor_technology
+
+		x = -2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_bet_on_artillery
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_boost_army_morale }
+		relative_position_id = FRA_boost_army_morale
+		mutually_exclusive = { focus = FRA_improve_armor_technology }
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_mass_arty_production
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_bet_on_artillery }
+		relative_position_id = FRA_bet_on_artillery
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_army_modernisation
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_mass_arty_production focus = FRA_somua_sm focus = FRA_b2 }
+		relative_position_id = FRA_mass_arty_production
+
+		x = -2 
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_offensive_focus
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_boost_army_morale  }
+		relative_position_id = FRA_boost_army_morale
+		mutually_exclusive = { focus = FRA_defensive_focus }
+
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_defensive_focus
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_boost_army_morale }
+		relative_position_id = FRA_boost_army_morale
+		mutually_exclusive = { focus = FRA_offensive_focus }
+
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_new_tactic
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_offensive_focus focus = FRA_defensive_focus }
+		relative_position_id = FRA_offensive_focus
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	# fra aviation
+
+	focus = {
+		id = FRA_modernize_aviation
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_end_crisis }
+		relative_position_id = FRA_end_crisis
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_nationalize_avia_industry
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_modernize_aviation }
+		relative_position_id = FRA_modernize_aviation
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_start_avia_production
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_nationalize_avia_industry }
+		relative_position_id = FRA_nationalize_avia_industry
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_fighter_focus
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_start_avia_production }
+		relative_position_id = FRA_start_avia_production
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_bomber_focus
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_start_avia_production }
+		relative_position_id = FRA_start_avia_production
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_reorganize_aviation
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_nationalize_avia_industry }
+		relative_position_id = FRA_nationalize_avia_industry
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_reform_doctrine
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_reorganize_aviation }
+		relative_position_id = FRA_reorganize_aviation
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_finish_reorganization
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_reform_doctrine focus = FRA_bomber_focus focus = FRA_fighter_focus }
+		relative_position_id = FRA_bomber_focus
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	# navy reform
+
+	focus = {
+		id = FRA_modernize_navy
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_end_crisis }
+		relative_position_id = FRA_end_crisis
+
+		x = 6
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_fleet_investments
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_modernize_navy }
+		relative_position_id = FRA_modernize_navy
+
+		x = -3
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_colonial_dockyards
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_fleet_investments }
+		relative_position_id = FRA_fleet_investments
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_new_doctrine
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_modernize_navy }
+		relative_position_id = FRA_modernize_navy
+		mutually_exclusive = { focus = FRA_old_doctrine }
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_old_doctrine
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_modernize_navy }
+		relative_position_id = FRA_modernize_navy
+		mutually_exclusive = {focus = FRA_new_doctrine}
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = FRA_new_heavy_ships
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_old_doctrine  }
+		relative_position_id = FRA_old_doctrine
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_invest_in_ship_building
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_new_heavy_ships }
+		relative_position_id = FRA_new_heavy_ships
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_new_carriers
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_new_doctrine }
+		relative_position_id = FRA_new_doctrine
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_build_carriers
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_new_carriers }
+		relative_position_id = FRA_new_carriers
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_improve_light_ships
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_new_carriers }
+		relative_position_id = FRA_new_carriers
+
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_big_investments
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_invest_in_ship_building focus = FRA_build_carriers }
+		relative_position_id = FRA_build_carriers
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_more_docks
+		icon = GFX_focus_focus_fra_down_marianne
+
+		prerequisite = { focus = FRA_modernize_navy }
+		relative_position_id = FRA_modernize_navy
+
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			
+		}
+	}
+
+# --------------------------------------------------------------------------------------------------------
+	#focus = {
+	#	id = FRA_
+	#	icon = GFX_focus_focus_fra_down_marianne
+
+	#	prerequisite = { focus =  }
+	#	relative_position_id = FRA_
+
+	#	x =
+	#	y = 
+	#	cost = 5
+	#	completion_reward = {
+			
+	#	}
+	#}
+# --------------------------------------------------------------------------------------------------------
 }
