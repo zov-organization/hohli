@@ -30,8 +30,8 @@ ideas = {
                 always = no
 			}
             modifier = {
-                political_power_factor = -0.25
-				consumer_goods_factor = -0.15
+                political_power_factor = -0.15
+				consumer_goods_factor = -0.1
 			}
 		}
 
@@ -79,7 +79,6 @@ ideas = {
             modifier = {
                 production_speed_industrial_complex_factor = 0.1
                 production_speed_arms_factory_factor = 0.4
-                fuel_gain_factor = 0.5
             }
 		}
 
@@ -160,6 +159,7 @@ ideas = {
 			}
             modifier = {
                 experience_gain_army = 0.05
+                license_production_speed = 0.15 
 			}
 		}
 
@@ -175,6 +175,7 @@ ideas = {
 			}
             modifier = {
                 experience_gain_army = 0.05
+                license_production_speed = 0.15 
                 weekly_manpower = 1500
                 conscription = 0.01
 			}
@@ -192,6 +193,7 @@ ideas = {
 			}
             modifier = {
                 experience_gain_army = 0.05
+                license_production_speed = 0.15 
                 weekly_manpower = 1500
                 conscription = 0.01
 			}
@@ -201,6 +203,40 @@ ideas = {
 					build_cost_ic = -0.03
 					instant = yes
 				}
+            }
+
+            research_bonus = {
+				artillery = 0.05
+            }
+		}
+
+        HUN_ID_German_advisors_4 = {
+			name = HUN_ID_German_advisors_2
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                experience_gain_army = 0.05
+                license_production_speed = 0.15 
+                weekly_manpower = 1500
+                conscription = 0.01
+			}
+
+            equipment_bonus = {
+                artillery_equipment = {				
+					build_cost_ic = -0.03
+					instant = yes
+				}
+            }
+
+            modifier = {
+                army_artillery_attack_factor = 0.05
+                army_artillery_defence_factor = 0.05
             }
 
             research_bonus = {
@@ -219,7 +255,7 @@ ideas = {
                 always = no
 			}
             modifier = {
-                weekly_manpower = 1000
+                weekly_manpower = 500
             }
 		}
 
@@ -234,9 +270,11 @@ ideas = {
                 always = no
 			}
             modifier = {
-                weekly_manpower = 1000
+                weekly_manpower = 750
                 conscription = 0.025
                 industrial_capacity_factory = 0.025
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
             }
 		}
 
@@ -252,9 +290,9 @@ ideas = {
 			}
 
             modifier = {
-                army_attack_factor = 0.05
-				army_defence_factor = 0.075
-				army_org_factor = 0.10
+                army_attack_factor = 0.025
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
             }
 
 		}
@@ -272,7 +310,7 @@ ideas = {
 
             modifier = {
                 stability_weekly = -0.01
-                industrial_capacity_factory = 0.10
+                industrial_capacity_factory = 0.05
                 production_factory_max_efficiency_factor = 0.05
             }
 		}
@@ -290,6 +328,7 @@ ideas = {
 				political_power_gain = 0.1
 				mobilization_laws_cost_factor = -0.5
 				trade_laws_cost_factor = -0.5
+                min_export = 0.1
 			}
 		}
         
@@ -306,7 +345,7 @@ ideas = {
 
             modifier = {
                 stability_weekly = -0.009
-                industrial_capacity_factory = 0.15
+                industrial_capacity_factory = 0.07
                 production_factory_max_efficiency_factor = 0.05
             }
 		}
@@ -324,12 +363,191 @@ ideas = {
 
             modifier = {
                 stability_weekly = -0.008
-                industrial_capacity_factory = 0.15
-                production_factory_max_efficiency_factor = 0.1
-                production_factory_efficiency_gain_factor = 0.05
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.08
+                production_factory_efficiency_gain_factor = 0.03
                 fascism_drift = 0.30
             }
 		}
-        
+
+        HUN_Suppression_the_opposition_4 = {
+			name = HUN_Suppression_the_opposition_2
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+
+            modifier = {
+                stability_weekly = -0.006
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.08
+                production_factory_efficiency_gain_factor = 0.03
+                fascism_drift = 0.50
+            }
+		}
+
+        HUN_ss_idea = {
+			name = HUN_ss_idea
+
+			removal_cost = -1
+
+			picture = GFX_idea_ic_ss_idea
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				conscription = 0.005
+				weekly_manpower = 50
+				army_morale_factor = 0.02
+			}
+		}
+
+        HUN_We_need_more_bullets = {
+			name =  HUN_We_need_more_bullets
+
+			removal_cost = -1
+
+            research_bonus = {
+                armor = -0.25
+				artillery = -0.05
+            }
+
+            equipment_bonus = {
+                infantry_equipment = {					
+					build_cost_ic = -0.08
+					instant = yes
+				}
+                support_equipment = {					
+					build_cost_ic = -0.08
+					instant = yes
+				}
+            }
+
+            research_bonus = {
+				infantry_weapons = -0.1
+            }
+		}
+
+        HUN_We_need_more_bullets_2 = {
+			name =  HUN_We_need_more_bullets_2
+
+			removal_cost = -1
+
+            research_bonus = {
+                armor = -0.25
+				artillery = -0.05
+            }
+
+            research_bonus = {
+				infantry_weapons = -0.1
+            }
+
+            equipment_bonus = {
+                infantry_equipment = {					
+					build_cost_ic = -0.08
+					instant = yes
+				}
+                support_equipment = {					
+					build_cost_ic = -0.08
+					instant = yes
+				}
+            }
+
+            modifier = {
+                army_infantry_attack_factor = 0.025
+		        army_infantry_defence_factor = 0.05
+            }
+		}
+
+        HUN_fuel_gain_factor = {
+			name = HUN_fuel_gain_factor
+
+            removal_cost = -1
+
+            #picture = 
+
+            allowed = {
+                always = no
+			}
+            modifier = {
+                fuel_gain_factor = 0.5
+            }
+		}
+
+        HUN_Tankograd = {
+
+			name = HUN_Tankograd
+
+			equipment_bonus = {	
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}							
+			}
+		}
+
+        HUN_Special_forces_idea = {
+
+			name = HUN_Special_forces_idea
+
+			modifier = {
+                max_dig_in_factor = 0.08
+                army_strength_factor = 0.05
+                supply_consumption_factor = -0.10
+                army_morale_factor = 0.05
+            }
+		}
+
+        HUN_Special_forces_idea_2 = {
+			
+            name = HUN_Special_forces_idea_2
+
+			modifier = {
+                max_dig_in_factor = 0.08
+                army_strength_factor = 0.05
+                supply_consumption_factor = -0.10
+                army_morale_factor = 0.1
+                army_org_factor = 0.05
+                army_attack_factor = -0.05
+            }
+		}
+
+        HUN_Aggressive_Special_Forces = {
+			
+            name = HUN_Aggressive_Special_Forces
+
+			modifier = {
+                army_speed_factor = 0.05
+                planning_speed = 0.15
+                max_planning = 0.10
+            }
+		}
+
+        HUN_Totalis_haburu = {
+			
+            name = HUN_Totalis_haburu
+
+			modifier = {
+                war_support_weekly = -0.001
+                industrial_capacity_factory = 0.02
+                consumer_goods_expected_value = -0.025
+                production_speed_arms_factory_factor = 0.05
+            }
+		}
+
+        HUN_Elite_special_forces = {
+			
+            name = HUN_Totalis_haburu
+
+			modifier = {
+                research_speed_factor = 0.08
+            }
+		}
 	}
 }

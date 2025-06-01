@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = HUN_Economic_intervention
 
-		#icon = 
+		icon = GFX_focus_generic_attack_hungary
 
 		prerequisite = { focus = HUN_A_new_way }
 		relative_position_id = HUN_A_new_way
@@ -51,7 +51,8 @@ focus_tree = {
 	} 
 	focus = {
         id = HUN_Rebuilt_Infrastructure
-        #icon = 
+
+        icon = GFX_goal_generic_construct_infrastructure
 
         prerequisite = { focus = HUN_Economic_intervention }
         relative_position_id = HUN_Economic_intervention
@@ -87,7 +88,7 @@ focus_tree = {
 	focus = {
         id = HUN_Support_domestic_industry
 
-        #icon = 
+        icon = GFX_goal_generic_construct_civ_factory
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
         relative_position_id = HUN_Rebuilt_Infrastructure
@@ -254,7 +255,8 @@ focus_tree = {
     }
     focus = {
         id = HUN_hungarian_oil
-        #icon = 
+
+        icon = GFX_focus_HUN_oil
 
         prerequisite = { focus = HUN_From_our_depths }
         relative_position_id = HUN_From_our_depths
@@ -268,6 +270,8 @@ focus_tree = {
                 amount = 15
                 state = 155
             }
+
+            add_ideas = HUN_fuel_gain_factor
         }
     }
     focus = {
@@ -510,6 +514,7 @@ focus_tree = {
         cost = 10
         completion_reward = {
             remove_ideas = HUN_ID_treaty_of_trianon
+            remove_ideas = HUN_ID_Invite_foreign_investors3
             add_ideas = HUN_ID_our_future
         }
     }
@@ -583,11 +588,12 @@ focus_tree = {
 
 	focus = {
         id = HUN_Proclame_Great_Hungary
-        #icon = 
+
+        icon = GFX_focus_HUN_proclaim_greater_hungary
 
         prerequisite = { focus = HUN_Reclaim_Voevodina }
-	prerequisite = { focus = HUN_Reclaim_Transilvania }
-	prerequisite = { focus = HUN_Reclaim_Slovakia }
+        prerequisite = { focus = HUN_Reclaim_Transilvania }
+        prerequisite = { focus = HUN_Reclaim_Slovakia }
         relative_position_id = HUN_dream_about_great_hungary
 
         x = 0
@@ -602,7 +608,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             set_cosmetic_tag = HUN_GREATER
-			add_stability = 0.05
+			add_stability = 0.1
 			hidden_effect = {
 				news_event = { id = news.299 }
 			}
@@ -627,45 +633,6 @@ focus_tree = {
             add_ideas = {
                 HUN_Suppression_the_opposition
             }
-        }
-	}
-
-	focus = {
-        id = HUN_Hungarian_SS
-
-        #icon = 
-
-        prerequisite = { focus = HUN_Totalis_haboru focus = HUN_Elite_forces focus = HUN_All_efforts_on_tanks}
-        relative_position_id = HUN_Elite_forces
-
-        x = 0
-        y = 1
-
-        cost = 10
-
-        completion_reward = {
-            add_ideas = ic_ss_idea
-        }
-	}
-	focus = {
-        id = HUN_Hungarian_Workers
-
-        #icon = 
-
-        prerequisite = { focus = HUN_Total_war }
-        relative_position_id = HUN_Total_war 
-
-        x = 0
-        y = 1
-
-        cost = 10d
-
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = HUN_Suppression_the_opposition_2
-                add_idea = HUN_Suppression_the_opposition_3
-            }
-            
         }
 	}
         focus = {
@@ -714,7 +681,11 @@ focus_tree = {
 
         completion_reward = {
             army_experience = 50
-            add_ideas = {HUN_ID_Rearmament}
+
+            add_timed_idea = { 
+                idea = HUN_ID_Rearmament
+                days = 100
+            }   
         }
 	}
 
@@ -810,6 +781,17 @@ focus_tree = {
 
         completion_reward = {
             army_experience = 100
+            add_tech_bonus = {
+				name = special_bonus
+				bonus = 2.0
+				uses = 3
+				technology = marines
+				technology = marines2
+				technology = marines3
+                technology = tech_mountaineers
+                technology = tech_mountaineers2
+                technology = tech_mountaineers3
+			}
         }
 	}
 	focus = {
@@ -824,7 +806,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = HUN_Aggressive_Special_Forces
         }
 	}
 	focus = {
@@ -839,7 +821,13 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_tech_bonus = {
+            bonus = 1
+            uses = 2
+            technology = tech_engineers2
+            technology = tech_engineers3
+        }
+            add_ideas = HUN_Special_forces_idea
         }
 	}
 	focus = {
@@ -855,7 +843,15 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = mountain_gun
+					}
+				}
+				custom_effect_tooltip = ROM_mountain_artillery_tech_tt
+				hidden_effect = { set_technology = { mountain_gun = 1 } }
+			}
         }
 	}
 	focus = {
@@ -871,7 +867,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = HUN_Special_forces_idea
+                add_idea = HUN_Special_forces_idea_2
+            }
         }
 	}
 	focus = {
@@ -887,9 +886,28 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = HUN_Elite_special_forces
         }
 	}
+
+    focus = {
+        id = HUN_Hungraian_SS
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Totalis_haboru focus = HUN_Elite_forces focus = HUN_All_efforts_on_tanks}
+        relative_position_id = HUN_Elite_forces
+
+        x = 0
+        y = 1
+
+        cost = 10
+
+        completion_reward = {
+            add_ideas = HUN_ss_idea
+        }
+	}
+
 	focus = {
         id = HUN_Every_man_is_a_soldier
 
@@ -918,12 +936,13 @@ focus_tree = {
 
         prerequisite = { focus = HUN_Every_man_is_a_soldier }
         relative_position_id = HUN_Every_man_is_a_soldier
+        mutually_exclusive = { focus = HUN_Don't_neglect_artillery }
 
         x = -1
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = HUN_We_need_more_bullets
         }
 	}
 	focus = {
@@ -933,6 +952,7 @@ focus_tree = {
 
         prerequisite = { focus = HUN_Every_man_is_a_soldier }
         relative_position_id = HUN_Every_man_is_a_soldier
+        mutually_exclusive = { focus = HUN_Equipment_standart }
 
         x = 1
         y = 1
@@ -950,14 +970,17 @@ focus_tree = {
         #icon = 
 
         prerequisite = { focus = HUN_Don't_neglect_artillery  
-		 focus = HUN_Equipment_standart}
+		 }
         relative_position_id = HUN_Don't_neglect_artillery
 
         x = 0
         y = 1
         cost = 5
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = HUN_ID_German_advisors_3
+                add_idea = HUN_ID_German_advisors_4
+            }  
         }
 	}
 	focus = {
@@ -965,15 +988,17 @@ focus_tree = {
 
         #icon = 
 
-        prerequisite = { focus = HUN_Don't_neglect_artillery  
-		 focus = HUN_Equipment_standart}
+        prerequisite = { focus = HUN_Equipment_standart }
         relative_position_id = HUN_Equipment_standart
 
         x = 0
         y = 1
         cost = 5
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = HUN_We_need_more_bullets
+                add_idea = HUN_We_need_more_bullets_2
+            }
         }
 	}
 	focus = {
@@ -989,7 +1014,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = HUN_Totalis_haburu
         }
 	}
 	focus = {
@@ -1125,7 +1150,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-		
+		    add_ideas = HUN_Tankograd
         }
 	}
 
@@ -1174,6 +1199,27 @@ focus_tree = {
 	}
 
     focus = {
+        id = HUN_Hungarian_Workers
+
+        #icon = 
+
+        prerequisite = { focus = HUN_Total_war }
+        relative_position_id = HUN_Total_war 
+
+        x = 0
+        y = 1
+
+        cost = 10
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HUN_Suppression_the_opposition_2
+                add_idea = HUN_Suppression_the_opposition_3
+            }
+        }
+	}
+
+    focus = {
         id = HUN_Would_that_be_enough
 
         #icon = 
@@ -1195,6 +1241,10 @@ focus_tree = {
     focus = {
         id = HUN_Listen_to_Goebbels_speeches
 
+        available = {
+            has_completed_focus = ic_GER_try_autarky
+        }
+
         #icon = 
 
         prerequisite = { focus = HUN_Hungarian_Workers } 
@@ -1205,9 +1255,12 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_ideas = {
-                
+            swap_ideas = {
+                remove_idea = HUN_Suppression_the_opposition_3
+                add_idea = HUN_Suppression_the_opposition_4
             }
+
+            add_war_support = 0.1
         }
 	}
 }
