@@ -113,7 +113,7 @@ focus_tree = {
 	focus = {
         id = HUN_Support_urbanization
 
-        #icon = 
+        icon = GFX_focus_HUN_Urbanization
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
         relative_position_id = HUN_Rebuilt_Infrastructure
@@ -138,7 +138,7 @@ focus_tree = {
     focus = {
         id = HUN_Budapest_is_center_of_Balkans
 
-        #icon = 
+        icon = GFX_focus_HUN_budapest_center_balkans
 
         prerequisite = { focus = HUN_Support_urbanization }
         relative_position_id = HUN_Support_urbanization
@@ -156,7 +156,7 @@ focus_tree = {
     focus = {
         id = HUN_Hungarian_mentality
 
-        #icon = 
+        icon = GFX_focus_HUN_mentality
 
         prerequisite = { focus = HUN_Budapest_is_center_of_Balkans }
         relative_position_id = HUN_Budapest_is_center_of_Balkans
@@ -176,7 +176,8 @@ focus_tree = {
 
 	focus = {
         id = HUN_Invite_foreign_investors
-        #icon = 
+
+        icon = GFX_focus_HUN_investors
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
         relative_position_id = HUN_Rebuilt_Infrastructure
@@ -200,7 +201,7 @@ focus_tree = {
     focus = {
         id = HUN_Hungarian_military_industry
 
-        #icon = 
+        icon = GFX_focus_HUN_mils
 
         prerequisite = { focus = HUN_Invite_foreign_investors }
         relative_position_id = HUN_Invite_foreign_investors
@@ -232,7 +233,8 @@ focus_tree = {
 
 	focus = {
         id = HUN_From_our_depths
-        #icon = 
+
+        icon = GFX_focus_HUN_from_our_depths
 
         prerequisite = { focus = HUN_Rebuilt_Infrastructure }
         relative_position_id = HUN_Rebuilt_Infrastructure
@@ -276,7 +278,8 @@ focus_tree = {
     }
     focus = {
         id = HUN_From_a_drop_into_the_sea
-        #icon = 
+
+        icon = GFX_focus_HUN_mils2
 
         prerequisite = { focus = HUN_hungarian_oil }
         prerequisite = { focus = HUN_Hungarian_military_industry  }
@@ -294,7 +297,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Establish_new_university
-        #icon = 
+
+        icon = GFX_focus_generic_university_1
 
         prerequisite = { focus = HUN_From_our_depths }
 		prerequisite = { focus = HUN_Invite_foreign_investors }
@@ -311,7 +315,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_German_technology
-        #icon = 
+
+        icon = GFX_focus_HUN_germany_technology
 
         prerequisite = { focus = HUN_Establish_new_university }
         relative_position_id = HUN_Establish_new_university
@@ -329,7 +334,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Strenghten_fascists
-        #icon = 
+
+        icon = GFX_focus_generic_fascist_propaganda
 
         prerequisite = { focus = HUN_German_technology }
         relative_position_id = HUN_German_technology
@@ -355,7 +361,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Italian_engineers
-        #icon = 
+        
+        icon = GFX_focus_HUN_ita_technology
 
         prerequisite = { focus = HUN_German_technology }
         relative_position_id = HUN_German_technology
@@ -375,7 +382,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Japanese_innovativennes
-        #icon = 
+
+        icon = GFX_focus_HUN_japan_technology
 
         prerequisite = { focus = HUN_German_technology }
         relative_position_id = HUN_German_technology
@@ -395,7 +403,7 @@ focus_tree = {
 	focus = {
         id = HUN_Domestic_arms_industry
 
-        #icon = 
+        icon = GFX_GER_new_main_tank
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
@@ -425,7 +433,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Better_steel_for_the_best_weapon
-        #icon = 
+
+        icon = GFX_GER_tiger
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
@@ -454,7 +463,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_Militarized_economy
-        #icon = 
+        
+        icon = GFX_focus_HUN_patrial_economy
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
@@ -480,7 +490,8 @@ focus_tree = {
     }
 	focus = {
         id = HUN_No_one_will_sit_idle
-        #icon = 
+
+        icon = GFX_focus_HUN_no_one_will_sit
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
@@ -502,7 +513,8 @@ focus_tree = {
 
 	focus = {
         id = HUN_Renounce_the_Treaty_of_Trianon
-        #icon = 
+
+        icon = GFX_focus_HUN_trianon
 
 		prerequisite = { focus = HUN_No_one_will_sit_idle }
 		prerequisite = { focus = HUN_Militarized_economy }
@@ -592,7 +604,6 @@ focus_tree = {
         icon = GFX_focus_HUN_proclaim_greater_hungary
 
         prerequisite = { focus = HUN_Reclaim_Voevodina }
-        prerequisite = { focus = HUN_Reclaim_Transilvania }
         prerequisite = { focus = HUN_Reclaim_Slovakia }
         relative_position_id = HUN_dream_about_great_hungary
 
@@ -638,6 +649,8 @@ focus_tree = {
         focus = {
         id = HUN_Aluminium_for_Germany
 
+        icon = GFX_focus_HUN_alum_for_GER
+
         prerequisite = { focus = HUN_Support_domestic_industry }
         prerequisite = { focus = HUN_Support_urbanization }
         relative_position_id = HUN_Support_domestic_industry 
@@ -645,8 +658,6 @@ focus_tree = {
         available = {
             has_completed_focus = HUN_German_technology
         }
-
-        #icon = 
 
         x = 1
         y = 1
@@ -893,7 +904,7 @@ focus_tree = {
     focus = {
         id = HUN_Hungraian_SS
 
-        #icon = 
+        icon = GFX_GER_ss_regiments
 
         prerequisite = { focus = HUN_Totalis_haboru focus = HUN_Elite_forces focus = HUN_All_efforts_on_tanks}
         relative_position_id = HUN_Elite_forces
@@ -986,7 +997,7 @@ focus_tree = {
 	focus = {
         id = HUN_Support_battalions
 
-        #icon = 
+        #icon =
 
         prerequisite = { focus = HUN_Equipment_standart }
         relative_position_id = HUN_Equipment_standart
@@ -1157,7 +1168,7 @@ focus_tree = {
     focus = {
         id = HUN_Increase_sales_resources_for_Germany
 
-        #icon = 
+        icon = GFX_focus_HUN_resources
 
         prerequisite = { focus = HUN_Aluminium_for_Germany } 
         relative_position_id = HUN_Aluminium_for_Germany
