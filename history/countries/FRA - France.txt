@@ -34,7 +34,6 @@ recruit_character = ic_FRA_francois_darlan
 recruit_character = ic_FRA_jeanmarie_charles_abrial
 recruit_character = ic_FRA_jeanpierre_esteva
 recruit_character = ic_FRA_jean_de_laborde
-# recruit_character = FRA_denis_guillaumat # Has been removed to make way for Charles Maurras, but might be readded
 recruit_character = ic_FRA_philippe_fequant
 recruit_character = ic_FRA_victor_denain
 recruit_character = ic_FRA_jean_marie_abrial
@@ -91,8 +90,19 @@ set_popularities = {
 	communism = 20
 }
 
+
+set_variable = { FRA_balance_stab = 0 }
+set_variable = { FRA_balance_ws = 0 }
+set_variable = { FRA_balance_cg = 0 }
+set_variable = { FRA_balance_mils_const_speed = 0 }
+add_dynamic_modifier = { modifier = FRA_goverment_balance }
+
 add_ideas = {
-	
+	ic_FRA_disjoined_goverment
+	ic_FRA_goverment_balance
+	ic_FRA_avia_production
+	ic_FRA_armor_production
+	ic_FRA_army_organization
 }
 
 set_technology = {

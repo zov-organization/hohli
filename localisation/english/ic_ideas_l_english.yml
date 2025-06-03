@@ -120,3 +120,8 @@
  ic_ITA_tax_reform:0 "Tax Reform"
  ic_ITA_building_up_colonies:0 "Building up Colonies"
  ic_ITA_building_up_colonies_bonus:0 "Colonies pay off!"
+
+ # france ideas & modifiers
+ ic_FRA_goverment_balance:0 "Goverment ideology balance"
+ FRA_goverment_balance:0 "Goverment ideology balance"
+ FRA_goverment_balance_modifier:0 "Goverment ideology balance"

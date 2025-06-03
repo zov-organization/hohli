@@ -96,3 +96,15 @@ ic_no_railways_africa = {
 	state_production_speed_rail_way_factor = -3
 	state_production_speed_supply_node_factor = -3
 } 
+
+
+FRA_goverment_balance = {
+	enable = { always = yes }
+	icon = ETH_imru_prince_regent
+
+
+	stability_factor = FRA_balance_stab
+	war_support_factor = FRA_balance_ws
+	consumer_goods_expected_value = FRA_balance_cg
+	production_speed_arms_factory_factor = FRA_balance_mils_const_speed
+}
