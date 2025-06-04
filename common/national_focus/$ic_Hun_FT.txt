@@ -533,19 +533,24 @@ focus_tree = {
 
 	focus = {
         id = HUN_dream_about_great_hungary
-        #icon = 
+        icon = GFX_focus_HUN_dream_great_hun
+
         x = 16
         y = 0
+
         cost = 5
+        
         completion_reward = {
             add_political_power = 150
             add_stability = 0.1
             add_war_support = 0.05
         }
 	}
+    
 	focus = {
         id = HUN_Reclaim_Slovakia
-        #icon = 
+        
+        icon = GFX_focus_HUN_slovakia
 
         prerequisite = { focus = HUN_dream_about_great_hungary }
         relative_position_id = HUN_dream_about_great_hungary
@@ -575,7 +580,8 @@ focus_tree = {
 
 	focus = {
         id = HUN_Reclaim_Voevodina
-        #icon = 
+        
+        icon = GFX_focus_HUN_voevodina
 
         prerequisite = { focus = HUN_dream_about_great_hungary }
         relative_position_id = HUN_dream_about_great_hungary
@@ -632,7 +638,7 @@ focus_tree = {
 	focus = {
         id = HUN_Crush_potential_rebels
 
-        #icon = 
+        icon = GFX_focus_HUN_rebel
 
         prerequisite = { focus = HUN_Proclame_Great_Hungary }
         relative_position_id = HUN_Proclame_Great_Hungary
@@ -683,7 +689,7 @@ focus_tree = {
 	focus = {
         id = HUN_Secret_rearmament
 
-        #icon = 
+        icon = GFX_focus_HUN_secret_rearnmament
 
         x = 27
         y = 0
@@ -703,7 +709,7 @@ focus_tree = {
 	focus = {
         id = HUN_Establish_field_artillery
 
-        #icon = 
+        icon = GFX_focus_HUN_field_art
 
         prerequisite = { focus = HUN_Secret_rearmament }
         relative_position_id = HUN_Secret_rearmament
@@ -722,7 +728,7 @@ focus_tree = {
 	focus = {
         id = HUN_New_infantry_weapons
 
-        #icon = 
+        icon = GFX_focus_HUN_modern_weapon
 
         prerequisite = { focus = HUN_Secret_rearmament }
         relative_position_id = HUN_Secret_rearmament
@@ -741,7 +747,7 @@ focus_tree = {
 	focus = {
         id = HUN_Develop_Military_logistics
 
-        #icon = 
+        icon = GFX_focus_HUN_mils_logistics
 
         prerequisite = { focus = HUN_Secret_rearmament }
         relative_position_id = HUN_Secret_rearmament
@@ -760,7 +766,7 @@ focus_tree = {
 	focus = {
         id = HUN_German_Advisors
 
-        #icon = 
+        icon = GFX_focus_HUN_ger_advisors
 
         prerequisite = { focus = HUN_New_infantry_weapons
 		focus = HUN_Establish_field_artillery
@@ -778,7 +784,7 @@ focus_tree = {
 	focus = {
         id = HUN_Special_forces
 
-        #icon = 
+        icon = GFX_focus_HUN_special_forces
 
         prerequisite = { focus = HUN_German_Advisors }
 		mutually_exclusive = { focus = HUN_Every_man_is_a_soldier }
@@ -887,7 +893,7 @@ focus_tree = {
 	focus = {
         id = HUN_Elite_forces
 
-        #icon = 
+        icon = GFX_focus_HUN_Special_forc
 
         prerequisite = { focus = HUN_Invincible_moral } 
 		prerequisite = { focus = HUN_always_march_forward}
@@ -922,7 +928,7 @@ focus_tree = {
 	focus = {
         id = HUN_Every_man_is_a_soldier
 
-        #icon = 
+        icon = GFX_focus_HUN_every_man_soldier
 
         prerequisite = { focus = HUN_German_Advisors }
 		mutually_exclusive = { focus = HUN_Special_forces}
@@ -1031,7 +1037,7 @@ focus_tree = {
 	focus = {
         id = HUN_A_New_Way_of_War
 
-        #icon = 
+        icon = GFX_focus_HUN_tanks
 
         prerequisite = { focus = HUN_German_Advisors }
 		mutually_exclusive = { focus = HUN_Special_forces }
@@ -1186,7 +1192,7 @@ focus_tree = {
     focus = {
         id = HUN_Total_war
 
-        #icon = 
+        icon = GFX_focus_Total_war_IC
 
         prerequisite = { focus = HUN_Crush_potential_rebels } 
         relative_position_id = HUN_Crush_potential_rebels
@@ -1212,7 +1218,7 @@ focus_tree = {
     focus = {
         id = HUN_Hungarian_Workers
 
-        #icon = 
+        icon = GFX_focus_HUN_workers_hun
 
         prerequisite = { focus = HUN_Total_war }
         relative_position_id = HUN_Total_war 
