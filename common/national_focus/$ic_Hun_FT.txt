@@ -814,7 +814,7 @@ focus_tree = {
 	focus = {
         id = HUN_encourage_aggressive_tactics
 
-        #icon = 
+        icon = GFX_focus_HUN_agressive_tatcics
 
         prerequisite = { focus = HUN_Special_forces }
         relative_position_id = HUN_Special_forces
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
         id = HUN_Shovel_as_second_weapon
 
-        #icon = 
+        icon = GFX_focus_FIN_weapon_caches
 
         prerequisite = { focus = HUN_Special_forces }
         relative_position_id = HUN_Special_forces
@@ -850,7 +850,7 @@ focus_tree = {
 	focus = {
         id = HUN_always_march_forward
 
-        #icon = 
+        icon = GFX_focus_HUN_charghs
 
         prerequisite = { focus = HUN_Shovel_as_second_weapon 
 		focus = HUN_encourage_aggressive_tactics}
@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
         id = HUN_Invincible_moral
 
-        #icon = 
+        icon = GFX_focus_HUN_invisible_morale
 
         prerequisite = { focus = HUN_Shovel_as_second_weapon 
 		focus = HUN_encourage_aggressive_tactics}
@@ -949,7 +949,7 @@ focus_tree = {
 	focus = {
         id = HUN_Equipment_standart
 
-        #icon = 
+        icon = GFX_focus_HUN_standart_equipment
 
         prerequisite = { focus = HUN_Every_man_is_a_soldier }
         relative_position_id = HUN_Every_man_is_a_soldier
@@ -965,7 +965,7 @@ focus_tree = {
 	focus = {
         id = HUN_Don't_neglect_artillery
 
-        #icon = 
+        icon = GFX_focus_SWE_let_fly_all_guns
 
         prerequisite = { focus = HUN_Every_man_is_a_soldier }
         relative_position_id = HUN_Every_man_is_a_soldier
@@ -984,7 +984,7 @@ focus_tree = {
 	focus = {
         id = HUN_God_of_war
 
-        #icon = 
+        icon = GFX_focus_HUN_God_of_war
 
         prerequisite = { focus = HUN_Don't_neglect_artillery  
 		 }
@@ -1003,7 +1003,7 @@ focus_tree = {
 	focus = {
         id = HUN_Support_battalions
 
-        #icon =
+        icon = GFX_focus_HUN_support_bat
 
         prerequisite = { focus = HUN_Equipment_standart }
         relative_position_id = HUN_Equipment_standart
@@ -1021,7 +1021,7 @@ focus_tree = {
 	focus = {
         id = HUN_Totalis_haboru
 
-        #icon = 
+        icon = GFX_focus_HUN_totalis_haboru
 
         prerequisite = { focus = HUN_God_of_war } 
 		prerequisite = { focus = HUN_Support_battalions}
@@ -1061,7 +1061,7 @@ focus_tree = {
 	focus = {
         id = HUN_Cavalry_is_in_the_past
 
-        #icon = 
+        icon = GFX_focus_HUN_cavalry_its_past
 
         prerequisite = { focus = HUN_A_New_Way_of_War }
         relative_position_id = HUN_A_New_Way_of_War
@@ -1081,7 +1081,7 @@ focus_tree = {
 	focus = {
         id = HUN_Maintainance_and_Supply
 
-        #icon = 
+        icon = GFX_focus_HUN_supply
 
         prerequisite = { focus = HUN_A_New_Way_of_War }
         relative_position_id = HUN_A_New_Way_of_War
@@ -1110,7 +1110,7 @@ focus_tree = {
 	focus = {
         id = HUN_Armored_Infantry_Carriers
 
-        #icon = 
+        icon = GFX_focus_HUN_armored_cars
 
         prerequisite = { focus = HUN_Cavalry_is_in_the_past focus = HUN_Maintainance_and_Supply}
         relative_position_id = HUN_Cavalry_is_in_the_past
@@ -1130,7 +1130,7 @@ focus_tree = {
 	focus = {
         id = HUN_Strong_armor_and_powerful_guns
 
-        #icon = 
+        icon = GFX_focus_generic_anti_tank_guns
 
         prerequisite = { focus = HUN_Maintainance_and_Supply 
 	focus = HUN_Cavalry_is_in_the_past}
@@ -1157,7 +1157,7 @@ focus_tree = {
 	focus = {
         id = HUN_All_efforts_on_tanks
 
-        #icon = 
+        icon = GFX_focus_generic_army_tanks2
 
         prerequisite = { focus = HUN_Armored_Infantry_Carriers } 
 		prerequisite = { focus = HUN_Strong_armor_and_powerful_guns }
