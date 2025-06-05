@@ -19,6 +19,25 @@ ideas = {
 			}
         }
 
+		ic_FRA_devalue_of_franc = {
+            
+			name = FRA_devalue_of_franc
+
+			removal_cost = -1
+			picture = 
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_expected_value = -0.10
+				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+
+
 		ic_FRA_army_organization = {
             
 			name = FRA_army_organization
