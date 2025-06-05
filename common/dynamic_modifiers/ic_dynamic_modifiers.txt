@@ -98,13 +98,23 @@ ic_no_railways_africa = {
 } 
 
 
-FRA_goverment_balance = {
+FRA_inflex_industry = {
 	enable = { always = yes }
-	icon = ETH_imru_prince_regent
+	icon = DEN_flyvertroppernes_organization 
 
 
 	stability_factor = FRA_balance_stab
-	war_support_factor = FRA_balance_ws
 	consumer_goods_expected_value = FRA_balance_cg
 	production_speed_arms_factory_factor = FRA_balance_mils_const_speed
+	industrial_capacity_factory = FRA_factory_output
+}
+
+FRA_disjoined_goverment = {
+	enable = { always = yes }
+	icon = DEN_flyvertroppernes_organization 
+
+	stability_factor = FRA_goverment_stab
+	political_power_gain = FRA_pp_gain
+	fascism_drift = FRA_fascism_gain
+	communism_drift = FRA_communism_gain
 }

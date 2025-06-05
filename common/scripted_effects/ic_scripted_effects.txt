@@ -1,3 +1,3 @@
-FRA_goverment_balance_modifier = {
-	custom_effect_tooltip = FRA_goverment_balance_tt
+FRA_inflex_industry_modifier = {
+	custom_effect_tooltip = FRA_inflex_industry_tt
 }

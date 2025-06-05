@@ -6,18 +6,16 @@ ideas = {
 			name = FRA_disjoined_goverment
 
 			removal_cost = -1
-
 			picture = 
-
 			allowed = {
 				always = no
 			}
 			
 			modifier = {
-				stability_factor = -0.6
-                consumer_goods_expected_value = 0.40
-				industrial_capacity_factory = -0.8
-                
+				#stability_factor = -0.1
+               	#political_power_gain = -0.80
+               	#fascism_drift = 0.02
+				#communism_drift = 0.02
 			}
         }
 
@@ -34,16 +32,18 @@ ideas = {
 			}
 			
 			modifier = {
-				max_planning = -0.1
+				max_planning = 0.1
 				planning_speed = -0.5
 				army_org_factor = -0.1
 			}
         }
 
 
-        ic_FRA_goverment_balance = {
-			name = FRA_goverment_balance
-			picture = ETH_imru_prince_regent
+        ic_FRA_inflex_industry = {
+			name = FRA_inflex_industry
+			picture = DEN_flyvertroppernes_organization
+
+
 
 			allowed = {
 				always = no
@@ -52,7 +52,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
 			}
         }
 
@@ -71,43 +70,39 @@ ideas = {
 			equipment_bonus = {
                small_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.3
 				}
 				rocket_interceptor_equipment = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.2
 				}
 				medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.2
 				}
 				large_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.2
 				}
 				medium_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.2
 				}
 				large_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
-				}
-				transport_plane_equipment = {
-					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.2
 				}
 				cv_small_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.3
 				}
 				small_plane_naval_bomber_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.3
 				}
 				small_plane_cas_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.3
 				}
             }
         }
@@ -126,40 +121,40 @@ ideas = {
 			
 			equipment_bonus = {
                 light_tank_aa_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 light_tank_artillery_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 light_tank_destroyer_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 medium_tank_aa_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 medium_tank_artillery_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 medium_tank_destroyer_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 heavy_tank_aa_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 heavy_tank_artillery_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 heavy_tank_destroyer_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 light_tank_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 medium_tank_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
                 heavy_tank_chassis = {
-                    build_cost_ic = 0.5
+                    build_cost_ic = 0.1
                 }
 
             }
