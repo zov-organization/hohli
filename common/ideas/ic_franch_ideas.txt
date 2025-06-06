@@ -24,7 +24,7 @@ ideas = {
 			name = FRA_devalue_of_franc
 
 			removal_cost = -1
-			picture = 
+			#picture = 
 			allowed = {
 				always = no
 			}

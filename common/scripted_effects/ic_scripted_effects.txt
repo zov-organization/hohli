@@ -1,3 +1,6 @@
 FRA_inflex_industry_modifier = {
 	custom_effect_tooltip = FRA_inflex_industry_tt
 }
+FRA_disjoined_goverment_modifier = {
+	custom_effect_tooltip = FRA_disjoined_goverment_tt
+}

@@ -62,7 +62,7 @@ focus_tree = {
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = { 
-				FRA_balance_cg = -0.1
+				FRA_balance_cg = -0.2
 				tooltip = consumer_goods_factor_tt
 			}
 		}
@@ -110,7 +110,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			FRA_inflex_industry_modifier = yes
+			add_to_variable = { 
+				FRA_balance_stab = 0.2
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = { 
+				FRA_balance_cg = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 
@@ -125,7 +133,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			FRA_inflex_industry_modifier = yes
+			add_to_variable = { 
+				FRA_balance_mils_const_speed = 0.15
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				FRA_factory_output = 0.2
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	
@@ -157,7 +173,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			FRA_inflex_industry_modifier = yes
+			add_to_variable = { 
+				FRA_balance_mils_const_speed = 0.15
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				FRA_factory_output = 0.2
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	# end of crisis?
@@ -178,8 +202,51 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+
 		completion_reward = {
+
+			remove_ideas = ic_FRA_devalue_of_franc
+
+			FRA_disjoined_goverment_modifier = yes
+
+			if = {
+				limit = {
+					has_completed_focus = FRA_print_money
+				}
+				add_to_variable = { 
+					FRA_goverment_stab = -0.1
+					tooltip = stability_factor_tt
+				}
+			}
 			
+			if = {
+				limit = {
+					has_completed_focus = FRA_pause_reforms
+				}
+				add_to_variable = { 
+					FRA_pp_gain = 0.1
+					tooltip = political_power_gain_tt
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_raise_salaries
+				}
+				add_to_variable = { 
+					FRA_fascism_gain = -0.02
+					tooltip = fascism_drift_tt
+				}
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = FRA_subsidies
+				}
+				add_to_variable = { 
+					FRA_communism_gain = -0.02
+					tooltip = communism_drift_tt
+				}
+			}
 		}
 	}
 
