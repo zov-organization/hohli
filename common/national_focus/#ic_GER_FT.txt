@@ -1051,10 +1051,6 @@
 				transfer_state = 73
 				transfer_state = 70
 				transfer_state = 71
-				664 = { add_core_of = HUN }
-				73 = { add_core_of = HUN }
-				70 = { add_core_of = HUN }
-				71 = { add_core_of = HUN }
 			}
 			add_war_support = 0.2
 			add_named_threat = {
