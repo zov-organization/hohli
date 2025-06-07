@@ -94,7 +94,6 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_aggressive_focus
 			}
 			cost = 100.000
 			traits = {

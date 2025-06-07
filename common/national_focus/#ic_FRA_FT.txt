@@ -264,7 +264,10 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ic_FRA_boost_army_morale
+				days = 120
+			}
 		}
 	}
 
@@ -281,7 +284,15 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_armor
+				bonus = 2
+				uses = 1
+				technology = advanced_light_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+			}
+			remove_ideas = ic_FRA_armor_production
 		}
 	}
 

@@ -185,19 +185,19 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 15000
+	amount = 35000
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 25000
+	amount = 15000
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = train_equipment_1
-	amount = 300
+	amount = 50
 	producer = FRA
 }
 

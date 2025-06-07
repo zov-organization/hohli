@@ -6,7 +6,7 @@ ideas = {
 			name = FRA_disjoined_goverment
 
 			removal_cost = -1
-			picture = 
+			#picture = 
 			allowed = {
 				always = no
 			}
@@ -44,7 +44,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = 
+			#picture = 
 
 			allowed = {
 				always = no
@@ -80,7 +80,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = 
+			#picture = 
 
 			allowed = {
 				always = no
@@ -132,7 +132,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = 
+			#picture = 
 
 			allowed = {
 				always = no
@@ -175,10 +175,23 @@ ideas = {
                 heavy_tank_chassis = {
                     build_cost_ic = 0.1
                 }
-
             }
         }
 
+		ic_FRA_boost_army_morale = {
+			name = FRA_boost_army_morale
 
+			removal_cost = -1
+
+			#picture = 
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				experience_gain_army_factor = 0.1
+			}
+		}
     }
+
 }
