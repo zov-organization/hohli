@@ -24,7 +24,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_economic_intervention
 
             allowed = {
                 always = no
@@ -41,7 +41,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_foreign_capital
 
             allowed = {
                 always = no
@@ -56,7 +56,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_foreign_capital
 
             allowed = {
                 always = no
@@ -72,7 +72,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_foreign_capital
 
             allowed = {
                 always = no
@@ -88,7 +88,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_economic_intervention_buff
 
             allowed = {
                 always = no
@@ -104,7 +104,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_treaty_of_trianon
 
             allowed = {
                 always = no
@@ -138,7 +138,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_Rearmament
 
             allowed = {
                 always = no
@@ -153,7 +153,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_german_advisors
 
             allowed = {
                 always = no
@@ -169,7 +169,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_german_advisors
 
             allowed = {
                 always = no
@@ -187,7 +187,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_german_advisors
 
             allowed = {
                 always = no
@@ -216,7 +216,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_german_advisors
 
             allowed = {
                 always = no
@@ -250,7 +250,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_ARG_economic_reactivation
 
             allowed = {
                 always = no
@@ -265,7 +265,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_Urbanization
 
             allowed = {
                 always = no
@@ -284,7 +284,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_Greater_Hungray
 
             allowed = {
                 always = no
@@ -303,11 +303,11 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
-
             allowed = {
                 always = no
 			}
+
+            picture = GFX_idea_HUN_Suppression_the_opposition
 
             modifier = {
                 stability_weekly = -0.01
@@ -318,12 +318,12 @@ ideas = {
 
         HUN_Increased_sales = {
 
-            name = HUN_Increased_sales_1
+            name = HUN_Increased_sales
 			
 			allowed = {
 				
 			}
-			picture = generic_pp_unity_bonus
+            picture = GFX_idea_HUN_Increased_sales
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.1
@@ -338,7 +338,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_purge
 
             allowed = {
                 always = no
@@ -356,7 +356,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_purge
 
             allowed = {
                 always = no
@@ -376,7 +376,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_purge
 
             allowed = {
                 always = no
@@ -410,7 +410,10 @@ ideas = {
 		}
 
         HUN_We_need_more_bullets = {
+
 			name =  HUN_We_need_more_bullets
+
+            pisture = GFX_FRA_factory_strikes
 
 			removal_cost = -1
 
@@ -436,7 +439,10 @@ ideas = {
 		}
 
         HUN_We_need_more_bullets_2 = {
+
 			name =  HUN_We_need_more_bullets_2
+
+            picture = GFX_FRA_factory_strikes
 
 			removal_cost = -1
 
@@ -471,7 +477,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_generic_stockpile_fuel
 
             allowed = {
                 always = no
@@ -482,6 +488,8 @@ ideas = {
 		}
 
         HUN_Tankograd = {
+
+            picture = GFX_idea_man_five_year_plan_tank
 
 			name = HUN_Tankograd
 
@@ -531,6 +539,8 @@ ideas = {
 		}
 
         HUN_Totalis_haburu = {
+
+            picture = GFX_idea_totaler_krieg_economy
 			
             name = HUN_Totalis_haburu
 
@@ -543,8 +553,10 @@ ideas = {
 		}
 
         HUN_Elite_special_forces = {
+
+            picture = GFX_idea_PER_special_units_division_idea
 			
-            name = HUN_Totalis_haburu
+            name = HUN_Elite_special_forces
 
 			modifier = {
                 research_speed_factor = 0.08

@@ -249,4 +249,88 @@ spriteTypes = {
 		name = "GFX_idea_ic_ENG_shadow_scheme_idea"
 		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
 	}
+
+
+
+	spriteType = {
+		name = "GFX_idea_HUN_ID_treaty_of_trianon"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_economic_intervention_buff"
+		texturefile = "gfx/interface/ideas/idea_GER_economy_of_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_treaty_of_trianon"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_economic_intervention"
+		texturefile = "gfx/interface/ideas/idea_GER_economy_of_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_economic_intervention"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_economic_intervention2"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_economic_intervention3"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_Rearmament"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_German_advisors"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_German_advisors_2"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_German_advisors_3"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_German_advisors_4"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Urbanization"
+		texturefile = "gfx/interface/ideas/idea_ARG_economic_reactivation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Urbanization2"
+		texturefile = "gfx/interface/ideas/idea_ARG_economic_reactivation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Greater_Hungray"
+		texturefile = "gfx/interface/ideas/idea_HUN_the_cult_of_arpad_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Suppression_the_opposition"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Suppression_the_opposition_2"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Suppression_the_opposition_3"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Suppression_the_opposition_4"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Increased_sales"
+		texturefile = "gfx/interface/ideas/idea_HUN_wuw_HUN_gombos_trade_treaty.dds"
+	}
+
 }
