@@ -164,7 +164,7 @@ focus_tree = {
         x = 1
         y = 1
 
-        cost = 5
+        cost = 10
 
         completion_reward = {
 			swap_ideas = {
@@ -184,7 +184,9 @@ focus_tree = {
 
         x = -1
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
             154 = {
                 add_extra_state_shared_building_slots = 1
@@ -308,7 +310,9 @@ focus_tree = {
 
         x = 0
         y = 2
+
         cost = 10
+
         completion_reward = {add_research_slot = 1
             
         }
@@ -323,7 +327,9 @@ focus_tree = {
 
         x = 0
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
             add_tech_bonus = {
                 bonus = 1
@@ -465,6 +471,10 @@ focus_tree = {
         id = HUN_Militarized_economy
         
         icon = GFX_focus_HUN_patrial_economy
+
+        available = {
+            has_completed_focus = HUN_From_a_drop_into_the_sea
+        }
 
         prerequisite = { focus = HUN_Strenghten_fascists }
         relative_position_id = HUN_Strenghten_fascists
@@ -616,7 +626,7 @@ focus_tree = {
         x = 0
         y = 2
 
-        cost = 5
+        cost = 10
 
         available = {
             date > 1940.11.20
@@ -794,7 +804,7 @@ focus_tree = {
         x = 0
         y = 1
 
-        cost = 5
+        cost = 10
 
         completion_reward = {
             army_experience = 100
@@ -901,7 +911,9 @@ focus_tree = {
 
         x = -1
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
             add_ideas = HUN_Elite_special_forces
         }
@@ -937,7 +949,9 @@ focus_tree = {
 
         x = -5
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
             army_experience = 100
             swap_ideas = {
@@ -1029,7 +1043,9 @@ focus_tree = {
 
         x = -1
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
             add_ideas = HUN_Totalis_haburu
         }
@@ -1165,7 +1181,9 @@ focus_tree = {
 
         x = -1
         y = 1
-        cost = 5
+
+        cost = 10
+
         completion_reward = {
 		    add_ideas = HUN_Tankograd
         }

@@ -332,5 +332,65 @@ spriteTypes = {
 		name = "GFX_idea_HUN_Increased_sales"
 		texturefile = "gfx/interface/ideas/idea_HUN_wuw_HUN_gombos_trade_treaty.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HUN_Tankograd"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_Invite_foreign_investors"
+		texturefile = "gfx/interface/ideas/idea_RAJ_external_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_Invite_foreign_investors2"
+		texturefile = "gfx/interface/ideas/idea_RAJ_external_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_Invite_foreign_investors3"
+		texturefile = "gfx/interface/ideas/idea_RAJ_external_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_our_future"
+		texturefile = "gfx/interface/ideas/HUN/idea_HUN_futuree.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_We_need_more_bullets"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_We_need_more_bullets_2"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_We_need_more_bullets_2"
+		texturefile = "gfx/interface/ideas/FRA_factory_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Special_forces_idea"
+		texturefile = "gfx/interface/ideas/idea_PER_special_units_division_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Special_forces_idea_2"
+		texturefile = "gfx/interface/ideas/idea_PER_special_units_division_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Aggressive_Special_Forces"
+		texturefile = "gfx/interface/ideas/idea_SWE_ga_pa_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Totalis_haburu"
+		texturefile = "gfx/interface/ideas/idea_totaler_krieg_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Elite_special_forces"
+		texturefile = "gfx/interface/ideas/idea_eng_special_air_service.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_fuel_gain_factor"
+		texturefile = "gfx/interface/ideas/idea_generic_stockpile_fuel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_ID_A_new_way"
+		texturefile = "gfx/interface/ideas/idea_ARG_roca_runciman_new_partner.dds"
+	}
 
 }

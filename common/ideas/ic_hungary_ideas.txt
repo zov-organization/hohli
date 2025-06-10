@@ -7,7 +7,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_A_new_way
 
             allowed = {
                 always = no
@@ -121,7 +121,7 @@ ideas = {
 
             removal_cost = -1
 
-            #picture = 
+            picture = GFX_idea_HUN_ID_our_future
 
             allowed = {
                 always = no
@@ -169,7 +169,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_german_advisors
+            picture = GFX_german_advisors_2
 
             allowed = {
                 always = no
@@ -187,7 +187,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_german_advisors
+            picture = GFX_german_advisors_3
 
             allowed = {
                 always = no
@@ -216,7 +216,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_german_advisors
+            picture = GFX_german_advisors_4
 
             allowed = {
                 always = no
@@ -250,7 +250,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_ARG_economic_reactivation
+            picture = GFX_idea_HUN_Urbanization
 
             allowed = {
                 always = no
@@ -265,7 +265,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_HUN_Urbanization
+            picture = GFX_idea_HUN_Urbanization2
 
             allowed = {
                 always = no
@@ -338,7 +338,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_generic_purge
+            picture = GFX_idea_HUN_Suppression_the_opposition_2
 
             allowed = {
                 always = no
@@ -356,7 +356,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_generic_purge
+            picture = GFX_idea_HUN_Suppression_the_opposition_3
 
             allowed = {
                 always = no
@@ -376,7 +376,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_generic_purge
+            picture = GFX_idea_HUN_Suppression_the_opposition_4
 
             allowed = {
                 always = no
@@ -413,7 +413,7 @@ ideas = {
 
 			name =  HUN_We_need_more_bullets
 
-            pisture = GFX_FRA_factory_strikes
+            picture = GFX_idea_HUN_We_need_more_bullets
 
 			removal_cost = -1
 
@@ -442,7 +442,7 @@ ideas = {
 
 			name =  HUN_We_need_more_bullets_2
 
-            picture = GFX_FRA_factory_strikes
+            picture = GFX_idea_HUN_We_need_more_bullets_2
 
 			removal_cost = -1
 
@@ -477,7 +477,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = GFX_idea_generic_stockpile_fuel
+            picture = GFX_idea_HUN_fuel_gain_factor
 
             allowed = {
                 always = no
@@ -491,7 +491,7 @@ ideas = {
 
             picture = GFX_idea_man_five_year_plan_tank
 
-			name = HUN_Tankograd
+			name = GFX_idea_HUN_Tankograd
 
 			equipment_bonus = {	
 				armor = {
@@ -505,6 +505,8 @@ ideas = {
 
 			name = HUN_Special_forces_idea
 
+            picture = GFX_idea_HUN_Special_forces_idea
+
 			modifier = {
                 max_dig_in_factor = 0.08
                 army_strength_factor = 0.05
@@ -516,6 +518,8 @@ ideas = {
         HUN_Special_forces_idea_2 = {
 			
             name = HUN_Special_forces_idea_2
+
+            picture = GFX_idea_HUN_Special_forces_idea_2
 
 			modifier = {
                 max_dig_in_factor = 0.08
@@ -531,6 +535,8 @@ ideas = {
 			
             name = HUN_Aggressive_Special_Forces
 
+            picture = GFX_idea_HUN_Aggressive_Special_Forces
+
 			modifier = {
                 army_speed_factor = 0.05
                 planning_speed = 0.15
@@ -542,7 +548,7 @@ ideas = {
 
             picture = GFX_idea_totaler_krieg_economy
 			
-            name = HUN_Totalis_haburu
+            name = GFX_idea_HUN_Totalis_haburu
 
 			modifier = {
                 war_support_weekly = -0.002
@@ -554,7 +560,7 @@ ideas = {
 
         HUN_Elite_special_forces = {
 
-            picture = GFX_idea_PER_special_units_division_idea
+            picture = GFX_idea_HUN_Elite_special_forces
 			
             name = HUN_Elite_special_forces
 
