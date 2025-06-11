@@ -120,15 +120,14 @@ sub_units = {
 			movement = -0.05
 		}
 	}
-	
-	marine = {
-		abbreviation = "MRN"
+
+	jaeger = {
 		sprite = infantry
 		map_icon_category = infantry
-		marines = yes
+		special_forces = yes
 		
+		ai_priority = 2
 		priority = 601
-		ai_priority = 200
 		active = no
 
 		type = {
@@ -143,14 +142,95 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
-			category_marines
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 25
+		max_organisation = 75
+		default_morale = 0.4
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 1
+		weight = 0.5
+		supply_consumption = 0.16
+		breakthrough = 0.20
+	
+		need = {
+			infantry_equipment = 250
+		}
+		desert = {
+			movement = 0.2
+		}
+
+		forest = {
+			attack = 0.075
+			defence = 0.075
+			movement = 0.2
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.1
+		}		
+		marsh = {
+			attack = 0.075
+			defence = 0.075
+			movement = 0.15
+		}
+		plains = {
+			movement = 0.30
+		}
+		urban = {
+			movement = 0.2
+		}
+		river = {
+			movement = -0.05
+		}
+		amphibious = {
+			movement = -0.05
+			attack = 0.2
+		}
+		jungle = {
+			movement = 0.1
+		}	
+	}
+
+	shocktroop = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		
+		ai_priority = 50
+		priority = 601
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+		
+		combat_width = 2
+		
+		#offensive abilities
+		#soft_attack = 0.2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 75
 		default_morale = 0.4
 		manpower = 1000
 
@@ -158,31 +238,58 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.016
-		breakthrough = 0.3
+		supply_consumption = 0.18
+		breakthrough = 0.2 
 	
 		need = {
-			infantry_equipment = 150
+			infantry_equipment = 250
+		}
+		desert = {
+			movement = 0.2
 		}
 
+		forest = {
+			movement = 0.10
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.1
+		}	
 		marsh = {
-			attack = 0.3
+			movement = 0.05
+		}
+		plains = {
+			movement = 0.30
+		}
+		urban = {
+			attack = 0.15
+			movement = 0.3
+			defence = 0.10
+			#Please dont use these to guard coastal urban tiles or I will take this away
 		}
 		river = {
-			attack = 0.3
+			movement = -0.05
 		}
 		amphibious = {
-			attack = 0.5
+			movement = -0.05
+			attack = 0.2
+		}
+		jungle = {
+			movement = 0.1
+		}
+		fort = {
+			attack = 0.15
+			movement = 0.1
 		}
 	}
-
-	marine_commando  = {
-		abbreviation = "MRC"
+	
+	marine = {
+		abbreviation = "MRN"
 		sprite = infantry
 		map_icon_category = infantry
-		special_forces = yes
 		marines = yes
-		can_exfiltrate_from_coast = yes
 		
 		priority = 601
 		ai_priority = 200
