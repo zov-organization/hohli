@@ -202,7 +202,7 @@ ic_sp_shocktroops = {
 	project_output = {
 		country_effects = {
 			set_technology = {
-				tech_shocktroop = 1
+				shocktroops = 1
 			}
 		}
 	}
