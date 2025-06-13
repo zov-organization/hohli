@@ -57,6 +57,7 @@ sp_time = {
 
         ic_five_hundred_days = 50
         ic_thousand_days = 100
+        ic_two_hundred_days = 20
     }
 }
 

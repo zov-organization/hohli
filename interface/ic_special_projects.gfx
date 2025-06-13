@@ -37,6 +37,14 @@ spriteTypes = {
 		name = "GFX_ic_sp_mountaneers"
 		texturefile = "gfx/interface/special_project/project_icons/ic_sp_mountaneers.dds"
 	}
+	spriteType = { 
+		name = "GFX_ic_sp_jaegers"
+		texturefile = "gfx/interface/special_project/project_icons/ic_sp_jaegers.dds"
+	}
+	spriteType = { 
+		name = "GFX_ic_sp_shocktroops"
+		texturefile = "gfx/interface/special_project/project_icons/is_sp_shocktroops.dds"
+	}
 
 	spriteType = { 
 		name = "GFX_ic_sp_ship_armor_dd"

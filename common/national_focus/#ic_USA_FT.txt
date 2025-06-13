@@ -1446,6 +1446,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_the_pentagon
+			360 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 822
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1485,6 +1493,14 @@ focus_tree = {
 				category = air_doctrine
 			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
+			367 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 7422
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
