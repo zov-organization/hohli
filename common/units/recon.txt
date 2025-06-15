@@ -453,14 +453,14 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 30
+		max_organisation = 35
 		default_morale = 0.3
-		manpower = 500
+		manpower = 250
 		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.06
+		supply_consumption = 0.01
 		recon = 1
 		can_be_parachuted = yes
 
@@ -492,10 +492,10 @@ sub_units = {
 		}
 		jungle = {
 			movement = 0.10
+			defence = 0.05
 		}
 		plains = {
-			movement = 0.1
-			attack = 0.05
+			movement = 0.05
 		}
 		
 		same_support_type = recon # blocks adding other recon types to template

@@ -6,13 +6,12 @@ technologies = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		
 		# EFFECT ########
-		mountaineers_special_forces_contribution_factor = -0.25
 		category_mountaineers = {
-			supply_consumption = -0.02
+			supply_consumption = -0.10
 		}
 		category_special_forces = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		enable_subunits = {
 			rangers_support
@@ -23,8 +22,6 @@ technologies = {
 		
 		xp_research_type = army
 		xp_unlock_cost = 60
-		
-		#xor = { special_forces_marines special_forces_paratroopers }
 		
 		path = {
 			leads_to_tech = ski_troops
@@ -42,6 +39,10 @@ technologies = {
 		allow = {
 			AND = {
 				has_tech = tech_mountaineers
+				can_unlock_new_special_forces_tree = yes
+			}
+			AND = {
+				has_tech = jaegers
 				can_unlock_new_special_forces_tree = yes
 			}
 		}
@@ -86,16 +87,14 @@ technologies = {
 			leads_to_tech = special_forces_recon
 			research_cost_coeff = 1
 		}
-
-		xor = { rangers }
 		
 		rangers_support = {
-			acclimatization_cold_climate_gain_factor = 0.25
-			snow = {
-				attack = 0.15
-				defence = 0.20
-				movement = 0.15
-			}
+			acclimatization_cold_climate_gain_factor = 0.35
+		}
+
+		jaeger = {
+			max_organisation = 0.5
+			defence = 0.05
 		}
 		
 		doctrine = yes	
@@ -111,14 +110,6 @@ technologies = {
 			name = special_forces_doctrine_folder
 			position = { x = -1 y = 2 }
 		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			#armor = 3.0
-		}
 	}
 	
 	rangers = {
@@ -132,14 +123,16 @@ technologies = {
 			leads_to_tech = special_forces_recon
 			research_cost_coeff = 1
 		}
-
-		xor = { ski_troops }
 		
 		rangers_support = {
 			mountain = {
 				attack = 0.20
 				defence = 0.10
 				movement = 0.10
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -170,12 +163,19 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 60
+
+		jaeger = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		mountaineers = {
+			max_organisation = 2
+			breakthrough = 0.1
+		}
 		
 		category_mountaineers = {
-			initiative = 0.01
+			initiative = 0.05
 		}
-		unit_mountaineers_design_cost_factor = -0.50
-		unit_rangers_support_design_cost_factor = -0.50
 		
 		force_use_small_tech_layout = yes
 		
@@ -231,8 +231,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xor = { mountaineers_combat_2 }
-		
 		doctrine = yes	
 		research_cost = 4.5
 
@@ -281,8 +279,6 @@ technologies = {
 				soft_attack = 0.20
 			}
 		}
-		
-		xor = { mountaineers_combat_1 }
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -362,11 +358,6 @@ technologies = {
 			soft_attack = 0.10
 		}
 		
-		mountaineers_special_forces_contribution_factor = -0.25
-		special_forces_training_time_factor = -0.20
-		
-		xor = { mountaineers_keystone_2 }
-		
 		doctrine = yes	
 		research_cost = 4.5
 
@@ -395,15 +386,12 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.06
+		special_forces_cap = 0.02
 		special_forces_out_of_supply_factor = -0.1
-		special_forces_attack_factor = 0.10
-		acclimatization_hot_climate_gain_factor = 0.10
-		acclimatization_cold_climate_gain_factor = 0.10
+		special_forces_attack_factor = 0.05
+		acclimatization_cold_climate_gain_factor = 0.05
 		
 		force_use_small_tech_layout = yes
-
-		xor = { mountaineers_keystone_1 }
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -435,8 +423,6 @@ technologies = {
 		
 		xp_research_type = navy
 		xp_unlock_cost = 60
-		
-		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		
 		force_use_small_tech_layout = yes
 		
@@ -510,8 +496,6 @@ technologies = {
 		xp_research_type = navy
 		xp_unlock_cost = 60
 		
-		xor = { marines_shore_parties }
-		
 		force_use_small_tech_layout = yes
 		
 		pioneer_support = {
@@ -555,8 +539,6 @@ technologies = {
 		
 		xp_research_type = navy
 		xp_unlock_cost = 60
-		
-		xor = { marines_jungle_troops }
 		
 		force_use_small_tech_layout = yes
 		
@@ -656,8 +638,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xor = { marines_expeditionary }
-		
 		enable_subunits = {
 			marine_commando
 		}
@@ -704,8 +684,6 @@ technologies = {
 			leads_to_tech = marines_expeditionary_blowtorch 
 			research_cost_coeff = 1
 		}
-		
-		xor = { marines_commandoes }
 
 		special_forces_cap = 0.06
 		naval_invasion_planning_bonus_speed = 0.2
@@ -982,8 +960,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
-		#xor = { special_forces_mountaineers special_forces_marines } 
 	
 		paratroopers_special_forces_contribution_factor = -0.10
 		transport_plane = {
@@ -1055,8 +1031,6 @@ technologies = {
 			leads_to_tech = paras_airborne_light_armor
 			research_cost_coeff = 1
 		}
-
-		xor = { paras_combat_drop }
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -1093,8 +1067,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
-		xor = { paras_dispersed_drop }
 		
 		path = {
 			leads_to_tech = paras_airborne_light_armor
@@ -1190,8 +1162,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xor = { paras_combat_2 }
-		
 		signal_company = {
 			battalion_mult = {
 				category = category_paratroopers
@@ -1241,8 +1211,6 @@ technologies = {
 				default_morale = 0.15
 			}
 		}
-		
-		xor = { paras_combat_1 }
 		
 		doctrine = yes	
 		research_cost = 2.25
