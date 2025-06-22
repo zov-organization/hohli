@@ -93,8 +93,8 @@ technologies = {
 		}
 
 		jaeger = {
-			max_organisation = 0.5
-			defence = 0.05
+			max_organisation = 5	
+			defence = 10
 		}
 		
 		doctrine = yes	
@@ -386,7 +386,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.02
+		special_forces_cap = 0.01
 		special_forces_out_of_supply_factor = -0.1
 		special_forces_attack_factor = 0.05
 		acclimatization_cold_climate_gain_factor = 0.05
@@ -446,9 +446,7 @@ technologies = {
 			leads_to_tech = marines_shore_parties
 			research_cost_coeff = 1
 		}
-		
-		marines_special_forces_contribution_factor = -0.25
-		naval_invasion_capacity = 5
+
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -596,10 +594,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		unit_marine_design_cost_factor = -0.50
-
 		marine = {
-			max_organisation = 5
+			max_organisation = 15
 		}
 			
 		doctrine = yes	
@@ -645,9 +641,6 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
 		}
-		
-		acclimatization_cold_climate_gain_factor = 0.1
-		acclimatization_hot_climate_gain_factor = 0.1
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -685,10 +678,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		special_forces_cap = 0.06
+		special_forces_cap = 0.01
 		naval_invasion_planning_bonus_speed = 0.2
-		
-		army_bonus_air_superiority_factor = 0.10
 		
 		doctrine = yes	
 		research_cost = 2.25
@@ -784,8 +775,8 @@ technologies = {
 			}
 		}
 		
-		shore_bombardment_bonus = 0.15
-		special_forces_attack_factor = 0.10
+		shore_bombardment_bonus = 0.20
+		special_forces_attack_factor = 0.025
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -924,8 +915,7 @@ technologies = {
 			}
 		}
 
-		extra_marine_supply_grace = 24
-		naval_invasion_capacity = 10
+		extra_marine_supply_grace = 6
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -960,15 +950,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-	
-		paratroopers_special_forces_contribution_factor = -0.10
-		transport_plane = {
-			air_defence = 0.20
-		}
-		category_special_forces = {
-			max_organisation = 5
-			soft_attack = 0.05
-		}
 		
 		allow = { 
 			AND = {
@@ -1034,9 +1015,7 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 4.5
-		
-		paratroopers_special_forces_contribution_factor = -0.10
-		
+
 		on_research_complete = {
 			custom_effect_tooltip = SF_PARAS_sabotage_effect_tt
 		}
@@ -1076,8 +1055,6 @@ technologies = {
 		doctrine = yes	
 		research_cost = 4.5
 		
-		paratroopers_special_forces_contribution_factor = -0.10
-		
 		on_research_complete = {
 			custom_effect_tooltip = SF_PARAS_combat_effect_tt
 		}
@@ -1108,10 +1085,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
-		#category_all_infantry = {
-		#	max_organisation = 15
-		#}
 		
 		path = {
 			leads_to_tech = paras_combat_1
@@ -1161,13 +1134,6 @@ technologies = {
 			leads_to_tech = paras_bonus_1 
 			research_cost_coeff = 1
 		}
-		
-		signal_company = {
-			battalion_mult = {
-				category = category_paratroopers
-				defense = 0.15
-			}
-		}
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -1205,13 +1171,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		field_hospital = {
-			battalion_mult = {
-				category = category_paratroopers
-				default_morale = 0.15
-			}
-		}
-		
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -1247,14 +1206,6 @@ technologies = {
 			leads_to_tech = paras_keystone_1 
 			research_cost_coeff = 1
 		}
-		
-		category_paratroopers = {
-			max_organisation = 5
-			supply_consumption = -0.02
-		}
-		
-		acclimatization_hot_climate_gain_factor = 0.10
-		acclimatization_cold_climate_gain_factor = 0.10
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -1292,9 +1243,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		paratrooper_weight_factor = -0.5
-		special_forces_no_supply_grace = 24
-		
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -1325,13 +1273,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
-		category_paratroopers = {
-			soft_attack = 0.15
-			breakthrough = 0.15
-		}
-		
-		special_forces_training_time_factor = 0.20
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -1363,10 +1304,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
-		paratroopers_special_forces_contribution_factor = -0.20
-		special_forces_training_time_factor = -0.10
-		special_forces_attack_factor = 0.10
 			
 		doctrine = yes	
 		research_cost = 2.25
