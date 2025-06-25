@@ -49,7 +49,7 @@ ic_sp_paratroopers = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_five_hundred_days
+	prototype_time = sp_time.prototype.ic_two_hundred_days
 
 	complexity = sp_complexity.ic_ten_fractions
 
@@ -84,7 +84,7 @@ ic_sp_marines = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_five_hundred_days
+	prototype_time = sp_time.prototype.ic_two_hundred_days
 
 	complexity = sp_complexity.ic_ten_fractions
 
@@ -119,7 +119,7 @@ ic_sp_mountaneers = {
 		}
 	}
 	
-	prototype_time = sp_time.prototype.ic_five_hundred_days
+	prototype_time = sp_time.prototype.ic_two_hundred_days
 
 	complexity = sp_complexity.ic_ten_fractions
 
@@ -131,6 +131,78 @@ ic_sp_mountaneers = {
 		country_effects = {
 			set_technology = {
 				tech_mountaineers = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_jaegers = {
+	specialization = specialization_land
+	icon = GFX_ic_sp_jaegers
+
+	project_tags = { 
+		sp_tag_artillery
+		ic_sp_tag_infantry
+	}
+	
+	visible = {
+		FROM = {
+			NOT = { 
+				has_tech = jaegers
+			}
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_two_hundred_days
+
+	complexity = sp_complexity.ic_ten_fractions
+
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				jaegers = 1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {}
+}
+
+ic_sp_shocktroops = {
+	specialization = specialization_land
+	icon = GFX_ic_sp_shocktroops
+
+	project_tags = { 
+		sp_tag_artillery
+		ic_sp_tag_infantry
+	}
+	
+	visible = {
+		FROM = {
+			NOT = { 
+				has_tech = shocktroops
+			}
+		}
+	}
+	
+	prototype_time = sp_time.prototype.ic_two_hundred_days
+
+	complexity = sp_complexity.ic_ten_fractions
+
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+	
+	project_output = {
+		country_effects = {
+			set_technology = {
+				shocktroops = 1
 			}
 		}
 	}

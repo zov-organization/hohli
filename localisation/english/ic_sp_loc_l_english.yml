@@ -23,6 +23,10 @@
  ic_sp_marines_desc:0 ""
  ic_sp_mountaneers:0 "Mountaneers"
  ic_sp_mountaneers_desc:0 ""
+ ic_sp_shocktroops:0 "Shocktroops"
+ ic_sp_shocktroops_desc:0 ""
+ ic_sp_jaegers:0 "Jaegers"
+ ic_sp_jaegers_desc:0 ""
  ic_sp_ita_militia:0 "Armed Militia"
  ic_sp_ita_militia_desc:0 ""
 
