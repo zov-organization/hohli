@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		vremenniy_kostil = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			#picture = generic_reserve_divisions
+            equipment_bonus = { 
+                armor = { build_cost_ic = 1 instant = yes }
+            }
+		}
 		peace_training = {
 			allowed = {
 				always = no
@@ -21,18 +31,18 @@ ideas = {
 			}
 		}
 		NoTradeback = {
-			allowed = {
-				always = no
-			}
-			cancel = {
-				has_war = yes
-			}
-			removal_cost = -1
-			modifier = {
-				min_export = -1.0
-				production_lack_of_resource_penalty_factor = -1.0
-			}
-		}
+            allowed = {
+                always = no
+            }
+            cancel = {
+                has_war = yes
+            }
+            removal_cost = -1
+            modifier = {
+                min_export = -1.0
+                production_lack_of_resource_penalty_factor = -1.0
+            }
+        }
 		DayOne_Efficiency = {
 			allowed = {  }
 			picture = generic_central_management
