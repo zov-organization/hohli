@@ -876,7 +876,7 @@ equipments = {
 		armor_value = 20
 
 		#Offensive Abilities
-		soft_attack = 65
+		soft_attack = 25
 		hard_attack = 13
 		ap_attack = 1
 

@@ -42,7 +42,7 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_tanks
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 
 		same_support_type = sp_td_art

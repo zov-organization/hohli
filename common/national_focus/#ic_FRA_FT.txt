@@ -398,7 +398,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			recruit_character = ic_FRA_maurice_gamelin
 		}
 	}
 
@@ -414,7 +414,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			recruit_character = ic_FRA_maxime_weygand
 		}
 	}
 
@@ -429,7 +429,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.1
+				uses = 3
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -446,7 +450,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_armor
+				bonus = 2
+				uses = 1
+				technology = improved_small_airframe
+			}
 		}
 	}
 
@@ -461,7 +470,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant = yes
+				}
+			}
+			15 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant = yes
+				}
+			}
 		}
 	}
 
@@ -476,7 +500,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			24 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant = yes
+				}
+			}
 		}
 	}
 
@@ -491,7 +522,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ic_FRA_avia_production
+				add_idea = ic_FRA_avia_production_f
+			}
 		}
 	}
 
@@ -507,7 +541,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ic_FRA_avia_production
+				add_idea = ic_FRA_avia_production_b
+			}
 		}
 	}
 
@@ -522,7 +559,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_building_construction = {
+				type = air_facility
+				level = 1
+				province = 9434
+				instant = yes
+			}
 		}
 	}
 
@@ -537,7 +579,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.2
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 
@@ -552,7 +598,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			air_experience = 50
 		}
 	}
 
