@@ -99,6 +99,7 @@ on_actions = {
 				add_ideas = {
 					peace_training
 					NoTradeback
+					vremenniy_kostil
 				}
 				add_timed_idea = {
 					idea = DayOne_Efficiency

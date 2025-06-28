@@ -417,6 +417,8 @@ NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 32767
+
 
 
 
@@ -466,7 +468,7 @@ NDefines.NSupply.ALERT_VERY_LOW_SUPPLY_LEVEL = 0.5
 
 --MIO
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.12
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
 
 --Special Projects
 NDefines.NProject.DEFAULT_STOP_PROJECT_DAYS = 1	-- 0 wont work - prints an error :(

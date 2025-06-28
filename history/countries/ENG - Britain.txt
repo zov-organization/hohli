@@ -66,6 +66,8 @@ recruit_character = ic_ENG_edward_ellington
 recruit_character = ic_ENG_kenneth_anderson
 recruit_character = ic_ENG_henry_harwood
 recruit_character = ic_ENG_sholto_douglas
+recruit_character = ic_ENG_Arthur_Tedder
+recruit_character = ic_ENG_Betram_Home_Ramsay
 
 add_ideas = {
 	civilian_economy

@@ -150,7 +150,7 @@ ic_sp_jaegers = {
 	visible = {
 		FROM = {
 			NOT = { 
-				has_tech = tech_jaegers
+				has_tech = jaegers
 			}
 		}
 	}
