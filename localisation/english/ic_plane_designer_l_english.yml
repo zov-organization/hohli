@@ -1,3 +1,6 @@
 ﻿l_english:
+ EQ_MOD_CAT_small_plane_armor_category_TITLE:1 "Plane Armor"
+ EQ_MOD_CAT_small_plane_self_sealing_category_TITLE:1 "Self-Sealing Fuel Tanks"
+ EQ_MOD_CAT_small_plane_range_category_TITLE:1 "Range Improvement"
  ptab_module:0 "Antitank Aviation Bomb(HEAT)"
  ptab_module_desc:0 "Soviet high-explosive anti-tank (HEAT) shaped charge bomb."

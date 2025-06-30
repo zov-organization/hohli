@@ -1,4 +1,9 @@
 ﻿l_english:
+ EQ_MOD_SLOT_plane_armor_type_slot_TITLE:0 "Plane Armor"
+ EQ_MOD_SLOT_range_type_slot_TITLE:0 "Range Improvement"
+ EQ_MOD_SLOT_self_sealing_slot_TITLE:0 "Self-Sealing Fuel Tanks"
+ EQ_MOD_SLOT_armor_or_range_slot_TITLE:0 "Self-Sealing/Range"
+
  EQ_MOD_SLOT_utility_slot_TITLE:0 "Utility slot"
  EQ_MOD_SLOT_defencive_slot_TITLE:0 "Defencive Turret slot"
  EQ_MOD_SLOT_radar_slot_TITLE:0 "Radar/Electronics slot"
