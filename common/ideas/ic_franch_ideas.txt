@@ -19,6 +19,40 @@ ideas = {
 			}
         }
 
+		ic_FRA_big_ships = {
+			name = FRA_big_ships
+
+			removal_cost = -1
+			#picture = 
+			allowed = {
+				always = no
+			}
+			
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+		}
+
+		ic_FRA_carriers = {
+			name = FRA_carriers
+
+			removal_cost = -1
+			#picture = 
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
 		ic_FRA_devalue_of_franc = {
             
 			name = FRA_devalue_of_franc
@@ -55,11 +89,12 @@ ideas = {
 				planning_speed = -0.5
 				army_org_factor = -0.1
 
-				breakthrow = -0.1
+				breakthrough_factor = -0.1
 				
-				defense = -0.05
+				defence = -0.1
 			}
         }
+
 
 
         ic_FRA_inflex_industry = {
@@ -320,7 +355,22 @@ ideas = {
 				}
             }
         }
-		ic_FRA_
+		ic_FRA_fleet_investments = {
+			name = FRA_fleet_investments
+
+			removal_cost = -1
+
+			#picture = 
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+                industrial_capacity_dockyard = 0.2
+				consumer_goods_expected_value = 0.1
+            }
+		}
     }
 	
 }

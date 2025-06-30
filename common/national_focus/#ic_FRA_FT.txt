@@ -615,7 +615,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_building_construction = {
+				type = naval_facility
+				level = 1
+				province = 3552
+				instant = yes
+			}
 		}
 	}
 
@@ -630,7 +635,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			15 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant = yes
+				}
+			}
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant = yes
+				}
+			}
 		}
 	}
 	
@@ -645,7 +665,30 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			539 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant = yes
+				}
+			}
+			773 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant = yes
+				}
+			}
+			900 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant = yes
+				}
+			}
 		}
 	}
 
@@ -661,7 +704,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.3
+				uses = 2
+				category = cat_base_strike
+			}
 		}
 	}
 
@@ -677,7 +724,11 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.3
+				uses = 2
+				category = cat_fleet_in_being
+			}
 		}
 	}
 
@@ -693,7 +744,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_new_heavy
+				bonus = 2
+				uses = 1
+				technology = improved_ship_hull_heavy
+			}
 		}
 	}
 
@@ -708,7 +764,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_ideas = ic_FRA_big_ships
 		}
 	}
 
@@ -723,7 +779,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_new_carrier
+				bonus = 2
+				uses = 1
+				technology = improved_ship_hull_carrier
+			}
 		}
 	}
 
@@ -738,7 +799,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_ideas = ic_FRA_carriers
 		}
 	}
 
@@ -753,7 +814,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_new_carrier
+				bonus = 2
+				uses = 1
+				technology = improved_ship_hull_cruiser
+			}
 		}
 	}
 	
@@ -768,24 +834,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ic_FRA_fleet_investments
+				days = 120
+			}
 		}
 	}
 
-	focus = {
-		id = FRA_more_docks
-		icon = GFX_focus_focus_fra_down_marianne
-
-		prerequisite = { focus = FRA_modernize_navy }
-		relative_position_id = FRA_modernize_navy
-
-		x = 3
-		y = 1
-		cost = 5
-		completion_reward = {
-			
-		}
-	}
 
 # --------------------------------------------------------------------------------------------------------
 	#focus = {
