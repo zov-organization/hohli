@@ -28,7 +28,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			light_tank_destroyer_chassis = 50
+			light_tank_destroyer_chassis = 40
 		}
 		manpower = 100
 		max_organisation = 0
@@ -77,7 +77,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			medium_tank_destroyer_chassis = 50
+			medium_tank_destroyer_chassis = 40
 		}
 		manpower = 100
 		max_organisation = 0
@@ -127,7 +127,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			heavy_tank_destroyer_chassis = 40
+			heavy_tank_destroyer_chassis = 30
 		}
 		manpower = 80
 		max_organisation = 0
