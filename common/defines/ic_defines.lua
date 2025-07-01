@@ -363,14 +363,14 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0
 --- AA and CAS defines:
 
 --- TWO MOST IMPORTANT CAS DEFINES
-NDefines.NAir.DISRUPTION_FACTOR = 4  -- vanilla - 4
+NDefines.NAir.DISRUPTION_FACTOR = 2  -- vanilla - 4
 NDefines.NAir.ESCORT_FACTOR = 2 -- vanilla - 2
 -- yeah for some reason vanilla does it the best lol
 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.22
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.033	-- air global damage modifier (almost vanilla)
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.033	-- global damage modifier (almost vanilla)
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5 -- how many CAS/TAC can enter a combat depending on enemy width there
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 -- how many CAS/TAC can enter a combat depending on enemy width there
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 
