@@ -81,11 +81,11 @@ ideas = {
 				air_equipment = -0.3
             }
 			modifier = {
-				air_accidents_factor = 0.25
-				air_ace_generation_chance_factor = -0.75
+				#air_accidents_factor = 0.25
+				#air_ace_generation_chance_factor = -0.75
 				air_mission_efficiency = -0.3
-				air_training_xp_gain_factor = -0.2
-				air_untrained_pilots_penalty_factor = 0.65
+				#air_training_xp_gain_factor = -0.2
+				#air_untrained_pilots_penalty_factor = 0.65
 			}
 		}
 
@@ -116,11 +116,11 @@ ideas = {
 				air_equipment = -0.25
             }
 			modifier = {
-				air_accidents_factor = 0.25
-				air_ace_generation_chance_factor = -0.75
+				#air_accidents_factor = 0.25
+				#air_ace_generation_chance_factor = -0.75
 				air_mission_efficiency = -0.3
-				air_training_xp_gain_factor = -0.2
-				air_untrained_pilots_penalty_factor = 0.65
+				#air_training_xp_gain_factor = -0.2
+				#air_untrained_pilots_penalty_factor = 0.65
 			}
 		}
 
@@ -151,11 +151,11 @@ ideas = {
 				air_equipment = -0.2
             }
 			modifier = {
-				air_accidents_factor = 0.25
-				air_ace_generation_chance_factor = -0.75
+				#air_accidents_factor = 0.25
+				#air_ace_generation_chance_factor = -0.75
 				air_mission_efficiency = -0.3
-				air_training_xp_gain_factor = -0.2
-				air_untrained_pilots_penalty_factor = 0.65
+				#air_training_xp_gain_factor = -0.2
+				#air_untrained_pilots_penalty_factor = 0.65
 			}
 		}
 
@@ -174,7 +174,7 @@ ideas = {
 				air_equipment = -0.05
             }
 			modifier = {
-				air_accidents_factor = 0.1
+				#air_accidents_factor = 0.1
 				air_mission_efficiency = -0.05
 			}
 		}

@@ -1658,13 +1658,6 @@ focus_tree = {
 			
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ic_SOV_aleksandr_novikov
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-			mio:SOV_ilyushin_design_bureau_organization = {
-				complete_mio_trait = {
-					trait = SOV_mio_trait_merge_vef_plant
-				}
-			}
 
 		}
 	}
@@ -1790,7 +1783,7 @@ focus_tree = {
 	focus = {
 		id = SOV_further_back_defence_of_moscow
 
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_SOV_further_back_defence_of_moscow
 
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
@@ -1864,7 +1857,7 @@ focus_tree = {
 	focus = {
 		id = SOV_moscow_our
 
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_SOV_moscow_our
 
 		prerequisite = { focus = SOV_further_back_defence_of_moscow }
 		relative_position_id = SOV_further_back_defence_of_moscow
@@ -1909,7 +1902,7 @@ focus_tree = {
 	focus = {
 		id = SOV_further_back_defence_of_stalingrad
 
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_SOV_further_back_defence_of_stalingrad
 
 		prerequisite = { focus = SOV_oust_nazi }
 		relative_position_id = SOV_oust_nazi
@@ -1984,7 +1977,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stalingrad_our
 
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_SOV_stalingrad_our
 
 		prerequisite = { focus = SOV_further_back_defence_of_stalingrad }
 		relative_position_id = SOV_further_back_defence_of_stalingrad
@@ -2030,7 +2023,7 @@ focus_tree = {
 	focus = {
 		id = SOV_snyatie_debaffov_2
 
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_SOV_snyatie_debaffov_2
 
 		prerequisite = { focus = SOV_snyatie_debaffov_1 }
 		relative_position_id = SOV_snyatie_debaffov_1
@@ -2052,7 +2045,7 @@ focus_tree = {
 	focus = {
 		id = SOV_yacheika
 
-		icon = GFX_focus_generic_socialist_science
+		icon = GFX_SOV_yacheika
 
 		prerequisite = { focus = SOV_snyatie_debaffov_1 }
 		relative_position_id = SOV_snyatie_debaffov_1
@@ -2075,7 +2068,7 @@ focus_tree = {
 	focus = {
 		id = SOV_skidka_na_tank
 
-		icon = GFX_focus_generic_license_production
+		icon = GFX_SOV_skidka_na_tank
 
 		prerequisite = { focus = SOV_yacheika }
 		relative_position_id = SOV_yacheika
@@ -2099,7 +2092,7 @@ focus_tree = {
 	focus = {
 		id = SOV_dobicha_rezini
 
-		icon = GFX_SOV_VOV
+		icon = GFX_SOV_dobicha_rezini
 
 		prerequisite = { focus = SOV_snyatie_debaffov_1 }
 		relative_position_id = SOV_snyatie_debaffov_1
@@ -2185,7 +2178,7 @@ focus_tree = {
 	focus = {
 		id = SOV_goy_da_rokossovskii
 
-		icon = GFX_SOV_forts
+		icon = GFX_SOV_goy_da_rokossovskii
 
 		prerequisite = { focus = SOV_snyatie_debaffov_2 focus = SOV_skidka_na_tank }
 		relative_position_id = SOV_snyatie_debaffov_2
@@ -2260,7 +2253,7 @@ focus_tree = {
 	focus = {
 		id = SOV_kuban_air_battle
 
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_SOV_kuban_air_battle
 
 		prerequisite = { focus = SOV_goy_da_rokossovskii }
 		prerequisite = { focus = SOV_ptab_focus }
@@ -2277,6 +2270,12 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_red_airforces_3
 				add_idea = SOV_red_airforces_4
+			}
+			
+			mio:SOV_ilyushin_design_bureau_organization = {
+				complete_mio_trait = {
+					trait = SOV_mio_trait_merge_vef_plant
+				}
 			}
 		}
 	}
