@@ -66,3 +66,48 @@ FRA_prodaction_orders_category = {
         }
     }
 }
+FRA_civil_unrest_category = {
+
+	FRA_communist_civil_war_decision = {
+
+		icon = generic_civil_support
+
+		available = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		allowed = {
+			always = no
+		}
+		
+		completion_reward = {
+		}
+	}
+	
+	FRA_fascist_civil_war_decision = {
+
+		icon = generic_civil_support
+ 
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+		days_remove = 0
+
+		activation = {
+			always = no
+		}
+
+		allowed = {
+			always = no
+		}
+		completion_reward = {
+		}
+	}
+	
+}
