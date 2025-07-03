@@ -88,7 +88,8 @@
 
   GER_balance_of_powers_decisions:0 "German Balance of Power Decisions"
   GER_in_bop_tip:0 "Hower your mouse here to get info about Balance of Power system"
-  GER_in_bop_tip_desc:0 "Penis228_ya_em_spermu"
+  GER_in_bop_tip_desc:0 "German people at the start of the war were overflowing with happiness about their revenge for der Große Krieg. However during the Second "Weltkrieg" german military suffered heavy losses, undermining peoples will to fight. This system represents german poplutation mood to fight, based on casualties.\n\n§W§CWehrmacht§! and §HGerman Economy§! are getting ranged buffs right up untill 1.5kk casualties. Buffs ranges are:\n- less than §R100k§! casualties\n- from §R100k§! to §R200k§! casualties\n- from §R200k§! to §R500k§! casualties\n- from §R500k§! to §R800k§! casualties\n- from §R800k§! to §R1kk§! casualties\n- from §R1kk§! to §R1.5kk§! casualties\n- from §R1.5kk§! to §R2kk§! casualties\n- from §R2kk§! to §R2.5kk§! casualties\n- from §R2.5kk§! to §R3kk§! casualties\n- from §R3kk§! to §R3.5kk§! casualties\n- from §R3.5kk§! to §R4kk§! casualties\n- from §R4kk§! to §R4.5kk§! casualties\n- from §R4.5kk§! to §R5kk§! casualties\n- from §R5kk§! to §R5.5kk§! casualties\n- from §R5.5kk§! to §R6kk§! casualties\n- from §R6kk§! to §R6.5kk§! casualties\n- more than §R6.5kk§! casualties§!"
+  #GER_in_bop_tip_desc:0 "§WPenis228_ya_em_spermu§!"
   GER_deploy_hitlerjugend:0 "Deploy Hitlerjugend"
   GER_deploy_volkssturm:0 "Deploy Volkssturm"
   GER_deploy_werwolf:0 "Deploy Werwolf"
