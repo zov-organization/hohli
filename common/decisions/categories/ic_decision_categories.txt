@@ -10,7 +10,7 @@ ic_progon_mode = {
     visible = { 
         OR = {
             AND = {
-                GER = { is_ai = yes } 
+                #GER = { is_ai = yes } 
                 ROOT = { is_ai = no }
             }
         }
