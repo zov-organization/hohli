@@ -587,13 +587,15 @@
 			mio:GER_messerschmitt_organization = {
 				add_mio_funds = 1000
 			}
-			add_tech_bonus = {
-				name = GER_luftwaffe
-				bonus = 0.5
-				uses = 3
-				technology = aa_hmg
-				technology = aa_cannon_1
-				technology = aa_cannon_3
+			
+			sp:ic_sp_aa_hmg = {
+			  add_project_progress_ratio = 0.25
+			}
+			sp:ic_sp_aa_cannon_1 = {
+			  add_project_progress_ratio = 0.25
+			}
+			sp:ic_sp_aa_cannon_3 = {
+			  add_project_progress_ratio = 0.25
 			}
 		}
 	}
@@ -613,7 +615,7 @@
 			army_experience = 50
 			add_tech_bonus = {
 				name = GER_wehrmacht
-				bonus = 0.75
+				bonus = 1.75
 				uses = 3
 				category = infantry_weapons
 			}
