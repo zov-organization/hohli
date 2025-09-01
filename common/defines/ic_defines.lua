@@ -409,15 +409,22 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
 
-NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
-NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
-NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 1	-- it takes 30 days for one ship to fully train
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0	-- country gets 0 navy xp from ships trainings
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0	-- no accidents may happen during training
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 32767
+
+
+-- raiding/convoys gameplay enhance
+ -- NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2
+ -- NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.08
+ -- NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.8
 
 
 
