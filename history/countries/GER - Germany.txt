@@ -158,7 +158,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 500
+	amount = 900
 	producer = GER
 }
 
@@ -170,7 +170,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 25000
+	amount = 27300
 	producer = GER
 }
 
@@ -188,19 +188,22 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 750
+	#amount = 750
+	amount = 1500
 	producer = GER
 }
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 200
+	#amount = 200
+	amount = 2400
 	producer = GER
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1000
+	#amount = 1000
+	amount = 3300
 	producer = GER
 }
 

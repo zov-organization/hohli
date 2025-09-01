@@ -74,7 +74,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 8
+		requested_factories = 9
 		progress = 0
 		efficiency = 53
 		industrial_manufacturer = mio:ENG_rsaf_enfield_organization
@@ -85,7 +85,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "ENG" 
 		}
-		requested_factories = 5
+		requested_factories = 4
 		progress = 0
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_royal_arsenal_organization
