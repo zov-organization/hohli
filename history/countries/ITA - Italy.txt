@@ -113,9 +113,38 @@ add_ideas = {
 
 	vittorio_emanuele
 	ic_ITA_agrarian_economy1
-	ic_ITA_regio_esercito
 	ic_ITA_poor_motorized_army_1
 }
+add_dynamic_modifier = { modifier = ic_ITA_regio_esercito }
+	add_to_variable = {ITA_army_attack_against_major_factor = -0.05}
+	add_to_variable = {ITA_army_defence_against_major_factor = -0.05}
+	add_to_variable = {ITA_army_speed_factor = -0.2}
+	add_to_variable = {ITA_army_org_factor = -0.1}
+	add_to_variable = {ITA_army_org_regain = -0.15}
+	add_to_variable = {ITA_experience_gain_army_unit_factor = -0.2}
+	add_to_variable = {ITA_max_dig_in_factor = 0.03}
+	add_to_variable = {ITA_pocket_penalty = 0.15}
+	add_to_variable = {ITA_planning_speed = -0.3}
+add_dynamic_modifier = { modifier = ic_ITA_regia_marina }
+	add_to_variable = {ITA_convoy_escort_efficiency = -0.1}
+	add_to_variable = {ITA_convoy_retreat_speed = -0.1}
+	add_to_variable = {ITA_naval_coordination = -0.05}
+	add_to_variable = {ITA_naval_detection = -0.05}
+	add_to_variable = {ITA_naval_enemy_fleet_size_ratio_penalty_factor = -0.15}
+	add_to_variable = {ITA_naval_has_potf_in_combat_attack = 0.1}
+	add_to_variable = {ITA_naval_hit_chance = -0.05}
+	add_to_variable = {ITA_naval_night_attack = -0.15}
+	add_to_variable = {ITA_naval_retreat_speed = 0.1}
+	add_to_variable = {ITA_navy_max_range_factor = -0.15}
+	add_to_variable = {ITA_night_spotting_chance = -0.1}
+add_dynamic_modifier = { modifier = ic_ITA_regia_aeronautica }
+	add_to_variable = {ITA_air_accidents_factor = 0.15}
+	add_to_variable = {ITA_naval_strike_targetting_factor = -0.1}
+	add_to_variable = {ITA_air_bombing_targetting = -0.2}
+	add_to_variable = {ITA_air_mission_xp_gain_factor = 0.2}
+	add_to_variable = {ITA_air_night_penalty = -0.1}
+
+	
 
 set_technology = {
 	infantry_weapons = 1

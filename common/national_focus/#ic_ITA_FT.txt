@@ -24,6 +24,7 @@
 		cost = 5
 		completion_reward = {
 			add_political_power = 50
+			add_ideas = ic_ITA_vittorio_mutilata
 		}
 	}
 	focus = {
@@ -35,9 +36,11 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = -0.03
+			add_political_power = -10
 		}
 	}
 	focus = {
@@ -49,9 +52,36 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
 			add_political_power = 50
+			add_opinion_modifier = {
+				target = GER
+				modifier = anti_comintern_pact_opinion
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = anti_comintern_pact_opinion
+				}
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = pact_against_us
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = pact_against_us
+				}
+			}
+			
+			hidden_effect = {
+				add_named_threat = {
+					threat = 1
+					name = ITA_anticomintern
+				}
+			}
 		}
 	}
 	
@@ -64,9 +94,21 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ic_ITA_romans_idea
+			custom_effect_tooltip = ITA_add_roman_claims_tt
+			hidden_effect = {
+				ITA = {
+					add_state_claim = 934
+					add_state_claim = 44
+					add_state_claim = 805
+					add_state_claim = 103
+					add_state_claim = 853
+					add_state_claim = 185
+					add_state_claim = 116
+				}
+			}
 		}
 	}
 	focus = {
@@ -75,12 +117,19 @@
 
 		prerequisite = { focus = ITA_grande_italia }
 		relative_position_id = ITA_grande_italia
+		available = {
+			GER = {
+				has_completed_focus = ic_GER_anshluss
+			}
+		}
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 7
 		completion_reward = {
-			add_political_power = 50
+			annex_country = {
+				target = ALB
+			}
 		}
 	}
 	focus = {
@@ -94,7 +143,45 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			every_state = {
+                limit = {
+                    OR = {
+						state = 934
+					}
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			every_state = {
+                limit = {
+                    OR = {
+						state = 44
+					}
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			every_state = {
+                limit = {
+                    OR = {
+						state = 805
+					}
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -105,11 +192,33 @@
 		prerequisite = { focus = ITA_join_anticomintern_pact }
 		relative_position_id = ITA_annex_albania
 
+		avaiable = {
+			GER = {
+				has_completed_focus = GER_cze_annex
+			}
+		}
+
 		x = -1
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			GER = {add_to_faction = ITA}
+			add_opinion_modifier = {
+				target = GER
+				modifier = pact_of_steel_opinion
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = pact_of_steel_opinion
+				}
+			}
+			hidden_effect = {
+				add_named_threat = {
+					threat = 5
+					name = ITA_steelpact
+				}
+			}
 		}
 	}
 	focus = {
@@ -119,11 +228,30 @@
 		prerequisite = { focus = ITA_steel_pact }
 		relative_position_id = ITA_steel_pact
 
+		available = {
+			GER = {
+				has_war_with = FRA
+			}
+		}
+
 		x = -1
 		y = 1
-		cost = 5
+		cost = 1
 		completion_reward = {
-			add_political_power = 50
+			hidden_effect = {
+				ITA = {
+					add_state_claim = 735
+					add_state_claim = 1
+					add_state_claim = 851
+					add_state_claim = 665
+					add_state_claim = 458
+				}
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = FRA
+				hostility_reason = asked_to_join
+			}
 		}
 	}
 	focus = {
@@ -133,11 +261,20 @@
 		prerequisite = { focus = ITA_steel_pact }
 		relative_position_id = ITA_steel_pact
 
+		available = {
+			ITA = {
+				has_war_with = ENG
+			}
+		}
+
 		x = 1
 		y = 1
-		cost = 5
+		cost = 1
 		completion_reward = {
-			add_political_power = 50
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -161,11 +298,17 @@
 		prerequisite = { focus = ITA_german_military_cooperation }
 		relative_position_id = ITA_german_military_cooperation
 
+		available = {
+			ITA = {
+				has_war_with = SOV
+			}
+		}
+
 		x = 0
 		y = 1
-		cost = 5
+		cost = 9
 		completion_reward = {
-			add_political_power = 50
+			##unlock decisions tt
 		}
 	}
 	#industry
@@ -180,7 +323,10 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_agrarian_economy1
+				add_idea = ic_ITA_agrarian_economy2
+			}
 		}
 	}
 	focus = {
@@ -192,9 +338,9 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ic_ITA_nationalization
 		}
 	}
 	focus = {
@@ -208,7 +354,10 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_timed_idea = {
+				idea = ic_ITA_keynesian_economy
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -220,9 +369,9 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ic_ITA_iri
 		}
 	}
 	focus = {
@@ -236,7 +385,20 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_iri
+				add_idea = ic_ITA_iri_2
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 158
+			}
+			add_resource = {
+				type = steel
+				amount = 7
+				state = 117
+			}
 		}
 	}
 	focus = {
@@ -249,9 +411,80 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 8
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+                    NOT = {
+						OR = {
+							state = 117
+							state = 849
+							state = 156
+							state = 115
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    NOT = {
+						OR = {
+							state = 117
+							state = 849
+							state = 156
+							state = 115
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					NOT = {
+						OR = {
+							state = 117
+							state = 849
+							state = 156
+							state = 115
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					NOT = {
+						OR = {
+							state = 117
+							state = 849
+							state = 156
+							state = 115
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -264,9 +497,102 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 8
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+				limit = {
+                    OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					OR = {
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -278,9 +604,34 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_iri_2
+				add_idea = ic_ITA_fiat
+			}
+			random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -293,9 +644,9 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ic_ITA_autarky
 		}
 	}
 	focus = {
@@ -309,7 +660,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -321,9 +672,17 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_poor_motorized_army_1
+				add_idea = ic_ITA_poor_motorized_army_2
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
@@ -336,9 +695,12 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 8
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_fiat
+				add_idea = ic_ITA_mil_eco
+			}
 		}
 	}
 	focus = {
@@ -350,9 +712,72 @@
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			random_state = {
+                limit = {
+					OR = {
+                    	is_core_of = ALB
+						is_core_of = FRA
+						is_core_of = GRE
+						is_core_of = YUG
+						state = 447
+						state = 452
+						state = 907
+						state = 453
+					}
+
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+			random_state = {
+                limit = {
+					OR = {
+                    	is_core_of = ALB
+						is_core_of = FRA
+						is_core_of = GRE
+						is_core_of = YUG
+						state = 447
+						state = 452
+						state = 907
+						state = 453
+					}
+
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+			random_state = {
+                limit = {
+					OR = {
+                    	is_core_of = ALB
+						is_core_of = FRA
+						is_core_of = GRE
+						is_core_of = YUG
+						state = 447
+						state = 452
+						state = 907
+						state = 453
+					}
+
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+			random_state = {
+                limit = {
+					OR = {
+                    	is_core_of = ALB
+						is_core_of = FRA
+						is_core_of = GRE
+						is_core_of = YUG
+						state = 447
+						state = 452
+						state = 907
+						state = 453
+					}
+
+                }
+                add_extra_state_shared_building_slots = 2
+            }
 		}
 	}
 	focus = {
@@ -364,9 +789,10 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
-			add_political_power = 50
+			add_research_slot = 1
+			add_ideas = ic_ITA_rnd_expansion
 		}
 	}
 	focus = {
@@ -378,9 +804,12 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 8
 		completion_reward = {
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ic_ITA_mil_eco
+				add_idea = ic_ITA_berreta_and_breda
+			}
 		}
 	}
 	#colonies
@@ -395,7 +824,8 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
+			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -407,9 +837,36 @@
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 448
+						state = 450
+						state = 451
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 448
+						state = 450
+						state = 451
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -421,9 +878,36 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 550
+						state = 271
+						state = 559
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                    OR = {
+						state = 550
+						state = 271
+						state = 559
+					}
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -435,9 +919,13 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			add_resource = {
+				type = rubber
+				amount = 35
+				state = 271
+			}
 		}
 	}
 	focus = {
@@ -451,7 +939,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 661
+			}
+			add_resource = {
+				type = oil
+				amount = 13
+				state = 450
+			}
 		}
 	}
 	focus = {
@@ -463,9 +960,9 @@
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			##unlock decisions tt
 		}
 	}
 	focus = {
@@ -474,10 +971,18 @@
 
 		prerequisite = { focus = ITA_defend_our_resources }
 		relative_position_id = ITA_defend_our_resources
+		
+		available = {
+			NOT = {
+				907 = {
+					is_controlled_by = ENG
+				}
+			}
+		}
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 6
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -492,9 +997,11 @@
 
 		x = 14
 		y = 1
-		cost = 5
+		cost = 2
 		completion_reward = {
-			add_political_power = 50
+			army_experience = 15
+			navy_experience = 15
+			air_experience = 15
 		}
 	}
 	focus = {
@@ -504,7 +1011,11 @@
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
 
-		x = 5
+		available = {
+			date > 1936.08.01
+		}
+
+		x = 4
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -517,10 +1028,13 @@
 
 		prerequisite = { focus = ITA_franko_needs_help }
 		relative_position_id = ITA_franko_needs_help
+		available = {
+			date > 1938.06.01
+		}
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -534,9 +1048,20 @@
 
 		x = -7
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -548,9 +1073,9 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
-			add_political_power = 50
+			##unlock decisions tt
 		}
 	}
 	focus = {
@@ -564,7 +1089,11 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -578,7 +1107,9 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_special_forces_cap = 0.1 tooltip = special_forces_cap_tt}
+			add_to_variable = {ITA_special_forces_attack_factor = 0.07 tooltip = special_forces_attack_factor_tt}
 		}
 	}
 	focus = {
@@ -593,7 +1124,8 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_dig_in_speed_factor = 0.05 tooltip = dig_in_speed_factor_tt}
 		}
 	}
 	focus = {
@@ -605,9 +1137,13 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
-			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = -0.1
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_army_attack_against_major_factor = 0.05 tooltip = army_attack_against_major_factor_tt}
+			add_to_variable = {ITA_army_defence_against_major_factor = 0.05 tooltip = army_defence_against_major_factor_tt}
 		}
 	}
 	focus = {
@@ -621,7 +1157,12 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				name = ITA_l6
+				bonus = 0.75
+				uses = 1
+				technology = improved_light_tank_chassis
+			}
 		}
 	}
 	focus = {
@@ -635,7 +1176,12 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				name = ITA_m1139
+				bonus = 1
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
 		}
 	}
 	focus = {
@@ -649,7 +1195,11 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -659,12 +1209,16 @@
 		prerequisite = { focus = ITA_learn_from_germans }
 		prerequisite = { focus = ITA_use_expirience_from_spain_and_ethiopia }
 		relative_position_id = ITA_learn_from_germans
+		available = {
+			has_country_flag = ITA_army_reforms_3
+		}
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 7
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_army_speed_factor = 0.05 tooltip = army_speed_factor_tt}
 		}
 	}
 	focus = {
@@ -678,7 +1232,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			ic_ITA_amedeo_guillet = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			ic_ITA_ugo_cavallero = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = plus_one_defense_1
+			}
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_planning_speed = 0.05 tooltip = planning_speed_factor_tt}
 		}
 	}
 	focus = {
@@ -692,7 +1255,14 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				name = ITA_heavy_tanks_bonus
+				bonus = 1
+				uses = 1
+				technology = basic_heavy_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_heavy_tank_chassis
+			}
 		}
 	}
 	focus = {
@@ -703,11 +1273,19 @@
 		prerequisite = { focus = ITA_promote_new_generals }
 		relative_position_id = ITA_our_own_heavy_tanks
 
+		available = {
+			has_country_flag = ITA_army_reforms_4
+		}
+
 		x = 1
 		y = 1
-		cost = 5
+		cost = 12
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_modify_army_tt
+			add_to_variable = {ITA_army_speed_factor = 0.09 tooltip = army_speed_factor_tt}
+			add_to_variable = {ITA_planning_speed = 0.07 tooltip = planning_speed_factor_tt}
+			add_to_variable = {ITA_army_attack_against_major_factor = 0.05 tooltip = army_attack_against_major_factor_tt}
+			add_to_variable = {ITA_army_defence_against_major_factor = 0.05 tooltip = army_defence_against_major_factor_tt}
 		}
 	}
 	#fleet
@@ -720,7 +1298,7 @@
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -764,7 +1342,28 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -793,7 +1392,8 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_refit_speed = 0.1 tooltip = refit_speed_tt}
 		}
 	}
 	focus = {
@@ -807,7 +1407,19 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_repair_speed_factor = 0.15 tooltip = repair_speed_factor_tt}
 		}
 	}
 	focus = {
@@ -819,9 +1431,15 @@
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_ship_light_battery
+				category = cat_ship_medium_battery
+				category = cat_ship_heavy_battery
+			}
 		}
 	}
 	focus = {
@@ -835,7 +1453,10 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_naval_coordination = 0.05 tooltip = naval_coordination_tt}
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt}
 		}
 	}
 	focus = {
@@ -847,9 +1468,15 @@
 
 		x = -3
 		y = 2
-		cost = 5
+		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt}
 		}
 	}
 	focus = {
@@ -865,7 +1492,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = cat_fleet_in_being
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 	focus = {
@@ -881,7 +1517,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 2
+				category = cat_base_strike
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 	focus = {
@@ -897,7 +1542,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = cat_trade_interdiction
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
@@ -907,11 +1561,20 @@
 		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_coastal_fleet focus = ITA_armada }
 		relative_position_id = ITA_coastal_fleet
 
+		available = {
+			has_tech = improved_fire_control_system
+			has_tech = decimetric_radar
+		}
+
 		x = 0
 		y = 1
-		cost = 5
+		cost = 7
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_naval_detection = 0.05 tooltip = naval_detection_tt}
+			add_to_variable = {ITA_naval_hit_chance = 0.05 tooltip = naval_hit_chance_tt}
+			add_to_variable = {ITA_night_spotting_chance = 0.1 tooltip = night_spotting_chance_factor_tt}
+			add_to_variable = {ITA_naval_night_attack = 0.1 tooltip = naval_night_attack_tt}
 		}
 	}
 	focus = {
@@ -923,9 +1586,41 @@
 
 		x = 0
 		y = 5
-		cost = 5
+		cost = 10
 		completion_reward = {
-			add_political_power = 50
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+					is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	#air
@@ -938,9 +1633,9 @@
 
 		x = 8
 		y = 1
-		cost = 5
+		cost = 3
 		completion_reward = {
-			add_political_power = 50
+			
 		}
 	}
 	focus = {
@@ -1025,7 +1720,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			##unlock decisions tt
 		}
 	}
 	focus = {
