@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_form_popular_front
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_form_popular_front
 
 		prerequisite = {  }
 
@@ -29,7 +29,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_devalue_of_franc
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_devalue_of_franc
 
 		prerequisite = { focus = FRA_form_popular_front }
 		relative_position_id = FRA_form_popular_front
@@ -46,7 +46,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_print_money
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_print_money
 
 		prerequisite = { focus = FRA_devalue_of_franc }
 		relative_position_id = FRA_devalue_of_franc
@@ -70,7 +70,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_start_reforms
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_start_reforms
 
 		prerequisite = { focus = FRA_form_popular_front }
 		relative_position_id = FRA_form_popular_front
@@ -101,7 +101,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_pause_reforms
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_pause_reforms
 
 		prerequisite = { focus = FRA_start_reforms }
 		relative_position_id = FRA_start_reforms
@@ -124,7 +124,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_raise_salaries
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_raise_salaries
 
 		prerequisite = { focus = FRA_start_reforms }
 		relative_position_id = FRA_start_reforms
@@ -149,7 +149,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_reassure_businesses
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_reassure_businesses
 
 		prerequisite = { focus = FRA_form_popular_front }
 		relative_position_id = FRA_form_popular_front
@@ -179,7 +179,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_subsidies
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_subsidies
 
 		prerequisite = { focus = FRA_reassure_businesses }
 		relative_position_id = FRA_reassure_businesses
@@ -203,7 +203,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_end_crisis
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_end_crisis
 
 		prerequisite = 
 		{ 
@@ -270,7 +270,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_boost_army_morale
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_boost_army_morale
 
 		prerequisite = { focus = FRA_end_crisis }
 		relative_position_id = FRA_end_crisis
@@ -456,7 +456,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_modernize_aviation
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_modernize_aviation
 
 		prerequisite = { focus = FRA_end_crisis }
 		relative_position_id = FRA_end_crisis
@@ -476,7 +476,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_nationalize_avia_industry
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_nationalize_avia_industry
 
 		prerequisite = { focus = FRA_modernize_aviation }
 		relative_position_id = FRA_modernize_aviation
@@ -621,7 +621,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_modernize_navy
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_modernize_navy
 
 		prerequisite = { focus = FRA_end_crisis }
 		relative_position_id = FRA_end_crisis
