@@ -67,6 +67,8 @@ NDefines.NResistance.MAXIMUM_GARRISON_HARDNESS_WHEN_ATTACKED = 1.0
 NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 100.0
 NDefines.NResistance.INITIAL_GARRISON_STRENGTH = 0
 
+
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5
 NDefines.NProduction.BASE_FACTORY_SPEED = 4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5
 NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 14
@@ -83,6 +85,8 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
+NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0
+--NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 60.0
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4
@@ -409,7 +413,218 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
-NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
+NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0 -- for obvious reasons lol
+NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {
+	2.00,
+	1.90,
+	1.80,
+	1.70,
+	1.60,
+	1.50,
+	1.40,
+	1.30,
+	1.20,
+	1.10,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {
+	2.00,
+	1.90,
+	1.80,
+	1.70,
+	1.60,
+	1.50,
+	1.40,
+	1.30,
+	1.20,
+	1.10,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.BASE_GUN_COOLDOWNS = { 2.0, 1.0, 2.0 }
+NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
+NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
+--NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18
+--NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
+--NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
+--NDefines.NNavy.COMBAT_INITIAL_DURATION = 12
+
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.5
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5
+
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
+
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 1.8
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
+
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
+
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
@@ -419,6 +634,45 @@ NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 1	-- it takes 30 days for one ship t
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0	-- country gets 0 navy xp from ships trainings
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0	-- no accidents may happen during training
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 32767
+NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.83	-- fleet gains xp fighting twice as fast as regular training
+
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
+NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.2
+NDefines.NNavy.ORG_COST_WHILE_MOVING = {
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15
+}
+NDefines.NNavy.ORG_COST_WHILE_MOVING_IN_MISSION_ZONE ={
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15
+}
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1
+NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0
+NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
+
+-- gotta work with:
+ -- SUPPLY_NEED_FACTOR
+ -- MAX_FUEL_FLOW_MULT
+ -- MIN_REPAIR_FOR_JOINING_COMBATS
+ -- NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR
+ -- REPAIR_AND_RETURN_PRIO_LOW (and all below it)
+ --REPAIR_SPLIT_TASKFORCE_SIZE; NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SHIP_WAITING_EXTRA_SHIP; NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SLOT; NAVY_REPAIR_BASE_SEARCH_BOOST_FOR_SAME_COUNTRY; MAX_NUM_HOURS_TO_WAIT_AT_ALLY_DOCKYARDS_FOR_REPAIRS;
 
 
 -- raiding/convoys gameplay enhance

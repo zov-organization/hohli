@@ -495,21 +495,21 @@ air_wing_experience_malus_min = {
 }
 
 ship_experience_bonus_max = {
-    naval_damage_factor = 0.3
-    naval_defense_factor = 0.2
+    #naval_damage_factor = 0.3
+    #naval_defense_factor = 0.2
 }
 
 ship_experience_malus_min = {
-    naval_damage_factor = -0.1
-    naval_defense_factor = -0.1
+    #naval_damage_factor = -0.1
+    #naval_defense_factor = -0.1
 }
 
 carrier_experience_bonus_max = {
-	fighter_sortie_efficiency = 0.2
+	#fighter_sortie_efficiency = 0.2
 }
 
 carrier_experience_malus_min = {
-	fighter_sortie_efficiency = -0.1
+	#fighter_sortie_efficiency = -0.1
 }
 
 pride_of_the_fleet = {
@@ -532,14 +532,15 @@ water_modifier_shark_infested = {
 }
 
 screening_bonus = {
-  naval_retreat_speed = 0.2
-  convoy_retreat_speed = 0.2
-  naval_hit_chance = 0.4
+  #naval_retreat_speed = 0.2
+  #convoy_retreat_speed = 0.2
+  #naval_hit_chance = 3
+  #naval_damage_factor = 1
 }
 
 capital_screening_bonus = {
-  naval_retreat_speed = 0.2
-  sortie_efficiency = 0.1
+  #naval_retreat_speed = 0.2
+  #sortie_efficiency = 0.1
 }
 
 country_is_at_peace = {
