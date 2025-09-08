@@ -28,10 +28,16 @@ set_politics = {
 
 create_faction = Allies
 add_to_faction = ENG
+puppet = CAN
 add_to_faction = CAN
+puppet = AST
 add_to_faction = AST
+puppet = NZL
 add_to_faction = NZL
+puppet = SAF
 add_to_faction = SAF
+puppet = RAJ
+add_to_faction = RAJ
 
 add_to_faction = FRA
 add_to_faction = POL
@@ -229,4 +235,140 @@ add_equipment_to_stockpile = {
 	type = small_plane_naval_bomber_airframe_1
 	amount = 100
 	producer = ENG
+}
+
+
+# navy equipment variants
+
+# BBs
+create_equipment_variant = {
+	name = "Nelson Class"
+	type = ship_hull_heavy_2
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_2
+        fixed_ship_armor_slot = ship_armor_bb_2
+        fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_secondaries_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = ship_radar_1
+
+        front_1_custom_slot = ship_heavy_battery_2
+        mid_1_custom_slot = ship_anti_air_2
+        mid_2_custom_slot = ship_anti_air_2
+        rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "Queen Elizabeth Class"
+	type = ship_hull_heavy_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_1
+        mid_1_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {
+	name = "Revenge Class"
+	type = ship_hull_heavy_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        fixed_ship_anti_air_slot = ship_anti_air_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_1
+        mid_1_custom_slot = ship_anti_air_1
+        rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {
+	name = "Admiral Class"
+	type = ship_hull_heavy_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bc_1
+        fixed_ship_anti_air_slot = ship_anti_air_1
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_1
+        mid_1_custom_slot = ship_secondaries_2
+        rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {
+	name = "Renown Class"
+	type = ship_hull_heavy_1
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bc_1
+        fixed_ship_anti_air_slot = ship_anti_air_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_1
+        mid_1_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_secondaries_1
+	}
+}
+
+create_equipment_variant = {
+	name = "C-Class"
+	type = ship_hull_cruiser_1
+	name_group = ENG_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_radar_1
+
+		ship_light_battery_slot = ship_light_medium_battery_1
+		torpedo_slot = ship_torpedo_1
+	}
+}
+create_equipment_variant = {
+	name = "Town Class"
+	type = ship_hull_cruiser_2
+	name_group = ENG_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = ship_radar_2
+
+		ship_light_battery_slot = ship_light_medium_battery_2
+		torpedo_slot = ship_torpedo_2
+	}
 }

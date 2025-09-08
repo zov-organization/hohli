@@ -274,7 +274,7 @@ equipment_modules = {
 		}
 		manpower = 200
 		multiply_stats = {
-			naval_speed = -0.02
+			#naval_speed = -0.02
 			max_strength = 0.01
 		}
 		add_average_stats = {
@@ -1607,10 +1607,11 @@ equipment_modules = {
 			#naval_speed = 7
 			fuel_consumption = 20
 			#build_cost_ic = 1800
+			naval_torpedo_damage_reduction_factor = -1
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
+			naval_speed = 0.15
 			build_cost_ic = 0.175
 		}
 		
@@ -1631,6 +1632,7 @@ equipment_modules = {
 			#naval_speed = 10
 			fuel_consumption = 25
 			#build_cost_ic = 2200
+			naval_torpedo_damage_reduction_factor = -1
 		}
 		
 		multiply_stats = {
@@ -1655,6 +1657,7 @@ equipment_modules = {
 			#naval_speed = 11
 			fuel_consumption = 30
 			#build_cost_ic = 2800
+			naval_torpedo_damage_reduction_factor = -1
 		}
 		
 		multiply_stats = {
@@ -1679,6 +1682,7 @@ equipment_modules = {
 			#naval_speed = 12
 			fuel_consumption = 35
 			#build_cost_ic = 3200
+			naval_torpedo_damage_reduction_factor = -1
 		}
 		
 		multiply_stats = {
@@ -2318,52 +2322,40 @@ equipment_modules = {
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_1
 		
+		add_stats = {
+			armor_value = 30
+		}
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0
-			#max_strength = 0.05
-
+			naval_speed = 0
 		}
 		build_cost_resources = {
 			steel = 1
 		}
-		add_stats = {
-			armor_value = 30
-			#naval_torpedo_enemy_critical_chance_factor = -0.1
-			naval_torpedo_damage_reduction_factor = -1
-		}
-		dismantle_cost_ic = 2500
-		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 5500
-		}
+		dismantle_cost_ic = 10000
 	}
 	ship_armor_bc_1 = {
 		abbreviation = "sdf"
 		category = ship_heavy_armor
 		gfx = ship_armor_1
 		
+		add_stats = {
+			armor_value = 25
+		}
 		multiply_stats = {
 			build_cost_ic = 0.1
 			naval_speed = 0.05
-			max_strength = 0.05
 		}
-
-		add_stats = {
-			#armor_value = 22
-			#naval_torpedo_damage_reduction_factor = 0.1
-		}
-		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 4500
-		}
-		
 	}
 	ship_armor_bb_2 = {
 		abbreviation = "sdg"
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_2
 		parent = ship_armor_bb_1
+
+		add_stats = {
+			armor_value = 36
+		}
 		multiply_stats = {
 			build_cost_ic = 0.15
 			naval_speed = -0.05
@@ -2372,14 +2364,10 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
-		add_stats = {
-			armor_value = 36
-			#naval_torpedo_enemy_critical_chance_factor = -0.15
-			naval_torpedo_damage_reduction_factor = -1
-		}
+		dismantle_cost_ic = 10000
 		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 6000
+			module = ship_armor_bb_1
+			convert_cost_ic = 1000
 		}
 		
 	}
@@ -2388,22 +2376,22 @@ equipment_modules = {
 		category = ship_heavy_armor
 		gfx = ship_armor_2
 		parent = ship_armor_bc_1
+
+		add_stats = {
+			armor_value = 32
+		}
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0
+			naval_speed = 0.1
 			max_strength = 0.1
 		}
 		build_cost_resources = {
 			steel = 1
 		}
-		add_stats = {
-			armor_value = 28
-			#naval_torpedo_enemy_critical_chance_factor = -0.1
-			#naval_torpedo_damage_reduction_factor = 0.15
-		}
+		dismantle_cost_ic = 10000
 		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 5500
+			module = ship_armor_bc_1
+			convert_cost_ic = 1000
 		}
 	}
 	ship_armor_bb_3 = {
@@ -2411,6 +2399,10 @@ equipment_modules = {
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_3
 		parent = ship_armor_bb_2
+
+		add_stats = {
+			armor_value = 40
+		}
 		multiply_stats = {
 			build_cost_ic = 0.175
 			naval_speed = -0.10
@@ -2420,15 +2412,14 @@ equipment_modules = {
 			steel = 2
 			chromium = 1
 		}
-		add_stats = {
-			armor_value = 40
-			#naval_torpedo_enemy_critical_chance_factor = -0.2
-			naval_torpedo_damage_reduction_factor = -1
-		}
-		dismantle_cost_ic = 7500
+		dismantle_cost_ic = 10000
 		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 7500
+			module = ship_armor_bb_1
+			convert_cost_ic = 1500
+		}
+		can_convert_from = {
+			module = ship_armor_bb_2
+			convert_cost_ic = 1000
 		}
 		
 	}
@@ -2437,24 +2428,27 @@ equipment_modules = {
 		category = ship_heavy_armor
 		gfx = ship_armor_3
 		parent = ship_armor_bc_2
+
+		add_stats = {
+			armor_value = 36
+		}
 		multiply_stats = {
 			build_cost_ic = 0.125
-			naval_speed = -0.10
+			naval_speed = 0.125
 			max_strength = 0.15
 		}
 		build_cost_resources = {
 			steel = 1
 			chromium = 1
 		}
-		add_stats = {
-			armor_value = 34
-			#naval_torpedo_enemy_critical_chance_factor = -0.15
-			#naval_torpedo_damage_reduction_factor = 0.2
-		}
-		dismantle_cost_ic = 6200
+		dismantle_cost_ic = 10000
 		can_convert_from = {
-			module_category = ship_heavy_armor
-			convert_cost_ic = 6200
+			module = ship_armor_bc_1
+			convert_cost_ic = 1500
+		}
+		can_convert_from = {
+			module = ship_armor_bc_2
+			convert_cost_ic = 1000
 		}
 		
 	}
@@ -2475,7 +2469,6 @@ equipment_modules = {
 		add_stats = {
 			armor_value = 55
 			naval_torpedo_enemy_critical_chance_factor = -0.25
-			naval_torpedo_damage_reduction_factor = -2
 		}
 		dismantle_cost_ic = 8200
 		can_convert_from = {

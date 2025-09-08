@@ -1,0 +1,29 @@
+capital = 439
+
+
+
+set_cosmetic_tag = RAJ_UK # British Raj
+set_research_slots = 0
+navy_experience = 0
+
+set_convoys = 0
+
+set_stability = 0.6
+set_war_support = 0.1
+
+set_popularities = {
+	democratic = 17
+	fascism = 2
+	communism = 1
+	neutrality = 80
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+recruit_character = ic_RAJ_freeman_freeman_thomas 
+
+set_technology = {}

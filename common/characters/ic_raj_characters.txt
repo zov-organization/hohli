@@ -1,0 +1,18 @@
+characters={
+	ic_RAJ_freeman_freeman_thomas = { #unfortunate name
+		name = RAJ_freeman_freeman_thomas
+		portraits={
+			civilian={
+				large = GFX_portrait_RAJ_freeman_freeman_thomas
+				small = GFX_portrait_RAJ_freeman_freeman_thomas_small
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+	}  
+}

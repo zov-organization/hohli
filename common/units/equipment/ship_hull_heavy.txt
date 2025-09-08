@@ -222,7 +222,7 @@ equipments = {
 				allowed_module_categories = { heavy_ship_engine }
 			}
 			fixed_ship_armor_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = { ship_heavy_armor }	
 			}
 			fixed_ship_anti_air_slot = {

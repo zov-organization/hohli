@@ -62,7 +62,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_spawn_civs
 
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -78,7 +78,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_spawn_civs
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -105,7 +105,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_spawn_civs
 
-		x = 0
+		x = 1
 		y = 2
 		cost = 5
 		completion_reward = {
@@ -214,44 +214,55 @@ focus_tree = {
 		prerequisite = { focus = ENG_spawn_civs }
 		relative_position_id = ENG_keeping_up_with_germans
 
-		x = -3
+		x = -4
 		y = 0
 		cost = 5
 		completion_reward = {
-			add_political_power = 100
 			add_ideas = ic_ENG_commonwealth_buff
-			ENG = {
-				every_allied_country = {
-					add_political_power = 100
-					add_ideas = ic_ENG_commonwealth_buff
-				}
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = ENG_raj
-		icon = GFX_ENG_dev_raj
+		id = ENG_canada
+		icon = GFX_ENG_dev_canada
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
+		
+		available = {
+			not = { has_country_flag = ENG_minor_being_annexed }
+		}
 
-		x = -4
+		x = 2
 		y = 1
 		cost = 5
 		completion_reward = {
-			433 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
+			CAN = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
 			}
+			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
+		}
+	}
+	focus = {
+		id = ENG_saf
+		icon = GFX_ENG_saf
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+		
+		available = {
+			not = { has_country_flag = ENG_minor_being_annexed }
+		}
+
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			SAF = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
+			}
+			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
 		}
 	}
 	focus = {
@@ -260,24 +271,61 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_reinforce_commonwealth }
 		relative_position_id = ENG_reinforce_commonwealth
+		
+		available = {
+			not = { has_country_flag = ENG_minor_being_annexed }
+		}
 
-		x = -2
+		x = -4
 		y = 1
 		cost = 5
 		completion_reward = {
-			674 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
+			AST = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
 			}
+			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
+		}
+	}
+	focus = {
+		id = ENG_enforce_new_zealand
+		icon = GFX_ENG_australia
+
+		prerequisite = { focus = ENG_australia }
+		relative_position_id = ENG_australia
+		
+		available = {
+			not = { has_country_flag = ENG_minor_being_annexed }
+		}
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			NZL = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
+			}
+			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
+		}
+	}
+	focus = {
+		id = ENG_raj
+		icon = GFX_ENG_dev_raj
+
+		prerequisite = { focus = ENG_reinforce_commonwealth }
+		relative_position_id = ENG_reinforce_commonwealth
+		
+		available = {
+			not = { has_country_flag = ENG_minor_being_annexed }
+		}
+
+		x = -7
+		y = 1
+		cost = 5
+		completion_reward = {
+			RAJ = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
+			}
+			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
 		}
 	}
 	focus = {
@@ -285,9 +333,9 @@ focus_tree = {
 		icon = GFX_ENG_malaya_resources_base
 
 		prerequisite = { focus = ENG_australia focus = ENG_raj }
-		relative_position_id = ENG_australia
+		relative_position_id = ENG_raj
 
-		x = -1
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -322,58 +370,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = ENG_saf
-		icon = GFX_ENG_saf
-
-		prerequisite = { focus = ENG_reinforce_commonwealth }
-		relative_position_id = ENG_reinforce_commonwealth
-
-		x = -1
-		y = 2
-		cost = 5
-		completion_reward = {
-			719 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_canada
-		icon = GFX_ENG_dev_canada
-
-		prerequisite = { focus = ENG_reinforce_commonwealth }
-		relative_position_id = ENG_reinforce_commonwealth
-
-		x = 1
-		y = 2
-		cost = 5
-		completion_reward = {
-			276 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	
 	focus = {
@@ -381,11 +377,11 @@ focus_tree = {
 		icon = GFX_ENG_shadow_scheme
 
 		prerequisite = { focus = ENG_birmingham_small_arms_company }
-		prerequisite = { focus = ENG_malaya_resources_base }
-		prerequisite = { focus = ENG_saf focus = ENG_canada }
+		#prerequisite = { focus = ENG_malaya_resources_base }
+		#prerequisite = { focus = ENG_saf focus = ENG_canada }
 		relative_position_id = ENG_birmingham_small_arms_company
 
-		x = -2
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -428,7 +424,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_sea_is_our_speciality }
 		relative_position_id = ENG_sea_is_our_speciality
 
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -685,7 +681,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_sea_is_our_speciality }
 		relative_position_id = ENG_sea_is_our_speciality
 
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -701,7 +697,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_raf }
 		relative_position_id = ENG_research_slot_focus
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -841,11 +837,26 @@ focus_tree = {
 			has_war_with = GER
 		}
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		completion_reward = {
 			add_ideas = ic_ENG_no_peace_for_our_time_idea
+		}
+	}
+
+	focus = {
+		id = ic_ENG_motion_of_no_confidence
+		icon = GFX_focus_eng_motion_of_no_confidence
+
+		prerequisite = { focus = ENG_no_peace_for_our_time }
+		relative_position_id = ENG_no_peace_for_our_time
+
+		x = -4
+		y = 1
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = "should give churchill"
 		}
 	}
 
@@ -856,7 +867,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_no_peace_for_our_time }
 		relative_position_id = ENG_no_peace_for_our_time
 
-		x = -4
+		x = 4
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -881,7 +892,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -906,7 +917,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1363,7 +1374,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_isle_protected }
 		relative_position_id = ENG_isle_protected
 
-		x = -2
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1377,7 +1388,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_isle_protected }
 		relative_position_id = ENG_isle_protected
 
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1393,21 +1404,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = ic_ENG_motion_of_no_confidence
-		icon = GFX_focus_eng_motion_of_no_confidence
-
-		#prerequisite = { focus = ENG_shadow_scheme }
-		relative_position_id = ENG_shadow_scheme
-
-		x = -2
-		y = 1
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = "should give churchill"
-		}
-	}
 
 
 
