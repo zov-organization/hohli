@@ -289,7 +289,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_improve_armor_technology
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_improve_armor_technology
 
 		prerequisite = { focus = FRA_boost_army_morale }
 		relative_position_id = FRA_boost_army_morale
@@ -313,7 +313,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_somua_sm
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_somua_sm_shine
 
 		prerequisite = { focus = FRA_improve_armor_technology }
 		relative_position_id = FRA_improve_armor_technology
@@ -328,7 +328,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_b2
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_b2
 
 		prerequisite = { focus = FRA_improve_armor_technology }
 		relative_position_id = FRA_improve_armor_technology
@@ -343,7 +343,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_bet_on_artillery
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_bet_on_artillery
 
 		prerequisite = { focus = FRA_boost_army_morale }
 		relative_position_id = FRA_boost_army_morale
@@ -365,7 +365,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_mass_arty_production
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_mass_arty_production
 
 		prerequisite = { focus = FRA_bet_on_artillery }
 		relative_position_id = FRA_bet_on_artillery
@@ -380,7 +380,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_army_modernisation
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_army_modernisation
 
 		prerequisite = { focus = FRA_mass_arty_production focus = FRA_somua_sm focus = FRA_b2 }
 		relative_position_id = FRA_mass_arty_production
@@ -402,7 +402,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_offensive_focus
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_offensive_focus
 
 		prerequisite = { focus = FRA_boost_army_morale  }
 		relative_position_id = FRA_boost_army_morale
@@ -419,7 +419,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_defensive_focus
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_defensive_focus
 
 		prerequisite = { focus = FRA_boost_army_morale }
 		relative_position_id = FRA_boost_army_morale
@@ -435,7 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_new_tactic
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_new_tactic
 
 		prerequisite = { focus = FRA_offensive_focus focus = FRA_defensive_focus }
 		relative_position_id = FRA_offensive_focus
@@ -473,10 +473,10 @@ focus_tree = {
 			}
 		}
 	}
-
+#Ia HZ pochemy ne rabotaet GFX_focus_FRA_nationalize_avia_industry
 	focus = {
 		id = FRA_nationalize_avia_industry
-		icon = GFX_focus_FRA_nationalize_avia_industry
+		icon = GFX_focus_generic_military_industry
 
 		prerequisite = { focus = FRA_modernize_aviation }
 		relative_position_id = FRA_modernize_aviation
@@ -506,7 +506,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_start_avia_production
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_start_avia_production
 
 		prerequisite = { focus = FRA_nationalize_avia_industry }
 		relative_position_id = FRA_nationalize_avia_industry
@@ -528,7 +528,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_fighter_focus
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_goal_generic_air_fighter
 
 		prerequisite = { focus = FRA_start_avia_production }
 		relative_position_id = FRA_start_avia_production
@@ -547,7 +547,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_bomber_focus
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_goal_generic_air_bomber
 
 		prerequisite = { focus = FRA_start_avia_production }
 		relative_position_id = FRA_start_avia_production
@@ -565,7 +565,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_reorganize_aviation
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_reorganize_aviation
 
 		prerequisite = { focus = FRA_nationalize_avia_industry }
 		relative_position_id = FRA_nationalize_avia_industry
@@ -585,7 +585,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_reform_doctrine
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_generic_army_doctrines_2
 
 		prerequisite = { focus = FRA_reorganize_aviation }
 		relative_position_id = FRA_reorganize_aviation
@@ -604,7 +604,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_finish_reorganization
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_finish_reorganization
 
 		prerequisite = { focus = FRA_reform_doctrine focus = FRA_bomber_focus focus = FRA_fighter_focus }
 		relative_position_id = FRA_bomber_focus
@@ -641,7 +641,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_fleet_investments
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_goal_generic_construct_naval_dockyard
 
 		prerequisite = { focus = FRA_modernize_navy }
 		relative_position_id = FRA_modernize_navy
@@ -671,7 +671,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_colonial_dockyards
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_colonial_dockyards
 
 		prerequisite = { focus = FRA_fleet_investments }
 		relative_position_id = FRA_fleet_investments
@@ -709,7 +709,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_new_doctrine
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_new_doctrine
 
 		prerequisite = { focus = FRA_modernize_navy }
 		relative_position_id = FRA_modernize_navy
@@ -730,7 +730,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_old_doctrine
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
 
 		prerequisite = { focus = FRA_modernize_navy }
 		relative_position_id = FRA_modernize_navy
@@ -750,7 +750,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_new_heavy_ships
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_generic_navy_battleship2
 
 		prerequisite = { focus = FRA_old_doctrine  }
 		relative_position_id = FRA_old_doctrine
@@ -770,7 +770,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_invest_in_ship_building
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_generic_refit_civilian_ships
 
 		prerequisite = { focus = FRA_new_heavy_ships }
 		relative_position_id = FRA_new_heavy_ships
@@ -782,10 +782,10 @@ focus_tree = {
 			add_ideas = ic_FRA_big_ships
 		}
 	}
-
+#maybe usless = GFX_focus_FRA_new_carriers
 	focus = {
 		id = FRA_new_carriers
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_generic_destroyer
 
 		prerequisite = { focus = FRA_new_doctrine }
 		relative_position_id = FRA_new_doctrine
@@ -805,7 +805,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_build_carriers
-		icon = GFX_focus_focus_fra_down_marianne
+		icon = GFX_focus_FRA_build_carriers
 
 		prerequisite = { focus = FRA_new_carriers }
 		relative_position_id = FRA_new_carriers
