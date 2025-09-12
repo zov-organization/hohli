@@ -33,6 +33,31 @@ ENG_supermarine_organization = {
 	allowed = {	
 		tag = ENG
 	}
+
+	add_trait = { 
+		token = ENG_mio_trait_increase_aircraft_production
+		name = ENG_mio_trait_increase_aircraft_production
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=9 y=2 }
+		
+		visible = {
+			FROM = { original_tag = ENG }
+		}
+		
+		available = {
+			FROM = {
+				has_completed_focus = ENG_increase_aircraft_production
+			}
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.075
+			production_efficiency_gain_factor = 0.1
+		}
+
+	}
 }
 
 ##     ##    ###    ######## ######## ########  #### ######## ##       

@@ -1,0 +1,59 @@
+division_template = {
+	name = "no minors :("
+	division_names_group = ENG_MEC_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 4 }
+
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		light_tank_recon = { x = 0 y = 3 }
+		light_sp_artillery_brigade = { x = 0 y = 4 }
+
+		artillery = { x = 1 y = 0 }
+		anti_tank = { x = 1 y = 1 }
+		flamethrower_sppt = { x = 1 y = 2 }
+		heavy_armor_brigade = { x = 1 y = 3 }
+		light_sp_anti_air_brigade = { x = 1 y = 4 }
+	}
+}
+
+units = {
+	# 2 tanks
+	division= {
+		location = 4963
+		division_template = "no minors :("
+		start_experience_factor = 0.3
+		start_manpower_factor = 1.0
+	}
+	division= {
+		location = 4963
+		division_template = "no minors :("
+		start_experience_factor = 0.3
+		start_manpower_factor = 1.0
+	}
+}

@@ -65,3 +65,66 @@ units = {
 		}
 	}
 }
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS King George V"
+		requested_factories = 10
+		progress = 0
+		amount = 1
+		industrial_manufacturer = mio:ENG_harland_wolff_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS Prince of Wales"
+		requested_factories = 10
+		progress = 0
+		amount = 1
+		industrial_manufacturer = mio:ENG_harland_wolff_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS Duke of York"
+		requested_factories = 0
+		progress = 0
+		amount = 1
+		industrial_manufacturer = mio:ENG_harland_wolff_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS Anson"
+		requested_factories = 0
+		progress = 0
+		amount = 1
+		industrial_manufacturer = mio:ENG_harland_wolff_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG" 
+			version_name = "King George V Class"
+		}
+		name = "HMS Howe"
+		requested_factories = 0
+		progress = 0
+		amount = 1
+		industrial_manufacturer = mio:ENG_harland_wolff_organization
+	}
+}

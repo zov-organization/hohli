@@ -189,18 +189,18 @@ focus_tree = {
 				}
 			}
 			128 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			126 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -242,6 +242,39 @@ focus_tree = {
 				add_ideas = ic_ENG_commonwealth_minor_debuff
 			}
 			set_country_flag = { flag = ENG_minor_being_annexed value = 1 days = 140 }
+		}
+	}
+	focus = {
+		id = ENG_canadian_tanks_corps
+		icon = GFX_ENG_canadian_tanks_corps
+
+		prerequisite = { focus = ENG_canada }
+		relative_position_id = ENG_canada
+		
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_canadian_tanks_corps
+				bonus = 0.75
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
+			468 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			hidden_effect = {
+				load_oob = "ic_ENG_canadian_tank_corps"
+			}
+			custom_effect_tooltip = ic_ENG_canadian_tank_corps_tt
+
 		}
 	}
 	focus = {
@@ -287,8 +320,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_enforce_new_zealand
-		icon = GFX_ENG_australia
+		id = ENG_new_zealand
+		icon = GFX_ENG_enforce_new_zealand
 
 		prerequisite = { focus = ENG_australia }
 		relative_position_id = ENG_australia
@@ -643,8 +676,33 @@ focus_tree = {
 			show_ideas_tooltip = ic_ENG_alan_brooke
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = ic_ENG_kenneth_anderson
+			132 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 6318
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_looks_like_we_need_tank
+		icon = GFX_ENG_looks_like_we_need_tank
+
+		prerequisite = { focus = ENG_general_command_staff }
+		relative_position_id = ENG_general_command_staff
+
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_looks_like_we_need_tank
+				bonus = 1
+				uses = 1
+				technology = improved_light_tank_chassis
+			}
 		}
 	}
 	focus = {
@@ -660,14 +718,10 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_ideas = limited_conscription
-			132 = {
-				add_building_construction = {
-					type = land_facility
-					level = 1
-					province = 6318
-					instant_build = yes
-				}
-			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = ic_ENG_kenneth_anderson
 		}
 	}
 
@@ -694,7 +748,6 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 
 		prerequisite = { focus = ENG_research_slot_focus }
-		prerequisite = { focus = ENG_raf }
 		relative_position_id = ENG_research_slot_focus
 
 		x = 0
@@ -756,6 +809,20 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ENG_indiscriminate_bombing_policy
+		icon = GFX_generic_strati
+
+		prerequisite = { focus = ENG_material_base_destruction_plane }
+		relative_position_id = ENG_material_base_destruction_plane
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = ic_SOV_indiscriminate_bombing_policy
+		}
+	}
+	focus = {
 		id = ENG_announce_competition_for_modern_figher
 		icon = GFX_ENG_announce_competition_for_modern_figher
 
@@ -790,20 +857,6 @@ focus_tree = {
 			add_ideas = ic_ENG_joint_air_exercises_idea
 		}
 	}
-	focus = {
-		id = ENG_indiscriminate_bombing_policy
-		icon = GFX_generic_strati
-
-		prerequisite = { focus = ENG_material_base_destruction_plane }
-		relative_position_id = ENG_material_base_destruction_plane
-
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = {
-			add_ideas = ic_SOV_indiscriminate_bombing_policy
-		}
-	}
 
 	focus = {
 		id = ENG_our_second_key_to_survive
@@ -822,22 +875,43 @@ focus_tree = {
 	
 
 
-
+	
 	focus = {
-		id = ENG_no_peace_for_our_time
-		icon = GFX_focus_eng_the_sun_never_sets
-
+		id = ic_ENG_motion_of_no_confidence
+		icon = GFX_focus_eng_motion_of_no_confidence
+		
 		prerequisite = { focus = ENG_shadow_scheme }
 		prerequisite = { focus = ENG_navis_at_queens_command }
 		prerequisite = { focus = ENG_our_second_key_to_survive }
 		prerequisite = { focus = ENG_reinforce_expeditionary_force }
 		relative_position_id = ENG_navis_at_queens_command
-
+		
 		available = {
-			has_war_with = GER
+			count_triggers = {
+				amount = 1
+				FRA = {
+					has_capitulated = yes
+				}
+				date > 1940.5.7
+			}
 		}
 
 		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			ENG = { country_event = ic_eng_events.2 }
+		}
+	}
+
+	focus = {
+		id = ENG_no_peace_for_our_time
+		icon = GFX_focus_eng_the_sun_never_sets
+		
+		prerequisite = { focus = ic_ENG_motion_of_no_confidence }
+		relative_position_id = ic_ENG_motion_of_no_confidence
+				
+		x = -4
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -846,26 +920,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ic_ENG_motion_of_no_confidence
-		icon = GFX_focus_eng_motion_of_no_confidence
-
-		prerequisite = { focus = ENG_no_peace_for_our_time }
-		relative_position_id = ENG_no_peace_for_our_time
-
-		x = -4
-		y = 1
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = "should give churchill"
-		}
-	}
-
-	focus = {
 		id = ENG_enforce_destroyers_fleet
 		icon = GFX_focus_generic_trade_interdiction
 
-		prerequisite = { focus = ENG_no_peace_for_our_time }
-		relative_position_id = ENG_no_peace_for_our_time
+		prerequisite = { focus = ic_ENG_motion_of_no_confidence }
+		relative_position_id = ic_ENG_motion_of_no_confidence
 
 		x = 4
 		y = 1
@@ -1248,8 +1307,8 @@ focus_tree = {
 		id = ENG_prepare_for_blockade
 		icon = GFX_focus_generic_commonwealth_build_infantry
 
-		prerequisite = { focus = ENG_no_peace_for_our_time }
-		relative_position_id = ENG_no_peace_for_our_time
+		prerequisite = { focus = ic_ENG_motion_of_no_confidence }
+		relative_position_id = ic_ENG_motion_of_no_confidence
 
 		x = 0
 		y = 1
@@ -1383,12 +1442,12 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_our_turn_now
-		icon = GFX_ENG_rebuild_after_scavengers
+		icon = GFX_ENG_our_turn_now
 
 		prerequisite = { focus = ENG_isle_protected }
 		relative_position_id = ENG_isle_protected
 
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1401,6 +1460,30 @@ focus_tree = {
 			}
 			
 			unlock_decision_tooltip = ENG_start_tact_bomber_production
+		}
+	}
+
+	focus = {
+		id = ENG_increase_aircraft_production
+		icon = GFX_ENG_increase_aircraft_production
+		
+		prerequisite = { focus = ENG_rebuild_after_scavengers }
+		prerequisite = { focus = ENG_our_turn_now }
+		relative_position_id = ENG_our_turn_now
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ic_ENG_fix_after_bombings
+				add_idea = ic_ENG_fix_after_bombings_2
+			}
+			mio:ENG_supermarine_organization = {
+				complete_mio_trait = {
+					trait = ENG_mio_trait_increase_aircraft_production
+				}
+			}
 		}
 	}
 

@@ -5,7 +5,7 @@ set_naval_oob = "ic_ENG_1936_fleet"
 
 
 
-set_research_slots = 3
+set_research_slots = 4
 navy_experience = 0
 
 set_convoys = 800
@@ -96,8 +96,8 @@ set_technology = {
 	basic_train = 1
 
 	gwtank_chassis = 1
+	basic_heavy_tank_chassis = 1
 	basic_light_tank_chassis = 1
-	#basic_heavy_tank_chassis = 1
 
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -113,6 +113,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 
+	basic_cruiser_armor_scheme = 1
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
@@ -242,6 +243,26 @@ add_equipment_to_stockpile = {
 
 # BBs
 create_equipment_variant = {
+	name = "King George V Class"
+	type = ship_hull_heavy_2
+	name_group = ENG_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_2
+        fixed_ship_armor_slot = ship_armor_bb_2
+        fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_2
+        mid_1_custom_slot = ship_secondaries_2
+        mid_2_custom_slot = ship_secondaries_2
+        rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+create_equipment_variant = {
 	name = "Nelson Class"
 	type = ship_hull_heavy_2
 	name_group = ENG_BB_HISTORICAL
@@ -252,8 +273,8 @@ create_equipment_variant = {
         fixed_ship_armor_slot = ship_armor_bb_2
         fixed_ship_anti_air_slot = ship_anti_air_2
         fixed_ship_secondaries_slot = empty
-        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-        fixed_ship_radar_slot = ship_radar_1
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
 
         front_1_custom_slot = ship_heavy_battery_2
         mid_1_custom_slot = ship_anti_air_2
@@ -348,8 +369,8 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = cruiser_ship_engine_1
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
 
 		ship_light_battery_slot = ship_light_medium_battery_1
 		torpedo_slot = ship_torpedo_1
@@ -365,10 +386,10 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = cruiser_ship_engine_2
 		fixed_ship_armor_slot = ship_armor_cruiser_2
 		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
 
 		ship_light_battery_slot = ship_light_medium_battery_2
-		torpedo_slot = ship_torpedo_2
+		torpedo_slot = ship_torpedo_1
 	}
 }
