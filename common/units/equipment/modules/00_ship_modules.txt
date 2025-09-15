@@ -1280,7 +1280,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.10
+			naval_speed = 0.20
 			#build_cost_ic = 0.125
 		}
 		
@@ -1305,7 +1305,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.15
+			naval_speed = 0.30
 			#build_cost_ic = 0.15
 		}
 		
@@ -1334,7 +1334,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.20
+			naval_speed = 0.35
 			#build_cost_ic = 0.175
 		}
 		
@@ -1362,7 +1362,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
+			naval_speed = 0.40
 			#build_cost_ic = 0.20
 		}
 		
@@ -2213,9 +2213,11 @@ equipment_modules = {
 			surface_detection = 7
 			sub_detection = 2.5
 			build_cost_ic = 150
+			naval_light_gun_hit_chance_factor = 0.025
+			naval_heavy_gun_hit_chance_factor = 0.025
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			#naval_speed = -0.01
 		}
 	}
 	ship_airplane_launcher_2 = {
@@ -2227,13 +2229,15 @@ equipment_modules = {
 			surface_detection = 10
 			sub_detection = 3.5
 			build_cost_ic = 170
+			naval_light_gun_hit_chance_factor = 0.05
+			naval_heavy_gun_hit_chance_factor = 0.05
 		}
 		can_convert_from = {
 			module_category = ship_airplane_launcher
 			convert_cost_ic = 80
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			#naval_speed = -0.01
 		}
 	}
 
@@ -2250,7 +2254,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			carrier_size = 4
-			build_cost_ic = 1500
+			build_cost_ic = 2500
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {
@@ -2307,8 +2311,20 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		parent = ship_sonar_1
 		add_stats = {
-			sub_detection = 10.0
+			sub_detection = 10
 			build_cost_ic = 300
+		}
+	}
+
+	ship_sonar_3 = {
+		abbreviation = "sdv"
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_1
+		add_stats = {
+			sub_detection = 18
+			build_cost_ic = 450
 		}
 	}
  ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 

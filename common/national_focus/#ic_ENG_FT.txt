@@ -492,26 +492,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_naval_guns_light
-				bonus = 0.5
+				bonus = 1.5
 				uses = 1
-				category = cat_ship_light_battery
-			}
-			add_tech_bonus = {
-				name = ENG_naval_guns_medium
-				bonus = 0.5
-				uses = 1
-				category = cat_ship_medium_battery
-			}
-			add_tech_bonus = {
-				name = ENG_naval_guns_heavy
-				bonus = 0.5
-				uses = 1
-				category = cat_ship_heavy_battery
+				category = ship_battery
 			}
 		}
 	}
 	focus = {
-		id = ENG_heavy_ships
+		id = ENG_light_ships
 		icon = GFX_focus_SWE_Vasa_II
 
 		prerequisite = { focus = ENG_naval_guns }
@@ -522,15 +510,15 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
-				name = ENG_heavy_ships
+				name = ENG_light_ships
 				bonus = 1
 				uses = 1
-				category = bb_tech
+				category = cl_tech
 			}
 		}
 	}
 	focus = {
-		id = ENG_light_ships
+		id = ENG_illustrious_class
 		icon = GFX_focus_SWE_Vasa_II
 
 		prerequisite = { focus = ENG_naval_guns }
@@ -542,9 +530,93 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_heavy_ships
-				bonus = 1
+				bonus = 2
 				uses = 1
-				category = cl_tech
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = ENG_lay_em_down
+		icon = GFX_focus_SWE_Vasa_II
+
+		prerequisite = { focus = ENG_illustrious_class }
+		relative_position_id = ENG_illustrious_class
+		
+		available = {
+			has_tech = improved_ship_hull_carrier
+		}
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Illustrious Class"
+				type = ship_hull_carrier_2
+				name_group = ENG_CV_HISTORICAL
+				parent_version = 0
+				design_team = mio:ENG_harland_wolff_organization
+				modules = {
+					fixed_ship_engine_slot = carrier_ship_engine_3
+					fixed_ship_armor_slot = ship_armor_bb_2
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = empty
+
+					deck_space_1 = ship_deck_space
+					deck_space_2 = ship_deck_space
+					deck_space_3 = ship_deck_space
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ENG"
+					version_name = "Illustrious Class"
+				}
+				name = "Illustrious"
+				requested_factories = 10
+				progress = 0.2
+				amount = 1
+				industrial_manufacturer = mio:ENG_harland_wolff_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ENG"
+					version_name = "Illustrious Class"
+				}
+				name = "Formidable"
+				requested_factories = 10
+				progress = 0.15
+				amount = 1
+				industrial_manufacturer = mio:ENG_harland_wolff_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ENG"
+					version_name = "Illustrious Class"
+				}
+				name = "Victorious"
+				requested_factories = 10
+				progress = 0.1
+				amount = 1
+				industrial_manufacturer = mio:ENG_harland_wolff_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ENG"
+					version_name = "Illustrious Class"
+				}
+				name = "Indomitable"
+				requested_factories = 10
+				progress = 0.05
+				amount = 1
+				industrial_manufacturer = mio:ENG_harland_wolff_organization
 			}
 		}
 	}
@@ -552,10 +624,10 @@ focus_tree = {
 		id = ENG_navis_at_queens_command
 		icon = GFX_focus_SMB_blue_water_fleet
 
-		prerequisite = { focus = ENG_light_ships focus = ENG_heavy_ships }
+		prerequisite = { focus = ENG_light_ships focus = ENG_illustrious_class }
 		relative_position_id = ENG_light_ships
 
-		x = -1
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -934,8 +1006,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ENG_enforce_destroyers_fleet
 				bonus = 1.5
-				uses = 3
-				category = dd_tech
+				uses = 2
+				technology = improved_ship_hull_light
+				technology = advanced_ship_hull_light
 			}
 
 			swap_ideas = {
@@ -951,7 +1024,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -965,6 +1038,33 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = ic_ENG_queens_navy_idea_2
 				add_idea = ic_ENG_queens_navy_idea_3
+			}
+
+		}
+	}
+	focus = {
+		id = ENG_sonar_and_radar
+		icon = GFX_focus_generic_multi_role_aircraft
+
+		prerequisite = { focus = ENG_enforce_destroyers_fleet }
+		relative_position_id = ENG_enforce_destroyers_fleet
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = ENG_sonar_and_radar
+				bonus = 0.5
+				uses = 4
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = ENG_sonar_and_radar
+				bonus = 0.5
+				uses = 3
+				category = sonar_tech
 			}
 
 		}
@@ -1037,7 +1137,9 @@ focus_tree = {
 		id = ENG_humble_gray_wolf
 		icon = GFX_focus_generic_merchant_fleet
 
-		prerequisite = { focus = ENG_enforce_destroyers_fleet }
+		prerequisite = { focus = ENG_enhanced_naval_patrols }
+		prerequisite = { focus = ENG_sonar_and_radar }
+		prerequisite = { focus = ENG_keeping_an_eye_on_sea }
 		relative_position_id = ENG_enforce_destroyers_fleet
 		
 		available = {

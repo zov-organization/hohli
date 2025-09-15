@@ -113,7 +113,6 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 
-	basic_cruiser_armor_scheme = 1
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
@@ -124,6 +123,9 @@ set_technology = {
 	basic_ship_hull_carrier = 1
 	early_ship_hull_submarine = 1
 	basic_ship_hull_submarine = 1
+
+	basic_cruiser_armor_scheme = 1
+	basic_depth_charges = 1
 
 	basic_battery = 1
 	basic_light_battery = 1
@@ -141,12 +143,43 @@ set_technology = {
 # 1936 Start #
 
 create_equipment_variant = {
+	name = "Shark"
+	type = cv_small_plane_naval_bomber_airframe_0
+	design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		engine_type_slot = engine_1_1x
+		plane_armor_type_slot = non_strategic_materials_small
+	}
+}
+create_equipment_variant = {
+	name = "Osprey"
+	type = cv_small_plane_cas_airframe_1
+	design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = tank_buster_1
+		engine_type_slot = engine_2_1x
+		plane_armor_type_slot = dive_brakes_small
+	}
+}
+create_equipment_variant = {
+	name = "Sea Gladiator"
+	type = cv_small_plane_airframe_1
+	design_team = mio:ENG_supermarine_organization
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_2_1x
+		plane_armor_type_slot = non_strategic_materials_small
+	}
+}
+create_equipment_variant = {
 	name = "Hawker Hurricane"
 	type = small_plane_airframe_1
 	design_team = mio:ENG_supermarine_organization
 	modules = {
 		fixed_main_weapon_slot = light_mg_4x
 		engine_type_slot = engine_2_1x
+		plane_armor_type_slot = non_strategic_materials_small
 	}
 }
 create_equipment_variant = {
@@ -156,8 +189,7 @@ create_equipment_variant = {
 	modules = {
 		fixed_main_weapon_slot = tank_buster_1
 		engine_type_slot = engine_2_1x
-		special_type_slot_1 = lmg_defense_turret
-		special_type_slot_2 = dive_brakes_small
+		plane_armor_type_slot = dive_brakes_small
 	}
 }
 create_equipment_variant = {
@@ -167,8 +199,7 @@ create_equipment_variant = {
 	modules = {
 		fixed_main_weapon_slot = torpedo_mounting
 		engine_type_slot = engine_2_1x
-		special_type_slot_1 = floats
-		special_type_slot_2 = lmg_defense_turret
+		plane_armor_type_slot = non_strategic_materials_small
 	}	
 }
 
@@ -221,6 +252,22 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
+	type = cv_small_plane_naval_bomber_airframe_0
+	amount = 50
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = cv_small_plane_airframe_1
+	amount = 50
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = cv_small_plane_cas_airframe_1
+	amount = 100
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
 	amount = 300
 	producer = ENG
@@ -240,6 +287,76 @@ add_equipment_to_stockpile = {
 
 
 # navy equipment variants
+
+# CVs
+create_equipment_variant = {
+	name = "Ark Royal Class"
+	type = ship_hull_carrier_1
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = carrier_ship_engine_2
+        fixed_ship_armor_slot = ship_armor_bb_2
+        fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        deck_space_1 = ship_deck_space
+        deck_space_2 = ship_deck_space
+	}
+}
+create_equipment_variant = {
+	name = "Courageous Class"
+	type = ship_hull_carrier_conversion_bb
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bc_1
+        fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        deck_space_1 = ship_deck_space
+	}
+}
+create_equipment_variant = {
+	name = "Eagle Class"
+	type = ship_hull_carrier_conversion_bb
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        deck_space_1 = ship_deck_space
+	}
+}
+create_equipment_variant = {
+	name = "Hermes Class"
+	type = ship_hull_carrier_conversion_ca
+	name_group = ENG_CV_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+        fixed_ship_engine_slot = cruiser_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_cruiser_1
+        fixed_ship_anti_air_slot = ship_anti_air_1
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        deck_space_1 = ship_deck_space
+	}
+}
 
 # BBs
 create_equipment_variant = {
@@ -359,6 +476,7 @@ create_equipment_variant = {
 	}
 }
 
+# CLs
 create_equipment_variant = {
 	name = "C-Class"
 	type = ship_hull_cruiser_1
@@ -391,5 +509,40 @@ create_equipment_variant = {
 
 		ship_light_battery_slot = ship_light_medium_battery_2
 		torpedo_slot = ship_torpedo_1
+	}
+}
+
+#DDs
+create_equipment_variant = {
+	name = "E/F/G/H Class"
+	type = ship_hull_light_2
+	name_group = ENG_DD_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_armor_slot = empty
+
+		ship_light_battery_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "A/B/C/D Class"
+	type = ship_hull_light_1
+	name_group = ENG_DD_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_armor_slot = empty
+
+		ship_light_battery_slot = ship_light_battery_1
+		rear_1_custom_slot = ship_anti_air_1
 	}
 }

@@ -19,3 +19,8 @@
  improved_centimetric_radar_desc:0 "Introducing cutting-edge radar techniques like monopulse radars in key operations will allow for extreme tracking accuracy."
  advanced_centimetric_radar:0 "Advanced Centimetric Radar"
  advanced_centimetric_radar_desc:0 "Despite our advanced radars, there are still ways for the enemy to avoid detection. New developments like the Pulse-Doppler radar allows us to eliminate many of these limitations in our equipment."
+
+ 
+ sonar_tech:0 "Sonar Techs"
+ ship_airplane_launcher:0 "Ship Airplane Launcher Techs"
+ ship_battery:0 "Ship Batteries Techs"
