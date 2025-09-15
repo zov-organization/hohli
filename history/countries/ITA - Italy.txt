@@ -10,7 +10,7 @@ navy_experience = 0
 set_convoys = 800
 
 set_stability = 0.4
-set_war_support = 0.35
+set_war_support = 0.4
 
 set_popularities = {
 	democratic = 20
@@ -142,7 +142,7 @@ add_dynamic_modifier = { modifier = ic_ITA_regia_aeronautica }
 	add_to_variable = {ITA_naval_strike_targetting_factor = -0.1}
 	add_to_variable = {ITA_air_bombing_targetting = -0.2}
 	add_to_variable = {ITA_air_mission_xp_gain_factor = 0.2}
-	add_to_variable = {ITA_air_night_penalty = -0.1}
+	add_to_variable = {ITA_air_night_penalty = 0.1}
 
 	
 

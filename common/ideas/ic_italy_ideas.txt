@@ -422,21 +422,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		ic_ITA_mare_nostrum = {
-			name = ic_ITA_iri
-
-			removal_cost = -1
-
-			picture = GFX_idea_ic_ITA_building_up_colonies_bonus
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				industrial_capacity_dockyard = 0.1
-			}
-		}
         
 		ic_ITA_iri = {
 			name = ic_ITA_iri
@@ -467,7 +452,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.075
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_speed_industrial_complex_factor = 0.05
@@ -495,6 +480,7 @@ ideas = {
 				}
 			}
 			modifier = {
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_factory_efficiency_gain_factor = 0.05
@@ -525,7 +511,6 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = -0.1
-				consumer_goods_expected_value = 0.05
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_factory_efficiency_gain_factor = 0.05
@@ -566,7 +551,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = -0.1
-				consumer_goods_expected_value = 0.1
+				consumer_goods_expected_value = 0.05
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_factory_efficiency_gain_factor = 0.05
@@ -605,6 +590,36 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.1
 				min_export = -0.15
+			}
+		}
+		ITA_military_advisors_in_spain = {
+			picture = SPR_nationalist_remnants
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army = 0.29
+				experience_gain_air = 0.15
+			}
+		}
+		ITA_shared_general_staff = {
+			picture = SPR_nationalist_remnants
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				land_doctrine_cost_factor = -0.05
+				air_doctrine_cost_factor = -0.05
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
 			}
 		}
 

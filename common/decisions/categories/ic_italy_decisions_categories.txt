@@ -26,3 +26,10 @@ ITA_army_reforms_category = {
     #picture = GFX_decision_cat_picture_SOV_forts
     visible_when_empty = no
 }
+ITA_csir_category = {
+    visible = { tag = ITA }
+    priority = 50
+    icon = GFX_decision_category_picture
+    #picture = GFX_decision_cat_picture_SOV_forts
+    visible_when_empty = no
+}

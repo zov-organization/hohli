@@ -278,7 +278,7 @@
 		}
 	}
 	focus = {
-		id = ITA_german_military_cooperation
+		id = ITA_ebat_nazistov
 		icon = GFX_ITA_initial_focus
 
 		prerequisite = { focus = ITA_steel_pact }
@@ -288,15 +288,15 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ITA_shared_general_staff
 		}
 	}
 	focus = {
 		id = ITA_csir
 		icon = GFX_ITA_initial_focus
 
-		prerequisite = { focus = ITA_german_military_cooperation }
-		relative_position_id = ITA_german_military_cooperation
+		prerequisite = { focus = ITA_ebat_nazistov }
+		relative_position_id = ITA_ebat_nazistov
 
 		available = {
 			ITA = {
@@ -308,7 +308,7 @@
 		y = 1
 		cost = 9
 		completion_reward = {
-			##unlock decisions tt
+			custom_effect_tooltip = ITA_csir_tt
 		}
 	}
 	#industry
@@ -787,12 +787,17 @@
 		prerequisite = { focus = ITA_shift_italian_economy_to_war_production }
 		relative_position_id = ITA_shift_italian_economy_to_war_production
 
+		available = {
+			has_political_power > 75
+		}
+
 		x = -1
 		y = 1
 		cost = 10
 		completion_reward = {
 			add_research_slot = 1
 			add_ideas = ic_ITA_rnd_expansion
+			add_political_power = -75
 		}
 	}
 	focus = {
@@ -962,7 +967,7 @@
 		y = 1
 		cost = 6
 		completion_reward = {
-			##unlock decisions tt
+			custom_effect_tooltip = ITA_unlock_defend_our_resourced_decision_tt
 		}
 	}
 	focus = {
@@ -984,7 +989,7 @@
 		y = 1
 		cost = 6
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_unlock_defend_egypt_tt
 		}
 	}
 	#army
@@ -997,7 +1002,7 @@
 
 		x = 14
 		y = 1
-		cost = 2
+		cost = 3
 		completion_reward = {
 			army_experience = 15
 			navy_experience = 15
@@ -1019,7 +1024,11 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_timed_idea = {
+				idea = ITA_military_advisors_in_spain
+				days = 517
+			}
+			custom_effect_tooltip = "Gives 150 army xp and 77.5 air xp in total"
 		}
 	}
 	focus = {
@@ -1029,14 +1038,20 @@
 		prerequisite = { focus = ITA_franko_needs_help }
 		relative_position_id = ITA_franko_needs_help
 		available = {
-			date > 1938.06.01
+			NOT = {
+				has_idea = ITA_military_advisors_in_spain
+			}
 		}
 
 		x = 0
 		y = 1
 		cost = 4
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1048,7 +1063,7 @@
 
 		x = -7
 		y = 1
-		cost = 3
+		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
@@ -1075,7 +1090,7 @@
 		y = 1
 		cost = 10
 		completion_reward = {
-			##unlock decisions tt
+			custom_effect_tooltip = ITA_unlock_army_reforms_tt
 		}
 	}
 	focus = {
@@ -1298,9 +1313,9 @@
 
 		x = 0
 		y = 1
-		cost = 3
+		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			navy_experience = 75
 		}
 	}
 	focus = {
@@ -1314,7 +1329,6 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1328,7 +1342,7 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			
 		}
 	}
 	focus = {
@@ -1377,7 +1391,16 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	
@@ -1633,9 +1656,38 @@
 
 		x = 8
 		y = 1
-		cost = 3
+		cost = 5
 		completion_reward = {
-			
+			random_owned_state = {
+                limit = {
+                    state = 451
+                }
+              	add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_state = {
+                limit = {
+                  state = 663
+                }
+              	add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                }
+			}
+			random_owned_state = {
+                limit = {
+                    state = 450
+                }
+              	add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                }
+			}
 		}
 	}
 	focus = {
@@ -1649,7 +1701,11 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 	focus = {
@@ -1663,7 +1719,13 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_air_night_penalty = -0.05 tooltip = air_night_penalty_tt}
 		}
 	}
 	focus = {
@@ -1677,7 +1739,13 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = medium_air
+			}
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_air_bombing_targetting = 0.1 tooltip = air_bombing_targetting_tt}
 		}
 	}
 	focus = {
@@ -1692,7 +1760,13 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = medium_air  #ТУТ ДОЛЖНЫ БЫТЬ АВИА ТОРПЕДА НО ЕЁ НЕТ В МОДЕ
+			}
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt}
 		}
 	}
 	focus = {
@@ -1720,7 +1794,11 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			##unlock decisions tt
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1734,7 +1812,8 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_air_accidents_factor = -0.1 tooltip = air_accidents_factor_tt}
 		}
 	}
 	focus = {
@@ -1749,7 +1828,15 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_air_night_penalty = -0.05 tooltip = air_night_penalty_tt}
+			add_to_variable = {ITA_air_bombing_targetting = 0.05 tooltip = air_bombing_targetting_tt}
+			add_to_variable = {ITA_air_accidents_factor = -0.05 tooltip = air_accidents_factor_tt}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 }
