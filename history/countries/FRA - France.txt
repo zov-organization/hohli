@@ -20,8 +20,6 @@ recruit_character = ic_FRA_pierre_laval
 
 recruit_character = ic_FRA_jean_de_lattre_de_tassigny	#Generals
 recruit_character = ic_FRA_alphonse_juin
-recruit_character = ic_FRA_alphonse_georges
-recruit_character = ic_FRA_antoinemariebenoit_besson
 recruit_character = ic_FRA_gastonhenri_billotte
 recruit_character = ic_FRA_henry_freydenberg
 recruit_character = ic_FRA_rene_olry

@@ -32,7 +32,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer offensive_doctrine }
+			traits={ old_guard inflexible_strategist career_officer offensive_doctrine panzer_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -51,8 +51,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer }
-			skill=4
+			traits={ career_officer trait_cautious armor_officer panzer_leader trickster trait_engineer rangers }
+			skill=3
 			attack_skill=3
 			defense_skill=2
 			planning_skill=4
@@ -130,51 +130,10 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			traits={ old_guard trait_cautious inflexible_strategist defensive_doctrine infantry_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
-
-	ic_FRA_alphonse_georges={
-		name=FRA_alphonse_georges
-		portraits={
-			army={
-				small="GFX_idea_alphonse_georges"
-			}
-			army={
-				large=GFX_portrait_FRA_alphonse_georges
-			}
-		}
-		
-		field_marshal={
-			traits={ old_guard trait_cautious defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
-
-	ic_FRA_antoinemariebenoit_besson={
-		name=FRA_antoinemariebenoit_besson
-		portraits={
-			army={
-				large=GFX_portrait_FRA_antoinemariebenoit_besson
-				small=GFX_portrait_FRA_antoinemariebenoit_besson_small
-			}
-		}
-		field_marshal={
-			traits={ old_guard defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=0
@@ -216,9 +175,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ media_personality harsh_leader armor_officer }
-			skill=4
-			attack_skill=4
+			traits={ media_personality harsh_leader armor_officer panzer_leader organizer desert_fox }
+			skill=3
+			attack_skill=3
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
@@ -253,11 +212,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
+			traits={ career_officer trait_reckless armor_officer panzer_leader cavalry_leader urban_assault_specialist }
 			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=0
 		}
@@ -297,7 +256,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_cautious infantry_officer trickster }
+			traits={ career_officer trait_cautious infantry_officer trickster infantry_leader ambusher guerilla_fighter}
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -334,10 +293,10 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ old_guard infantry_officer }
+			traits={ old_guard infantry_officer infantry_leader ambusher }
 			skill=3
 			attack_skill=3
-			defense_skill=1
+			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=0
@@ -353,12 +312,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_cautious infantry_officer }
+			traits={ old_guard trait_cautious infantry_officer infantry_leader hill_fighter infantry_expert }
 			skill=2
-			attack_skill=1
+			attack_skill=3
 			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -372,7 +331,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard infantry_officer }
+			traits={ old_guard infantry_officer infantry_leader }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -391,7 +350,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard infantry_officer trait_mountaineer }
+			traits={ old_guard infantry_officer trait_mountaineer infantry_leader ambusher}
 			skill=3
 			attack_skill=2
 			defense_skill=4
