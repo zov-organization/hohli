@@ -100,7 +100,7 @@ ic_no_railways_africa = {
 
 FRA_inflex_industry = {
 	enable = { always = yes }
-	icon = DEN_flyvertroppernes_organization 
+	icon = GFX_idea_ic_FRA_inflex_industry
 
 
 	stability_factor = FRA_balance_stab
@@ -111,7 +111,7 @@ FRA_inflex_industry = {
 
 FRA_disjoined_goverment = {
 	enable = { always = yes }
-	icon = DEN_flyvertroppernes_organization 
+	icon = GFX_idea_FRA_disjoined_goverment
 
 	stability_factor = FRA_goverment_stab
 	political_power_gain = FRA_pp_gain

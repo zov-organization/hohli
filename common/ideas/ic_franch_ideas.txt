@@ -6,7 +6,7 @@ ideas = {
 			name = FRA_disjoined_goverment
 
 			removal_cost = -1
-			#picture = 
+			picture = GFX_idea_FRA_disjoined_goverment
 			allowed = {
 				always = no
 			}
@@ -23,7 +23,7 @@ ideas = {
 			name = FRA_big_ships
 
 			removal_cost = -1
-			#picture = 
+			picture = GFX_idea_ic_FRA_big_ships
 			allowed = {
 				always = no
 			}
@@ -41,7 +41,7 @@ ideas = {
 			name = FRA_carriers
 
 			removal_cost = -1
-			#picture = 
+			picture = GFX_idea_ic_FRA_carriers
 			allowed = {
 				always = no
 			}
@@ -58,7 +58,7 @@ ideas = {
 			name = FRA_devalue_of_franc
 
 			removal_cost = -1
-			#picture = 
+			picture = GFX_idea_ic_FRA_devalue_of_franc
 			allowed = {
 				always = no
 			}
@@ -78,7 +78,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_army_organization
 
 			allowed = {
 				always = no
@@ -99,7 +99,7 @@ ideas = {
 
         ic_FRA_inflex_industry = {
 			name = FRA_inflex_industry
-			picture = DEN_flyvertroppernes_organization
+			picture = GFX_idea_ic_FRA_inflex_industry 
 
 
 
@@ -119,7 +119,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_avia_production
 
 			allowed = {
 				always = no
@@ -171,7 +171,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_avia_production
 
 			allowed = {
 				always = no
@@ -223,7 +223,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_avia_production
 
 			allowed = {
 				always = no
@@ -271,7 +271,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_armor_production
 
 			allowed = {
 				always = no
@@ -322,7 +322,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_boost_army_morale
 
 			allowed = {
 				always = no
@@ -337,7 +337,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_arty_production
 
 			allowed = {
 				always = no
@@ -360,7 +360,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = 
+			picture = GFX_idea_ic_FRA_fleet_investments
 
 			allowed = {
 				always = no

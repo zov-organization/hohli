@@ -444,4 +444,47 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ROM/Waffen_SS.dds"
 	}
 
+
+
+
+	spriteType = {
+		name = "GFX_idea_ic_FRA_inflex_industry"
+		texturefile = "gfx/interface/ideas/idea_POL_disjointed_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_armor_production"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_armor_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_disjoined_goverment"
+		texturefile = "gfx/interface/ideas/FRA/idea_FRA_disjoined_goverment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_avia_production"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_avia_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_army_organization"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_army_organization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_boost_army_morale"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_boost_army_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_arty_production"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_arty_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_big_ships"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_defense_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_carriers"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_carrier_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_fleet_investments"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_fleet_investments.dds"
+	}
 }
