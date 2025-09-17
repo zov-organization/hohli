@@ -8,22 +8,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={ stout_defender }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	ic_FRA_edouard_daladier={
-		name=FRA_edouard_daladier
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_edouard_daladier
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ stout_defender }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -47,13 +31,13 @@ characters={
 				small=GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist cavalry_officer war_hero trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -95,11 +79,11 @@ characters={
 			}
 			available = {
 			}
-			cost = 100.000
+			cost = 150.000
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 7
 			}
@@ -135,11 +119,11 @@ characters={
 			available = {
 				
 			}
-			cost = 100.000
+			cost = 150.000
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 7
 			}
@@ -208,15 +192,12 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = charles_de_gaulle
 			ledger = army
 			allowed = {
 				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_battle_of_maneuver
 			}
 			
 			traits = {
@@ -265,7 +246,7 @@ characters={
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -293,7 +274,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = henri_giraud
 			ledger = army
@@ -344,9 +325,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				infantry_officer
+				army_infantry_2
 			}
-			cost =  50
+			cost =  150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -437,7 +418,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -513,7 +494,7 @@ characters={
 			traits = {
 				navy_screen_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -550,7 +531,7 @@ characters={
 			traits = {
 				navy_capital_ship_1
 			}
-			cost =  50
+			cost =  150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -574,29 +555,6 @@ characters={
 
 	# Giraud up there
 
-	ic_FRA_victor_denain={
-		name=FRA_victor_denain
-		portraits={
-			army={
-				small="GFX_idea_victor_denain"
-			}
-		}
-		advisor={
-			cost = 150
-			
-			slot = theorist
-			idea_token = victor_denain
-			ledger = air
-			allowed = {
-				original_tag = FRA
-			}
-			
-			traits = {
-				assault_avaition
-			}
-		}
-	}
-
 	ic_FRA_jean_decoux={
 		name=FRA_jean_decoux
 		portraits={
@@ -605,7 +563,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = jean_decoux
 			ledger = navy
@@ -624,7 +582,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = jean_marie_bergeret
 			ledger = air
@@ -632,28 +590,6 @@ characters={
 				original_tag = FRA
 			}
 			traits = { air_warfare_theorist }
-		}
-	}
-
-	ic_FRA_louis_kahn={
-		name=FRA_louis_kahn
-		portraits={
-			army={
-				small="GFX_idea_louis_kahn"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = louis_kahn
-			ledger = navy
-			allowed = {
-				original_tag = FRA
-			}
-			
-			traits = {
-				grand_fleet_proponent
-			}
 		}
 	}
 
@@ -687,7 +623,7 @@ characters={
 			traits = {
 				navy_chief_naval_aviation_1
 			}
-			cost =  50
+			cost =  150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -710,7 +646,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -734,9 +670,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_chief_ground_support_1
+				
 			}
-			cost =  50
+			cost =  150
 			ai_will_do = {
 				factor = 2
 			}
@@ -757,9 +693,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_chief_all_weather_1
+				
 			}
-			cost =  50
+			cost =  150
 			ai_will_do = {
 				factor = 0.5
 			}
@@ -780,9 +716,9 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				air_chief_reform_2
+				
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1
 			}
@@ -817,7 +753,7 @@ characters={
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -841,31 +777,7 @@ characters={
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	ic_FRA_emile_muselier={
-		name=FRA_emile_muselier
-		portraits={
-			army={
-				small="GFX_idea_emile_muselier"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = emile_muselier
-			ledger = navy
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				navy_fleet_logistics_2
-			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -889,31 +801,7 @@ characters={
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	ic_FRA_rene_prioux={
-		name=FRA_rene_prioux
-		portraits={
-			army={
-				small="GFX_idea_rene_prioux"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = rene_prioux
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_cavalry_2
-			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -971,64 +859,6 @@ characters={
 		}
 	}
 
-	ic_FRA_rene_massigli={
-		name=FRA_rene_massigli
-		portraits={
-			army={
-				small="GFX_idea_rene_massigli"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = rene_massigli
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_confirm_eastern_commitments 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				hawk 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	ic_FRA_georges_bonnet={
-		name=FRA_georges_bonnet
-		portraits={
-			army={
-				small="GFX_idea_georges_bonnet"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = georges_bonnet
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_buy_time 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				appeaser 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
 	ic_FRA_charles_maurras = {
 		name = FRA_charles_maurras
 		portraits = {
@@ -1049,20 +879,10 @@ characters={
 			allowed  = {
 				original_tag  = FRA
 			}
-			available  = {
-				OR = {
-					has_completed_focus = FRA_integralism 
-					has_completed_focus = FRA_orleanist_restoration 
-				}
-				OR  = {
-					has_government  = fascism 
-					has_government  = neutrality 
-				}
-			}
 			visible  = {
 				has_dlc = "La Resistance"
 			}
-			cost  = 75.000
+			cost  = 150
 			traits  = {
 				national_integralist 
 			}
@@ -1072,38 +892,6 @@ characters={
 				factor  = 1.000
 			}
 		}		
-	}
-
-	ic_FRA_philippe_henriot={
-		name=FRA_philippe_henriot
-		portraits={
-			army={
-				small="GFX_idea_FRA_philippe_henriot"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_philippe_henriot
-			allowed  = {
-				original_tag  = FRA
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			available  = {
-				has_completed_focus  = FRA_national_regeneration 
-				has_government  = fascism 
-			}
-			cost  = 75.000
-			traits  = {
-				propaganda_expert 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 	}
 
 	ic_FRA_pierre_pucheu={
@@ -1135,57 +923,6 @@ characters={
 			}
 		}
 	}
-	
-	ic_FRA_gaston_henry_haye={
-		name=FRA_gaston_henry_haye
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_gaston_henry_haye
-			allowed  = {
-				original_tag  = FRA
-			}
-			traits  = {
-				silent_workhorse 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-	ic_FRA_paul_baudouin={
-		name=FRA_paul_baudouin
-		portraits={
-			army={
-				small="GFX_idea_FRA_paul_baudouin"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_paul_baudouin
-			allowed  = {
-				original_tag  = FRA
-			}
-			traits  = {
-				smooth_talking_charmer 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor = 0
-			}
-		}
-	}
 
 	ic_FRA_vincent_auriol={
 		name=FRA_vincent_auriol
@@ -1200,9 +937,6 @@ characters={
 			allowed  = {
 				original_tag  = FRA
 			}
-			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
-			}
 			traits  = {
 				financial_expert 
 			}
@@ -1212,35 +946,6 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
-			}
-		}
-	}
-
-	ic_FRA_roger_salengro={
-		name=FRA_roger_salengro
-		portraits={
-			army={
-				small="GFX_idea_FRA_roger_salengro"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_roger_salengro
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
-			}
-			traits  = {
-				compassionate_gentleman 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor = 0.5
 			}
 		}
 	}
@@ -1297,32 +1002,6 @@ characters={
 		}
 	}
 
-	ic_FRA_charles_tillon={
-		name=FRA_charles_tillon
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_charles_tillon
-			allowed  = {
-				original_tag  = FRA
-			}
-			traits  = {
-				armaments_organizer 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor = 0
-			}
-		}
-	}
-
 	ic_FRA_paul_reynaud={
 		name=FRA_paul_reynaud
 		portraits={
@@ -1351,32 +1030,6 @@ characters={
 			}
 		}		
 	}
-		
-	ic_FRA_maurice_gauche={
-		name=FRA_maurice_gauche
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_maurice_gauche
-			available  = {
-				has_intelligence_agency  = yes 
-			}
-			allowed  = {
-				original_tag  = FRA
-				has_dlc = "La Resistance"
-			}
-			traits  = {
-				head_of_intelligence 
-			}
-			ai_will_do  = {
-				factor  = 0.25
-			}
-		}
-	}
 
 
   #####                                                              
@@ -1396,7 +1049,7 @@ characters={
 	#		}
 	#	}
 	#	advisor={
-	#		cost = 100
+	#		cost = 150
 	#		slot = theorist
 	#		idea_token = frederic_irene_joliot_curie
 	#		ledger = army
