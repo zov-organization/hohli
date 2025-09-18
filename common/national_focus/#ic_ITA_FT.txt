@@ -271,9 +271,18 @@
 		y = 1
 		cost = 1
 		completion_reward = {
-			declare_war_on = {
-				target = GRE
-				type = annex_everything
+			ITA = {
+				transfer_state = 185
+				transfer_state = 186
+				transfer_state = 182
+				transfer_state = 187
+			}
+			BUL = {
+				transfer_state = 184
+				transfer_state = 731
+			}
+			GER = {
+				transfer_state = 47
 			}
 		}
 	}
@@ -341,6 +350,7 @@
 		cost = 6
 		completion_reward = {
 			add_ideas = ic_ITA_nationalization
+			custom_effect_tooltip = ITA_unlock_nationalization_tt
 		}
 	}
 	focus = {
@@ -1125,6 +1135,12 @@
 			custom_effect_tooltip = ITA_modify_army_tt
 			add_to_variable = {ITA_special_forces_cap = 0.1 tooltip = special_forces_cap_tt}
 			add_to_variable = {ITA_special_forces_attack_factor = 0.07 tooltip = special_forces_attack_factor_tt}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+			}
 		}
 	}
 	focus = {
@@ -1329,6 +1345,12 @@
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = marine_tech
+				category = cat_torpedoes
+			}
 		}
 	}
 	focus = {
@@ -1338,11 +1360,23 @@
 		prerequisite = { focus = ITA_regia_marina }
 		relative_position_id = ITA_regia_marina
 
+		available = {
+			NOT = {
+				907 = {
+					is_controlled_by = FRA
+				}
+			}
+		}
+
 		x = -2
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
@@ -1396,11 +1430,7 @@
 				uses = 1
 				category = dd_tech
 			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = ss_tech
-			}
+			
 		}
 	}
 	
