@@ -518,6 +518,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ENG_other_way_of_underwater_warfare
+		icon = GFX_focus_SWE_Vasa_II
+
+		prerequisite = { focus = ENG_light_ships }
+		relative_position_id = ENG_light_ships
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_light_ships
+				bonus = 0.75
+				uses = 4
+				category = cat_torpedoes
+			}
+			add_tech_bonus = {
+				name = ENG_light_ships
+				bonus = 0.75
+				uses = 4
+				category = asw_tech
+				category = sonar_tech
+			}
+		}
+	}
+	focus = {
 		id = ENG_illustrious_class
 		icon = GFX_focus_SWE_Vasa_II
 

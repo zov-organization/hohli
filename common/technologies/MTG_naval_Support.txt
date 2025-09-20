@@ -1,4 +1,6 @@
 technologies = {
+	@boost_cost = 50
+	@research_boost = 0.5
 
 	 ##  ###  #   #  ##  #   # ### #  # ###  ##
 	#  # #  # ## ## #  # ## ## #   ## #  #  #
@@ -807,12 +809,11 @@ technologies = {
 		start_year = 1936
 
 		path = {
-			leads_to_tech = homing_torpedo
+			leads_to_tech = electric_torpedo
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = electric_torpedo
+			leads_to_tech = improved_airplane_torpedo
 			research_cost_coeff = 1
 		}
 
@@ -846,7 +847,43 @@ technologies = {
 			mio_cat_tech_all_submarine_and_modules
 		}
 	}
+	electric_torpedo = {
 
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2.5
+
+		start_year = 1940
+		
+		path = {
+			leads_to_tech = homing_torpedo
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = advanced_airplane_torpedo
+			research_cost_coeff = 1
+		}
+
+		naval_torpedo_reveal_chance_factor = -0.25
+
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 2 y = 13 }
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_torpedoes
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+			mio_cat_tech_all_submarine_and_modules
+		}
+	}
 	homing_torpedo = {
 
 		xp_research_type = navy
@@ -854,7 +891,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1942
+		start_year = 19444
 		destroyer = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
@@ -869,36 +906,7 @@ technologies = {
 		}
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = 16 }
-		}
-
-		categories = {
-			naval_equipment
-			ship_modules_tech
-			cat_torpedoes
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
-			mio_cat_tech_all_submarine_and_modules
-		}
-	}
-
-	electric_torpedo = {
-
-		xp_research_type = navy
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		research_cost = 2.5
-
-		start_year = 1940
-
-
-		naval_torpedo_reveal_chance_factor = -0.25
-
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 3 y = 13 }
+			position = { x = 2 y = 19 }
 		}
 
 		categories = {
@@ -919,6 +927,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = advanced_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_airplane_torpedo
 			research_cost_coeff = 1
 		}
 
@@ -946,6 +958,38 @@ technologies = {
 			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
+	improved_airplane_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = @boost_cost
+		xp_research_bonus = @research_boost
+		research_cost = 1.5
+
+		start_year = 1936
+
+		dependencies = {
+			improved_ship_torpedo_launcher = 1
+			magnetic_detonator = 1
+		}
+
+		enable_equipment_modules = {
+			torpedo_mounting_2
+		}
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 1 y = 10 }
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_torpedoes
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+	}
 	advanced_ship_torpedo_launcher = {
 
 		research_cost = 1.5
@@ -954,6 +998,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_airplane_torpedo
 			research_cost_coeff = 1
 		}
 
@@ -981,6 +1029,39 @@ technologies = {
 			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
+	advanced_airplane_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = @boost_cost
+		xp_research_bonus = @research_boost
+		research_cost = 1.5
+
+		start_year = 1940
+
+		dependencies = {
+			advanced_ship_torpedo_launcher = 1
+			electric_torpedo = 1
+		}
+
+		enable_equipment_modules = {
+			torpedo_mounting_3
+		}
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 1 y = 16 }
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_torpedoes
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+	}
+
 	modern_ship_torpedo_launcher = {
 
 		research_cost = 1.5

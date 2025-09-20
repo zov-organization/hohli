@@ -176,10 +176,10 @@ equipments = {
 			}
 			ship_light_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_light_medium_battery }
+				allowed_module_categories = { ship_light_medium_battery ship_medium_battery }
 			}
 			torpedo_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = { ship_torpedo }
 			}
 		}
@@ -211,7 +211,23 @@ equipments = {
 		resources = {
 			steel = 2
 		}
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_engine_slot = inherit
+			fixed_ship_armor_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			ship_light_battery_slot = inherit
+			mid_1_custom_slot = {
+				required = yes
+				allowed_module_categories = {
+					ship_anti_air
+					ship_airplane_launcher
+					ship_secondaries
+				}
+			}
+			torpedo_slot = inherit
+		}
 	}
 
 	ship_hull_cruiser_3 = {
@@ -237,7 +253,16 @@ equipments = {
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			ship_light_battery_slot = inherit
-			ship_light_battery_slot_2 = ship_light_battery_slot
+			mid_1_custom_slot = {
+				required = yes
+				allowed_module_categories = { 
+					ship_light_medium_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_airplane_launcher
+					ship_secondaries
+				}
+			}
 			torpedo_slot = inherit
 		}
 	}
@@ -266,9 +291,26 @@ equipments = {
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			ship_light_battery_slot = inherit
-			ship_light_battery_slot_2 = ship_light_battery_slot
+			mid_1_custom_slot = {
+				required = yes
+				allowed_module_categories = { 
+					ship_light_medium_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_airplane_launcher
+					ship_secondaries
+				}
+			}
+			mid_2_custom_slot = {
+				required = yes
+				allowed_module_categories = { 
+					ship_torpedo
+					ship_anti_air
+					ship_airplane_launcher
+					ship_secondaries
+				}
+			}
 			torpedo_slot = inherit
-			torpedo_slot_2 = torpedo_slot
 		}
 	}
 

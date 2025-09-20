@@ -77,9 +77,9 @@ equipments = {
 		armor_value = 0
 
 		
-		surface_detection = 20
+		surface_detection = 5
 		sub_detection = 0
-		surface_visibility = 1
+		surface_visibility = 0
 		sub_visibility = 30
 		naval_speed = 13
 		reliability = 0.60
@@ -186,7 +186,6 @@ equipments = {
 					ship_sub_snorkel
 				}
 			}
-			rear_1_custom_slot = front_1_custom_slot
 		}
 
 		default_modules = {

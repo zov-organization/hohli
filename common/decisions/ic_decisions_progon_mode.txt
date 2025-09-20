@@ -1,5 +1,50 @@
 ic_progon_mode = {
     
+    ic_progon_mode_delete_radar = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {}
+
+        fire_only_once = no
+
+        visible = {}
+
+        priority = 1
+
+		on_map_mode = map_and_decisions_view
+        highlight_states = {
+            highlight_state_targets = {
+				state = 127 state = 123 state = 126
+			}
+		}
+
+        cost = 0
+
+        remove_effect = {
+			127 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+			123 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+			126 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+        }
+    }
 
     ic_progon_mode_blumen_kriege = {
 
@@ -318,6 +363,7 @@ ic_progon_mode = {
 			        fixed_ship_radar_slot = ship_radar_2
 
 			        ship_light_battery_slot = ship_light_medium_battery_2
+					mid_1_custom_slot = ship_secondaries_2
 			        torpedo_slot = ship_torpedo_2
 				}
 			}
@@ -333,7 +379,7 @@ ic_progon_mode = {
 			        fixed_ship_radar_slot = ship_radar_3
 
 			        ship_light_battery_slot = ship_light_medium_battery_3
-			        ship_light_battery_slot_2 = ship_light_medium_battery_3
+			        mid_1_custom_slot = ship_light_medium_battery_3
 			        torpedo_slot = ship_torpedo_3
 				}
 			}
@@ -349,9 +395,9 @@ ic_progon_mode = {
 			        fixed_ship_radar_slot = ship_radar_4
 
 			        ship_light_battery_slot = ship_light_medium_battery_4
-			        ship_light_battery_slot_2 = ship_light_medium_battery_4
+			        mid_1_custom_slot = ship_light_medium_battery_4
+			        mid_2_custom_slot = ship_torpedo_4
 			        torpedo_slot = ship_torpedo_4
-			        torpedo_slot_2 = ship_torpedo_4
 				}
 			}
 

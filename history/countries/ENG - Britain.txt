@@ -476,6 +476,45 @@ create_equipment_variant = {
 	}
 }
 
+# CAs
+create_equipment_variant = {
+	name = "Hawkins Class"
+	type = ship_hull_cruiser_2
+	name_group = ENG_CA_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_john_brown_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_medium_battery_2
+		mid_1_custom_slot = ship_airplane_launcher_1
+		torpedo_slot = ship_torpedo_1
+	}
+}
+create_equipment_variant = {
+	name = "County Class"
+	type = ship_hull_cruiser_1
+	name_group = ENG_CA_HISTORICAL
+	parent_version = 0
+	design_team = mio:ENG_harland_wolff_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_medium_battery_1
+		mid_1_custom_slot = ship_secondaries_1
+		torpedo_slot = ship_torpedo_1
+	}
+	obsolete = yes
+}
+
 # CLs
 create_equipment_variant = {
 	name = "C-Class"
