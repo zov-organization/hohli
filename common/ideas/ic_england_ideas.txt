@@ -49,8 +49,11 @@ ideas = {
 			}
 			
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.025
 				special_project_speed_factor = 0.1
+			}	
+			research_bonus = {
+				electronics = 0.125
 			}
 		}
 

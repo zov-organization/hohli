@@ -24,3 +24,7 @@
  sonar_tech:0 "Sonar Techs"
  ship_airplane_launcher:0 "Ship Airplane Launcher Techs"
  ship_battery:0 "Ship Batteries Techs"
+ advanced_sonar: "Advanced Sonar"
+ basic_airplane_launcher:0 "Basic Airplane Catapult"
+ improved_airplane_torpedo: "Improved Airplane Torpedo"
+ advanced_airplane_torpedo: "Advanced Airplane Torpedo"

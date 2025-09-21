@@ -68,4 +68,12 @@ spriteTypes = {
 		name = "GFX_improved_airplane_launcher_medium"
 		texturefile = "gfx/interface/technologies/improved_airplane_launcher.dds"
 	}
+	SpriteType = {
+		name = "GFX_improved_airplane_torpedo_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_torpedoe_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_airplane_torpedo_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+	}
 }
