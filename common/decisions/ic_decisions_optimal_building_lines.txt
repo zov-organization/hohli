@@ -178,32 +178,17 @@ ic_helpful_tips = {
         cost = 0
 
         complete_effect = {
-            132 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 6
-					instant_build = no
-				}
-            }
-            130 = {
-                add_building_construction = {
-					type = infrastructure
-					level = 6
-					instant_build = no
-				}
-            }
-
-            132 = {
+            126 = {
                 add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 5
 					instant_build = no
 				}
             }
-            130 = {
+            128 = {
                 add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 5
 					instant_build = no
 				}
             }

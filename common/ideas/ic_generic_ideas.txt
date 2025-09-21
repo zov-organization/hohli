@@ -67,7 +67,7 @@ ideas = {
 				industrial_capacity_factory = -1.0
 				industrial_capacity_dockyard = -3.0
 				production_factory_max_efficiency_factor = -1.0
-				conscription = -1.0
+				#conscription = -1.0
 			}
 		}
 

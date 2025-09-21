@@ -1,5 +1,37 @@
 ideas = {
 	country = {
+		ic_test_idea = {
+			name = ic_test_idea
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				navy_carrier_air_agility_factor = 1
+				navy_carrier_air_attack_factor = 1
+				navy_carrier_air_targetting_factor = 1
+				air_carrier_night_penalty_reduction_factor = 1
+				carrier_capacity_penalty_reduction = 1
+				carrier_traffic = 1
+				sortie_efficiency = 1
+				carrier_sortie_hours_delay = 1
+				carrier_night_traffic = 1
+				fighter_sortie_efficiency = 1
+			}
+
+			#equipment_bonus = {
+			#	infantry_equipment = { build_cost_ic = -0.1 instant = yes }
+			#	support_equipment = { build_cost_ic = -0.15 instant = yes }
+			#	artillery_equipment = { build_cost_ic = -0.1 instant = yes }
+			#	anti_tank_equipment = { build_cost_ic = -0.1 instant = yes }
+			#	anti_air_equipment = { build_cost_ic = -0.1 instant = yes }
+			#}
+			
+		}
+
 		GER_eben_emael_partial_success_ns = {}
 		GER_eben_emael_success_ns = {}
 		GER_collect_scrap_metal_ns = {}

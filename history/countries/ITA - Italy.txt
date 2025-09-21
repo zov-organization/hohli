@@ -216,7 +216,7 @@ create_equipment_variant = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 100
+	amount = 150
 	producer = ITA
 }
 
@@ -228,7 +228,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2000
+	amount = 2050
 	producer = ITA
 }
 
@@ -246,7 +246,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 230
+	amount = 250
 	producer = ITA
 }
 
@@ -258,7 +258,7 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 600
+	amount = 550
 	producer = ITA
 }
 

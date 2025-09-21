@@ -5,7 +5,7 @@ ic_sp_ship_armor_dd = {
 	project_tags = sp_tag_submarine
 	
 	complexity = sp_complexity.ic_ten_fractions
-	prototype_time = sp_time.prototype.ic_five_hundred_days
+	prototype_time = sp_time.prototype.ic_thousand_days
 	
 	#allowed = { hidden_trigger = { always = no } }
 
@@ -45,7 +45,7 @@ ic_sp_dp_sub_secondaries_1 = {
 	project_tags = sp_tag_submarine
 	
 	complexity = sp_complexity.ic_ten_fractions
-	prototype_time = sp_time.prototype.ic_five_hundred_days
+	prototype_time = sp_time.prototype.ic_thousand_days
 	
 	#allowed = { hidden_trigger = { always = no } }
 

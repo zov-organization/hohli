@@ -321,15 +321,15 @@ guiTypes = {
 			}
 			
 			instantTextboxType = {
-					name = "base_stats_label"
-					position = { x = 14 y = 34 }
-					font = "hoi4_typewriter22"
-					text = "DESIGNER_BASE_STATS_LABEL"
-					maxWidth = 165
-					maxHeight = 20
-					format = left
-					fixedsize = yes
-				}
+				name = "base_stats_label"
+				position = { x = 14 y = 34 }
+				font = "hoi4_typewriter22"
+				text = "DESIGNER_BASE_STATS_LABEL"
+				maxWidth = 165
+				maxHeight = 20
+				format = left
+				fixedsize = yes
+			}
 			
 			containerWindowType = {
 				name = "combat_stats"
@@ -355,15 +355,15 @@ guiTypes = {
 			}
 			
 			instantTextboxType = {
-					name = "combat_stats_label"
-					position = { x = 187 y = 34 }
-					font = "hoi4_typewriter22"
-					text = "DESIGNER_COMBAT_STATS_LABEL"
-					maxWidth = 165
-					maxHeight = 20
-					format = left
-					fixedsize = yes
-				}
+				name = "combat_stats_label"
+				position = { x = 187 y = 34 }
+				font = "hoi4_typewriter22"
+				text = "DESIGNER_COMBAT_STATS_LABEL"
+				maxWidth = 165
+				maxHeight = 20
+				format = left
+				fixedsize = yes
+			}
 			
 			containerWindowType = {
 				name = "equipment_stats"
