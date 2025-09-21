@@ -6,6 +6,7 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.WAR_SUPPORT_TENSION_IMPACT = 0.5
+NDefines.NDiplomacy.MASTER_BUILD_AUTONOMY_FACTOR = 0
 
 -- Country
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
@@ -67,8 +68,11 @@ NDefines.NResistance.MAXIMUM_GARRISON_HARDNESS_WHEN_ATTACKED = 1.0
 NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 100.0
 NDefines.NResistance.INITIAL_GARRISON_STRENGTH = 0
 
+
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5
 NDefines.NProduction.BASE_FACTORY_SPEED = 4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.5
 NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 14
 NDefines.NProduction.ANNEX_FUEL_RATIO = 1.0
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 20000000
@@ -77,12 +81,15 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 50
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 50
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 10
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
+NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0
+NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 1
+--NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 60.0
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4
@@ -344,7 +351,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 }
 
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 4.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
@@ -409,17 +416,324 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
-NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
-NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
+NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0 -- for obvious reasons lol
+NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {
+	2.00,
+	1.90,
+	1.80,
+	1.70,
+	1.60,
+	1.50,
+	1.40,
+	1.30,
+	1.20,
+	1.10,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {
+	2.00,
+	1.90,
+	1.80,
+	1.70,
+	1.60,
+	1.50,
+	1.40,
+	1.30,
+	1.20,
+	1.10,
+	1.00,
+	0.98,
+	0.96,
+	0.94,
+	0.92,
+	0.90,
+	0.88,
+	0.86,
+	0.84,
+	0.82,
+	0.80,
+	0.78,
+	0.76,
+	0.74,
+	0.72,
+	0.70,
+	0.68,
+	0.66,
+	0.64,
+	0.62,
+	0.60,
+	0.58,
+	0.56,
+	0.54,
+	0.52,
+	0.50,
+	0.48,
+	0.46,
+	0.44,
+	0.42,
+	0.40,
+	0.38,
+	0.36,
+	0.34,
+	0.32,
+	0.30,
+	0.28,
+	0.26,
+	0.24,
+	0.22,
+	0.20,
+	0.18,
+	0.16,
+	0.14,
+	0.12,
+	0.10,
+	0.08,
+	0.06,
+	0.04,
+	0.02,
+	0.00,
+}
+NDefines.NNavy.BASE_GUN_COOLDOWNS = { 2.0, 2.0, 2.0 }
+NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
+NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
+--NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18
+--NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
+--NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
+--NDefines.NNavy.COMBAT_INITIAL_DURATION = 12
+
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.5
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5
+
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
+
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 1.8
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
+
+NDefines.NNavy.CARRIER_STACK_PENALTY = 2
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
+
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
 
-NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
-NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
-NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 1	-- it takes 30 days for one ship to fully train
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0	-- country gets 0 navy xp from ships trainings
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0	-- no accidents may happen during training
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 32767
+NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.83	-- fleet gains xp fighting twice as fast as regular training
 
 
+	-- ships org stuff
+NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.2
+NDefines.NNavy.ORG_COST_WHILE_MOVING = {
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15
+}
+NDefines.NNavy.ORG_COST_WHILE_MOVING_IN_MISSION_ZONE ={
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15,
+	0.15
+}
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1
+NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0
+NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
+NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 1
+
+-- gotta work with:
+ -- SUPPLY_NEED_FACTOR
+ -- MAX_FUEL_FLOW_MULT
+ -- MIN_REPAIR_FOR_JOINING_COMBATS
+ -- NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR
+ -- REPAIR_AND_RETURN_PRIO_LOW (and all below it)
+ --REPAIR_SPLIT_TASKFORCE_SIZE; NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SHIP_WAITING_EXTRA_SHIP; NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SLOT; NAVY_REPAIR_BASE_SEARCH_BOOST_FOR_SAME_COUNTRY; MAX_NUM_HOURS_TO_WAIT_AT_ALLY_DOCKYARDS_FOR_REPAIRS;
+ -- COMBAT_MAX_GROUPS wtf is that?? prob smhing interesting
+
+-- raiding/convoys gameplay enhance
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.1
+
+-- amount of convoys intercepted:
+NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --setting this to zero makes task force to intercept 100% of convoys
+NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0	-- it just does not work lol
+NDefines.NNavy.AGGRESSION_CONVOY_STRENGTH_FACTOR = 0	-- it just does not work lol
+
+-- how fast are convoys detected
+NDefines.NNavy.CONVOY_DETECTION_CHANCE_BASE = 100
+NDefines.NNavy.BASE_CONVOY_SPOTTING_SPEED = 0
+NDefines.NNavy.CONVOY_SPOTTING_SPEED_MULT = 0.2
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	-- those two make convoys be detected every hour
+NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	--
+
+-- subs gameplay
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 6	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 6	-- the same thing, but the number or hours if sub started defencive combat
+NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faster
+NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
+NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed
+
+--NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN = 1
+--NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN = 0
+--NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MAX = 0
+NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN_FROM_EFFICIENCY = 0.5
+
+NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 1
+--NDefines.NNavy.SPOTTING_MOD_FOR_CONVOY_COUNT = 0
+
+NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.025
+
+-- spotting defines
+-- formula for spotting (hourly change) is:
+--   our detection chance =  0.1% * our_detection * VISIBILITY_MULTIPLIER_FOR_SPOTTING * their_visibility
+-- their detection chance = -0.1% * SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY * their_detection * VISIBILITY_MULTIPLIER_FOR_SPOTTING * our_visibility
+
+NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 80
+
+NDefines.NNavy.BASE_SPOTTING = 0	-- 'base detection in region' != 'hourly change'(detection). this defines works exactly with 'base detection in region'
+NDefines.NNavy.MIN_SPOTTING_PROGRESS = 0.05	-- whereas this one gives exactly min of 0.05% (out of 100%) to 'hourly change'(detection)
+NDefines.NNavy.VISIBILITY_MULTIPLIER_FOR_SPOTTING = 0.075
+NDefines.NNavy.SPOTTING_SPEED_MULT_FOR_CATCHING_UP = 0.5	-- speed dif buff = (our_speed - enemy_speed) * this_define * 0.1
+															-- example: ship with 37,5 speed is spotting other with 23.
+															-- (37,5 - 23) = 14,5  -->  14,5 * 0,5 = 7,25  -->  7,25 * 0,1 = 0,73 hourly change
+NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.9
+NDefines.NNavy.SPOTTING_MISSION_DETECTION_THRESHOLD_LOW = 0
+NDefines.NNavy.SPOTTING_MISSION_DETECTION_THRESHOLD_MEDIUM = 1
+NDefines.NNavy.BASE_SPOTTING_FROM_RADAR = 10	-- 100% coverage from 1 radar gives 10%. 50% coverage gives 5%. 36% coverage gives 3.6%.
+NDefines.NNavy.BASE_SPOTTING_FROM_NAVY = 0
+NDefines.NNavy.BASE_SPOTTING_FROM_AIR = 0
+NDefines.NIntel.NAVY_INTEL_BASE_SPOTTING_BONUS_MIN_INTEL_FOR_BONUS = 0	-- retarded to have intel buff as we 
+NDefines.NIntel.NAVY_INTEL_BASE_SPOTTING_BONUS_MAX_INTEL_FOR_BONUS = 0	-- have 100% intel by default in the mod 
 
 
 

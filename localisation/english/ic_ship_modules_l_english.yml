@@ -1,3 +1,14 @@
 ﻿l_english:
  ic_ship_armor_dd:0 "Destroyer Armor"
  ic_dp_sub_secondaries_1:0 "Submarine Dual-Purpose Battery"
+
+ EQ_MOD_SLOT_deck_space_1_TITLE:0 "Deck Space 1"
+ EQ_MOD_SLOT_deck_space_2_TITLE:0 "Deck Space 2"
+ EQ_MOD_SLOT_deck_space_3_TITLE:0 "Deck Space 3"
+ EQ_MOD_SLOT_deck_space_4_TITLE:0 "Deck Space 4"
+ EQ_MOD_SLOT_fixed_recon_planes_catapult_TITLE:0 "Recon Planes Catapult"
+ EQ_MOD_SLOT_ship_light_battery_slot_TITLE:0 "Light Battery"
+ EQ_MOD_SLOT_ship_light_battery_slot_2_TITLE:0 "Light Battery"
+ EQ_MOD_SLOT_ship_heavy_battery_slot_TITLE:0 "Heavy Battery"
+ EQ_MOD_SLOT_torpedo_slot_TITLE:0 "Torpedoes"
+ EQ_MOD_SLOT_torpedo_slot_2_TITLE:0 "Torpedoes"

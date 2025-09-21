@@ -1,5 +1,50 @@
 ic_progon_mode = {
     
+    ic_progon_mode_delete_radar = {
+
+        icon = GFX_decision_generic_wreckers
+
+        available = {}
+
+        fire_only_once = no
+
+        visible = {}
+
+        priority = 1
+
+		on_map_mode = map_and_decisions_view
+        highlight_states = {
+            highlight_state_targets = {
+				state = 127 state = 123 state = 126
+			}
+		}
+
+        cost = 0
+
+        remove_effect = {
+			127 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+			123 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+			126 = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+					instant_build = yes
+				}
+			}
+        }
+    }
 
     ic_progon_mode_blumen_kriege = {
 
@@ -197,106 +242,13 @@ ic_progon_mode = {
 
         }
     }
-    ic_progon_mode_eng_tanks_variants = {
+
+    ic_progon_mode_ship_variants = {
 
         icon = GFX_decision_generic_wreckers
 
         available = {
-            count_triggers = {
-                amount = 1
-                tag = ENG
-                is_debug = yes
-            }
-        }
-
-        fire_only_once = yes
-
-        visible = {}
-
-        priority = 1
-
-        cost = 0
-        
-        complete_effect = {
-
-            create_equipment_variant = {
-	            type = light_tank_equipment_2
-                allow_without_tech = yes
-            }
-            create_equipment_variant = {
-	            type = light_tank_destroyer_equipment_2
-                allow_without_tech = yes
-            }
-            create_equipment_variant = {
-	            type = light_tank_artillery_equipment_2
-                allow_without_tech = yes
-            }
-            create_equipment_variant = {
-	            type = light_tank_aa_equipment_2
-                allow_without_tech = yes
-            }
-
-            create_equipment_variant = {
-	            type = heavy_tank_equipment_1
-                allow_without_tech = yes
-            }
-
-            division_template = {
-	            name = "no minors :("
-	            division_names_group = ENG_MEC_01
-	            regiments = {
-		            light_armor = { x = 0 y = 0 }
-		            light_armor = { x = 0 y = 1 }
-		            light_armor = { x = 0 y = 2 }
-		            light_armor = { x = 0 y = 3 }
-		            light_armor = { x = 0 y = 4 }
-
-		            light_armor = { x = 1 y = 0 }
-		            light_armor = { x = 1 y = 1 }
-		            light_armor = { x = 1 y = 2 }
-		            light_armor = { x = 1 y = 3 }
-		            light_armor = { x = 1 y = 4 }
-
-		            motorized = { x = 2 y = 0 }
-		            motorized = { x = 2 y = 1 }
-		            motorized = { x = 2 y = 2 }
-		            motorized = { x = 2 y = 3 }
-
-		            motorized = { x = 3 y = 0 }
-		            motorized = { x = 3 y = 1 }
-		            motorized = { x = 3 y = 2 }
-		            motorized = { x = 3 y = 3 }
-
-		            light_armor = { x = 4 y = 0 }
-		            light_armor = { x = 4 y = 1 }
-	            }
-	            support = {
-		            engineer = { x = 0 y = 0 }
-		            field_hospital = { x = 0 y = 1 }
-		            signal_company = { x = 0 y = 2 }
-		            light_tank_recon = { x = 0 y = 3 }
-		            light_sp_artillery_brigade = { x = 0 y = 4 }
-
-		            artillery = { x = 1 y = 0 }
-		            anti_tank = { x = 1 y = 1 }
-		            flamethrower_sppt = { x = 1 y = 2 }
-		            heavy_armor_brigade = { x = 1 y = 3 }
-		            light_sp_anti_air_brigade = { x = 1 y = 4 }
-	            }
-            }
-
-        }
-    }
-    ic_progon_mode_eng_tanks_spawnins = {
-
-        icon = GFX_decision_generic_wreckers
-
-        available = {
-            count_triggers = {
-                amount = 1
-                tag = ENG
-                is_debug = yes
-            }
+            is_debug = yes
         }
 
         fire_only_once = no
@@ -308,7 +260,148 @@ ic_progon_mode = {
         cost = 0
         
         complete_effect = {
-            load_oob = "ic_ENG_no_minor_army"
+
+			create_equipment_variant = {
+				type = ship_hull_heavy_1
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = heavy_ship_engine_1
+			        fixed_ship_armor_slot = ship_armor_bb_1
+			        fixed_ship_anti_air_slot = ship_anti_air_1
+			        fixed_ship_secondaries_slot = ship_secondaries_1
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			        fixed_ship_radar_slot = ship_radar_1
+
+			        front_1_custom_slot = ship_heavy_battery_1
+			        mid_1_custom_slot = ship_secondaries_1
+			        rear_1_custom_slot = ship_heavy_battery_1
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_heavy_2
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = heavy_ship_engine_2
+			        fixed_ship_armor_slot = ship_armor_bb_2
+			        fixed_ship_anti_air_slot = ship_anti_air_2
+			        fixed_ship_secondaries_slot = ship_secondaries_2
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			        fixed_ship_radar_slot = ship_radar_2
+
+			        front_1_custom_slot = ship_heavy_battery_2
+			        mid_1_custom_slot = ship_secondaries_2
+			        mid_2_custom_slot = ship_secondaries_2
+			        rear_1_custom_slot = ship_heavy_battery_2
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_heavy_3
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = heavy_ship_engine_3
+			        fixed_ship_armor_slot = ship_armor_bb_3
+			        fixed_ship_anti_air_slot = ship_anti_air_3
+			        fixed_ship_secondaries_slot = ship_secondaries_2
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			        fixed_ship_radar_slot = ship_radar_3
+
+			        front_1_custom_slot = ship_heavy_battery_3
+			        front_2_custom_slot = ship_heavy_battery_3
+			        mid_1_custom_slot = ship_anti_air_3
+			        mid_2_custom_slot = ship_anti_air_3
+			        rear_1_custom_slot = ship_heavy_battery_3
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_heavy_4
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = heavy_ship_engine_4
+			        fixed_ship_armor_slot = ship_armor_bb_3
+			        fixed_ship_anti_air_slot = ship_anti_air_4
+			        fixed_ship_secondaries_slot = ship_secondaries_2
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			        fixed_ship_radar_slot = ship_radar_4
+
+			        front_1_custom_slot = ship_heavy_battery_4
+			        front_2_custom_slot = ship_heavy_battery_4
+			        mid_1_custom_slot = ship_anti_air_4
+			        mid_2_custom_slot = ship_anti_air_4
+			        mid_3_custom_slot = ship_anti_air_4
+			        rear_1_custom_slot = ship_heavy_battery_4
+				}
+			}
+
+			create_equipment_variant = {
+				type = ship_hull_cruiser_1
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = cruiser_ship_engine_1
+			        fixed_ship_armor_slot = ship_armor_cruiser_1
+			        fixed_ship_anti_air_slot = ship_anti_air_1
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			        fixed_ship_radar_slot = ship_radar_1
+
+			        ship_light_battery_slot = ship_light_medium_battery_1
+			        torpedo_slot = ship_torpedo_1
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_cruiser_2
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = cruiser_ship_engine_2
+			        fixed_ship_armor_slot = ship_armor_cruiser_2
+			        fixed_ship_anti_air_slot = ship_anti_air_2
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			        fixed_ship_radar_slot = ship_radar_2
+
+			        ship_light_battery_slot = ship_light_medium_battery_2
+					mid_1_custom_slot = ship_secondaries_2
+			        torpedo_slot = ship_torpedo_2
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_cruiser_3
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = cruiser_ship_engine_3
+			        fixed_ship_armor_slot = ship_armor_cruiser_3
+			        fixed_ship_anti_air_slot = ship_anti_air_3
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			        fixed_ship_radar_slot = ship_radar_3
+
+			        ship_light_battery_slot = ship_light_medium_battery_3
+			        mid_1_custom_slot = ship_light_medium_battery_3
+			        torpedo_slot = ship_torpedo_3
+				}
+			}
+			create_equipment_variant = {
+				type = ship_hull_cruiser_4
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+			        fixed_ship_engine_slot = cruiser_ship_engine_4
+			        fixed_ship_armor_slot = ship_armor_cruiser_4
+			        fixed_ship_anti_air_slot = ship_anti_air_4
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			        fixed_ship_radar_slot = ship_radar_4
+
+			        ship_light_battery_slot = ship_light_medium_battery_4
+			        mid_1_custom_slot = ship_light_medium_battery_4
+			        mid_2_custom_slot = ship_torpedo_4
+			        torpedo_slot = ship_torpedo_4
+				}
+			}
+
         }
     }
+
 }

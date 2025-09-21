@@ -23,3 +23,27 @@ country_event = {	# 28 may 1937 - Chamberlain become prime minister
 
 	}
 }
+
+country_event = {	# Churchill become prime minister
+	id = ic_eng_events.2
+	title = ic_eng_events.2.t
+	desc = ic_eng_events.2.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = ic_eng_events.2.a
+		
+		create_country_leader = {
+			name = ENG_winston_churchill
+			picture = "GFX_portrait_ENG_winston_churchill"
+			ideology=liberalism
+			traits={ british_bulldog }
+			id = -1
+		}
+
+	}
+}
