@@ -1,6 +1,6 @@
 ﻿focus_tree = {
 	id = italian_focus
-	continuous_focus_position = { x = 1300 y = 1250 }
+	continuous_focus_position = { x = 900 y = 1250 }
 
 	country = {
 		factor = 0
@@ -19,7 +19,7 @@
 
 		prerequisite = {  }
 
-		x = 16
+		x = 13
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -1030,7 +1030,7 @@
 			date > 1936.08.01
 		}
 
-		x = 4
+		x = 6
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -1362,7 +1362,7 @@
 
 		available = {
 			NOT = {
-				907 = {
+				19 = {
 					is_controlled_by = FRA
 				}
 			}
@@ -1393,6 +1393,7 @@
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1404,6 +1405,7 @@
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1429,40 +1431,60 @@
 				bonus = 1
 				uses = 1
 				category = dd_tech
+				category = cl_tech
 			}
 			
 		}
 	}
 	
 	focus = {
-		id = ITA_refit_our_old_ships
+		id = ITA_develop_new_guns
 		icon = GFX_ITA_initial_focus
 
 		prerequisite = { focus = ITA_expand_taranto_dockyards }
 		relative_position_id = ITA_expand_taranto_dockyards
 
-		x = 2
+		x = -2
 		y = 2
+		cost = 4
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ship_battery
+			}
+		}
+	}
+	focus = {
+		id = ITA_refit_our_old_ships
+		icon = GFX_ITA_initial_focus
+
+		prerequisite = { focus = ITA_develop_new_guns }
+		relative_position_id = ITA_develop_new_guns
+
+		x = -1
+		y = 1
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_refit_speed = 0.1 tooltip = refit_speed_tt}
+			add_to_variable = {ITA_refit_speed = 0.3 tooltip = refit_speed_tt}
 		}
 	}
 	focus = {
 		id = ITA_expand_repair_dockyards
 		icon = GFX_ITA_initial_focus
 
-		prerequisite = { focus = ITA_refit_our_old_ships }
-		relative_position_id = ITA_refit_our_old_ships
+		prerequisite = { focus = ITA_develop_new_guns }
+		relative_position_id = ITA_develop_new_guns
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1476,51 +1498,14 @@
 		}
 	}
 	focus = {
-		id = ITA_develop_new_guns
-		icon = GFX_ITA_initial_focus
-
-		prerequisite = { focus = ITA_refit_our_old_ships }
-		relative_position_id = ITA_refit_our_old_ships
-
-		x = 2
-		y = 1
-		cost = 4
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = cat_ship_light_battery
-				category = cat_ship_medium_battery
-				category = cat_ship_heavy_battery
-			}
-		}
-	}
-	focus = {
-		id = ITA_close_cooperation_between_fleet_and_air
-		icon = GFX_ITA_initial_focus
-
-		prerequisite = { focus = ITA_develop_new_guns }
-		relative_position_id = ITA_develop_new_guns
-
-		x = 1
-		y = 1
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_naval_coordination = 0.05 tooltip = naval_coordination_tt}
-			custom_effect_tooltip = ITA_air_tt
-			add_to_variable = {ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt}
-		}
-	}
-	focus = {
 		id = ITA_completly_new_fleet
 		icon = GFX_ITA_initial_focus
 
 		prerequisite = { focus = ITA_expand_taranto_dockyards }
 		relative_position_id = ITA_expand_taranto_dockyards
 
-		x = -3
-		y = 2
+		x = 3
+		y = 1
 		cost = 6
 		completion_reward = {
 			add_tech_bonus = {
@@ -1533,15 +1518,15 @@
 		}
 	}
 	focus = {
-		id = ITA_armada
+		id = ITA_vittorio_veneto_class_battleships
 		icon = GFX_ITA_initial_focus
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
 		mutually_exclusive = { focus = ITA_carriers_centralized_fleet }
-		mutually_exclusive = { focus = ITA_coastal_fleet }
+		mutually_exclusive = { focus = ITA_subs_spam }
 
-		x = 2
+		x = -2
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -1551,9 +1536,72 @@
 				category = cat_fleet_in_being
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 2
 				uses = 1
 				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = ITA_armada
+		icon = GFX_ITA_initial_focus
+		
+		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
+		relative_position_id = ITA_vittorio_veneto_class_battleships
+		
+		available = {
+			has_tech = improved_ship_hull_heavy
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Vittorio Veneto (Littorio)-Class"
+				type = ship_hull_heavy_3
+				name_group = ITA_BB_HISTORICAL
+				parent_version = 0
+				design_team = mio:ITA_crda_organization
+				modules = {
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = empty
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_anti_air_3
+					mid_2_custom_slot = ship_anti_air_3
+					rear_1_custom_slot = ship_heavy_battery_3
+					fixed_recon_planes_catapult = ship_airplane_launcher_1
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "ITA"
+					version_name = "Vittorio Veneto (Littorio)-Class"
+				}
+				name = "Littorio"
+				requested_factories = 0
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "ITA"
+					version_name = "Vittorio Veneto (Littorio)-Class"
+				}
+				name = "Vittorio Veneto"
+				requested_factories = 0
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
 			}
 		}
 	}
@@ -1563,32 +1611,95 @@
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
-		mutually_exclusive = { focus = ITA_armada }
-		mutually_exclusive = { focus = ITA_coastal_fleet }
+		mutually_exclusive = { focus = ITA_vittorio_veneto_class_battleships }
+		mutually_exclusive = { focus = ITA_subs_spam }
 
-		x = -2
+		x = 2
 		y = 1
 		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.8
-				uses = 2
-				category = cat_base_strike
+				uses = 3
+				technology = early_ship_hull_carrier
+				technology = basic_ship_hull_carrier
+				technology = improved_ship_hull_carrier
 			}
 			add_tech_bonus = {
 				bonus = 1.5
-				uses = 1
-				category = cv_tech
+				uses = 2
+				category = cat_torpedoes
 			}
 		}
 	}
 	focus = {
-		id = ITA_coastal_fleet
+		id = ITA_order_experimental_ships
+		icon = GFX_ITA_initial_focus
+		
+		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
+		relative_position_id = ITA_carriers_centralized_fleet
+		
+		available = {
+			has_tech = improved_ship_hull_carrier
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Aquila, Sparviero -classes"
+				type = ship_hull_carrier_2
+				name_group = ITA_CV_HISTORICAL
+				parent_version = 0
+				design_team = mio:ENG_harland_wolff_organization
+				modules = {
+					fixed_ship_engine_slot = carrier_ship_engine_3
+					fixed_ship_armor_slot = ship_armor_bc_2
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = empty
+
+					deck_space_1 = ship_deck_space
+					deck_space_2 = ship_deck_space
+					deck_space_3 = ship_deck_space
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ITA"
+					version_name = "Some-class"
+				}
+				name = "Aquila, Sparviero -classes"
+				requested_factories = 0
+				progress = 0.1
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "ITA"
+					version_name = "Some-class"
+				}
+				name = "Aquila, Sparviero -classes"
+				requested_factories = 0
+				progress = 0.05
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
+			}
+
+		}
+	}
+	focus = {
+		id = ITA_subs_spam
 		icon = GFX_ITA_initial_focus
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
-		mutually_exclusive = { focus = ITA_armada }
+		mutually_exclusive = { focus = ITA_vittorio_veneto_class_battleships }
 		mutually_exclusive = { focus = ITA_carriers_centralized_fleet }
 
 		x = 0
@@ -1608,42 +1719,44 @@
 		}
 	}
 	focus = {
-		id = ITA_use_new_technologies
+		id = ITA_subs_spam_2
 		icon = GFX_ITA_initial_focus
-
-		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_coastal_fleet focus = ITA_armada }
-		relative_position_id = ITA_coastal_fleet
-
-		available = {
-			has_tech = improved_fire_control_system
-			has_tech = decimetric_radar
-		}
+		
+		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
+		relative_position_id = ITA_subs_spam
 
 		x = 0
 		y = 1
-		cost = 7
+		cost = 10
 		completion_reward = {
-			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_naval_detection = 0.05 tooltip = naval_detection_tt}
-			add_to_variable = {ITA_naval_hit_chance = 0.05 tooltip = naval_hit_chance_tt}
-			add_to_variable = {ITA_night_spotting_chance = 0.1 tooltip = night_spotting_chance_factor_tt}
-			add_to_variable = {ITA_naval_night_attack = 0.1 tooltip = naval_night_attack_tt}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = cat_trade_interdiction
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
 		id = ITA_further_development_of_naval_industry
 		icon = GFX_ITA_initial_focus
 
-		prerequisite = { focus = ITA_expand_repair_dockyards focus = ITA_carriers_centralized_fleet focus = ITA_coastal_fleet focus = ITA_armada }
-		relative_position_id = ITA_expand_taranto_dockyards
+		prerequisite = { focus = ITA_order_experimental_ships focus = ITA_subs_spam_2 focus = ITA_armada }
+		relative_position_id = ITA_subs_spam
 
 		x = 0
-		y = 5
-		cost = 10
+		y = 2
+
+		cost = 7
 		completion_reward = {
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1655,6 +1768,7 @@
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1666,6 +1780,7 @@
 			random_owned_state = {
                 limit = {
 					is_core_of = ITA
+					is_coastal = yes
                 }
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -1676,6 +1791,96 @@
             }
 		}
 	}
+	focus = {
+		id = ITA_roma_e_impero
+		icon = GFX_ITA_initial_focus
+		
+		prerequisite = { focus = ITA_further_development_of_naval_industry }
+		relative_position_id = ITA_further_development_of_naval_industry
+		
+		available = {
+			has_completed_focus = ITA_armada
+		}
+
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Vittorio Veneto (Littorio)-Class"
+				type = ship_hull_heavy_3
+				name_group = ITA_BB_HISTORICAL
+				parent_version = 0
+				design_team = mio:ITA_crda_organization
+				modules = {
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_fire_control_system_slot = empty
+					fixed_ship_radar_slot = empty
+
+					front_1_custom_slot = ship_heavy_battery_3
+					front_2_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_anti_air_3
+					mid_2_custom_slot = ship_anti_air_3
+					rear_1_custom_slot = ship_heavy_battery_3
+					fixed_recon_planes_catapult = ship_airplane_launcher_1
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "ITA"
+					version_name = "Vittorio Veneto (Littorio)-Class"
+				}
+				name = "Roma"
+				requested_factories = 0
+				progress = 0.3
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "ITA"
+					version_name = "Vittorio Veneto (Littorio)-Class"
+				}
+				name = "Impero"
+				requested_factories = 0
+				progress = 0.05
+				amount = 1
+				industrial_manufacturer = mio:ITA_crda_organization
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_use_new_technologies
+		icon = GFX_ITA_initial_focus
+
+		prerequisite = { focus = ITA_expand_repair_dockyards focus = ITA_refit_our_old_ships }
+		prerequisite = { focus = ITA_further_development_of_naval_industry }
+		relative_position_id = ITA_expand_taranto_dockyards
+
+		available = {
+			has_tech = improved_fire_control_system
+			has_tech = decimetric_radar
+		}
+		
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_naval_detection = 0.05 tooltip = naval_detection_tt}
+			add_to_variable = {ITA_naval_hit_chance = 0.05 tooltip = naval_hit_chance_tt}
+			add_to_variable = {ITA_night_spotting_chance = 0.1 tooltip = night_spotting_chance_factor_tt}
+			add_to_variable = {ITA_naval_night_attack = 0.1 tooltip = naval_night_attack_tt}
+		}
+	}
+
+
 	#air
 	focus = {
 		id = ITA_aeronautica_militare_italiana
@@ -1684,7 +1889,7 @@
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
 
-		x = 8
+		x = 10
 		y = 1
 		cost = 5
 		completion_reward = {
@@ -1776,6 +1981,23 @@
 			}
 			custom_effect_tooltip = ITA_air_tt
 			add_to_variable = {ITA_air_bombing_targetting = 0.1 tooltip = air_bombing_targetting_tt}
+		}
+	}
+	focus = {
+		id = ITA_close_cooperation_between_fleet_and_air
+		icon = GFX_ITA_initial_focus
+
+		prerequisite = { focus = ITA_carriers_centralized_fleet }
+		relative_position_id = ITA_carriers_centralized_fleet
+
+		x = 1
+		y = 2
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = ITA_fleet_tt
+			add_to_variable = {ITA_naval_coordination = 0.05 tooltip = naval_coordination_tt}
+			custom_effect_tooltip = ITA_air_tt
+			add_to_variable = {ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt}
 		}
 	}
 	focus = {

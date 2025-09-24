@@ -180,7 +180,7 @@ equipments = {
 			}
 			torpedo_slot = {
 				required = yes
-				allowed_module_categories = { ship_torpedo }
+				allowed_module_categories = { ship_torpedo ship_medium_battery }
 			}
 		}
 		
