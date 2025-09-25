@@ -425,3 +425,117 @@ ITA_proper_escorts:0 "Proper Escortss"
 ITA_think_of_littorio:0 "Think of Littorio"
 
 ITA_reorganize_retards_tt:0 "§CWill start a chain of Military Reorganization of 6 debuffs, each of which will be removing one after another every 180 days (in total will take 1080 days = 3 years)§"
+
+FRA_form_popular_front:0 "Form popular front"
+FRA_form_popular_front_desc:0 "The Popular Front offers a coalition of left-wing parties committed to democratic reform and social justice. Uniting these forces may stabilize the nation and counter extremist threats."
+
+FRA_devalue_of_franc:0 "Devalue of Franc"
+FRA_devalue_of_franc_desc:0 "To combat deflation and economic stagnation, we will devalue the franc. This controversial move aims to boost exports and kickstart industrial growth."
+
+FRA_print_money:0 "Print money"
+FRA_print_money_desc:0 "In these dire times, unconventional methods are needed. Printing additional currency will provide short-term relief but risks inflation and long-term instability."
+
+FRA_start_reforms:0 "Start reforms"
+FRA_start_reforms_desc:0 "Comprehensive social and economic reforms are necessary to address the root causes of unrest and inefficiency. It is time to reshape the foundations of our nation."
+
+FRA_pause_reforms:0 "Pause reforms"
+FRA_pause_reforms_desc:0 "Reform fatigue and growing opposition require us to pause our agenda. Consolidating our gains may be wiser than pushing forward too quickly."
+
+FRA_raise_salaries:0 "Raise salaries"
+FRA_raise_salaries_desc:0 "Raising wages for workers will improve morale and increase consumer spending, but it may also strain the economy and provoke business leaders."
+
+FRA_reassure_businesses:0 "Reassure Businesses"
+FRA_reassure_businesses_desc:0 "To stabilize the economy and gain the confidence of the private sector, we must reassure businesses that our government is committed to recovery and industrial growth."
+
+FRA_subsidies:0 "Provide Subsidies"
+FRA_subsidies_desc:0 "Government subsidies will boost key industries, helping them ramp up production and recover from economic stagnation."
+
+FRA_end_crisis:0 "End the Crisis"
+FRA_end_crisis_desc:0 "With financial and political stability returning, we can finally declare the crisis over. It is time to restore full functionality to the state and prepare for future challenges."
+
+FRA_boost_army_morale:0 "Boost Army Morale"
+FRA_boost_army_morale_desc:0 "Our armed forces have suffered from years of political uncertainty. We must take immediate steps to boost morale and prepare them for the challenges ahead."
+
+FRA_improve_armor_technology:0 "Improve Armor Technology"
+FRA_improve_armor_technology_desc:0 "Modernizing our tank designs is essential if we are to stay competitive on the battlefield. Investments in armored warfare will ensure we are prepared."
+
+FRA_somua_sm:0 "Somua SM Development"
+FRA_somua_sm_desc:0 "The Somua SM promises to be a reliable and versatile armored vehicle. Developing and producing it will bolster our armored forces."
+
+FRA_b2:0 "Char B2 Development"
+FRA_b2_desc:0 "An improved version of the Char B series will offer us a heavy tank capable of withstanding enemy fire and dominating in direct confrontations."
+
+FRA_bet_on_artillery:0 "Invest in Artillery"
+FRA_bet_on_artillery_desc:0 "Rather than focusing on tanks, we can rely on superior artillery support to break through enemy lines and defend our territory."
+
+FRA_mass_arty_production:0 "Mass Artillery Production"
+FRA_mass_arty_production_desc:0 "With new artillery designs, we must now focus on expanding production lines to equip our divisions quickly and efficiently."
+
+FRA_army_modernisation:0 "Modernize the Army"
+FRA_army_modernisation_desc:0 "Our army must undergo a comprehensive modernization program, incorporating recent technological advances into our organizational structure."
+
+FRA_offensive_focus:0 "Offensive Focus"
+FRA_offensive_focus_desc:0 "Victory favors the bold. By adopting an offensive military doctrine, we can regain the initiative and take the fight to our enemies."
+
+FRA_defensive_focus:0 "Defensive Focus"
+FRA_defensive_focus_desc:0 "France's strength lies in its ability to hold ground. We shall perfect our defensive tactics and prepare to repel any invasion."
+
+FRA_new_tactic:0 "Develop New Tactics"
+FRA_new_tactic_desc:0 "Drawing on both offensive and defensive doctrines, we can formulate new, adaptive tactics to outmaneuver and outwit our foes."
+
+FRA_modernize_aviation:0 "Modernize Aviation"
+FRA_modernize_aviation_desc:0 "Modern warfare demands air superiority. We must modernize our aircraft and production capabilities to maintain control of the skies."
+
+FRA_nationalize_avia_industry:0 "Nationalize the Aviation Industry"
+FRA_nationalize_avia_industry_desc:0 "By bringing key aviation companies under state control, we can streamline production and ensure our air force is well-supplied."
+
+FRA_start_avia_production:0 "Start Aircraft Production"
+FRA_start_avia_production_desc:0 "With nationalized facilities, we can now launch a full-scale aircraft production program to equip our air force."
+
+FRA_fighter_focus:0 "Fighter Focus"
+FRA_fighter_focus_desc:0 "Securing air superiority is vital to modern combat. We will prioritize fighter production to control the skies."
+
+FRA_bomber_focus:0 "Bomber Focus"
+FRA_bomber_focus_desc:0 "Strategic bombing can cripple enemy infrastructure. We will focus our efforts on producing long-range bomber aircraft."
+
+FRA_reorganize_aviation:0 "Reorganize the Air Force"
+FRA_reorganize_aviation_desc:0 "An internal reorganization of the air force will improve efficiency and coordination between air wings."
+
+FRA_reform_doctrine:0 "Reform Air Doctrine"
+FRA_reform_doctrine_desc:0 "We must adapt our aerial doctrines to better utilize modern aircraft and achieve strategic dominance in the air."
+
+FRA_finish_reorganization:0 "Complete Air Force Reorganization"
+FRA_finish_reorganization_desc:0 "With the reorganization complete, our air force is now a streamlined and efficient fighting force, ready for any challenge."
+
+FRA_modernize_navy:0 "Modernize the Navy"
+FRA_modernize_navy_desc:0 "To maintain our global presence and defend our interests, we must invest in the modernization of our naval forces."
+
+FRA_fleet_investments:0 "Invest in Naval Construction"
+FRA_fleet_investments_desc:0 "New shipyards and expanded production lines will allow us to build a navy capable of rivaling any power."
+
+FRA_colonial_dockyards:0 "Expand Colonial Dockyards"
+FRA_colonial_dockyards_desc:0 "Our overseas territories offer valuable space for dockyard expansion. Utilizing them will boost our shipbuilding capacity."
+
+FRA_new_doctrine:0 "Adopt New Naval Doctrine"
+FRA_new_doctrine_desc:0 "We must rethink our naval strategies to focus on carrier and submarine warfare, embracing modern naval combat principles."
+
+FRA_old_doctrine:0 "Stick with Traditional Doctrine"
+FRA_old_doctrine_desc:0 "There is wisdom in tradition. Our navy will continue to focus on battleship-led formations and tried-and-true tactics."
+
+FRA_new_heavy_ships:0 "Develop New Heavy Ships"
+FRA_new_heavy_ships_desc:0 "Upgraded battleships and heavy cruisers will restore our navy’s dominance on the high seas."
+
+FRA_invest_in_ship_building:0 "Invest in Shipbuilding"
+FRA_invest_in_ship_building_desc:0 "We will fund further shipbuilding efforts to expand our fleet and modernize our production techniques."
+
+FRA_new_carriers:0 "Develop New Carriers"
+FRA_new_carriers_desc:0 "Aircraft carriers are the future of naval warfare. We must begin developing a modern carrier fleet."
+
+FRA_build_carriers:0 "Build Carriers"
+FRA_build_carriers_desc:0 "With carrier designs ready, we must begin constructing these floating airbases to project power abroad."
+
+FRA_improve_light_ships:0 "Improve Light Ships"
+FRA_improve_light_ships_desc:0 "Light cruisers and destroyers are vital for fleet defense and reconnaissance. We will invest in improving their capabilities."
+
+FRA_big_investments:0 "Major Naval Investments"
+FRA_big_investments_desc:0 "We will make large-scale investments in our navy to ensure it is capable of projecting French power across the globe."

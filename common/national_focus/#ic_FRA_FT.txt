@@ -21,7 +21,7 @@ focus_tree = {
 
 		x = 14
 		y = 0
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -36,7 +36,7 @@ focus_tree = {
 
 		x = -4
 		y = 1
-		cost = 1
+		cost = 5
 		completion_reward = {
 			add_ideas = {
 				ideas = ic_FRA_devalue_of_franc
@@ -54,7 +54,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		completion_reward = {
 			FRA_inflex_industry_modifier = yes
 			add_to_variable = { 
@@ -108,7 +108,7 @@ focus_tree = {
 
 		x =	-1
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			FRA_inflex_industry_modifier = yes
 			add_to_variable = { 
@@ -163,7 +163,6 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
-					instant = yes
 				}
 			}
 			22 = {
@@ -171,7 +170,6 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
-					instant = yes
 				}
 			}
 		}
@@ -216,7 +214,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 
@@ -277,7 +275,7 @@ focus_tree = {
 
 		x = -6
 		y = 1
-		cost = 2
+		cost = 5
 		completion_reward = {
 			add_timed_idea = {
 				idea = ic_FRA_boost_army_morale
@@ -313,7 +311,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_somua_sm
-		icon = GFX_focus_FRA_somua_sm_shine
+		icon = GFX_focus_FRA_somua_sm
 
 		prerequisite = { focus = FRA_improve_armor_technology }
 		relative_position_id = FRA_improve_armor_technology
@@ -387,7 +385,7 @@ focus_tree = {
 
 		x = -2 
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			16 = {
 				add_building_construction = {
@@ -442,7 +440,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.1
@@ -572,7 +570,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_building_construction = {
 				type = air_facility
@@ -628,7 +626,7 @@ focus_tree = {
 
 		x = 6
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_building_construction = {
 				type = naval_facility
@@ -678,7 +676,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			539 = {
 				add_extra_state_shared_building_slots = 2

@@ -120,3 +120,39 @@
  ic_ITA_tax_reform:0 "Tax Reform"
  ic_ITA_building_up_colonies:0 "Building up Colonies"
  ic_ITA_building_up_colonies_bonus:0 "Colonies pay off!"
+
+
+
+
+ FRA_disjoined_goverment:0 "Disjoined Government"
+ FRA_disjoined_goverment_desc:0 "The government is plagued by internal division, ideological clashes, and weak leadership. Coordinated national action is nearly impossible under these conditions."
+
+ FRA_big_ships:0 "Capital Ship Investments"
+ FRA_big_ships_desc:0 "Significant resources have been allocated to building a fleet of heavy warships. While costly, this focus strengthens our naval presence in global waters."
+
+ FRA_carriers:0 "Carrier Program"
+ FRA_carriers_desc:0 "Our investment in aircraft carriers marks a shift towards modern naval doctrine, prioritizing air power and mobility over traditional firepower."
+
+ FRA_devalue_of_franc:0 "Devaluation of the Franc"
+ FRA_devalue_of_franc_desc:0 "The franc has been devalued to boost exports and stimulate production. While it may help in the short term, it could also provoke domestic unrest."
+
+ FRA_army_organization:0 "Disorganized Army"
+ FRA_army_organization_desc:0 "Our army suffers from outdated doctrine, bureaucratic paralysis, and lack of cohesion. Reorganization is urgently required to avoid disaster."
+
+ FRA_inflex_industry:0 "Inflexible Industry"
+ FRA_inflex_industry_desc:0 "Our industrial base is not easily adaptable to changing demands. Production lines remain rigid, limiting our ability to respond swiftly to wartime needs."
+
+ FRA_avia_production:0 "Aviation Production Plan"
+ FRA_avia_production_desc:0 "A centralized aviation program is underway to scale up aircraft production across all categories, ensuring our skies remain secure."
+
+ FRA_armor_production:0 "Armor Production Plan"
+ FRA_armor_production_desc:0 "Focused investments are being made in tank and armored vehicle production to strengthen our land forces and modernize our military industry."
+
+ FRA_boost_army_morale:0 "Boost Army Morale"
+ FRA_boost_army_morale_desc:0 "Through training and national campaigns, morale within the armed forces is improving. A motivated army is a powerful army."
+
+ FRA_arty_production:0 "Mass Artillery Production"
+ FRA_arty_production_desc:0 "The focus has shifted toward producing large quantities of artillery, anti-tank, and anti-air equipment to support infantry on the front lines."
+
+ FRA_fleet_investments:0 "Fleet Investments"
+ FRA_fleet_investments_desc:0 "Massive state investments into naval dockyards and shipbuilding projects will expand our naval capabilities and boost maritime industry."

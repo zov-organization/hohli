@@ -93,15 +93,15 @@ set_popularities = {
 }
 
 # inflex industry
-set_variable = { FRA_balance_stab = -0.6 }
-set_variable = { FRA_balance_cg = 0.4 }
-set_variable = { FRA_balance_mils_const_speed = -0.3 }
-set_variable = { FRA_factory_output = -0.8 }
+set_variable = { FRA_balance_stab = -0.4 }
+set_variable = { FRA_balance_cg = 0.3 }
+set_variable = { FRA_balance_mils_const_speed = -0.1 }
+set_variable = { FRA_factory_output = -0.6 }
 add_dynamic_modifier = { modifier = FRA_inflex_industry }
 
 # disjoined goverment
 set_variable = { FRA_goverment_stab = -0.1 }
-set_variable = { FRA_pp_gain = -0.6 }
+set_variable = { FRA_pp_gain = -0.5 }
 set_variable = { FRA_fascism_gain = 0.02 }
 set_variable = { FRA_communism_gain = 0.02 }
 add_dynamic_modifier = { modifier = FRA_disjoined_goverment }
