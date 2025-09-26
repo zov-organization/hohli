@@ -29,7 +29,7 @@
 	}
 	focus = {
 		id = ITA_give_up_austria
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_give_up_austria
 
 		prerequisite = { focus = ITA_triumph_in_africa }
 		relative_position_id = ITA_triumph_in_africa
@@ -87,7 +87,7 @@
 	
 	focus = {
 		id = ITA_grande_italia
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_grande_italia
 
 		prerequisite = { focus = ITA_triumph_in_africa }
 		relative_position_id = ITA_triumph_in_africa
@@ -113,7 +113,7 @@
 	}
 	focus = {
 		id = ITA_annex_albania
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_albanian_irredentism
 
 		prerequisite = { focus = ITA_grande_italia }
 		relative_position_id = ITA_grande_italia
@@ -186,7 +186,7 @@
 	}
 	focus = {
 		id = ITA_steel_pact
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_steel_pact
 
 		prerequisite = { focus = ITA_annex_albania }
 		prerequisite = { focus = ITA_join_anticomintern_pact }
@@ -302,7 +302,7 @@
 	}
 	focus = {
 		id = ITA_csir
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_csir
 
 		prerequisite = { focus = ITA_ebat_nazistov }
 		relative_position_id = ITA_ebat_nazistov
@@ -320,10 +320,12 @@
 			custom_effect_tooltip = ITA_csir_tt
 		}
 	}
+
+
 	#industry
 	focus = {
 		id = ITA_state_of_the_economy
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_grande_rivolta_rurale
 
 		prerequisite = { focus = ITA_triumph_in_africa }
 		relative_position_id = ITA_triumph_in_africa
@@ -340,7 +342,7 @@
 	}
 	focus = {
 		id = ITA_nationalization
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
 
 		prerequisite = { focus = ITA_state_of_the_economy }
 		relative_position_id = ITA_state_of_the_economy
@@ -355,7 +357,7 @@
 	}
 	focus = {
 		id = ITA_keynesian_economy
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_keynesian_economy
 
 		prerequisite = { focus = ITA_nationalization }
 		relative_position_id = ITA_nationalization
@@ -372,7 +374,7 @@
 	}
 	focus = {
 		id = ITA_iri
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_devaluate_the_lire
 
 		prerequisite = { focus = ITA_state_of_the_economy }
 		relative_position_id = ITA_state_of_the_economy
@@ -386,7 +388,7 @@
 	}
 	focus = {
 		id = ITA_develop_the_steel_refineries
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_develop_the_steel_refineries
 
 		prerequisite = { focus = ITA_iri }
 		relative_position_id = ITA_iri
@@ -413,7 +415,7 @@
 	}
 	focus = {
 		id = ITA_focus_on_north
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_northern_industry
 
 		prerequisite = { focus = ITA_develop_the_steel_refineries }
 		relative_position_id = ITA_develop_the_steel_refineries
@@ -499,7 +501,7 @@
 	}
 	focus = {
 		id = ITA_focus_on_south
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_southern_industry
 
 		prerequisite = { focus = ITA_develop_the_steel_refineries }
 		relative_position_id = ITA_develop_the_steel_refineries
@@ -607,7 +609,7 @@
 	}
 	focus = {
 		id = ITA_fiat_monopoly
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_BRA_joint_italian_motor_development
 
 		prerequisite = { focus = ITA_focus_on_north focus = ITA_focus_on_south }
 		relative_position_id = ITA_focus_on_north
@@ -646,7 +648,7 @@
 	}
 	focus = {
 		id = ITA_autarky
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_grande_rivolta_rurale
 
 		prerequisite = { focus = ITA_iri }
 		prerequisite = { focus = ITA_nationalization }
@@ -661,7 +663,7 @@
 	}
 	focus = {
 		id = ITA_preferite_il_prodotto_italiano
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_preferite_il_prodotto_italiano
 
 		prerequisite = { focus = ITA_autarky }
 		relative_position_id = ITA_autarky
@@ -675,7 +677,7 @@
 	}
 	focus = {
 		id = ITA_restoration_of_alfa_romeo
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_redirect_alfa_romeo_production
 
 		prerequisite = { focus = ITA_preferite_il_prodotto_italiano }
 		relative_position_id = ITA_preferite_il_prodotto_italiano
@@ -697,7 +699,7 @@
 	}
 	focus = {
 		id = ITA_shift_italian_economy_to_war_production
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_shift_italian_economy_to_war_production
 
 		prerequisite = { focus = ITA_restoration_of_alfa_romeo }
 		prerequisite = { focus = ITA_fiat_monopoly }
@@ -830,7 +832,7 @@
 	#colonies
 	focus = {
 		id = ITA_form_ministry_of_italian_africa
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_ministry_of_italian_africa
 
 		prerequisite = { focus = ITA_triumph_in_africa }
 		relative_position_id = ITA_triumph_in_africa
@@ -845,7 +847,7 @@
 	}
 	focus = {
 		id = ITA_develop_lybia
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_develop_lybia
 
 		prerequisite = { focus = ITA_form_ministry_of_italian_africa }
 		relative_position_id = ITA_form_ministry_of_italian_africa
@@ -886,7 +888,7 @@
 	}
 	focus = {
 		id = ITA_develop_horn
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ETH_develop_the_horn_of_africa
 
 		prerequisite = { focus = ITA_form_ministry_of_italian_africa }
 		relative_position_id = ITA_form_ministry_of_italian_africa
@@ -927,7 +929,7 @@
 	}
 	focus = {
 		id = ITA_ethiopian_rubber
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_ethiopian_rubber
 
 		prerequisite = { focus = ITA_develop_horn }
 		relative_position_id = ITA_develop_horn
@@ -945,7 +947,7 @@
 	}
 	focus = {
 		id = ITA_lybian_oil
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_lybian_oil
 
 		prerequisite = { focus = ITA_develop_lybia }
 		relative_position_id = ITA_develop_lybia
@@ -1005,7 +1007,7 @@
 	#army
 	focus = {
 		id = ITA_forze_armate_italiane
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_forze_armate_italiane
 
 		prerequisite = { focus = ITA_triumph_in_africa }
 		relative_position_id = ITA_triumph_in_africa
@@ -1066,7 +1068,7 @@
 	}
 	focus = {
 		id = ITA_escertio_italiano
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_escertio_italiano
 
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
@@ -1091,7 +1093,7 @@
 	}
 	focus = {
 		id = ITA_army_reform
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_army_reform
 
 		prerequisite = { focus = ITA_escertio_italiano }
 		relative_position_id = ITA_escertio_italiano
@@ -1123,7 +1125,7 @@
 	}
 	focus = {
 		id = ITA_alpini
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_alpini
 
 		prerequisite = { focus = ITA_improve_our_doctrine }
 		relative_position_id = ITA_improve_our_doctrine
@@ -1135,11 +1137,24 @@
 			custom_effect_tooltip = ITA_modify_army_tt
 			add_to_variable = {ITA_special_forces_cap = 0.1 tooltip = special_forces_cap_tt}
 			add_to_variable = {ITA_special_forces_attack_factor = 0.07 tooltip = special_forces_attack_factor_tt}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
 				category = mountaineers_tech
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			160 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 11584
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1235,7 +1250,7 @@
 	}
 	focus = {
 		id = ITA_mechanize_the_army
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_mechanize_the_army
 
 		prerequisite = { focus = ITA_learn_from_germans }
 		prerequisite = { focus = ITA_use_expirience_from_spain_and_ethiopia }
@@ -1254,7 +1269,7 @@
 	}
 	focus = {
 		id = ITA_promote_new_generals
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_promote_new_generals
 
 		prerequisite = { focus = ITA_mechanize_the_army }
 		relative_position_id = ITA_mechanize_the_army
@@ -1277,7 +1292,7 @@
 	}
 	focus = {
 		id = ITA_our_own_heavy_tanks
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_our_own_heavy_tanks
 
 		prerequisite = { focus = ITA_mechanize_the_army }
 		relative_position_id = ITA_mechanize_the_army
@@ -1414,6 +1429,14 @@
                     instant_build = yes
                 }
             }
+			849 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 9784
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1670,9 +1693,9 @@
 				equipment = {
 					type = ship_hull_carrier_2
 					creator = "ITA"
-					version_name = "Some-class"
+					version_name = "Aquila, Sparviero -classes"
 				}
-				name = "Aquila, Sparviero -classes"
+				name = "Aquila"
 				requested_factories = 0
 				progress = 0.1
 				amount = 1
@@ -1682,9 +1705,9 @@
 				equipment = {
 					type = ship_hull_carrier_2
 					creator = "ITA"
-					version_name = "Some-class"
+					version_name = "Aquila, Sparviero -classes"
 				}
-				name = "Aquila, Sparviero -classes"
+				name = "Sparviero"
 				requested_factories = 0
 				progress = 0.05
 				amount = 1
@@ -1923,6 +1946,17 @@
                     instant_build = yes
                 }
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			158 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 6780
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1965,7 +1999,7 @@
 	}
 	focus = {
 		id = ITA_develop_medium_bombers
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_develop_medium_bombers
 
 		prerequisite = { focus = ITA_develop_new_fighter_models }
 		relative_position_id = ITA_develop_new_fighter_models
