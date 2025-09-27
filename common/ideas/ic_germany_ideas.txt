@@ -282,7 +282,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				submarine = { build_cost_ic = -0.15 instant = yes }
+				submarine = { build_cost_ic = -0.15 surface_detection = 1 instant = yes }
 			}
 
 			modifier = {

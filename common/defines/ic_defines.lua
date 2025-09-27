@@ -683,6 +683,9 @@ NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 1
 -- raiding/convoys gameplay enhance
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.1
+NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5
+NDefines.NCountry.CONVOY_RANGE_FACTOR = 1
+NDefines.NCountry.CONVOY_HIT_PROFILE = 40
 
 -- amount of convoys intercepted:
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --setting this to zero makes task force to intercept 100% of convoys
@@ -697,8 +700,8 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	-- those t
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	--
 
 -- subs gameplay
-NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 6	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
-NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 6	-- the same thing, but the number or hours if sub started defencive combat
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faster
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed
@@ -726,7 +729,7 @@ NDefines.NNavy.VISIBILITY_MULTIPLIER_FOR_SPOTTING = 0.075
 NDefines.NNavy.SPOTTING_SPEED_MULT_FOR_CATCHING_UP = 0.5	-- speed dif buff = (our_speed - enemy_speed) * this_define * 0.1
 															-- example: ship with 37,5 speed is spotting other with 23.
 															-- (37,5 - 23) = 14,5  -->  14,5 * 0,5 = 7,25  -->  7,25 * 0,1 = 0,73 hourly change
-NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.9
+NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.75
 NDefines.NNavy.SPOTTING_MISSION_DETECTION_THRESHOLD_LOW = 0
 NDefines.NNavy.SPOTTING_MISSION_DETECTION_THRESHOLD_MEDIUM = 1
 NDefines.NNavy.BASE_SPOTTING_FROM_RADAR = 10	-- 100% coverage from 1 radar gives 10%. 50% coverage gives 5%. 36% coverage gives 3.6%.
@@ -769,9 +772,9 @@ NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 50.0
 NDefines.NSupply.SUPPLY_HUB_MOTORIZATION_MARGINAL_EFFECT_DECAY = 1.0
 NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.0
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 5.0
-NDefines.NSupply.INFRA_TO_SUPPLY = 0.6
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.3
 NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.4
-NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.2
+NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.1
 NDefines.NSupply.SUPPLY_BASE_MULT = 0.4
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 0
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 0
@@ -779,6 +782,8 @@ NDefines.NSupply.MIN_TRAIN_SUPPLY_FACTOR = 0.2
 NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 4
 NDefines.NSupply.ALERT_LOW_SUPPLY_LEVEL = 0.9
 NDefines.NSupply.ALERT_VERY_LOW_SUPPLY_LEVEL = 0.5
+NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0
+NDefines.NSupply.NON_CORE_MANPOWER_STATE_SUPPLY = 0
 
 --MIO
 NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.12
