@@ -2,6 +2,10 @@
  ic_ship_armor_dd:0 "Destroyer Armor"
  ic_dp_sub_secondaries_1:0 "Submarine Dual-Purpose Battery"
 
+ ship_sonar_3:0 "Sonar III"
+ ship_secondaries_3:0 "Secondary Battery III"
+ ship_secondaries_4:0 "Secondary Battery IV"
+
  EQ_MOD_SLOT_deck_space_1_TITLE:0 "Deck Space 1"
  EQ_MOD_SLOT_deck_space_2_TITLE:0 "Deck Space 2"
  EQ_MOD_SLOT_deck_space_3_TITLE:0 "Deck Space 3"

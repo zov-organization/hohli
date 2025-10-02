@@ -593,13 +593,13 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 4
 			build_cost_ic = 300
+			max_strength = 20
 		}
 		multiply_stats = {
 			#naval_speed = -0.03
 		}
 		add_average_stats = {
 			lg_armor_piercing = 5.5
-			max_strength = 20
 		}
 
 		forbid_module_categories = {
@@ -622,13 +622,13 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 5
 			build_cost_ic = 350
+			max_strength = 25
 		}
 		multiply_stats = {
 			#naval_speed = -0.04
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.0
-			max_strength = 25
 		}
 
 		forbid_module_categories = {
@@ -658,13 +658,13 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 6
 			build_cost_ic = 375
+			max_strength = 30
 		}
 		multiply_stats = {
 			#naval_speed = -0.05
 		}
 		add_average_stats = {
 			lg_armor_piercing = 8
-			max_strength = 30
 		}
 		build_cost_resources = {
 			steel = 1
@@ -696,13 +696,13 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 7.5
 			build_cost_ic = 425
+			max_strength = 35
 		}
 		multiply_stats = {
 			#naval_speed = -0.06
 		}
 		add_average_stats = {
 			lg_armor_piercing = 9
-			max_strength = 35
 		}
 		build_cost_resources = {
 			steel = 1
@@ -780,7 +780,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			lg_attack = 1.5
+			lg_attack = 4.5
 			build_cost_ic = 180
 		}
 		
@@ -798,7 +798,6 @@ equipment_modules = {
 		}
 		critical_parts = { damaged_secondaries }
 	}
-
 	ship_secondaries_2 = {
 		abbreviation = "saw"
 		category = ship_secondaries
@@ -806,7 +805,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 2
+			lg_attack = 6
 			build_cost_ic = 240
 		}
 		multiply_stats = {
@@ -823,6 +822,54 @@ equipment_modules = {
 		}
 		critical_parts = { damaged_secondaries }
 	}
+	ship_secondaries_3 = {
+		abbreviation = "saw"
+		category = ship_secondaries
+		parent = ship_secondaries_2
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 7.5
+			build_cost_ic = 300
+		}
+		multiply_stats = {
+			#naval_speed = -0.03
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 9.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 120
+		}
+		critical_parts = { damaged_secondaries }
+	}
+	ship_secondaries_4 = {
+		abbreviation = "saw"
+		category = ship_secondaries
+		parent = ship_secondaries_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 9
+			build_cost_ic = 360
+		}
+		multiply_stats = {
+			#naval_speed = -0.03
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 14
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 120
+		}
+		critical_parts = { damaged_secondaries }
+	}
 
 	dp_ship_secondaries_1 = {
 		abbreviation = "sax"
@@ -830,6 +877,7 @@ equipment_modules = {
 		gui_category = ship_secondaries
 		gfx = dp_secondary_battery_1
 		sfx = sfx_ui_sd_module_turret
+
 		add_stats = {
 			lg_attack = 2
 			anti_air_attack = 1
@@ -863,6 +911,7 @@ equipment_modules = {
 		parent = dp_ship_secondaries_1
 		gfx = dp_secondary_battery_2
 		sfx = sfx_ui_sd_module_turret
+
 		add_stats = {
 			lg_attack = 3
 			anti_air_attack = 2
@@ -896,6 +945,7 @@ equipment_modules = {
 		parent = dp_ship_secondaries_2
 		gfx = dp_secondary_battery_3
 		sfx = sfx_ui_sd_module_turret
+
 		add_stats = {
 			lg_attack = 4
 			anti_air_attack = 2.5
@@ -907,7 +957,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 9
 		}
 		
 		can_convert_from = {
@@ -929,8 +979,9 @@ equipment_modules = {
 		parent = dp_ship_secondaries_3
 		gfx = dp_secondary_battery_4
 		sfx = sfx_ui_sd_module_turret
+
 		add_stats = {
-			lg_attack = 4.5
+			lg_attack = 5
 			anti_air_attack = 3
 			build_cost_ic = 360
 		}
@@ -940,7 +991,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 12
 		}
 		
 		can_convert_from = {
