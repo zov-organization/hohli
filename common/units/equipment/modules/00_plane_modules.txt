@@ -1172,7 +1172,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			weight = 5
-			naval_strike_attack = 30
+			naval_strike_attack = 15
 		}
 
 		xp_cost = 2
@@ -1194,7 +1194,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			weight = 8
-			naval_strike_attack = 36
+			naval_strike_attack = 18
 		}
 		add_average_stats = {
 			naval_strike_targetting = 8
@@ -1219,7 +1219,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			weight = 11
-			naval_strike_attack = 45
+			naval_strike_attack = 22
 		}
 		add_average_stats = {
 			naval_strike_targetting = 10

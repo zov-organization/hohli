@@ -441,7 +441,7 @@ ic_progon_mode = {
 			        fixed_ship_radar_slot = ship_radar_2
 
 			        ship_light_battery_slot = ship_medium_battery_2
-					mid_1_custom_slot = ship_secondaries_2
+					mid_1_custom_slot = ship_medium_battery_2
 			        torpedo_slot = ship_medium_battery_2
 				}
 			}
@@ -458,6 +458,7 @@ ic_progon_mode = {
 
 			        ship_light_battery_slot = ship_medium_battery_3
 			        mid_1_custom_slot = ship_medium_battery_3
+			        mid_2_custom_slot = ship_medium_battery_3
 			        torpedo_slot = ship_medium_battery_3
 				}
 			}
@@ -474,8 +475,9 @@ ic_progon_mode = {
 
 			        ship_light_battery_slot = ship_medium_battery_4
 			        mid_1_custom_slot = ship_medium_battery_4
-			        mid_2_custom_slot = ship_secondaries_4
+			        mid_2_custom_slot = ship_medium_battery_4
 			        torpedo_slot = ship_medium_battery_4
+			        torpedo_slot_2 = ship_medium_battery_4
 				}
 			}
 
@@ -507,7 +509,7 @@ ic_progon_mode = {
 			        fixed_ship_radar_slot = ship_radar_2
 
 			        ship_light_battery_slot = ship_light_medium_battery_2
-					mid_1_custom_slot = ship_secondaries_2
+					mid_1_custom_slot = ship_light_medium_battery_2
 			        torpedo_slot = ship_torpedo_2
 				}
 			}
@@ -524,6 +526,7 @@ ic_progon_mode = {
 
 			        ship_light_battery_slot = ship_light_medium_battery_3
 			        mid_1_custom_slot = ship_light_medium_battery_3
+			        mid_2_custom_slot = ship_light_medium_battery_3
 			        torpedo_slot = ship_torpedo_3
 				}
 			}
@@ -540,8 +543,9 @@ ic_progon_mode = {
 
 			        ship_light_battery_slot = ship_light_medium_battery_4
 			        mid_1_custom_slot = ship_light_medium_battery_4
-			        mid_2_custom_slot = ship_torpedo_4
+			        mid_2_custom_slot = ship_light_medium_battery_4
 			        torpedo_slot = ship_torpedo_4
+			        torpedo_slot_2 = ship_torpedo_4
 				}
 			}
 

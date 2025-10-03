@@ -223,7 +223,8 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_airplane_launcher
-					ship_secondaries
+					ship_light_medium_battery
+					ship_medium_battery
 				}
 			}
 			torpedo_slot = inherit
@@ -253,16 +254,8 @@ equipments = {
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			ship_light_battery_slot = inherit
-			mid_1_custom_slot = {
-				required = yes
-				allowed_module_categories = { 
-					ship_light_medium_battery
-					ship_medium_battery
-					ship_anti_air
-					ship_airplane_launcher
-					ship_secondaries
-				}
-			}
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = mid_1_custom_slot
 			torpedo_slot = inherit
 		}
 	}
@@ -291,26 +284,10 @@ equipments = {
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			ship_light_battery_slot = inherit
-			mid_1_custom_slot = {
-				required = yes
-				allowed_module_categories = { 
-					ship_light_medium_battery
-					ship_medium_battery
-					ship_anti_air
-					ship_airplane_launcher
-					ship_secondaries
-				}
-			}
-			mid_2_custom_slot = {
-				required = yes
-				allowed_module_categories = { 
-					ship_torpedo
-					ship_anti_air
-					ship_airplane_launcher
-					ship_secondaries
-				}
-			}
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
 			torpedo_slot = inherit
+			torpedo_slot_2 = torpedo_slot
 		}
 	}
 

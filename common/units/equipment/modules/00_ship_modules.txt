@@ -422,7 +422,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 8
+			hg_attack = 5
+			lg_attack = 2
 			build_cost_ic = 650
 		}
 		multiply_stats = {
@@ -430,7 +431,8 @@ equipment_modules = {
 			max_strength = 0.4
 		}
 		add_average_stats = {
-			hg_armor_piercing = 22
+			hg_armor_piercing = 18
+			lg_armor_piercing = 6
 			surface_visibility = 5
 			surface_detection = 5
 		}
@@ -462,7 +464,8 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 10
+			hg_attack = 7
+			lg_attack = 3
 			build_cost_ic = 700
 		}
 		multiply_stats = {
@@ -470,7 +473,8 @@ equipment_modules = {
 			max_strength = 0.4
 		}
 		add_average_stats = {
-			hg_armor_piercing = 30
+			hg_armor_piercing = 22
+			lg_armor_piercing = 7
 			surface_visibility = 5
 			surface_detection = 5
 		}
@@ -502,7 +506,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 14
+			hg_attack = 10
+			lg_attack = 4
 			build_cost_ic = 725
 		}
 		multiply_stats = {
@@ -510,7 +515,8 @@ equipment_modules = {
 			max_strength = 0.4
 		}
 		add_average_stats = {
-			hg_armor_piercing = 35
+			hg_armor_piercing = 28
+			lg_armor_piercing = 8
 			surface_visibility = 5
 			surface_detection = 5
 		}
@@ -548,7 +554,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 18
+			hg_attack = 16
+			lg_attack = 6
 			build_cost_ic = 800
 		}
 		multiply_stats = {
@@ -556,7 +563,8 @@ equipment_modules = {
 			max_strength = 0.4
 		}
 		add_average_stats = {
-			hg_armor_piercing = 38
+			hg_armor_piercing = 34
+			lg_armor_piercing = 10
 			surface_visibility = 5
 			surface_detection = 5
 		}

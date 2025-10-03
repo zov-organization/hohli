@@ -612,7 +612,9 @@ NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
---NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18
+
+
+--NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18					--seems like those dont work at all
 --NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
 --NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
 --NDefines.NNavy.COMBAT_INITIAL_DURATION = 12
@@ -629,6 +631,15 @@ NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 2
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.95
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 2		--The weight of damaged ships gets increased by up to +200% as they approach 0% HP.
+NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 100
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 50
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.75
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 1
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
