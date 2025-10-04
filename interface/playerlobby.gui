@@ -384,7 +384,7 @@ guiTypes = {
 		iconType = {
 			name ="ready_icon"
 			spriteType = "GFX_ready_icon"
-			position = { x= 100 y = 19 }
+			position = { x= 105 y = 19 }
 			scale = 0.75
 		}
 
@@ -466,7 +466,7 @@ guiTypes = {
 		iconType = {
 			name ="ready_icon"
 			spriteType = "GFX_ready_icon"
-			position = { x= 100 y = 19 }
+			position = { x= 105 y = 19 }
 			scale = 0.75
 		}
 
