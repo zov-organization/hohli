@@ -18,6 +18,8 @@ spriteTypes = {
 		name = "GFX_advanced_centimetric_radar_medium"
 		texturefile = "gfx/interface/technologies/advanced_centimetric_radar.dds"
 	}
+
+
 					#################### SPECIAL FORCES TEXTICONS ##################
 	SpriteType = {
 		name = "GFX_jaegers3_medium"
@@ -48,4 +50,30 @@ spriteTypes = {
 		name = "GFX_shocktroops_medium"
 		texturefile = "gfx/interface/technologies/shocktroops.dds"
 	}	
+
+
+	
+					#################### NAVAL RESEARCH ICONS ##################
+
+	
+	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/advanced_sonar.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/basic_airplane_launcher.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/improved_airplane_launcher.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_airplane_torpedo_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_torpedoe_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_airplane_torpedo_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+	}
 }

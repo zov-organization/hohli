@@ -437,7 +437,7 @@ characters={
 			slot = high_command
 			idea_token = ic_ENG_kenneth_anderson
 			available = {
-				has_completed_focus = ENG_general_command_staff
+				has_completed_focus = ENG_reinforce_expeditionary_force
 			}
 			ledger = army
 			traits = {
