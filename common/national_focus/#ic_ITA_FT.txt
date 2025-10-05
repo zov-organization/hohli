@@ -295,12 +295,14 @@
 		relative_position_id = ITA_claim_greek_territories
 
 		available = {
-			ITA = {
-				has_war_with = ENG
-			}
-			GER = {
-				has_completed_focus = GER_change_direction
-			}
+            AND = {
+		        ITA = {
+					has_war_with = ENG
+				}
+                GER = {
+					has_completed_focus = GER_change_direction
+				}
+            }
 		}
 
 		x = 0
@@ -338,7 +340,7 @@
 						transfer_state = 764
 					}
 				}
-				Else = {
+				ELSE = {
 					ITA = {
 						transfer_state = 103
 						transfer_state = 105

@@ -416,6 +416,7 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0 -- for obvious reasons lol
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {
