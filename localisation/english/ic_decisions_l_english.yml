@@ -54,6 +54,10 @@
   SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
+  ic_automatic_unit_deployment:0 "§HAUTOMATIC UNIT DEPLOYMENT§!"
+  ic_Soviet_Meta_Deployment_1and2_echelon:0 "First and Second Echelon"
+  ic_Soviet_Meta_Deployment_3_echelon:0 "Third Echelon"
+
 
 
   SOV_evac_industry_category:0 "§HIndustry Evacuation§!"
