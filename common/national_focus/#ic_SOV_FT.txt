@@ -1910,21 +1910,30 @@ focus_tree = {
 
 		completion_reward = {
 
-			ic_SOV_nikolay_vatutin = {
+			every_unit_leader = {
 				add_unit_leader_trait = plus_one_defense_1
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_1
-				add_unit_leader_trait = plus_one_defense_1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_1
-				add_unit_leader_trait = plus_one_defense_1
 				add_unit_leader_trait = organizer
 				add_unit_leader_trait = thorough_planner
 				add_unit_leader_trait = ranger
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
+			GER = {
+				retire_character = ic_GER_fedor_von_bock
+			}
 		}
 	}
 
@@ -2029,18 +2038,22 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		completion_reward = {
-			
-			
-			ic_SOV_nikolay_vatutin = {
+
+			every_unit_leader = {
 				add_unit_leader_trait = plus_one_defense_2
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_2
-				add_unit_leader_trait = plus_one_defense_2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_2
-				add_unit_leader_trait = plus_one_defense_2
 				add_unit_leader_trait = trait_engineer
 				add_unit_leader_trait = fortress_buster
 				add_unit_leader_trait = urban_assault_specialist
@@ -2264,17 +2277,30 @@ focus_tree = {
 				remove_idea = SOV_red_army_3
 				add_idea = SOV_red_army_4
 			}
-			
-			ic_SOV_nikolay_vatutin = {
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = no
+				}
 				add_unit_leader_trait = plus_one_attack_1
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_3
 				add_unit_leader_trait = plus_one_defense_3
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_3
 				add_unit_leader_trait = plus_one_defense_3
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
 			}
 		}
 	}

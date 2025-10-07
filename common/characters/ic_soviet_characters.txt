@@ -180,11 +180,12 @@ characters = {
 
 		corps_commander = {
 			traits = { trickster panzer_leader combined_arms_expert }
-			skill = 4
+			skill = 3
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 4
+			legacy_id = 5
 		}	
 	}                                                                                 
 	
@@ -211,15 +212,15 @@ characters = {
 			}
 			cost = 100
 		}
-
-		corps_commander = {
-			traits = { panzer_leader combined_arms_expert }
-			skill = 3
+		
+		field_marshal = {
+			traits = { organizer panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
+			skill = 4
 			attack_skill = 2
 			defense_skill = 2
-			planning_skill = 2
+			planning_skill = 4
 			logistics_skill = 3
-		}	
+		}
 	}                                                                                 
 	
 
@@ -243,14 +244,14 @@ characters = {
 			}
 			cost = 100
 		}
-
+		
 		corps_commander = {
-			traits = { armor_officer politically_connected }
-			skill = 2
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 
@@ -274,11 +275,11 @@ characters = {
 			}
 			cost = 100
 		}
-
+		
 		corps_commander = {
-			traits = { harsh_leader }
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
 			skill = 3
-			attack_skill = 2
+			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
@@ -304,13 +305,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer trait_cautious }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 2
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
@@ -334,42 +334,12 @@ characters = {
 			cost = 100
 		}
 		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-	}
-
-	ic_SOV_kliment_voroshilov = {
-		name = SOV_kliment_voroshilov
-
-		portraits = {
-			army = {
-				small = "GFX_idea_kliment_voroshilov"
-				large = GFX_portrait_SOV_kliment_voroshilov
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = ic_SOV_kliment_voroshilov
-			traits = {
-				army_chief_drill_2
-			}
-			cost = 50
-		}
-
-		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
+			traits = {  }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -391,15 +361,15 @@ characters = {
 			}
 		}
 
-		field_marshal = {
-			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 2
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
+		#field_marshal = {
+		#	traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+		#	skill = 4
+		#	attack_skill = 3
+		#	defense_skill = 4
+		#	planning_skill = 4
+		#	logistics_skill = 2
+		#	visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		#}
 	}
 
 	ic_SOV_stepan_krasovsky = {
@@ -454,12 +424,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 5
+			traits = { organizer panzer_leader combined_arms_expert infantry_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
 		}	
 	}
 	
@@ -487,13 +457,59 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
+			traits = { organizer infantry_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
 			skill = 4
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 3
 		}
+	}
+
+	ic_SOV_kliment_voroshilov = {
+		name = SOV_kliment_voroshilov
+
+		portraits = {
+			army = {
+				small = "GFX_idea_kliment_voroshilov"
+				large = GFX_portrait_SOV_kliment_voroshilov
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ic_SOV_kliment_voroshilov
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 50
+		}
+
+		#field_marshal = {
+		#	traits = { old_guard inflexible_strategist }
+		#	skill = 4
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+	}
+
+	ic_SOV_semyon_budyonny = {
+		name = SOV_semyon_budyonny
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_semyon_budyonny"
+				small=GFX_portrait_SOV_semyon_budyonny_small
+			}
+		}
+		#field_marshal = {
+		#	traits = { old_guard inflexible_strategist }
+		#	skill = 4
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
 	}
 
 	ic_SOV_nikolay_vatutin = {
@@ -506,30 +522,11 @@ characters = {
 		}
 		corps_commander = {
 			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
-			skill = 4
+			skill = 3
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
-		}
-	}
-
-	ic_SOV_semyon_budyonny = {
-		name = SOV_semyon_budyonny
-		portraits = {
-			army = {
-				large = "GFX_portrait_SOV_semyon_budyonny"
-				small=GFX_portrait_SOV_semyon_budyonny_small
-			}
-		}
-		field_marshal = {
-			traits = { old_guard inflexible_strategist }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -542,12 +539,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 2
-			attack_skill = 2
+			skill = 1
+			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 2
+			planning_skill = 1
 			logistics_skill = 1
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -560,8 +556,8 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 2
+			traits = {  }
+			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
@@ -578,12 +574,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trickster }
-			skill = 2
+			traits = {  }
+			skill = 1
 			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
@@ -596,12 +592,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
-			skill = 2
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
 			attack_skill = 1
 			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 
@@ -614,11 +610,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { winter_specialist }
-			skill = 3
+			traits = {  }
+			skill = 1
 			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 1
 		}
 	}
@@ -632,12 +628,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist career_officer }
-			skill = 1
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 

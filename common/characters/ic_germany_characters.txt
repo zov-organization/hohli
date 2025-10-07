@@ -133,7 +133,7 @@ characters={
 		
 		corps_commander={
 			traits={ trickster trait_engineer organizer panzer_leader combined_arms_expert ranger fortress_buster urban_assault_specialist }
-			skill=4
+			skill=3
 			attack_skill=4
 			defense_skill=4
 			planning_skill=6
@@ -158,14 +158,13 @@ characters={
 				blitzkrieg_theorist
 			}
 		}
-		
-		corps_commander={
-			traits={ organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+		field_marshal={
+			traits={ organizer panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
 			skill=4
-			attack_skill=2
+			attack_skill=4
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 		}
 	}
 
@@ -244,6 +243,7 @@ characters={
 		name=GER_walther_von_brauchitsch
 		portraits={
 			army={
+				large="GFX_portrait_ic_GER_walther_von_brauchitsch"
 				small="GFX_idea_walther_von_brauchitsch"
 			}
 		}
@@ -254,6 +254,15 @@ characters={
 				army_chief_maneuver_2
 			}
 			cost = 100
+		}
+		corps_commander = {
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id = 9
 		}
 	}
 
@@ -339,14 +348,14 @@ characters={
 			cost = 100
 		}
 		
-		corps_commander={
-			traits={ trait_reckless media_personality armor_officer war_hero trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
-		}
+		#corps_commander={
+		#	traits={ trait_reckless media_personality armor_officer war_hero trickster }
+		#	skill=3
+		#	attack_skill=4
+		#	defense_skill=4
+		#	planning_skill=2
+		#	logistics_skill=3
+		#}
 	}
 
 	ic_GER_ferdinand_schorner={
@@ -392,13 +401,14 @@ characters={
 				small=GFX_portrait_GER_walter_model_small
 			}
 		}
-		field_marshal={
-			traits={ organizer infantry_leader panzer_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
-			skill=4
-			attack_skill=4
+		corps_commander = {
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
+			attack_skill=2
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=3
+			legacy_id = 2
 		}
 	}
 	
@@ -445,7 +455,6 @@ characters={
 		}
 		
 		corps_commander = {
-			traits={ }
 			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster	# inf traits
 						commando paratrooper }													# and paratrooper traits
 			skill = 3
@@ -496,6 +505,98 @@ characters={
 				air_chief_all_weather_2
 			}
 			cost = 100
+		}
+	}
+
+
+	ic_GER_fedor_von_bock = {
+		name = GER_fedor_von_bock
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_fedor_von_bock
+				small = GFX_portrait_GER_fedor_von_bock_small
+			}
+		}
+		field_marshal={
+			traits={ organizer infantry_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+
+	ic_GER_gunther_von_kluge = {
+		name = GER_gunther_von_kluge
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_gunther_von_kluge
+				small = GFX_portrait_GER_gunther_von_kluge_small
+			}
+		}
+		field_marshal={
+			traits={ organizer infantry_leader aggressive_assaulter defensive_doctrine ranger fortress_buster urban_assault_specialist }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+
+	ic_GER_friedrich_paulus = {
+		name = GER_friedrich_paulus
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_friedrich_paulus
+				small = GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander = {
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id = 3
+		}
+	}
+
+	ic_GER_gotthard_heinrici = {
+		name = GER_gotthard_heinrici
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_gotthard_heinrici
+				small = GFX_portrait_GER_gotthard_heinrici_small
+			}
+		}
+		corps_commander = {
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id = 33
+		}
+	}
+
+	ic_GER_ernst_busch = {
+		name = ic_GER_ernst_busch
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_GER_ernst_busch
+			}
+		}
+		corps_commander = {
+			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
+			skill = 3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
 		}
 	}
 
