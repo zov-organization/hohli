@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_yuri_levitan.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_SOV_aleksey_antonov"
+		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_ic_SOV_aleksey_antonov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_SOV_georgy_isserson"
+		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_ic_SOV_georgy_isserson.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_SOV_dmitry_pavlov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Dmitry_Pavlov.dds"
 	}

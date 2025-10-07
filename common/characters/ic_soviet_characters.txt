@@ -167,6 +167,44 @@ characters = {
  #######  #####   #    #    #        #        #       ######  #    #  #       #####        # 
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
+	
+	ic_SOV_aleksey_antonov={
+		name=ic_SOV_aleksey_antonov
+		portraits={
+			army={
+				small="GFX_idea_ic_SOV_aleksey_antonov"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ic_SOV_aleksey_antonov
+			available = {
+				has_completed_focus = SOV_war_time_stavka
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 50
+		}
+	}
+	
+	ic_SOV_georgy_isserson={
+		name=ic_SOV_georgy_isserson
+		portraits={
+			army={
+				small="GFX_idea_ic_SOV_georgy_isserson"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ic_SOV_georgy_isserson
+			ledger = army
+			traits = {
+				military_theorist
+			}
+		}
+	}
             
 			
 	ic_SOV_mihail_katukov = {
@@ -187,7 +225,7 @@ characters = {
 			logistics_skill = 4
 			legacy_id = 5
 		}	
-	}                                                                                 
+	}
 	
 
 	ic_SOV_konstantin_rokossovsky = {
@@ -210,7 +248,7 @@ characters = {
 			traits = {
 				army_armored_3
 			}
-			cost = 100
+			cost = 50
 		}
 		
 		field_marshal = {
@@ -292,15 +330,6 @@ characters = {
 			army = {
 				small = "GFX_idea_boris_shaposhnikov"
 				large = GFX_portrait_SOV_boris_shaposhnikov
-			}
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = ic_SOV_boris_shaposhnikov
-			ledger = army
-			traits = {
-				military_theorist
 			}
 		}
 
@@ -444,7 +473,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 50
 			slot = theorist
 			idea_token = ic_SOV_georgy_zhukov
 			ledger = army

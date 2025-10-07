@@ -2063,15 +2063,36 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_snyatie_debaffov_2
+		id = SOV_war_time_stavka
 
-		icon = GFX_SOV_snyatie_debaffov_2
+		icon = GFX_goal_generic_cavalry
 
 		prerequisite = { focus = SOV_snyatie_debaffov_1 }
 		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = 0
-		y = 2
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = ic_SOV_aleksey_antonov
+		}
+	}
+
+	focus = {
+		id = SOV_snyatie_debaffov_2
+
+		icon = GFX_SOV_snyatie_debaffov_2
+
+		prerequisite = { focus = SOV_war_time_stavka }
+		relative_position_id = SOV_war_time_stavka
+
+		x = 0
+		y = 1
 		cost = 5
 
 		available = {}
@@ -2081,6 +2102,32 @@ focus_tree = {
 				remove_idea = SOV_red_army_2
 				add_idea = SOV_red_army_3
 			}
+
+			effect_tooltip = {
+				ic_SOV_aleksandr_vasilevsky = {
+					add_trait = {
+						slot = high_command
+						trait = army_infantry_2
+					}
+				}
+			}
+
+			hidden_effect = {
+				ic_SOV_aleksandr_vasilevsky = {
+					remove_trait = {
+						slot = high_command
+						trait = army_infantry_1
+					}
+				}
+				ic_SOV_aleksandr_vasilevsky = {
+					add_trait = {
+						slot = high_command
+						trait = army_infantry_2
+					}
+				}
+			}
+
+			#custom_effect_tooltip = generic_skip_one_line_tt
 		}
 	}
 
