@@ -495,6 +495,7 @@ technologies = {
 
 		jaeger = {
 			defense = 0.05
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = jaegers3
@@ -521,6 +522,7 @@ technologies = {
 	jaegers3 = {
 
 		jaeger = {
+			defense = 0.05
 			soft_attack = 0.05
 		}
 
