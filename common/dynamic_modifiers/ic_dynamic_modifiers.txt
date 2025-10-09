@@ -10,6 +10,7 @@ ic_SOV_mass_production = {
 	production_factory_efficiency_gain_factor	=	SOV_production_factory_efficiency_gain_factor
 	production_factory_max_efficiency_factor	=	SOV_production_factory_max_efficiency_factor
 	industrial_capacity_factory					=	SOV_industrial_capacity_factory
+	custom_modifier_tooltip = ic_SOV_mass_production_built_prom_tt
 }
 
 SOV_ukrain_prom_compleks = {
@@ -44,7 +45,7 @@ SOV_summer_defencive_buff = {
 	max_dig_in = 5
 }
 
-SOV_1941_defencive_buff = {
+SOV_1941_defencive_buff_main = {
     enable = { always = yes }
 
     icon = ic_SOV_economy_is_on_war_footing
@@ -52,8 +53,19 @@ SOV_1941_defencive_buff = {
     attacker_modifier = yes
 
     #dig_in_speed_factor = 0.3
-    army_attack_factor = -0.35
+    army_attack_factor = -0.5
     max_dig_in = 15
+}
+SOV_1941_defencive_buff_secondarie = {
+    enable = { always = yes }
+
+    icon = ic_SOV_economy_is_on_war_footing
+
+    attacker_modifier = yes
+
+    #dig_in_speed_factor = 0.3
+    army_attack_factor = -0.25
+    max_dig_in = 5
 }
 
 GER_summer_offencive_buff = {

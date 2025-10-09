@@ -40,6 +40,7 @@ recruit_character = ic_SOV_nikita_khrushchyov #future advisors
 recruit_character = ic_SOV_nikolay_kuznetsov #future advisors
 recruit_character = ic_SOV_aleksandr_novikov #future advisors
 recruit_character = ic_SOV_yuri_levitan #future advisors
+recruit_character = ic_SOV_lazar_kaganovich #future advisors
 
 recruit_character = ic_SOV_stepan_krasovsky
 recruit_character = ic_SOV_sergey_khudyakov
@@ -84,6 +85,20 @@ set_variable = { SOV_production_factory_start_efficiency_factor	= -0.08 }
 set_variable = { SOV_industrial_capacity_factory				= -0.05 }
 set_variable = { SOV_production_speed_industrial_complex_factor = 0.05 }
 
+set_variable = { SOV_ukr_civs_num_before_war = 0 }	# ukr vars
+set_variable = { SOV_ukr_mils_num_before_war = 0 }
+set_variable = { SOV_evacuated_ukr_civs_num = 0 }
+set_variable = { SOV_evacuated_ukr_mils_num = 0 }
+set_variable = { SOV_left_to_evac_ukr_civs_num = 0 }
+set_variable = { SOV_left_to_evac_ukr_mils_num = 0 }
+set_variable = { SOV_eur_civs_num_before_war = 0 }	# european part vars
+set_variable = { SOV_eur_mils_num_before_war = 0 }
+set_variable = { SOV_evacuated_eur_civs_num = 0 }
+set_variable = { SOV_evacuated_eur_mils_num = 0 }
+set_variable = { SOV_left_to_evac_eur_civs_num = 0 }
+set_variable = { SOV_left_to_evac_eur_mils_num = 0 }
+
+
 add_dynamic_modifier = {
 	modifier = ic_SOV_mass_production
 }
@@ -97,6 +112,9 @@ add_ideas = {
 
 	SOV_red_airforces
 	SOV_red_army
+
+	#ic_SOV_starting_built_industry - debug legacy
+	#ic_SOV_evaced_industry
 }
 
 set_technology = {
@@ -256,6 +274,12 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_0
 	amount = 3000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_airframe_1
+	amount = 4500
 	producer = SOV
 }
 

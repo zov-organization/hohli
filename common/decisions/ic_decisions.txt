@@ -18,18 +18,23 @@ ic_helpful_tips = {
 
         highlight_states = {
             highlight_state_targets = {
-                state = 202
-				state = 203
+				state = 202
+				state = 199
+				state = 201
+				state = 202
 				state = 193
 				state = 225
+				state = 221
+				state = 227
+				state = 226
 				state = 259
 				state = 203
-				state = 226
+				state = 198
+				state = 834
+				state = 192
 				state = 197
 				state = 196
 				state = 200
-				state = 221
-				state = 227
 				state = 228
             }
 		}

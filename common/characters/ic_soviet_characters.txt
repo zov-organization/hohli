@@ -139,6 +139,26 @@ characters = {
 		}
 	}
 
+	ic_SOV_lazar_kaganovich = {
+		name = ic_SOV_lazar_kaganovich
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_lazar_kaganovich"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ic_SOV_lazar_kaganovich
+			available = {
+				has_completed_focus = SOV_mobilize_railways
+			}
+			traits = {
+				kaganovich_trait
+			}
+			cost = 50
+		}
+	}
+
 
 
 	ic_SOV_aleksandr_novikov = {
