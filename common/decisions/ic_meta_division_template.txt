@@ -1,0 +1,159 @@
+ic_meta_division_templates = {
+    ic_special_forces = {
+		icon = GFX_decision_SWE_set_navy_budget
+
+		allowed = {
+			is_playable_country = yes
+			always = yes
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+			always = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Mountaineers 40W"
+				regiments = {
+					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 } anti_air_brigade = { x = 4 y = 0 }
+					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 } 
+					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } 					   artillery_brigade = { x = 3 y = 2 }
+					mountaineers = { x = 0 y = 3 } mountaineers = { x = 1 y = 3 } 					   artillery_brigade = { x = 3 y = 3 }
+					mountaineers = { x = 0 y = 4 } mountaineers = { x = 1 y = 4 }				         artillery_brigade = { x = 3 y = 4 }
+				}
+				support = { artillery = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } anti_tank = { x = 0 y = 3 } logistics_company = { x = 0 y = 4 } recon = { x = 0 y = 5 }  engineer = { x = 0 y = 2 }   }
+			}
+			division_template = {
+				name = "Marines 40W"
+				regiments = {
+					marine = { x = 0 y = 0 } marine = { x = 1 y = 0 } marine = { x = 2 y = 0 }    artillery_brigade = { x = 3 y = 0 }  anti_air_brigade = { x = 4 y = 0 }
+					marine = { x = 0 y = 1 } marine = { x = 1 y = 1 } marine = { x = 2 y = 1 }    artillery_brigade = { x = 3 y = 1 }  
+					marine = { x = 0 y = 2 } marine = { x = 1 y = 2 } 					artillery_brigade = { x = 3 y = 2 }
+					marine = { x = 0 y = 3 } marine = { x = 1 y = 3 } 					artillery_brigade = { x = 3 y = 3 }
+					marine = { x = 0 y = 4 } marine = { x = 1 y = 4 }				       artillery_brigade = { x = 3 y = 4 }
+				}
+				support = { artillery = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } anti_tank = { x = 0 y = 3 } logistics_company = { x = 0 y = 4 } recon = { x = 0 y = 5 }  engineer = { x = 0 y = 2 }   }
+			}
+			division_template = {
+				name = "Paratroopers 40W"
+				regiments = {
+					paratrooper = { x = 0 y = 0 } paratrooper = { x = 1 y = 0 } paratrooper = { x = 2 y = 0 } paratrooper = { x = 3 y = 0 }  
+					paratrooper = { x = 0 y = 1 } paratrooper = { x = 1 y = 1 } paratrooper = { x = 2 y = 1 } paratrooper = { x = 3 y = 1 } 
+					paratrooper = { x = 0 y = 2 } paratrooper = { x = 1 y = 2 } paratrooper = { x = 2 y = 2 } paratrooper = { x = 3 y = 2 } 
+					paratrooper = { x = 0 y = 3 } paratrooper = { x = 1 y = 3 } paratrooper = { x = 2 y = 3 } paratrooper = { x = 3 y = 3 }				 
+					paratrooper = { x = 0 y = 4 } paratrooper = { x = 1 y = 4 } paratrooper = { x = 2 y = 4 } paratrooper = { x = 3 y = 4 }  
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }   anti_tank = { x = 0 y = 4 } logistics_company = { x = 0 y = 5 } recon = { x = 0 y = 3 }    }
+			}
+			division_template = {
+				name = "Shocktroops 40W"
+				regiments = {
+					shocktroop = { x = 0 y = 0 } shocktroop = { x = 1 y = 0 } shocktroop = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 } 
+					shocktroop = { x = 0 y = 1 } shocktroop = { x = 1 y = 1 } shocktroop = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 } 
+					shocktroop = { x = 0 y = 2 } shocktroop = { x = 1 y = 2 } shocktroop = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 } anti_tank_brigade = { x = 4 y = 2 }
+					shocktroop = { x = 0 y = 3 } shocktroop = { x = 1 y = 3 }  				   anti_air_brigade = { x = 3 y = 3 } anti_air_brigade = { x = 4 y = 3 }
+					shocktroop = { x = 0 y = 4 } shocktroop = { x = 1 y = 4 } 
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }   anti_tank = { x = 0 y = 4 } logistics_company = { x = 0 y = 5 } recon = { x = 0 y = 3 }    }
+			}
+			division_template = {
+				name = "Jaegers 40W"
+				regiments = {
+					jaeger = { x = 0 y = 0 } jaeger = { x = 1 y = 0 } jaeger = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 } 
+					jaeger = { x = 0 y = 1 } jaeger = { x = 1 y = 1 } jaeger = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 } 
+					jaeger = { x = 0 y = 2 } jaeger = { x = 1 y = 2 } jaeger = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 } anti_tank_brigade = { x = 4 y = 2 }
+					jaeger = { x = 0 y = 3 } jaeger = { x = 1 y = 3 }  				   anti_air_brigade = { x = 3 y = 3 } anti_air_brigade = { x = 4 y = 3 }
+					jaeger = { x = 0 y = 4 } jaeger = { x = 1 y = 4 } 
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }   anti_tank = { x = 0 y = 4 } logistics_company = { x = 0 y = 5 } recon = { x = 0 y = 3 }    }
+			}
+		}
+	}
+	ic_infantry = {
+		icon = GFX_decision_SWE_set_army_budget
+
+		allowed = {
+			is_playable_country = yes
+			always = yes
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+			always = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Anti-Infantry 40W"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 }     
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 }
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 }	infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } artillery_brigade = { x = 3 y = 3 } anti_air_brigade = { x = 4 y = 0 } anti_air_brigade = { x = 4 y = 1 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 }	
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }   anti_tank = { x = 0 y = 4 } logistics_company = { x = 0 y = 5 } recon = { x = 0 y = 3 }    }
+			}
+			division_template = {
+				name = "Anti-Tank 40W"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } anti_tank_brigade = { x = 4 y = 1 }  anti_tank_brigade = { x = 4 y = 0 }
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 1 }  anti_tank_brigade = { x = 4 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } anti_air_brigade = { x = 2 y = 3 }	 artillery_brigade = { x = 3 y = 2 }  anti_tank_brigade = { x = 4 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 }	anti_air_brigade = { x = 2 y = 4 }																						
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 } recon = { x = 0 y = 3 } logistics_company = { x = 0 y = 5 } anti_tank = { x = 0 y = 4 }   }
+			}
+			division_template = {
+				name = "Generalist 40W"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 } 
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 } 
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 } anti_tank_brigade = { x = 4 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 }  				   anti_air_brigade = { x = 3 y = 3 } anti_air_brigade = { x = 4 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } 
+				}
+				support = { engineer = { x = 0 y = 0 } anti_air = { x = 0 y = 1 } artillery = { x = 0 y = 2 }   anti_tank = { x = 0 y = 4 } logistics_company = { x = 0 y = 5 } recon = { x = 0 y = 3 }    }
+			}
+		}
+	}
+	ic_tanks = {
+		icon = GFX_decision_generic_tank
+
+		allowed = {
+			is_playable_country = yes
+			always = yes
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+			always = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "12/8 TANK"
+				regiments = {
+					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 } motorized = { x = 2 y = 0 } motorized = { x = 3 y = 0 } medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 1 } medium_armor = { x = 4 y = 1 }
+					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 } motorized = { x = 2 y = 2 } motorized = { x = 3 y = 2 }
+					medium_armor = { x = 0 y = 3 } medium_armor = { x = 1 y = 3 } motorized = { x = 2 y = 3 }			
+					medium_armor = { x = 0 y = 4 } medium_armor = { x = 1 y = 4 } motorized = { x = 2 y = 4 }
+					}											
+				support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 }  logistics_company = { x = 0 y = 2 }
+						field_hospital  = { x = 0 y = 3 } flamethrower_sppt = { x = 1 y = 0 } medium_sp_anti_air_brigade = { x = 1 y = 1 } anti_tank = { x = 1 y = 2 } anti_air = { x = 1 y = 3 } heavy_armor_brigade = { x = 0 y = 4 } }
+			}
+		}
+	}
+}
