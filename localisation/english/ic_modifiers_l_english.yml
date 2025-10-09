@@ -1,0 +1,3 @@
+﻿l_english:
+  night_spotting_chance_factor_tt: "$MODIFIER_NIGHT_SPOTTING_CHANCE$: $RIGHT|+=%1$"
+  naval_night_attack_tt: "$MODIFIER_NAVAL_NIGHT_ATTACK$: $RIGHT|+=%1$"

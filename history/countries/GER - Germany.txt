@@ -280,7 +280,7 @@ create_equipment_variant = {
 
 		ship_light_battery_slot = ship_medium_battery_2
 		mid_1_custom_slot = ship_airplane_launcher_1
-		torpedo_slot = ship_torpedo_2
+		torpedo_slot = ship_medium_battery_2
 	}
 }
 create_equipment_variant = {
@@ -298,7 +298,7 @@ create_equipment_variant = {
 
 		ship_light_battery_slot = ship_medium_battery_2
 		mid_1_custom_slot = ship_airplane_launcher_1
-		torpedo_slot = ship_torpedo_2
+		torpedo_slot = ship_medium_battery_2
 	}
 }
 

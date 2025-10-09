@@ -108,3 +108,51 @@ ic_no_railways_africa = {
 	state_production_speed_rail_way_factor = -3
 	state_production_speed_supply_node_factor = -3
 } 
+
+ic_ITA_regio_esercito = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
+	army_attack_against_major_factor = ITA_army_attack_against_major_factor
+	army_defence_against_major_factor = ITA_army_defence_against_major_factor
+	army_speed_factor = ITA_army_speed_factor
+	special_forces_attack_factor = ITA_special_forces_attack_factor
+	army_org_factor = ITA_army_org_factor
+	army_org_regain = ITA_army_org_regain
+	dig_in_speed_factor = ITA_dig_in_speed_factor
+	experience_gain_army_unit_factor = ITA_experience_gain_army_unit_factor
+	max_dig_in_factor = ITA_max_dig_in_factor
+	pocket_penalty = ITA_pocket_penalty
+	special_forces_cap = ITA_special_forces_cap
+	planning_speed = ITA_planning_speed
+}
+ic_ITA_regia_marina = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
+
+	convoy_escort_efficiency = ITA_convoy_escort_efficiency
+	convoy_retreat_speed = ITA_convoy_retreat_speed
+	naval_coordination = ITA_naval_coordination
+	naval_detection = ITA_naval_detection
+	#naval_enemy_fleet_size_ratio_penalty_factor = ITA_naval_enemy_fleet_size_ratio_penalty_factor
+	naval_has_potf_in_combat_attack = ITA_naval_has_potf_in_combat_attack
+	naval_hit_chance = ITA_naval_hit_chance
+	naval_night_attack = ITA_naval_night_attack
+	naval_retreat_speed = ITA_naval_retreat_speed
+	navy_max_range_factor = ITA_navy_max_range_factor
+	night_spotting_chance = ITA_night_spotting_chance
+	repair_speed_factor = ITA_repair_speed_factor
+	industrial_capacity_dockyard = ITA_industrial_capacity_dockyard
+	refit_speed = ITA_refit_speed
+
+}
+ic_ITA_regia_aeronautica = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
+	
+	air_accidents_factor = ITA_air_accidents_factor
+	naval_strike_targetting_factor = ITA_naval_strike_targetting_factor
+	air_bombing_targetting = ITA_air_bombing_targetting
+	air_mission_xp_gain_factor = ITA_air_mission_xp_gain_factor
+	air_night_penalty = ITA_air_night_penalty
+
+}

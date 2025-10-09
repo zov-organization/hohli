@@ -1840,12 +1840,14 @@ generic_battle_line_ship_organization = {
 		mio_cat_eq_all_battleship
 		mio_cat_eq_all_cruiser
 		mio_cat_eq_all_destroyer
+		submarine
 	}
 	research_categories = {
 		mio_cat_tech_all_carrier_and_modules
 		mio_cat_tech_all_capital_ship_and_modules
 		mio_cat_tech_all_cruiser_and_modules
 		mio_cat_tech_all_destroyer_and_modules
+		mio_cat_tech_all_submarine_and_modules
 	}
 
 	tree_header_text = {

@@ -10,7 +10,7 @@ navy_experience = 0
 set_convoys = 800
 
 set_stability = 0.4
-set_war_support = 0.35
+set_war_support = 0.4
 
 set_popularities = {
 	democratic = 20
@@ -113,9 +113,39 @@ add_ideas = {
 
 	vittorio_emanuele
 	ic_ITA_agrarian_economy1
-	ic_ITA_regio_esercito
 	ic_ITA_poor_motorized_army_1
 }
+
+add_dynamic_modifier = { modifier = ic_ITA_regio_esercito }
+	add_to_variable = {ITA_army_attack_against_major_factor = -0.05}
+	add_to_variable = {ITA_army_defence_against_major_factor = -0.05}
+	add_to_variable = {ITA_army_speed_factor = -0.2}
+	add_to_variable = {ITA_army_org_factor = -0.1}
+	add_to_variable = {ITA_army_org_regain = -0.15}
+	add_to_variable = {ITA_experience_gain_army_unit_factor = -0.2}
+	add_to_variable = {ITA_max_dig_in_factor = 0.03}
+	add_to_variable = {ITA_pocket_penalty = 0.15}
+	add_to_variable = {ITA_planning_speed = -0.3}
+add_dynamic_modifier = { modifier = ic_ITA_regia_marina }
+	add_to_variable = {ITA_convoy_escort_efficiency = -0.1}
+	add_to_variable = {ITA_convoy_retreat_speed = -0.1}
+	add_to_variable = {ITA_naval_coordination = -0.05}
+	add_to_variable = {ITA_naval_detection = -0.05}
+	#add_to_variable = {ITA_naval_enemy_fleet_size_ratio_penalty_factor = -0.15}
+	add_to_variable = {ITA_naval_has_potf_in_combat_attack = 0.1}
+	add_to_variable = {ITA_naval_hit_chance = -0.05}
+	add_to_variable = {ITA_naval_night_attack = -0.15}
+	add_to_variable = {ITA_naval_retreat_speed = 0.1}
+	add_to_variable = {ITA_navy_max_range_factor = -0.15}
+	add_to_variable = {ITA_night_spotting_chance = -0.1}
+add_dynamic_modifier = { modifier = ic_ITA_regia_aeronautica }
+	add_to_variable = {ITA_air_accidents_factor = 0.15}
+	add_to_variable = {ITA_naval_strike_targetting_factor = -0.1}
+	add_to_variable = {ITA_air_bombing_targetting = -0.2}
+	add_to_variable = {ITA_air_mission_xp_gain_factor = 0.2}
+	add_to_variable = {ITA_air_night_penalty = 0.1}
+
+	
 
 set_technology = {
 	infantry_weapons = 1
@@ -153,10 +183,12 @@ set_technology = {
 	basic_ship_hull_cruiser = 1
 	early_ship_hull_heavy = 1
 	basic_ship_hull_heavy = 1
-	early_ship_hull_carrier = 1
-	basic_ship_hull_carrier = 1
 	early_ship_hull_submarine = 1
 	basic_ship_hull_submarine = 1
+
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
 
 	basic_battery = 1
 	basic_light_battery = 1
@@ -237,4 +269,195 @@ add_equipment_to_stockpile = {
 	type = small_plane_naval_bomber_airframe_1
 	amount = 100
 	producer = ITA
+}
+
+
+# navy equipment variants
+
+# BBs
+create_equipment_variant = {
+	name = "Duilio-Class"
+	type = ship_hull_heavy_2
+	name_group = ITA_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        fixed_ship_anti_air_slot = ship_anti_air_1
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_1
+        mid_1_custom_slot = ship_secondaries_2
+        mid_2_custom_slot = ship_secondaries_2
+        rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {
+	name = "Conte di Cavour-Class"
+	type = ship_hull_heavy_1
+	name_group = ITA_BB_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_secondaries_slot = ship_secondaries_2
+        fixed_ship_fire_control_system_slot = empty
+        fixed_ship_radar_slot = empty
+
+        front_1_custom_slot = ship_heavy_battery_2
+        mid_1_custom_slot = ship_secondaries_2
+        rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+
+
+# CAs
+create_equipment_variant = {
+	name = "Zara-class"
+	type = ship_hull_cruiser_2
+	name_group = ITA_CA_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_medium_battery_2
+		mid_1_custom_slot = ship_medium_battery_2
+		torpedo_slot = ship_medium_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "Trento-class"
+	type = ship_hull_cruiser_2
+	name_group = ITA_CA_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_medium_battery_2
+		mid_1_custom_slot = ship_medium_battery_2
+		torpedo_slot = ship_medium_battery_2
+	}
+}
+
+
+# CLs
+create_equipment_variant = {
+	name = "Condottieri-class"
+	type = ship_hull_cruiser_2
+	name_group = ITA_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_light_medium_battery_1
+		mid_1_custom_slot = ship_light_medium_battery_1
+		torpedo_slot = ship_torpedo_1
+	}
+}
+create_equipment_variant = {
+	name = "Giussano-class"
+	type = ship_hull_cruiser_2
+	name_group = ITA_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_light_medium_battery_2
+		mid_1_custom_slot = ship_light_medium_battery_2
+		torpedo_slot = ship_torpedo_1
+	}
+}
+create_equipment_variant = {
+	name = "Magdeburg Klasse (1910)"
+	type = ship_hull_cruiser_1
+	name_group = ITA_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_light_medium_battery_1
+		torpedo_slot = ship_torpedo_1
+	}
+}
+create_equipment_variant = {
+	name = "Pillau Klasse (1913)"
+	type = ship_hull_cruiser_1
+	name_group = ITA_CL_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+
+		ship_light_battery_slot = ship_light_medium_battery_2
+		torpedo_slot = ship_torpedo_1
+	}
+}
+
+#DDs
+create_equipment_variant = {
+	name = "Maestrale-class"
+	type = ship_hull_light_2
+	name_group = ITA_DD_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_armor_slot = empty
+
+		ship_light_battery_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "Aquila, Navigatori, Curtatone -classes"
+	type = ship_hull_light_1
+	name_group = ITA_DD_HISTORICAL
+	parent_version = 0
+	design_team = mio:ITA_crda_organization
+	modules = {
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_armor_slot = empty
+
+		ship_light_battery_slot = ship_light_battery_1
+		rear_1_custom_slot = ship_anti_air_1
+	}
 }

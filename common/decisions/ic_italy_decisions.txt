@@ -59,3 +59,768 @@ ITA_main_category = {
         }
     }
 }
+ITA_nationalization_category = {
+    ITA_bank_nat = {
+		icon = generic_construction
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			political_power > 50
+		}
+		visible = {
+			has_completed_focus = ITA_nationalization
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = infrastructure
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			set_country_flag = ITA_bank_nat_flag
+		}	
+	}
+    ITA_steel_nat = {
+		icon = generic_construction
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			political_power > 50
+		}
+		visible = {
+			has_completed_focus = ITA_nationalization
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 50
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			set_country_flag = ITA_steel_nat_flag
+		}	
+	}
+    ITA_dock_nat = {
+		icon = generic_construction
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			political_power > 50
+		}
+		visible = {
+			has_completed_focus = ITA_nationalization
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+            random_owned_state = {
+                limit = {
+                    is_core_of = ITA
+                }
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+                }
+            }
+			set_country_flag = ITA_dock_nat_flag
+		}	
+	}
+}
+ITA_defend_our_resources = {
+    ITA_fortify_bengasi = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 451 
+				state = 663
+				state = 450
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_full_control_of_state = 451
+			has_full_control_of_state = 663
+			has_full_control_of_state = 450
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = ITA_defend_our_resources
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			451 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 1130
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 1130
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10120
+				}
+			}
+			526 = {
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4060
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12831
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1060
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7916
+				}
+			} 
+		}	
+	}
+    ITA_fortify_tripoli = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448 
+				state = 661
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_full_control_of_state = 448
+			has_full_control_of_state = 661
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = ITA_defend_our_resources
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			448 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 1149
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 1149
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1118
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12039
+				}
+			}
+			661 = {
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7194
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4117
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4962
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 2078
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10067
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7154
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12788
+				}
+			} 
+            
+		}	
+	}
+    ITA_fortify_tunis = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 458 
+				state = 665
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_full_control_of_state = 458
+			has_full_control_of_state = 665
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = ITA_defend_our_resources
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			458 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11969
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 11969
+				}
+                add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9994
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 9994
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4163
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1046
+				}
+                add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4061
+				}
+			}
+			665 = {
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11935
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3987
+				}
+			} 
+		}	
+	}
+	ITA_fortify_egypt = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 447 
+				state = 907
+				state = 452
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_full_control_of_state = 447
+			has_full_control_of_state = 907
+			has_full_control_of_state = 452
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = ITA_egypt_is_ours
+
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			907 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12049
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4073
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10127
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7117
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10031
+				}
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4143
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7188
+				}
+                add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12004
+				}
+			}
+			452 = {
+                add_building_construction = {
+					type = bunker
+					level = 2
+					province = 5012
+				}
+			} 
+		}	
+	}
+}
+ITA_army_reforms_category = {
+    ITA_army_reforms_1 = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448 
+				state = 661
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_army_experience > 50
+		}
+		visible = {
+			has_completed_focus = ITA_army_reform
+		}
+
+		fire_only_once = yes
+
+		days_remove = 250
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            army_experience = -50
+        } 
+		remove_effect = {
+            set_variable = {ITA_army_org_factor = -0.07}
+	        set_variable = {ITA_army_org_regain = -0.13}
+            set_variable = {ITA_experience_gain_army_unit_factor = -0.15}
+            set_variable = {ITA_pocket_penalty = 0.11}
+            set_variable = {ITA_planning_speed = -0.26}
+            set_country_flag = ITA_reform_1_flag
+        }
+	}
+    ITA_army_reforms_2 = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448 
+				state = 661
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_army_experience > 50
+		}
+		visible = {
+			has_completed_focus = ITA_army_reform
+            has_country_flag = ITA_reform_1_flag
+		}
+
+		fire_only_once = yes
+
+		days_remove = 250
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            army_experience = -50
+        } 
+		remove_effect = {
+            set_variable = {ITA_army_org_factor = -0.05}
+	        set_variable = {ITA_army_org_regain = -0.1}
+            set_variable = {ITA_experience_gain_army_unit_factor = -0.12}
+            set_variable = {ITA_pocket_penalty = 0.09}
+            set_variable = {ITA_planning_speed = -0.23}
+            set_variable = {ITA_army_speed_factor = -0.18}
+            set_country_flag = ITA_reform_2_flag
+        }
+	}
+    ITA_army_reforms_3 = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448 
+				state = 661
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_army_experience > 50
+		}
+		visible = {
+			has_completed_focus = ITA_army_reform
+            has_country_flag = ITA_reform_2_flag
+		}
+
+		fire_only_once = yes
+
+		days_remove = 250
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            army_experience = -50
+        } 
+		remove_effect = {
+            set_variable = {ITA_army_org_factor = -0.02}
+	        set_variable = {ITA_army_org_regain = -0.07}
+            set_variable = {ITA_experience_gain_army_unit_factor = -0.06}
+            set_variable = {ITA_pocket_penalty = 0.05 }
+            set_variable = {ITA_planning_speed = -0.18 }
+            set_variable = {ITA_army_speed_factor = -0.16}
+            set_country_flag = ITA_reform_3_flag
+        }
+	}
+    ITA_army_reforms_4 = {
+		icon = generic_construction
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448 
+				state = 661
+			}
+		}
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			has_army_experience > 50
+		}
+		visible = {
+			has_completed_focus = ITA_army_reform
+            has_country_flag = ITA_reform_3_flag
+		}
+
+		fire_only_once = yes
+
+		days_remove = 250
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            army_experience = -50
+        } 
+		remove_effect = {
+            set_variable = {ITA_army_org_factor = 0}
+	        set_variable = {ITA_army_org_regain = 0}
+            set_variable = {ITA_experience_gain_army_unit_factor = 0}
+            set_variable = {ITA_pocket_penalty = 0}
+            set_variable = {ITA_planning_speed = -0.12 }
+            set_variable = {ITA_army_speed_factor = -0.14}
+        }
+	}
+}
+ITA_csir_category = {
+	ITA_csir_rom = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+           has_completed_focus = ITA_csir
+        }
+
+        fire_only_once = yes
+        
+        complete_effect = {
+			load_oob = ic_ITA_rom
+        }
+    }
+	ITA_csir_hun = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+           has_completed_focus = ITA_csir
+        }
+
+        fire_only_once = yes
+        
+        complete_effect = {
+			load_oob = ic_ITA_hun
+        }
+    }
+	ITA_csir_spain = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+           has_completed_focus = ITA_csir
+        }
+
+        fire_only_once = yes
+        
+        complete_effect = {
+			load_oob = ic_ITA_spr
+        }
+    }
+	ITA_csir_vlasov = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+           has_completed_focus = ITA_csir
+        }
+		avaiable = {
+			date > 1942.01.01
+		}
+
+        fire_only_once = yes
+        
+        complete_effect = {
+			load_oob = ic_ITA_vlasov
+        }
+    }
+	ITA_csir_more_divs_from_us = {
+        icon = GFX_decision_SWE_set_air_budget
+        visible = {
+           has_completed_focus = ITA_csir
+        }
+		avaiable = {
+			date > 1942.01.01
+		}
+
+        fire_only_once = yes
+        
+        complete_effect = {
+			load_oob = ic_ITA_ita_divs
+        }
+    }
+}

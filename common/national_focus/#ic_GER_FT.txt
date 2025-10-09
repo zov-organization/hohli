@@ -1583,7 +1583,7 @@
 
 	focus = {
 		id = GER_support_our_allies_ita
-		icon = GFX_GER_support_our_allies_ita
+		icon = GFX_ITA_our_own_heavy_tanks
 
 		prerequisite = { focus = GER_support_our_allies }
 		relative_position_id = GER_support_our_allies

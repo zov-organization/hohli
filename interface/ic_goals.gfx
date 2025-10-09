@@ -3399,41 +3399,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_support_our_allies_ita"
-		texturefile = "gfx/interface/goals/ITA/ITA_heavy.dds"	
-	}	
-	SpriteType = { 
-		name = "GFX_GER_support_our_allies_ita_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_heavy.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_heavy.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_heavy.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
 		name = "GFX_GER_extra_sponsorship"
 		texturefile = "gfx/interface/goals/GER/GER_extra_sponsorship.dds"	
 	}	
@@ -8926,15 +8891,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_continue_building_fascist_state"
-		texturefile = "gfx/interface/goals/ITA/ITA_continue_building_fascist_state.dds"	
+		name = "GFX_ITA_grande_italia"
+		texturefile = "gfx/interface/goals/ITA/ITA_grande_italia.dds"	
 	}
 	SpriteType = { 
-		name = "GFX_ITA_continue_building_fascist_state_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_continue_building_fascist_state.tga"
+		name = "GFX_ITA_grande_italia_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_grande_italia.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_continue_building_fascist_state.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_grande_italia.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -8946,7 +8911,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_continue_building_fascist_state.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_grande_italia.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -8960,15 +8925,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_oppose_anschluss"
-		texturefile = "gfx/interface/goals/ITA/ITA_oppose_anschluss.dds"	
+		name = "GFX_ITA_give_up_austria"
+		texturefile = "gfx/interface/goals/ITA/ITA_give_up_austria.dds"	
 	}
 	SpriteType = { 
-		name = "GFX_ITA_oppose_anschluss_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_oppose_anschluss.tga"
+		name = "GFX_ITA_give_up_austria_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_give_up_austria.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_oppose_anschluss.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_give_up_austria.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -8980,7 +8945,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_oppose_anschluss.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_give_up_austria.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -8994,15 +8959,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_idea_of_romans"
-		texturefile = "gfx/interface/goals/ITA/ITA_idea_of_romans.dds"	
+		name = "GFX_ITA_steel_pact"
+		texturefile = "gfx/interface/goals/ITA/ITA_steel_pact.dds"	
 	}
 	SpriteType = { 
-		name = "GFX_ITA_idea_of_romans_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_idea_of_romans.tga"
+		name = "GFX_ITA_steel_pact_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_steel_pact.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_idea_of_romans.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_steel_pact.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9014,7 +8979,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_idea_of_romans.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_steel_pact.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9028,15 +8993,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_albania_occupation"
-		texturefile = "gfx/interface/goals/ITA/ITA_albania_occupation.dds"	
+		name = "GFX_ITA_forze_armate_italiane"
+		texturefile = "gfx/interface/goals/ITA/ITA_forze_armate_italiane.dds"	
 	}
 	SpriteType = { 
-		name = "GFX_ITA_albania_occupation_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_albania_occupation.tga"
+		name = "GFX_ITA_forze_armate_italiane_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_forze_armate_italiane.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_albania_occupation.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_forze_armate_italiane.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9048,7 +9013,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_albania_occupation.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_forze_armate_italiane.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9062,15 +9027,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_alfa_romeo_deal"
-		texturefile = "gfx/interface/goals/ITA/ITA_alfa_romeo_deal.dds"	
+		name = "GFX_ITA_escertio_italiano"
+		texturefile = "gfx/interface/goals/ITA/ITA_escertio_italiano.png"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_alfa_romeo_deal_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_alfa_romeo_deal.tga"
+		name = "GFX_ITA_escertio_italiano_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_escertio_italiano.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_alfa_romeo_deal.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_escertio_italiano.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9082,7 +9047,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_alfa_romeo_deal.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_escertio_italiano.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9096,15 +9061,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_army"
-		texturefile = "gfx/interface/goals/ITA/ITA_army.dds"	
-	}
+		name = "GFX_ITA_our_own_heavy_tanks"
+		texturefile = "gfx/interface/goals/ITA/ITA_our_own_heavy_tanks.dds"	
+	}	
 	SpriteType = { 
-		name = "GFX_ITA_army_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_army.dds"
+		name = "GFX_ITA_our_own_heavy_tanks_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_our_own_heavy_tanks.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_army.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_our_own_heavy_tanks.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9116,7 +9081,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_army.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_our_own_heavy_tanks.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9130,15 +9095,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_get_rid_of_ww1_legacy"
-		texturefile = "gfx/interface/goals/ITA/ITA_get_rid_of_ww1_legacy.png"
+		name = "GFX_ITA_promote_new_generals"
+		texturefile = "gfx/interface/goals/ITA/ITA_promote_new_generals.png"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_get_rid_of_ww1_legacy_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_get_rid_of_ww1_legacy.png"
+		name = "GFX_ITA_promote_new_generals_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_promote_new_generals.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_get_rid_of_ww1_legacy.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_promote_new_generals.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9150,7 +9115,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_get_rid_of_ww1_legacy.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_promote_new_generals.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9164,15 +9129,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_huge_agrarian_sector"
-		texturefile = "gfx/interface/goals/ITA/ITA_huge_agrarian_sector.dds"
+		name = "GFX_ITA_alpini"
+		texturefile = "gfx/interface/goals/ITA/ITA_alpini.png"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_huge_agrarian_sector_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_huge_agrarian_sector.dds"
+		name = "GFX_ITA_alpini_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_alpini.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_huge_agrarian_sector.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_alpini.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9184,7 +9149,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_huge_agrarian_sector.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_alpini.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9198,15 +9163,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_poor_mechanized_army"
-		texturefile = "gfx/interface/goals/ITA/ITA_poor_mechanized_army.png"
+		name = "GFX_ITA_keynesian_economy"
+		texturefile = "gfx/interface/goals/ITA/ITA_keynesian_economy.dds"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_poor_mechanized_army_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_poor_mechanized_army.png"
+		name = "GFX_ITA_keynesian_economy_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_keynesian_economy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_poor_mechanized_army.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_keynesian_economy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9218,7 +9183,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_poor_mechanized_army.png"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_keynesian_economy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9232,15 +9197,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_reorganize_retards"
-		texturefile = "gfx/interface/goals/ITA/ITA_reorganize_retards.tga"
+		name = "GFX_ITA_preferite_il_prodotto_italiano"
+		texturefile = "gfx/interface/goals/ITA/ITA_preferite_il_prodotto_italiano.dds"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_reorganize_retards_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_reorganize_retards.tga"
+		name = "GFX_ITA_preferite_il_prodotto_italiano_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_preferite_il_prodotto_italiano.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_reorganize_retards.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_preferite_il_prodotto_italiano.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9252,7 +9217,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_reorganize_retards.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_preferite_il_prodotto_italiano.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9266,15 +9231,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_scrap_long_going_bombers"
-		texturefile = "gfx/interface/goals/ITA/ITA_scrap_long_going_bombers.dds"
+		name = "GFX_ITA_mechanize_the_army"
+		texturefile = "gfx/interface/goals/ITA/ITA_mechanize_the_army.png"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_scrap_long_going_bombers_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_scrap_long_going_bombers.dds"
+		name = "GFX_ITA_mechanize_the_army_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_mechanize_the_army.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_scrap_long_going_bombers.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_mechanize_the_army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9286,7 +9251,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_scrap_long_going_bombers.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_mechanize_the_army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9300,15 +9265,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_slow_industrialization"
-		texturefile = "gfx/interface/goals/ITA/ITA_slow_industrialization.dds"
+		name = "GFX_ITA_army_reform"
+		texturefile = "gfx/interface/goals/ITA/ITA_army_reform.tga"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_slow_industrialization_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_slow_industrialization.dds"
+		name = "GFX_ITA_army_reform_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_army_reform.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_slow_industrialization.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_army_reform.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9320,7 +9285,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_slow_industrialization.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_army_reform.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9334,15 +9299,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_build_up_libya"
-		texturefile = "gfx/interface/goals/ITA/ITA_build_up_libya.dds"
+		name = "GFX_ITA_develop_medium_bombers"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_medium_bombers.dds"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_build_up_libya_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_build_up_libya.dds"
+		name = "GFX_ITA_develop_medium_bombers_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_medium_bombers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_build_up_libya.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_medium_bombers.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9354,7 +9319,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_build_up_libya.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_medium_bombers.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -9368,15 +9333,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_build_up_ethiopia"
-		texturefile = "gfx/interface/goals/ITA/ITA_build_up_ethiopia.dds"
+		name = "GFX_ITA_develop_the_steel_refineries"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_the_steel_refineries.dds"
 	}
 	SpriteType = { 
-		name = "GFX_ITA_build_up_ethiopia_shine"
-		texturefile = "gfx/interface/goals/ITA/ITA_build_up_ethiopia.dds"
+		name = "GFX_ITA_develop_the_steel_refineries_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_the_steel_refineries.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_build_up_ethiopia.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_the_steel_refineries.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9388,7 +9353,177 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_build_up_ethiopia.dds"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_the_steel_refineries.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ITA_shift_italian_economy_to_war_production"
+		texturefile = "gfx/interface/goals/ITA/ITA_shift_italian_economy_to_war_production.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_shift_italian_economy_to_war_production_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_shift_italian_economy_to_war_production.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_shift_italian_economy_to_war_production.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_shift_italian_economy_to_war_production.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ITA_develop_lybia"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_lybia.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_develop_lybia_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_develop_lybia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_lybia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_develop_lybia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ITA_lybian_oil"
+		texturefile = "gfx/interface/goals/ITA/ITA_lybian_oil.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_lybian_oil_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_lybian_oil.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_lybian_oil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_lybian_oil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ITA_ethiopian_rubber"
+		texturefile = "gfx/interface/goals/ITA/ITA_ethiopian_rubber.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_ethiopian_rubber_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_ethiopian_rubber.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ethiopian_rubber.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ethiopian_rubber.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ITA_csir"
+		texturefile = "gfx/interface/goals/ITA/ITA_csir.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_csir_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_csir.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_csir.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_csir.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
