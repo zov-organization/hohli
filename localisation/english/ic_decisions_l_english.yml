@@ -28,6 +28,14 @@
   SOV_ukrain_promkompleks_tip:0 "Show states affected by §HUkrain PromKomplect§!"
   SOV_russian_storehouse_tip:0 "Show states affected by §HRussian Storehouse§!"
   
+  ic_Soviet_Meta_Deployment_1and2_echelon:0 "First and Second Echelon"
+  ic_Soviet_Meta_Deployment_3_echelon:0 "Third Echelon"
+
+  ic_special_forces_templates:0 "Special Forces"
+  ic_infantry_templates:0 "Infantry"
+  ic_tanks_templates:0 "Tanks"
+
+  
   
   SOV_start_tact_bomber_production:0 "Start producting tactical bombers"
   SOV_stop_tact_bomber_production:0 "Stop producting tactical bombers"
@@ -54,14 +62,6 @@
   SOV_forts_mojaisk_line_second:0 "Mojaiskata Liniya Oboroni, Second Line"
   SOV_forts_mojaisk_line_third:0 "Mojaiskata Liniya Oboroni, Third Line"
 
-  ic_meta_division_templates:0 "Division Templates"
-  ic_special_forces:0 "Special Forces"
-  ic_infantry:0 "Infantry"
-  ic_tanks:0 "Tanks"
-
-  ic_automatic_unit_deployment:0 "§HAUTOMATIC UNIT DEPLOYMENT§!"
-  ic_Soviet_Meta_Deployment_1and2_echelon:0 "First and Second Echelon"
-  ic_Soviet_Meta_Deployment_3_echelon:0 "Third Echelon"
 
 
 

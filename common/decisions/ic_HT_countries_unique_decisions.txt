@@ -1,8 +1,8 @@
-ic_helpful_tips = {
-    
-    SOV_ukrain_promkompleks_tip = {
-
+ic_helpful_tips = {	# Soviet Tips
+	
+	SOV_ukrain_promkompleks_tip = {
         icon = GFX_decision_generic_operation
+        priority = 21
 
         available = { }
 
@@ -14,7 +14,6 @@ ic_helpful_tips = {
 			    #has_completed_focus = SOV_ukrain_prom_compleks
             }
         }
-        priority = 1
 
         highlight_states = {
             highlight_state_targets = {
@@ -117,8 +116,8 @@ ic_helpful_tips = {
     }
 
     SOV_russian_storehouse_tip = {
-
         icon = GFX_decision_generic_operation
+        priority = 21
 
         available = { }
 
@@ -130,7 +129,6 @@ ic_helpful_tips = {
 			    #has_completed_focus = SOV_making_use_of_the_storehouse_of_russia
             }
         }
-        priority = 1
         
 		on_map_mode = decision_view_only
         highlight_states = {
@@ -232,4 +230,49 @@ ic_helpful_tips = {
 			}
         }
     }
+
+    ic_Soviet_Meta_Deployment_1and2_echelon = {
+		icon = GFX_decision_generic_operation
+		priority = 20
+
+		available = {
+			has_manpower > 1
+			date > 1940.7.1		
+			date < 1941.6.1
+		}
+
+		visible = {
+            ROOT = {
+                tag = SOV
+			}
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+			load_oob = "ic_SOV_army_prewar_deployment_1and2_echelon"
+		}
+	}
+	ic_Soviet_Meta_Deployment_3_echelon = {
+		icon = GFX_decision_generic_operation
+		priority = 20
+
+		available = {
+			has_manpower > 1
+			date > 1940.7.1		
+			date < 1941.6.1
+		}
+
+		visible = {
+            ROOT = {
+                tag = SOV
+			}
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+			load_oob = "ic_SOV_army_prewar_deployment_3_echelon"
+		}
+	}
 }
