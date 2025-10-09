@@ -122,13 +122,68 @@ SOV_great_patriotic_war_category = {
 		on_map_mode = decision_view_only
         highlight_states = {
             highlight_state_targets = {
-				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 200 state = 228
             }
 		}
 
         cost = 0
 
         complete_effect = { }
+    }
+
+
+    SOV_move_capital_to_kuybyshev = {
+        icon = GFX_decision_generic_operation
+        available = {
+			
+			258 = {
+				air_facility < 1
+			}
+			249 = {
+				land_facility < 1
+			}
+		}
+        fire_only_once = no
+        visible = {
+            ROOT = {
+                tag = SOV
+            }
+        }
+
+        priority = 1
+
+		on_map_mode = decision_view_only
+        highlight_states = {
+            highlight_state_targets = {
+				state = 251
+            }
+		}
+
+        cost = 0
+
+        complete_effect = {
+            set_capital = {
+                state = 251
+                remember_old_capital = yes
+            }
+
+			571 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 10696
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 9292
+					instant_build = yes
+				}
+			}
+		}
     }
 
 
@@ -1098,7 +1153,7 @@ SOV_evac_industry_category = {
 		on_map_mode = decision_view_only
         highlight_states = {
             highlight_state_targets = {
-				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200 
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 200 state = 228
             }
 		}
 
@@ -1139,7 +1194,7 @@ SOV_evac_industry_category = {
 
         highlight_states = {
             highlight_state_targets = {
-				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200 
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 200 state = 228
             }
 		}
 
@@ -1149,7 +1204,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 1
+		days_mission_timeout = 0
         complete_effect = {}
 
         timeout_effect = {
@@ -1172,16 +1227,17 @@ SOV_evac_industry_category = {
 								ic_is_sov_from_evac_state = no
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 				        add_building_construction = {
 							type = industrial_complex
-							level = 1
+							level = 2
 							instant_build = yes
 						}
 					}
+					add_to_variable = { SOV_evacuated_ukr_civs_num = 2 }
                 }
 
-                remove_building = { type = industrial_complex level = 1 }
+                remove_building = { type = industrial_complex level = 2 }
 
             }
 			
@@ -1215,7 +1271,7 @@ SOV_evac_industry_category = {
 
         highlight_states = {
             highlight_state_targets = {
-				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 137 state = 200 
+				state = 202 state = 199 state = 201 state = 202 state = 193 state = 225 state = 221 state = 227 state = 226 state = 259 state = 203 state = 198 state = 834 state = 192 state = 197 state = 196 state = 200 state = 228
             }
 		}
 
@@ -1225,7 +1281,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 1
+		days_mission_timeout = 0
         complete_effect = {}
 
         timeout_effect = {
@@ -1255,6 +1311,7 @@ SOV_evac_industry_category = {
 							instant_build = yes
 						}
 					}
+					add_to_variable = { SOV_evacuated_ukr_mils_num = 1 }
                 }
 
                 remove_building = { type = arms_factory level = arms_factory_level }
@@ -1391,7 +1448,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 1
+		days_mission_timeout = 0
         complete_effect = {}
 
         timeout_effect = {
@@ -1421,6 +1478,7 @@ SOV_evac_industry_category = {
 							instant_build = yes
 						}
 					}
+					add_to_variable = { SOV_evacuated_eur_civs_num = 1 }
                 }
 
                 remove_building = { type = industrial_complex level = 1 }
@@ -1483,7 +1541,7 @@ SOV_evac_industry_category = {
         fire_only_once = no
         cancel_trigger = {}
 
-		days_mission_timeout = 1
+		days_mission_timeout = 0
         complete_effect = {}
 
         timeout_effect = {
@@ -1513,6 +1571,7 @@ SOV_evac_industry_category = {
 							instant_build = yes
 						}
 					}
+					add_to_variable = { SOV_evacuated_eur_mils_num = 1 }
                 }
 
                 remove_building = { type = arms_factory level = 1 }

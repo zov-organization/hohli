@@ -43,6 +43,8 @@ recruit_character = ic_GER_heinrich_himmler
 recruit_character = ic_GER_martin_bormann
 recruit_character = ic_GER_erich_von_manstein
 recruit_character = ic_GER_heinz_guderian
+recruit_character = ic_GER_fedor_von_bock
+recruit_character = ic_GER_gunther_von_kluge
 recruit_character = ic_GER_wolfram_von_richthofen
 recruit_character = ic_GER_ernst_udet
 recruit_character = ic_GER_franz_halder
@@ -58,6 +60,9 @@ recruit_character = ic_GER_albert_kesselring
 recruit_character = ic_GER_hermann_goring
 recruit_character = ic_GER_ritter_von_greim
 recruit_character = ic_GER_kurt_student
+recruit_character = ic_GER_friedrich_paulus
+recruit_character = ic_GER_gotthard_heinrici
+recruit_character = ic_GER_ernst_busch
 
 
 create_faction = Axis
@@ -65,7 +70,7 @@ add_to_faction = GER
 add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = BUL
-add_to_faction = SPR
+#add_to_faction = SPR
 
 
 add_ideas = {

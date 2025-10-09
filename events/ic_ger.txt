@@ -146,6 +146,9 @@ news_event = {  # Minsk falls
                 days = 10
             }
         }
+		SOV = {
+			retire_character = ic_SOV_dmitry_pavlov
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -157,12 +160,17 @@ news_event = {  # Minsk falls
 		trigger = {
 			NOT = {
 				is_axis = yes
+				tag = SOV
 			}
 		}
 	}
 	option = {
 		name = ic_ger_events.1.b
 		trigger = { is_axis = yes }
+	}
+	option = {
+		name = ic_ger_events.4.a
+		trigger = { tag = SOV }
 	}
 }
 news_event = {  # Smolensk falls

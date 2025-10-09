@@ -786,6 +786,7 @@ NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
 
 --Special Projects
 NDefines.NProject.DEFAULT_STOP_PROJECT_DAYS = 1	-- 0 wont work - prints an error :(
+NDefines.NProject.DISMANTLE_FACILITY_DAYS = 5
 NDefines.NProject.DAYS_TO_REMOVE_SCIENTIST = 0
 NDefines.NProject.DEFAULT_PROJECT_COMPLETION_SCIENTIST_EXPERIENCE_GAIN = 0
 NDefines.NProject.RECRUIT_SCIENTIST_ONE_TRAIT_CHANCE = 0
