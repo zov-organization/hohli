@@ -1368,7 +1368,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.20
 			#build_cost_ic = 0.125
-			naval_torpedo_damage_reduction_factor = 0.80
+			naval_torpedo_damage_reduction_factor = 2
 		}
 		
 		can_convert_from = {
@@ -1394,7 +1394,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.30
 			#build_cost_ic = 0.15
-			naval_torpedo_damage_reduction_factor = 0.85
+			naval_torpedo_damage_reduction_factor = 2
 		}
 		
 		can_convert_from = {
@@ -1424,7 +1424,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.35
 			#build_cost_ic = 0.175
-			naval_torpedo_damage_reduction_factor = 0.9
+			naval_torpedo_damage_reduction_factor = 2
 		}
 		
 		can_convert_from = {
@@ -1453,7 +1453,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.40
 			#build_cost_ic = 0.20
-			naval_torpedo_damage_reduction_factor = 0.95
+			naval_torpedo_damage_reduction_factor = 2
 		}
 		
 		can_convert_from = {
