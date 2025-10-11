@@ -81,7 +81,9 @@ ideas = {
 		}
 		naval_reform_spirit = {
 			ledger = navy
+			cost = 15
 			modifier = {
+				experience_gain_navy = 0.2
 				experience_gain_navy_factor = 0.15
 			}
 		}

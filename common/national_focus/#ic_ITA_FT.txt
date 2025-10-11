@@ -1571,7 +1571,7 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_refit_speed = 0.3 tooltip = refit_speed_tt}
+			add_to_variable = {ITA_refit_ic_cost = -0.3 tooltip = refit_ic_cost_tt}
 		}
 	}
 	focus = {

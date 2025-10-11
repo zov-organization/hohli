@@ -142,7 +142,7 @@ ic_ITA_regia_marina = {
 	night_spotting_chance = ITA_night_spotting_chance
 	repair_speed_factor = ITA_repair_speed_factor
 	industrial_capacity_dockyard = ITA_industrial_capacity_dockyard
-	refit_speed = ITA_refit_speed
+	refit_ic_cost = ITA_refit_ic_cost
 
 }
 ic_ITA_regia_aeronautica = {
