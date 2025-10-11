@@ -728,6 +728,7 @@ NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub perf
 NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 0	-- from the start ships can not detect subs AT ALL
 NDefines.NNavy.SUB_DETECTION_CHANCE_BASE_SPOTTING_EFFECT = 100		-- ships with at least 1 sub detection detect subs immidiatly
 NDefines.NNavy.SUB_DETECTION_CHANCE_SPOTTING_SPEED_EFFECT = 100		--
+NDefines.NNavy.SPOTTING_MULTIPLIER_FOR_SUB = 0.5
 
 --NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN = 1
 --NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN = 0

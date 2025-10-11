@@ -30,6 +30,8 @@ equipments = {
 		max_organisation = 30
 		anti_air_attack = 0.1
 
+		naval_torpedo_damage_reduction_factor = -1
+
 
         #Space taken in convoy
         lend_lease_cost = 0
