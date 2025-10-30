@@ -310,61 +310,7 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = ITA_annex_yugo_tt
-			hidden_effect = {
-				IF = {
-					limit = {
-						GER = {
-							has_war_with = SOV
-						}
-					}
-					ITA = {
-						transfer_state = 103
-						transfer_state = 105
-						transfer_state = 853
-						transfer_state = 109
-						transfer_state = 104
-						transfer_state = 804
-						transfer_state = 107
-						transfer_state = 108
-						transfer_state = 802
-					}
-					BUL = {
-						transfer_state = 106
-						transfer_state = 803
-					}
-					GER = {
-						transfer_state = 102
-					}
-					HUN = {
-						transfer_state = 45
-						transfer_state = 764
-					}
-				}
-				ELSE = {
-					ITA = {
-						transfer_state = 103
-						transfer_state = 105
-						transfer_state = 853
-						transfer_state = 109
-						transfer_state = 104
-						transfer_state = 804
-						transfer_state = 108
-						transfer_state = 802
-					}
-					BUL = {
-						transfer_state = 106
-						transfer_state = 803
-					}
-					GER = {
-						transfer_state = 102
-						transfer_state = 107
-						transfer_state = 764
-					}
-					HUN = {
-						transfer_state = 45
-					}
-				}
-			}
+			country_event = ic_ita_events.1
 		}
 	}
 	focus = {
@@ -389,8 +335,8 @@
 		relative_position_id = ITA_ebat_nazistov
 
 		available = {
-			ITA = {
-				has_war_with = SOV
+			GER = {
+				has_completed_focus = GER_change_direction
 			}
 		}
 
@@ -1337,7 +1283,7 @@
 		prerequisite = { focus = ITA_use_expirience_from_spain_and_ethiopia }
 		relative_position_id = ITA_learn_from_germans
 		available = {
-			has_country_flag = ITA_army_reforms_3
+			has_country_flag = ITA_reform_3_flag
 		}
 
 		x = 1
@@ -1401,7 +1347,7 @@
 		relative_position_id = ITA_our_own_heavy_tanks
 
 		available = {
-			has_country_flag = ITA_army_reforms_4
+			has_country_flag = ITA_reform_4_flag
 		}
 
 		x = 1
