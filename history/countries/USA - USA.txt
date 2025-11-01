@@ -36,19 +36,14 @@ set_popularities = {
 }
 
 add_ideas = {
+	ic_great_depression
 	undisturbed_isolation
-	great_depression
 	disarmed_nation
 	free_trade
 	home_of_the_free
 }
 
 
-# DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
 
 create_country_leader = {
 	name = "Franklin Delano Roosevelt"
