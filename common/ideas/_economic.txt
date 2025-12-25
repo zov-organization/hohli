@@ -19,7 +19,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.50
+				consumer_goods_expected_value = 0.45
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
@@ -27,6 +27,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.5
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.6
+				production_factory_max_efficiency_factor = -0.4
 			}
 
 			allowed_to_remove = {
@@ -43,7 +44,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.45
+				consumer_goods_expected_value = 0.40
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
@@ -51,6 +52,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.35
 			}
 			allowed_to_remove = {
 				always = false
@@ -101,35 +103,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
+						original_tag = USA
 					}
-					has_war_support > 0.3
-					congress_high_support_trigger = yes
+					always = false
 				}
-				if = {
-					limit = {
-						original_tag = TUR
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_2
-							has_active_mission = TUR_etatism_crisis_3
-							has_active_mission = TUR_etatism_crisis_4
-						}
-					}
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
+				
 			}
 
 			cost = 150
@@ -143,26 +121,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-
-			ai_will_do = {
-   				factor = 2
-
-   				modifier = {
-					factor = 20
-
-					is_major = yes
-				}
-				modifier = {
-					has_war_support > 0.25
-					factor = 0 #don't even look at it if you could be taking partial mob
-				}
-				modifier = {
-					tag = ENG
-					has_war = no
-					date < 1937.6.1
-					factor = 0
-				}
-   			}
 		}
 
 		partial_economic_mobilisation = {
@@ -193,24 +151,9 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
+						original_tag = USA
 					}
-					has_war_support > 0.5
-					congress_high_support_trigger = yes
-				}
-				if = {
-					limit = {
-						original_tag = TUR
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_1
-							has_active_mission = TUR_etatism_crisis_3
-							has_active_mission = TUR_etatism_crisis_4
-						}
-					}
+					always = false
 				}
 			}
 
@@ -226,37 +169,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
-			ai_will_do = {
-   				factor = 2
-
-   				modifier = {
-					factor = 20
-
-					is_major = yes
-				}
-
-				modifier = {
-					factor = 100
-					OR = {
-						original_tag = URG
-						original_tag = PAR
-					}
-					NOT = {
-						has_idea = war_economy
-					}
-					has_completed_focus = GUAY_coup_detat
-				}
-   			}
 		}
 
 		war_economy = {
@@ -271,6 +183,12 @@ ideas = {
 					AND = {
 						has_war = yes
 					}
+				}
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					always = false
 				}
 			}
 
@@ -293,6 +211,12 @@ ideas = {
 			available = {
 				has_war = yes
 				has_war_support > 0.8
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					always = false
+				}
 			}
 
 			cost = 150

@@ -99,7 +99,12 @@ focus_tree = {
 		icon = GFX_focus_usa_recruit_the_free_corps
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 1.5
+				uses = 3
+				category = nuclear
+			}
 		}
 	}
 	focus = {
@@ -187,7 +192,7 @@ focus_tree = {
 		relative_position_id = ic_USA_neutrality_act
 		cost = 5
 		available = {
-			date > 1939.09.01
+			date > 1940.03.01
 		}
 		
 
@@ -513,7 +518,7 @@ focus_tree = {
 
 		cost = 5
 		available = {
-			date > 1939.01.01
+			date > 1939.09.01
 		}
 
 		available_if_capitulated = yes
@@ -542,6 +547,15 @@ focus_tree = {
 		icon = GFX_focus_usa_recruit_the_free_corps
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_rubber_reserve_company
+				bonus = 1.0
+				uses = 2
+				technology = rubber_processing
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing
+			}
 		}
 	}
 	focus = {
@@ -578,7 +592,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -746,7 +760,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -765,7 +779,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -773,6 +787,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -793,6 +809,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = partial_economic_mobilisation
+				add_idea = war_economy
+			}
+			add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1207,7 +1233,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
 				cost_reduction = 0.5
-				uses = 4
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1394,8 +1420,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
-				uses = 3
-				bonus = 2.0
+				uses = 2
+				bonus = 1.0
 				category = motorized_equipment
 			}
 		}
@@ -1541,7 +1567,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 1.5
-				uses = 3
+				uses = 1
 				category = heavy_air
 			}
 		}
@@ -1564,7 +1590,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = light_fighter
 			}
@@ -1650,6 +1676,14 @@ focus_tree = {
 					}
 				}
 			}
+			378 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 9713
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1725,7 +1759,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
 		}
@@ -1746,7 +1780,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cv_tech
 			}
 		}
@@ -1786,7 +1820,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = ss_tech
 			}
 			if = {
@@ -1813,7 +1847,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_fund_the_navy
-				uses = 6
+				uses = 2
 				cost_reduction = 1
 				category = naval_doctrine
 			}
@@ -1881,14 +1915,13 @@ focus_tree = {
 				category = naval_bomber
 				category = naval_air
 			}
-			378 = {
-				add_building_construction = {
-					type = naval_facility
-					level = 1
-					province = 9713
-					instant_build = yes
-				}
+			add_doctrine_cost_reduction = {
+				name = USA_fund_the_navy
+				uses = 2
+				cost_reduction = 1
+				category = naval_doctrine
 			}
+			
 		}
 	}
 	focus = {
@@ -1930,9 +1963,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_atlanta
 				bonus = 2.0
-				uses = 2
+				uses = 1
 				category = cl_tech	
-				category = ca_tech	
 			}
 		}
 	}
