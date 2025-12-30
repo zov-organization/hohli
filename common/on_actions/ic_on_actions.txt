@@ -142,6 +142,7 @@ on_actions = {
 					idea = DayOne_Efficiency
 					days = 31
 				}
+				set_grand_doctrine = ww2_land_doctrine
 				army_experience = 10
 				navy_experience = 10
 				air_experience = 10
