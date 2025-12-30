@@ -1,4 +1,7 @@
 focus_tree = {
+	# cool unused vanilla goal icons:
+		#icon = GFX_SOV_improve_railway_network
+
 	id = soviet_focus
 	continuous_focus_position = { x = 55 y = 1500 }
 	country = {
@@ -211,21 +214,7 @@ focus_tree = {
 
 			every_owned_state = {
 				limit = {
-					OR = {
-						state = 202
-						state = 203
-						state = 193
-						state = 225
-						state = 259
-						state = 203
-						state = 226
-						state = 197
-						state = 196
-						state = 200
-						state = 221
-						state = 227
-						state = 228
-					}
+					ic_is_ukranian = yes
 				}
 				add_dynamic_modifier = {
 					modifier = SOV_ukrain_prom_compleks
@@ -366,6 +355,7 @@ focus_tree = {
 						state = 878
 					}
 				}
+				set_state_category = city
 				add_dynamic_modifier = {
 					modifier = SOV_making_use_of_the_storehouse_of_russia
 					scope = SOV
@@ -1716,14 +1706,27 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			unlock_decision_category_tooltip = SOV_great_patriotic_war_category
 			unlock_decision_category_tooltip = SOV_evac_industry_category
 			activate_decision = SOV_start_evacuate_ukranian_industry
 			activate_decision = SOV_start_evacuate_soviet_industry
 
-			#activate_mission = SOV_evacuate_ukranian_civilian_industry_mission
-			#activate_mission = SOV_evacuate_ukranian_military_industry_mission
-			#activate_mission = SOV_evacuate_soviet_civilian_industry_mission
-			#activate_mission = SOV_evacuate_soviet_military_industry_mission
+			hidden_effect = {
+				add_ideas = ic_SOV_evaced_industry
+
+				set_variable = { SOV_left_to_evac_ukr_civs_num = SOV_ukr_civs_num_before_war }
+				add_to_variable = { SOV_left_to_evac_ukr_civs_num = SOV_ukr_starting_civs_num }
+
+				set_variable = { SOV_left_to_evac_ukr_mils_num = SOV_ukr_mils_num_before_war }
+				add_to_variable = { SOV_left_to_evac_ukr_mils_num = SOV_ukr_starting_mils_num }
+
+
+				set_variable = { SOV_left_to_evac_eur_civs_num = SOV_eur_civs_num_before_war }
+				add_to_variable = { SOV_left_to_evac_eur_civs_num = SOV_eur_starting_civs_num }
+
+				set_variable = { SOV_left_to_evac_eur_mils_num = SOV_eur_mils_num_before_war }
+				add_to_variable = { SOV_left_to_evac_eur_mils_num = SOV_eur_starting_mils_num }
+			}
 		}
 	}
 	focus = {	# This focus is a workaround to make the event fire only once
@@ -1743,7 +1746,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
+			
 			SOV = {
 				news_event = ic_news.3
 			}
@@ -1910,21 +1913,30 @@ focus_tree = {
 
 		completion_reward = {
 
-			ic_SOV_nikolay_vatutin = {
+			every_unit_leader = {
 				add_unit_leader_trait = plus_one_defense_1
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_1
-				add_unit_leader_trait = plus_one_defense_1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_1
-				add_unit_leader_trait = plus_one_defense_1
 				add_unit_leader_trait = organizer
 				add_unit_leader_trait = thorough_planner
 				add_unit_leader_trait = ranger
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
+			GER = {
+				retire_character = ic_GER_fedor_von_bock
+			}
 		}
 	}
 
@@ -2029,18 +2041,22 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		completion_reward = {
-			
-			
-			ic_SOV_nikolay_vatutin = {
+
+			every_unit_leader = {
 				add_unit_leader_trait = plus_one_defense_2
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_2
-				add_unit_leader_trait = plus_one_defense_2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_2
-				add_unit_leader_trait = plus_one_defense_2
 				add_unit_leader_trait = trait_engineer
 				add_unit_leader_trait = fortress_buster
 				add_unit_leader_trait = urban_assault_specialist
@@ -2050,15 +2066,36 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_snyatie_debaffov_2
+		id = SOV_war_time_stavka
 
-		icon = GFX_SOV_snyatie_debaffov_2
+		icon = GFX_goal_generic_cavalry
 
 		prerequisite = { focus = SOV_snyatie_debaffov_1 }
 		relative_position_id = SOV_snyatie_debaffov_1
 
 		x = 0
-		y = 2
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = ic_SOV_aleksey_antonov
+		}
+	}
+
+	focus = {
+		id = SOV_snyatie_debaffov_2
+
+		icon = GFX_SOV_snyatie_debaffov_2
+
+		prerequisite = { focus = SOV_war_time_stavka }
+		relative_position_id = SOV_war_time_stavka
+
+		x = 0
+		y = 1
 		cost = 5
 
 		available = {}
@@ -2068,6 +2105,60 @@ focus_tree = {
 				remove_idea = SOV_red_army_2
 				add_idea = SOV_red_army_3
 			}
+
+			effect_tooltip = {
+				ic_SOV_aleksandr_vasilevsky = {
+					add_trait = {
+						slot = high_command
+						trait = army_infantry_2
+					}
+				}
+			}
+
+			hidden_effect = {
+				ic_SOV_aleksandr_vasilevsky = {
+					remove_trait = {
+						slot = high_command
+						trait = army_infantry_1
+					}
+				}
+				ic_SOV_aleksandr_vasilevsky = {
+					add_trait = {
+						slot = high_command
+						trait = army_infantry_2
+					}
+				}
+			}
+
+			#custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+
+	focus = {
+		id = SOV_war_time_industry
+
+		icon = GFX_SOV_yacheika
+
+		prerequisite = { focus = SOV_VOV }
+		relative_position_id = SOV_VOV
+
+		x = 5
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_political_power = 100
+
+			custom_effect_tooltip = ic_SOV_mass_production_tt_focus_mil
+
+			add_to_variable = { var = SOV_consumer_goods_expected_value					value = -0.005	}
+			add_to_variable = { var = SOV_line_change_production_efficiency_factor		value = 0.10	}
+			add_to_variable = { var = SOV_production_factory_max_efficiency_factor		value = 0.03	}
+			add_to_variable = { var = SOV_production_factory_efficiency_gain_factor		value = 0.03	}
+			add_to_variable = { var = SOV_production_factory_start_efficiency_factor	value = 0.05	}
+
 		}
 	}
 
@@ -2076,10 +2167,10 @@ focus_tree = {
 
 		icon = GFX_SOV_yacheika
 
-		prerequisite = { focus = SOV_snyatie_debaffov_1 }
-		relative_position_id = SOV_snyatie_debaffov_1
+		prerequisite = { focus = SOV_war_time_industry }
+		relative_position_id = SOV_war_time_industry
 
-		x = 3
+		x = -1
 		y = 1
 		cost = 5
 
@@ -2102,7 +2193,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_yacheika }
 		relative_position_id = SOV_yacheika
 
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 
@@ -2119,14 +2210,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_is_2
+
+		icon = GFX_SOV_they_will_know_fear
+
+		prerequisite = { focus = SOV_skidka_na_tank }
+		relative_position_id = SOV_skidka_na_tank
+
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_is_2
+				bonus = 0.75
+				uses = 1
+				category = cat_heavy_armor
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_dobicha_rezini
 
 		icon = GFX_SOV_dobicha_rezini
 
-		prerequisite = { focus = SOV_snyatie_debaffov_1 }
-		relative_position_id = SOV_snyatie_debaffov_1
+		prerequisite = { focus = SOV_war_time_industry }
+		relative_position_id = SOV_war_time_industry
 
-		x = 6
+		x = 1
 		y = 1
 		cost = 5
 
@@ -2202,6 +2317,135 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_mobilize_railways
+
+		icon = GFX_SOV_pc_of_mechanical_engineering
+
+		prerequisite = { focus = SOV_war_time_industry }
+		relative_position_id = SOV_war_time_industry
+
+		x = 3
+		y = 1
+		cost = 5
+
+		available = {}
+
+		completion_reward = {
+			add_ideas = ic_SOV_soviet_railway_troops
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+
+			show_ideas_tooltip = ic_SOV_lazar_kaganovich
+		}
+	}
+
+	focus = {
+		id = SOV_road_of_life
+
+		icon = GFX_focus_SOV_the_road_of_life
+
+		prerequisite = { focus = SOV_mobilize_railways }
+		relative_position_id = SOV_mobilize_railways
+
+		x = -1
+		y = 1
+		cost = 5
+		
+		available = {
+			ic_SOV_lazar_kaganovich = { is_hired_as_advisor = yes }
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_prepare_kuybyshev
+
+		icon = GFX_SOV_develop_the_urals
+
+		prerequisite = { focus = SOV_mobilize_railways }
+		relative_position_id = SOV_mobilize_railways
+
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			ic_SOV_lazar_kaganovich = { is_hired_as_advisor = yes }
+		}
+
+		completion_reward = {
+			build_railway = {
+				level = 5
+				path = { 9258 9286 11269 3317 286 3276 6302 6226 6275 11225 }
+			}
+			build_railway = {
+				level = 5
+				path = { 9258 9286 6391 11262 11394 11344 }
+			}
+			build_railway = {
+				level = 5
+				path = { 6380 301 3290 9235 11217 214 3339 6362 6410 9407 11344 }
+			}
+			build_railway = {
+				level = 5
+				path = { 11344 3303 11375 }
+			}
+			251 = { set_state_category = metropolis }
+
+		}
+	}
+	focus = {
+		id = SOV_volga_rokada
+
+		icon = GFX_focus_generic_road_investment
+
+		prerequisite = { focus = SOV_mobilize_railways }
+		relative_position_id = SOV_mobilize_railways
+
+		x = 3
+		y = 1
+		cost = 5
+		
+		available = {
+			ic_SOV_lazar_kaganovich = { is_hired_as_advisor = yes }
+		}
+
+		completion_reward = {
+			build_railway = {
+				level = 5
+				path = { 6226 6394 6366 3316 326 3477 483 3578  }
+			}
+			build_railway = {
+				level = 5
+				path = { 3578 6539 9475 6506 6602 3582 }
+			}
+			build_railway = {
+				level = 5
+				path = { 3582 9504 3529 }
+			}
+			build_railway = {
+				level = 5
+				path = { 6486 6516 520 11474 3529 }
+			}
+			build_railway = {
+				level = 5
+				path = { 9753 6620 11429 9455 6486 }
+			}
+			build_railway = {
+				level = 5
+				path = { 3668 6701 700 6748 3726 6758 11706 9753 }
+			}
+			build_railway = {
+				level = 5
+				path = { 3672 3682 3668 }
+			}
+		}
+	}
+
 
 
 	focus = {
@@ -2264,17 +2508,30 @@ focus_tree = {
 				remove_idea = SOV_red_army_3
 				add_idea = SOV_red_army_4
 			}
-			
-			ic_SOV_nikolay_vatutin = {
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = no
+				}
 				add_unit_leader_trait = plus_one_attack_1
 			}
-			ic_SOV_georgy_zhukov = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
 				add_unit_leader_trait = plus_one_attack_3
 				add_unit_leader_trait = plus_one_defense_3
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			ic_SOV_mihail_katukov = {
 				add_unit_leader_trait = plus_one_attack_3
 				add_unit_leader_trait = plus_one_defense_3
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
 			}
 		}
 	}

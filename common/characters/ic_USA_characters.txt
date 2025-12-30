@@ -748,15 +748,15 @@ characters = {
 			}
 		}
 
-		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=0
-		}
+		#navy_leader={
+		#	traits={ gunnery_expert superior_tactician spotter }
+		#	skill=3
+		#	attack_skill=2
+		#	defense_skill=2
+		#	maneuvering_skill=3
+		#	coordination_skill=3
+		#	legacy_id=0
+		#}
 	}
 
 	ic_USA_john_cannon={
@@ -1103,15 +1103,15 @@ characters = {
 				small=GFX_portrait_USA_harold_rainsford_stark_small
 			}
 		}
-		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-		}
+		#navy_leader={
+		#	traits={ cuts_corners blockade_runner spotter }
+		#	skill=2
+		#	attack_skill=2
+		#	defense_skill=1
+		#	maneuvering_skill=2
+		#	coordination_skill=2
+		#	legacy_id=0
+		#}
 	}
 
 	ic_USA_arleigh_burke={
@@ -1122,15 +1122,15 @@ characters = {
 				small=GFX_portrait_USA_arleigh_burke_small
 			}
 		}
-		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=4
-			legacy_id=0
-		}
+		#navy_leader={
+		#	traits={ old_guard_navy bold fleet_protector superior_tactician }
+		#	skill=4
+		#	attack_skill=3
+		#	defense_skill=3
+		#	maneuvering_skill=3
+		#	coordination_skill=4
+		#	legacy_id=0
+		#}
 	}
 
 	ic_USA_charles_m_cooke_jr={
@@ -1141,14 +1141,14 @@ characters = {
 				small=GFX_portrait_USA_charles_m_cooke_jr_small
 			}
 		}
-		navy_leader={
-			traits={ navy_career_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=3
-			legacy_id=0
-		}
+		#navy_leader={
+		#	traits={ navy_career_officer }
+		#	skill=2
+		#	attack_skill=1
+		#	defense_skill=1
+		#	maneuvering_skill=2
+		#	coordination_skill=3
+		#	legacy_id=0
+		#}
 	}
 }

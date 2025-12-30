@@ -1,6 +1,9 @@
 ic_helpful_tips = {
     priority = 100
     icon = GFX_decision_category_picture
+    visible = { 
+        ROOT = { is_ai = no }
+    }
     picture = GFX_decision_category_picture
     visible_when_empty = no
 }
@@ -8,12 +11,8 @@ ic_progon_mode = {
     priority = 90
     icon = GFX_decision_category_picture
     visible = { 
-        OR = {
-            AND = {
-                #GER = { is_ai = yes } 
-                ROOT = { is_ai = no }
-            }
-        }
+        ROOT = { is_ai = no }
+        is_debug = yes
     }
     picture = GFX_decision_category_picture
     visible_when_empty = yes

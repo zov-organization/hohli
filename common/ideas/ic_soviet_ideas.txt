@@ -16,6 +16,23 @@ ideas = {
 				production_speed_industrial_complex_factor	= 0.05 
 			}
 		}
+
+		ic_SOV_starting_built_industry = {
+			#name = ic_SOV_mass_production
+			picture = GFX_idea_ic_SOV_fake_mass_production
+			modifier = {
+				custom_modifier_tooltip = ic_SOV_starting_built_industry_1_tt
+				custom_modifier_tooltip = ic_SOV_mass_production_built_prom_tt
+			}
+		}
+		ic_SOV_evaced_industry = {
+			#name = ic_SOV_mass_production
+			picture = GFX_idea_ic_SOV_evaced_industry
+			modifier = {
+				custom_modifier_tooltip = ic_SOV_evaced_industry_1_tt
+				custom_modifier_tooltip = ic_SOV_evaced_industry_2_tt
+			}
+		}
 		
 		ic_SOV_trotskyite_plot = {
 			name = ic_SOV_trotskyite_plot
@@ -81,11 +98,7 @@ ideas = {
 				air_equipment = -0.3
             }
 			modifier = {
-				#air_accidents_factor = 0.25
-				#air_ace_generation_chance_factor = -0.75
-				air_mission_efficiency = -0.3
-				#air_training_xp_gain_factor = -0.2
-				#air_untrained_pilots_penalty_factor = 0.65
+				air_agility_factor = -0.1
 			}
 		}
 
@@ -116,11 +129,7 @@ ideas = {
 				air_equipment = -0.25
             }
 			modifier = {
-				#air_accidents_factor = 0.25
-				#air_ace_generation_chance_factor = -0.75
-				air_mission_efficiency = -0.3
-				#air_training_xp_gain_factor = -0.2
-				#air_untrained_pilots_penalty_factor = 0.65
+				air_agility_factor = -0.1
 			}
 		}
 
@@ -151,11 +160,7 @@ ideas = {
 				air_equipment = -0.2
             }
 			modifier = {
-				#air_accidents_factor = 0.25
-				#air_ace_generation_chance_factor = -0.75
-				air_mission_efficiency = -0.3
-				#air_training_xp_gain_factor = -0.2
-				#air_untrained_pilots_penalty_factor = 0.65
+				air_agility_factor = -0.1
 			}
 		}
 
@@ -171,11 +176,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = -0.05
+				air_equipment = 0.05
             }
 			modifier = {
-				#air_accidents_factor = 0.1
-				air_mission_efficiency = -0.05
 			}
 		}
 		
@@ -707,6 +710,17 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.08
 				industrial_capacity_dockyard = 0.08
+			}
+		}
+
+		ic_SOV_soviet_railway_troops = {
+			name = ic_SOV_soviet_railway_troops
+			picture = GFX_idea_ic_SOV_evaced_industry
+			modifier = {
+				base_fuel_gain_factor = 0.15
+				max_fuel_factor = 0.1
+				out_of_supply_factor = -0.075
+				truck_attrition_factor = 0.25
 			}
 		}
 

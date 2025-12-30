@@ -16,6 +16,11 @@ spriteTypes = {
 		noOfFrames = 18
 	}
 
+	
+	spriteType = {
+		name = "GFX_idea_ic_SOV_evaced_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_railroads.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ic_SOV_trotskyite_plot"

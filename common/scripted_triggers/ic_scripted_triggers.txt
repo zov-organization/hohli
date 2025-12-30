@@ -136,20 +136,22 @@ ic_ger_is_moscau_offencive_state = {
 		tooltip = ic_ger_is_moscau_offencive_state_tt
 		AND = {
 			OR = {
-				state = 225
-				state = 220
-				state = 258
-				state = 257
-				state = 254
-				state = 222
-				state = 205
-				state = 224
-				state = 223
-				state = 219
-				state = 243
-				state = 242
-				state = 246
-				state = 247
+                state = 225
+                state = 220
+                state = 258
+                state = 257
+                state = 254
+                state = 222
+                state = 205
+                state = 224
+                state = 223
+                state = 219
+                state = 243
+                state = 242
+                state = 246
+                state = 247
+                state = 248
+                state = 253
 			}
 		}
 	}
@@ -166,14 +168,23 @@ ic_ger_is_stalingrad_offencive_state = {
 				state = 238
 				state = 237
 				state = 217
-				state = 829
-				state = 239
 				state = 265
 				state = 245
 				state = 228
 				state = 240
 				state = 260
-				state = 239
+				state = 236
+				state = 234
+				state = 235
+				state = 232
+				state = 233
+				state = 826
+				state = 827
+				state = 828
+				state = 821
+				state = 231
+				state = 230
+				state = 229
 			}
 		}
 	}
@@ -248,8 +259,8 @@ ic_is_ukranian = {
 				state = 192
 				state = 197
 				state = 196
-				state = 137
 				state = 200
+				state = 228
 			}
 		}
 	}

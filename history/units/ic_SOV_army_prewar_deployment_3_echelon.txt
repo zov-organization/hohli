@@ -1,0 +1,145 @@
+division_template = {
+	name = "sov spawns"
+	division_names_group = SOV_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	
+	}
+}
+
+units = {
+	division= { location = 104 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 104 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 104 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 104 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3120 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3120 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3120 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3120 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 181 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 181 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 181 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 181 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11080 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11080 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9097 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9097 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11186 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11186 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6174 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6174 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 79 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 79 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11068 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3151 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3151 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3151 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3151 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 149 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 117 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 117 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9197 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9197 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11349 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11349 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6245 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6245 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6262 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6262 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9355 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6398 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 413 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 413 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 413 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 413 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6330 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3520 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3520 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6543 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6543 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 558 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 558 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11526 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11526 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9542 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9542 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6254 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6254 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6330 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3306 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3306 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 580 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6304 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6304 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9260 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9260 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9461 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9461 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9461 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9461 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9417 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9417 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9417 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9417 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9531 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9531 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3491 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3491 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6519 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6519 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 484 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 484 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 449 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 449 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11403 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11403 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11459 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11459 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9488 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9488 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9476 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9476 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3743 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3743 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 261 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11242 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9366 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3236 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 382 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3263 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3327 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9302 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3358 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11250 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9265 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9265 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3308 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3292 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11347 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6348 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3391 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6396 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6290 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 11282 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 344 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9256 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6022 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6414 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 6380 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 9348 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+    division= { location = 3259 division_template = "sov spawns" start_equipment_factor = 0.001 start_experience_factor = 0.001 start_manpower_factor = 0.001 }
+
+}

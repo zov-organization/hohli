@@ -93,15 +93,15 @@ characters = {
 			}
 		}
 	
-		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 4
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { aviation_enthusiast blockade_runner }
+		#	skill = 3
+		#	attack_skill = 2
+		#	defense_skill = 2
+		#	maneuvering_skill = 4
+		#	coordination_skill = 2
+		#	legacy_id = 0
+		#}
 	}
 	
 	ic_ITA_angelo_iachino = {
@@ -121,15 +121,15 @@ characters = {
 			traits = { naval_theorist }
 		}
 	
-		navy_leader = {
-			traits = { bold navy_career_officer superior_tactician spotter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 1
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { bold navy_career_officer superior_tactician spotter }
+		#	skill = 2
+		#	attack_skill = 2
+		#	defense_skill = 1
+		#	maneuvering_skill = 3
+		#	coordination_skill = 1
+		#	legacy_id = 0
+		#}
 	}
 	
 	ic_ITA_amedeo_mecozzi = { 
@@ -316,15 +316,15 @@ characters = {
 			cost = 50
 		}
 		
-		navy_leader = {
-			traits = { battleship_adherent superior_tactician spotter }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 3
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { battleship_adherent superior_tactician spotter }
+		#	skill = 3
+		#	attack_skill = 2
+		#	defense_skill = 2
+		#	maneuvering_skill = 3
+		#	coordination_skill = 3
+		#	legacy_id = 0
+		#}
 	}
 
 	ic_ITA_domenico_cavagnari = {
@@ -492,15 +492,15 @@ characters = {
 			cost = 50
 		}
 		
-		navy_leader = {
-			traits = { gentlemanly superior_tactician }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { gentlemanly superior_tactician }
+		#	skill = 3
+		#	attack_skill = 3
+		#	defense_skill = 2
+		#	maneuvering_skill = 3
+		#	coordination_skill = 2
+		#	legacy_id = 0
+		#}
 	}
 
 	ic_ITA_vittorio_ambrosio = {
@@ -552,15 +552,15 @@ characters = {
 			cost = 100
 		}
 		
-		navy_leader = {
-			traits = { gunnery_expert battleship_adherent ironside }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 2
-			coordination_skill = 1
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { gunnery_expert battleship_adherent ironside }
+		#	skill = 2
+		#	attack_skill = 3
+		#	defense_skill = 1
+		#	maneuvering_skill = 2
+		#	coordination_skill = 1
+		#	legacy_id = 0
+		#}
 	}
 
 	ic_ITA_ettore_muti = {
@@ -1315,15 +1315,15 @@ characters = {
 			}
 		}
 		 
-		navy_leader = {
-			traits = { gentlemanly inshore_fighter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { gentlemanly inshore_fighter }
+		#	skill = 2
+		#	attack_skill = 2
+		#	defense_skill = 2
+		#	maneuvering_skill = 2
+		#	coordination_skill = 2
+		#	legacy_id = 0
+		#}
 	}
 
 	ic_ITA_giuseppe_di_bartolo = {
@@ -1335,15 +1335,15 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { old_guard_navy bold fleet_protector }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			maneuvering_skill = 1
-			coordination_skill = 1
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { old_guard_navy bold fleet_protector }
+		#	skill = 1
+		#	attack_skill = 1
+		#	defense_skill = 1
+		#	maneuvering_skill = 1
+		#	coordination_skill = 1
+		#	legacy_id = 0
+		#}
 	}
 
 	ic_ITA_junio_valerio_borghese = {
@@ -1355,14 +1355,14 @@ characters = {
 			}
 		}
 
-		navy_leader = {
-			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
-			skill = 3
-			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
-		}
+		#navy_leader = {
+		#	traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
+		#	skill = 3
+		#	attack_skill = 4
+		#	defense_skill = 1
+		#	maneuvering_skill = 3
+		#	coordination_skill = 2
+		#	legacy_id = 0
+		#}
 	}
 }

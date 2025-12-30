@@ -78,15 +78,16 @@ equipments = {
 
 		
 		surface_detection = 5
-		sub_detection = 0
+		#sub_detection = 0
 		surface_visibility = 0
 		sub_visibility = 30
 		naval_speed = 13
-		reliability = 0.60
+		reliability = 0.15
 		
 		naval_range = 2500
 		
-		max_strength = 20
+		max_organisation = 10
+		max_strength = 40
 		
 
 		fuel_consumption = 1
@@ -148,11 +149,11 @@ equipments = {
 		}
 		sub_visibility = 25
 		naval_speed = 17
-		reliability = 0.70
+		reliability = 0.175
 
 		naval_range = 4000
-		reliability = 0.70
-		max_strength = 30
+		max_organisation = 15
+		max_strength = 60
 		
 		build_cost_ic = 950
 		resources = {
@@ -201,11 +202,12 @@ equipments = {
 		
 		sub_visibility = 18
 		naval_speed = 18
-		reliability = 0.75
+		reliability = 0.2
 		
 		naval_range = 5000
 		
-		max_strength = 45
+		max_organisation = 20
+		max_strength = 80
 
 
 		
@@ -249,11 +251,12 @@ equipments = {
 		
 		sub_visibility = 15
 		naval_speed = 18
-		reliability = 0.80
+		reliability = 0.225
 
 		naval_range = 6000
 		
-		max_strength = 55
+		max_organisation = 25
+		max_strength = 100
 		
 
 		
@@ -386,7 +389,7 @@ equipments = {
 
 		
 		surface_detection = 30
-		sub_detection = 0
+		#sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 30
 		naval_speed = 13
@@ -431,7 +434,7 @@ equipments = {
 
 		
 		surface_detection = 40
-		sub_detection = 0
+		#sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
 		naval_speed = 17
@@ -473,7 +476,7 @@ equipments = {
 
 		
 		surface_detection = 50
-		sub_detection = 0
+		#sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 15
 		naval_speed = 18
@@ -515,7 +518,7 @@ equipments = {
 
 		
 		surface_detection = 70
-		sub_detection = 0
+		#sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 10
 		naval_speed = 18

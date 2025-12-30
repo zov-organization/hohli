@@ -10,11 +10,16 @@ country_event = {
     option = {
         name = ic_sov_events.1.a
         every_state = {
-			limit = {
-				ic_sov_first_defence_states_north = yes
-			}
+			limit = { ic_sov_first_defence_states_north = yes }
 			add_dynamic_modifier = {
-				modifier = SOV_1941_defencive_buff
+				modifier = SOV_1941_defencive_buff_main
+				days = 45
+			}
+		}
+        every_state = {
+			limit = { or = { ic_sov_first_defence_states_center = yes ic_is_ukranian = yes } }
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff_secondarie
 				days = 45
 			}
 		}
@@ -22,11 +27,16 @@ country_event = {
     option = {
         name = ic_sov_events.1.b
         every_state = {
-			limit = {
-				ic_sov_first_defence_states_center = yes
-			}
+			limit = { ic_sov_first_defence_states_center = yes }
 			add_dynamic_modifier = {
-				modifier = SOV_1941_defencive_buff
+				modifier = SOV_1941_defencive_buff_main
+				days = 45
+			}
+		}
+        every_state = {
+			limit = { or = { ic_sov_first_defence_states_north = yes ic_is_ukranian = yes } }
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff_secondarie
 				days = 45
 			}
 		}
@@ -34,11 +44,16 @@ country_event = {
     option = {
         name = ic_sov_events.1.c
         every_state = {
-			limit = {
-				ic_is_ukranian = yes
-			}
+			limit = { ic_is_ukranian = yes }
 			add_dynamic_modifier = {
-				modifier = SOV_1941_defencive_buff
+				modifier = SOV_1941_defencive_buff_main
+				days = 45
+			}
+		}
+        every_state = {
+			limit = { or = { ic_sov_first_defence_states_north = yes ic_sov_first_defence_states_center = yes } }
+			add_dynamic_modifier = {
+				modifier = SOV_1941_defencive_buff_secondarie
 				days = 45
 			}
 		}

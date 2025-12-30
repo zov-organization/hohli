@@ -131,7 +131,7 @@ add_dynamic_modifier = { modifier = ic_ITA_regia_marina }
 	add_to_variable = {ITA_convoy_retreat_speed = -0.1}
 	add_to_variable = {ITA_naval_coordination = -0.05}
 	add_to_variable = {ITA_naval_detection = -0.05}
-	add_to_variable = {ITA_naval_enemy_fleet_size_ratio_penalty_factor = -0.15}
+	#add_to_variable = {ITA_naval_enemy_fleet_size_ratio_penalty_factor = -0.15}
 	add_to_variable = {ITA_naval_has_potf_in_combat_attack = 0.1}
 	add_to_variable = {ITA_naval_hit_chance = -0.05}
 	add_to_variable = {ITA_naval_night_attack = -0.15}

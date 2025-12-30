@@ -236,6 +236,8 @@ GER_barb_category = {
                 state = 242
                 state = 246
                 state = 247
+                state = 248
+                state = 253
             }
 		}
 
@@ -293,7 +295,7 @@ GER_barb_category = {
 
         fire_only_once = yes
 
-		days_mission_timeout = 30
+		days_mission_timeout = 90
         complete_effect = {
             set_country_flag = won_offencive_on_moscau
         }
@@ -312,7 +314,7 @@ GER_barb_category = {
                 has_decision = GER_prep_summer_offencive_moscau
                 has_active_mission = GER_summer_offencive_moscau_mission
             }
-            ic_german_offencive_prep_date = yes
+            #ic_german_offencive_prep_date = yes
 		}
         fire_only_once = yes
 
@@ -327,14 +329,23 @@ GER_barb_category = {
 				state = 238
 				state = 237
 				state = 217
-				state = 829
-				state = 239
 				state = 265
 				state = 245
 				state = 228
 				state = 240
 				state = 260
-				state = 239
+				state = 236
+				state = 234
+				state = 235
+				state = 232
+				state = 233
+				state = 826
+				state = 827
+				state = 828
+				state = 821
+				state = 231
+				state = 230
+				state = 229
             }
 		}
 
@@ -392,12 +403,13 @@ GER_barb_category = {
 
         fire_only_once = yes
 
-		days_mission_timeout = 30
+		days_mission_timeout = 90
         complete_effect = {
             set_country_flag = won_offencive_on_stalingrad
         }
         timeout_effect = {
             add_ideas = GER_6th_army_destruction
+            retire_character = ic_GER_friedrich_paulus
             set_country_flag = lost_offencive_on_stalingrad
         }
     }

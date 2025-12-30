@@ -153,14 +153,14 @@ characters = {
 			cost = 50
 		}
 		
-		navy_leader={
-			traits={ navy_career_officer seawolf }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=5
-		}
+		#navy_leader={
+		#	traits={ navy_career_officer seawolf }
+		#	skill=5
+		#	attack_skill=5
+		#	defense_skill=3
+		#	maneuvering_skill=3
+		#	coordination_skill=5
+		#}
 	}
 	
 
@@ -269,15 +269,15 @@ characters = {
 			cost = 150
 		}
 		
-		navy_leader={
-			traits={ gentlemanly spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=1
-			legacy_id=-1
-		}
+		#navy_leader={
+		#	traits={ gentlemanly spotter }
+		#	skill=2
+		#	attack_skill=2
+		#	defense_skill=2
+		#	maneuvering_skill=2
+		#	coordination_skill=1
+		#	legacy_id=-1
+		#}
 	}
 	ic_ROM_nicolae_sova={
 		name=ROM_nicolae_sova

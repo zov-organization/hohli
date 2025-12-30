@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_yuri_levitan.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_SOV_aleksey_antonov"
+		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_ic_SOV_aleksey_antonov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_SOV_georgy_isserson"
+		texturefile = "gfx/interface/ideas/SOV/advisors/GFX_idea_ic_SOV_georgy_isserson.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_SOV_dmitry_pavlov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Dmitry_Pavlov.dds"
 	}
@@ -11,6 +19,9 @@ spriteTypes = {
 		name = "GFX_portrait_ic_SOV_mihail_katukov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Mahail_Katukov.dds"
 	}
+
+
+
 	spriteType = {
 		name = "GFX_Portrait_Britain_Arthur_Tedder"
 		texturefile = "gfx/leaders/ENG/Portrait_Britain_Arthur_Tedder.dds"
@@ -18,5 +29,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Britain_Betram_Home_Ramsay"
 		texturefile = "gfx/leaders/ENG/Portrait_Britain_Betram_Home_Ramsay.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_portrait_ic_GER_walther_von_brauchitsch"
+		texturefile = "gfx/leaders/GER/Portrait_German_Walther_von_Brauchitsch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ic_GER_ernst_busch"
+		texturefile = "gfx/leaders/GER/Portrait_German_Ernst_Busch.dds"
+	}
+
+
+
+	
+	spriteType = {
+		name = GFX_portrait_JAP_emperor_hirohito
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
 	}
 }

@@ -30,6 +30,8 @@ equipments = {
 		max_organisation = 30
 		anti_air_attack = 0.1
 
+		naval_torpedo_damage_reduction_factor = -1
+
 
         #Space taken in convoy
         lend_lease_cost = 0
@@ -37,7 +39,7 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 150
+		build_cost_ic = 40
 		resources = {
 			#oil = 1
 			steel = 1

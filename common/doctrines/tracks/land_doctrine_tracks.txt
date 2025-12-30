@@ -1,0 +1,92 @@
+infantry_attack = {
+    name = infantry_attack
+    background = "GFX_grand_battleplan_bg"
+    icon = "GFX_doctrine_milestone_infantry_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 1.0
+        categories = {
+            category_all_infantry
+        }
+    }
+}
+infantry_defence = {
+    name = infantry_defence
+    background = "GFX_grand_battleplan_bg"
+    icon = "GFX_doctrine_milestone_infantry_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 1.0
+        categories = {
+            category_all_infantry
+        }
+    }
+}
+
+tanks_attack = {
+    name = tanks_attack
+    background = "GFX_mob_warfare_bg"
+    icon = "GFX_doctrine_milestone_armored_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 4.0
+        categories = {
+	        category_tanks
+	        category_all_armor
+            
+        }
+        sub_units = {
+            armored_car
+        }
+    }
+}
+tanks_defence = {
+    name = tanks_defence
+    background = "GFX_mob_warfare_bg"
+    icon = "GFX_doctrine_milestone_armored_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 4.0
+        categories = {
+	        category_tanks
+	        category_all_armor
+            
+        }
+        sub_units = {
+            armored_car
+        }
+    }
+}
+
+operations_operativeness = {
+    name = operations_operativeness
+    background = "GFX_tac_operation_bg"
+    icon = "GFX_doctrine_milestone_operations_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 0.7
+        categories = {
+            category_all_infantry
+	        category_line_artillery
+	        category_artillery
+	        category_tanks
+	        category_all_armor
+        }
+    }
+}
+operations_logistics = {
+    name = operations_logistics
+    background = "GFX_tac_operation_bg"
+    icon = "GFX_doctrine_milestone_operations_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 0.7
+        categories = {
+            category_all_infantry
+	        category_line_artillery
+	        category_artillery
+	        category_tanks
+	        category_all_armor
+        }
+    }
+}

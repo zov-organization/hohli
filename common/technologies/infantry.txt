@@ -271,7 +271,7 @@ technologies = {
 	
 	paratroopers = {
 		
-		allow = { hidden_trigger = { always = no } }
+		#allow = { hidden_trigger = { always = no } }
 
 		enable_subunits = {
 			paratrooper
@@ -358,7 +358,7 @@ technologies = {
 
 	shocktroops = {
 
-		allow = { hidden_trigger = { always = no } }
+		#allow = { hidden_trigger = { always = no } }
 
 		enable_subunits = {
 			shocktroop
@@ -381,7 +381,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.75
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -451,7 +451,7 @@ technologies = {
 
 	jaegers = {
 
-		allow = { hidden_trigger = { always = no } }
+		#allow = { hidden_trigger = { always = no } }
 
 		enable_subunits = {
 			jaeger
@@ -474,7 +474,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.75
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -495,6 +495,7 @@ technologies = {
 
 		jaeger = {
 			defense = 0.05
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = jaegers3
@@ -521,6 +522,7 @@ technologies = {
 	jaegers3 = {
 
 		jaeger = {
+			defense = 0.05
 			soft_attack = 0.05
 		}
 
@@ -539,7 +541,7 @@ technologies = {
 	
 	marines = {
 	
-		allow = { hidden_trigger = { always = no } }
+		#allow = { hidden_trigger = { always = no } }
 		
 		enable_subunits = {
 			marine
@@ -562,7 +564,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.75
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
@@ -620,7 +622,7 @@ technologies = {
 	
 	tech_mountaineers = {
 	
-		allow = { hidden_trigger = { always = no } }
+		#allow = { hidden_trigger = { always = no } }
 		
 		enable_subunits = {
 			mountaineers
@@ -643,7 +645,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.75
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder

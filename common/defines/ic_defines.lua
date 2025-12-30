@@ -416,6 +416,7 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0 -- for obvious reasons lol
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {
@@ -644,6 +645,10 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
 NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 0
 
+NDefines.NNavy.CONVOY_RAID_MAX_REGION_TO_TASKFORCE_RATIO = 1
+NDefines.NNavy.COORDINATION_EFFECT_ON_CONVOY_RAID_EFFICIENCY = 1
+NDefines.NNavy.MISSION_EFFICIENCY_POW_FACTOR = 1
+
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 1	-- it takes 30 days for one ship to fully train
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0	-- country gets 0 navy xp from ships trainings
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0	-- no accidents may happen during training
@@ -680,7 +685,9 @@ NDefines.NNavy.ORG_COST_WHILE_MOVING_IN_MISSION_ZONE ={
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
-NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 1
+NDefines.NNavy.BASE_ESCAPE_SPEED = 0.25
+NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 0
+
 
 -- gotta work with:
  -- SUPPLY_NEED_FACTOR
@@ -696,7 +703,7 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 2
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.1
 NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 0.5
 NDefines.NCountry.CONVOY_RANGE_FACTOR = 1
-NDefines.NCountry.CONVOY_HIT_PROFILE = 40
+NDefines.NNavy.CONVOY_HIT_PROFILE = 100
 
 -- amount of convoys intercepted:
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --setting this to zero makes task force to intercept 100% of convoys
@@ -717,6 +724,12 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faste
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed
 
+-- how subs are spotted
+NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 0	-- from the start ships can not detect subs AT ALL
+NDefines.NNavy.SUB_DETECTION_CHANCE_BASE_SPOTTING_EFFECT = 100		-- ships with at least 1 sub detection detect subs immidiatly
+NDefines.NNavy.SUB_DETECTION_CHANCE_SPOTTING_SPEED_EFFECT = 100		--
+NDefines.NNavy.SPOTTING_MULTIPLIER_FOR_SUB = 0.5
+
 --NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN = 1
 --NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN = 0
 --NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MAX = 0
@@ -726,6 +739,12 @@ NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 1
 --NDefines.NNavy.SPOTTING_MOD_FOR_CONVOY_COUNT = 0
 
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.025
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 20
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1
+--NAVAL_TRANSFER_BASE_NAVAL_DIST_ADD
+--NAVAL_TRANSFER_BASE_NAVAL_DIST_MULT
+--NAVAL_TRANSFER_DAMAGE_REDUCTION
+--BASE_UNIT_TRANSFER_SPOTTING_SPEED
 
 -- spotting defines
 -- formula for spotting (hourly change) is:
@@ -802,6 +821,7 @@ NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
 
 --Special Projects
 NDefines.NProject.DEFAULT_STOP_PROJECT_DAYS = 1	-- 0 wont work - prints an error :(
+NDefines.NProject.DISMANTLE_FACILITY_DAYS = 5
 NDefines.NProject.DAYS_TO_REMOVE_SCIENTIST = 0
 NDefines.NProject.DEFAULT_PROJECT_COMPLETION_SCIENTIST_EXPERIENCE_GAIN = 0
 NDefines.NProject.RECRUIT_SCIENTIST_ONE_TRAIT_CHANCE = 0

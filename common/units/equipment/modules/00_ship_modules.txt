@@ -1368,7 +1368,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.20
 			#build_cost_ic = 0.125
-			naval_torpedo_damage_reduction_factor = 0.80
+			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1394,7 +1394,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.30
 			#build_cost_ic = 0.15
-			naval_torpedo_damage_reduction_factor = 0.85
+			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1424,7 +1424,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.35
 			#build_cost_ic = 0.175
-			naval_torpedo_damage_reduction_factor = 0.9
+			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1453,7 +1453,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.40
 			#build_cost_ic = 0.20
-			naval_torpedo_damage_reduction_factor = 0.95
+			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1481,7 +1481,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.1
 			#build_cost_ic = 0.1
-
 		}
 
 		
@@ -2016,7 +2015,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 7
+			torpedo_attack = 3.5
 			build_cost_ic = 200
 		}
 
@@ -2038,7 +2037,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 9
+			torpedo_attack = 4.5
 			build_cost_ic = 250
 		}
 
@@ -2064,7 +2063,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 11
+			torpedo_attack = 5.5
 			build_cost_ic = 300
 		}
 
@@ -2087,7 +2086,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 14
+			torpedo_attack = 7
 			build_cost_ic = 350
 		}
 
@@ -2402,6 +2401,9 @@ equipment_modules = {
 			sub_detection = 6
 			build_cost_ic = 150
 		}
+		multiply_stats = {
+			sub_attack = 0.15
+		}
 	}
 
 	ship_sonar_2 = {
@@ -2414,6 +2416,9 @@ equipment_modules = {
 			sub_detection = 10
 			build_cost_ic = 300
 		}
+		multiply_stats = {
+			sub_attack = 0.2
+		}
 	}
 
 	ship_sonar_3 = {
@@ -2425,6 +2430,9 @@ equipment_modules = {
 		add_stats = {
 			sub_detection = 18
 			build_cost_ic = 450
+		}
+		multiply_stats = {
+			sub_attack = 0.3
 		}
 	}
  ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 

@@ -1,0 +1,543 @@
+infantry_attack_subdoctrine = {
+    track = infantry_attack
+    name = infantry_attack_subdoctrine
+    description = infantry_attack_DESC
+    icon = GFX_doctrine_infiltration_assault_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
+
+
+
+infantry_defence_subdoctrine = {
+    track = infantry_defence
+    name = infantry_defence_subdoctrine
+    description = infantry_defence_DESC
+    icon = GFX_doctrine_antitank_frontline_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
+
+tanks_attack_subdoctrine = {
+    track = tanks_attack
+    name = tanks_attack_subdoctrine
+    description = tanks_attack_subdoctrine_DESC
+    icon = GFX_doctrine_armored_spearhead_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
+
+tanks_defence_subdoctrine = {
+    track = tanks_defence
+    name = tanks_defence_subdoctrine
+    description = tanks_defence_DESC
+    icon = GFX_doctrine_mobile_defense_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
+
+
+operations_operativeness_subdoctrine = {
+    track = operations_operativeness
+    name = operations_operativeness_subdoctrine
+    description = operations_operativeness_DESC
+    icon = GFX_doctrine_deep_battle_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
+
+
+operations_logistics_subdoctrine = {
+    track = operations_logistics
+    name = operations_logistics_subdoctrine
+    description = operations_logistics_DESC
+    icon = GFX_doctrine_grand_battleplan_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        lvl_1 = {
+            category_tanks= {
+                max_organisation = 1
+                default_morale = 0.1
+            }
+        }
+        lvl_2 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_3 = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            light_armor = {
+                default_morale = 0.1
+                max_organisation = 3
+            }
+        }
+        lvl_4 = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        lvl_5 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_6 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_7 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+        lvl_8 = {
+            armored_car = {
+                default_morale = 0.2
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+             category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.2
+            }
+        }
+    }
+}
