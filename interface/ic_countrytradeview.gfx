@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_trade_header_bg"
+		texturefile = "gfx/interface/trade_header_bg.dds"
+	}
+
+}
