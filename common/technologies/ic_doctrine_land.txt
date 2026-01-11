@@ -48,13 +48,6 @@ technologies = {
 		categories = {
 			cat_old_land_doctrine
 		}
-
-		allow = {
-			has_army_experience > 100
-		}
-		on_research_complete = {
-			army_experience = -100
-		}
 	}
 
 	infantry_attack_1 = {
