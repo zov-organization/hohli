@@ -31,7 +31,7 @@ technologies = {
 		research_cost = 2.25
 
 		folder = {
-			name = land_doctrine_folder
+			name = ic_old_land_doctrine_folder
 			position = { x = 0 y = 0 }
 		}
 		

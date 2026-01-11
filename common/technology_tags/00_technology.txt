@@ -144,6 +144,13 @@ technology_categories = {
 	sonar_tech
 	ship_airplane_launcher
 	ship_battery
+	cat_old_land_doctrine
+	cat_inf_attack
+	cat_inf_defence
+	cat_tank_attack
+	cat_tank_defence
+	cat_operation_swift_maneuvres
+	cat_operation_deep_planning
 }
 
 technology_folders = {
@@ -232,6 +239,14 @@ technology_folders = {
 		ledger = civilian
 	}
 	#secret_weapons_folder
+	ic_old_land_doctrine_folder = {
+		ledger = army
+		#doctrine = yes
+		# setting this to 'yes' makes it impossible for the folder to appear at 'countrytechtreeview', seems to put it to the 'countrydoctrineview' or smth
+	}
+	ic_old_naval_doctrine_folder
+	ic_old_air_doctrine_folder
+	ic_old_special_forces_doctrine_folder
 }
 
  

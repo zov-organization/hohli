@@ -1,0 +1,972 @@
+@doctrine_xp_cost = 100
+@doctrine_small_xp_cost = 75
+
+@doctrine_lvl_0 = 0
+@doctrine_lvl_1 = 1
+@doctrine_lvl_2 = 3
+@doctrine_lvl_3 = 5
+@doctrine_lvl_4 = 7
+@doctrine_lvl_5 = 9
+
+technologies = {
+
+	# INFANTRY DOCTRINES
+
+	infantry_start = {
+		
+		doctrine = yes
+		doctrine_name = "infantry"
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+		
+
+		category_light_infantry = {
+			defense = 0.05
+		}
+
+		category_mechanized_inf = {
+			defense = 0.025
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_1 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_1 
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+		}
+
+		allow = {
+			has_army_experience > 100
+		}
+		on_research_complete = {
+			army_experience = -100
+		}
+	}
+
+	infantry_attack_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_light_infantry = {
+			 breakthrough = 0.05
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_2_1 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_2_2 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_2_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+
+
+		category_support_battalions = {
+			max_organisation = 5
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -4 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_3
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_2_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+		
+
+		category_support_battalions = {
+			soft_attack = 0.125
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -2 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_3
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_3 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+		
+		category_light_infantry = {
+			max_organisation = 10
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_4_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = infantry_attack_4_2 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_4_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+		
+
+		category_support_battalions = {
+			max_organisation = 5
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -4 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_5 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_4_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+
+
+		category_support_battalions = {
+			soft_attack = 0.125
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -2 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_attack_5 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_attack_5 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_front_line = {
+			max_organisation = 5
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		terrain_penalty_reduction = 0.05
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+	}
+
+	infantry_defence_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_all_infantry = {
+			defense = 0.075
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_2 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_defence_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+		
+		category_support_battalions = {
+			max_organisation = 10
+			soft_attack = 0.25
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_3_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = infantry_defence_3_2 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_defence_3_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+		xor = { infantry_defence_3_2 }
+
+		
+		category_all_infantry = {
+			max_organisation = 5
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 2 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_4 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_defence_3_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+		xor = { infantry_defence_3_1 }
+
+		
+		engineer = {
+			battalion_mult = {
+				category = category_light_infantry
+				entrenchment = 0.1
+				add = yes
+			}
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 4 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_4 
+			research_cost_coeff = 1
+		}
+	}
+	infantry_defence_4 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_all_infantry = {
+			max_organisation = 2.5
+			defense = 0.025
+		}
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = infantry_defence_5_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = infantry_defence_5_2
+			research_cost_coeff = 1
+		}
+	}
+	infantry_defence_5_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+
+
+		category_light_infantry = {
+			default_morale = 10
+		}
+		max_dig_in_factor = 0.15
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 2 y = @doctrine_lvl_5 }
+		}
+	}
+	infantry_defence_5_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_small_xp_cost
+
+
+		recon = {
+			battalion_mult = {
+				category = category_anti_air
+				air_attack = 0.10
+			}
+		}
+		
+		mot_recon = {
+			battalion_mult = {
+				category = category_anti_air
+				air_attack = 0.10
+			}
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 4 y = @doctrine_lvl_5 }
+		}
+	}
+
+	
+	# TANKS DOCTRINES
+
+	tank_start = {
+		
+		doctrine = yes
+		doctrine_name = "tank"
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_all_armor = {
+			breakthrough = 0.10
+		}
+
+		
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = tank_attack_1 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tank_defence_1 
+			research_cost_coeff = 1
+		}
+	}
+
+	tank_attack_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_tanks = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = tank_attack_2 
+			research_cost_coeff = 1
+		}
+	}
+	tank_attack_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_mechanized_inf = {
+			hardness = 0.1
+			max_strength = 0.05
+		}
+
+		category_tanks = {
+			max_organisation = 5
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = tank_attack_3 
+			research_cost_coeff = 1
+		}
+	}
+	tank_attack_3 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_support_tanks = {
+			max_organisation = 5
+			soft_attack = 0.125
+			hard_attack = 0.125
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = tank_attack_4 
+			research_cost_coeff = 1
+		}
+	}
+	tank_attack_4 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_mechanized_inf = {
+			hardness = 0.1
+			max_strength = 0.1
+		}
+
+		category_tanks = {
+			max_organisation = 2.5
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = tank_attack_5 
+			research_cost_coeff = 1
+		}
+	}
+	tank_attack_5 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+		
+		category_mechanized_inf = {
+			maximum_speed = 0.1
+		}
+
+		category_tanks = {
+			breakthrough = 0.25
+			maximum_speed = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+	}
+
+	tank_defence_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_army = {
+			defense = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = tank_defence_2 
+			research_cost_coeff = 1
+		}
+	}
+	tank_defence_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+
+		category_all_armor = {
+			defense = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = tank_defence_3 
+			research_cost_coeff = 1
+		}
+	}
+	tank_defence_3 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		category_artillery = {
+			hard_attack = 0.15
+			ap_attack = 0.15
+			defense = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = tank_defence_4 
+			research_cost_coeff = 1
+		}
+	}
+	tank_defence_4 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+		
+		category_support_tanks = {
+			max_organisation = 5
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = tank_defence_5 
+			research_cost_coeff = 1
+		}
+	}
+	tank_defence_5 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+		light_tank_destroyer_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				hard_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				hard_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+		medium_tank_destroyer_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				hard_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				hard_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+		heavy_tank_destroyer_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				hard_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				hard_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+		light_sp_artillery_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				soft_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				soft_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+		medium_sp_artillery_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				soft_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				soft_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+		heavy_sp_artillery_brigade = {
+			battalion_mult = {
+				category = category_all_armor
+				soft_attack = 0.1
+				defense = 0.25
+			}
+			battalion_mult = {
+				category = category_mechanized_inf
+				soft_attack = 0.1
+				defense = 0.25
+			}
+		}
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_5 }
+		}
+	}
+
+	
+	# OPERATIONS DOCTRINES
+
+	operation_start = {
+		
+		doctrine = yes
+		doctrine_name = "operation"
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = operation_swift_maneuvres_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = operation_deep_planning_1
+			research_cost_coeff = 1
+		}
+	}
+
+	operation_swift_maneuvres_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = operation_swift_maneuvres_2 
+			research_cost_coeff = 1
+		}
+	}
+	operation_swift_maneuvres_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = operation_swift_maneuvres_3 
+			research_cost_coeff = 1
+		}
+	}
+	operation_swift_maneuvres_3 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = operation_swift_maneuvres_4 
+			research_cost_coeff = 1
+		}
+	}
+	operation_swift_maneuvres_4 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = operation_swift_maneuvres_5 
+			research_cost_coeff = 1
+		}
+	}
+	operation_swift_maneuvres_5 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+	}
+
+	operation_deep_planning_1 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_1 }
+		}
+		
+		path = {
+			leads_to_tech = operation_deep_planning_2 
+			research_cost_coeff = 1
+		}
+	}
+	operation_deep_planning_2 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_2 }
+		}
+		
+		path = {
+			leads_to_tech = operation_deep_planning_3 
+			research_cost_coeff = 1
+		}
+	}
+	operation_deep_planning_3 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_3 }
+		}
+		
+		path = {
+			leads_to_tech = operation_deep_planning_4 
+			research_cost_coeff = 1
+		}
+	}
+	operation_deep_planning_4 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_4 }
+		}
+		
+		path = {
+			leads_to_tech = operation_deep_planning_5 
+			research_cost_coeff = 1
+		}
+	}
+	operation_deep_planning_5 = {
+		
+		doctrine = yes
+		
+		xp_research_type = army
+		xp_unlock_cost = @doctrine_xp_cost
+
+
+
+		folder = {
+			name = ic_old_land_doctrine_folder
+			position = { x = 3 y = @doctrine_lvl_5 }
+		}
+	}
+
+}

@@ -194,7 +194,7 @@ sub_units = {
 		
 		categories = {
 			category_front_line
-			category_support_battalions
+			category_support_tanks
 			category_army
 			category_recon
 		}
@@ -278,7 +278,7 @@ sub_units = {
 		
 		categories = {
 			category_front_line
-			category_support_battalions
+			category_support_tanks
 			category_army
 			category_all_armor
 			category_recon
@@ -359,7 +359,7 @@ sub_units = {
 		
 		categories = {
 			category_front_line
-			category_support_battalions
+			category_support_tanks
 			category_army
 			category_all_armor
 			category_paratroopers

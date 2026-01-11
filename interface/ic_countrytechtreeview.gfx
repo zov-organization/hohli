@@ -25,4 +25,26 @@ spriteTypes = {
 		play_on_show = yes
 		pause_on_loop = 0.0
 	}
+	
+	spriteType = {
+		name = "GFX_special_forces_doctrine_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_specialforces_tab.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_infantry_doctrine_bg"
+		textureFile = "gfx//interface//technologies//doctrine_backgrounds//infantry_doctrine.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tank_doctrine_bg"
+		textureFile = "gfx//interface//technologies//doctrine_backgrounds//tank_doctrine.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_opration_doctrine_bg"
+		textureFile = "gfx//interface//technologies//doctrine_backgrounds//opration_doctrine.dds"
+		alwaystransparent = yes
+	}
 }
