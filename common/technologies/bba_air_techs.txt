@@ -3,6 +3,8 @@ technologies = {
 	iw_small_airframe = {
 
 		enable_equipments = {
+			#fighter_equipment_0
+
 			small_plane_airframe_0
 			small_plane_cas_airframe_0
 			small_plane_naval_bomber_airframe_0
@@ -14,11 +16,12 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			engine_1_1x
+			#engine_1_1x
+			#torpedo_mounting
+
 			#bomb_locks
 			#small_bomb_bay
-			#medium_bomb_bay
-			torpedo_mounting
+			medium_bomb_bay
 		}
 	
 		path = {
@@ -70,6 +73,9 @@ technologies = {
 	basic_small_airframe = {
 
 		enable_equipments = {
+			#fighter_equipment_1
+			#CAS_equipment_1
+
 			small_plane_airframe_1
 			small_plane_cas_airframe_1
 			small_plane_naval_bomber_airframe_1
@@ -82,7 +88,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_2_1x
-			tank_buster_1
+			heavy_bomb_locks
 		}
 	
 		path = {
@@ -115,6 +121,9 @@ technologies = {
 	improved_small_airframe = {
 
 		enable_equipments = {
+			#fighter_equipment_2
+			#CAS_equipment_2
+
 			small_plane_airframe_2
 			small_plane_cas_airframe_2
 			small_plane_naval_bomber_airframe_2
@@ -127,7 +136,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_3_1x
-			heavy_bomb_locks
+			tank_buster_1
 		}
 	
 		path = {
@@ -160,6 +169,8 @@ technologies = {
 	advanced_small_airframe = {
 
 		enable_equipments = {
+			#fighter_equipment_3
+
 			small_plane_airframe_3
 			small_plane_cas_airframe_3
 			small_plane_naval_bomber_airframe_3
@@ -172,7 +183,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			engine_4_1x
-			tank_buster_2
+			#tank_buster_2
 		}
 		
 		path = {
