@@ -2212,7 +2212,7 @@ focus_tree = {
 	focus = {
 		id = SOV_is_2
 
-		icon = GFX_SOV_they_will_know_fear
+		icon = GFX_focus_generic_army_tanks2
 
 		prerequisite = { focus = SOV_skidka_na_tank }
 		relative_position_id = SOV_skidka_na_tank
@@ -2320,7 +2320,7 @@ focus_tree = {
 	focus = {
 		id = SOV_mobilize_railways
 
-		icon = GFX_SOV_pc_of_mechanical_engineering
+		icon = GFX_SOV_mobilize_railways
 
 		prerequisite = { focus = SOV_war_time_industry }
 		relative_position_id = SOV_war_time_industry
@@ -2364,7 +2364,7 @@ focus_tree = {
 	focus = {
 		id = SOV_prepare_kuybyshev
 
-		icon = GFX_SOV_develop_the_urals
+		icon = GFX_SOV_prepare_kuybyshev
 
 		prerequisite = { focus = SOV_mobilize_railways }
 		relative_position_id = SOV_mobilize_railways
