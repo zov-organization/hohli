@@ -1,5 +1,5 @@
-@doctrine_xp_cost = 100
-@doctrine_small_xp_cost = 75
+@doctrine_xp_cost = 50
+@doctrine_small_xp_cost = 30
 
 @doctrine_lvl_0 = 0
 @doctrine_lvl_1 = 1
