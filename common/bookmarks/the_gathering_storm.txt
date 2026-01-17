@@ -11,10 +11,16 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				ic_FRA_armor_production
+				ic_FRA_avia_production
+				ic_FRA_army_organization
 				
 			}
 			focuses = {
-				
+				FRA_colonial_dockyards
+				FRA_new_tactic
+				FRA_end_crisis
+
 			}
 		}
 		"USA"={
