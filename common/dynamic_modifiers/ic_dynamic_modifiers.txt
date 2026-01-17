@@ -10,6 +10,7 @@ ic_SOV_mass_production = {
 	production_factory_efficiency_gain_factor	=	SOV_production_factory_efficiency_gain_factor
 	production_factory_max_efficiency_factor	=	SOV_production_factory_max_efficiency_factor
 	industrial_capacity_factory					=	SOV_industrial_capacity_factory
+	custom_modifier_tooltip = ic_SOV_mass_production_built_prom_tt
 }
 
 SOV_ukrain_prom_compleks = {
@@ -44,7 +45,7 @@ SOV_summer_defencive_buff = {
 	max_dig_in = 5
 }
 
-SOV_1941_defencive_buff = {
+SOV_1941_defencive_buff_main = {
     enable = { always = yes }
 
     icon = ic_SOV_economy_is_on_war_footing
@@ -52,8 +53,19 @@ SOV_1941_defencive_buff = {
     attacker_modifier = yes
 
     #dig_in_speed_factor = 0.3
-    army_attack_factor = -0.35
+    army_attack_factor = -0.5
     max_dig_in = 15
+}
+SOV_1941_defencive_buff_secondarie = {
+    enable = { always = yes }
+
+    icon = ic_SOV_economy_is_on_war_footing
+
+    attacker_modifier = yes
+
+    #dig_in_speed_factor = 0.3
+    army_attack_factor = -0.25
+    max_dig_in = 5
 }
 
 GER_summer_offencive_buff = {
@@ -97,24 +109,50 @@ ic_no_railways_africa = {
 	state_production_speed_supply_node_factor = -3
 } 
 
-
-FRA_inflex_industry = {
-	enable = { always = yes }
-	icon = GFX_idea_ic_FRA_inflex_industry
-
-
-	stability_factor = FRA_balance_stab
-	consumer_goods_expected_value = FRA_balance_cg
-	production_speed_arms_factory_factor = FRA_balance_mils_const_speed
-	industrial_capacity_factory = FRA_factory_output
+ic_ITA_regio_esercito = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
+	army_attack_against_major_factor = ITA_army_attack_against_major_factor
+	army_defence_against_major_factor = ITA_army_defence_against_major_factor
+	army_speed_factor = ITA_army_speed_factor
+	special_forces_attack_factor = ITA_special_forces_attack_factor
+	army_org_factor = ITA_army_org_factor
+	army_org_regain = ITA_army_org_regain
+	dig_in_speed_factor = ITA_dig_in_speed_factor
+	experience_gain_army_unit_factor = ITA_experience_gain_army_unit_factor
+	max_dig_in_factor = ITA_max_dig_in_factor
+	pocket_penalty = ITA_pocket_penalty
+	special_forces_cap = ITA_special_forces_cap
+	planning_speed = ITA_planning_speed
 }
+ic_ITA_regia_marina = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
 
-FRA_disjoined_goverment = {
-	enable = { always = yes }
-	icon = GFX_idea_FRA_disjoined_goverment
+	convoy_escort_efficiency = ITA_convoy_escort_efficiency
+	convoy_retreat_speed = ITA_convoy_retreat_speed
+	naval_coordination = ITA_naval_coordination
+	naval_detection = ITA_naval_detection
+	#naval_enemy_fleet_size_ratio_penalty_factor = ITA_naval_enemy_fleet_size_ratio_penalty_factor
+	naval_has_potf_in_combat_attack = ITA_naval_has_potf_in_combat_attack
+	naval_hit_chance = ITA_naval_hit_chance
+	naval_night_attack = ITA_naval_night_attack
+	naval_retreat_speed = ITA_naval_retreat_speed
+	navy_max_range_factor = ITA_navy_max_range_factor
+	night_spotting_chance = ITA_night_spotting_chance
+	repair_speed_factor = ITA_repair_speed_factor
+	industrial_capacity_dockyard = ITA_industrial_capacity_dockyard
+	refit_ic_cost = ITA_refit_ic_cost
 
-	stability_factor = FRA_goverment_stab
-	political_power_gain = FRA_pp_gain
-	fascism_drift = FRA_fascism_gain
-	communism_drift = FRA_communism_gain
+}
+ic_ITA_regia_aeronautica = {
+	enable = {always = yes}
+	icon = GFX_modifiers_sabotaged_resource
+	
+	air_accidents_factor = ITA_air_accidents_factor
+	naval_strike_targetting_factor = ITA_naval_strike_targetting_factor
+	air_bombing_targetting = ITA_air_bombing_targetting
+	air_mission_xp_gain_factor = ITA_air_mission_xp_gain_factor
+	air_night_penalty = ITA_air_night_penalty
+
 }
