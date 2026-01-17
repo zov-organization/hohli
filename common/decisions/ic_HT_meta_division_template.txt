@@ -72,7 +72,7 @@ ic_helpful_tips = {
 					infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }	infantry = { x = 2 y = 0 }	artillery_brigade = { x = 3 y = 0 }	artillery_brigade = { x = 4 y = 0 }
 					infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }	infantry = { x = 2 y = 1 }	artillery_brigade = { x = 3 y = 1 }	artillery_brigade = { x = 4 y = 1 } 
 					infantry = { x = 0 y = 2 }	infantry = { x = 1 y = 2 }	infantry = { x = 2 y = 2 }	anti_air_brigade = { x = 3 y = 2 }	anti_air_brigade = { x = 4 y = 2 } 
-					infantry = { x = 0 y = 3 }	infantry = { x = 1 y = 3 }	infantry = { x = 2 y = 3 }
+					infantry = { x = 0 y = 3 }	infantry = { x = 1 y = 3 }	
 					infantry = { x = 0 y = 4 }	infantry = { x = 1 y = 4 }	
 				}
 				support = { engineer = { x = 0 y = 0 } artillery = { x = 1 y = 0 } anti_air = { x = 0 y = 1 } anti_tank = { x = 1 y = 1 } }
@@ -107,13 +107,37 @@ ic_helpful_tips = {
 
 		complete_effect = {
 			division_template = {
-				name = ".tnk_40cw"
+				name = ".mtnk_40cw"
 				regiments = {
 					medium_armor = { x = 0 y = 0 } medium_armor = { x = 1 y = 0 }	motorized = { x = 2 y = 0 }	motorized = { x = 3 y = 0 }	medium_armor = { x = 4 y = 0 }
 					medium_armor = { x = 0 y = 1 } medium_armor = { x = 1 y = 1 }	motorized = { x = 2 y = 1 }	motorized = { x = 3 y = 1 }	medium_armor = { x = 4 y = 1 }
 					medium_armor = { x = 0 y = 2 } medium_armor = { x = 1 y = 2 }	motorized = { x = 2 y = 2 }	motorized = { x = 3 y = 2 }
 					medium_armor = { x = 0 y = 3 } medium_armor = { x = 1 y = 3 }	motorized = { x = 2 y = 3 }	motorized = { x = 3 y = 3 }		
 					medium_armor = { x = 0 y = 4 } medium_armor = { x = 1 y = 4 } 
+					}											
+				support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 }  logistics_company = { x = 0 y = 2 }
+						field_hospital  = { x = 0 y = 3 } flamethrower_sppt = { x = 1 y = 0 } medium_sp_anti_air_brigade = { x = 1 y = 1 } anti_tank = { x = 1 y = 2 } anti_air = { x = 1 y = 3 } heavy_armor_brigade = { x = 0 y = 4 } }
+			}
+			division_template = {
+				name = ".ltnk_40cw"
+				regiments = {
+					light_armor = { x = 0 y = 0 } light_armor = { x = 1 y = 0 }	motorized = { x = 2 y = 0 }	motorized = { x = 3 y = 0 }	light_armor = { x = 4 y = 0 }
+					light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 1 }	motorized = { x = 2 y = 1 }	motorized = { x = 3 y = 1 }	light_armor = { x = 4 y = 1 }
+					light_armor = { x = 0 y = 2 } light_armor = { x = 1 y = 2 }	motorized = { x = 2 y = 2 }	motorized = { x = 3 y = 2 }
+					light_armor = { x = 0 y = 3 } light_armor = { x = 1 y = 3 }	motorized = { x = 2 y = 3 }	motorized = { x = 3 y = 3 }		
+					light_armor = { x = 0 y = 4 } light_armor = { x = 1 y = 4 } 
+					}											
+				support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 }  logistics_company = { x = 0 y = 2 }
+						field_hospital  = { x = 0 y = 3 } flamethrower_sppt = { x = 1 y = 0 } medium_sp_anti_air_brigade = { x = 1 y = 1 } anti_tank = { x = 1 y = 2 } anti_air = { x = 1 y = 3 } heavy_armor_brigade = { x = 0 y = 4 } }
+			}
+			division_template = {
+				name = ".htnk_40cw"
+				regiments = {
+					heavy_armor = { x = 0 y = 0 } heavy_armor = { x = 1 y = 0 }	motorized = { x = 2 y = 0 }	motorized = { x = 3 y = 0 }	heavy_armor = { x = 4 y = 0 }
+					heavy_armor = { x = 0 y = 1 } heavy_armor = { x = 1 y = 1 }	motorized = { x = 2 y = 1 }	motorized = { x = 3 y = 1 }	heavy_armor = { x = 4 y = 1 }
+					heavy_armor = { x = 0 y = 2 } heavy_armor = { x = 1 y = 2 }	motorized = { x = 2 y = 2 }	motorized = { x = 3 y = 2 }
+					heavy_armor = { x = 0 y = 3 } heavy_armor = { x = 1 y = 3 }	motorized = { x = 2 y = 3 }	motorized = { x = 3 y = 3 }		
+					heavy_armor = { x = 0 y = 4 } heavy_armor = { x = 1 y = 4 } 
 					}											
 				support = { engineer = { x = 0 y = 0 } light_tank_recon = { x = 0 y = 1 }  logistics_company = { x = 0 y = 2 }
 						field_hospital  = { x = 0 y = 3 } flamethrower_sppt = { x = 1 y = 0 } medium_sp_anti_air_brigade = { x = 1 y = 1 } anti_tank = { x = 1 y = 2 } anti_air = { x = 1 y = 3 } heavy_armor_brigade = { x = 0 y = 4 } }
