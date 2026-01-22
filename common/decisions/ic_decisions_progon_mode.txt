@@ -149,30 +149,6 @@ ic_progon_mode = {
         }
     }
 
-	ic_progon_mode_CHI_JAP_WAR_simulation = {
-
-        icon = GFX_decision_generic_wreckers
-
-        fire_only_once = yes
-
-        visible = {}
-
-        priority = 1
-
-        cost = 0
-
-        complete_effect = {
-            every_state = {
-				    limit = {
-					    OR = {
-						    state = 608
-                        }
-				    }
-                    transfer_state_to = JAP
-			    }
-        }
-    }
-
     ic_progon_mode_ww2_simulation = {
 
         icon = GFX_decision_generic_wreckers
