@@ -1,0 +1,46 @@
+################
+##### FRA ######
+################
+
+FRA_civil_unrest_category = {
+	icon = power_struggle
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } } 
+}
+
+FRA_spanish_intervention_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } } 
+}
+
+FRA_vichy_france = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+VIC_concessions_to_the_germans = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+FRA_intervention_in_overseas_territories = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+FRA_weapons_purchases_category = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+FRA_decolonization = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
