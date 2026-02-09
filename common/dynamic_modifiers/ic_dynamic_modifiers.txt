@@ -156,3 +156,25 @@ ic_ITA_regia_aeronautica = {
 	air_night_penalty = ITA_air_night_penalty
 
 }
+
+FRA_inflex_industry = {
+	enable = { always = yes } 
+
+	icon = GFX_idea_ic_FRA_inflex_industry
+
+	stability_factor = FRA_balance_stab 
+	consumer_goods_expected_value = FRA_balance_cg 
+	production_speed_arms_factory_factor = FRA_balance_mils_const_speed
+	industrial_capacity_factory = FRA_factory_output 
+}
+
+FRA_disjoined_goverment = {
+	enable = { always = yes }
+
+	icon = GFX_idea_FRA_disjoined_goverment
+
+	stability_factor = FRA_goverment_stab 
+	political_power_factor = FRA_pp_gain 
+	fascism_drift = FRA_fascism_gain 
+	communism_drift = FRA_communism_gain 
+}
