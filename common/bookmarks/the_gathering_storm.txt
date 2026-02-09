@@ -11,10 +11,14 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				ic_FRA_army_organization
+				ic_FRA_inflex_industry
+				ic_FRA_avia_production
 			}
 			focuses = {
-				
+				FRA_form_popular_front
+				FRA_print_money
+				FRA_reassure_businesses
 			}
 		}
 		"USA"={
@@ -76,10 +80,13 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				
+				ic_ITA_agrarian_economy1
+				ic_ITA_poor_motorized_army_1
 			}	
 			focuses = {
-				
+				ITA_preferite_il_prodotto_italiano
+				ITA_shift_italian_economy_to_war_production
+				ITA_triumph_in_africa
 			}		
 		}
 		"JAP"={
