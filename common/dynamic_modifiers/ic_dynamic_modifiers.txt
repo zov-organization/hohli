@@ -178,3 +178,8 @@ FRA_disjoined_goverment = {
 	fascism_drift = FRA_fascism_gain 
 	communism_drift = FRA_communism_gain 
 }
+
+no_FRA_mainland_buildings = { # on Province
+	icon = "GFX_modifiers_generic_construction"
+	local_building_slots_factor = -2
+}

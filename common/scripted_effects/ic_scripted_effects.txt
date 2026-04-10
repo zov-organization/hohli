@@ -1,0 +1,100 @@
+fra_cap = {
+    FRA = { 
+        every_owned_state = {
+            limit = { 
+                is_controlled_by = ITA 
+                is_core_of = FRA
+            }
+            set_state_flag = vichy_italian_conquest
+        }
+        create_dynamic_country = {
+            original_tag = FRA
+            save_event_target_as = vichy_france
+            every_state = { #transfer French colonial empire
+                limit = {
+                    is_controlled_by = FRA
+                    is_owned_by = FRA
+                    is_on_continent = africa
+                    NOT = { state = 665 state = 458}
+                }
+                ENG = { transfer_state = PREV }
+            }
+            every_state = {
+                limit = {
+                    OR = {
+                        state = 20
+                        state = 26
+                        state = 22
+                        state = 31
+                        state = 25
+                        state = 33
+                        state = 32
+                        state = 21
+                        state = 735
+                        state = 1
+                        state = 513
+                        state = 460
+                        state = 459
+                        state = 461
+                        state = 462
+                        state = 458
+                        state = 665
+                        state = 851
+                    }
+                    NOT = { has_state_flag = vichy_italian_conquest }
+                }
+                event_target:vichy_france = { transfer_state = PREV }
+            }
+            set_rule = { 
+                can_join_factions = no 
+                can_create_factions = no
+                can_not_declare_war = yes
+            }
+            set_capital = 26 
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+            set_popularities = {
+                democratic = 22
+                fascism = 46
+                neutrality = 30
+                communism = 2
+            }
+            set_cosmetic_tag = FRA_VICHY
+            create_country_leader = {
+                name = "Philippe Pétain"
+                desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+                picture = "Portrait_France_Philippe_Petain.dds"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {
+                    
+                }
+            }
+            load_focus_tree = generic_focus
+            transfer_units_fraction = {
+                target = SWE
+                size = 1
+                stockpile_ratio = 1
+                army_ratio = 1
+                navy_ratio = 1
+                air_ratio = 1
+            }
+            change_tag_from = FRA
+        }
+        every_owned_state = {
+            limit = {
+                OR = {
+                    state = 21
+                    state = 1
+                    state = 735
+                    state = 32
+                }
+                has_state_flag = vichy_italian_conquest
+            }
+            ITA = { transfer_state = PREV }
+        }
+    }
+    ENG = { annex_country = { target = FRA } }
+}

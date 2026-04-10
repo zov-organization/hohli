@@ -451,7 +451,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			recruit_character = ic_FRA_maurice_gamelin
 		}
 	}
 
@@ -467,7 +466,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			recruit_character = ic_FRA_maxime_weygand
 		}
 	}
 

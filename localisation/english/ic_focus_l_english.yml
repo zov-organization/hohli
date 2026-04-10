@@ -690,8 +690,8 @@ FRA_army_modernisation_desc:0 "Our army must undergo a comprehensive modernizati
 FRA_offensive_focus:0 "Offensive Focus"
 FRA_offensive_focus_desc:0 "Victory favors the bold. By adopting an offensive military doctrine, we can regain the initiative and take the fight to our enemies."
 
-FRA_defensive_focus:0 "Defensive Focus"
-FRA_defensive_focus_desc:0 "France's strength lies in its ability to hold ground. We shall perfect our defensive tactics and prepare to repel any invasion."
+FRA_Defensive_focus:0 "Defensive Focus"
+FRA_Defensive_focus_desc:0 "France's strength lies in its ability to hold ground. We shall perfect our defensive tactics and prepare to repel any invasion."
 
 FRA_new_tactic:0 "Develop New Tactics"
 FRA_new_tactic_desc:0 "Drawing on both offensive and defensive doctrines, we can formulate new, adaptive tactics to outmaneuver and outwit our foes."
@@ -705,11 +705,11 @@ FRA_nationalize_avia_industry_desc:0 "By bringing key aviation companies under s
 FRA_start_avia_production:0 "Start Aircraft Production"
 FRA_start_avia_production_desc:0 "With nationalized facilities, we can now launch a full-scale aircraft production program to equip our air force."
 
-FRA_fighter_focus:0 "Fighter Focus"
-FRA_fighter_focus_desc:0 "Securing air superiority is vital to modern combat. We will prioritize fighter production to control the skies."
+FRA_Fighter_focus:0 "Fighter Focus"
+FRA_Fighter_focus_desc:0 "Securing air superiority is vital to modern combat. We will prioritize fighter production to control the skies."
 
-FRA_bomber_focus:0 "Bomber Focus"
-FRA_bomber_focus_desc:0 "Strategic bombing can cripple enemy infrastructure. We will focus our efforts on producing long-range bomber aircraft."
+FRA_Bomber_focus:0 "Bomber Focus"
+FRA_Bomber_focus_desc:0 "Strategic bombing can cripple enemy infrastructure. We will focus our efforts on producing long-range bomber aircraft."
 
 FRA_reorganize_aviation:0 "Reorganize the Air Force"
 FRA_reorganize_aviation_desc:0 "An internal reorganization of the air force will improve efficiency and coordination between air wings."

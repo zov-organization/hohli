@@ -3,6 +3,38 @@ on_actions = {
 	on_startup = {
 
 		effect = {
+
+			FRA = { every_state = { limit = { OR = { 
+			state = 29 
+			state = 785 
+			state = 18 
+			state = 17 
+			state = 28 
+			state = 680 
+			state = 20 
+			state = 32 
+			state = 27 
+			state = 735  
+			state = 21 
+			state = 14 
+			state = 22 
+			state = 23 
+			state = 31 
+			state = 806 
+			state = 19  
+			state = 25 
+			state = 31 
+			state = 23 
+			state = 26 
+			state = 24 
+			state = 30 
+			state = 14 
+			state = 15 
+			state = 16
+			state = 33
+			state = 1
+			state = 851  }  } add_dynamic_modifier = { modifier = no_FRA_mainland_buildings days = 1335 }  } }
+
 			POL = {
 				remove_ideas = POL_looming_peasants_strike
 				remove_mission = POL_looming_peasants_strike_mission

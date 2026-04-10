@@ -156,3 +156,5 @@
 
  FRA_fleet_investments:0 "Fleet Investments"
  FRA_fleet_investments_desc:0 "Massive state investments into naval dockyards and shipbuilding projects will expand our naval capabilities and boost maritime industry."
+
+ no_FRA_mainland_buildings:0 "France Mainland"

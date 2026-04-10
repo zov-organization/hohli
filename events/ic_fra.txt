@@ -1,0 +1,18 @@
+add_namespace = ic_fra_events
+country_event = {
+            id = ic_fra_events.1
+            title = ic_fra_events.1.t
+            desc = ic_fra_events.1.d
+            picture = GFX_report_event_german_parade_paris
+
+        is_triggered_only = yes
+		
+		trigger = { 
+			FRA = { has_capitulated = yes
+			}
+		}
+		option = {
+			name = fra.1.a 
+			fra_cap = yes
+		}
+	}
