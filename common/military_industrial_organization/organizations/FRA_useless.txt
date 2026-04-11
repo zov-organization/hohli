@@ -1,0 +1,100 @@
+FRA_amx_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_bloch_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_bloch
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_amiot_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_amiot
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_levasseur_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_levasseur
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_SNCAC_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_FRA_sncac
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_fcm_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_fcm
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_aeb_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_FRA_aeb
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_acf_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_FRA_acf
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_hotchkiss_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+FRA_apx_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_FRA_atelier_puteaux
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
