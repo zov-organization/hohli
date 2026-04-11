@@ -463,6 +463,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA/ic_FRA_armor_production.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ic_FRA_armor_production_2"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_tank.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_FRA_disjoined_goverment"
 		texturefile = "gfx/interface/ideas/FRA/idea_FRA_disjoined_goverment.dds"
 	}
@@ -493,6 +497,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ic_FRA_fleet_investments"
 		texturefile = "gfx/interface/ideas/FRA/ic_FRA_fleet_investments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_devalue_of_Franc"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_devalue_of_Franc.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_offensive_tactics"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_offensive_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_defensive_tactics"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_defensive_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ic_FRA_defensive_tactics"
+		texturefile = "gfx/interface/ideas/FRA/ic_FRA_defensive_tactics.dds"
 	}
 
 }

@@ -23,7 +23,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.15
 		}
 	}
 
@@ -39,7 +39,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_ideas = {
-				ideas = ic_FRA_devalue_of_franc
+				ic_FRA_devalue_of_Franc
 			}
 		}
 	}
@@ -56,6 +56,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
+
 			add_to_variable = { 
 				FRA_balance_stab = 0.1
 				tooltip = stability_factor_tt
@@ -261,7 +262,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			remove_ideas = ic_FRA_devalue_of_franc
+			remove_ideas = ic_FRA_devalue_of_Franc
 
 			if = {
 				limit = {
@@ -342,9 +343,9 @@ focus_tree = {
 				name = FRA_armor
 				bonus = 2
 				uses = 1
-				technology = advanced_light_tank_chassis
-				technology = improved_medium_tank_chassis
-				technology = improved_heavy_tank_chassis
+				technology = improved_light_tank_chassis
+				technology = basic_medium_tank_chassis
+				technology = basic_heavy_tank_chassis
 			}
 			remove_ideas = ic_FRA_armor_production
 		}
@@ -361,7 +362,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_ideas = ic_FRA_armor_production_2
 		}
 	}
 
@@ -376,7 +377,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = FRA_armor
+				bonus = 2
+				uses = 1
+				technology = improved_heavy_tank_chassis
+			}
 		}
 	}
 
@@ -395,9 +401,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_armor
 				bonus = 2
-				uses = 1
+				uses = 3
 				technology = artillery1
 				technology = antitank2
+				technology = antiair2
 			}
 		}
 	}
@@ -451,6 +458,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_ideas = {
+				ic_FRA_offensive_tactics
+
+			}
 		}
 	}
 
@@ -466,6 +477,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			add_ideas = {
+				ic_FRA_defensive_tactics
+			}
 		}
 	}
 
@@ -549,6 +563,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			remove_ideas = ic_FRA_avia_production
 			24 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -570,10 +585,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ic_FRA_avia_production
-				add_idea = ic_FRA_avia_production_f
-			}
+			add_ideas = ic_FRA_avia_production_f
 		}
 	}
 
@@ -589,10 +601,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ic_FRA_avia_production
-				add_idea = ic_FRA_avia_production_b
-			}
+			add_ideas = ic_FRA_avia_production_b
 		}
 	}
 
@@ -648,7 +657,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			air_experience = 50
+			air_experience = 300
 		}
 	}
 

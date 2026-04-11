@@ -10745,6 +10745,15 @@ leader_traits = {
 		command_power = 0
 	}
 
+	FRA_defensive_trait = { 
+		sprite = 5
+		enemy_army_bonus_air_superiority_factor = -0.05
+		army_defence_factor = 0.15
+		experience_gain_army = @experience_gain_medium
+
+		command_power = 0
+	}
+
 	The_old_sailor = {
 		sprite = 3
 		experience_gain_navy = @experience_gain_medium

@@ -78,6 +78,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
+				has_completed_focus = FRA_offensive_focus
 			}
 			cost = 150.000
 			traits = {
@@ -117,11 +118,11 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				
+				has_completed_focus = FRA_Defensive_focus
 			}
 			cost = 150.000
 			traits = {
-				army_chief_defensive_2
+				FRA_defensive_trait
 			}
 			cost = 150
 			ai_will_do = {
@@ -299,63 +300,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=0
-		}
-	}
-
-	ic_FRA_gastonhenri_billotte={
-		name=FRA_gastonhenri_billotte
-		portraits={
-			army={
-				large=GFX_portrait_FRA_gastonhenri_billotte
-				small=GFX_portrait_FRA_gastonhenri_billotte_small
-			}
-		}
-		corps_commander={
-			traits={ old_guard trait_cautious infantry_officer infantry_leader hill_fighter infantry_expert }
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=0
-		}
-	}
-
-	ic_FRA_henry_freydenberg={
-		name=FRA_henry_freydenberg
-		portraits={
-			army={
-				large=GFX_portrait_FRA_henry_freydenberg
-				small=GFX_portrait_FRA_henry_freydenberg_small
-			}
-		}
-		corps_commander={
-			traits={ old_guard infantry_officer infantry_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
-
-	ic_FRA_rene_olry={
-		name=FRA_rene_olry
-		portraits={
-			army={
-				large=GFX_portrait_FRA_rene_olry
-				small=GFX_portrait_FRA_rene_olry_small
-			}
-		}
-		corps_commander={
-			traits={ old_guard infantry_officer trait_mountaineer infantry_leader ambusher}
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
 			legacy_id=0
 		}
 	}
@@ -841,7 +785,7 @@ characters={
 		name=FRA_zivony_peshkov
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
+				small="GFX_idea_zinovy_peshkov"
 			}
 		}
 		advisor={
@@ -867,7 +811,7 @@ characters={
 		name=FRA_felix_gouin
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_4"
+				small="GFX_idea_felix_guin"
 			}
 		}
 		advisor={

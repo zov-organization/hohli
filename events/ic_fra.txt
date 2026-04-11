@@ -12,7 +12,7 @@ country_event = {
 			}
 		}
 		option = {
-			name = fra.1.a 
+			name = ic_fra_events.1.a
 			fra_cap = yes
 		}
 	}

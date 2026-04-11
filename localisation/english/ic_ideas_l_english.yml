@@ -133,8 +133,8 @@
  FRA_carriers:0 "Carrier Program"
  FRA_carriers_desc:0 "Our investment in aircraft carriers marks a shift towards modern naval doctrine, prioritizing air power and mobility over traditional firepower."
 
- FRA_devalue_of_franc:0 "Devaluation of the Franc"
- FRA_devalue_of_franc_desc:0 "The franc has been devalued to boost exports and stimulate production. While it may help in the short term, it could also provoke domestic unrest."
+ FRA_devalue_of_Franc:0 "Devaluation of the Franc"
+ FRA_devalue_of_Franc_desc:0 "The franc has been devalued to boost exports and stimulate production. While it may help in the short term, it could also provoke domestic unrest."
 
  FRA_army_organization:0 "Disorganized Army"
  FRA_army_organization_desc:0 "Our army suffers from outdated doctrine, bureaucratic paralysis, and lack of cohesion. Reorganization is urgently required to avoid disaster."
@@ -158,3 +158,13 @@
  FRA_fleet_investments_desc:0 "Massive state investments into naval dockyards and shipbuilding projects will expand our naval capabilities and boost maritime industry."
 
  no_FRA_mainland_buildings:0 "France Mainland"
+
+ ic_FRA_defensive_tactics:0 "Defensive tactics WW1"
+
+ ic_FRA_offensive_tactics:0 "Offensive tactics WW2"
+
+ FRA_armor_production_2:0 "Armor Production Plan in progress"
+
+ FRA_avia_production_f:0 "Focus to Fighter"
+
+ FRA_avia_production_b:0 "Focus to Bomber"

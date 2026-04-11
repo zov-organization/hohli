@@ -10,7 +10,7 @@ navy_experience = 0
 set_convoys = 400
 
 set_stability = 0.6
-set_war_support = 0.1
+set_war_support = 0.12
 
 
 recruit_character = ic_FRA_philippe_petain		#political leaders
@@ -20,9 +20,6 @@ recruit_character = ic_FRA_pierre_laval
 
 recruit_character = ic_FRA_jean_de_lattre_de_tassigny	#Generals
 recruit_character = ic_FRA_alphonse_juin
-recruit_character = ic_FRA_gastonhenri_billotte
-recruit_character = ic_FRA_henry_freydenberg
-recruit_character = ic_FRA_rene_olry
 
 
 
@@ -36,7 +33,6 @@ recruit_character = ic_FRA_jean_marie_bergeret
 recruit_character = ic_FRA_philippe_leclerc 	#High Command
 recruit_character = ic_FRA_charles_huntziger
 recruit_character = ic_FRA_jean_de_laborde
-recruit_character = ic_FRA_philippe_fequant
 recruit_character = ic_FRA_martial_valin
 recruit_character = ic_FRA_rene_emile_godfroy
 recruit_character = ic_FRA_jean_francois_jannekeyn
@@ -87,8 +83,41 @@ set_popularities = {
 	communism = 20
 }
 
+create_corps_commander = {
+	name = "Rene Orly"
+	picture = "portrait_fra_Rene_Olry.dds"
+	traits={ old_guard infantry_officer trait_mountaineer infantry_leader ambusher}
+	skill=3
+	attack_skill=2
+	defense_skill=4
+	planning_skill=2
+	logistics_skill=2
+}
+
+create_corps_commander = {
+	name = "Henry Freydenberg"
+	picture = "portrait_fra_Henry_Freydenberg.dds"
+	traits={ old_guard infantry_officer infantry_leader }
+	skill=2
+	attack_skill=1
+	defense_skill=2
+	planning_skill=2
+	logistics_skill=2
+}
+
+create_corps_commander = {
+	name = "Gastonhenri Billotte"
+	picture = "portrait_fra_Gastonhenri_Billotte.dds"
+	traits={ old_guard trait_cautious infantry_officer infantry_leader hill_fighter infantry_expert }
+	skill=2
+	attack_skill=3
+	defense_skill=3
+	planning_skill=2
+	logistics_skill=3
+}
+
 # inflex industry
-set_variable = { FRA_balance_stab = -0.4 }
+set_variable = { FRA_balance_stab = -0.3 }
 set_variable = { FRA_balance_cg = 0.3 }
 set_variable = { FRA_balance_mils_const_speed = -0.1 }
 set_variable = { FRA_factory_output = -0.6 }
@@ -96,7 +125,7 @@ add_dynamic_modifier = { modifier = FRA_inflex_industry }
 
 # disjoined goverment
 set_variable = { FRA_goverment_stab = -0.1 }
-set_variable = { FRA_pp_gain = -0.5 }
+set_variable = { FRA_pp_gain = -0.3 }
 set_variable = { FRA_fascism_gain = 0.02 }
 set_variable = { FRA_communism_gain = 0.02 }
 add_dynamic_modifier = { modifier = FRA_disjoined_goverment }
@@ -123,7 +152,6 @@ set_technology = {
 
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
-	basic_heavy_tank_chassis = 1
     improved_light_tank = 1
 
 	gw_artillery = 1
@@ -192,13 +220,13 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 	type = train_equipment_1
-	amount = 50
+	amount = 500
 	producer = FRA
 }
 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 500
+	amount = 3000
 	producer = FRA
 }
 
