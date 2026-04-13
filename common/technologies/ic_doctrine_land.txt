@@ -77,6 +77,11 @@ technologies = {
 			leads_to_tech = infantry_attack_2_2 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
+		}
 	}
 	infantry_attack_2_1 = {
 		
@@ -100,6 +105,11 @@ technologies = {
 			leads_to_tech = infantry_attack_3
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
+		}
 	}
 	infantry_attack_2_2 = {
 		
@@ -122,6 +132,11 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_attack_3
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
 		}
 	}
 	infantry_attack_3 = {
@@ -150,6 +165,11 @@ technologies = {
 			leads_to_tech = infantry_attack_4_2 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
+		}
 	}
 	infantry_attack_4_1 = {
 		
@@ -172,6 +192,11 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_attack_5 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
 		}
 	}
 	infantry_attack_4_2 = {
@@ -196,6 +221,11 @@ technologies = {
 			leads_to_tech = infantry_attack_5 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
+		}
 	}
 	infantry_attack_5 = {
 		
@@ -215,6 +245,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_attack
 		}
 	}
 
@@ -239,6 +274,11 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_defence_2 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
 		}
 	}
 	infantry_defence_2 = {
@@ -268,6 +308,11 @@ technologies = {
 			leads_to_tech = infantry_defence_3_2 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
+		}
 	}
 	infantry_defence_3_1 = {
 		
@@ -291,6 +336,11 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_defence_4 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
 		}
 	}
 	infantry_defence_3_2 = {
@@ -319,6 +369,11 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_defence_4 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
 		}
 	}
 	infantry_defence_4 = {
@@ -349,6 +404,11 @@ technologies = {
 			leads_to_tech = infantry_defence_5_2
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
+		}
 	}
 	infantry_defence_5_1 = {
 		
@@ -367,6 +427,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = 2 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
 		}
 	}
 	infantry_defence_5_2 = {
@@ -395,6 +460,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = 4 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_inf_defence
 		}
 	}
 
@@ -429,6 +499,10 @@ technologies = {
 			leads_to_tech = tank_defence_1 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+		}
 	}
 
 	tank_attack_1 = {
@@ -453,6 +527,11 @@ technologies = {
 		path = {
 			leads_to_tech = tank_attack_2 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_attack
 		}
 	}
 	tank_attack_2 = {
@@ -482,6 +561,11 @@ technologies = {
 			leads_to_tech = tank_attack_3 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_attack
+		}
 	}
 	tank_attack_3 = {
 		
@@ -506,6 +590,11 @@ technologies = {
 		path = {
 			leads_to_tech = tank_attack_4 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_attack
 		}
 	}
 	tank_attack_4 = {
@@ -535,6 +624,11 @@ technologies = {
 			leads_to_tech = tank_attack_5 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_attack
+		}
 	}
 	tank_attack_5 = {
 		
@@ -557,6 +651,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_attack
 		}
 	}
 
@@ -581,6 +680,11 @@ technologies = {
 		path = {
 			leads_to_tech = tank_defence_2 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_defence
 		}
 	}
 	tank_defence_2 = {
@@ -607,6 +711,11 @@ technologies = {
 			leads_to_tech = tank_defence_3 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_defence
+		}
 	}
 	tank_defence_3 = {
 		
@@ -632,6 +741,11 @@ technologies = {
 			leads_to_tech = tank_defence_4 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_defence
+		}
 	}
 	tank_defence_4 = {
 		
@@ -656,6 +770,11 @@ technologies = {
 		path = {
 			leads_to_tech = tank_defence_5 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_defence
 		}
 	}
 	tank_defence_5 = {
@@ -749,6 +868,11 @@ technologies = {
 			name = ic_old_land_doctrine_folder
 			position = { x = 3 y = @doctrine_lvl_5 }
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_tank_defence
+		}
 	}
 
 	
@@ -778,6 +902,10 @@ technologies = {
 			leads_to_tech = operation_deep_planning_1
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+		}
 	}
 
 	operation_swift_maneuvres_1 = {
@@ -798,6 +926,11 @@ technologies = {
 			leads_to_tech = operation_swift_maneuvres_2 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_swift_maneuvres
+		}
 	}
 	operation_swift_maneuvres_2 = {
 		
@@ -816,6 +949,11 @@ technologies = {
 		path = {
 			leads_to_tech = operation_swift_maneuvres_3 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_swift_maneuvres
 		}
 	}
 	operation_swift_maneuvres_3 = {
@@ -836,6 +974,11 @@ technologies = {
 			leads_to_tech = operation_swift_maneuvres_4 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_swift_maneuvres
+		}
 	}
 	operation_swift_maneuvres_4 = {
 		
@@ -855,6 +998,11 @@ technologies = {
 			leads_to_tech = operation_swift_maneuvres_5 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_swift_maneuvres
+		}
 	}
 	operation_swift_maneuvres_5 = {
 		
@@ -868,6 +1016,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = -3 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_swift_maneuvres
 		}
 	}
 
@@ -889,6 +1042,11 @@ technologies = {
 			leads_to_tech = operation_deep_planning_2 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_deep_planning
+		}
 	}
 	operation_deep_planning_2 = {
 		
@@ -907,6 +1065,11 @@ technologies = {
 		path = {
 			leads_to_tech = operation_deep_planning_3 
 			research_cost_coeff = 1
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_deep_planning
 		}
 	}
 	operation_deep_planning_3 = {
@@ -927,6 +1090,11 @@ technologies = {
 			leads_to_tech = operation_deep_planning_4 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_deep_planning
+		}
 	}
 	operation_deep_planning_4 = {
 		
@@ -946,6 +1114,11 @@ technologies = {
 			leads_to_tech = operation_deep_planning_5 
 			research_cost_coeff = 1
 		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_deep_planning
+		}
 	}
 	operation_deep_planning_5 = {
 		
@@ -959,6 +1132,11 @@ technologies = {
 		folder = {
 			name = ic_old_land_doctrine_folder
 			position = { x = 3 y = @doctrine_lvl_5 }
+		}
+		
+		categories = {
+			cat_old_land_doctrine
+			cat_operation_deep_planning
 		}
 	}
 

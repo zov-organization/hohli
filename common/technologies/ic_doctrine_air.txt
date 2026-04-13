@@ -6,7 +6,7 @@
 ### This is supposed to take the 'best' of each tree and combine it into one. 
 ### Currently, there's Dogfighting (Fighter core), a single tech for naval missions (there's not much to do with that the way air doctrine is set up), a tech tree for CAS, and a tech tree for strat destruction. You can get it all. 
 
-@doctrine_xp_cost = 100
+@doctrine_xp_cost = 75
 
 technologies = { 
 
