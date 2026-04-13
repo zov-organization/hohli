@@ -1,20 +1,20 @@
 
 state={
-	id=267
-	name="STATE_267" # Kabul
-	manpower = 4637140
-	
-	state_category = town
-	
-	resources={
-		tungsten=3 # was: 3
-	}
-	history={
-	}
+id=267
+name="STATE_267" # Kabul
+manpower = 4637140
 
-	provinces={
-		10781          
-	}
+state_category = town
 
-	local_supplies=0.0 
+resources={
+tungsten=3 # was: 3
+}
+history={
+}
+
+provinces={
+10781
+}
+
+local_supplies=0.0
 }

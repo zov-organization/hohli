@@ -1,21 +1,21 @@
 
 state = {
-	id = 940
-	name = "STATE_940"
-	manpower = 463559
-	
-	state_category = pastoral
-	
-	resources = {
-		aluminium = 6 # was: 4
-	}
+id = 940
+name = "STATE_940"
+manpower = 463559
 
-	history = {
-	}
+state_category = pastoral
 
-	provinces = {
-		13278 13279 13280
-	}
+resources = {
+aluminium = 6 # was: 4
+}
 
-	local_supplies = 0.0 
+history = {
+}
+
+provinces = {
+13278 13279 13280
+}
+
+local_supplies = 0.0
 }

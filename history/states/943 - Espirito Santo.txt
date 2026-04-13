@@ -1,21 +1,21 @@
 
 state = {
-	id = 943
-	name = "STATE_943"
-	manpower = 4603600
-	
-	state_category = town
-	
-	resources = {
-		steel = 1
-	}
+id = 943
+name = "STATE_943"
+manpower = 4603600
 
-	history = {
-	}
+state_category = town
 
-	provinces = {
-		2153 8196 10999
-	}
+resources = {
+steel = 1
+}
 
-	local_supplies = 0.0 
+history = {
+}
+
+provinces = {
+2153 8196 10999
+}
+
+local_supplies = 0.0
 }

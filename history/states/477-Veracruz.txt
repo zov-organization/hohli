@@ -1,23 +1,23 @@
 
 state={
-	id=477
-	name="STATE_477"
-	manpower = 1951460
-	
-	state_category = town
-	
-	resources={
-		oil=9
-	}
+id=477
+name="STATE_477"
+manpower = 1951460
 
-	history={
-		
-	}
+state_category = town
 
-	provinces={
-		8079 8089 10732 12810 
-	}
-	
+resources={
+oil=9
+}
 
-	local_supplies=0.0 
+history={
+
+}
+
+provinces={
+8079 8089 10732 12810
+}
+
+
+local_supplies=0.0
 }

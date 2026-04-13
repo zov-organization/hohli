@@ -1,23 +1,23 @@
 
 state={
-	id=476
-	name="STATE_476"
-	manpower = 1663331
-	
-	state_category = rural
+id=476
+name="STATE_476"
+manpower = 1663331
 
-	resources={
-		oil=8
-	}
-	
-	history={
-		
-	}
+state_category = rural
 
-	provinces={
-		2021 8236 10773 10889 12712 
-	}
-	
+resources={
+oil=8
+}
 
-	local_supplies=8.0 
+history={
+
+}
+
+provinces={
+2021 8236 10773 10889 12712
+}
+
+
+local_supplies=8.0
 }
