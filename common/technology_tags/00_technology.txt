@@ -144,6 +144,7 @@ technology_categories = {
 	sonar_tech
 	ship_airplane_launcher
 	ship_battery
+
 	cat_old_land_doctrine
 	cat_inf_attack
 	cat_inf_defence

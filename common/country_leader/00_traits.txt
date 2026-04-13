@@ -7121,13 +7121,13 @@ leader_traits = {
 
 	military_theorist = {
 		sprite = 14
-		land_doctrine_cost_factor = -0.1
+		cat_old_land_doctrine_cost_factor = -0.1
 		experience_gain_army = @experience_gain_high
 	}
 
 	mobile_warfare_expert = {
 		sprite = 14
-		cat_mobile_warfare_cost_factor = -0.15
+		cat_tank_attack_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
 	blitzkrieg_theorist = {
@@ -7141,7 +7141,7 @@ leader_traits = {
 				hard_attack = 0.02
 			}
 		}
-		cat_mobile_warfare_cost_factor = -0.15
+		cat_tank_attack_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
 
@@ -7155,24 +7155,23 @@ leader_traits = {
 				hard_attack = 0.05
 			}
 		}
-		cat_superior_firepower_cost_factor = -0.15
+		cat_inf_defence_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
+	mass_assault_expert = {
+		sprite = 14
 
+		army_org_factor = 0.025
+		army_org_regain = 0.05
+		cat_inf_attack_cost_factor = -0.15
+		experience_gain_army = @experience_gain_medium
+	}
 	grand_battle_plan_expert = {
 		sprite = 14
 
 		army_defence_factor = 0.05
-		cat_grand_battle_plan_cost_factor = -0.15
-		experience_gain_army = @experience_gain_medium
-	}
-
-	mass_assault_expert = {
-		sprite = 14
-
-		army_org_factor = 0.05
-		army_org_regain = 0.05
-		cat_mass_assault_cost_factor = -0.15
+		cat_operation_swift_maneuvres_cost_factor = -0.15
+		cat_operation_deep_planning_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
 	}
 
@@ -10717,6 +10716,7 @@ leader_traits = {
 		supply_node_range = 0.1
 		supply_consumption_factor = -0.05
 		production_speed_rail_way_factor = 0.25
+		production_speed_supply_node_factor = 0.15
 		fuel_gain_factor = 0.05
 	}
 
