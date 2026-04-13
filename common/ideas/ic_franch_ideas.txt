@@ -16,6 +16,7 @@ ideas = {
                	#political_power_gain = -0.80
                	#fascism_drift = 0.02
 				#communism_drift = 0.02
+
 			}
         }
 
@@ -88,6 +89,7 @@ ideas = {
 				max_planning = 0.1
 				planning_speed = -0.5
 				army_org_factor = -0.1
+				surrender_limit = -0.5
 
 				breakthrough_factor = -0.1
 				
