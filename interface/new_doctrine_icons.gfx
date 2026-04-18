@@ -1,0 +1,321 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_gdu_trade_mark"
+		textureFile = "gfx//interface//gdu trade mark.dds"
+	}
+
+    # ic_old_land_doctrine_folder
+	spriteType = {
+		name = "GFX_technology_ic_old_land_doctrine_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_ic_old_land_doctrine_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_ic_old_land_doctrine_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_ic_old_land_doctrine_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}	
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_ic_old_land_doctrine_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+    # ic_old_air_doctrine_folder
+    spriteType = {
+		name = "GFX_technology_ic_old_air_doctrine_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_ic_old_air_doctrine_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_ic_old_air_doctrine_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_technology_ic_old_air_doctrine_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_ic_old_air_doctrine_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+
+    
+    # new doctrine icons
+
+    # inf doctrine icons
+    spriteType = {
+        name = "GFX_infantry_start_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/assault_breakthrough.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/grand_assault.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_2_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/EstablishKillsZones.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_2_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/dispersed_support.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_3_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/operational_concentration.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_4_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/UnityTroughEffortpsd.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_4_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/Huge Barrages.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_attack_5_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/PreAssaultBarrage.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/elastic_defence.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/firebrigades.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_3_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/MaintainFlexibility.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_3_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/trench_warfare.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_4_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/defence_in_depth.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_5_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/Concentrated StrongPoints.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_infantry_defence_5_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/intergrated_support.dds"
+        alwaystransparent = yes
+    }
+
+
+    # tank doctrine icons
+    spriteType = {
+        name = "GFX_tank_start_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/mechanized_wave.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_attack_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/combined_arms.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_attack_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/continuous_offensive.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_attack_3_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/armored_spearhead.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_attack_4_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/mass_motorization.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_attack_5_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/modern_blitzkrieg.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_defence_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/EmphasisOnFirepower.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_defence_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/tank ambushes.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_defence_3_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/pocket_defence.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_defence_4_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/backhand_blow.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_tank_defence_5_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/Counter-Penetration.dds"
+        alwaystransparent = yes
+    }
+
+
+    # operation doctrine icons
+    spriteType = {
+        name = "GFX_operation_start_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/UnityOfCommand.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_swift_maneuvres_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/OperationalMobility.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_swift_maneuvres_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/ForwardControl.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_swift_maneuvres_3_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/Encirclement Priority.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_swift_maneuvres_4_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/SuperiorCalculations.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_swift_maneuvres_5_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/shock_and_awe.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_deep_planning_1_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/central_planning.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_deep_planning_2_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/SupplyEffectiveness.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_deep_planning_3_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/SetPieceBattles.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_deep_planning_4_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/FrontLevelCoordination.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "GFX_operation_deep_planning_5_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/operational_concentration.dds"
+        alwaystransparent = yes
+    }
+
+
+
+    # air doctrine icons
+	SpriteType = {
+		name = "GFX_flying_fortress_medium"
+		texturefile = "gfx/interface/technologies/flying_fortress.dds"
+	}
+	SpriteType = {
+		name = "GFX_night_bombing_medium"
+		texturefile = "gfx/interface/technologies/night_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_offense_medium"
+		texturefile = "gfx/interface/technologies/air_offense.dds"
+	}
+	SpriteType = {
+		name = "GFX_mass_destruction_medium"
+		texturefile = "gfx/interface/technologies/mass_destruction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_forward_interception_medium"
+		texturefile = "gfx/interface/technologies/forward_interception.dds"
+	}
+	SpriteType = {
+		name = "GFX_naval_strike_tactics_medium"
+		texturefile = "gfx/interface/technologies/naval_strike_tactics.dds"
+	}
+    
+	SpriteType = {
+		name = "GFX_dive_bombing_medium"
+		texturefile = "gfx/interface/technologies/dive_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_direct_ground_support_medium"
+		texturefile = "gfx/interface/technologies/direct_ground_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_hunt_and_destroy_medium"
+		texturefile = "gfx/interface/technologies/hunt_and_destroy.dds"
+	}
+	SpriteType = {
+		name = "GFX_combat_unit_destruction_medium"
+		texturefile = "gfx/interface/technologies/combat_unit_destruction.dds"
+	}
+	SpriteType = {
+		name = "GFX_ground_support_integration_medium"
+		texturefile = "gfx/interface/technologies/ground_support_integration.dds"
+	}
+
+}

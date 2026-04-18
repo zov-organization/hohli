@@ -753,6 +753,7 @@ ITA_army_reforms_category = {
             set_variable = {ITA_pocket_penalty = 0}
             set_variable = {ITA_planning_speed = -0.12 }
             set_variable = {ITA_army_speed_factor = -0.14}
+			set_country_flag = ITA_reform_4_flag
         }
 	}
 }

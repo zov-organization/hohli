@@ -266,7 +266,7 @@ country_event = {
 		set_country_flag = become_vichy
 		save_global_event_target_as = vichy_france
 		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
+		GER = { country_event = ic_fra_events.1 }
 		custom_effect_tooltip = france.10.a_tt
 		# Switches to Vichy if GER accepts
 		set_country_flag = GER_dont_seize_gold_reserves_flag #Can't allow Germany to seize out gold reserves just yet
@@ -278,7 +278,7 @@ country_event = {
 		}
 		set_global_flag = fall_of_france
 		save_global_event_target_as = free_france
-		GER = { country_event = france.14 }
+		GER = { country_event = ic_fra_events.1 }
 		custom_effect_tooltip = france.10.b_tt
 		set_country_flag = GER_dont_seize_gold_reserves_flag #Can't allow Germany to seize out gold reserves just yet
 	}
@@ -401,13 +401,13 @@ country_event = {
 		set_global_flag = fall_of_france
 		save_global_event_target_as = vichy_france
 
-		GER = { country_event = france.14 }
+		GER = { country_event = ic_fra_events.1 }
 		custom_effect_tooltip = france.10.a_tt
 		# Switches to Vichy if GER accepts
 	}
 	option = { # Become Free France
 		name = france.13.b
-		GER = { country_event = france.14 }
+		GER = { country_event = ic_fra_events.1 }
 		save_global_event_target_as = free_france
 		custom_effect_tooltip = france.10.b_tt
 		set_global_flag = fall_of_france

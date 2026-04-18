@@ -23,6 +23,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_anti_air
+			category_artillery
 		}		
 		
 		combat_width = 1
@@ -83,6 +84,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			category_anti_air
 		}		
 		
 		combat_width = 1

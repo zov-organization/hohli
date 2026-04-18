@@ -2,7 +2,7 @@
 
  # ic_faq_events
  ic_faq_events.1.t:0 "FAQ for SOV"
- ic_faq_events.1.d:0 "Here is a guide to be"
+ ic_faq_events.1.d:0 "Hello, comrade! Now I will briefly describe how to build the greatest country in history! Read carefully\n\n CONSTRUCTION\n You must build 300+ civillian factories and 500+ military factories. To do this, you must use decision "Optimal starting building line". However, this will not work for a long time, and you must start building factories in Ukraine later (Use decision "Show states affected by Ukrain PromKomplect"). At least half of your factories will be located there.\n Then you should start building military factories in the Urals, Central Asia, and Transbaikalia (Use decision "Show states affected by Russian Storehouse").\n\n POLITICS\n Take these politicians in the order I'm about to write: Voznesensky, Khrushchyov, Kalinin, Stalingrad Tractor Factory, Isseron, Voroshilov, Vasilevsky, Konev, Krasovsky, Kuznetsov, Extensive Conscription.\n\n FOCUS\n I will not detail which Focuses to take in order of priority, but I will tell you the essence of choosing the focus. As I said in the "Construction" section, we first build factories in Russia and then in Ukraine, but you are building them not because I ordered you to, but so that you strive for the focus "Ukrain PromCompleks". It gives you the corresponding bonuses for the speed of building factories and infrastructure, but you don't have to go there right away. It's also worth taking the focus "Ensure the loyalty of those who left" to get Voznesensky, as he plays a crucial role in your construction. Then, of course, you should take "Socialist Science" and grab a couple of research bonuses for tanks and aircraft. Additionally, take Agitrop to quickly obtain the Millitary Economy. Once you've done all of the above, aim for the focus "Making Use of the Storehouse of Russia." I would also like to add that you should definitely complete the focus related to "Russian MASS PRODUCTION" in parallel, as it provides very pleasant bonuses.\n\n NOTES AND ADDITIONS\n 1. Use all available decisions to build the USSR, which are located in the "PROGON MODE" section. This will help you not miss out on the bonuses that will be available in the real game.\n 2.You basically have to do the placement and planning of your defense yourself, based on your individual country building, but I have already made some good placements in the decisions "First and Second Echelon" and "Third Echelon". (Basically, you only have enough equipment for the first and second echelons of defense, but if your country building is different, you can also place infantry divisions in the third echelon "
  ic_faq_events.1.a:0 "mkay"
  
  ic_faq_events.2.t:0 "FAQ for GER"
@@ -85,3 +85,8 @@
  ic_eng_events.1.t:0 "Neville Chamberlain becomes new Prime Minister"
  ic_eng_events.1.d:0 "Awesome"
  ic_eng_events.1.a:0 "Lovely innit fucking faggot"
+
+ #ic_fra_events
+ ic_fra_events.1.t:0 "Triumph in France"
+ ic_fra_events.1.d:0 "Our victory in France is nearly complete. The French government has asked for an armistice, and our diplomats have prepared terms which they have agreed to. They will retain control of southern France, while we are free to occupy the rest."
+ ic_fra_events.1.a:0 "Establish Vichy France."

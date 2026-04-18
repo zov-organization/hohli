@@ -1,0 +1,261 @@
+﻿capital = 64
+load_focus_tree = french_focus
+oob = "ic_FRA_1936_army"
+set_naval_oob = "ic_FRA_1936_fleet"
+
+
+set_research_slots = 3
+navy_experience = 0
+
+set_convoys = 400
+
+set_stability = 0.6
+set_war_support = 0.12
+
+
+recruit_character = ic_FRA_philippe_petain		#political leaders
+recruit_character = ic_FRA_pierre_laval	
+
+
+
+recruit_character = ic_FRA_jean_de_lattre_de_tassigny	#Generals
+recruit_character = ic_FRA_alphonse_juin
+
+
+
+recruit_character = ic_FRA_charles_de_gaulle 	#Theorists
+recruit_character = ic_FRA_henri_giraud
+recruit_character = ic_FRA_jean_decoux
+recruit_character = ic_FRA_jean_marie_bergeret
+
+
+
+recruit_character = ic_FRA_philippe_leclerc 	#High Command
+recruit_character = ic_FRA_charles_huntziger
+recruit_character = ic_FRA_jean_de_laborde
+recruit_character = ic_FRA_martial_valin
+recruit_character = ic_FRA_rene_emile_godfroy
+recruit_character = ic_FRA_jean_francois_jannekeyn
+recruit_character = ic_FRA_alfred_heurtaux
+
+
+
+recruit_character = ic_FRA_francois_darlan		#Chief of Navy
+recruit_character = ic_FRA_marcel_gensoul
+recruit_character = ic_FRA_jean_marie_abrial
+
+
+
+recruit_character = ic_FRA_maurice_gamelin 		#Chief of Army
+recruit_character = ic_FRA_maxime_weygand
+
+
+
+recruit_character = ic_FRA_jeanmarie_charles_abrial		#Admirals
+recruit_character = ic_FRA_jeanpierre_esteva
+
+
+
+recruit_character = ic_FRA_paul_reynaud		#Political advisors
+recruit_character = ic_FRA_pierre_pucheu
+recruit_character = ic_FRA_vincent_auriol
+recruit_character = ic_FRA_charles_maurras
+recruit_character = ic_FRA_zivony_peshkov
+recruit_character = ic_FRA_leon_blum
+recruit_character = ic_FRA_felix_gouin
+
+
+recruit_character = ic_FRA_joseph_bethenod		#Scientist
+recruit_character = ic_FRA_louis_renault
+recruit_character = ic_FRA_francois_hussenot
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 64
+	fascism = 1
+	neutrality = 15
+	communism = 20
+}
+
+create_corps_commander = {
+	name = "Rene Orly"
+	picture = "portrait_fra_Rene_Olry.dds"
+	traits={ old_guard infantry_officer trait_mountaineer infantry_leader ambusher}
+	skill=3
+	attack_skill=2
+	defense_skill=4
+	planning_skill=2
+	logistics_skill=2
+}
+
+create_corps_commander = {
+	name = "Henry Freydenberg"
+	picture = "portrait_fra_Henry_Freydenberg.dds"
+	traits={ old_guard infantry_officer infantry_leader }
+	skill=2
+	attack_skill=1
+	defense_skill=2
+	planning_skill=2
+	logistics_skill=2
+}
+
+create_corps_commander = {
+	name = "Gastonhenri Billotte"
+	picture = "portrait_fra_Gastonhenri_Billotte.dds"
+	traits={ old_guard trait_cautious infantry_officer infantry_leader hill_fighter infantry_expert }
+	skill=2
+	attack_skill=3
+	defense_skill=3
+	planning_skill=2
+	logistics_skill=3
+}
+
+# inflex industry
+set_variable = { FRA_balance_stab = -0.3 }
+set_variable = { FRA_balance_cg = 0.3 }
+set_variable = { FRA_balance_mils_const_speed = -0.1 }
+set_variable = { FRA_factory_output = -0.6 }
+add_dynamic_modifier = { modifier = FRA_inflex_industry }
+
+# disjoined goverment
+set_variable = { FRA_goverment_stab = -0.1 }
+set_variable = { FRA_pp_gain = -0.3 }
+set_variable = { FRA_fascism_gain = 0.02 }
+set_variable = { FRA_communism_gain = 0.02 }
+add_dynamic_modifier = { modifier = FRA_disjoined_goverment }
+
+
+add_ideas = {
+	ic_FRA_avia_production
+	ic_FRA_armor_production
+	ic_FRA_army_organization
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	armored_car1 = 1
+
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	basic_train = 1
+
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+    improved_light_tank = 1
+
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	aircraft_construction = 1
+	aa_lmg = 1
+
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_submarine = 1
+}
+### VARIANTS ###
+# 1936 Start #
+
+create_equipment_variant = {
+	name = "M.S.406"
+	type = small_plane_airframe_1
+	design_team = mio:
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_2_1x
+	}
+}
+create_equipment_variant = {
+	name = "Br. 693"
+	type = small_plane_cas_airframe_1
+	design_team = mio:
+	modules = {
+		fixed_main_weapon_slot = heavy_bomb_locks
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = dive_brakes_small
+	}
+}
+
+
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 35000
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 15000
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 500
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 3000
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 750
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 200
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_2
+	amount = 2000
+	producer = FRA
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_airframe_1
+	amount = 500
+	producer = FRA
+}

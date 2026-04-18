@@ -48,4 +48,21 @@ technologies = {
 	amphibious_tank_2 = { }
 	basic_naval_mines = { }
 	submarine_mine_laying = { }
+
+	tech_for_hiding_buildings = {
+		
+		start_year = 1953
+		research_cost = 5
+	
+		enable_building = {
+			building = energy_infrastructure
+			level = 1
+		}
+		enable_building = {
+			building = industrial_infrastructure
+			level = 1
+		}
+
+	}
+
 }
