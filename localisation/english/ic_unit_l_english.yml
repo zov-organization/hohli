@@ -1,6 +1,9 @@
 ﻿l_english:
  heavy_armor_brigade:0 "Heavy Tank Support"
+ category_mechanized_inf:0 "Mechanized Infantry Battalions"
  category_support_tanks:0 "Support Tank Brigades"
+ category_support_infantry:0 "Non-armoured Support Battalions"
+
  flamethrower_sppt:0 "Flamethrower Support"
  flamethrower_sppt_desc:0 "Flamethrowers can be of great help in close Combat. It can be very costly to clear Houses and Fortifications with regular Infantry Units. The Flamethrower will greatly aid in such tasks and close range combat against soft Units in general."
  jaegers:0 "Jaeger I"

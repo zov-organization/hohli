@@ -1,0 +1,57 @@
+spriteTypes = {	
+	# FRA TANK RESEARCH
+	SpriteType = {
+		name = "GFX_FRA_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_superheavy_tank.dds"
+	}
+}

@@ -1,4 +1,9 @@
 guiTypes = {
+	positionType = {
+		name = "special_project_tech_icon_offset"
+		position = { x = -10 y = -10 }
+	}
+
 	containerWindowType = {
 		name = "subunit_icon_entry"
 		position = { x=0 y=0 }
@@ -3882,7 +3887,6 @@ guiTypes = {
 				frame = 1
 				clicksound = ui_research_tab_infantry
 			}
-
 			iconType = {
 				name = "highlight_infantry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
@@ -4079,7 +4083,7 @@ guiTypes = {
 			vertical_alignment = center
 		}
 
-		buttonType = {
+		buttonType = {#
 			name = "unlock_with_xp"
 			quadTextureSprite = "GFX_button_261x34"
 			buttonFont = "hoi_20b"
@@ -4188,7 +4192,7 @@ guiTypes = {
 			vertical_alignment = center
 		}
 
-		buttonType = {
+		buttonType = {#
 			name = "research"
 			quadTextureSprite = "GFX_button_123x34"
 			text = "RESEARCH"
@@ -4508,6 +4512,11 @@ guiTypes = {
 		background = {
 			name = "bg"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+		
+		gridboxtype = {
+			# contains special_project_specialization
+			name = "special_project_specialization_list"
 		}
 
 		iconType = {
@@ -4967,7 +4976,7 @@ guiTypes = {
 		}
 	}
 
-
+	
 	containerWindowType = {
 		name = "techtree_bba_air_techs_folder_small_item"
 		position = { x=0 y=0 }

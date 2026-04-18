@@ -1,0 +1,68 @@
+add_namespace = ic_ita_events
+
+country_event = {
+	id = ic_ita_events.1
+	title = ic_ita_events.1.t
+	desc = ic_ita_events.1.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = ic_ita_events.1.a
+		ITA = {
+			transfer_state = 103
+			transfer_state = 105
+			transfer_state = 853
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 802
+		}
+		BUL = {
+			transfer_state = 106
+			transfer_state = 803
+		}
+		GER = {
+			transfer_state = 102
+		}
+		HUN = {
+			transfer_state = 45
+			transfer_state = 764
+		}
+		ITA = {
+			set_equipment_fraction = 0.95
+		}
+	}
+	option = {
+		name = ic_ita_events.1.b
+
+		ITA = {
+			transfer_state = 103
+			transfer_state = 105
+			transfer_state = 853
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 802
+		}
+		BUL = {
+			transfer_state = 106
+			transfer_state = 803
+		}
+		GER = {
+			transfer_state = 102
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 764
+		}
+		HUN = {
+			transfer_state = 45
+		}
+
+	}
+}

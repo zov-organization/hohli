@@ -501,7 +501,7 @@ characters = {
 				has_completed_focus = SOV_oust_nazi
 			}
 			traits = {
-				superior_firepower_expert
+				mass_assault_expert
 			}
 		}
 

@@ -148,6 +148,7 @@ ic_progon_mode = {
             }
         }
     }
+
     ic_progon_mode_ww2_simulation = {
 
         icon = GFX_decision_generic_wreckers

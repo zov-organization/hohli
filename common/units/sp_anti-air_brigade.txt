@@ -17,12 +17,9 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
-			category_support_battalions
-			category_tanks
+			category_support_tanks
 			category_all_armor
 			category_army
-			category_support_tanks
 		}
 
 		combat_width = 0
@@ -60,12 +57,9 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
-			category_support_battalions
-			category_tanks
+			category_support_tanks
 			category_all_armor
 			category_army
-			category_support_tanks
 		}
 
 		combat_width = 0
@@ -101,12 +95,9 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
-			category_support_battalions
-			category_tanks
+			category_support_tanks
 			category_all_armor
 			category_army
-			category_support_tanks
 		}
 
 		combat_width = 0
