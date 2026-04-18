@@ -1,16 +1,16 @@
 
 state={
-	id=273
-	name="STATE_273" # Libyan Desert
-	manpower = 42633
-	
-	state_category = wasteland
-	impassable = yes
+id=273
+name="STATE_273" # Libyan Desert
+manpower = 42633
+
+state_category = wasteland
+impassable = yes
 
 
-	provinces={
-		    10104      
-	}
+provinces={
+10104
+}
 
-	local_supplies=0.0 
+local_supplies=0.0
 }

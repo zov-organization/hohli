@@ -1,22 +1,22 @@
 
 state={
-	id=486
-	name="STATE_486"
-	manpower = 213160
-	
-	state_category = pastoral
+id=486
+name="STATE_486"
+manpower = 213160
 
-	history={
-		
-		buildings = {
-			infrastructure = 1
-		}
-		
-	}
+state_category = pastoral
 
-	provinces={
-		1887
-	}
+history={
 
-	local_supplies=0.0 
+buildings = {
+
+}
+
+}
+
+provinces={
+1887
+}
+
+local_supplies=0.0
 }

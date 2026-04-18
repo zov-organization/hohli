@@ -77,7 +77,6 @@ characters = {
 			}
 			cost  = 150
 			available = {
-			has_completed_focus = ic_USA_manhattan_project 
 			}
 		}
 	}
@@ -123,7 +122,6 @@ characters = {
 			}
 			cost  = 150
 			available = {
-			has_completed_focus = ic_USA_manhattan_project 
 			}
 		}
 	}
@@ -146,7 +144,6 @@ characters = {
 			}
 			cost = 100
 			available = {
-			has_completed_focus = ic_USA_manhattan_project 
 			}
 		}
 	}

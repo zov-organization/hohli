@@ -96,13 +96,6 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
@@ -120,12 +113,6 @@ ideas = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						DEN_aat_is_subject = yes
-					}
-					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-				}
 			}
 
 			modifier = {
@@ -137,7 +124,10 @@ ideas = {
 
 		extensive_conscription = {
 
-			available = {}
+			available = {
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -176,7 +166,10 @@ ideas = {
 		all_adults_serve = {
 
 
-			available = {}
+			available = {
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -196,7 +189,10 @@ ideas = {
 
 		scraping_the_barrel = {
 
-			available = {}
+			available = {
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+			}
 
 			cost = 150
 			removal_cost = -1

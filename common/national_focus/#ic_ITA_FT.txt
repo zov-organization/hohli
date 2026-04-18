@@ -192,7 +192,7 @@
 		prerequisite = { focus = ITA_join_anticomintern_pact }
 		relative_position_id = ITA_annex_albania
 
-		avaiable = {
+		available = {
 			GER = {
 				has_completed_focus = GER_cze_annex
 			}

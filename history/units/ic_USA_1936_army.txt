@@ -1,0 +1,24 @@
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+		
+	}
+}
+units = {
+	####### CONUS Theater #######
+	### Carribean Forces ###
+	division = {
+		name = "Puerto Rico Department"
+		location = 1440
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+}

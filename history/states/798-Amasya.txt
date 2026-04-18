@@ -1,16 +1,16 @@
 state={
-	id=798
-	name="STATE_798"
-	provinces={
-		919 3807 3862 3964 11826 11844 
-	}
-	manpower = 531172
-	
-	state_category = rural
+id=798
+name="STATE_798"
+provinces={
+919 3807 3862 3964 11826 11844
+}
+manpower = 531172
 
-	history={
-		
-	}
+state_category = rural
 
-	local_supplies=0.0 
+history={
+
+}
+
+local_supplies=0.0
 }
