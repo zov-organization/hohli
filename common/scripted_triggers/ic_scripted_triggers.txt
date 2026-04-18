@@ -389,3 +389,7 @@ ic_german_offencive_prep_date = {
         }
 	}
 }
+
+is_vichy_france = {
+	has_country_flag = vichy_france
+}

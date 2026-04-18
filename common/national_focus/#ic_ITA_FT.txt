@@ -255,6 +255,28 @@
 		}
 	}
 	focus = {
+		id = ITA_claim_french_territories_2
+		icon = GFX_ITA_initial_focus
+
+		prerequisite = { focus = ITA_claim_french_territories }
+		relative_position_id = ITA_claim_french_territories
+
+		available = {
+			GER = { controls_state = 16 }
+		}
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			transfer_state = 735
+			transfer_state = 851
+			transfer_state = 1
+			transfer_state = 458
+			transfer_state = 665
+		}
+	}
+	focus = {
 		id = ITA_claim_greek_territories
 		icon = GFX_ITA_initial_focus
 

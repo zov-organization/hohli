@@ -85,3 +85,8 @@
  ic_eng_events.1.t:0 "Neville Chamberlain becomes new Prime Minister"
  ic_eng_events.1.d:0 "Awesome"
  ic_eng_events.1.a:0 "Lovely innit fucking faggot"
+
+ #ic_fra_events
+ ic_fra_events.1.t:0 "Triumph in France"
+ ic_fra_events.1.d:0 "Our victory in France is nearly complete. The French government has asked for an armistice, and our diplomats have prepared terms which they have agreed to. They will retain control of southern France, while we are free to occupy the rest."
+ ic_fra_events.1.a:0 "Establish Vichy France."

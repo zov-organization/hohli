@@ -1,0 +1,85 @@
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######  
+
+FRA_acl_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_FRA_acl
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+
+ ########  ##          ###    ##    ## ########  ######  
+##     ## ##         ## ##   ###   ## ##       ##    ## 
+##     ## ##        ##   ##  ####  ## ##       ##       
+########  ##       ##     ## ## ## ## ######    ######  
+##        ##       ######### ##  #### ##             ## 
+##        ##       ##     ## ##   ### ##       ##    ## 
+##        ######## ##     ## ##    ## ########  ######  
+
+FRA_morane_saulnier_organization = {
+	include = ic_generic_light_aircraft_organization
+	icon = GFX_idea_morane_saulnier
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
+
+
+FRA_somua_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_somua
+	
+	allowed = {	
+        tag = FRA 
+	}
+}
+
+FRA_mas_organization = {
+	include = ic_generic_infantry_equipment_organization
+	icon = GFX_idea_mas
+	allowed = {	 
+			tag = FRA 
+	}
+}
+
+FRA_schneider_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_schneider
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+FRA_renault_organization = {
+	include = ic_generic_medium_tank_organization
+	icon = GFX_idea_renault
+	allowed = {	
+        tag = FRA 
+	}
+}
