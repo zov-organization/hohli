@@ -518,7 +518,7 @@ focus_tree = {
 
 		cost = 5
 		available = {
-			date > 1939.09.01
+			date > 1940.01.01
 		}
 
 		available_if_capitulated = yes
