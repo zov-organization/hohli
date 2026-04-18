@@ -6,6 +6,7 @@
   ic_progon_mode_aus:0 "progon thingy for AUS annex"
   ic_progon_mode_cze:0 "progon thingy for CZE annex"
   ic_progon_mode_pol:0 "progon thingy for WW2 start"
+  ic_progon_mode_CHI_JAP_WAR_simulation:0 "progon thingy for SOV CHINA-JAP war"
   ic_progon_mode_ww2_simulation:0 "progon thingy for GER europe conquest and SOV prewar annexes"
   ic_progon_mode_eng_tanks_variants:0 "progon thingy for ENG to get tank variants"
   ic_progon_mode_eng_tanks_spawnins:0 "progon thingy for ENG to spawn 2 light tank divs"
@@ -197,11 +198,13 @@
 
 
 
-  ic_give_refuge_ita:0 "Italian scientists"
-  ic_give_refuge_ger:0 "Germans scientists"
+  ic_give_refuge_ita:0 "Give Refuge to Italian Scientists"
+  ic_give_refuge_ger:0 "Give Refuge to German Scientists"
   ic_USA_research_grants_category:0 "Scientists"
-  ic_USA_war_plans_category:0 "War plans"
-  ic_USA_execute_war_plan_silver:0 "War plans silver"
-  ic_USA_execute_war_plan_orange:0 "War plans orange"
-  ic_USA_execute_war_plan_gold:0 "War plans gold"
-  ic_USA_execute_war_plan_black:0 "War plans black"
+  ic_USA_war_plans_category:0 "War Plans"
+  ic_USA_execute_war_plan_silver:0 "War Plans Silver"
+  ic_USA_execute_war_plan_orange:0 "War Plans Orange"
+  ic_USA_execute_war_plan_gold:0 "War Plans Gold"
+  ic_USA_execute_war_plan_black:0 "War Plans Black"
+  ic_USA_domestic_politics:0 "Domestic Politics"
+  ic_USA_improved_worker_conditions:0 "Improved Worker Conditions"

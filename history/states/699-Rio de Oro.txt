@@ -1,16 +1,16 @@
 state={
-	id=699
-	name="STATE_699"
-	manpower = 21056
-	
-	state_category = wasteland
+id=699
+name="STATE_699"
+manpower = 21056
 
-	history = {
-	}
-	
-	provinces={
-		    8111 
-	}
+state_category = wasteland
 
-	local_supplies=0.0 
+history = {
+}
+
+provinces={
+8111
+}
+
+local_supplies=0.0
 }

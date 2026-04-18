@@ -275,4 +275,32 @@ ic_helpful_tips = {	# Soviet Tips
 			load_oob = "ic_SOV_army_prewar_deployment_3_echelon"
 		}
 	}
+
+	ic_progon_mode_CHI_JAP_WAR_simulation = {
+
+        icon = GFX_decision_generic_wreckers
+
+        fire_only_once = yes
+		
+		visible = {
+            ROOT = {
+                tag = SOV
+			}
+		}
+
+        priority = 1
+
+        cost = 0
+
+        complete_effect = {
+            every_state = {
+				    limit = {
+					    OR = {
+						    state = 608
+                        }
+				    }
+                    transfer_state_to = JAP
+			    }
+        }
+    }
 }

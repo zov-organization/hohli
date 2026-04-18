@@ -1,0 +1,15 @@
+﻿l_english:
+ infantry_doctrine_title:0 "Infantry"
+ infantry_doctrine_desc:0 "Infantry played significant role in previous world war and this is not going to change that time. Infantry holds the front, supports offencives. It is queen of the battle."
+ infantry_doctrine_attack_tt:0 "Attacker doctrine"
+ infantry_doctrine_defence_tt:0 "Defencive doctrine"
+
+ tank_doctrine_title:0 "Armour"
+ tank_doctrine_desc:0 "While infantry supports the offencives, tanks drive it. Armoured units achieve breakthrough and lead the spearhead, decising the tide of the war."
+ tank_doctrine_attack_tt:0 "Attacker doctrine"
+ tank_doctrine_defence_tt:0 "Defencive doctrine"
+
+ operation_doctrine_title:0 "Operations"
+ operation_doctrine_desc:0 "Headquarters - are those tell where tanks to go drive and where infantry to hold. Without tight and proper cooperation between armies no war will be won."
+ operation_doctrine_attack_tt:0 "Swift maneuvers"
+ operation_doctrine_defence_tt:0 "Deep battle"

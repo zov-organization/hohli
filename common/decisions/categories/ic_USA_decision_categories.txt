@@ -5,7 +5,20 @@ ic_USA_research_grants_category = {
     visible_when_empty = no
 }
 ic_USA_war_plans_category = {
-    visible = { tag = USA has_completed_focus = ic_USA_war_plans_division }
+    visible = {
+        original_tag = USA
+        OR = {
+            has_completed_focus = ic_USA_war_plan_silver
+            has_completed_focus = ic_USA_war_plan_black
+            has_completed_focus = ic_USA_war_plan_orange
+        }
+    }
+    priority = 70
+    icon = GFX_decision_category_picture
+    visible_when_empty = yes
+}
+ic_USA_domestic_politics = {
+    visible = { tag = USA }
     priority = 70
     icon = GFX_decision_category_picture
     visible_when_empty = yes

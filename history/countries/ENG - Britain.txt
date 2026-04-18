@@ -157,7 +157,7 @@ create_equipment_variant = {
 	type = cv_small_plane_cas_airframe_1
 	design_team = mio:ENG_supermarine_organization
 	modules = {
-		fixed_main_weapon_slot = tank_buster_1
+		fixed_main_weapon_slot = heavy_bomb_locks
 		engine_type_slot = engine_2_1x
 		plane_armor_type_slot = dive_brakes_small
 	}
@@ -187,7 +187,7 @@ create_equipment_variant = {
 	type = small_plane_cas_airframe_1
 	design_team = mio:ENG_supermarine_organization
 	modules = {
-		fixed_main_weapon_slot = tank_buster_1
+		fixed_main_weapon_slot = heavy_bomb_locks
 		engine_type_slot = engine_2_1x
 		plane_armor_type_slot = dive_brakes_small
 	}

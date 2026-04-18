@@ -1,25 +1,25 @@
 state={
-	id=488
-	name="STATE_488"
-	manpower = 245642
-	
-	state_category = pastoral
+id=488
+name="STATE_488"
+manpower = 245642
 
-	history={
-		
-		buildings = {
-			infrastructure = 1
+state_category = pastoral
 
-		}
-		
-		victory_points = {
-			10879 1
-		}
-	}
+history={
 
-	provinces={
-		5317 7915   
-	}
+buildings = {
 
-	local_supplies=0.0 
+
+}
+
+victory_points = {
+10879 1
+}
+}
+
+provinces={
+5317 7915
+}
+
+local_supplies=0.0
 }
