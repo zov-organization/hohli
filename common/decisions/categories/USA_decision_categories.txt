@@ -1,0 +1,51 @@
+################
+##### USA ######
+################
+
+USA_war_measures = {
+	
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_aid_britain = {
+
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+USA_foreign_support = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+
+USA_congress = {
+	icon = usa_congress
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+USA_war_plans = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+USA_intervention_mandate = {
+	icon = usa_intervention_mandate
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+USA_honor_the_confederacy = {
+	icon = usa_honor_the_confederacy
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
+USA_decolonisation = {
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
