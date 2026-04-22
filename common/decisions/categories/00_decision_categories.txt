@@ -523,3 +523,10 @@ generic_refit_civilian_ships_category = {
 	}
 	visible_when_empty = no
 }
+
+CHI_occupation_actions = {
+	icon = generic_crisis
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
+}
