@@ -80,7 +80,7 @@ types = {
 		    type = air
 		}
         unit_model = {
-            type = transport
+            equipment = air_transport
         }
 
 		starting_point = {
@@ -345,7 +345,7 @@ types = {
 		    type = air
 		}
         unit_model = {
-            type = transport
+            equipment = air_transport
         }
 
 		starting_point = {
