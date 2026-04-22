@@ -24,6 +24,7 @@ add_ideas = {
 }
 
 
+
 ### Starting Technology ###
 
 set_technology = {
@@ -44,21 +45,41 @@ set_technology = {
 	fuel_refining = 1
 }
 
-add_breakthrough_progress = {
-	specialization = specialization_naval
-	value = 0.8
+create_import = {
+	resource = oil
+	factories = 2
+	exporter = USA
 }
-add_breakthrough_progress = {
-	specialization = specialization_air
-	value = 0.3
-}
-add_breakthrough_progress = {
-	specialization = specialization_land
-	value = 0.1
-}
-
 set_convoys = 400
 
+# No more ifs needed due to integration of Tfv and Wtt :0 
+set_autonomy = {
+	target = MEN
+	autonomous_state = autonomy_wtt_imperial_protectorate
+}
+set_autonomy = {
+	target = MAN
+	autonomous_state = autonomy_wtt_imperial_protectorate
+}
+
+# Setup Politics
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+}
+
+create_country_leader = {
+	name = JAP_emperor_hirohito
+	picture = GFX_portrait_JAP_emperor_hirohito
+	expire="1989.1.1.1"
+	ideology=fascism_ideology
+	traits={ warrior_code emperor_showa imperial_sanction }
+}
 
 # Recruiting Characters
 recruit_character = JAP_tetsu_katayama
@@ -134,3 +155,6 @@ recruit_character = JAP_keiji_fukuda
 recruit_character = JAP_jiro_horikoshi
 recruit_character = JAP_hideki_yukawa
 recruit_character = JAP_yoji_ito
+
+
+
