@@ -13,6 +13,7 @@ sub_unit_categories = {
 	category_paratroopers
 	category_marines
 	category_cavalry
+	category_rangers
 	
 
 	category_artillery
@@ -40,4 +41,7 @@ sub_unit_categories = {
 	category_support_infantry
 	category_support_tanks
 	category_mechanized_inf
+
+	category_helicopter_support_companies
+	category_special_forces_leg_infantry
 }
