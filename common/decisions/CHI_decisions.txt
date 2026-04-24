@@ -4396,13 +4396,13 @@ political_actions = {
 			has_war = no
 			OR = {
 				has_full_control_of_state = 608 # Beijing
-				has_full_control_of_state = 1035 # Nanjing
+				has_full_control_of_state = 613 # Nanjing
 			}
 			capital_scope = {
 				NOT = {
 					OR = {
 						state = 608 # Beijing
-						state = 1035 # Nanjing
+						state = 613 # Nanjing
 					}
 				}
 			}
@@ -4412,13 +4412,13 @@ political_actions = {
 			is_subject = no
 			OR = {
 				has_full_control_of_state = 608 # Beijing
-				has_full_control_of_state = 1035 # Nanjing
+				has_full_control_of_state = 613 # Nanjing
 			}
 			capital_scope = {
 				NOT = {
 					OR = {
 						state = 608 # Beijing
-						state = 1035 # Nanjing
+						state = 613 # Nanjing
 					}
 				}
 			}
@@ -4981,7 +4981,7 @@ CHI_occupation_actions = {
 					606 = { is_controlled_by_ROOT_or_ally = no } # Anhui
 					749 = { is_controlled_by_ROOT_or_ally = no } # Huangshan
 					1038 = { is_controlled_by_ROOT_or_ally = no } # Jinan
-					1035 = { is_controlled_by_ROOT_or_ally = no } # Nanjing
+					613 = { is_controlled_by_ROOT_or_ally = no } # Nanjing
 				}
 			}
 			ELSE = {
@@ -4995,7 +4995,7 @@ CHI_occupation_actions = {
 					NOT = { controls_state = 598 }
 					NOT = { controls_state = 606 }
 					NOT = { controls_state = 1038 }
-					NOT = { controls_state = 1035 }
+					NOT = { controls_state = 613 }
 					NOT = { controls_state = 749 }
 				}
 			}
@@ -5063,7 +5063,7 @@ CHI_occupation_actions = {
 			}
 			modifier = {
 				factor = 3
-				1035 = { # Nanjing
+				613 = { # Nanjing
 					controller = {
 						has_war_with = ROOT
 						is_literally_china = no

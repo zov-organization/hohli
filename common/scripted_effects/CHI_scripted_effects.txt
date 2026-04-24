@@ -1167,7 +1167,7 @@ CHI_move_factories = {
 			#Move AF
 			CONTROLLER = {
 				random_owned_controlled_state = {
-					prioritize = { 1035 613 1036 }
+					prioritize = { 613 613 1036 }
 					limit = {
 						is_fully_controlled_by = ROOT
 						any_neighbor_state = {
@@ -1217,7 +1217,7 @@ CHI_move_factories = {
 						}
 					}
 					random_owned_controlled_state = {
-						prioritize = { 1035 613 1036 }
+						prioritize = { 613 613 1036 }
 						limit = {
 							is_controlled_by = ROOT
 							free_building_slots = {
@@ -1243,7 +1243,7 @@ CHI_move_factories = {
 
 				#Move IC
 				random_owned_controlled_state = {
-					prioritize = { 1035 613 1036 }
+					prioritize = { 613 613 1036 }
 					limit = {
 						is_fully_controlled_by = ROOT
 						any_neighbor_state = {
@@ -1293,7 +1293,7 @@ CHI_move_factories = {
 						}
 					}
 					random_owned_controlled_state = {
-						prioritize = { 1035 613 1036 }
+						prioritize = { 613 613 1036 }
 						limit = {
 							is_controlled_by = ROOT
 							free_building_slots = {
