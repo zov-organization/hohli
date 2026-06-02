@@ -143,16 +143,6 @@ set_technology = {
 # 1936 Start #
 
 create_equipment_variant = {
-	name = "Shark"
-	type = cv_small_plane_naval_bomber_airframe_0
-	design_team = mio:ENG_supermarine_organization
-	modules = {
-		fixed_main_weapon_slot = torpedo_mounting
-		engine_type_slot = engine_1_1x
-		plane_armor_type_slot = non_strategic_materials_small
-	}
-}
-create_equipment_variant = {
 	name = "Osprey"
 	type = cv_small_plane_cas_airframe_1
 	design_team = mio:ENG_supermarine_organization
@@ -248,12 +238,6 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
 	amount = 1320
-	producer = ENG
-}
-
-add_equipment_to_stockpile = {
-	type = cv_small_plane_naval_bomber_airframe_0
-	amount = 50
 	producer = ENG
 }
 add_equipment_to_stockpile = {
