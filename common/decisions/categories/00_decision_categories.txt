@@ -52,11 +52,6 @@ prestigious_projects = {
 	
 }
 
-CHI_occupation_actions = {
-	icon = generic_crisis
-	priority = 2
-}
-
 foreign_politics = {
 	icon = generic_political_actions
 }
@@ -522,4 +517,11 @@ generic_refit_civilian_ships_category = {
 		base = 8
 	}
 	visible_when_empty = no
+}
+
+CHI_occupation_actions = {
+	icon = generic_crisis
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available  = { hidden_trigger = { always = no } }
 }

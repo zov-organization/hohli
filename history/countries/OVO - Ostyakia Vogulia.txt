@@ -1,0 +1,1 @@
+﻿capital = 580 #Khanty-Mansiysk (Tobolsk state)
