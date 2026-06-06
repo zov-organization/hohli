@@ -552,17 +552,29 @@ equipments = {
 				}
 			}
 
-			plane_armor_type_slot = {
+			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					small_plane_armor_category
+					plane_special_module_small
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_defense_turret
 				}
 			}
 
-			range_type_slot = {
+			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					small_plane_range_category
+					small_plane_armor_category
+					plane_special_module_small
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_defense_turret
 				}
 			}
 		}
@@ -733,14 +745,8 @@ equipments = {
 		module_slots = {
 			fixed_main_weapon_slot = inherit
 			engine_type_slot = inherit
-			plane_armor_type_slot = inherit
-			range_type_slot = inherit
-			self_sealing_slot = {
-				required = no
-				allowed_module_categories = {
-					small_plane_self_sealing_category
-				}
-			}
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 		}
 	}
 
@@ -768,8 +774,8 @@ equipments = {
 		module_slots = {
 			fixed_main_weapon_slot = inherit
 			engine_type_slot = inherit
-			plane_armor_type_slot = inherit
-			range_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 			armor_or_range_slot = {
 				required = no
 				allowed_module_categories = {

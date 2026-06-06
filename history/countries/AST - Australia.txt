@@ -17,8 +17,6 @@ set_technology = {
 	basic_train = 1
 	trench_warfare = 1
 	fuel_silos = 1
-
-	fleet_in_being = 1
 }
 
 

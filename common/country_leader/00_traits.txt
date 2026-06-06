@@ -12,6 +12,36 @@ leader_traits = {
 	
 
 	# DUMMY-TRAITS (error fix)
+	SIK_communist_in_name_only = {}
+	JAP_ldp_leader = {}
+	agrarian_old_guard = {}
+	CHI_blueshirt_spymaster	= {}
+
+	train_equipment_manufacturer = {}
+	helicopter_equipment_manufacturer = {}
+	construction_company_shell = {}
+	industrial_focused_central_bank = {}
+	energy_supply_company = {}
+	fast_tank_manufacturer_2 = {}
+	infantry_tank_manufacturer_2 = {}
+	tank_destroyer_manufacturer = {}
+	light_aircraft_manufacturer_3 = {}
+	automatic_weapons_manufacturer = {}
+	engine_manufacturing_concern = {}
+	consumer_goods_conglomerate = {}
+	energy_supply_company_zse = {}
+	commercial_bank = {}
+	desert_motor_transport_company = {}
+	electricity_focused_state_bank = {}
+	industrial_investment_bank = {}
+
+	SIK_socialist_revolutionary_in_name = {}
+	KHM_emir_of_khotan = {}
+	CZE_3rd_prezident = {}
+	de_facto_leader = {}
+	CZE_reluctant_prime_minister = {}
+	CZE_spirit_of_zizka = {}
+
 	BEL_leopold_prisoner_king = {}
 	BEL_leopold_king_of_the_belgians = {}
 	pro_allied_governor_general = {}
@@ -5784,14 +5814,6 @@ leader_traits = {
 		# Boosts Communism
 		sprite = 13
 		communism_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				not = { has_completed_focus = ic_USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
 	}
 
 	democratic_reformer = {

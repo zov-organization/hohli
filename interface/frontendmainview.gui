@@ -84,13 +84,15 @@ guiTypes = {
 			position = { x = 50 y = 70 }
 			margin = { top = 18 bottom = 13 left = 8}
 
-			show_position = { x = 50 y = 70 }
-			hide_position = { x = 50 y = 0 }
-
-			show_animation_type = decelerated 
-			hide_animation_type = decelerated
-			animation_time = 300
-			fade_type = linear
+			
+			# animatin wont work properly with checkbox
+			#show_position = { x = 50 y = 70 }
+			#hide_position = { x = 50 y = 0 }
+			#
+			#show_animation_type = decelerated 
+			#hide_animation_type = decelerated
+			#animation_time = 300
+			#fade_type = linear
 
 			background = {
 				name = "Background"
@@ -120,8 +122,8 @@ guiTypes = {
 						
 			containerWindowType = {
 				name = "background_selection_list"
-				size = { width = 230 height = 576 }
-				position = { x = 0 y = 90 }
+				size = { width = 230 height = 631 }
+				position = { x = 0 y = 35 }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 63
 				smooth_scrolling = yes
