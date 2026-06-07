@@ -242,10 +242,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "start_button"
-			quadTextureSprite ="GFX_button_221x34"
+			quadTextureSprite ="GFX_button_123x34"
 			font = "hoi_16mbs"
 			text = "START"
-			position = { x= -117 y = -41 }
+			position = { x= -5 y = -41 }
 			Orientation = "CENTER_DOWN"
 			shortcut = "RETURN"
 		}
@@ -273,20 +273,20 @@ guiTypes = {
 		
 		iconType ={
 			name ="server_id_bg"
-			spriteType = "GFX_generic_text_bg_325"
-			position = { x= -250 y = -37 }
+			spriteType = "GFX_generic_text_bg_203"
+			position = { x= -275 y = -37 }
 			Orientation = "CENTER_DOWN"
 			alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
 			name = "server_id"
-			position = { x = -250 y = -35 }
+			position = { x = -275 y = -35 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 4}
 			text = "Server ID: 12345678-9abc-def0-123456780abc"
-			maxWidth = 322
+			maxWidth = 200
 			maxHeight = 24
 			format = center
 			Orientation = "CENTER_DOWN"
@@ -294,8 +294,8 @@ guiTypes = {
 		
 		buttonType = {
 			name ="server_id_button"
-			spriteType = "GFX_generic_text_bg_325_transp"
-			position = { x = -250 y = -37 }
+			spriteType = "GFX_generic_text_bg_203_transp"
+			position = { x = -275 y = -37 }
 			Orientation = "CENTER_DOWN"
 		}
 		
@@ -351,7 +351,7 @@ guiTypes = {
 		buttonType = {
 			name ="player_shield"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 53 y = 15 }
+			position = { x= 55 y = 16 }
 		}
 
 		iconType ={
@@ -433,7 +433,7 @@ guiTypes = {
 		buttonType = {
 			name ="player_shield"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 53 y = 15 }
+			position = { x= 55 y = 16 }
 		}
 
 		iconType ={
