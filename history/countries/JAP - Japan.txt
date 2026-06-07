@@ -38,7 +38,6 @@ set_technology = {
 	marines  = 1
 	gw_artillery = 1
 	basic_train = 1
-	trench_warfare = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
