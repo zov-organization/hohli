@@ -1,1 +1,34 @@
 ﻿capital = 43
+#oob = "ic_SOV_1936_army"
+#set_naval_oob = "ic_SOV_1936_fleet"
+
+
+set_research_slots = 3
+
+set_convoys = 0
+
+set_stability = 0.7
+set_war_support = 0.6
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 31
+	neutrality = 44
+}
+
+recruit_character = HUN_miklos_horthy
+
+add_ideas = {
+	partial_economic_mobilisation
+	closed_economy
+	limited_conscription
+}
+
+set_technology = {
+}

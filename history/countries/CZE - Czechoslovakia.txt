@@ -1,1 +1,35 @@
 ﻿capital = 9
+#oob = "ic_SOV_1936_army"
+#set_naval_oob = "ic_SOV_1936_fleet"
+
+
+set_research_slots = 3
+
+set_convoys = 0
+
+set_stability = 0.80
+set_war_support = 0.3
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 71
+	neutrality = 14
+	fascism = 3
+	communism = 12
+}
+
+recruit_character = CZE_edvard_benesh
+
+add_ideas = {
+	partial_economic_mobilisation
+	closed_economy
+	limited_conscription
+}
+
+set_technology = {
+}
