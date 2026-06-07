@@ -11,19 +11,19 @@ guiTypes = {
 		iconType = {
 			name = "progress_bar"
 			spriteType = "GFX_cm_mp_bar"
-			position = { x = -4 y = -1 }
+			position = { x = 100 y = 18 }
 			alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 10 y = 20 }
+			position = { x = 200 y = 20 }
 			maxWidth = 450
 			maxHeight = 18
 			fixedsize = yes
 			font = "hoi_16mbs"
 			text = "PLAYER_NAME"
-			format = center
+			format = left
 			vertical_alignment = center
 			multiline = no
 			alwaystransparent = yes

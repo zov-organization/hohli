@@ -42,7 +42,7 @@ spriteTypes = {
 		colortwo = { 1.0 1.0 1.0 }
 		textureFile1 = "gfx\\interface\\cm_mp_bar.dds"
 		textureFile2 = "gfx\\interface\\cm_mp_bar_bg.dds"
-		size = { x = 132 y = 20 }
+		size = { x = 100 y = 20 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 
