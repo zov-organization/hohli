@@ -1,1 +1,1 @@
-﻿capital = 992 #Sikkim
+﻿capital = 1 #Sikkim

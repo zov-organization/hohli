@@ -4092,7 +4092,7 @@ guiTypes = {
 			clicksound = ui_doctrine_unlock
 		}
 
-		containerWindowType = {
+		containerWindowType = {#!!!
 			name = "statsarea"
 			position = { x=20 y=220 }
 			size = { width = -20 height = -20 }
@@ -4113,6 +4113,11 @@ guiTypes = {
 				format = left
 				vertical_alignment = center
 				format = center
+			}
+
+			positionType = {
+				name = "tech_info_special_description_bottom_margin"
+				position = { x = 0 y = 14 }
 			}
 
 			background = {
