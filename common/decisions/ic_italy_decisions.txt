@@ -2,12 +2,12 @@ ITA_main_category = {
     ITA_start_tact_bomber_production = {
         icon = GFX_decision_SWE_set_air_budget
         visible = {
-            has_completed_focus = ITA_scrap_long_going_bombers
+            has_completed_focus = ITA_develop_medium_bombers
             NOT = {
                 has_active_mission = ITA_start_tact_bomber_production_mission
             }
         }
-
+		
         fire_only_once = no
         
         complete_effect = {
@@ -67,7 +67,7 @@ ITA_nationalization_category = {
 		}
 
 		available = {
-			political_power > 50
+			has_political_power > 50
 		}
 		visible = {
 			has_completed_focus = ITA_nationalization
@@ -799,7 +799,7 @@ ITA_csir_category = {
         visible = {
            has_completed_focus = ITA_csir
         }
-		avaiable = {
+		available = {
 			date > 1942.01.01
 		}
 
@@ -814,7 +814,7 @@ ITA_csir_category = {
         visible = {
            has_completed_focus = ITA_csir
         }
-		avaiable = {
+		available = {
 			date > 1942.01.01
 		}
 

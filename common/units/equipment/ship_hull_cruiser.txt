@@ -140,7 +140,7 @@ equipments = {
 		
 		manpower = 600
 
-		naval_supremacy_factor = 2.3
+		naval_dominance_factor = 100
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 		#MIO stat modifers will factory by the unmodified stat value so here a 0.5 mio stat modifier would make this ships naval_weather_penalty_factor stat 1.5.
 		# change this from 1 at your own risk
@@ -193,6 +193,7 @@ equipments = {
 			ship_light_battery_slot = empty
 			torpedo_slot = empty
 		}
+		naval_dominance_factor = 100
 	}
 
 	ship_hull_cruiser_2 = {
@@ -229,6 +230,7 @@ equipments = {
 			}
 			torpedo_slot = inherit
 		}
+		naval_dominance_factor = 100
 	}
 
 	ship_hull_cruiser_3 = {
@@ -258,6 +260,7 @@ equipments = {
 			mid_2_custom_slot = mid_1_custom_slot
 			torpedo_slot = inherit
 		}
+		naval_dominance_factor = 100
 	}
 
 	ship_hull_cruiser_4 = {
@@ -289,6 +292,7 @@ equipments = {
 			torpedo_slot = inherit
 			torpedo_slot_2 = torpedo_slot
 		}
+		naval_dominance_factor = 100
 	}
 
 	light_cruiser_1 = {
@@ -338,6 +342,7 @@ equipments = {
 			#oil = 1
 			steel = 2
 		}
+		naval_dominance_factor = 100
 	}
 
 	light_cruiser_2 = {
@@ -388,6 +393,7 @@ equipments = {
 			steel = 3
 		}
 		manpower = 800
+		naval_dominance_factor = 100
 	}
 	light_cruiser_3 = {
 		year = 1940
@@ -439,6 +445,7 @@ equipments = {
 			steel = 3
 		}
 		manpower = 960
+		naval_dominance_factor = 100
 	}
 	
 	light_cruiser_4 = {
@@ -492,6 +499,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 1140
+		naval_dominance_factor = 100
 	}
 
 	heavy_cruiser_1 = {
@@ -609,6 +617,7 @@ equipments = {
 		}
 		
 		manpower = 1500
+		naval_dominance_factor = 100
 	}
 	
 	heavy_cruiser_2 = {
@@ -658,6 +667,7 @@ equipments = {
 			steel = 4
 		}		
 		manpower = 1700
+		naval_dominance_factor = 100
 	}
 	
 	heavy_cruiser_3 = {
@@ -708,6 +718,7 @@ equipments = {
 			steel = 4
 		}		
 		manpower = 1900
+		naval_dominance_factor = 100
 	}
 	
 	heavy_cruiser_4 = {
@@ -760,6 +771,7 @@ equipments = {
 			chromium = 1
 		}		
 		manpower = 2200
+		naval_dominance_factor = 100
 	}
 	
 	###### SPECIAL JAP TECH FROM FOCUS ######	
@@ -876,6 +888,7 @@ equipments = {
 		}
 		
 		manpower = 960
+		naval_dominance_factor = 100
 	}
 
 	###special snowflake hulls
@@ -969,6 +982,7 @@ equipments = {
 		}
 		
 		manpower = 960
+		naval_dominance_factor = 100
 	}
 	ship_hull_cruiser_panzerschiff = {
 		abbreviation = "hbf"
@@ -1030,6 +1044,7 @@ equipments = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_torpedo_1
 		}
+		naval_dominance_factor = 100
 	}
 	ship_hull_cruiser_coastal_defense_ship = {
 		abbreviation = "hbg"
@@ -1095,5 +1110,6 @@ equipments = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_secondaries_slot = empty
 		}
+		naval_dominance_factor = 100
 	}
 }

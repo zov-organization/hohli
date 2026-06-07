@@ -1,7 +1,5 @@
 capital = 361
 
-starting_train_buffer = 5
-
 set_oob = ic_USA_1936_army
 
 set_research_slots = 3
@@ -166,4 +164,11 @@ set_technology = {
 	#basic_heavy_shell = 1
 	basic_torpedo = 1
 	mtg_transport = 1
+}
+
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 250
+	producer = USA
 }

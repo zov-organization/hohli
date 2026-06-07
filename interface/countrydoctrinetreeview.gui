@@ -364,8 +364,22 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
+			
+			#gridboxtype = {
+			#	name = "infantry_start_tree"
+			#	position = { x=40 y=150}
+			#	size = { width = 940 height = 900 }
+			#	slotsize = { width = 70 height= 70 }
+			#	format = "UP"
+			#
+			#	background = {
+			#		name = "Background"
+			#		quadTextureSprite ="GFX_fullborder_tiled"
+			#		position = { x=0 y=-110 }
+			#	}
+			#}
 
-			gridboxtype = {
+			gridboxtype = { #!!!
 				name = "fleet_in_being_tree"
 				position = { x=80 y=172 }
 				size = { width = 478 height = 1000 }
@@ -1017,7 +1031,7 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "techtree_old_naval_doctrine_folder_item"
+		name = "techtree_ic_old_naval_doctrine_folder_item"
 		position = { x=0 y=5 }
 		size = { width = 72 height = 72 }
 		clipping = no

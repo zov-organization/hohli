@@ -142,7 +142,7 @@ equipments = {
 
 		manpower = 4000
 
-		naval_supremacy_factor = 2.6
+		naval_dominance_factor = 300
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 		#MIO stat modifers will factory by the unmodified stat value so here a 0.5 mio stat modifier would make this ships naval_weather_penalty_factor stat 1.5.
 		# change this from 1 at your own risk
@@ -207,6 +207,7 @@ equipments = {
 		}
 
 		manpower = 3200
+		naval_dominance_factor = 300
 	}
 	ship_hull_heavy_1 = {
 		abbreviation = "hcc"
@@ -291,6 +292,7 @@ equipments = {
 		fuel_consumption = 67
 		
 		build_cost_ic = 2800
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_heavy_2 = {
@@ -336,6 +338,7 @@ equipments = {
 		}
 
 		manpower = 1000
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_heavy_3 = {
@@ -377,6 +380,7 @@ equipments = {
 		}
 
 		manpower = 6000
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_heavy_4 = {
@@ -419,6 +423,7 @@ equipments = {
 		}
 
 		manpower = 6000
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_super_heavy_1 = {
@@ -512,6 +517,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 9000
+		naval_dominance_factor = 300
 	}
 
 	battleship_1 = { 
@@ -620,6 +626,7 @@ equipments = {
 		}
 
 		manpower = 6000
+		naval_dominance_factor = 300
 	}
 	
 	battleship_2 = {
@@ -673,6 +680,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 6600
+		naval_dominance_factor = 300
 		
 	}
 	
@@ -728,6 +736,7 @@ equipments = {
 			chromium = 2
 		}
 		manpower = 7000
+		naval_dominance_factor = 300
 
 	}
 	
@@ -783,6 +792,7 @@ equipments = {
 			chromium = 3
 		}
 		manpower = 7400
+		naval_dominance_factor = 300
 		
 	}
 
@@ -906,6 +916,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 9000
+		naval_dominance_factor = 300
 	}
 	
 	SH_battleship_2 = {
@@ -1029,6 +1040,7 @@ equipments = {
 			chromium = 3
 		}
 		manpower = 10000
+		naval_dominance_factor = 300
 		
 	}
 	battle_cruiser_1 = {
@@ -1084,6 +1096,7 @@ equipments = {
 		}
 		
 		manpower = 3500
+		naval_dominance_factor = 300
 	}
 	
 	battle_cruiser_2 = {
@@ -1138,6 +1151,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 4000
+		naval_dominance_factor = 300
 	}
 
 

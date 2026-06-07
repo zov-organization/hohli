@@ -12,6 +12,36 @@ leader_traits = {
 	
 
 	# DUMMY-TRAITS (error fix)
+	SIK_communist_in_name_only = {}
+	JAP_ldp_leader = {}
+	agrarian_old_guard = {}
+	CHI_blueshirt_spymaster	= {}
+
+	train_equipment_manufacturer = {}
+	helicopter_equipment_manufacturer = {}
+	construction_company_shell = {}
+	industrial_focused_central_bank = {}
+	energy_supply_company = {}
+	fast_tank_manufacturer_2 = {}
+	infantry_tank_manufacturer_2 = {}
+	tank_destroyer_manufacturer = {}
+	light_aircraft_manufacturer_3 = {}
+	automatic_weapons_manufacturer = {}
+	engine_manufacturing_concern = {}
+	consumer_goods_conglomerate = {}
+	energy_supply_company_zse = {}
+	commercial_bank = {}
+	desert_motor_transport_company = {}
+	electricity_focused_state_bank = {}
+	industrial_investment_bank = {}
+
+	SIK_socialist_revolutionary_in_name = {}
+	KHM_emir_of_khotan = {}
+	CZE_3rd_prezident = {}
+	de_facto_leader = {}
+	CZE_reluctant_prime_minister = {}
+	CZE_spirit_of_zizka = {}
+
 	BEL_leopold_prisoner_king = {}
 	BEL_leopold_king_of_the_belgians = {}
 	pro_allied_governor_general = {}
@@ -5784,14 +5814,6 @@ leader_traits = {
 		# Boosts Communism
 		sprite = 13
 		communism_drift = 0.1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				not = { has_completed_focus = ic_USA_suspend_the_presecution }
-				factor = 0
-			}
-		}
 	}
 
 	democratic_reformer = {
@@ -10835,5 +10857,214 @@ leader_traits = {
 		sprite = 5
 		cas_damage_reduction = 0.25
 	}
+
+	resource_development_company_2 = {
+		random = no
+
+		global_building_slots_factor = 0.05
+		local_resources_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	monopolistic_bank = {
+		random = no
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PRC_magazine = {
+		random = no 
+
+	}
+
+	PRC_nuclear_company = {
+		random = no
+	}
+
+	mining_zaibatsu = {
+		random = no
+
+		political_power_factor = -0.1
+		local_resources_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armament_zaibatsu = {
+		random = no
+		
+		political_power_factor = -0.1
+		production_speed_dockyard_factor = 0.05
+		production_speed_arms_factory_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_conglomerate = {
+		random = no
+		
+		political_power_factor = -0.1
+		production_speed_buildings_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zaibatsu_bank = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	colonial_investments_company = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	national_news_agency = {
+		random = no
+		
+		war_stability_factor = 0.1
+		weekly_casualties_war_support = 0.006
+		weekly_convoys_war_support = 0.004
+		weekly_bombing_war_support = 0.002
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	propaganda_agency = {
+		random = no
+		
+		war_stability_factor = 0.05
+		weekly_casualties_war_support = 0.006
+		weekly_convoys_war_support = 0.004
+		weekly_bombing_war_support = 0.002
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	south_seas_development_company = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PHI_san_miguel_trait = {
+		random = no
+
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PHI_marsman_and_company_trait = {
+		random = no
+
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	CHI_civilian_unifier_upgraded = {
+		sprite = 10
+		random = no
+
+		subjects_autonomy_gain = -0.04
+		political_power_factor = 0.05
+		annex_subject_cost_factor = -0.15
+		surrender_limit = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	CHI_civilian_unifier_upgraded_2 = {
+		sprite = 10
+		random = no
+
+		subjects_autonomy_gain = -0.06
+		political_power_factor = 0.05
+		annex_subject_cost_factor = -0.25
+		surrender_limit = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	CHI_civilian_unifier = {
+		sprite = 10
+		random = no
+
+		subjects_autonomy_gain = -0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PRC_head_of_the_personality_cult = { 
+		random = no #Mao if Maoism is enforced
+
+		equipment_capture_factor = 0.15 #unsure how powerful this is
+		political_power_gain = 0.15
+		stability_factor = 0.1
+		war_stability_factor = 0.05
+		army_core_attack_factor = 0.05
+		army_defence_factor = 0.05
+		army_morale_factor = 0.1
+		conscription = 0.01
+
+	}
+	CHI_asian_unifier_and_liberator = {
+		sprite = 10
+		random = no
+
+		subjects_autonomy_gain = -0.08
+		political_power_factor = 0.05
+		annex_subject_cost_factor = -0.25
+		compliance_gain = 0.01
+		surrender_limit = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	CHI_generallissimo_sea = {
+		random = no
+		defensive_war_stability_factor = 0.4
+		max_surrender_limit_offset = 0.1 
+		surrender_limit = 0.05
+	}
+
 
 }

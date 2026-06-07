@@ -204,7 +204,7 @@ create_equipment_variant = {
 		special_type_slot_1 = lmg_defense_turret_2x
 		special_type_slot_2 = lmg_defense_turret_2x
 		special_type_slot_3 = lmg_defense_turret_2x
-		special_type_slot_4 = lmg_defense_turret_2x
+		special_type_slot_4 = lmg_defense_turret
 	}
 }
 
