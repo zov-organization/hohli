@@ -1,7 +1,5 @@
 ﻿capital = 266
-#oob = "ic_SOV_1936_army"
-#set_naval_oob = "ic_SOV_1936_fleet"
-
+oob = "empty_oob"
 
 set_research_slots = 3
 
@@ -32,4 +30,5 @@ add_ideas = {
 }
 
 set_technology = {
+	infantry_weapons = 1
 }
