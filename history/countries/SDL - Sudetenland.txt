@@ -1,0 +1,44 @@
+capital = 69
+oob = "empty_oob"
+
+set_research_slots = 3
+
+set_convoys = 0
+
+set_stability = 0.5
+set_war_support = 0.5
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.4.7"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = { #Popularities based on 1935 election statistics from Karlsbad Division
+	democratic = 31
+	fascism = 65
+	communism = 3
+	neutrality = 1
+}
+
+create_country_leader = { #Chose a SDP guy who wouldn't cause a clone
+	name = "Karl Hermann Frank"
+	desc = ""
+	picture = "GFX_portrait_SDL_Karl_Hermann_Frank"
+	expire = "1953.3.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	closed_economy
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+}
