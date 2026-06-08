@@ -1,0 +1,103 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX__4th_guard_tank_korpus_general_leutenant_poluboyarov_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/_4th_guard_tank_korpus_general_leutenant_poluboyarov_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX__6th_guards_heavy_tank_breakthrough_regiment_chill_in_Zechin_commune_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/_6th_guards_heavy_tank_breakthrough_regiment_chill_in_Zechin_commune_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cav_from_Chad_joining_Free_France_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/cav_from_Chad_joining_Free_France_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_crew_leaving_lexington_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/crew_leaving_lexington_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_german_inf_barbing_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/german_inf_barbing_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_is_2_in_night_battle_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/is_2_in_night_battle_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_messer_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/messer_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_missuri_zalp_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/missuri_zalp_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mountain_egers_practice_river_crossing_at_Mosel_around_city_Tries_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/mountain_egers_practice_river_crossing_at_Mosel_around_city_Tries_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_nazi_flags_facing_down_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/nazi_flags_facing_down_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_perekur_parni_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/perekur_parni_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pindosi_and_m24_chaffee_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/pindosi_and_m24_chaffee_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pindosi_on_nagato_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/pindosi_on_nagato_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pindosi_reading_about_hitler_death_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/pindosi_reading_about_hitler_death_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_poprigunchiki_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/poprigunchiki_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_shtukas_in_1943_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/shtukas_in_1943_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_t34_new_borodino_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/t34_new_borodino_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tiger_at_kursk_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/tiger_at_kursk_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_transport_ship_Beakon_Grange_sinking_around_U552_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/transport_ship_Beakon_Grange_sinking_around_U552_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_view_from_german_uboat_small"
+		texturefile = "gfx/loadingscreens/small_loading_screens/view_from_german_uboat_small.dds"
+	}
+	
+}
