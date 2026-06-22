@@ -616,10 +616,10 @@ guiTypes = {
 					format = "UPPER_LEFT"
 				}
 			}
-			
+
 			containerWindowType = {
 				name = "land_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=5000 y=-11 }
+				position = { x=260 y=-11 }
 				size = {width=20 height=20}
 				clipping = no
 
@@ -627,7 +627,7 @@ guiTypes = {
 					#Subdoctrine background
 					name = "button"
 					quadTextureSprite = "GFX_doctrines_officer_corps_button_land"
-					position = { x=200 y=45 }
+					position = { x=28 y=45 }
 				}
 
 				iconType = {
@@ -655,49 +655,6 @@ guiTypes = {
 					position = { x=48 y=98 }
 					slotsize = { width = 16 height = 16 }
 					max_slots_vertical = 1
-				}
-			}
-
-			containerWindowType = {
-				name = "special_forces_doctrine_button"
-				position = { x=225 y=-10 }
-				size = {width=20 height=20}
-				clipping = no
-
-				buttonType = {
-					name = "button"
-					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
-					position = { x=34 y=47 }
-					#buttonText = "Doctrines"
-					font = "hoi_24header"
-				}
-
-				iconType = {
-					name = "icon"
-					position = { x=58 y=72 }
-					Orientation = CENTER
-					spriteType = "GFX_placeholder_bordered"
-					alwaystransparent = yes
-					centerposition = yes
-				}
-
-				iconType = {
-					name = "nb_doctrine_unlocked_bg"
-					spriteType = "GFX_topbar_alert_bg"
-					position = { x=36 y=97 }
-					alwaystransparent = yes
-					frame = 1
-				}
-
-				instantTextBoxType = {
-					name ="nb_doctrine_unlocked"
-					position = { x=34 y=97 }
-					font = "hoi_16mbs"
-					text = "0"
-					format = center
-					maxWidth = 20
-					maxHeight = 24
-					fixedsize = yes
 				}
 			}
 			
@@ -793,7 +750,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "naval_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=5000 y=-10 }
+				position = { x=260 y=-10 }
 				size = {width=20 height=20}
 				clipping = no
 				
@@ -925,7 +882,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "air_doctrine_button" # A container window of the format X_doctrine_button will automatically be linked to doctrine folder "X"
-				position = { x=5000 y=-10 }
+				position = { x=260 y=-10 }
 				size = {width=20 height=20}
 				clipping = no
 
@@ -1012,7 +969,50 @@ guiTypes = {
 				maxHeight = 20
 				format = left
 			}			
+			
 
+			containerWindowType = {
+				name = "special_forces_doctrine_button"
+				position = { x=360 y=0 }
+				size = {width=20 height=20}
+				clipping = no
+
+				buttonType = {
+					name = "button"
+					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
+					position = { x=34 y=47 }
+					#buttonText = "Doctrines"
+					font = "hoi_24header"
+				}
+
+				iconType = {
+					name = "icon"
+					position = { x=58 y=72 }
+					Orientation = CENTER
+					spriteType = "GFX_placeholder_bordered"
+					alwaystransparent = yes
+					centerposition = yes
+				}
+
+				iconType = {
+					name = "nb_doctrine_unlocked_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x=36 y=97 }
+					alwaystransparent = yes
+					frame = 1
+				}
+
+				instantTextBoxType = {
+					name ="nb_doctrine_unlocked"
+					position = { x=34 y=97 }
+					font = "hoi_16mbs"
+					text = "0"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
+				}
+			}
 			
 			
 		}

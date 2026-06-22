@@ -837,3 +837,14 @@ NDefines.NProject.SCIENTIST_BASIC_RESEARCH_DAILY_XP_GAIN = 0
 NDefines.NProject.RECRUIT_SCIENTIST_COST = {0,0,0,0}
 NDefines.NProject.SCIENTIST_SKILL_LEVEL_THRESHOLDS = {0,0,0,0,0}
 NDefines.NProject.SCIENTIST_SKILL_LEVEL_SPEED_MODIFIER = {0,0,0,0,0,0}
+
+--Doctrines
+NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 50.0                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
+NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 100000.0           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0                     -- How much training contributes to doctrine mastery relative to combat/missions
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 15                       -- Monthly mastery gain will not exceed this value
+NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0                         -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
+NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.25                    -- The rate at which mastery gained when a track is finished or empty is "banked"
+NDefines.NDoctrines.MASTERY_BANK_MAX = 250.0                               -- The maximum amount of mastery that can be banke
+NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0         -- For each mastery track, military attaches will add this fraction of their visiting country's mastery gain (from units only) in that track
+NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0  -- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense
