@@ -1,0 +1,40 @@
+spriteTypes = {
+
+	# GFX_infantry_attack_bg
+	# GFX_infantry_defence_bg
+	# GFX_armor_attack_bg
+	# GFX_armor_defence_bg
+	# GFX_operation_swift_maneuvres_bg
+	# GFX_operation_deep_planning_bg
+
+	spriteType = {
+		name = "GFX_infantry_attack_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_infantry_attack_bg.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_infantry_defence_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_infantry_defence_bg.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_armor_attack_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_armor_attack_bg.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_armor_defence_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_armor_defence_bg.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_operation_swift_maneuvres_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_operation_swift_maneuvres_bg.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_operation_deep_planning_bg"
+		textureFile = "gfx/interface/doctrines/doctrines_backgrounds/GFX_operation_deep_planning_bg.dds"
+		alwaystransparent = yes		
+	}
+}

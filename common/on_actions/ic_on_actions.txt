@@ -178,6 +178,8 @@ on_actions = {
 				navy_experience = 10
 				air_experience = 10
 
+				set_grand_doctrine = ic_grand_doctrine
+
 				country_event = { id = ic_news.2 days = 1337 }	# 1 september 1939 - WW2 Start!
 			}
 

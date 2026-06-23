@@ -1,14 +1,14 @@
 infantry_attack = {
-    name = DOCTRINE_TRACK_INFANTRY
-    background = "GFX_grand_battleplan_bg"
+    name = DOCTRINE_TRACK_INFANTRY_ATTACK
+    background = "GFX_infantry_attack_bg"
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
     }
 }
 infantry_defence = {
-    name = DOCTRINE_TRACK_INFANTRY
-    background = "GFX_grand_battleplan_bg"
+    name = DOCTRINE_TRACK_INFANTRY_DEFENCE
+    background = "GFX_infantry_defence_bg"
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
@@ -16,16 +16,16 @@ infantry_defence = {
 }
 
 armor_attack = {
-    name = DOCTRINE_TRACK_ARMOR
-    background = "GFX_mob_warfare_bg"
+    name = DOCTRINE_TRACK_ARMOR_ATTACK
+    background = "GFX_armor_attack_bg"
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
     }
 }
 armor_defence = {
-    name = DOCTRINE_TRACK_ARMOR
-    background = "GFX_mob_warfare_bg"
+    name = DOCTRINE_TRACK_ARMOR_DEFENCE
+    background = "GFX_armor_defence_bg"
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
@@ -33,16 +33,16 @@ armor_defence = {
 }
 
 operation_swift_maneuvres = {
-    name = DOCTRINE_TRACK_OPERATIONS
-    background = "GFX_tac_operation_bg"
+    name = DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES
+    background = "GFX_operation_swift_maneuvres_bg"
     icon = "GFX_doctrine_milestone_operations_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
     }
 }
 operation_deep_planning = {
-    name = DOCTRINE_TRACK_OPERATIONS
-    background = "GFX_tac_operation_bg"
+    name = DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING
+    background = "GFX_operation_deep_planning_bg"
     icon = "GFX_doctrine_milestone_operations_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {

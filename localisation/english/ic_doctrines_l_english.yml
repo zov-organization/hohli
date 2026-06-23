@@ -1,0 +1,63 @@
+﻿l_english:
+
+ic_GRAND_DOCTRINE_NAME:0 "WW2 Army Doctrine"
+ic_GRAND_DOCTRINE_DESC:0 "Cherepaha po imeni Hlov"
+
+DOCTRINE_TRACK_INFANTRY_ATTACK:0 "Infantry Attack"
+DOCTRINE_TRACK_INFANTRY_DEFENCE:0 "Infantry Defence"
+DOCTRINE_TRACK_ARMOR_ATTACK:0 "Armor Attack"
+DOCTRINE_TRACK_ARMOR_DEFENCE:0 "Armor Defence"
+DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES:0 "Operations Swift Maneuvres"
+DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING:0 "Operations Deep Planning"
+
+SUBDOCTRINE_INFANTRY_ATTACK:0 "Basic Infantry Attacking Tactics"
+SUBDOCTRINE_INFANTRY_DEFENCE:0 "Basic Infantry Defensive Tactics"
+SUBDOCTRINE_ARMOR_ATTACK:0 "Basic Armor Attacking Tactics"
+SUBDOCTRINE_ARMOR_DEFENCE:0 "Basic Armor Defensive Tactics"
+SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES:0 "Swift Maneuvers"
+SUBDOCTRINE_OPERATION_DEEP_PLANNING:0 "Deep Planning"
+
+SUBDOCTRINE_INFANTRY_ATTACK_DESC:0 ""
+SUBDOCTRINE_INFANTRY_DEFENCE_DESC:0 ""
+SUBDOCTRINE_ARMOR_ATTACK_DESC:0 ""
+SUBDOCTRINE_ARMOR_DEFENCE_DESC:0 ""
+SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES_DESC:0 ""
+SUBDOCTRINE_OPERATION_DEEP_PLANNING_DESC:0 ""
+
+ infantry_attack_sub_a:0 "Wave Offencives"
+ infantry_attack_sub_b:0 "Flexible Formations & Huge Barrages"
+ infantry_attack_sub_c:0 "Deep-Not-Wide Formations"
+ infantry_attack_sub_d:0 "Closer Cooperation & Kill Zones"
+ infantry_attack_sub_e:0 "Infantry Supported Offencives"
+ 
+ infantry_defence_sub_a:0 "Elastic Defence"
+ infantry_defence_sub_b:0 "Fire Brigades"
+ infantry_defence_sub_c:0 "More Reserves & More Trenches"
+ infantry_defence_sub_d:0 "Overlapping Defensive Positions"
+ infantry_defence_sub_e:0 "Deep Echeloned Trenches & Land-Air Warfare"
+
+ 
+ armor_attack_sub_a:0 "Local Armour Superiority"
+ armor_attack_sub_b:0 "Tank Desant"
+ armor_attack_sub_c:0 "Armoured Spearhead"
+ armor_attack_sub_d:0 "Mechanized Infantry Carrier"
+ armor_attack_sub_e:0 "Focused Tank Offencive"
+ 
+ armor_defence_sub_a:0 "Dispersed Armour Formations"
+ armor_defence_sub_b:0 "Tank Ambush"
+ armor_defence_sub_c:0 "Anti-Tank Strongpoints"
+ armor_defence_sub_d:0 "Counter-Penetration"
+ armor_defence_sub_e:0 "Mobile Anti-Tank Screens"
+
+ 
+ operation_swift_maneuvres_sub_a:0 "Rapid Command Cycles"
+ operation_swift_maneuvres_sub_b:0 "HQ Close to the Frontline"
+ operation_swift_maneuvres_sub_c:0 "Encirclement Priority"
+ operation_swift_maneuvres_sub_d:0 "Operational Collapse Warfare"
+ operation_swift_maneuvres_sub_e:0 "Breakthrough Point Exploitation"
+ 
+ operation_deep_planning_sub_a:0 "Detailed Operational Plans"
+ operation_deep_planning_sub_b:0 "Complex Logistics System"
+ operation_deep_planning_sub_c:0 "Coordinated Army Groups"
+ operation_deep_planning_sub_d:0 "Deep Battle"
+ operation_deep_planning_sub_e:0 "Double Main Strikes"

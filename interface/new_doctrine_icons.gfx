@@ -107,6 +107,11 @@ spriteTypes = {
 
     
     # new doctrine icons
+    spriteType = {
+        name = "GFX_infantry_attack_new_doctrine_medium"
+        texturefile = "gfx/interface/technologies/doctrine_icons/Direct_Fire_Support.dds"
+        alwaystransparent = yes
+    }
 
     # inf doctrine icons
     spriteType = {

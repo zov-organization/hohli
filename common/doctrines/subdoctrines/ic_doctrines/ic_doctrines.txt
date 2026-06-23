@@ -1,8 +1,8 @@
 infantry_attack_sub = {
     track = infantry_attack
-    name = SUBDOCTRINE_MOBILE_INFANTRY
-    description = SUBDOCTRINE_MOBILE_INFANTRY_DESC
-    icon = GFX_doctrine_mobile_infantry_medium
+    name = SUBDOCTRINE_INFANTRY_ATTACK
+    description = SUBDOCTRINE_INFANTRY_ATTACK_DESC
+    icon = GFX_infantry_attack_new_doctrine_medium
 
     xp_cost = 100
     xp_type = army
@@ -12,30 +12,52 @@ infantry_attack_sub = {
     }
 
     # EFFECTS
-    enable_tactic = tactic_overwhelming_fire
-    category_all_infantry = {
-        breakthrough = 0.1
-    }
+    
+	category_light_infantry = {
+		defense = 0.05
+	}
+	category_mechanized_inf = {
+		defense = 0.025
+	}
 
     effect = {
         #
     }
 
     rewards = {
-        1 = {
-            #
+        a = {
+		    category_light_infantry = {
+			     breakthrough = 0.05
+		    }
         }
-        2 = {
-            #
+        b = {
+            category_support_battalions = {
+			    max_organisation = 5
+		    }
+            category_support_battalions = {
+			    soft_attack = 0.125
+		    }
         }
-        3 = {
-            #
+        c = {
+            category_light_infantry = {
+			    max_organisation = 10
+		    }
         }
-        4 = {
-            #
+        d = {
+            category_support_battalions = {
+			    max_organisation = 5
+		    }
+            category_support_battalions = {
+			    soft_attack = 0.125
+		    }
         }
-        5 = {
-            #
+        e = {
+            category_front_line = {
+			    max_organisation = 5
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
+		    terrain_penalty_reduction = 0.05
         }
 
     }
@@ -43,9 +65,9 @@ infantry_attack_sub = {
 
 infantry_defence_sub = {
     track = infantry_defence
-    name = SUBDOCTRINE_DEFENSIVE_POSTURES
-    description = SUBDOCTRINE_DEFENSIVE_POSTURES_DESC
-    icon = GFX_doctrine_defensive_postures_medium
+    name = SUBDOCTRINE_INFANTRY_DEFENCE
+    description = SUBDOCTRINE_INFANTRY_DEFENCE_DESC
+    icon = GFX_infantry_defence_5_1_medium
 
     xp_cost = 100
     xp_type = army
@@ -54,33 +76,61 @@ infantry_defence_sub = {
         always = yes
     }
 
-    #OTHER BASE REWARDS
-    category_cavalry = {
-        supply_consumption = -0.01
-    }
-    category_all_infantry = {
-        entrenchment = 0.2
-    }
-
     effect = {
         #
     }
 
     rewards = {
-        1 = {
-            #
+        a = {
+            category_all_infantry = {
+			    defense = 0.075
+		    }
         }
-        2 = {
-            #
+        b = {
+            category_support_battalions = {
+			    max_organisation = 10
+			    soft_attack = 0.25
+		    }
         }
-        3 = {
-            #
+        c = {
+            category_all_infantry = {
+			    max_organisation = 5
+		    }
+            # or
+            engineer = {
+			    battalion_mult = {
+				    category = category_light_infantry
+				    entrenchment = 0.1
+				    add = yes
+			    }
+		    }
         }
-        4 = {
-            #
+        d = {
+            category_all_infantry = {
+			    max_organisation = 2.5
+			    defense = 0.025
+		    }
         }
-        5 = {
-            #
+        e = {
+            category_light_infantry = {
+			    default_morale = 10
+		    }
+		    max_dig_in_factor = 0.15
+
+            recon = {
+			    battalion_mult = {
+				    category = category_anti_air
+				    air_attack = 0.10
+			    }
+		    }
+		
+		    mot_recon = {
+			    battalion_mult = {
+				    category = category_anti_air
+				    air_attack = 0.10
+			    }
+		    }
+
         }
 
     }
@@ -88,9 +138,9 @@ infantry_defence_sub = {
 
 armor_attack_sub = {
     track = armor_attack
-    name = SUBDOCTRINE_LARGE_UNIT_TACTICS
-    description = SUBDOCTRINE_LARGE_UNIT_TACTICS_DESC
-    icon = GFX_doctrine_human_infantry_offensive_medium
+    name = SUBDOCTRINE_ARMOR_ATTACK
+    description = SUBDOCTRINE_ARMOR_ATTACK_DESC
+    icon = GFX_tank_defence_5_medium
 
     xp_cost = 100
     xp_type = army
@@ -106,39 +156,66 @@ armor_attack_sub = {
    
     #OTHER BASE REWARDS
     
-    category_all_infantry = {
-        supply_consumption = -0.01
-    }
+	category_all_armor = {
+		breakthrough = 0.10
+	}
 
     effect = {
         #
     }
 
     rewards = {
-        1 = {
-            #
+        a = {
+            category_tanks = {
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
         }
-        2 = {
-            #
-        }
-        3 = {
-            #
-        }
-        4 = {
-            #
-        }
-        5 = {
-            #
-        }
+        b = {
+            category_mechanized_inf = {
+			    hardness = 0.1
+			    max_strength = 0.05
+		    }
 
+		    category_tanks = {
+			    max_organisation = 5
+		    }
+        }
+        c = {
+            category_support_tanks = {
+			    max_organisation = 5
+			    soft_attack = 0.125
+			    hard_attack = 0.125
+		    }
+        }
+        d = {
+            category_mechanized_inf = {
+			    hardness = 0.1
+			    max_strength = 0.1
+		    }
+
+		    category_tanks = {
+			    max_organisation = 2.5
+		    }
+        }
+        e = {
+		    category_mechanized_inf = {
+			    maximum_speed = 0.1
+		    }
+
+		    category_tanks = {
+			    breakthrough = 0.25
+			    maximum_speed = 0.1
+		    }
+        }
     }
 }
 
 armor_defence_sub = {
     track = armor_defence
-    name = SUBDOCTRINE_ASSAULT_INFANTRY
-    description = SUBDOCTRINE_ASSAULT_INFANTRY_DESC
-    icon = GFX_doctrine_assault_infantry_medium
+    name = SUBDOCTRINE_ARMOR_DEFENCE
+    description = SUBDOCTRINE_ARMOR_DEFENCE_DESC
+    icon = GFX_tank_defence_2_medium
 
     xp_cost = 100
     xp_type = army
@@ -147,32 +224,115 @@ armor_defence_sub = {
         always = yes
     }
 
-    # EFFECTS
-
-    #OTHER BASE REWARDS
-    artillery = {   
-        soft_attack = 0.1
-    }
-
     effect = {
         #
     }
 
     rewards = {
-        1 = {
-            #
+        a = {
+		    category_army = {
+			    defense = 0.1
+		    }
         }
-        2 = {
-            #
+        b = {
+            enemy_army_bonus_air_superiority_factor = -0.05
+
+		    category_all_armor = {
+			    defense = 0.1
+		    }
         }
-        3 = {
-            #
+        c = {
+            category_artillery = {
+			    hard_attack = 0.15
+			    ap_attack = 0.15
+			    defense = 0.1
+		    }
         }
-        4 = {
-            #
+        d = {
+            category_support_tanks = {
+			    max_organisation = 5
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
         }
-        5 = {
-            #
+        e = {
+            light_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    medium_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    heavy_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    light_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    medium_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    heavy_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
         }
 
     }
@@ -180,47 +340,35 @@ armor_defence_sub = {
 
 operation_swift_maneuvres_sub = {
     track = operation_swift_maneuvres
-    name = SUBDOCTRINE_COMMANDOS
-    description = SUBDOCTRINE_COMMANDOS_DESC
-    icon = GFX_doctrine_commandos_medium
+    name = SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES
+    description = SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES_DESC
+    icon = GFX_operation_swift_maneuvres_3_medium
 
     xp_cost = 100
     xp_type = army
 
     available = {
-       
+        always = yes
     }
-
-    enable_tactic = tactic_infantry_charge
-    
-    logistics_company = {
-        battalion_mult = {
-            category = category_light_infantry
-            max_strength = 5
-            add = yes
-        }
-    }
-
-    
 
     effect = {
         #
     }
 
     rewards = {
-        1 = {
+        a = {
             #
         }
-        2 = {
+        b = {
             #
         }
-        3 = {
+        c = {
             #
         }
-        4 = {
+        d = {
             #
         }
-        5 = {
+        e = {
             #
         }
 
@@ -229,51 +377,35 @@ operation_swift_maneuvres_sub = {
 
 operation_deep_planning_sub = {
     track = operation_deep_planning
-    name = SUBDOCTRINE_MOUNTED_INFANTRY
-    description = SUBDOCTRINE_MOUNTED_INFANTRY_DESC
-    icon = GFX_doctrine_mounted_infantry_medium
+    name = SUBDOCTRINE_OPERATION_DEEP_PLANNING
+    description = SUBDOCTRINE_OPERATION_DEEP_PLANNING_DESC
+    icon = GFX_operation_deep_planning_4_medium
 
     xp_cost = 100
     xp_type = army
 
-
-    #mastery = {
-    #    categories = {
-    #        category_cavalry
-    #        category_all_infantry
-    #    }
-    #}
     available = {
         always = yes
     }
-
-    category_cavalry = {
-        soft_attack = 0.1
-        breakthrough = 0.1
-    }
-
-    unit_cavalry_design_cost_factor = -1
-
-    
 
     effect = {
         #
     }
 
     rewards = {
-        1 = {
+        a = {
             #
         }
-        2 = {
+        b = {
             #
         }
-        3 = {
+        c = {
             #
         }
-        4 = {
+        d = {
             #
         }
-        5 = {
+        e = {
             #
         }
 
