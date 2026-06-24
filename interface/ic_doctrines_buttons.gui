@@ -1,0 +1,19 @@
+#guiTypes = {
+#
+#	containerWindowType = {
+#		name = "ic_doctrines_buttons_container"
+#		position = { x = 715 y = 517 }
+#
+#		buttonType = {
+#			name = "ic_doctrines_button_inf_attack"
+#			quadTextureSprite ="GFX_staff_office_button"
+#			Orientation = "UPPER_LEFT"
+#			#shortcut = "shift+r"
+#			clicksound = click_close
+#			oversound = ui_menu_over
+#			position = { x = 0 y = 0 }
+#		}
+#
+#	}
+#
+#}

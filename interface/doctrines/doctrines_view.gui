@@ -497,17 +497,17 @@ guiTypes = {
 					alwaystransparent = "yes"
 					orientation = center_up
 				}
-				#
+
 				instantTextBoxType = {
 					name = "sub_doctrine_name"
 					text = "Sub Doctrine"
 					orientation = center
-					position = { x=-100 y=-22}
+					position = { x=-100 y=-26}
 					font = "hoi_16mbs"
 					maxWidth = 140
 					maxHeight = 30
 					format = left
-					alwaystransparent = "yes"
+					alwaystransparent = yes
 				}
 
 				positionType = {
@@ -534,7 +534,13 @@ guiTypes = {
 				}
 			}
 			
-
+			iconType = {
+				name = "lock_icon"
+				spriteType = "GFX_locked"
+				position = { x = -84 y = 97 }
+				orientation = upper_right
+			}
+		
 			containerWindowType = {
 				name = "mastery_text_container"
 				position = { x = 232 y = 142 }

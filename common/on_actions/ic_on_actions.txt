@@ -180,6 +180,14 @@ on_actions = {
 
 				set_grand_doctrine = ic_grand_doctrine
 
+				#set_sub_doctrine = infantry_attack
+				#set_sub_doctrine = infantry_defence
+				#set_sub_doctrine = armor_attack
+				#set_sub_doctrine = armor_defence
+				#set_sub_doctrine = operation_swift_maneuvres
+				#set_sub_doctrine = operation_deep_planning
+
+
 				country_event = { id = ic_news.2 days = 1337 }	# 1 september 1939 - WW2 Start!
 			}
 

@@ -1,0 +1,22 @@
+#scripted_gui = {
+#
+#    ic_mastery_gain_buttons = {
+#        context_type = player_context
+#		
+#		window_name = "ic_doctrines_buttons_container"
+#		parent_window_name = country_doctrine_view
+#		#parent_window_token = tech_land_doctrine_folder
+#		
+#		effects = {
+#			ic_doctrines_button_inf_attack_click = {
+#				#set_country_flag = open_old_doctrines_window
+#				
+#				add_political_power = 20
+#			}
+#		}
+#        
+#		triggers = {
+#        }
+#    }
+#
+#}
