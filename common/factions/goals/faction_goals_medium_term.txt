@@ -816,10 +816,10 @@ faction_goal_subjugate_the_faction = {
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
 			add_war_support = 0.15
 			every_unit_leader = {
-				add_timed_unit_leader_trait = {
-					trait = motivated
-					days = 270
-				}
+				#add_timed_unit_leader_trait = {
+				#	trait = motivated
+				#	days = 270
+				#}
 			}
 		}
 	}
