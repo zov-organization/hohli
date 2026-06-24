@@ -5,11 +5,12 @@ compliance_0 = {
 	threshold = 0
 	margin = 2
 	state_modifier = {
-		local_factories = 0
-		local_resources = 0
-		required_garrison_factor = -1.0
-		recruitable_population = -1.0
-		enemy_operative_detection_chance = 0.0
-		recruitable_population_factor = 0.0
+		#local_factories = 1
+		#local_resources = 1
+
+		recruitable_population = -1
+		recruitable_population_factor = -1
+
+		#enemy_operative_detection_chance = 0.0
 	}
 }
