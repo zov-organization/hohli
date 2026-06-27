@@ -18,5 +18,23 @@ ideas = {
 			}
 		}
 
+		ic_JAP_commonwealth_minor_debuff = {
+			name = ic_JAP_commonwealth_minor_debuff
+
+			removal_cost = -1
+
+			# picture = 
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				cic_to_overlord_factor = 1
+				mic_to_overlord_factor = 1
+				#autonomy_manpower_share = 0.1
+			}
+		}
+
 	}
 }
