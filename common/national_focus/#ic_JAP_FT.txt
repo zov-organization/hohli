@@ -1,6 +1,6 @@
 focus_tree = {
 	id = japanese_focus
-	continuous_focus_position = { x = 50 y = 50 }
+	continuous_focus_position = { x = 4500 y = 50 }
 
 	country = {
 		factor = 0
@@ -10,5 +10,458 @@ focus_tree = {
 			OR = { tag = JAP }
 		}
 	}
+	
+	default = 0
 
+ #CHINA FOCUS#
+
+	focus = {
+		id = development_plan_iti_go
+		#icon = 
+
+		available = {
+			date > 1937.7.7
+		}
+
+		prerequisite = { }
+
+		x = 3
+		y = 0
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = captured_bejing_and_zindao
+		#icon = 
+
+		available = {
+			
+		}
+
+		prerequisite = { focus = development_plan_iti_go }
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = working_with_the_local_population
+		#icon = 
+
+
+		prerequisite = { focus = development_plan_iti_go }
+
+		x = 5
+		y = 1
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = establishing_a_new_government_in_the_occupied_territories
+		#icon = 
+
+
+		prerequisite = { focus = working_with_the_local_population focus = captured_bejing_and_zindao }
+
+		x = 3
+		y = 2
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = occupation_nankin
+		#icon = 
+
+		available = {
+			date > 1937.12.13
+		}
+
+
+		prerequisite = { focus = establishing_a_new_government_in_the_occupied_territories }
+		relative_position_id = establishing_a_new_government_in_the_occupied_territories
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = pumping_out_resources
+		#icon = 
+
+
+		prerequisite = { focus = occupation_nankin }
+		relative_position_id = occupation_nankin
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+	focus = {
+		id = expanding_powers_secret_squad
+		#icon = 
+
+
+		prerequisite = { focus = occupation_nankin }
+		relative_position_id = occupation_nankin
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {  }
+			
+	}
+
+ #MAIN FOCUS#
+
+	focus = {
+		id = for_the_emperor
+		#icon = 
+
+		prerequisite = {  }
+
+		x = 16
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = project_seven_zero_three
+		#icon = 
+
+		prerequisite = { focus = for_the_emperor }
+		relative_position_id = for_the_emperor
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Give_priority_to_industrial_research
+		#icon = 
+
+		prerequisite = { focus = project_seven_zero_three }
+		relative_position_id = project_seven_zero_three
+		mutually_exclusive = { focus = Give_priority_to_army_research }
+		mutually_exclusive = { focus = Give_priority_to_naval_research }
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Give_priority_to_army_research
+		#icon = 
+
+		prerequisite = { focus = project_seven_zero_three }
+		relative_position_id = project_seven_zero_three
+		mutually_exclusive = { focus = Give_priority_to_industrial_research }
+		mutually_exclusive = { focus = Give_priority_to_naval_research }
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Give_priority_to_naval_research
+		#icon = 
+
+		prerequisite = { focus = project_seven_zero_three }
+		relative_position_id = project_seven_zero_three
+		mutually_exclusive = { focus = Give_priority_to_army_research }
+		mutually_exclusive = { focus = Give_priority_to_industrial_research }
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = economic_crisis
+		#icon = 
+
+		prerequisite = { focus = for_the_emperor }
+		relative_position_id = for_the_emperor
+
+		x = 10
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = infrastructure_issue
+		#icon = 
+
+		prerequisite = { focus = economic_crisis }
+		relative_position_id = economic_crisis
+
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = investments_american_businessmen
+		#icon = 
+
+		prerequisite = { focus = infrastructure_issue }
+		relative_position_id = infrastructure_issue
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = mahchuka_industry
+		#icon = 
+
+		prerequisite = { focus = economic_crisis }
+		relative_position_id = economic_crisis
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			MAN = {
+				add_ideas = ic_ENG_commonwealth_minor_debuff
+			}
+		}
+	}
+
+	focus = {
+		id = manchuka_scientists
+		#icon = 
+
+		prerequisite = { focus = mahchuka_industry }
+		relative_position_id = mahchuka_industry
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_research_slot = 2 # добавить ещё сюда идею на -10 ресёрч спида и учёных
+		}
+	}
+
+	focus = {
+		id = agrarian_reform_1
+		#icon = 
+
+		prerequisite = { focus = economic_crisis }
+		relative_position_id = economic_crisis
+
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = agrarian_reform_2
+		#icon = 
+
+		prerequisite = { focus = agrarian_reform_1 }
+		prerequisite = { focus = manchuka_scientists }
+		relative_position_id = agrarian_reform_1
+		mutually_exclusive = { focus = agrarian_reform_3 }
+
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = agrarian_reform_3
+		#icon = 
+
+		prerequisite = { focus = agrarian_reform_1 }
+		relative_position_id = agrarian_reform_1
+		mutually_exclusive = { focus = agrarian_reform_2 }
+
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = lessons_korea_and_manchuka_war
+		#icon = 
+
+		prerequisite = { focus = for_the_emperor }
+		relative_position_id = for_the_emperor
+
+		x = -5
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = arty_jap
+		#icon = 
+
+		prerequisite = { focus = lessons_korea_and_manchuka_war }
+		relative_position_id = lessons_korea_and_manchuka_war
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = infantry_weapons_jap
+		#icon = 
+
+		prerequisite = { focus = lessons_korea_and_manchuka_war }
+		relative_position_id = lessons_korea_and_manchuka_war
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = tanks_jap_1
+		#icon = 
+		
+		prerequisite = { focus = lessons_korea_and_manchuka_war }
+		relative_position_id = lessons_korea_and_manchuka_war
+
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = air_jap_1
+		#icon = 
+
+
+		prerequisite = { focus = lessons_korea_and_manchuka_war }
+		relative_position_id = lessons_korea_and_manchuka_war
+
+		x = -2
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = lessons_china_war
+		#icon = 
+
+		available = {
+			has_completed_focus = 
+		}
+
+		prerequisite = { focus = lessons_korea_and_manchuka_war }
+		relative_position_id = lessons_korea_and_manchuka_war
+
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = tanks_jap_2
+		#icon = 
+		
+		prerequisite = { focus = lessons_china_war }
+		relative_position_id = lessons_china_war
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = air_jap_2
+		#icon = 
+
+
+		prerequisite = { focus = lessons_china_war }
+		relative_position_id = lessons_china_war
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
 }
