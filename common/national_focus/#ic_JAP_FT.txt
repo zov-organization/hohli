@@ -1,6 +1,6 @@
 focus_tree = {
 	id = japanese_focus
-	continuous_focus_position = { x = 4500 y = 50 }
+	continuous_focus_position = { x = 100 y = 1500}
 
 	country = {
 		factor = 0
@@ -141,6 +141,7 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+	
 
 	focus = {
 		id = project_seven_zero_three
@@ -163,10 +164,39 @@ focus_tree = {
 
 		prerequisite = { focus = project_seven_zero_three }
 		relative_position_id = project_seven_zero_three
-		mutually_exclusive = { focus = Give_priority_to_army_research }
-		mutually_exclusive = { focus = Give_priority_to_naval_research }
 
 		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Additional_recruitment_the_squad
+		#icon = 
+
+		prerequisite = { focus = Give_priority_to_industrial_research focus = Give_priority_to_army_research  focus = Give_priority_to_naval_research  }
+		relative_position_id = Give_priority_to_industrial_research
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Japanese_quality
+		#icon = 
+
+		prerequisite = { focus = Additional_recruitment_the_squad }
+		prerequisite = { focus = investments_american_businessmen } 
+		relative_position_id = Additional_recruitment_the_squad
+
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -178,12 +208,29 @@ focus_tree = {
 		id = Give_priority_to_army_research
 		#icon = 
 
+		available = {
+			has_completed_focus = lessons_china_war
+		}
+
 		prerequisite = { focus = project_seven_zero_three }
 		relative_position_id = project_seven_zero_three
-		mutually_exclusive = { focus = Give_priority_to_industrial_research }
-		mutually_exclusive = { focus = Give_priority_to_naval_research }
 
 		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Additional_investments_in_Mitsubishi_and_Nissan
+		#icon = 
+
+		prerequisite = { focus = Give_priority_to_industrial_research focus = Give_priority_to_army_research  focus = Give_priority_to_naval_research  }
+		relative_position_id = Give_priority_to_army_research
+
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -197,8 +244,36 @@ focus_tree = {
 
 		prerequisite = { focus = project_seven_zero_three }
 		relative_position_id = project_seven_zero_three
-		mutually_exclusive = { focus = Give_priority_to_army_research }
-		mutually_exclusive = { focus = Give_priority_to_industrial_research }
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Additional_investments_in_Kure_and_Yokosuka
+		#icon = 
+
+		prerequisite = { focus = Give_priority_to_industrial_research focus = Give_priority_to_army_research  focus = Give_priority_to_naval_research  }
+		relative_position_id = Give_priority_to_naval_research
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Land_of_the_Rising_Sun
+		#icon = 
+
+		prerequisite = { focus = Additional_investments_in_Kure_and_Yokosuka focus = Additional_investments_in_Mitsubishi_and_Nissan  focus = Additional_recruitment_the_squad  }
+		relative_position_id = Additional_investments_in_Kure_and_Yokosuka
 
 		x = 0
 		y = 1
@@ -463,5 +538,626 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+	}
+
+	#NAVAL FOCUS#
+
+	focus = {
+		id = naval_issue
+		#icon = 
+
+		prerequisite = { focus = for_the_emperor }
+		relative_position_id = for_the_emperor
+
+		x = 24
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = naval_commands_issue
+		#icon = 
+
+		prerequisite = { focus = naval_issue }
+		relative_position_id = naval_issue
+
+		x = 12
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Appoint_Yamamoto_1
+		#icon = 
+
+		prerequisite = { focus = naval_commands_issue }
+		relative_position_id = naval_commands_issue
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Yamamoto_believes_that__arriers_winning_war
+		#icon = 
+
+		prerequisite = { focus = Appoint_Yamamoto_1 }
+		relative_position_id = Appoint_Yamamoto_1
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Appoint_Yamamoto_2
+		#icon = 
+
+		prerequisite = { focus = Appoint_Yamamoto_1 }
+		relative_position_id = Appoint_Yamamoto_1
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = New_squadron_order_of_battle
+		#icon = 
+
+		prerequisite = { focus = Appoint_Yamamoto_2 }
+		relative_position_id = Appoint_Yamamoto_2
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Appoint_Yamamoto_3
+		#icon = 
+
+		prerequisite = { focus = Appoint_Yamamoto_2 }
+		relative_position_id = Appoint_Yamamoto_2
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = project_Tosa
+		#icon = 
+
+		prerequisite = { focus = Appoint_Yamamoto_3 }
+		relative_position_id = Appoint_Yamamoto_3
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Expensive_but_necessary
+		#icon = 
+
+		prerequisite = { focus = naval_issue }
+		relative_position_id = naval_issue
+
+		x = -6
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = exceptional_quality_1
+		#icon = 
+
+		prerequisite = { focus = Expensive_but_necessary }
+		relative_position_id = Expensive_but_necessary
+		mutually_exclusive = { focus = Some_exceptions_1 }
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = exceptional_quality_2
+		#icon = 
+
+		prerequisite = { focus = exceptional_quality_1 }
+		relative_position_id = exceptional_quality_1
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = exceptional_quality_3
+		#icon = 
+
+		prerequisite = { focus = exceptional_quality_2 }
+		relative_position_id = exceptional_quality_2
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Some_exceptions_1
+		#icon = 
+
+		prerequisite = { focus = Expensive_but_necessary }
+		relative_position_id = Expensive_but_necessary
+		mutually_exclusive = { focus = exceptional_quality_1 }
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Some_exceptions_2
+		#icon = 
+
+		prerequisite = { focus = Some_exceptions_1 }
+		relative_position_id = Some_exceptions_1
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Some_exceptions_3
+		#icon = 
+
+		prerequisite = { focus = Some_exceptions_2 }
+		relative_position_id = Some_exceptions_2
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Balance
+		#icon = 
+
+		prerequisite = { focus = Some_exceptions_3 focus = exceptional_quality_3 }
+		relative_position_id = Some_exceptions_3
+
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = dismantling_and_recycling_of_old_dreadnoughts
+		#icon = 
+
+		prerequisite = { focus = naval_issue }
+		relative_position_id = naval_issue
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+	
+
+	focus = {
+		id = old_ones_are_not_so_bad_anymore
+		#icon = 
+
+		prerequisite = { focus = dismantling_and_recycling_of_old_dreadnoughts }
+		relative_position_id = dismantling_and_recycling_of_old_dreadnoughts
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+		#Сделать так, чтобы этот фокус снимал необходимую идея для взятия фокусов споряжённый производством качественного флота	
+		}	
+	}
+
+	focus = {
+		id = the_fastest_battlecruisers
+		#icon = 
+
+		prerequisite = { focus = old_ones_are_not_so_bad_anymore }
+		relative_position_id = old_ones_are_not_so_bad_anymore
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+		
+		}	
+	}
+
+	focus = {
+		id = lay_down_at_the_Musashi_shipyard
+		#icon = 
+
+		prerequisite = { focus = the_fastest_battlecruisers }
+		relative_position_id = the_fastest_battlecruisers
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+		
+		}	
+	}
+
+	focus = {
+		id = lay_down_at_the_Yamato_shipyard
+		#icon = 
+
+		prerequisite = { focus = the_fastest_battlecruisers }
+		relative_position_id = the_fastest_battlecruisers
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		
+		}	
+	}
+
+	focus = {
+		id = Provide_good_air_defense
+		#icon = 
+
+		prerequisite = { focus = lay_down_at_the_Yamato_shipyard focus = lay_down_at_the_Musashi_shipyard }
+		relative_position_id = lay_down_at_the_Yamato_shipyard
+
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+		
+		}	
+	}
+
+	focus = {
+		id = The_basis_of_the_basics
+		#icon = 
+
+		prerequisite = { focus = dismantling_and_recycling_of_old_dreadnoughts focus = expanded_production_of_submarines focus = the_best_heavy_cruisers }
+		relative_position_id = dismantling_and_recycling_of_old_dreadnoughts
+
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = expanded_production_of_submarines
+		#icon = 
+
+		prerequisite = { focus = naval_issue }
+		relative_position_id = naval_issue
+
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Invite_German_submariners
+		#icon = 
+
+		prerequisite = { focus = expanded_production_of_submarines }
+		relative_position_id = expanded_production_of_submarines
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Follow_the_example_of_the_Kriegsmarine
+		#icon = 
+
+		prerequisite = { focus = Invite_German_submariners }
+		relative_position_id = Invite_German_submariners
+		mutually_exclusive = { focus = exchange_of_personnel_and_experience_between_designers_1 }
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = why_refiting
+		#icon = 
+
+		prerequisite = { focus = Follow_the_example_of_the_Kriegsmarine }
+		relative_position_id = Follow_the_example_of_the_Kriegsmarine
+		
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = analogue_German_autarky_expense_China
+		#icon = 
+
+		prerequisite = { focus = why_refiting }
+		relative_position_id = why_refiting
+		
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = exchange_of_personnel_and_experience_between_designers_1
+		#icon = 
+
+		prerequisite = { focus = Invite_German_submariners }
+		relative_position_id = Invite_German_submariners
+		mutually_exclusive = { focus = Follow_the_example_of_the_Kriegsmarine }
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = the_best_heavy_cruisers
+		#icon = 
+
+		prerequisite = { focus = naval_issue }
+		relative_position_id = naval_issue
+
+		x = 8
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = the_dont_basic_of_the_basics
+		#icon = 
+
+		prerequisite = { focus = the_best_heavy_cruisers focus = expanded_production_of_submarines focus = dismantling_and_recycling_of_old_dreadnoughts focus = naval_commands_issue}
+		relative_position_id = the_best_heavy_cruisers
+
+		x = 8
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Meko_the_great_progenitor
+		#icon = 
+
+		prerequisite = { focus = the_best_heavy_cruisers }
+		relative_position_id = the_best_heavy_cruisers
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = the_first_sketches_of_the_takao_and_mogami
+		#icon = 
+
+		prerequisite = { focus = Meko_the_great_progenitor }
+		relative_position_id = Meko_the_great_progenitor
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = mass_production_cruiser
+		#icon = 
+
+		prerequisite = { focus = the_first_sketches_of_the_takao_and_mogami }
+		relative_position_id = the_first_sketches_of_the_takao_and_mogami
+		
+
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = light_cruisers_in_the_same_place
+		#icon = 
+
+		prerequisite = { focus = mass_production_cruiser }
+		prerequisite = { focus = full_coordinations }
+		relative_position_id = mass_production_cruiser
+		
+
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = carrier_refiting
+		#icon = 
+
+		prerequisite = { focus = mass_production_cruiser }
+		prerequisite = { focus = Yamamoto_believes_that__arriers_winning_war }
+		prerequisite = { focus = New_squadron_order_of_battle }
+		prerequisite = { focus = project_Tosa }
+		relative_position_id = mass_production_cruiser
+		
+
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = Old_Dreadnoughts_are_also_suitable
+		#icon = 
+
+		prerequisite = { focus = mass_production_cruiser }
+		relative_position_id = mass_production_cruiser
+		
+
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = exchange_of_personnel_and_experience_between_designers_2
+		#icon = 
+
+		prerequisite = { focus = Meko_the_great_progenitor }
+		relative_position_id = Meko_the_great_progenitor
+		
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = full_coordinations
+		#icon = 
+
+		prerequisite = { focus = exchange_of_personnel_and_experience_between_designers_2 }
+		prerequisite = { focus = exchange_of_personnel_and_experience_between_designers_1 }
+		relative_position_id = exchange_of_personnel_and_experience_between_designers_2
+		
+
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}	
+	}
+	
+	focus = {
+		id = Jieitai
+		#icon = 
+
+		prerequisite = { focus = the_dont_basic_of_the_basics focus = The_basis_of_the_basics focus = Old_Dreadnoughts_are_also_suitable focus = Provide_good_air_defense focus = Balance }
+		relative_position_id = light_cruisers_in_the_same_place
+		
+
+		x = -3
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}	
 	}
 }
