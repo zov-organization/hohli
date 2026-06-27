@@ -1,0 +1,208 @@
+JAP_osaka_army_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_sagami_army_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_sagami_army_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_yokosuka_naval_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_maizuru_naval_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_sasebo_naval_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_mitsubishi_kobe_shipyard_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_kawasaki_dockyards_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_hikari_naval_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_aichi_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_nakajima_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_yokosuka_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_kawanishi_aircraft_company_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_kawasaki_aircraft_industries_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_tachikawa_aircraft_company_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_tokyo_automobile_industries_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_nagoya_arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_kayaba_industry_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}
+
+JAP_nippon_sharyo_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
+}

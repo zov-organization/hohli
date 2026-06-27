@@ -1,0 +1,529 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+JAP_mitsubishi_heavy_industries_organization = {
+	include = ic_generic_medium_tank_organization
+	icon = GFX_idea_JAP_mitsubishi_tanks
+	allowed = {	
+		tag = JAP
+	}
+
+} 
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+JAP_kure_naval_arsenal_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_kure_naval_arsenal
+
+	allowed = {	
+		original_tag = JAP
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	
+
+	add_trait = {
+		token = JAP_mio_trait_naval_arsenal_trait
+		name = JAP_mio_trait_naval_arsenal_trait
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_primary_battery_layout
+
+		position = { x = -1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				JAP_naval_faction_is_not_subdued = yes
+			}
+		}
+
+		on_complete = {
+			
+		}
+
+		organization_modifier = {
+		    
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_rapid_counterflooding_system
+		name = JAP_mio_trait_rapid_counterflooding_system
+		icon = GFX_generic_mio_trait_icon_max_strength
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_hardened_critical_components
+
+		all_parents = { generic_mio_trait_hardened_critical_components }
+
+		position = { x = 0 y = 1 } 
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_enhanced_optics
+		name = JAP_mio_trait_enhanced_optics
+		icon = GFX_generic_mio_trait_icon_surface_detection
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_secondary_battery_layout
+
+		all_parents = { generic_mio_trait_secondary_battery_layout }
+
+		position = { x = 0 y = 1 } 
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_strength_in_numbers
+		name = JAP_mio_trait_strength_in_numbers
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_primary_battery_layout
+
+		position = { x = 1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_seek_strength_in_numbers
+				NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag
+			}
+		}
+
+		organization_modifier = {
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+}
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+JAP_mitsubishi_organization = {
+	include = ic_generic_light_aircraft_organization
+	icon = GFX_idea_JAP_mitsubishi_airplanes
+
+    equipment_type = {
+		small_plane_airframe
+		medium_plane_airframe
+		large_plane_airframe
+		transport_plane_equipment
+	}
+	
+	allowed = {	 
+		tag = JAP
+	}
+} 
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+JAP_kokura_arsenal_organization = {
+	include = ic_generic_infantry_equipment_organization
+	icon = GFX_idea_tokyo_arsenal
+	allowed = {	
+		tag = JAP
+	}
+
+	
+
+}
+
+JAP_osaka_army_arsenal_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_osaka_army_arsenal
+	allowed = {	
+		original_tag = JAP
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_military_arsenal_trait
+		name = JAP_mio_trait_military_arsenal_trait
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_big_guns
+
+		position = { x = 1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				JAP_army_faction_is_not_subdued = yes
+			}
+		}
+
+		on_complete = {
+			
+		}
+
+		organization_modifier = {
+		    
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+} 
+
+JAP_nissan_organization = {
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_nissan
+	allowed = {	 
+		OR = {
+			original_tag = JAP 
+			AND = {
+				original_tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				original_tag = MAN
+				has_dlc = "No Compromise, No Surrender"
+			}
+			PHI_SEA = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+	visible = {
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = MAN }
+			}
+			FROM = { has_completed_focus = MAN_tsr_strengthen_ties_with_nissan }
+		}
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = JAP } }
+			}
+			FROM = { NOT = { has_war_with = JAP } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_JAP_nissan_organization_flag
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				FROM = {
+					original_tag = PHI
+				}
+			}
+			FROM = {
+				has_completed_focus = PHI_align_with_japan
+				if = {
+					limit = {
+						has_completed_focus = PHI_declare_military_emergency
+					}
+					NOT = {
+						has_completed_focus = PHI_declare_military_emergency
+					}
+				}
+			}
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_special_government_contracts_nissan_trait
+		name = JAP_mio_trait_special_government_contracts_nissan_trait
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_closed_chassi
+
+		position = { x = 1 y = 2 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			has_mio_size > 5
+		}
+
+		on_complete = {
+			FROM = {
+				remove_trait = {
+				    character = JAP_yoshisuke_aikawa
+				    slot = political_advisor
+				    trait = JAP_nissan_president
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_trait = {
+				    character = JAP_yoshisuke_aikawa
+				    slot = political_advisor
+				    trait = JAP_nissan_president_2
+				}
+			}
+		}
+
+		organization_modifier = {
+		    military_industrial_organization_research_bonus = 0.02
+		}
+
+		production_bonus = {
+			
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		name = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_closed_chassi
+
+		position = { x = 1 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				JAP_zaibatsu_faction_is_at_least_influential = yes
+			}
+		}
+
+		on_complete = {
+			
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_cooperation_with_kurogane
+		name = JAP_mio_trait_cooperation_with_kurogane
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_closed_chassi
+
+		position = { x = 1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			
+		}
+
+		on_complete = {
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_ethanol_fuel_adaptations
+		name = PHI_mio_trait_ethanol_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 9 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_coconut_fuel_adaptations
+		name = PHI_mio_trait_coconut_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+			FROM = {
+				PHI_vicente_lava = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+
+		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.10
+			reliability = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+}
+
