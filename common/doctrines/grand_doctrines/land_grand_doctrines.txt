@@ -355,8 +355,8 @@ ic_grand_doctrine = {
         armor_attack
         armor_defence
 
-        operation_swift_maneuvres
-        operation_deep_planning
+        #operation_swift_maneuvres
+        #operation_deep_planning
     }
     
     max_track_rows = 1

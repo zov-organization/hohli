@@ -359,7 +359,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 }
 
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
@@ -619,8 +619,28 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { 2.0, 2.0, 2.0 }
 NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.75
+
+-- damage reduction from naval strikes https://www.desmos.com/calculator/wqjhqevufd
+NDefines.NNavy.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.05
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 1
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.4
+
+-- carrier defines
+NDefines.NNavy.NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 0	-- How many planes flying in a naval combat before penalties are introduced
+NDefines.NNavy.NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.005	-- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns
+
+-- один корабль типа n добавляет к кол-ву летающих самолётов соответствующее значение. один капитал - 10, один скрин - 5, один авианосец - 16 и тд
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL = 10	-- For dynamic plane efficacy, silhouette value (nominally in planes, but very abstract)
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SCREEN = 5		-- As Above. This one would be nice to split by type, but that's problematic.
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CARRIER = 16	-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUPPORT = 3		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CONVOY = 4		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUBMARINE = 7	-- As Above
+	
+NDefines.NNavy.SCREEN_CAP_REDUCTION_FACTOR = 0							-- Reduces screen silhouette weight if there are caps present, screenval * 1/(1+caps*weight)
 
 
 --NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18					--seems like those dont work at all
@@ -630,6 +650,7 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
 
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.5
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5
+NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 10	-- the minimum fleet should be: 1cv, 2bb, 6cl. you can go higher, but lower doesnt make sence. (+1 for some reason)
 
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
 NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
@@ -638,7 +659,7 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 1.8
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
 
-NDefines.NNavy.CARRIER_STACK_PENALTY = 2
+--NDefines.NNavy.CARRIER_STACK_PENALTY = 2 no longer used, now it is based on silhouette values
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.95
 NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
@@ -646,8 +667,6 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 2		--The weight of damag
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 100
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 50
-NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.75
-NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 1
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
@@ -730,7 +749,7 @@ NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again af
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faster
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
-NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed
+NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- /deprecated, will be removed in the future update/ every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed 
 
 -- how subs are spotted
 NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 0	-- from the start ships can not detect subs AT ALL

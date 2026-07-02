@@ -84,7 +84,7 @@ equipments = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = empty
 			deck_space_1 = empty
-			deck_space_2 = empty
+			#deck_space_2 = empty
 		}
 
 		lg_armor_piercing = 0
@@ -148,12 +148,6 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			
 			deck_space_1 = inherit
-			deck_space_2 = {
-				required = yes
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
 
 		}
 
@@ -180,8 +174,7 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			
 			deck_space_1 = inherit
-			deck_space_2 = inherit
-			deck_space_3 = {
+			deck_space_2 = {
 				required = yes
 				allowed_module_categories = {
 					ship_deck_space
@@ -226,8 +219,7 @@ equipments = {
 			
 			deck_space_1 = inherit
 			deck_space_2 = inherit
-			deck_space_3 = inherit
-			deck_space_4 = {
+			deck_space_3 =  {
 				required = yes
 				allowed_module_categories = {
 					ship_deck_space
