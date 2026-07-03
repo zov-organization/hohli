@@ -1,3 +1,9 @@
+@days_for_theorists_to_work = 365
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.2
+@mastery_theorists_gain_high = 0.3
+@mastery_theorists_gain_esport = 0.4
+
 characters = {                                                                                                    
 
 	ic_SOV_nikolay_kuznetsov = {
@@ -223,6 +229,24 @@ characters = {
 			traits = {
 				military_theorist
 			}
+			on_add = {
+				SOV = {
+					hidden_effect = {
+						add_timed_idea = {
+							idea = ic_SOV_georgy_isserson_hired
+							days = @days_for_theorists_to_work
+						}
+					}
+					custom_effect_tooltip = ic_theoretic_hired_tooltip
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_high
+						days = @days_for_theorists_to_work
+						name = ic_SOV_georgy_isserson
+						track = infantry_defence
+					}
+				}
+			}
 		}
 	}
             
@@ -408,6 +432,24 @@ characters = {
 			traits = {
 				mass_assault_expert
 			}
+			on_add = {
+				SOV = {
+					hidden_effect = {
+						add_timed_idea = {
+							idea = ic_SOV_mikhail_tukhachevsky_hired
+							days = @days_for_theorists_to_work
+						}
+					}
+					custom_effect_tooltip = ic_theoretic_hired_tooltip
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = SOV_mikhail_tukhachevsky
+						track = infantry_defence
+					}
+				}
+			}
 		}
 
 		#field_marshal = {
@@ -502,6 +544,24 @@ characters = {
 			}
 			traits = {
 				mass_assault_expert
+			}
+			on_add = {
+				SOV = {
+					hidden_effect = {
+						add_timed_idea = {
+							idea = ic_SOV_georgy_zhukov_hired
+							days = @days_for_theorists_to_work
+						}
+					}
+					custom_effect_tooltip = ic_theoretic_hired_tooltip
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = infantry_defence
+					}
+				}
 			}
 		}
 

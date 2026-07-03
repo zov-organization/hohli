@@ -502,7 +502,7 @@ guiTypes = {
 					name = "sub_doctrine_name"
 					text = "Sub Doctrine"
 					orientation = center
-					position = { x=-100 y=-26}
+					position = { x=-100 y=-23 }
 					font = "hoi_16mbs"
 					maxWidth = 140
 					maxHeight = 30

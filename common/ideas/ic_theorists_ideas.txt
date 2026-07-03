@@ -1,0 +1,17 @@
+ideas = {
+
+	hidden_ideas = {
+		
+		ic_SOV_georgy_isserson_hired = {
+			on_remove = { deactivate_advisor = ic_SOV_georgy_isserson }
+		}
+		ic_SOV_mikhail_tukhachevsky_hired = {
+			on_remove = { deactivate_advisor = ic_SOV_mikhail_tukhachevsky }
+		}
+		ic_SOV_georgy_zhukov_hired = {
+			on_remove = { deactivate_advisor = ic_SOV_georgy_zhukov }
+		}
+
+	}
+
+}

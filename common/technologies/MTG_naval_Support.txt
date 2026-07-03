@@ -686,22 +686,22 @@ technologies = {
 		}
 
 		destroyer = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 		light_cruiser = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 		heavy_cruiser = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 		battleship = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 		battle_cruiser = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 		carrier = {
-			anti_air_attack = 0.15
+			navy_anti_air_attack = 0.15
 		}
 
 		on_research_complete = {
