@@ -12,6 +12,13 @@ ideas = {
 			on_remove = { deactivate_advisor = ic_SOV_georgy_zhukov }
 		}
 
+		ic_GER_erich_von_manstein_hired = {
+			on_remove = { deactivate_advisor = ic_GER_erich_von_manstein }
+		}
+		ic_GER_heinz_guderian_hired = {
+			on_remove = { deactivate_advisor = ic_GER_heinz_guderian }
+		}
+
 	}
 
 }

@@ -128,12 +128,31 @@ characters={
 			}
 		}
 		advisor={
-			cost = 75
+			cost = 50
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_GER_erich_von_manstein
 			ledger = army
 			traits = {
 				military_theorist
+			}
+			on_add = {
+				GER = {
+					hidden_effect = {
+						add_timed_idea = {
+							idea = ic_GER_erich_von_manstein_hired
+							days = @days_for_theorists_to_work
+						}
+					}
+					custom_effect_tooltip = ic_theoretic_hired_tooltip
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = GER_erich_von_manstein
+						grand_doctrine = ic_grand_doctrine
+					}
+				}
 			}
 		}
 		
@@ -156,12 +175,63 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 75
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_GER_heinz_guderian
 			ledger = army
 			traits = {
 				blitzkrieg_theorist
+			}
+			on_add = {
+				GER = {
+					hidden_effect = {
+						add_timed_idea = {
+							idea = ic_GER_heinz_guderian_hired
+							days = @days_for_theorists_to_work
+						}
+					}
+					custom_effect_tooltip = ic_theoretic_hired_tooltip
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_low
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = infantry_attack
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_low
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = infantry_defence
+					}
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_esport
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = armor_attack
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_high
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = armor_defence
+					}
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = operation_swift_maneuvres
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = GER_heinz_guderian
+						track = operation_deep_planning
+					}
+				}
 			}
 		}
 		field_marshal={

@@ -222,8 +222,9 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 50
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_SOV_georgy_isserson
 			ledger = army
 			traits = {
@@ -240,10 +241,10 @@ characters = {
 					custom_effect_tooltip = ic_theoretic_hired_tooltip
 
 					add_daily_mastery = {
-						amount = @mastery_theorists_gain_high
+						amount = @mastery_theorists_gain_medium
 						days = @days_for_theorists_to_work
 						name = ic_SOV_georgy_isserson
-						track = infantry_defence
+						grand_doctrine = ic_grand_doctrine
 					}
 				}
 			}
@@ -425,8 +426,9 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 150
+			cost = 75
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_SOV_mikhail_tukhachevsky
 			ledger = army
 			traits = {
@@ -446,7 +448,7 @@ characters = {
 						amount = @mastery_theorists_gain_medium
 						days = @days_for_theorists_to_work
 						name = SOV_mikhail_tukhachevsky
-						track = infantry_defence
+						grand_doctrine = ic_grand_doctrine
 					}
 				}
 			}
@@ -535,8 +537,9 @@ characters = {
 		}
 
 		advisor = {
-			cost = 50
+			cost = 25
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_SOV_georgy_zhukov
 			ledger = army
 			available = {
@@ -556,10 +559,42 @@ characters = {
 					custom_effect_tooltip = ic_theoretic_hired_tooltip
 
 					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
+						amount = @mastery_theorists_gain_esport
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = infantry_attack
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_high
 						days = @days_for_theorists_to_work
 						name = SOV_georgy_zhukov
 						track = infantry_defence
+					}
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_low
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = armor_attack
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = armor_defence
+					}
+
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = operation_swift_maneuvres
+					}
+					add_daily_mastery = {
+						amount = @mastery_theorists_gain_medium
+						days = @days_for_theorists_to_work
+						name = SOV_georgy_zhukov
+						track = operation_deep_planning
 					}
 				}
 			}
