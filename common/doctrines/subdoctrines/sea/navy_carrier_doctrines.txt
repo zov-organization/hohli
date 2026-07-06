@@ -119,10 +119,8 @@ escort_carrier_support = {
     xp_type = navy
 
     available = {
-        is_special_project_completed = sp:sp_naval_escort_carrier
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
+        hidden_trigger = { always = no }
+        #is_special_project_completed = sp:sp_naval_escort_carrier
     }
     
     convoy_escort_efficiency = 0.5
@@ -189,9 +187,10 @@ broad_naval_support = {
     xp_type = navy
 
     available = {
+        hidden_trigger = { always = no }
         OR = {
-            is_special_project_completed = sp:sp_naval_escort_carrier
-            is_special_project_completed = sp:sp_naval_support_ships
+            #is_special_project_completed = sp:sp_naval_escort_carrier
+            #is_special_project_completed = sp:sp_naval_support_ships
         }
     }
     visible = {

@@ -304,9 +304,10 @@ long_range_submarines = {
     xp_type = navy
 
     available = {
+        hidden_trigger = { always = no }
         OR = {
-            is_special_project_completed = sp:sp_naval_cruiser_submarine
-            is_special_project_completed = sp:sp_naval_submarine_carrier
+            #is_special_project_completed = sp:sp_naval_cruiser_submarine
+            #is_special_project_completed = sp:sp_naval_submarine_carrier
         }
         
     }

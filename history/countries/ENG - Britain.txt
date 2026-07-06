@@ -298,7 +298,6 @@ create_equipment_variant = {
         fixed_ship_radar_slot = empty
 
         deck_space_1 = ship_deck_space
-        deck_space_2 = ship_deck_space
 	}
 }
 create_equipment_variant = {

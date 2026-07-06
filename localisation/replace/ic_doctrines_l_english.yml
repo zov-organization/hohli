@@ -1,0 +1,8 @@
+﻿l_english:
+  ADD_DAILY_MASTERY_EFFECT: "+$AMOUNT|H2$£doctrine_mastery  per day for $DAYS|H$ days"
+  ADD_MASTERY_BONUS_EFFECT: "Add a $BONUS|+=%2$ £doctrine_mastery §HMastery§! bonus for $DAYS|H$ days"
+  TRACK_EFFECT_ALL_TRACKS: "$TRACK_EFFECT_DESC$ to all active doctrine tracks"
+  TRACK_EFFECT_ONLY_FOLDER: "$TRACK_EFFECT_DESC$ to all active $NAME|H$ tracks"
+  TRACK_EFFECT_ONLY_TRACK: "$TRACK_EFFECT_DESC$ to $NAME|H$\n"
+  TRACK_EFFECT_ONLY_GRAND_DOCTRINE: "$TRACK_EFFECT_DESC$ to $NAME|H$"
+  TRACK_EFFECT_ONLY_SUBDOCTRINE: "$TRACK_EFFECT_DESC$ to $NAME|H$"
