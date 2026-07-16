@@ -318,7 +318,7 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.18 -- -0.12 vanilla, per level AA state, so -90% in total
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 20.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 500	-- this one seems to be the only one(!!!) define to balace naval patrol air mission. that is would be hilarious if it wasn't sad
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
@@ -344,19 +344,24 @@ NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 	1.0, -- NAVAL_PATROL
 }
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
-	0.0, -- AIR_SUPERIORITY
-	0.0, -- CAS		
-	0.0, -- INTERCEPTION	
-	0.0, -- STRATEGIC_BOMBER
-	0.0, -- NAVAL_BOMBER	
-	0.0, -- DROP_NUKE		
-	0.0, -- PARADROP		
-	0.0, -- NAVAL_KAMIKAZE	
-    0.0, -- PORT_STRIKE		
-	0.0, -- AIR_SUPPLY		
-	0.0, -- TRAINING
-	0.0, -- NAVAL_MINES_PLANTING
-	0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS
+		0.0, -- INTERCEPTION
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER
+		0.0, -- DROP_NUKE
+		0.0, -- PARADROP
+		0.0, -- NAVAL_KAMIKAZE
+        0.0, -- PORT_STRIKE
+		0.0, -- ATTACK_LOGISTICS
+		0.0, -- AIR_SUPPLY
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- RECON
+		0.0, -- NAVAL_PATROL
+		0,0, -- BARRAGE
+		0,0, -- SAM
 }
 
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)

@@ -1,8 +1,8 @@
-@days_for_theorists_to_work = 365
+@mastery_theorists_gain_chief = 0.05
 @mastery_theorists_gain_low = 0.15
-@mastery_theorists_gain_medium = 0.2
-@mastery_theorists_gain_high = 0.3
-@mastery_theorists_gain_esport = 0.4
+@mastery_theorists_gain_medium = 0.20
+@mastery_theorists_gain_high = 0.30
+@mastery_theorists_gain_esport = 0.40
 
 characters = {                                                                                                    
 
@@ -184,6 +184,12 @@ characters = {
 				air_chief_reform_4
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -211,6 +217,12 @@ characters = {
 				army_chief_offensive_2
 			}
 			cost = 50
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_low
+				}
+			}
 		}
 	}
 	
@@ -224,28 +236,15 @@ characters = {
 		advisor = {
 			cost = 50
 			slot = theorist
-			can_be_fired = no
 			idea_token = ic_SOV_georgy_isserson
 			ledger = army
 			traits = {
 				military_theorist
 			}
 			on_add = {
-				SOV = {
-					hidden_effect = {
-						add_timed_idea = {
-							idea = ic_SOV_georgy_isserson_hired
-							days = @days_for_theorists_to_work
-						}
-					}
-					custom_effect_tooltip = ic_theoretic_hired_tooltip
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = ic_SOV_georgy_isserson
-						grand_doctrine = ic_grand_doctrine
-					}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
 				}
 			}
 		}
@@ -406,6 +405,12 @@ characters = {
 				army_chief_reform_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 		corps_commander = {
 			traits = {  }
@@ -435,21 +440,9 @@ characters = {
 				mass_assault_expert
 			}
 			on_add = {
-				SOV = {
-					hidden_effect = {
-						add_timed_idea = {
-							idea = ic_SOV_mikhail_tukhachevsky_hired
-							days = @days_for_theorists_to_work
-						}
-					}
-					custom_effect_tooltip = ic_theoretic_hired_tooltip
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = SOV_mikhail_tukhachevsky
-						grand_doctrine = ic_grand_doctrine
-					}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
 				}
 			}
 		}
@@ -483,6 +476,12 @@ characters = {
 				air_air_superiority_1
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -504,6 +503,12 @@ characters = {
 				air_close_air_support_1
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -549,54 +554,32 @@ characters = {
 				mass_assault_expert
 			}
 			on_add = {
-				SOV = {
-					hidden_effect = {
-						add_timed_idea = {
-							idea = ic_SOV_georgy_zhukov_hired
-							days = @days_for_theorists_to_work
-						}
-					}
-					custom_effect_tooltip = ic_theoretic_hired_tooltip
 
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_esport
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = infantry_attack
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_high
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = infantry_defence
-					}
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_low
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = armor_attack
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = armor_defence
-					}
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = operation_swift_maneuvres
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = SOV_georgy_zhukov
-						track = operation_deep_planning
-					}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_attack_track
+					AMOUNT = @mastery_theorists_gain_esport
 				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_defence_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_attack_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_defence_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_swift_maneuvres_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_deep_planning_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 
@@ -626,6 +609,12 @@ characters = {
 				army_chief_drill_2
 			}
 			cost = 50
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 
 		#field_marshal = {

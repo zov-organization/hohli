@@ -7,6 +7,10 @@ spriteTypes = {
 		name = "GFX_ic_scientist_trait_aircraft_genius"
 		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_aircraft_specialist.dds"
 	}
+ 	spriteType = {
+		name = "GFX_ic_scientist_trait_uboat_father"
+		texturefile = "gfx/interface/traits/scientist_traits/scientist_trait_submarine_specialist.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_trait_plus_one_attack_1"

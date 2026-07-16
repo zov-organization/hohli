@@ -179,6 +179,7 @@ on_actions = {
 				air_experience = 10
 
 				set_grand_doctrine = ic_grand_doctrine
+				set_grand_doctrine = ic_air_grand_doctrine
 
 				#set_sub_doctrine = infantry_attack
 				#set_sub_doctrine = infantry_defence

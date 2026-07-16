@@ -24,7 +24,7 @@ recruit_character = HUN_miklos_horthy
 
 add_ideas = {
 	partial_economic_mobilisation
-	closed_economy
+	free_trade
 	limited_conscription
 }
 

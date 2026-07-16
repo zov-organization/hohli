@@ -459,7 +459,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			130 = {
 				add_extra_state_shared_building_slots = 2
@@ -736,10 +736,8 @@ focus_tree = {
 	focus = {
 		id = ENG_french_military_cooperation
 		icon = GFX_ENG_french_military_cooperation
-
-		prerequisite = { focus = ENG_6_pounder }
-		prerequisite = { focus = ENG_english_infantrymen }
-		prerequisite = { focus = ENG_fortification }
+		
+		prerequisite = { focus = ENG_6_pounder focus = ENG_english_infantrymen focus = ENG_fortification }
 		relative_position_id = ENG_6_pounder
 
 		x = 1
@@ -747,9 +745,14 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			ENG = {
+				army_experience = 50
 				add_ideas = ic_ENG_french_military_cooperation_idea
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			FRA = {
+				army_experience = 50
 				add_ideas = ic_ENG_french_military_cooperation_idea
 			}
 		}
@@ -758,15 +761,16 @@ focus_tree = {
 		id = ENG_general_command_staff
 		icon = GFX_ENG_general_command_staff
 
-		prerequisite = { focus = ENG_6_pounder }
-		prerequisite = { focus = ENG_english_infantrymen }
-		prerequisite = { focus = ENG_fortification }
+		prerequisite = { focus = ENG_6_pounder focus = ENG_english_infantrymen focus = ENG_fortification }
 		relative_position_id = ENG_6_pounder
 
 		x = 3
 		y = 1
 		cost = 5
 		completion_reward = {
+			army_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = volunteer_only
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -835,7 +839,7 @@ focus_tree = {
 
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -892,6 +896,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			air_experience = 50
 			add_tech_bonus = {
 				name = ENG_material_base_destruction_plane
 				bonus = 1
@@ -929,8 +934,9 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
+			air_experience = 50
 			add_tech_bonus = {
 				name = ENG_announce_competition_for_modern_figher
 				bonus = 1
@@ -943,15 +949,16 @@ focus_tree = {
 		id = ENG_joint_air_exercises
 		icon = GFX_ENG_joint_air_exercises
 
-		prerequisite = { focus = ENG_announce_competition_for_modern_figher }
+		#prerequisite = { focus = ENG_announce_competition_for_modern_figher }
 		prerequisite = { focus = ENG_french_military_cooperation }
-		prerequisite = { focus = ENG_general_command_staff }
+		#prerequisite = { focus = ENG_general_command_staff }
 		relative_position_id = ENG_announce_competition_for_modern_figher
 
 		x = 2
 		y = 1
 		cost = 5
 		completion_reward = {
+			air_experience = 50
 			add_ideas = ic_ENG_joint_air_exercises_idea
 		}
 	}

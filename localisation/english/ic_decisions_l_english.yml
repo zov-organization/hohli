@@ -1,5 +1,9 @@
 ﻿l_english:
 
+   decision_cost_AirXP_50: "£air_experience  §Y50§!"
+   decision_cost_AirXP_50_blocked: "£air_experience  §R50§!"
+   decision_cost_AirXP_50_tooltip: "It costs £air_experience  §Y50§! to take the decision"
+
   ic_progon_mode:0 "§HPROGON MODE§"
   ic_progon_mode_blumen_kriege:0 "progon thingy for Blumen Kriege focus"
   ic_progon_mode_blumen_kriege_desc:0 "typically GER would do this focus right before Anschluß itself.\n2 march 1938!"
@@ -105,6 +109,22 @@
   GER_deploy_hitlerjugend:0 "Deploy Hitlerjugend"
   GER_deploy_volkssturm:0 "Deploy Volkssturm"
   GER_deploy_werwolf:0 "Deploy Werwolf"
+
+  GER_okw_category:0 "§OOberkommando der Wehrmacht§!"
+  GER_complete_uboats_focus:0 "Focus §Y$GER_subs$§!"
+  GER_complete_scharnhorst_class_focus:0 "Focus §Y$GER_lay_down_scharnhorst_class$§!"
+  GER_complete_bismark_focus:0 "Focus §Y$GER_the_bismark_it_is$§!"
+  GER_complete_graf_zeppelin_focus:0 "Focus §Y$GER_renew_graf_zeppelin_construction$§!"
+  GER_complete_plan_Z_focus:0 "Focus §Y$GER_plan_Z$§!"
+  GER_infantry_attack_studies:0 "$DOCTRINE_TRACK_INFANTRY_ATTACK$ Studies"
+  GER_infantry_defence_studies:0 "$DOCTRINE_TRACK_INFANTRY_DEFENCE$ Studies"
+  GER_tank_attack_studies:0 "$DOCTRINE_TRACK_ARMOR_ATTACK$ Studies"
+  GER_tank_defence_studies:0 "$DOCTRINE_TRACK_ARMOR_DEFENCE$ Studies"
+  GER_hq_attack_studies:0 "$DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES$ Studies"
+  GER_hq_defence_studies:0 "$DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING$ Studies"
+  GER_strategic_destruction_studies:0 "$DOCTRINE_TRACK_STRATEGIC_DESTRUCTION$ Studies"
+  GER_dogfights_studies:0 "$DOCTRINE_TRACK_DOGFIGHTS$ Studies"
+  GER_battlefield_support_studies:0 "$DOCTRINE_TRACK_BATTLEFIELD_SUPPORT$ Studies"
 
   GER_thousand_year_reich_category:0 "§YTHOUSAND-YEAR REICH§!"
   GER_thousand_year_reich_category_desc:0 " "

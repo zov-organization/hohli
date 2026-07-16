@@ -1,8 +1,8 @@
-@days_for_theorists_to_work = 365
+@mastery_theorists_gain_chief = 0.05
 @mastery_theorists_gain_low = 0.15
-@mastery_theorists_gain_medium = 0.2
-@mastery_theorists_gain_high = 0.3
-@mastery_theorists_gain_esport = 0.4
+@mastery_theorists_gain_medium = 0.20
+@mastery_theorists_gain_high = 0.30
+@mastery_theorists_gain_esport = 0.40
 
 characters={
 
@@ -130,28 +130,15 @@ characters={
 		advisor={
 			cost = 50
 			slot = theorist
-			can_be_fired = no
 			idea_token = ic_GER_erich_von_manstein
 			ledger = army
 			traits = {
 				military_theorist
 			}
 			on_add = {
-				GER = {
-					hidden_effect = {
-						add_timed_idea = {
-							idea = ic_GER_erich_von_manstein_hired
-							days = @days_for_theorists_to_work
-						}
-					}
-					custom_effect_tooltip = ic_theoretic_hired_tooltip
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = GER_erich_von_manstein
-						grand_doctrine = ic_grand_doctrine
-					}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
 				}
 			}
 		}
@@ -177,60 +164,35 @@ characters={
 		advisor={
 			cost = 75
 			slot = theorist
-			can_be_fired = no
 			idea_token = ic_GER_heinz_guderian
 			ledger = army
 			traits = {
 				blitzkrieg_theorist
 			}
 			on_add = {
-				GER = {
-					hidden_effect = {
-						add_timed_idea = {
-							idea = ic_GER_heinz_guderian_hired
-							days = @days_for_theorists_to_work
-						}
-					}
-					custom_effect_tooltip = ic_theoretic_hired_tooltip
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_low
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = infantry_attack
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_low
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = infantry_defence
-					}
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_esport
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = armor_attack
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_high
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = armor_defence
-					}
-
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = operation_swift_maneuvres
-					}
-					add_daily_mastery = {
-						amount = @mastery_theorists_gain_medium
-						days = @days_for_theorists_to_work
-						name = GER_heinz_guderian
-						track = operation_deep_planning
-					}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_attack_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_defence_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_attack_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_defence_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_swift_maneuvres_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_deep_planning_track
+					AMOUNT = @mastery_theorists_gain_medium
 				}
 			}
 		}
@@ -253,12 +215,20 @@ characters={
 			}
 		}
 		advisor={
-			cost = 75
+			cost = 50
 			slot = theorist
 			idea_token = ic_GER_wolfram_von_richthofen
 			ledger = air
 			traits = {
 				air_warfare_theorist
+			}
+			on_add = {
+			
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 	}
@@ -271,12 +241,28 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 75
 			slot = theorist
 			idea_token = ic_GER_ernst_udet
 			ledger = air
 			traits = {
 				dive_bomber
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_strategic_destruction_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_dogfights_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_battlefield_support_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+
 			}
 		}
 	}
@@ -295,6 +281,12 @@ characters={
 				army_chief_offensive_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 	
@@ -312,6 +304,12 @@ characters={
 				army_chief_organizational_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -330,6 +328,12 @@ characters={
 				army_chief_maneuver_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 		corps_commander = {
 			traits = { organizer infantry_leader infantry_expert bearer_of_artillery trickster }
@@ -505,6 +509,12 @@ characters={
 				air_chief_reform_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -561,6 +571,12 @@ characters={
 				air_chief_ground_support_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -581,6 +597,12 @@ characters={
 				air_chief_all_weather_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -673,6 +695,72 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
+		}
+	}
+
+
+	ic_GER_hans_techel = {
+		name = ic_GER_hans_techel
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_GER_hans_techel
+			}
+		}
+
+		scientist = {
+			traits = { ic_scientist_trait_uboat_father }
+			skills = {
+				specialization_naval = 5
+			}
+
+		}
+	}
+	ic_GER_wilhelm_messerschmitt = {
+		name = ic_GER_wilhelm_messerschmitt
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_GER_wilhelm_messerschmitt
+			}
+		}
+
+		scientist = {
+			traits = {  }
+			skills = {
+				specialization_air = 5
+			}
+
+		}
+	}
+	ic_GER_ferdinand_porsche = {
+		name = ic_GER_ferdinand_porsche
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_GER_ferdinand_porsche
+			}
+		}
+
+		scientist = {
+			traits = {  }
+			skills = {
+				specialization_land = 5
+			}
+
+		}
+	}
+	ic_GER_werner_heisenberg = {
+		name = ic_GER_werner_heisenberg
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_GER_werner_heisenberg
+			}
+		}
+
+		scientist = {
+			traits = {  }
+			skills = {
+				specialization_nuclear = 5
+			}
+
 		}
 	}
 

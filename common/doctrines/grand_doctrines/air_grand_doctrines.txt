@@ -4,8 +4,8 @@ new_strategic_destruction = {
     name = GRAND_DOCTRINE_STRATEGIC_DESTRUCTION
     description = GRAND_DOCTRINE_STRATEGIC_DESTRUCTION_DESC
     icon = GFX_doctrine_strategic_destruction_medium
-    available = {
-        always = yes
+    visible = {
+        always = no
     }
 
     xp_cost = 100
@@ -116,8 +116,8 @@ new_battlefield_support = {
     name = GRAND_DOCTRINE_BATTLEFIELD_SUPPORT
     description = GRAND_DOCTRINE_BATTLEFIELD_SUPPORT_DESC
     icon = GFX_doctrine_direct_ground_support_medium
-    available = {
-        always = yes
+    visible = {
+        always = no
     }
 
     xp_cost = 100
@@ -234,8 +234,8 @@ new_operational_integrity = {
     name = GRAND_DOCTRINE_OPERATIONAL_INTEGRITY
     description = GRAND_DOCTRINE_OPERATIONAL_INTEGRITY_DESC
     icon = GFX_doctrine_operational_destruction_medium
-    available = {
-        always = yes
+    visible = {
+        always = no
     }
 
     xp_cost = 100
@@ -340,6 +340,40 @@ new_operational_integrity = {
                     add_to_variable = { heavies_milestone_var = 1 }
                 }
             }
+        }
+    }
+}
+
+ic_air_grand_doctrine = {
+    folder = air
+
+    name = ic_AIR_GRAND_DOCTRINE_NAME
+    description = ic_AIR_GRAND_DOCTRINE_DESC
+    icon = GFX_doctrine_operational_destruction_medium
+    available = {
+        always = yes
+    }
+
+    xp_cost = 100
+    xp_type = air
+    tracks = {
+        strategic_destruction_track
+        dogfights_track
+        battlefield_support_track
+    }
+    
+    max_track_rows = 1
+    max_track_columns = 3
+
+    milestones = {
+        {
+            #1
+        }
+        {
+            #2
+        }
+        {
+            #3
         }
     }
 }

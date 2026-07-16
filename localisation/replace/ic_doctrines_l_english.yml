@@ -6,3 +6,18 @@
   TRACK_EFFECT_ONLY_TRACK: "$TRACK_EFFECT_DESC$ to $NAME|H$\n"
   TRACK_EFFECT_ONLY_GRAND_DOCTRINE: "$TRACK_EFFECT_DESC$ to $NAME|H$"
   TRACK_EFFECT_ONLY_SUBDOCTRINE: "$TRACK_EFFECT_DESC$ to $NAME|H$"
+
+  daily_mastery_static_grand_doctrine: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$ic_GRAND_DOCTRINE_NAME$§!"
+
+  daily_mastery_static_infantry_attack_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_INFANTRY_ATTACK$§!"
+  daily_mastery_static_infantry_defence_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_INFANTRY_DEFENCE$§!"
+  daily_mastery_static_armor_attack_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_ARMOR_ATTACK$§!"
+  daily_mastery_static_armor_defence_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_ARMOR_DEFENCE$§!"
+  daily_mastery_static_operations_swift_maneuvres_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES$§!"
+  daily_mastery_static_operations_deep_planning_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING$§!"
+  
+  daily_mastery_static_air_grand_doctrine: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$ic_AIR_GRAND_DOCTRINE_NAME$§!"
+
+  daily_mastery_static_strategic_destruction_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_STRATEGIC_DESTRUCTION$§!"
+  daily_mastery_static_dogfights_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_DOGFIGHTS$§!"
+  daily_mastery_static_battlefield_support_track: "+$AMOUNT|H2$£doctrine_mastery  per day to §H$DOCTRINE_TRACK_BATTLEFIELD_SUPPORT$§!"

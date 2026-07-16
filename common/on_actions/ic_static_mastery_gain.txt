@@ -1,0 +1,541 @@
+@days_for_theorists_to_work = 7
+@mastery_theorists_gain_chief = 0.05
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.2
+@mastery_theorists_gain_high = 0.3
+@mastery_theorists_gain_esport = 0.4
+
+on_actions = {
+
+	on_weekly_GER = {
+		effect = {
+
+			# theorists else_if chain
+			IF = {
+				limit = {
+					ic_GER_heinz_guderian = {
+						is_hired_as_advisor = yes
+					}
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = infantry_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = infantry_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = armor_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = armor_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = operation_swift_maneuvres
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = GER_heinz_guderian
+					track = operation_deep_planning
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_erich_von_manstein = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = GER_erich_von_manstein
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_wolfram_von_richthofen = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = GER_wolfram_von_richthofen
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_ernst_udet = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = GER_ernst_udet
+					track = strategic_destruction_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = GER_ernst_udet
+					track = dogfights_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = GER_ernst_udet
+					track = battlefield_support_track
+				}
+			}
+
+			# chief of army else_if chain
+			IF = {
+				limit = {
+					ic_GER_franz_halder = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_franz_halder
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_ludwig_beck = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_ludwig_beck
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_walther_von_brauchitsch = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_walther_von_brauchitsch
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+
+			# chief of air force else_if chain
+			IF = {
+				limit = {
+					ic_GER_albert_kesselring = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_albert_kesselring
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_hermann_goring = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_hermann_goring
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_GER_ritter_von_greim = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = GER_ritter_von_greim
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+		}
+	}
+
+	on_weekly_ENG = {
+		effect = {
+
+			IF = {
+				limit = {
+					ic_ENG_harold_alexander = {
+						is_hired_as_advisor = yes
+					}
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = infantry_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = infantry_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = armor_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = armor_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = operation_swift_maneuvres
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_harold_alexander
+					track = operation_deep_planning
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_bernard_montgomery = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_bernard_montgomery
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_hugh_dowding = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_hugh_dowding
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_arthur_harris = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ENG_arthur_harris
+					track = strategic_destruction_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ENG_arthur_harris
+					track = dogfights_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = ENG_arthur_harris
+					track = battlefield_support_track
+				}
+			}
+			
+			# chief of army else_if chain
+			IF = {
+				limit = {
+					ic_ENG_alan_brooke = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_alan_brooke
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_john_vereker = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_john_vereker
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_edmund_ironside = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_edmund_ironside
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+
+			# chief of air force else_if chain
+			IF = {
+				limit = {
+					ic_ENG_cyril_newall = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_cyril_newall
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_charles_portal = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_charles_portal
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ENG_edward_ellington = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ENG_edward_ellington
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+		}
+	}
+
+	on_weekly_SOV = {
+		effect = {
+
+			IF = {
+				limit = {
+					ic_SOV_georgy_isserson = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = GER_erich_von_manstein
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_georgy_zhukov = {
+						is_hired_as_advisor = yes
+					}
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_esport
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = infantry_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = infantry_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = armor_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = armor_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = operation_swift_maneuvres
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = SOV_georgy_zhukov
+					track = operation_deep_planning
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_mikhail_tukhachevsky = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = SOV_mikhail_tukhachevsky
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			
+			# chief of army else_if chain
+			IF = {
+				limit = {
+					ic_SOV_aleksey_antonov = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = ic_SOV_aleksey_antonov
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_semyon_timoshenko = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = SOV_semyon_timoshenko
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_kliment_voroshilov = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = SOV_kliment_voroshilov
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+
+			# chief of air force else_if chain
+			IF = {
+				limit = {
+					ic_SOV_aleksandr_novikov = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = SOV_aleksandr_novikov
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_stepan_krasovsky = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = SOV_stepan_krasovsky
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_SOV_sergey_khudyakov = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = SOV_sergey_khudyakov
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+		}
+	}
+
+}
