@@ -537,5 +537,203 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_weekly_ITA = {
+		effect = {
+
+			IF = {
+				limit = {
+					ic_ITA_rodolfo_graziani = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_rodolfo_graziani
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_giovanni_messe = {
+						is_hired_as_advisor = yes
+					}
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = infantry_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = infantry_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = armor_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = armor_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = operation_swift_maneuvres
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_giovanni_messe
+					track = operation_deep_planning
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_renato_sandalli = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_renato_sandalli
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_amedeo_mecozzi = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = ITA_amedeo_mecozzi
+					track = strategic_destruction_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = ITA_amedeo_mecozzi
+					track = dogfights_track
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = ITA_amedeo_mecozzi
+					track = battlefield_support_track
+				}
+			}
+			
+			# chief of army else_if chain
+			IF = {
+				limit = {
+					ic_ITA_pietro_badoglio = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_pietro_badoglio
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_emilio_de_bono = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_emilio_de_bono
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_ugo_cavallero = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_ugo_cavallero
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_alberto_pariani = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_alberto_pariani
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+
+			# chief of air force else_if chain
+			IF = {
+				limit = {
+					ic_ITA_rino_corso_fougier = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_rino_corso_fougier
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_francesco_pricolo = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_francesco_pricolo
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_ITA_aldo_pellegrini = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = ITA_aldo_pellegrini
+					grand_doctrine = ic_air_grand_doctrine
+				}
+			}
+		}
+	}
 
 }

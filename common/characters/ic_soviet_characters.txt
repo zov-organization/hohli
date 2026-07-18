@@ -234,7 +234,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 50
+			cost = 75
 			slot = theorist
 			idea_token = ic_SOV_georgy_isserson
 			ledger = army
@@ -257,6 +257,26 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_ic_SOV_mihail_katukov
+			}
+		}
+
+		corps_commander = {
+			traits = { trickster panzer_leader combined_arms_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 5
+		}	
+	}
+            
+	ic_SOV_pavel_rotmistrov = {
+		name = ic_SOV_pavel_rotmistrov
+
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_SOV_pavel_rotmistrov
 			}
 		}
 
@@ -431,7 +451,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 75
+			cost = 100
 			slot = theorist
 			can_be_fired = no
 			idea_token = ic_SOV_mikhail_tukhachevsky

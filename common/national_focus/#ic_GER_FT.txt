@@ -1780,7 +1780,7 @@
 
 	focus = {
 		id = ic_GER_totaler_krieg
-		icon = GFX_GER_aa_defences_of_the_atlantikwall
+		icon = GFX_ic_GER_totaler_krieg
 
 		prerequisite = { focus = GER_aa_defences_of_the_atlantikwall }
 		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
@@ -1800,7 +1800,7 @@
 
 	focus = {
 		id = GER_autarky_failure
-		icon = GFX_GER_aa_defences_of_the_atlantikwall
+		icon = GFX_GER_autarky_failure
 
 		prerequisite = { focus = ic_GER_totaler_krieg }
 		relative_position_id = ic_GER_totaler_krieg
@@ -2038,7 +2038,7 @@
 
 	focus = {
 		id = GER_auxiliary_tanks
-		icon = GFX_GER_new_main_tank
+		icon = GFX_GER_auxiliary_tanks
 
 		prerequisite = { focus = GER_tiger }
 		relative_position_id = GER_tiger
@@ -2078,7 +2078,7 @@
 	
 	focus = {
 		id = ic_GER_fallschirmjager
-		icon = GFX_GER_new_main_tank
+		icon = GFX_ic_GER_fallschirmjager
 
 		prerequisite = { focus = ic_GER_army_innovation }
 		relative_position_id = ic_GER_army_innovation
@@ -2100,7 +2100,7 @@
 	}
 	focus = {
 		id = ic_GER_fallschirmjager_2
-		icon = GFX_GER_new_main_tank
+		icon = GFX_ic_GER_fallschirmjager_2
 
 		prerequisite = { focus = ic_GER_fallschirmjager }
 		relative_position_id = ic_GER_fallschirmjager
@@ -2134,7 +2134,7 @@
 
 	focus = {
 		id = GER_drang_nach_osten
-		icon = GFX_GER_change_direction
+		icon = GFX_GER_drang_nach_osten
 
 		prerequisite = { focus = GER_change_direction }
 		relative_position_id = GER_change_direction
@@ -2170,7 +2170,7 @@
 
 	focus = {
 		id = GER_further_tank_improvements
-		icon = GFX_GER_new_main_tank
+		icon = GFX_GER_further_tank_improvements
 		
 		prerequisite = { focus = GER_drang_nach_osten }
 		prerequisite = { focus = GER_auxiliary_tanks }
@@ -2190,37 +2190,8 @@
 	}
 
 	focus = {
-		id = GER_quality_tanks
-		icon = GFX_GER_change_direction
-		
-		prerequisite = { focus = GER_further_tank_improvements }
-		relative_position_id = GER_further_tank_improvements
-		
-		mutually_exclusive = { focus = GER_quantity_tanks }
-
-		available = { hidden_trigger = { always = no } }		
-		bypass = {
-			if = {
-				has_war_with = SOV
-			}
-		}
-
-		x = -1
-		y = 1
-		cost = 10
-		completion_reward = {
-			#add_ideas = ic_ger_quality_tanks
-			mio:GER_man_organization = {
-				complete_mio_trait = {
-					trait = GER_mio_quality_tanks
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = GER_quantity_tanks
-		icon = GFX_GER_change_direction
+		icon = GFX_GER_quantity_tanks
 		
 		prerequisite = { focus = GER_further_tank_improvements }
 		relative_position_id = GER_further_tank_improvements
@@ -2234,7 +2205,7 @@
 			}
 		}
 
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -2248,8 +2219,37 @@
 	}
 
 	focus = {
+		id = GER_quality_tanks
+		icon = GFX_GER_quality_tanks
+		
+		prerequisite = { focus = GER_further_tank_improvements }
+		relative_position_id = GER_further_tank_improvements
+		
+		mutually_exclusive = { focus = GER_quantity_tanks }
+
+		available = { hidden_trigger = { always = no } }		
+		bypass = {
+			if = {
+				has_war_with = SOV
+			}
+		}
+
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			#add_ideas = ic_ger_quality_tanks
+			mio:GER_man_organization = {
+				complete_mio_trait = {
+					trait = GER_mio_quality_tanks
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = GER_plan_ost
-		icon = GFX_GER_change_direction
+		icon = GFX_GER_plan_ost
 
 		prerequisite = { focus = GER_drang_nach_osten }
 		relative_position_id = GER_drang_nach_osten
@@ -2266,7 +2266,7 @@
 
 	focus = {
 		id = GER_blitzkrieg_stalls
-		icon = GFX_GER_change_direction
+		icon = GFX_GER_blitzkrieg_stalls
 
 		prerequisite = { focus = GER_drang_nach_osten }
 		relative_position_id = GER_drang_nach_osten
@@ -2373,7 +2373,7 @@
 
 	focus = {
 		id = GER_plan_new_summer_offencive
-		icon = GFX_GER_new_main_tank
+		icon = GFX_GER_plan_new_summer_offencive
 
 		prerequisite = { focus = GER_medal_for_barb }
 		prerequisite = { focus = GER_drang_nach_osten }

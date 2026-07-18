@@ -6074,33 +6074,18 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 1.8
-				date < 1939.1.1
-			}
-		}
 	}
 
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.15
-
-		ai_will_do = {
-			factor = 2
-		}
+		consumer_goods_expected_value = -0.025
+		production_factory_max_efficiency_factor = 0.025
 	}
 	economist = {
 		sprite = 10
 		random = yes
 		production_factory_max_efficiency_factor = 0.05
-
-		ai_will_do = {
-			factor = 2
-		}
 	}
 
 	editor = {
