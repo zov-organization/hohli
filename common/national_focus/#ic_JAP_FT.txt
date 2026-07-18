@@ -1,13 +1,1733 @@
 focus_tree = {
 	id = japanese_focus
-	continuous_focus_position = { x = 50 y = 50 }
+	continuous_focus_position = { x = 50 y = 3000 }
 
 	country = {
 		factor = 0
 		
 		modifier = {
-			add = 50
+			add = 100
 			OR = { tag = JAP }
+		}
+	}
+	focus = {
+		id = JAP_twsix_incident
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = {  }
+
+		x = 14
+		y = 0
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = JAP_purge_new_officers
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_twsix_incident }
+		relative_position_id = JAP_twsix_incident
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_national_unity
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_purge_new_officers }
+		relative_position_id = JAP_purge_new_officers
+
+		x = -1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_press_control
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_national_unity }
+		relative_position_id = JAP_national_unity
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_appoint_new_gov
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_purge_new_officers }
+		relative_position_id = JAP_purge_new_officers
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_militarism
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_appoint_new_gov }
+		relative_position_id = JAP_appoint_new_gov
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_national_mobilization_law
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_militarism }
+		relative_position_id = JAP_militarism
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_konoe_gov
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_press_control }
+		prerequisite = { focus = JAP_militarism }
+		relative_position_id = JAP_press_control
+
+		x = 1
+		y = 2
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_national_defense_state
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_form_the_central_ec_council
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_national_defense_state }
+		relative_position_id = JAP_national_defense_state
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_expand_the_showa_research_association
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_form_the_central_ec_council }
+		relative_position_id = JAP_form_the_central_ec_council
+
+		x = -1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_form_the_great_japan_industrial_patriotic_association
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_form_the_central_ec_council }
+		relative_position_id = JAP_form_the_central_ec_council
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_sea_guide_the_zaibatsus
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_form_the_central_ec_council }
+		relative_position_id = JAP_form_the_central_ec_council
+
+		x = 0
+		y = 2
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_imperial_rule_association
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+
+		x = -2
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_sea_tripartite
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_imperial_rule_association }
+		relative_position_id = JAP_imperial_rule_association
+
+		x = -1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_sea_mil_tech_coop_with_germany
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_sea_tripartite }
+		relative_position_id = JAP_sea_tripartite
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_sea_greater_east_asian_co_properity_sphere
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_imperial_rule_association }
+		relative_position_id = JAP_imperial_rule_association
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_ministry_of_greater_east_asia
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_sea_greater_east_asian_co_properity_sphere }
+		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_ministry_of_industry
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+
+		x = 0
+		y = 4
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_zaibatsu
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_ministry_of_industry }
+		relative_position_id = JAP_ministry_of_industry
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_continue_takahashi_korekiyos_policies
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_ministry_of_industry }
+		relative_position_id = JAP_ministry_of_industry
+		mutually_exclusive = {focus = JAP_increase_armament_spending}
+
+		x = 2
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_increase_armament_spending
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_ministry_of_industry }
+		relative_position_id = JAP_ministry_of_industry
+		mutually_exclusive = {focus = JAP_continue_takahashi_korekiyos_policies}
+
+		x = 4
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_fund_the_riken_inst
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_continue_takahashi_korekiyos_policies focus = JAP_increase_armament_spending }
+		relative_position_id = JAP_continue_takahashi_korekiyos_policies
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_build_the_nishotaki_and_miyanaka_dams
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_continue_takahashi_korekiyos_policies focus = JAP_increase_armament_spending }
+		relative_position_id = JAP_continue_takahashi_korekiyos_policies
+
+		x = -1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_establish_nippon_hassoden
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_continue_takahashi_korekiyos_policies focus = JAP_increase_armament_spending }
+		relative_position_id = JAP_continue_takahashi_korekiyos_policies
+
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_new_industrial_city_development
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_establish_nippon_hassoden }
+		prerequisite = { focus = JAP_build_the_nishotaki_and_miyanaka_dams }
+		relative_position_id = JAP_build_the_nishotaki_and_miyanaka_dams
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = JAP_the_five_great_cities
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_new_industrial_city_development }
+		relative_position_id = JAP_new_industrial_city_development
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_establish_housing_corp
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_establish_nippon_hassoden }
+		prerequisite = { focus = JAP_build_the_nishotaki_and_miyanaka_dams }
+		relative_position_id = JAP_build_the_nishotaki_and_miyanaka_dams
+
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_central_agricultural_association
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_establish_housing_corp }
+		relative_position_id = JAP_establish_housing_corp
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_ministry_of_colonial_affairs
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_ministry_of_industry }
+		relative_position_id = JAP_ministry_of_industry
+
+		x = -2
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_manchuria_fyn
+		icon = GFX_focus_jap_manchurian_project
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
+
+		relative_position_id = JAP_ministry_of_colonial_affairs
+		x = 0
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+
+		completion_reward = {
+
+
+		}
+
+	}
+
+	focus = {
+		id = JAP_establish_manchuria_airplane_company
+		icon = GFX_focus_JAP_manchuria_airplane_manufacturing_company
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_manchuria_fyn }
+
+		relative_position_id = JAP_manchuria_fyn
+		x = 1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = JAP_eastern_road_and_steel
+		icon = GFX_focus_generic_road_investment
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_manchuria_fyn }
+
+		relative_position_id = JAP_manchuria_fyn
+		x = -1
+		y = 1
+
+		cost = 1
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+
+	}
+
+	focus = {
+		id = JAP_sea_promote_japanese_settlement
+		icon = GFX_focus_JAP_promote_japanese_settlement
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_eastern_road_and_steel focus = JAP_establish_manchuria_airplane_company }
+
+		relative_position_id = JAP_eastern_road_and_steel
+		x = 0
+		y = 1
+
+		cost = 1
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = JAP_construct_the_sui_ho_dam
+		icon = GFX_focus_IRQ_construct_the_kut_barrage
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_eastern_road_and_steel focus = JAP_establish_manchuria_airplane_company }
+
+		relative_position_id = JAP_eastern_road_and_steel
+		x = 2
+		y = 1
+
+		cost = 1
+
+
+
+		available = {
+
+		}
+
+
+
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = JAP_nanshin_ron
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+
+		x = -7
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_sov_pact
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_nanshin_ron }
+		relative_position_id = JAP_nanshin_ron
+
+		x = 2
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_marco_polo_inc
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_nanshin_ron }
+		relative_position_id = JAP_nanshin_ron
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_new_china_gov
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_marco_polo_inc }
+		relative_position_id = JAP_marco_polo_inc
+
+		x = -1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_resource_exploit
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_marco_polo_inc }
+		relative_position_id = JAP_marco_polo_inc
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_occupy_indochin
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_marco_polo_inc }
+		relative_position_id = JAP_marco_polo_inc
+
+		x = 0
+		y = 2
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_siam_annex
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_occupy_indochin }
+		relative_position_id = JAP_occupy_indochin
+
+		x = 1
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_strike_south
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_occupy_indochin }
+		relative_position_id = JAP_occupy_indochin
+
+		x = 0
+		y = 2
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_hokushin_ron
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+
+		x = -10
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_manchu_army_prep
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_hokushin_ron }
+		relative_position_id = JAP_hokushin_ron
+
+		x = -2
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_supply_prep
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_hokushin_ron }
+		relative_position_id = JAP_hokushin_ron
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_declare_war_sov
+		icon = GFX_focus_JAP_promote_japanese_settlement
+
+		prerequisite = { focus = JAP_supply_prep }
+		relative_position_id = JAP_supply_prep
+
+		x = 0
+		y = 1
+		cost = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ic_JAP_the_imperial_defense_plan 
+		icon = GFX_focus_JAP_the_imperial_defense_plan
+		
+		mutually_exclusive = {
+		}
+		prerequisite = { focus = JAP_konoe_gov }
+		relative_position_id = JAP_konoe_gov
+		x = 20
+		y = 1
+
+		cost = 1 #This times perfect with the Kodoha Coup event
+
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ic_JAP_expand_kawagoe_army_arsenal
+		icon = GFX_focus_generic_reorient_production
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_the_imperial_defense_plan }
+
+		relative_position_id = ic_JAP_the_imperial_defense_plan
+		x = -8
+		y = 1
+
+		cost = 1
+
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ic_JAP_reform_the_army
+		icon = GFX_focus_JAP_reform_the_army
+		
+		mutually_exclusive = {
+			focus = ic_JAP_rely_on_supremacy_of_the_will
+		}
+
+		prerequisite = { focus = ic_JAP_expand_kawagoe_army_arsenal }
+
+		relative_position_id = ic_JAP_expand_kawagoe_army_arsenal
+		x = -1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ic_JAP_rethink_armor_doctrine
+		icon = GFX_focus_generic_tank_assault
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_reform_the_army }
+
+		relative_position_id = ic_JAP_reform_the_army
+		x = -3
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_foreign_tank_modernization_cooperation
+		icon = GFX_focus_generic_heavy_tank
+		
+		mutually_exclusive = {
+			focus = ic_JAP_domestic_tank_modernization_program
+		}
+
+		prerequisite = { focus = ic_JAP_rethink_armor_doctrine }
+
+		relative_position_id = ic_JAP_rethink_armor_doctrine
+		x = -1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ic_JAP_domestic_tank_modernization_program
+		icon = GFX_focus_generic_tank_assembly
+		
+		mutually_exclusive = {
+			focus = ic_JAP_foreign_tank_modernization_cooperation
+		}
+
+		prerequisite = { focus = ic_JAP_rethink_armor_doctrine }
+
+		relative_position_id = ic_JAP_rethink_armor_doctrine
+		x = 1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ic_JAP_the_ultimate_tank
+		icon = GFX_focus_JAP_the_ultimate_tank
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_domestic_tank_modernization_program focus = ic_JAP_foreign_tank_modernization_cooperation }
+
+		relative_position_id = ic_JAP_domestic_tank_modernization_program
+		x = -1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+			
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_rely_on_supremacy_of_the_will
+		icon = GFX_focus_JAP_rely_on_infantry_charges
+		
+		mutually_exclusive = {
+			focus = ic_JAP_reform_the_army
+		}
+
+		prerequisite = { focus = ic_JAP_expand_kawagoe_army_arsenal }
+
+		relative_position_id = ic_JAP_expand_kawagoe_army_arsenal
+		x = 1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_adopt_new_assault_doctrine
+		icon = GFX_focus_generic_full_social_mobilization
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_rely_on_supremacy_of_the_will }
+
+		relative_position_id = ic_JAP_rely_on_supremacy_of_the_will
+		x = 3
+		y = 1
+
+		cost = 1
+
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_develop_lethal_infantry_equipment
+		icon = GFX_goal_generic_small_arms
+		
+		#mutually_exclusive = {
+		#	focus = ic_JAP_develop_sophisticated_artillery_equipment
+		#}
+
+		prerequisite = { focus = ic_JAP_adopt_new_assault_doctrine }
+
+		relative_position_id = ic_JAP_adopt_new_assault_doctrine
+		x = -1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_develop_sophisticated_artillery_equipment
+		icon = GFX_focus_SWE_let_fly_all_guns
+		
+		#mutually_exclusive = {
+		#	focus = ic_JAP_develop_lethal_infantry_equipment
+		#}
+
+		prerequisite = { focus = ic_JAP_adopt_new_assault_doctrine }
+
+		relative_position_id = ic_JAP_adopt_new_assault_doctrine
+		x = 1
+		y = 1
+
+		cost = 1
+
+
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_expand_the_irago_proving_ground
+		icon = GFX_focus_JAP_expand_the_irago_proving_ground
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_develop_sophisticated_artillery_equipment }
+		prerequisite = { focus = ic_JAP_develop_lethal_infantry_equipment }
+
+		relative_position_id = ic_JAP_develop_sophisticated_artillery_equipment
+		x = -1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_prepare_the_northern_front
+		icon = GFX_goal_generic_position_armies
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_reform_the_army focus = ic_JAP_rely_on_supremacy_of_the_will }
+
+		relative_position_id = ic_JAP_reform_the_army
+		x = 0
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			
+			
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_enact_the_national_conscription_law
+		icon = GFX_focus_generic_limited_social_mobilization
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_reform_the_army focus = ic_JAP_rely_on_supremacy_of_the_will }
+
+		relative_position_id = ic_JAP_rely_on_supremacy_of_the_will
+		x = 0
+		y = 1
+
+		cost = 1
+
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_instill_the_spirit_of_bushido
+		icon = GFX_focus_generic_japanese_imperial_glory
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_prepare_the_northern_front focus = ic_JAP_enact_the_national_conscription_law }
+
+		relative_position_id = ic_JAP_prepare_the_northern_front
+		x = 1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ic_JAP_sea_mountaineers
+		icon = GFX_focus_generic_mountain_troops
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_instill_the_spirit_of_bushido }
+
+		relative_position_id = ic_JAP_instill_the_spirit_of_bushido
+		x = -2
+		y = 1
+
+		cost = 1
+
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_jungle_adaptation
+		icon = GFX_focus_generic_jungle_troops
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_instill_the_spirit_of_bushido }
+
+		relative_position_id = ic_JAP_instill_the_spirit_of_bushido
+		x = 2
+		y = 1
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_army_weapons_administration_headquarters
+		icon = GFX_focus_JAP_army_weapons_administration_hq
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_instill_the_spirit_of_bushido }
+
+		relative_position_id = ic_JAP_instill_the_spirit_of_bushido
+		x = 0
+		y = 1
+
+		cost = 1
+
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {			
+			
+			
+
+		}
+
+	}
+
+	
+
+	focus = {
+		id = ic_JAP_pivot_towards_defensive_measures
+		icon = GFX_goal_generic_defence
+		
+
+		prerequisite = { focus = ic_JAP_army_weapons_administration_headquarters focus = ic_JAP_jungle_adaptation focus = ic_JAP_sea_mountaineers }
+
+		relative_position_id = ic_JAP_army_weapons_administration_headquarters
+		x = -1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_strenghten_the_supply_lines
+		icon = GFX_focus_generic_supply_line
+
+		prerequisite = { focus = ic_JAP_army_weapons_administration_headquarters focus = ic_JAP_jungle_adaptation focus = ic_JAP_sea_mountaineers }
+
+		relative_position_id = ic_JAP_army_weapons_administration_headquarters
+		x = 1
+		y = 1
+
+		cost = 1
+
+
+		available = {
+			has_war_with_major = yes
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+		
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_establish_showa_aircraft_idnsutry
+		icon = GFX_focus_generic_aircraft_production
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_the_imperial_defense_plan }
+
+		relative_position_id = ic_JAP_the_imperial_defense_plan
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_develop_new_fighters
+		icon = GFX_focus_jap_zero
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_establish_showa_aircraft_idnsutry }
+
+		relative_position_id = ic_JAP_establish_showa_aircraft_idnsutry
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+			
+
+		}
+
+	}
+
+	
+
+	focus = {
+		id = ic_JAP_modern_bombers
+		icon = GFX_goal_generic_air_bomber
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_establish_showa_aircraft_idnsutry }
+
+		relative_position_id = ic_JAP_establish_showa_aircraft_idnsutry
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_improve_the_type_91_aerial_torpedo
+		icon = GFX_goal_generic_air_naval_bomber
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_modern_bombers }
+
+		relative_position_id = ic_JAP_modern_bombers
+		x = 1
+		y = 1
+
+		cost = 5
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+			
+			
+
+		}
+	}
+
+	focus = {
+		id = ic_JAP_escort_efficiency
+		icon = GFX_goal_generic_air_fighter2
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_develop_new_fighters focus = ic_JAP_modern_bombers }
+
+		relative_position_id = ic_JAP_develop_new_fighters
+		x = 1
+		y = 1
+
+		cost = 5
+
+
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_sea_sturdy_aircraft
+		icon = GFX_goal_generic_air_fighter
+		
+		mutually_exclusive = {
+			focus = ic_JAP_sea_long_operational_range
+		}
+
+		prerequisite = { focus = ic_JAP_escort_efficiency }
+
+		relative_position_id = ic_JAP_escort_efficiency
+		x = -1
+		y = 1
+
+		cost = 10
+
+
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+
+
+		completion_reward = {
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_sea_long_operational_range
+		icon = GFX_focus_generic_long_range_aircraft
+		
+		mutually_exclusive = {
+			focus = ic_JAP_sea_sturdy_aircraft
+		}
+
+		prerequisite = { focus = ic_JAP_escort_efficiency }
+
+		relative_position_id = ic_JAP_escort_efficiency
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ic_JAP_project_z_bomber_project
+		icon = GFX_focus_JAP_z_bomber_project
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_sea_long_operational_range }
+
+		relative_position_id = ic_JAP_sea_long_operational_range
+		x = 1
+		y = 1
+
+		cost = 10
+
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = ic_JAP_adopt_new_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = ic_JAP_sea_long_operational_range focus = ic_JAP_sea_sturdy_aircraft }
+
+		relative_position_id = ic_JAP_sea_long_operational_range
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_war_with_major = yes
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
+
+		completion_reward = {
+
+
 		}
 	}
 
