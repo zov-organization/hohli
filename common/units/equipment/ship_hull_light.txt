@@ -100,6 +100,7 @@ equipments = {
 		
 		naval_range = 1500
 		
+		max_organisation = 10
 		max_strength = 25
 		
 
@@ -162,6 +163,8 @@ equipments = {
 
 		reliability = 0.85
 		naval_range = 1800
+
+		max_organisation = 20
 		max_strength = 40
 		build_cost_ic = 1350
 		resources = {
@@ -207,6 +210,8 @@ equipments = {
 		surface_visibility = 10
 		reliability = 0.90
 		naval_range = 2000
+
+		max_organisation = 30
 		max_strength = 50
 		build_cost_ic = 1700
 		manpower = 400
@@ -247,6 +252,8 @@ equipments = {
 		surface_detection = 10
 		reliability = 0.92
 		naval_range = 2500
+
+		max_organisation = 40
 		max_strength = 60
 		build_cost_ic = 2000
 		resources = {

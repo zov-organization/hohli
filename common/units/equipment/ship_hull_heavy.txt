@@ -130,6 +130,7 @@ equipments = {
 		
 		naval_range = 3000
 		
+		max_organisation = 200
 		max_strength = 350
 
 		fuel_consumption = 67
@@ -287,6 +288,7 @@ equipments = {
 
 		naval_range = 3000
 		
+		max_organisation = 200
 		max_strength = 350
 		reliability = 0.80
 		fuel_consumption = 67
@@ -326,6 +328,7 @@ equipments = {
 
 		naval_range = 3500
 		
+		max_organisation = 225
 		max_strength = 375
 		reliability = 0.85
 		fuel_consumption = 67
@@ -368,6 +371,8 @@ equipments = {
 
 		naval_range = 4000
 		naval_speed = 25
+
+		max_organisation = 250
 		max_strength = 400
 		reliability = 0.9
 		fuel_consumption = 67
@@ -411,6 +416,7 @@ equipments = {
 
 		naval_range = 4500
 		
+		max_organisation = 275
 		max_strength = 425
 		naval_speed = 26
 		fuel_consumption = 67
@@ -508,6 +514,8 @@ equipments = {
 		}
 		naval_range = 4500
 		naval_speed = 24
+
+		max_organisation = 300
 		max_strength = 700
 		fuel_consumption = 75
 		reliability = 0.80

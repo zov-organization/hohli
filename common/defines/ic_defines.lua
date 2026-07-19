@@ -429,6 +429,8 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = 0			-- penalty to org reg
 
 
 -- Navy
+NDefines.NNavy.MAX_ADMIRAL_HEADQUARTER_ASSIGNMENTS = 1337
+NDefines.NNavy.NAVAL_HEADQUARTER_ADJACENCY = 0	-- the state you build naval hq is the state where you get buffs
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 12
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0 -- for obvious reasons lol
@@ -496,16 +498,16 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {
 	0.00,
 }
 NDefines.NNavy.NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
-	1.00,
+	2.00,
+	1.90,
+	1.80,
+	1.70,
+	1.60,
+	1.50,
+	1.40,
+	1.30,
+	1.20,
+	1.10,
 	1.00,
 	0.98,
 	0.96,
@@ -624,11 +626,13 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { 2.0, 2.0, 2.0 }
 NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.75
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5
+NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT = 1
+NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT_FROM_AIR = 0.1
 
 -- damage reduction from naval strikes https://www.desmos.com/calculator/wqjhqevufd
-NDefines.NNavy.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 1	-- basically, 100% of naval targeting is amount of planes from airwing to attack (if airwing has 25 it means that 25% of airwing will attack)
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.05
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 1
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.4
@@ -637,21 +641,21 @@ NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.4
 NDefines.NNavy.NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 0	-- How many planes flying in a naval combat before penalties are introduced
 NDefines.NNavy.NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.005	-- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns
 
--- один корабль типа n добавляет к кол-ву летающих самолётов соответствующее значение. один капитал - 10, один скрин - 5, один авианосец - 16 и тд
+-- один корабль типа n добавляет к кол-ву летающих самолётов соответствующее значение. один капитал - 10, один скрин - 10, один авианосец - 10 и тд
 NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL = 10	-- For dynamic plane efficacy, silhouette value (nominally in planes, but very abstract)
-NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SCREEN = 5		-- As Above. This one would be nice to split by type, but that's problematic.
-NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CARRIER = 16	-- As Above
-NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUPPORT = 3		-- As Above
-NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CONVOY = 4		-- As Above
-NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUBMARINE = 7	-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SCREEN = 10		-- As Above. This one would be nice to split by type, but that's problematic.
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CARRIER = 10	-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUPPORT = 10		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CONVOY = 10		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUBMARINE = 10	-- As Above
 	
 NDefines.NNavy.SCREEN_CAP_REDUCTION_FACTOR = 0							-- Reduces screen silhouette weight if there are caps present, screenval * 1/(1+caps*weight)
 
 
---NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18					--seems like those dont work at all
---NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
---NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
---NDefines.NNavy.COMBAT_INITIAL_DURATION = 12
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24					--seems like those dont work at all
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 16
+NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
+NDefines.NNavy.COMBAT_INITIAL_DURATION = 16
 
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.5
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5
@@ -667,11 +671,14 @@ NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
 --NDefines.NNavy.CARRIER_STACK_PENALTY = 2 no longer used, now it is based on silhouette values
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.95
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 1	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 2		--The weight of damaged ships gets increased by up to +200% as they approach 0% HP.
+
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCALE = 10,                             -- scaled scoring for target picking for planes inside naval combat, max value when zero screening efficency, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_SCALE = 10,
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCALE = 50,
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCALE = 50,
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5
-NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 100
-NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 50
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0

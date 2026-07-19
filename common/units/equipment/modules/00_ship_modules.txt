@@ -2503,6 +2503,7 @@ equipment_modules = {
 
 		add_stats = {
 			armor_value = 32
+			max_organisation = 25
 		}
 		multiply_stats = {
 			build_cost_ic = 0.125
@@ -2555,6 +2556,7 @@ equipment_modules = {
 
 		add_stats = {
 			armor_value = 36
+			max_organisation = 50
 		}
 		multiply_stats = {
 			build_cost_ic = 0.125

@@ -109,6 +109,7 @@ equipments = {
 
 		naval_range = 3000
 
+		max_organisation = 140
 		max_strength = 300
 
 
@@ -189,6 +190,8 @@ equipments = {
 
 		naval_range = 4000
 		reliability = 0.75
+		
+		max_organisation = 175
 		max_strength = 325
 
 
@@ -199,6 +202,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 5000
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_carrier_3 = {
@@ -233,6 +237,8 @@ equipments = {
 
 		naval_range = 5000
 		reliability = 0.8
+
+		max_organisation = 200
 		max_strength = 350
 
 

@@ -263,6 +263,78 @@ ic_progon_mode = {
         complete_effect = {
 
 			create_equipment_variant = {
+				type = cv_small_plane_airframe_1
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = light_mg_4x
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = lmg_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
+				type = cv_small_plane_airframe_2
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = heavy_mg_4x
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = hmg_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
+				type = cv_small_plane_airframe_3
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_1_2x
+					engine_type_slot = engine_4_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = cannon_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
+				type = cv_small_plane_naval_bomber_airframe_1
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = lmg_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
+				type = cv_small_plane_naval_bomber_airframe_2
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting_2
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = hmg_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
+				type = cv_small_plane_naval_bomber_airframe_3
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting_3
+					engine_type_slot = engine_4_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = cannon_defense_turret
+				}
+			}
+
+			create_equipment_variant = {
 				type = ship_hull_carrier_1
 				parent_version = 0
 				allow_without_tech = yes
