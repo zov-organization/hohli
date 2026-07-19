@@ -364,7 +364,6 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0,0, -- SAM
 }
 
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
@@ -632,6 +631,7 @@ NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT = 1
 NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT_FROM_AIR = 0.1
 
 -- damage reduction from naval strikes https://www.desmos.com/calculator/wqjhqevufd
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 1	-- basically, 100% of naval targeting is amount of planes from airwing to attack (if airwing has 25 it means that 25% of airwing will attack)
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.05
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 1
@@ -674,10 +674,10 @@ NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.95
 NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 1	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 2		--The weight of damaged ships gets increased by up to +200% as they approach 0% HP.
 
-NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCALE = 10,                             -- scaled scoring for target picking for planes inside naval combat, max value when zero screening efficency, one define per ship typ
-NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_SCALE = 10,
-NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCALE = 50,
-NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCALE = 50,
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCALE = 10                             -- scaled scoring for target picking for planes inside naval combat, max value when zero screening efficency, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_SCALE = 10
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCALE = 50
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCALE = 50
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
