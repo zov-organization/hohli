@@ -88,4 +88,89 @@ technologies = {
 			nuclear
 		}
 	}	
+
+	sp_land_large_caliber_kinetic_energy_sabot_gd_tech = {
+		#HIDDEN EFFECT FOR THE LARGE CALIBER KINETIC ENERGY PENETRATOR 
+		
+		research_cost = 1
+		start_year = 1936
+
+		#fortification_damage = 0.15 #Doesn't work in this context
+		sp_land_multi_charge_large_caliber_gun_speed_factor = 0.10
+		experience_gain_artillery_combat_factor = 0.10
+
+		artillery_brigade = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		artillery = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		mot_artillery_brigade = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		category_self_propelled_artillery = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		field_guns = {
+			ap_attack = 0.1
+		}
+		
+		allow = {
+			always = no
+		}
+	}
+
+	sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech = {
+		#HIDDEN EFFECT FOR THE LARGE CALIBER KINETIC ENERGY PENETRATOR
+		
+		research_cost = 1
+		start_year = 1936
+
+		#fortification_damage = 0.15 #Doesn't work in this context
+		experience_gain_artillery_combat_factor = 0.10
+
+		artillery_brigade = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		artillery = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		mot_artillery_brigade = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		category_self_propelled_artillery = {
+			ap_attack = 0.15
+			fort = {
+				attack = 0.15
+			}
+		}
+		field_guns = {
+			ap_attack = 0.1
+		}
+		
+		allow = {
+			always = no
+		}
+	}
 }

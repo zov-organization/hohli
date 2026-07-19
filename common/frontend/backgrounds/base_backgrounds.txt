@@ -10,67 +10,59 @@
 # You will also need to create a GFX for the small icons to appear,and it should be named GFX_name_small. We have support for 1 small image to show without
 # the need to recreate the it, however that is not scalable. So if you want to have more images / make your mod compatible with other mods you have to add it
 
-load_taog_ast = {}
-
-load_ncns_chi = {}
-
+#main
 load_ncns_jap = {}
 
-load_lar = {}
-load_botb = {}
-load_nsb = {}
-load_nsb2 = {}
-
-load_bba = {}
-
-load_aat = {}
-
-load_aat2 = {}
-
-load_toa = {}
-
-load_ww = {}
-
-load_goe = {}
-
-load_tfv = {}
-
-load_dod = {}
-
-load_tiger = {}
-
-load_mtg = {}
-
-load_mtg_2 = {}
-
-load_1 = {}
-load_2 = {}
-load_3 = {}
-load_4 = {}
-load_5 = {}
-load_6 = {}
+#sov
+stavka = {}
+kombat = {}
+_4th_guard_tank_korpus_general_leutenant_poluboyarov = {}
+is_2_in_night_battle = {}
+t34_new_borodino = {}
 load_7 = {}
 load_8 = {}
-load_9 = {}
-
-#ic_mod loading screens
-_4th_guard_tank_korpus_general_leutenant_poluboyarov = {}
+load_botb = {}
+load_dod = {}
+load_lar = {}
+load_ncns_chi = {}
+load_nsb2 = {}
 _6th_guards_heavy_tank_breakthrough_regiment_chill_in_Zechin_commune = {}
-cav_from_Chad_joining_Free_France = {}
-crew_leaving_lexington = {}
-german_inf_barbing = {}
-is_2_in_night_battle = {}
-messer = {}
-missuri_zalp = {}
-mountain_egers_practice_river_crossing_at_Mosel_around_city_Tries = {}
 nazi_flags_facing_down = {}
+load_5 = {}
+load_aat = {}
+load_3 = {}
+
+#ger
+load_2 = {}
+messer = {}
+german_inf_barbing = {}
 perekur_parni = {}
-pindosi_and_m24_chaffee = {}
-pindosi_on_nagato = {}
-pindosi_reading_about_hitler_death = {}
-poprigunchiki = {}
 shtukas_in_1943 = {}
-t34_new_borodino = {}
+load_9 = {}
 tiger_at_kursk = {}
+mountain_egers_practice_river_crossing_at_Mosel_around_city_Tries = {}
+load_mtg = {}
+load_mtg_2 = {}
+load_nsb = {}
+load_4 = {}
+
+#allied
+load_1 = {}
+b_25_attacking_japanese_ship = {}
+load_bba = {}
+load_aat2 = {}
+cav_from_Chad_joining_Free_France = {}
+load_6 = {}
+pindosi_and_m24_chaffee = {}
+pindosi_reading_about_hitler_death = {}
+load_tfv = {}
+
+#navy
+poprigunchiki = {}
+missuri_zalp = {}
+pindosi_on_nagato = {}
+crew_leaving_lexington = {}
 transport_ship_Beakon_Grange_sinking_around_U552 = {}
 view_from_german_uboat = {}
+load_taog_ast = {}
+load_tiger = {}

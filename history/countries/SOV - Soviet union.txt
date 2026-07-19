@@ -49,6 +49,7 @@ recruit_character = ic_SOV_ivan_konev
 recruit_character = ic_SOV_aleksey_antonov
 recruit_character = ic_SOV_georgy_isserson
 recruit_character = ic_SOV_mihail_katukov
+recruit_character = ic_SOV_pavel_rotmistrov
 recruit_character = ic_SOV_konstantin_rokossovsky
 recruit_character = ic_SOV_aleksandr_vasilevsky
 recruit_character = ic_SOV_dmitry_pavlov
@@ -58,8 +59,8 @@ recruit_character = ic_SOV_nikolay_vatutin
 recruit_character = ic_SOV_kliment_voroshilov
 recruit_character = ic_SOV_semyon_budyonny
 recruit_character = ic_SOV_leonid_govorov
-recruit_character = ic_SOV_filipp_golikov
-recruit_character = ic_SOV_nikandr_chibisov
+#recruit_character = ic_SOV_filipp_golikov
+#recruit_character = ic_SOV_nikandr_chibisov
 recruit_character = ic_SOV_vasily_kuznetsov
 recruit_character = ic_SOV_andrey_vlasov
 recruit_character = ic_SOV_vasily_chuykov
@@ -206,6 +207,52 @@ create_equipment_variant = {
 		special_type_slot_3 = lmg_defense_turret_2x
 		special_type_slot_4 = lmg_defense_turret
 	}
+}
+
+create_equipment_variant = {
+	type = infantry_equipment_0
+	design_team = mio:SOV_tula_arms_plant_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = infantry_equipment_1
+	design_team = mio:SOV_tula_arms_plant_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = support_equipment_1
+	design_team = mio:SOV_tula_arms_plant_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = motorized_equipment_1
+	design_team = mio:SOV_gaz_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = anti_air_equipment_1
+	design_team = mio:SOV_grabin_design_bureau_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = anti_tank_equipment_1
+	design_team = mio:SOV_grabin_design_bureau_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = artillery_equipment_1
+	design_team = mio:SOV_grabin_design_bureau_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = gw_tank_equipment
+	design_team = mio:SOV_kirov_organization
+	mark_older_equipment_obsolete = yes
+}
+create_equipment_variant = {
+	type = light_tank_equipment_1
+	design_team = mio:SOV_kirov_organization
+	mark_older_equipment_obsolete = yes
 }
 
 add_equipment_to_stockpile = {

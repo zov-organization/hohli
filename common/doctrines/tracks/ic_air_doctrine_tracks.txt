@@ -1,0 +1,24 @@
+strategic_destruction_track = {
+    name = DOCTRINE_TRACK_STRATEGIC_DESTRUCTION
+    background = "GFX_operational_destruction_bg"
+    icon = "GFX_doctrine_milestone_medium_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+    }
+}
+dogfights_track = {
+    name = DOCTRINE_TRACK_DOGFIGHTS
+    background = "GFX_air_superiority_bg"
+    icon = "GFX_doctrine_milestone_fighter_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+    }
+}
+battlefield_support_track = {
+    name = DOCTRINE_TRACK_BATTLEFIELD_SUPPORT
+    background = "GFX_battlefield_destruction_bg"
+    icon = "GFX_doctrine_milestone_striker_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+    }
+}

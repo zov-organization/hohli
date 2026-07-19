@@ -140,7 +140,7 @@ ITA_nationalization_category = {
 		}
 
 		available = {
-			political_power > 50
+			has_political_power > 50
 		}
 		visible = {
 			has_completed_focus = ITA_nationalization
@@ -191,7 +191,7 @@ ITA_nationalization_category = {
 		}
 
 		available = {
-			political_power > 50
+			has_political_power > 50
 		}
 		visible = {
 			has_completed_focus = ITA_nationalization

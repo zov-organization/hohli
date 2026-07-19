@@ -1,3 +1,9 @@
+@mastery_theorists_gain_chief = 0.05
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.20
+@mastery_theorists_gain_high = 0.30
+@mastery_theorists_gain_esport = 0.40
+
 characters={
 
 	ic_ENG_philip_kerr={
@@ -98,6 +104,12 @@ characters={
 			traits = {
 				air_warfare_theorist
 			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+			}
 		}
 	}
 
@@ -115,6 +127,22 @@ characters={
 			ledger = air
 			traits = {
 				victory_through_airpower
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_strategic_destruction_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_dogfights_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_battlefield_support_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+
 			}
 		}
 	}
@@ -136,6 +164,14 @@ characters={
 			ledger = army
 			traits = {
 				military_theorist
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 		field_marshal={
@@ -165,6 +201,34 @@ characters={
 			ledger = army
 			traits = {
 				superior_firepower_expert
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_attack_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_defence_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_attack_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_defence_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_swift_maneuvres_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_deep_planning_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 		corps_commander={
@@ -247,6 +311,12 @@ characters={
 				army_chief_maneuver_3
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 		
 		#field_marshal={
@@ -274,6 +344,12 @@ characters={
 				army_chief_offensive_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 
 		corps_commander={
@@ -300,6 +376,12 @@ characters={
 				army_chief_defensive_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -386,6 +468,12 @@ characters={
 				air_chief_reform_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -403,6 +491,12 @@ characters={
 				air_chief_night_operations_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -420,6 +514,12 @@ characters={
 				air_chief_safety_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}		
 	}
 

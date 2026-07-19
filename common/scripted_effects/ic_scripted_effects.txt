@@ -37,7 +37,15 @@ fra_cap = {
                 }
                 NOT = { has_state_flag = vichy_italian_conquest }
             }
-            VIC = { transfer_state = PREV }
+            VIC = {
+                transfer_state = PREV
+
+                give_resource_rights = {
+                    receiver = GER
+                    state = PREV
+                }
+
+            }
         }
     }
 

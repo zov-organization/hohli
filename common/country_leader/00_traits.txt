@@ -4,6 +4,22 @@
 @experience_gain_medium = 0.09
 @experience_gain_high = 0.12
 @experience_gain_esport = 0.15
+@experience_gain_top = 0.15
+
+@experience_gain_factor_low = 0.05
+@experience_gain_factor_medium = 0.1
+@experience_gain_factor_high = 0.15
+@experience_gain_factor_esport = 0.2
+
+@mastery_factor_gain_low = 0.03
+@mastery_factor_gain_medium = 0.06
+@mastery_factor_gain_high = 0.09
+@mastery_factor_gain_esport = 0.12
+
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.2
+@mastery_theorists_gain_high = 0.3
+@mastery_theorists_gain_esport = 0.4
 
 
 ###Todo remove commented advisor experience gains
@@ -173,6 +189,43 @@ leader_traits = {
 	PHI_political_hacendado = {}
 	PHI_supreme_marshal = {}
 	PHI_social_reformer = {}
+
+	blue_shirt_connections_0 = {}
+	CHI_tsr_son_of_heaven = {}
+	KHM_governor_of_sinkiang = {}
+	INS_staunch_imperialist = {}
+	JAP_embodying_empress_jingu = {}
+
+	CHI_all_china_generalisimo = {}
+	blue_shirt_connections_1 = {}
+	CHI_tsr_the_celestial_emperor = {}
+	KUM_champion_father_of_the_faithful = {}
+	INS_staunch_imperialist_upgraded = {}
+	JAP_embodying_empress_jingu_and_zheng_yi_sao = {}
+	AST_the_big_australian = {}
+	AST_the_big_australian_upgraded = {}
+	AST_denim_factory = {}
+	AST_denim_factory_upgraded = {}
+	AST_mount_isa = {}
+	AST_mount_isa_upgraded = {}
+	AST_steelworks_and_shipyard = {}
+	AST_steelworks_and_shipyard_upgraded = {}
+	brewery = {}
+	infrastructure_group = {}
+	food_distributor = {}
+	idealist_revolutionary = {}
+	INS_longstanding_nationalist = {}
+	INS_the_indonesian_general = {}
+	INS_the_steady_hand = {}
+	INS_paramount_of_bali = {}
+	INS_the_merchant_sultan_of_pontianak = {}
+	INS_sombaya_of_gowa = {}
+	INS_the_four_mountains_of_ternate = {}
+	INS_the_sultan_schoolmaster_of_siak = {}
+	RAJ_khudai_khidmatgar_leader = {}
+	INS_inefficient_government = {}
+	steady_statesman = {}
+	BRA_head_of_house_orleans_braganza_trait = {}
 
 	dictator = {
 		random = no
@@ -6021,33 +6074,18 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 1.8
-				date < 1939.1.1
-			}
-		}
 	}
 
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.15
-
-		ai_will_do = {
-			factor = 2
-		}
+		consumer_goods_expected_value = -0.025
+		production_factory_max_efficiency_factor = 0.025
 	}
 	economist = {
 		sprite = 10
 		random = yes
 		production_factory_max_efficiency_factor = 0.05
-
-		ai_will_do = {
-			factor = 2
-		}
 	}
 
 	editor = {
@@ -7135,24 +7173,46 @@ leader_traits = {
 		land_doctrine_cost_factor = -0.05
 		air_doctrine_cost_factor = -0.05
 		naval_doctrine_cost_factor = -0.05
-
-		ai_will_do = {
-			factor = 3
-		}
 	}
 
+
+	# ARMY THEORISTS TRAITS
 	military_theorist = {
+		# everything
 		sprite = 14
-		cat_old_land_doctrine_cost_factor = -0.1
 		experience_gain_army = @experience_gain_high
+		experience_gain_army_factor = @experience_gain_factor_high
+		land_mastery_gain_factor = @mastery_factor_gain_esport
 	}
-
-	mobile_warfare_expert = {
+	
+	superior_firepower_expert = {
+		# inf attack
 		sprite = 14
-		cat_tank_attack_cost_factor = -0.15
+
+		equipment_bonus = {
+			artillery = {
+				instant = yes
+				soft_attack = 0.05
+				hard_attack = 0.05
+			}
+		}
 		experience_gain_army = @experience_gain_medium
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
+	mass_assault_expert = {
+		# inf defence
+		sprite = 14
+
+		army_org_factor = 0.025
+		army_org_regain = 0.05
+		experience_gain_army = @experience_gain_medium
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_high
+	}
+	
 	blitzkrieg_theorist = {
+		#tnk attack
 		sprite = 14
 
 		equipment_bonus = {
@@ -7163,44 +7223,35 @@ leader_traits = {
 				hard_attack = 0.02
 			}
 		}
-		cat_tank_attack_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
-
-	superior_firepower_expert = {
+	mobile_warfare_expert = {
+		# tnk defence
 		sprite = 14
-
-		equipment_bonus = {
-			artillery = {
-				instant = yes
-				soft_attack = 0.05
-				hard_attack = 0.05
-			}
-		}
-		cat_inf_defence_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
-	mass_assault_expert = {
-		sprite = 14
 
-		army_org_factor = 0.025
-		army_org_regain = 0.05
-		cat_inf_attack_cost_factor = -0.15
-		experience_gain_army = @experience_gain_medium
-	}
 	grand_battle_plan_expert = {
+		# operations swift maneuvres
 		sprite = 14
 
 		army_defence_factor = 0.05
-		cat_operation_swift_maneuvres_cost_factor = -0.15
-		cat_operation_deep_planning_cost_factor = -0.15
 		experience_gain_army = @experience_gain_medium
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
+
+	# AIR THEORISTS TRAITS
 	air_warfare_theorist = {
 		sprite = 14
-		air_doctrine_cost_factor = -0.1
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		experience_gain_air_factor = @experience_gain_factor_high
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 	}
 
 	dive_bomber = {
@@ -7211,32 +7262,34 @@ leader_traits = {
 				air_ground_attack = 0.1
 			}
 		}
-		cat_battlefield_support_cost_factor = -0.15
-		experience_gain_air = @experience_gain_medium
-
-		ai_will_do = {
-			factor = 1
-		}
+		experience_gain_air = @experience_gain_high
+		experience_gain_air_factor = @experience_gain_factor_medium
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	victory_through_airpower = {
 		sprite = 14
-		cat_strategic_destruction_cost_factor = -0.15
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		experience_gain_air_factor = @experience_gain_factor_medium
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	close_air_support_proponent = {
 		sprite = 14
-		cat_battlefield_support_cost_factor = -0.15
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		experience_gain_air_factor = @experience_gain_factor_medium
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	assault_avaition = {
 		sprite = 14
-		cat_operational_integrity_cost_factor = -0.15
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		experience_gain_air_factor = @experience_gain_factor_medium
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
+
+	# NAVY THEORISTS TRAITS
 	naval_theorist = {
 		sprite = 14
 		naval_doctrine_cost_factor = -0.1
@@ -7263,10 +7316,6 @@ leader_traits = {
 
 	aircraft_manufacturer = {
 		random = no
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	light_aircraft_manufacturer = {
@@ -7278,10 +7327,6 @@ leader_traits = {
 			cv_small_plane_airframe = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -7295,10 +7340,6 @@ leader_traits = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 		}
-
-		ai_will_do = {
-			factor = 2
-		}
 	}
 
 
@@ -7311,10 +7352,6 @@ leader_traits = {
 			cv_small_plane_cas_airframe = {
 				air_ground_attack = 0.1 reliability = 0.1
 			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -7330,10 +7367,6 @@ leader_traits = {
 			medium_plane_scout_plane_airframe = {
 				reliability = 0.2
 			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -7351,10 +7384,6 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	heavy_aircraft_manufacturer = {
@@ -7364,10 +7393,6 @@ leader_traits = {
 			large_plane_airframe = {
 				air_bombing = 0.1
 			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -7387,10 +7412,6 @@ leader_traits = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	multi_role_aircraft_manufacturer = {
@@ -7409,10 +7430,6 @@ leader_traits = {
 				reliability = 0.1
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	tank_refurbishment_plant = { #NSB
@@ -7424,10 +7441,6 @@ leader_traits = {
 				reliability = 0.05
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	fast_tank_manufacturer = {
@@ -7436,10 +7449,6 @@ leader_traits = {
 			armor = {
 				maximum_speed = 0.05 reliability = 0.1
 			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
@@ -7453,9 +7462,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	infantry_tank_manufacturer = {
@@ -7467,9 +7474,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	medium_tank_manufacturer = {
@@ -7480,9 +7485,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	heavy_tank_manufacturer = {
@@ -7493,9 +7496,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	tank_manufacturer = {
@@ -7508,9 +7509,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	repair_and_refurbishment_plant = { #NSB - Repairs & Refit
@@ -7530,9 +7529,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	black_sea_naval_manufacturer = { #NSB - Screen Ships and Submarines
@@ -7550,9 +7547,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	submarine_manufacturer = {
@@ -7572,9 +7567,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	submarine_manufacturer_2 = { #Improved version used for Italy (done in trait in order to keep a nice tooltip)
@@ -7594,9 +7587,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	pacific_fleet_naval_manufacturer = { #longer ranged, CVs favor larger hangers over armor
@@ -7616,9 +7607,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	atlantic_fleet_naval_manufacturer = { #armored carriers, slightly buffed cap ships
@@ -7640,9 +7629,7 @@ leader_traits = {
 			#}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	battlefleet_designer = { #armored carriers, slightly buffed cap ships
@@ -7658,9 +7645,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	raiding_fleet_naval_manufacturer = {
@@ -7682,9 +7667,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	convoy_escort_naval_manufacturer = {
@@ -7695,9 +7678,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	mediterranean_naval_manufacturer = {
@@ -7711,9 +7692,7 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	coastal_defence_naval_manufacturer = {
@@ -7735,58 +7714,44 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	naval_manufacturer = {
 		random = no
 		#generic
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	artillery_manufacturer = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	infantry_equipment_manufacturer = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	support_equipment_manufacturer = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	motorized_equipment_manufacturer = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	industrial_concern = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	railway_company = {
@@ -7800,9 +7765,7 @@ leader_traits = {
 				armor_value = 0.15
 			}
 		}
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	construction_company = {
@@ -7811,9 +7774,7 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	forestry_company = {
@@ -7821,17 +7782,13 @@ leader_traits = {
 
 		global_building_slots_factor = 0.3
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	refining_concern = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	merchant_marine_manufacturer = {
@@ -7842,42 +7799,32 @@ leader_traits = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	refinery_concern = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	central_bank = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	electronics_concern = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	telephone_company = {
 		random = no
 		land_reinforce_rate = 0.02
 		coordination_bonus = 0.04
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	mining_company = {
@@ -7886,17 +7833,13 @@ leader_traits = {
 		local_resources_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.15
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	electronics_developer = {
 		random = no
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	british_industrial_benefactor = {
@@ -7905,9 +7848,7 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.05
 		industrial_capacity_dockyard = 0.05
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	german_technological_patron = {
@@ -7915,9 +7856,7 @@ leader_traits = {
 
 		industrial_capacity_factory = 0.1
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	the_council_on_the_management_of_turkish_debt = {
@@ -7928,9 +7867,7 @@ leader_traits = {
 		consumer_goods_factor = 0.10
 		political_power_gain = -0.15
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	turkish_public_debt_administration = {
@@ -7939,9 +7876,7 @@ leader_traits = {
 		min_export = 0.15
 		political_power_gain = -0.05
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	linchpin_of_infrastructure = {
@@ -7951,9 +7886,7 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.15
 		industry_repair_factor = 0.2
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	industrial_monopoly = {
@@ -7964,9 +7897,7 @@ leader_traits = {
 		production_speed_buildings_factor = 0.05
 		production_factory_max_efficiency_factor = 0.15
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	inventive_genius = {
@@ -7975,9 +7906,7 @@ leader_traits = {
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.05
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	################################
@@ -7990,9 +7919,7 @@ leader_traits = {
 		neutrality_drift = 0.1
 		stability_factor = 0.15
 
-		ai_will_do = {
-			factor = 1
-		}
+		
 	}
 
 	NOR_shrewd_regent = { # For Peder Anker Wedel Jarlsberg as a country leader 
@@ -8359,10 +8286,6 @@ leader_traits = {
 
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.05
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	### Military Minister Traits
@@ -8373,48 +8296,21 @@ leader_traits = {
 		sprite = 9
 		army_defence_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_defensive_2 = { # +10 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_defensive_3 = { # +15 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8422,30 +8318,28 @@ leader_traits = {
 		sprite = 7
 		army_attack_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_offensive_2 = { # +10 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_offensive_3 = { # +15 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		experience_gain_army = @experience_gain_low
 		max_command_power = 10
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_drill_1 = { # Decreases training time for ground units
@@ -8453,8 +8347,7 @@ leader_traits = {
 		experience_gain_army_unit_factor = 0.1
 		experience_loss_factor = -0.1
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_drill_2 = { # Decreases training time for ground units
@@ -8462,8 +8355,7 @@ leader_traits = {
 		experience_gain_army_unit_factor = 0.15
 		experience_loss_factor = -0.15
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_drill_3 = { # Decreases training time for ground units
@@ -8471,57 +8363,29 @@ leader_traits = {
 		experience_gain_army_unit_factor = 0.2
 		experience_loss_factor = -0.2
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
 	army_chief_reform_1 = {
 		sprite = 5
 		experience_gain_army = @experience_gain_low
-		experience_gain_army_factor = 0.05
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_army_factor = @experience_gain_factor_low
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_reform_2 = {
 		sprite = 5
 		experience_gain_army = @experience_gain_medium
-		experience_gain_army_factor = 0.1
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_army_factor = @experience_gain_factor_medium
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_reform_3 = {
 		sprite = 5
 		experience_gain_army = @experience_gain_high
-		experience_gain_army_factor = 0.15
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_army_factor = @experience_gain_factor_high
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8529,144 +8393,63 @@ leader_traits = {
 		sprite = 5
 		army_org_factor = 0.04
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_organizational_2 = { # Ground units get 8 more Organization
 		sprite = 5
 		army_org_factor = 0.08
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_organizational_3 = { # Ground units get 12 more Organization
 		sprite = 5
 		army_org_factor = 0.12
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_chief_planning_1 = { #
 		sprite = 5
 		planning_speed = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_planning_2 = { #
 		sprite = 5
 		planning_speed = 0.10
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_planning_3 = { #
 		sprite = 5
 		planning_speed = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_chief_morale_1 = { # Ground units get 4 more Morale
 		sprite = 5
 		out_of_supply_factor = -0.03
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
 		out_of_supply_factor = -0.06
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_morale_3 = { # Ground units get 12 more Morale
 		sprite = 5
 		out_of_supply_factor = -0.09
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8674,48 +8457,21 @@ leader_traits = {
 		sprite = 5
 		army_speed_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_maneuver_2 = { # Ground units move 10% faster
 		sprite = 5
 		army_speed_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_maneuver_3 = { # Ground units move 15% faster
 		sprite = 5
 		army_speed_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_chief_entrenchment_1 = {
@@ -8723,16 +8479,7 @@ leader_traits = {
 		max_dig_in = 3
 		mobilization_speed = -0.02
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_chief_entrenchment_2 = {
@@ -8740,16 +8487,7 @@ leader_traits = {
 		max_dig_in = 5
 		mobilization_speed = -0.04
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_chief_entrenchment_3 = {
@@ -8757,16 +8495,7 @@ leader_traits = {
 		max_dig_in = 7
 		mobilization_speed = -0.06
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8774,48 +8503,21 @@ leader_traits = {
 		sprite = 9
 		dig_in_speed_factor = 0.08
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_entrenchment_2 = { # Ground units entrench 8% faster
 		sprite = 9
 		dig_in_speed_factor = 0.16
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_entrenchment_3 = { # Ground units entrench 12% faster
 		sprite = 9
 		dig_in_speed_factor = 0.24
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8824,16 +8526,7 @@ leader_traits = {
 		army_armor_attack_factor = 0.05
 	    army_armor_defence_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_armored_2 = { # +8 armor efficiency
@@ -8841,16 +8534,7 @@ leader_traits = {
 		army_armor_attack_factor = 0.1
 	    army_armor_defence_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_armored_3 = { # +12 armor efficiency
@@ -8858,8 +8542,7 @@ leader_traits = {
 		army_armor_attack_factor = 0.15
 	    army_armor_defence_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8868,16 +8551,7 @@ leader_traits = {
 		army_artillery_attack_factor = 0.1
 		army_artillery_defence_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_artillery_2 = { # +8 artillery efficiency
@@ -8885,16 +8559,7 @@ leader_traits = {
 		army_artillery_attack_factor = 0.15
 		army_artillery_defence_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_artillery_3 = { # +12 artillery efficiency
@@ -8902,16 +8567,7 @@ leader_traits = {
 		army_artillery_attack_factor = 0.2
 		army_artillery_defence_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8920,16 +8576,7 @@ leader_traits = {
 		army_infantry_attack_factor = 0.05
 		army_infantry_defence_factor = 0.1
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_infantry_2 = { # +8 infantry efficiency
@@ -8937,16 +8584,7 @@ leader_traits = {
 		army_infantry_attack_factor = 0.1
 		army_infantry_defence_factor = 0.15
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_infantry_3 = { # +12 infantry efficiency
@@ -8954,16 +8592,7 @@ leader_traits = {
 		army_infantry_attack_factor = 0.15
 		army_infantry_defence_factor = 0.2
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -8972,16 +8601,7 @@ leader_traits = {
 		special_forces_attack_factor = 0.05
 		special_forces_cap_flat = 3
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
@@ -8989,16 +8609,7 @@ leader_traits = {
 		special_forces_attack_factor = 0.10
 		special_forces_defence_factor = 0.10
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
@@ -9006,16 +8617,7 @@ leader_traits = {
 		special_forces_attack_factor = 0.15
 		special_forces_cap_flat = 10
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9024,16 +8626,7 @@ leader_traits = {
 		cavalry_attack_factor = 0.05
 		cavalry_defence_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_cavalry_2 = { # +8 cavalry/motorized efficiency
@@ -9041,16 +8634,7 @@ leader_traits = {
 		cavalry_attack_factor = 0.1
 		cavalry_defence_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_cavalry_3 = { # +12 cavalry/motorized efficiency
@@ -9058,16 +8642,7 @@ leader_traits = {
 		cavalry_attack_factor = 0.15
 		cavalry_defence_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_CombinedArms_1 = { # +4 cavalry/motorized efficiency
@@ -9077,16 +8652,7 @@ leader_traits = {
 		mechanized_attack_factor = 0.05
 		mechanized_defence_factor = 0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_CombinedArms_2 = { # +8 cavalry/motorized efficiency
@@ -9096,16 +8662,7 @@ leader_traits = {
 		mechanized_attack_factor = 0.1
 		mechanized_defence_factor = 0.1
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_CombinedArms_3 = { # +12 cavalry/motorized efficiency
@@ -9115,16 +8672,7 @@ leader_traits = {
 		mechanized_attack_factor = 0.15
 		mechanized_defence_factor = 0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9132,48 +8680,21 @@ leader_traits = {
 		sprite = 5
 		army_morale_factor = 0.04
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_regrouping_2 = { # Org regenerates 8% faster
 		sprite = 5
 		army_morale_factor = 0.08
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_regrouping_3 = { # Org regenerates 12% faster
 		sprite = 5
 		army_morale_factor = 0.12
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9181,48 +8702,21 @@ leader_traits = {
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.05
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_concealment_2 = { # Ground units take less damage from air attacks
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.10
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_concealment_3 = { # Ground units take less damage from air attacks
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.15
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9230,48 +8724,21 @@ leader_traits = {
 		sprite = 6
 		attrition = -0.04
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_logistics_2 = {  # Ground units suffer 8% less attrition
 		sprite = 6
 		attrition = -0.08
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_logistics_3 = {  # Ground units suffer 12% less attrition
 		sprite = 6
 		attrition = -0.12
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 6
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9285,16 +8752,7 @@ leader_traits = {
 		initiative_factor = 0.02
 
 		experience_gain_army = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	army_radio_intelligence_2 = {
@@ -9307,16 +8765,7 @@ leader_traits = {
 		initiative_factor = 0.04
 
 		experience_gain_army = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	army_radio_intelligence_3 = {
@@ -9329,16 +8778,7 @@ leader_traits = {
 		initiative_factor = 0.06
 
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 6
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		land_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 	army_german_ground_commander = { #FIN-specific, considered Genius (tier 3)
@@ -9349,39 +8789,41 @@ leader_traits = {
 		max_command_power = 60
 
 		experience_gain_army = @experience_gain_high
-
-		command_power = 0
 	}
 
-
+	
 	air_chief_reform_1 = {  # Rate at which air experience is gained increases by 5%
 		sprite = 1
-		experience_gain_air = @experience_gain_low
-		experience_gain_air_factor = 0.05
+		experience_gain_air = @experience_gain_medium
+		experience_gain_air_factor = @experience_gain_factor_low
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
 
 	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
 		sprite = 1
-		experience_gain_air = @experience_gain_medium
-		experience_gain_air_factor = 0.10
+		experience_gain_air = @experience_gain_high
+		experience_gain_air_factor = @experience_gain_factor_medium
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
 
 	air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 1
-		experience_gain_air = @experience_gain_high
-		experience_gain_air_factor = 0.15
+		experience_gain_air = @experience_gain_esport
+		experience_gain_air_factor = @experience_gain_factor_high
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
 
 	air_chief_reform_4 = {  # Rate at which air experience is gained increases by 20%
 		sprite = 1
-		experience_gain_air = @experience_gain_esport
-		experience_gain_air_factor = 0.2
+		experience_gain_air = @experience_gain_top
+		experience_gain_air_factor = @experience_gain_factor_esport
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9390,7 +8832,8 @@ leader_traits = {
 	air_chief_safety_1 = {  # Rate of air accidents reduced by 5%
 		sprite = 1
 		air_accidents_factor = -0.05
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9398,7 +8841,8 @@ leader_traits = {
 	air_chief_safety_2 = {  # Rate of air accidents reduced by 10%
 		sprite = 1
 		air_accidents_factor = -0.1
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9406,7 +8850,8 @@ leader_traits = {
 	air_chief_safety_3 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.15
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9414,21 +8859,23 @@ leader_traits = {
 	air_chief_safety_4 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.2
-		experience_gain_air = @experience_gain_esport
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
 
 	air_chief_old_guard = {
 		sprite = 1
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
 		max_command_power = 10
 	}
 
 	air_chief_night_operations_1 = {
 		sprite = 1
 		air_night_penalty = -0.1
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9436,7 +8883,8 @@ leader_traits = {
 	air_chief_night_operations_2 = {
 		sprite = 1
 		air_night_penalty = -0.2
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9444,7 +8892,8 @@ leader_traits = {
 	air_chief_night_operations_3 = {
 		sprite = 1
 		air_night_penalty = -0.3
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9452,7 +8901,8 @@ leader_traits = {
 	air_chief_night_operations_4 = {
 		sprite = 1
 		air_night_penalty = -0.3
-		experience_gain_air = @experience_gain_esport
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9460,7 +8910,8 @@ leader_traits = {
 	air_chief_ground_support_1 = {  # Air superiority impact on land units improved by 5%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.05
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9468,7 +8919,8 @@ leader_traits = {
 	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.1
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9476,7 +8928,8 @@ leader_traits = {
 	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.15
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9484,7 +8937,8 @@ leader_traits = {
 	air_chief_ground_support_4 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.2
-		experience_gain_air = @experience_gain_esport
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9494,7 +8948,8 @@ leader_traits = {
 	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.1
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9502,7 +8957,8 @@ leader_traits = {
 	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.2
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9510,7 +8966,8 @@ leader_traits = {
 	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.3
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9518,7 +8975,8 @@ leader_traits = {
 	air_chief_all_weather_4 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.4
-		experience_gain_air = @experience_gain_esport
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9527,7 +8985,8 @@ leader_traits = {
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.05
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9535,7 +8994,8 @@ leader_traits = {
 	air_air_combat_training_2 = {  # Chance of ace generating is increased by 10%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.1
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9543,7 +9003,8 @@ leader_traits = {
 	air_air_combat_training_3 = {  # Chance of ace generating is increased by 15%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.15
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9553,17 +9014,8 @@ leader_traits = {
 		naval_strike_attack_factor = 0.02
 		naval_strike_targetting_factor = 0.02
 		naval_strike_agility_factor = 0.02
-		experience_gain_air = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	air_naval_strike_2 = {
@@ -9571,17 +9023,8 @@ leader_traits = {
 		naval_strike_attack_factor = 0.03
 		naval_strike_targetting_factor = 0.03
 		naval_strike_agility_factor = 0.03
-		experience_gain_air = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	air_naval_strike_3 = {
@@ -9589,24 +9032,16 @@ leader_traits = {
 		naval_strike_attack_factor = 0.05
 		naval_strike_targetting_factor = 0.05
 		naval_strike_agility_factor = 0.05
-		experience_gain_air = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
 	air_bomber_interception_1 = {
 		sprite = 1
 		air_intercept_efficiency = 0.05
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9614,7 +9049,8 @@ leader_traits = {
 	air_bomber_interception_2 = {
 		sprite = 1
 		air_intercept_efficiency = 0.10
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9622,7 +9058,8 @@ leader_traits = {
 	air_bomber_interception_3 = {
 		sprite = 1
 		air_intercept_efficiency = 0.15
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9630,7 +9067,8 @@ leader_traits = {
 	air_bomber_interception_4 = {
 		sprite = 1
 		air_intercept_efficiency = 0.15
-		experience_gain_air = @experience_gain_esport
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9639,7 +9077,8 @@ leader_traits = {
 	air_air_superiority_1 = {
 		sprite = 1
 		air_superiority_efficiency = 0.05
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9647,7 +9086,8 @@ leader_traits = {
 	air_air_superiority_2 = {
 		sprite = 1
 		air_superiority_efficiency = 0.1
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9655,7 +9095,8 @@ leader_traits = {
 	air_air_superiority_3 = {
 		sprite = 1
 		air_superiority_efficiency = 0.15
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9663,7 +9104,8 @@ leader_traits = {
 	air_air_superiority_4 = {
 		sprite = 1
 		air_superiority_efficiency = 0.2
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9673,50 +9115,34 @@ leader_traits = {
 		sprite = 1
 		air_cas_efficiency = 0.05
 		ground_attack_factor = 0.03
-		experience_gain_air = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	air_close_air_support_2 = {
 		sprite = 1
 		air_cas_efficiency = 0.1
 		ground_attack_factor = 0.05
-		experience_gain_air = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	air_close_air_support_3 = {
 		sprite = 1
 		air_cas_efficiency = 0.15
 		ground_attack_factor = 0.08
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
 
-	air_close_air_support_3 = {
+	air_close_air_support_4 = {
 		sprite = 1
-		air_cas_efficiency = 0.15
-		ground_attack_factor = 0.08
-		experience_gain_air = @experience_gain_high
+		air_cas_efficiency = 0.2
+		ground_attack_factor = 0.1
+		experience_gain_air = @experience_gain_top
+		air_mastery_gain_factor = @mastery_factor_gain_esport
 
 		command_power = 0
 	}
@@ -9726,50 +9152,24 @@ leader_traits = {
 		sprite = 2
 		air_strategic_bomber_defence_factor = 0.01
 		air_strategic_bomber_bombing_factor = 0.03
-		experience_gain_air = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	air_strategic_bombing_2 = {
 		sprite = 2
 		air_strategic_bomber_defence_factor = 0.12
 		air_strategic_bomber_bombing_factor = 0.15
-		experience_gain_air = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	air_strategic_bombing_3 = {
 		sprite = 2
 		air_strategic_bomber_defence_factor = 0.03
 		air_strategic_bomber_bombing_factor = 0.09
-		experience_gain_air = @experience_gain_high
-
-		command_power = 0
-	}
-
-	air_strategic_bombing_4 = {
-		sprite = 2
-		air_strategic_bomber_defence_factor = 0.03
-		air_strategic_bomber_bombing_factor = 0.09
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9777,49 +9177,22 @@ leader_traits = {
 	air_tactical_bombing_1 = {
 		sprite = 2
 		air_cas_present_factor = 0.1
-		experience_gain_air = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 	}
 
 	air_tactical_bombing_2 = {
 		sprite = 2
 		air_cas_present_factor = 0.15
-		experience_gain_air = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 
 	air_tactical_bombing_3 = {
 		sprite = 2
 		air_cas_present_factor = 0.2
-		experience_gain_air = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9830,7 +9203,8 @@ leader_traits = {
 		modifier_army_sub_unit_paratrooper_attack_factor = 0.05
 		modifier_army_sub_unit_paratrooper_defence_factor = 0.01
 
-		experience_gain_air = @experience_gain_low
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 
 		command_power = 0
 	}
@@ -9842,7 +9216,8 @@ leader_traits = {
 		modifier_army_sub_unit_paratrooper_attack_factor = 0.1
 		modifier_army_sub_unit_paratrooper_defence_factor = 0.15
 
-		experience_gain_air = @experience_gain_medium
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 
 		command_power = 0
 	}
@@ -9854,7 +9229,8 @@ leader_traits = {
 		modifier_army_sub_unit_paratrooper_attack_factor = 0.15
 		modifier_army_sub_unit_paratrooper_defence_factor = 0.2
 
-		experience_gain_air = @experience_gain_high
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 
 		command_power = 0
 	}
@@ -9862,47 +9238,20 @@ leader_traits = {
 	air_pilot_training_1 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.05
-		experience_gain_air = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_medium
+		air_mastery_gain_factor = @mastery_factor_gain_low
 	}
 	air_pilot_training_2 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.1
-		experience_gain_air = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_high
+		air_mastery_gain_factor = @mastery_factor_gain_medium
 	}
 	air_pilot_training_3 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.15
-		experience_gain_air = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
+		experience_gain_air = @experience_gain_esport
+		air_mastery_gain_factor = @mastery_factor_gain_high
 	}
 
 
@@ -9912,16 +9261,6 @@ leader_traits = {
 		navy_carrier_air_targetting_factor = 0.03
 		navy_carrier_air_agility_factor = 0.04
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_naval_aviation_2 = {
@@ -9930,16 +9269,6 @@ leader_traits = {
 		navy_carrier_air_targetting_factor = 0.07
 		navy_carrier_air_agility_factor = 0.08
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_naval_aviation_3 = {
@@ -9948,16 +9277,6 @@ leader_traits = {
 		navy_carrier_air_targetting_factor = 0.12
 		navy_carrier_air_agility_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -9968,16 +9287,6 @@ leader_traits = {
 		navy_screen_attack_factor = 0.05
 		navy_screen_defence_factor = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_decisive_battle_2 = {
@@ -9987,16 +9296,6 @@ leader_traits = {
 		navy_screen_attack_factor = 0.1
 		navy_screen_defence_factor = 0.1
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_decisive_battle_3 = {
@@ -10006,16 +9305,6 @@ leader_traits = {
 		navy_screen_attack_factor = 0.15
 		navy_screen_defence_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10023,48 +9312,18 @@ leader_traits = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.1
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_commerce_raiding_2 = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.15
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_commerce_raiding_3 = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.2
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_old_guard = {
@@ -10072,110 +9331,42 @@ leader_traits = {
 		experience_gain_navy = @experience_gain_medium
 
 		max_command_power = 10
-
-		ai_will_do = {
-			factor = 0.25
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_reform_1 = {
 		sprite = 3
 		experience_gain_navy = @experience_gain_low
 		experience_gain_navy_factor = 0.05
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_reform_2 = {
 		sprite = 3
 		experience_gain_navy = @experience_gain_medium
 		experience_gain_navy_factor = 0.1
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_reform_3 = {
 		sprite = 3
 		experience_gain_navy = @experience_gain_high
 		experience_gain_navy_factor = 0.15
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_maneuver_1 = { # Naval units move 5% faster
 		sprite = 3
 		naval_speed_factor = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_maneuver_2 = { # Naval units move 10% faster
 		sprite = 3
 		naval_speed_factor = 0.1
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_chief_maneuver_3 = { # Naval units move 15% faster
 		sprite = 3
 		naval_speed_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10183,48 +9374,18 @@ leader_traits = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.1
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_anti_submarine_2 = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.15
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_anti_submarine_3 = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.2
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10232,48 +9393,18 @@ leader_traits = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.08
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_naval_air_defense_2 = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.15
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_naval_air_defense_3 = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.2
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10281,48 +9412,18 @@ leader_traits = {
 		sprite = 6
 		navy_max_range_factor = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_fleet_logistics_2 = {
 		sprite = 6
 		navy_max_range_factor = 0.10
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_fleet_logistics_3 = {
 		sprite = 6
 		navy_max_range_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10330,16 +9431,6 @@ leader_traits = {
 		sprite = 3
 		amphibious_invasion = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_amphibious_assault_2 = {
@@ -10347,32 +9438,12 @@ leader_traits = {
 		amphibious_invasion = 0.1
 		amphibious_invasion_defence = 0.08
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_amphibious_assault_3 = {
 		sprite = 3
 		amphibious_invasion = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10381,16 +9452,6 @@ leader_traits = {
 		navy_submarine_attack_factor = 0.1
 		navy_submarine_defence_factor = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_submarine_2 = {
@@ -10398,16 +9459,6 @@ leader_traits = {
 		navy_submarine_attack_factor = 0.15
 		navy_submarine_defence_factor = 0.1
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_submarine_3 = {
@@ -10415,16 +9466,6 @@ leader_traits = {
 		navy_submarine_attack_factor = 0.2
 		navy_submarine_defence_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10433,16 +9474,6 @@ leader_traits = {
 		navy_capital_ship_attack_factor = 0.05
 		navy_capital_ship_defence_factor = 0.05
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_capital_ship_2 = {
@@ -10450,16 +9481,6 @@ leader_traits = {
 		navy_capital_ship_attack_factor = 0.1
 		navy_capital_ship_defence_factor = 0.1
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_capital_ship_3 = {
@@ -10467,16 +9488,6 @@ leader_traits = {
 		navy_capital_ship_attack_factor = 0.15
 		navy_capital_ship_defence_factor = 0.15
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 
@@ -10485,16 +9496,6 @@ leader_traits = {
 		navy_screen_attack_factor = 0.05
 		navy_screen_defence_factor = 0.1
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_screen_2 = {
@@ -10502,16 +9503,6 @@ leader_traits = {
 		navy_screen_attack_factor = 0.1
 		navy_screen_defence_factor = 0.15
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_screen_3 = {
@@ -10519,68 +9510,24 @@ leader_traits = {
 		navy_screen_attack_factor = 0.15
 		navy_screen_defence_factor = 0.2
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_carrier_1 = {
 		sprite = 3
 		sortie_efficiency = 0.1
 		experience_gain_navy = @experience_gain_low
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_carrier_2 = {
 		sprite = 3
 		sortie_efficiency = 0.15
 		experience_gain_navy = @experience_gain_medium
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	navy_carrier_3 = {
 		sprite = 3
 		sortie_efficiency = 0.2
 		experience_gain_navy = @experience_gain_high
-
-		command_power = 0
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				has_navy_size = { unit = carrier size < 1 }
-			}
-			modifier = {
-				factor = 0
-				command_power < 0
-			}
-		}
 	}
 
 	evans_deakin_trait = { #at end for save compat
@@ -10603,10 +9550,6 @@ leader_traits = {
 				build_cost_ic = -0.1
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	
 	cockatoo_trait = { #at end for save compat
@@ -10623,10 +9566,6 @@ leader_traits = {
 				naval_speed = 0.1
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	
 	cautious_arbiter = {
@@ -10634,10 +9573,6 @@ leader_traits = {
 		political_power_factor = 0.10
 		war_support_factor = -0.05
 		communism_acceptance = 30
-		
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	
 	viceroy_emeritus = {
@@ -10700,6 +9635,27 @@ leader_traits = {
 	assault_gun_manufacturer = {}
 	aircraft_production_plant = {}
 	oil_extraction_company_trait = {}
+
+	resource_development_company_2 = {}
+	monopolistic_bank = {}
+	PRC_magazine = {}
+	PRC_nuclear_company = {}
+	mining_zaibatsu = {}
+	armament_zaibatsu = {}
+	industrial_conglomerate = {}
+	zaibatsu_bank = {}
+	colonial_investments_company = {}
+	national_news_agency = {}
+	propaganda_agency = {}
+	south_seas_development_company = {}
+	PHI_san_miguel_trait = {}
+	PHI_marsman_and_company_trait = {}
+	CHI_civilian_unifier_upgraded = {}
+	CHI_civilian_unifier_upgraded_2 = {}
+	CHI_civilian_unifier = {}
+	PRC_head_of_the_personality_cult = {}
+	CHI_asian_unifier_and_liberator = {}
+	CHI_generallissimo_sea = {}
 
 	stalin_eblan = {
 		random = no
@@ -10857,214 +9813,4 @@ leader_traits = {
 		sprite = 5
 		cas_damage_reduction = 0.25
 	}
-
-	resource_development_company_2 = {
-		random = no
-
-		global_building_slots_factor = 0.05
-		local_resources_factor = 0.2
-		production_lack_of_resource_penalty_factor = -0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	monopolistic_bank = {
-		random = no
-		consumer_goods_factor = -0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	PRC_magazine = {
-		random = no 
-
-	}
-
-	PRC_nuclear_company = {
-		random = no
-	}
-
-	mining_zaibatsu = {
-		random = no
-
-		political_power_factor = -0.1
-		local_resources_factor = 0.1
-		production_factory_max_efficiency_factor = 0.05
-		production_factory_start_efficiency_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	armament_zaibatsu = {
-		random = no
-		
-		political_power_factor = -0.1
-		production_speed_dockyard_factor = 0.05
-		production_speed_arms_factory_factor = 0.05
-		industrial_capacity_factory = 0.05
-		industrial_capacity_dockyard = 0.05
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	industrial_conglomerate = {
-		random = no
-		
-		political_power_factor = -0.1
-		production_speed_buildings_factor = 0.05
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	zaibatsu_bank = {
-		random = no
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	colonial_investments_company = {
-		random = no
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	national_news_agency = {
-		random = no
-		
-		war_stability_factor = 0.1
-		weekly_casualties_war_support = 0.006
-		weekly_convoys_war_support = 0.004
-		weekly_bombing_war_support = 0.002
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	propaganda_agency = {
-		random = no
-		
-		war_stability_factor = 0.05
-		weekly_casualties_war_support = 0.006
-		weekly_convoys_war_support = 0.004
-		weekly_bombing_war_support = 0.002
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	south_seas_development_company = {
-		random = no
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	PHI_san_miguel_trait = {
-		random = no
-
-		stability_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	PHI_marsman_and_company_trait = {
-		random = no
-
-		production_speed_buildings_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	CHI_civilian_unifier_upgraded = {
-		sprite = 10
-		random = no
-
-		subjects_autonomy_gain = -0.04
-		political_power_factor = 0.05
-		annex_subject_cost_factor = -0.15
-		surrender_limit = 0.05
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	CHI_civilian_unifier_upgraded_2 = {
-		sprite = 10
-		random = no
-
-		subjects_autonomy_gain = -0.06
-		political_power_factor = 0.05
-		annex_subject_cost_factor = -0.25
-		surrender_limit = 0.05
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	CHI_civilian_unifier = {
-		sprite = 10
-		random = no
-
-		subjects_autonomy_gain = -0.02
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	PRC_head_of_the_personality_cult = { 
-		random = no #Mao if Maoism is enforced
-
-		equipment_capture_factor = 0.15 #unsure how powerful this is
-		political_power_gain = 0.15
-		stability_factor = 0.1
-		war_stability_factor = 0.05
-		army_core_attack_factor = 0.05
-		army_defence_factor = 0.05
-		army_morale_factor = 0.1
-		conscription = 0.01
-
-	}
-	CHI_asian_unifier_and_liberator = {
-		sprite = 10
-		random = no
-
-		subjects_autonomy_gain = -0.08
-		political_power_factor = 0.05
-		annex_subject_cost_factor = -0.25
-		compliance_gain = 0.01
-		surrender_limit = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	CHI_generallissimo_sea = {
-		random = no
-		defensive_war_stability_factor = 0.4
-		max_surrender_limit_offset = 0.1 
-		surrender_limit = 0.05
-	}
-
-
 }

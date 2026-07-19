@@ -7,15 +7,15 @@ DOCTRINE_TRACK_INFANTRY_ATTACK:0 "Infantry Attack"
 DOCTRINE_TRACK_INFANTRY_DEFENCE:0 "Infantry Defence"
 DOCTRINE_TRACK_ARMOR_ATTACK:0 "Armor Attack"
 DOCTRINE_TRACK_ARMOR_DEFENCE:0 "Armor Defence"
-DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES:0 "Operations Swift Maneuvres"
-DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING:0 "Operations Deep Planning"
+DOCTRINE_TRACK_OPERATIONS_SWIFT_MANEUVRES:0 "Swift Maneuvres"
+DOCTRINE_TRACK_OPERATIONS_DEEP_PLANNING:0 "Deep Planning"
 
 SUBDOCTRINE_INFANTRY_ATTACK:0 "Basic Infantry Attacking Tactics"
 SUBDOCTRINE_INFANTRY_DEFENCE:0 "Basic Infantry Defensive Tactics"
 SUBDOCTRINE_ARMOR_ATTACK:0 "Basic Armor Attacking Tactics"
 SUBDOCTRINE_ARMOR_DEFENCE:0 "Basic Armor Defensive Tactics"
-SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES:0 "Swift Maneuvers"
-SUBDOCTRINE_OPERATION_DEEP_PLANNING:0 "Deep Planning"
+SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES:0 "Operational Readiness On All Levels"
+SUBDOCTRINE_OPERATION_DEEP_PLANNING:0 "Deep Study of Enemy Positions"
 
 SUBDOCTRINE_INFANTRY_ATTACK_DESC:0 ""
 SUBDOCTRINE_INFANTRY_DEFENCE_DESC:0 ""
@@ -61,3 +61,38 @@ SUBDOCTRINE_OPERATION_DEEP_PLANNING_DESC:0 ""
  operation_deep_planning_sub_c:0 "Coordinated Army Groups"
  operation_deep_planning_sub_d:0 "Deep Battle"
  operation_deep_planning_sub_e:0 "Double Main Strikes"
+
+
+
+ ic_AIR_GRAND_DOCTRINE_NAME:0 "WW2 Air Doctrine"
+ ic_AIR_GRAND_DOCTRINE_DESC:0 "Cherepaha po imeni Hlov"
+
+ DOCTRINE_TRACK_STRATEGIC_DESTRUCTION:0 "Strategic Destruction"
+ DOCTRINE_TRACK_DOGFIGHTS:0 "Dogfights"
+ DOCTRINE_TRACK_BATTLEFIELD_SUPPORT:0 "Battlefield Support"
+
+ SUBDOCTRINE_STRATEGIC_DESTRUCTION:0 "Strategic Destruction"
+ SUBDOCTRINE_DOGFIGHTS:0 "Dogfights"
+ SUBDOCTRINE_BATTLEFIELD_SUPPORT:0 "Battlefield Support"
+
+ SUBDOCTRINE_STRATEGIC_DESTRUCTION_DESC:0 ""
+ SUBDOCTRINE_DOGFIGHTS_DESC:0 ""
+ SUBDOCTRINE_BATTLEFIELD_SUPPORT_DESC:0 ""
+
+ strategic_destruction_sub_a:0 "Flying Fortress"
+ strategic_destruction_sub_b:0 "Day Bombing"
+ strategic_destruction_sub_c:0 "Fighter Escorts"
+ strategic_destruction_sub_d:0 "High Level Bombing"
+ strategic_destruction_sub_e:0 "Mass Destruction"
+
+ dogfights_sub_a:0 "Air Superiority"
+ dogfights_sub_b:0 "Forward Interception"
+ dogfights_sub_c:0 "Fighter Ace Initiative"
+ dogfights_sub_d:0 "Fighter Sweeps"
+ dogfights_sub_e:0 "Dogfighting Experience"
+
+ battlefield_support_sub_a:0 "Dive Bombing"
+ battlefield_support_sub_b:0 "Direct Ground Support"
+ battlefield_support_sub_c:0 "Hunt and Destroy"
+ battlefield_support_sub_d:0 "Combat Unit Destruction"
+ battlefield_support_sub_e:0 "Ground Support Integration"

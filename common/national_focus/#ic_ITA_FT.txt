@@ -45,7 +45,7 @@
 	}
 	focus = {
 		id = ITA_join_anticomintern_pact
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_join_anticomintern_pact
 
 		prerequisite = { focus = ITA_give_up_austria }
 		relative_position_id = ITA_give_up_austria
@@ -134,7 +134,7 @@
 	}
 	focus = {
 		id = ITA_develop_albania
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_befriend_albania
 
 		prerequisite = { focus = ITA_annex_albania }
 		relative_position_id = ITA_annex_albania
@@ -278,7 +278,7 @@
 	}
 	focus = {
 		id = ITA_claim_greek_territories
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_claim_greek_territories
 
 		prerequisite = { focus = ITA_steel_pact }
 		relative_position_id = ITA_steel_pact
@@ -311,7 +311,7 @@
 	}
 	focus = {
 		id = ITA_yugo_annex
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_yugo_annex
 
 		prerequisite = { focus = ITA_claim_greek_territories }
 		relative_position_id = ITA_claim_greek_territories
@@ -1019,7 +1019,7 @@
 	}
 	focus = {
 		id = ITA_defend_our_resources
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_defend_our_resources
 
 		prerequisite = { focus = ITA_lybian_oil focus = ITA_ethiopian_rubber }
 		relative_position_id = ITA_lybian_oil
@@ -1033,7 +1033,7 @@
 	}
 	focus = {
 		id = ITA_egypt_is_ours
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_egypt_is_ours
 
 		prerequisite = { focus = ITA_defend_our_resources }
 		relative_position_id = ITA_defend_our_resources
@@ -1209,7 +1209,7 @@
 	}
 	focus = {
 		id = ITA_use_expirience_from_spain_and_ethiopia
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_use_expirience_from_spain_and_ethiopia
 
 		prerequisite = { focus = ITA_improve_our_doctrine }
 		prerequisite = { focus = ITA_army_reform }
@@ -1225,7 +1225,7 @@
 	}
 	focus = {
 		id = ITA_or_just_give_command_to_germans
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_or_just_give_command_to_germans
 
 		prerequisite = { focus = ITA_use_expirience_from_spain_and_ethiopia }
 		relative_position_id = ITA_use_expirience_from_spain_and_ethiopia
@@ -1262,7 +1262,7 @@
 	}
 	focus = {
 		id = ITA_further_tank_development
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_further_tank_development
 
 		prerequisite = { focus = ITA_develop_l6 }
 		relative_position_id = ITA_develop_l6
@@ -1281,7 +1281,7 @@
 	}
 	focus = {
 		id = ITA_learn_from_germans
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_learn_from_germans
 
 		prerequisite = { focus = ITA_develop_l6 }
 		relative_position_id = ITA_develop_l6
@@ -1362,7 +1362,7 @@
 	}
 	focus = {
 		id = ITA_unstoppable_army
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_unstoppable_army
 
 		prerequisite = { focus = ITA_our_own_heavy_tanks }
 		prerequisite = { focus = ITA_promote_new_generals }

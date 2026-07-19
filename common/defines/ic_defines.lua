@@ -318,7 +318,7 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.18 -- -0.12 vanilla, per level AA state, so -90% in total
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 20.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 500	-- this one seems to be the only one(!!!) define to balace naval patrol air mission. that is would be hilarious if it wasn't sad
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
@@ -344,22 +344,27 @@ NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 	1.0, -- NAVAL_PATROL
 }
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
-	0.0, -- AIR_SUPERIORITY
-	0.0, -- CAS		
-	0.0, -- INTERCEPTION	
-	0.0, -- STRATEGIC_BOMBER
-	0.0, -- NAVAL_BOMBER	
-	0.0, -- DROP_NUKE		
-	0.0, -- PARADROP		
-	0.0, -- NAVAL_KAMIKAZE	
-    0.0, -- PORT_STRIKE		
-	0.0, -- AIR_SUPPLY		
-	0.0, -- TRAINING
-	0.0, -- NAVAL_MINES_PLANTING
-	0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS
+		0.0, -- INTERCEPTION
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER
+		0.0, -- DROP_NUKE
+		0.0, -- PARADROP
+		0.0, -- NAVAL_KAMIKAZE
+        0.0, -- PORT_STRIKE
+		0.0, -- ATTACK_LOGISTICS
+		0.0, -- AIR_SUPPLY
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- RECON
+		0.0, -- NAVAL_PATROL
+		0,0, -- BARRAGE
+		0,0, -- SAM
 }
 
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
@@ -619,8 +624,28 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { 2.0, 2.0, 2.0 }
 NDefines.NNavy.GUN_HIT_PROFILES = { 80.0, 80.0, 45.0 }
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.75
+
+-- damage reduction from naval strikes https://www.desmos.com/calculator/wqjhqevufd
+NDefines.NNavy.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.05
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 1
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.4
+
+-- carrier defines
+NDefines.NNavy.NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 0	-- How many planes flying in a naval combat before penalties are introduced
+NDefines.NNavy.NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.005	-- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns
+
+-- один корабль типа n добавляет к кол-ву летающих самолётов соответствующее значение. один капитал - 10, один скрин - 5, один авианосец - 16 и тд
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL = 10	-- For dynamic plane efficacy, silhouette value (nominally in planes, but very abstract)
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SCREEN = 5		-- As Above. This one would be nice to split by type, but that's problematic.
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CARRIER = 16	-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUPPORT = 3		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CONVOY = 4		-- As Above
+NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_SUBMARINE = 7	-- As Above
+	
+NDefines.NNavy.SCREEN_CAP_REDUCTION_FACTOR = 0							-- Reduces screen silhouette weight if there are caps present, screenval * 1/(1+caps*weight)
 
 
 --NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 18					--seems like those dont work at all
@@ -630,6 +655,7 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.5
 
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.5
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.5
+NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 10	-- the minimum fleet should be: 1cv, 2bb, 6cl. you can go higher, but lower doesnt make sence. (+1 for some reason)
 
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
 NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0
@@ -638,7 +664,7 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 1.8
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8
 
-NDefines.NNavy.CARRIER_STACK_PENALTY = 2
+--NDefines.NNavy.CARRIER_STACK_PENALTY = 2 no longer used, now it is based on silhouette values
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.95
 NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5	--planes that are based on a carrier that is taking part in a naval battle with the target, their damage is increased by this number
@@ -646,8 +672,6 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 2		--The weight of damag
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 100
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 50
-NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.75
-NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 1
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0
@@ -730,7 +754,7 @@ NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again af
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faster
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
-NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed
+NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- /deprecated, will be removed in the future update/ every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed 
 
 -- how subs are spotted
 NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 0	-- from the start ships can not detect subs AT ALL
@@ -839,12 +863,12 @@ NDefines.NProject.SCIENTIST_SKILL_LEVEL_THRESHOLDS = {0,0,0,0,0}
 NDefines.NProject.SCIENTIST_SKILL_LEVEL_SPEED_MODIFIER = {0,0,0,0,0,0}
 
 --Doctrines
-NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 50.0                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
+NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 100.0                         -- How much mastery is required for unlocking a doctrine reward, if no override is set
 NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 100000.0           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
 NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0                     -- How much training contributes to doctrine mastery relative to combat/missions
 NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 15                       -- Monthly mastery gain will not exceed this value
 NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0                         -- If we have any mastery gain, it will be boosted to be at least this much per day (lower cap)
 NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.25                    -- The rate at which mastery gained when a track is finished or empty is "banked"
-NDefines.NDoctrines.MASTERY_BANK_MAX = 250.0                               -- The maximum amount of mastery that can be banke
+NDefines.NDoctrines.MASTERY_BANK_MAX = 0.0                               -- The maximum amount of mastery that can be banke
 NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0         -- For each mastery track, military attaches will add this fraction of their visiting country's mastery gain (from units only) in that track
 NDefines.NDoctrines.THEATER_COMMANDER_UNITS_MASTERY_GAIN_FACTOR_PER_SKILL = 0  -- Unit in a theater commander's theater will contribute this fraction of their mastery gain to the theater commander's country, for each skill point they have in attack + defense

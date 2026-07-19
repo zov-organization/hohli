@@ -38,11 +38,11 @@ create_country_leader = {
 
 recruit_character = ic_ITA_rodolfo_graziani		# Theorists
 recruit_character = ic_ITA_giovanni_messe
-recruit_character = ic_ITA_giuseppe_fioravanzo
-recruit_character = ic_ITA_angelo_iachino
-recruit_character = ic_ITA_amedeo_mecozzi
 recruit_character = ic_ITA_renato_sandalli
-recruit_character = ic_ITA_romeo_bernotti
+recruit_character = ic_ITA_amedeo_mecozzi
+#recruit_character = ic_ITA_giuseppe_fioravanzo
+#recruit_character = ic_ITA_angelo_iachino
+#recruit_character = ic_ITA_romeo_bernotti
 
 recruit_character = ic_ITA_pietro_badoglio		# Army Chiefs
 recruit_character = ic_ITA_emilio_de_bono
@@ -50,7 +50,6 @@ recruit_character = ic_ITA_ugo_cavallero
 recruit_character = ic_ITA_alberto_pariani
 
 recruit_character = ic_ITA_inigo_campioni		# Navy Chiefs
-recruit_character = ic_ITA_domenico_cavagnari
 recruit_character = ic_ITA_arturo_riccardi
 recruit_character = ic_ITA_raffaele_de_courten
 
