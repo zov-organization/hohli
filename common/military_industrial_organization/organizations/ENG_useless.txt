@@ -1,14 +1,3 @@
-ENG_vickers_armstrong_eng_organization = {
-	include = generic_medium_tank_organization
-	icon = GFX_idea_vickers_armstrong_eng
-	
-	allowed = {	hidden_trigger = { always = no } }
-
-	visible = { hidden_trigger = { always = no } }
-
-	available = { hidden_trigger = { always = no } }
-}
-
 ENG_vauxhall_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_vauxhall

@@ -223,7 +223,7 @@
 	}
 	focus = {
 		id = ITA_claim_french_territories
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_position_armies
 
 		prerequisite = { focus = ITA_steel_pact }
 		relative_position_id = ITA_steel_pact
@@ -234,7 +234,7 @@
 			}
 		}
 
-		x = -1
+		x = -2
 		y = 1
 		cost = 1
 		completion_reward = {
@@ -256,7 +256,7 @@
 	}
 	focus = {
 		id = ITA_claim_french_territories_2
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_territory_or_war
 
 		prerequisite = { focus = ITA_claim_french_territories }
 		relative_position_id = ITA_claim_french_territories
@@ -265,7 +265,7 @@
 			GER = { controls_state = 16 }
 		}
 
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -337,7 +337,7 @@
 	}
 	focus = {
 		id = ITA_ebat_nazistov
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_army_doctrines_2
 
 		prerequisite = { focus = ITA_steel_pact }
 		relative_position_id = ITA_steel_pact
@@ -658,7 +658,7 @@
 	}
 	focus = {
 		id = ITA_fiat_monopoly
-		icon = GFX_focus_BRA_joint_italian_motor_development
+		icon = GFX_focus_generic_fiat
 
 		prerequisite = { focus = ITA_focus_on_north focus = ITA_focus_on_south }
 		relative_position_id = ITA_focus_on_north
@@ -766,7 +766,7 @@
 	}
 	focus = {
 		id = ITA_usage_of_new_territories
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_expand_gold_mining
 
 		prerequisite = { focus = ITA_shift_italian_economy_to_war_production }
 		relative_position_id = ITA_shift_italian_economy_to_war_production
@@ -843,7 +843,7 @@
 	}
 	focus = {
 		id = ITA_more_money_for_rnd
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_expropriate_industrialist
 
 		prerequisite = { focus = ITA_shift_italian_economy_to_war_production }
 		relative_position_id = ITA_shift_italian_economy_to_war_production
@@ -863,7 +863,7 @@
 	}
 	focus = {
 		id = ITA_expand_beretta_and_breda
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_BRA_joint_italian_motor_development
 
 		prerequisite = { focus = ITA_shift_italian_economy_to_war_production }
 		relative_position_id = ITA_shift_italian_economy_to_war_production
@@ -1072,7 +1072,7 @@
 	}
 	focus = {
 		id = ITA_franko_needs_help
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_spr_no_pasaran
 
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
@@ -1094,7 +1094,7 @@
 	}
 	focus = {
 		id = ITA_gain_xp_from_focus
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_rhineland
 
 		prerequisite = { focus = ITA_franko_needs_help }
 		relative_position_id = ITA_franko_needs_help
@@ -1156,7 +1156,7 @@
 	}
 	focus = {
 		id = ITA_improve_our_doctrine
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_improve_our_doctrine
 
 		prerequisite = { focus = ITA_escertio_italiano }
 		relative_position_id = ITA_escertio_italiano
@@ -1165,8 +1165,8 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1209,7 +1209,7 @@
 	}
 	focus = {
 		id = ITA_use_expirience_from_spain_and_ethiopia
-		icon = GFX_ITA_use_expirience_from_spain_and_ethiopia
+		icon = GFX_focus_generic_desert_training
 
 		prerequisite = { focus = ITA_improve_our_doctrine }
 		prerequisite = { focus = ITA_army_reform }
@@ -1223,7 +1223,7 @@
 			add_to_variable = {ITA_dig_in_speed_factor = 0.05 tooltip = dig_in_speed_factor_tt}
 		}
 	}
-	focus = {
+		focus = {
 		id = ITA_or_just_give_command_to_germans
 		icon = GFX_ITA_or_just_give_command_to_germans
 
@@ -1243,7 +1243,7 @@
 	}
 	focus = {
 		id = ITA_develop_l6
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_BRA_acquire_german_tanks
 
 		prerequisite = { focus = ITA_escertio_italiano }
 		relative_position_id = ITA_escertio_italiano
@@ -1262,7 +1262,7 @@
 	}
 	focus = {
 		id = ITA_further_tank_development
-		icon = GFX_ITA_further_tank_development
+		icon = GFX_focus_SIA_reverse_engineer_allied_tanks
 
 		prerequisite = { focus = ITA_develop_l6 }
 		relative_position_id = ITA_develop_l6
@@ -1290,9 +1290,9 @@
 		y = 2
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1386,7 +1386,7 @@
 	#fleet
 	focus = {
 		id = ITA_regia_marina
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_PHI_gunboat_diplomacy
 
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
@@ -1400,7 +1400,7 @@
 	}
 	focus = {
 		id = ITA_mas
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_occupy_start_war
 
 		prerequisite = { focus = ITA_regia_marina }
 		relative_position_id = ITA_regia_marina
@@ -1419,7 +1419,7 @@
 	}
 	focus = {
 		id = ITA_betasom
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_navy_submarine
 
 		prerequisite = { focus = ITA_regia_marina }
 		relative_position_id = ITA_regia_marina
@@ -1445,7 +1445,7 @@
 	}
 	focus = {
 		id = ITA_expand_taranto_dockyards
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_construct_naval_dockyard
 
 		prerequisite = { focus = ITA_regia_marina }
 		relative_position_id = ITA_regia_marina
@@ -1490,7 +1490,7 @@
 	}
 	focus = {
 		id = ITA_support_ships
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_destroyer
 
 		prerequisite = { focus = ITA_expand_taranto_dockyards }
 		relative_position_id = ITA_expand_taranto_dockyards
@@ -1511,7 +1511,7 @@
 	
 	focus = {
 		id = ITA_develop_new_guns
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
 
 		prerequisite = { focus = ITA_expand_taranto_dockyards }
 		relative_position_id = ITA_expand_taranto_dockyards
@@ -1529,7 +1529,7 @@
 	}
 	focus = {
 		id = ITA_refit_our_old_ships
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_refit_civilian_ships
 
 		prerequisite = { focus = ITA_develop_new_guns }
 		relative_position_id = ITA_develop_new_guns
@@ -1539,12 +1539,12 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_refit_ic_cost = -0.3 tooltip = refit_ic_cost_tt}
+			add_to_variable = { ITA_refit_ic_cost = -0.3 tooltip = refit_ic_cost_tt }
 		}
 	}
 	focus = {
 		id = ITA_expand_repair_dockyards
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_continuous_naval_production
 
 		prerequisite = { focus = ITA_develop_new_guns }
 		relative_position_id = ITA_develop_new_guns
@@ -1571,7 +1571,7 @@
 	}
 	focus = {
 		id = ITA_completly_new_fleet
-		icon = GFX_ITA_initial_focus
+		icon = GFX_ITA_completly_new_fleet
 
 		prerequisite = { focus = ITA_expand_taranto_dockyards }
 		relative_position_id = ITA_expand_taranto_dockyards
@@ -1591,7 +1591,7 @@
 	}
 	focus = {
 		id = ITA_vittorio_veneto_class_battleships
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_navy_research_bonus
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
@@ -1616,7 +1616,7 @@
 	}
 	focus = {
 		id = ITA_armada
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_large_navy
 		
 		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
 		relative_position_id = ITA_vittorio_veneto_class_battleships
@@ -1679,7 +1679,7 @@
 	}
 	focus = {
 		id = ITA_carriers_centralized_fleet
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_air_carrier
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
@@ -1706,7 +1706,7 @@
 	}
 	focus = {
 		id = ITA_order_experimental_ships
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_GER_graf_zeppelin
 		
 		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
 		relative_position_id = ITA_carriers_centralized_fleet
@@ -1767,7 +1767,7 @@
 	}
 	focus = {
 		id = ITA_subs_spam
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_midget_submarines
 
 		prerequisite = { focus = ITA_completly_new_fleet }
 		relative_position_id = ITA_completly_new_fleet
@@ -1792,7 +1792,7 @@
 	}
 	focus = {
 		id = ITA_subs_spam_2
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_piracy
 		
 		prerequisite = { focus = ITA_carriers_centralized_fleet focus = ITA_subs_spam focus = ITA_vittorio_veneto_class_battleships }
 		relative_position_id = ITA_subs_spam
@@ -1815,7 +1815,7 @@
 	}
 	focus = {
 		id = ITA_further_development_of_naval_industry
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_ITA_new_horizons
 
 		prerequisite = { focus = ITA_order_experimental_ships focus = ITA_subs_spam_2 focus = ITA_armada }
 		relative_position_id = ITA_subs_spam
@@ -1865,7 +1865,7 @@
 	}
 	focus = {
 		id = ITA_roma_e_impero
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_GER_high_seas_fleet
 		
 		prerequisite = { focus = ITA_further_development_of_naval_industry }
 		relative_position_id = ITA_further_development_of_naval_industry
@@ -1929,7 +1929,7 @@
 
 	focus = {
 		id = ITA_use_new_technologies
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_electrification
 
 		prerequisite = { focus = ITA_expand_repair_dockyards focus = ITA_refit_our_old_ships }
 		prerequisite = { focus = ITA_further_development_of_naval_industry }
@@ -1956,7 +1956,7 @@
 	#air
 	focus = {
 		id = ITA_aeronautica_militare_italiana
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_air_fighter2
 
 		prerequisite = { focus = ITA_forze_armate_italiane }
 		relative_position_id = ITA_forze_armate_italiane
@@ -2010,7 +2010,7 @@
 	}
 	focus = {
 		id = ITA_develop_new_fighter_models
-		icon = GFX_ITA_initial_focus
+		icon = GFX_frontend_medal_dlc036
 
 		prerequisite = { focus = ITA_aeronautica_militare_italiana }
 		relative_position_id = ITA_aeronautica_militare_italiana
@@ -2028,7 +2028,7 @@
 	}
 	focus = {
 		id = ITA_develop_new_fighter_models_ii
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_copy_plane_designs
 
 		prerequisite = { focus = ITA_develop_new_fighter_models }
 		relative_position_id = ITA_develop_new_fighter_models
@@ -2068,7 +2068,7 @@
 	}
 	focus = {
 		id = ITA_close_cooperation_between_fleet_and_air
-		icon = GFX_ITA_initial_focus
+		icon = GFX_goal_generic_navy_carrier
 
 		prerequisite = { focus = ITA_carriers_centralized_fleet }
 		relative_position_id = ITA_carriers_centralized_fleet
@@ -2078,14 +2078,14 @@
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = ITA_fleet_tt
-			add_to_variable = {ITA_naval_coordination = 0.05 tooltip = naval_coordination_tt}
+			add_to_variable = { ITA_naval_coordination = 0.05 tooltip = naval_coordination_tt }
 			custom_effect_tooltip = ITA_air_tt
-			add_to_variable = {ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt}
+			add_to_variable = { ITA_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
 	focus = {
 		id = ITA_develop_naval_bombers
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_multi_role_aircraft
 
 		prerequisite = { focus = ITA_develop_medium_bombers }
 		prerequisite = { focus = ITA_close_cooperation_between_fleet_and_air }
@@ -2106,7 +2106,7 @@
 	}
 	focus = {
 		id = ITA_expand_production
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_industrial_experts
 
 		prerequisite = { focus = ITA_develop_new_fighter_models }
 		relative_position_id = ITA_develop_new_fighter_models
@@ -2120,7 +2120,7 @@
 	}
 	focus = {
 		id = ITA_our_pride
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_BRA_italian_aircraft_development
 
 		prerequisite = { focus = ITA_aeronautica_militare_italiana }
 		relative_position_id = ITA_aeronautica_militare_italiana
@@ -2138,7 +2138,7 @@
 	}
 	focus = {
 		id = ITA_open_rome_school
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_generic_pilot_training
 
 		prerequisite = { focus = ITA_our_pride }
 		relative_position_id = ITA_our_pride
@@ -2153,7 +2153,7 @@
 	}
 	focus = {
 		id = ITA_best_of_the_best
-		icon = GFX_ITA_initial_focus
+		icon = GFX_focus_INS_fund_ml_knil
 
 		prerequisite = { focus = ITA_open_rome_school }
 		prerequisite = { focus = ITA_expand_production }

@@ -112,6 +112,7 @@ NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 8.0
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 6
 
 -- Military
+NDefines.NMilitary.REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 6 } -- for now removed. when smone will mod them - return back to 3
 NDefines.NMilitary.PLANNING_MAX = 0.1
 NDefines.NMilitary.PIERCING_THRESHOLDS = {
 	1.00,

@@ -120,6 +120,7 @@ instant_effect = {
 		requested_factories = 4
 		progress = 0
 		efficiency = 50
+		industrial_manufacturer = mio:ITA_savoia_marchetti_organization
 	}
 
 }

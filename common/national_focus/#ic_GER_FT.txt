@@ -280,7 +280,7 @@
 
 	focus = {
 		id = GER_silesian_industrial_region_one
-		icon = GFX_GER_factories_two
+		icon = GFX_focus_GER_kriegslokomotive
 
 		prerequisite = { focus = GER_factories_two }
 		relative_position_id = GER_factories_two
@@ -310,7 +310,7 @@
 	
 	focus = {
 		id = GER_silesian_industrial_region_two
-		icon = GFX_GER_factories_two
+		icon = GFX_focus_GER_kdf_wagen
 
 		prerequisite = { focus = GER_factories_two }
 		relative_position_id = GER_factories_two
@@ -841,7 +841,7 @@
 	}
 	focus = {
 		id = GER_the_bismark_it_is
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_high_seas_fleet
 
 		prerequisite = { focus = GER_lay_down_scharnhorst_class }
 		relative_position_id = GER_lay_down_scharnhorst_class
@@ -904,7 +904,7 @@
 	}
 	focus = {
 		id = GER_renew_graf_zeppelin_construction
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_graf_zeppelin
 
 		prerequisite = { focus = GER_lay_down_scharnhorst_class }
 		prerequisite = { focus = GER_navy_planes }
@@ -919,7 +919,7 @@
 	}
 	focus = {
 		id = GER_plan_Z
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_seeherrschaft
 
 		prerequisite = { focus = GER_renew_graf_zeppelin_construction }
 		prerequisite = { focus = GER_the_bismark_it_is }
@@ -1063,12 +1063,22 @@
 		cost = 5
 		completion_reward = {
 			army_experience = 50
-			add_tech_bonus = {
-				name = GER_panzerwaffe
-				bonus = 2
-				uses = 2
-				technology = basic_medium_td
-				technology = basic_medium_art
+
+			custom_effect_tooltip = GER_sturmgeshutz_tt
+			
+			hidden_effect = {
+				set_technology = {
+					basic_medium_td = 1
+					popup = yes
+				}
+				set_technology = {
+					basic_medium_art = 1
+					popup = yes
+				}
+				set_technology = {
+					basic_medium_spaa = 1
+					popup = yes
+				}
 			}
 		}
 	}
@@ -1677,7 +1687,7 @@
 
 	focus = {
 		id = GER_support_our_allies_jap
-		icon = GFX_GER_silesian_industrial_region_2
+		icon = GFX_focus_GER_japanese_naval_cooperation
 
 		prerequisite = { focus = GER_support_our_allies }
 		relative_position_id = GER_support_our_allies
@@ -1823,7 +1833,7 @@
 
 	focus = {
 		id = GER_fra_cap
-		icon = GFX_GER_fra_cap
+		icon = GFX_focus_GER_schlieffen_once_more
 		
 		prerequisite = { focus = GER_expand_lebensraum }
 		relative_position_id = GER_expand_lebensraum

@@ -500,7 +500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_light_ships
-		icon = GFX_focus_SWE_Vasa_II
+		icon = GFX_focus_GER_panzerschiff
 
 		prerequisite = { focus = ENG_naval_guns }
 		relative_position_id = ENG_naval_guns
@@ -519,7 +519,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_other_way_of_underwater_warfare
-		icon = GFX_focus_SWE_Vasa_II
+		icon = GFX_focus_generic_cruiser_submarines
 
 		prerequisite = { focus = ENG_light_ships }
 		relative_position_id = ENG_light_ships
@@ -545,7 +545,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_illustrious_class
-		icon = GFX_focus_SWE_Vasa_II
+		icon = GFX_focus_generic_air_carrier
 
 		prerequisite = { focus = ENG_naval_guns }
 		relative_position_id = ENG_naval_guns
@@ -564,7 +564,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_lay_em_down
-		icon = GFX_focus_SWE_Vasa_II
+		icon = GFX_focus_generic_large_navy
 
 		prerequisite = { focus = ENG_illustrious_class }
 		relative_position_id = ENG_illustrious_class
@@ -1031,7 +1031,7 @@ focus_tree = {
 		prerequisite = { focus = ic_ENG_motion_of_no_confidence }
 		relative_position_id = ic_ENG_motion_of_no_confidence
 
-		x = 4
+		x = 5
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1057,7 +1057,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1077,12 +1077,12 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_sonar_and_radar
-		icon = GFX_focus_generic_multi_role_aircraft
+		icon = GFX_focus_generic_electrification
 
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1109,7 +1109,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_enforce_destroyers_fleet }
 		relative_position_id = ENG_enforce_destroyers_fleet
 
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = {

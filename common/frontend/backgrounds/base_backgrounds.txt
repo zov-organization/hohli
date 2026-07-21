@@ -14,8 +14,8 @@
 load_ncns_jap = {}
 
 #sov
-stavka = {}
-kombat = {}
+load_toa = {}
+load_goe = {}
 _4th_guard_tank_korpus_general_leutenant_poluboyarov = {}
 is_2_in_night_battle = {}
 t34_new_borodino = {}

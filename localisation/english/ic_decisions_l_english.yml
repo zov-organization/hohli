@@ -36,9 +36,9 @@
   ic_Soviet_Meta_Deployment_1and2_echelon:0 "First and Second Echelon"
   ic_Soviet_Meta_Deployment_3_echelon:0 "Third Echelon"
 
-  ic_special_forces_templates:0 "Special Forces"
-  ic_infantry_templates:0 "Infantry"
-  ic_tanks_templates:0 "Tanks"
+  ic_special_forces_templates:0 "Templates: §HSpecial Forces§!"
+  ic_infantry_templates:0 "Templates: §HInfantry§!"
+  ic_tanks_templates:0 "Templates: §HTanks§!"
 
   
   
