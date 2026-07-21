@@ -159,8 +159,7 @@ ideas = {
 			modifier = {
 				naval_retreat_speed_after_initial_combat = 0.25
 				naval_detection = 0.2
-				air_carrier_night_penalty_reduction_factor = 0.2
-				carrier_sortie_hours_delay = 10
+				sortie_efficiency = 0.2
 				navy_carrier_air_attack_factor = 0.05
 			}
 		}

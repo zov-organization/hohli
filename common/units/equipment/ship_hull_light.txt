@@ -77,6 +77,8 @@ equipments = {
 		default_modules = {
 			fixed_ship_engine_slot = empty
 		}
+		naval_torpedo_enemy_critical_chance_factor = -1000
+		naval_torpedo_damage_reduction_factor = 100000
 		
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -93,15 +95,15 @@ equipments = {
 
 		
 		surface_detection = 10
-		#sub_detection = 1
+		sub_detection = 1
 		surface_visibility = 10
 		naval_speed = 32
 		reliability = 0.80
 		
 		naval_range = 1500
 		
-		max_organisation = 10
-		max_strength = 25
+		max_organisation = 30
+		max_strength = 30
 		
 
 		fuel_consumption = 0
@@ -160,11 +162,12 @@ equipments = {
 			fixed_ship_engine_slot = empty
 		}
 
-
+		
+		sub_detection = 2
 		reliability = 0.85
 		naval_range = 1800
-
-		max_organisation = 20
+		
+		max_organisation = 40
 		max_strength = 40
 		build_cost_ic = 1350
 		resources = {
@@ -206,12 +209,11 @@ equipments = {
 			steel = 3
 		}
 
-		surface_detection = 10
-		surface_visibility = 10
+		sub_detection = 3
 		reliability = 0.90
 		naval_range = 2000
 
-		max_organisation = 30
+		max_organisation = 50
 		max_strength = 50
 		build_cost_ic = 1700
 		manpower = 400
@@ -248,12 +250,12 @@ equipments = {
 			fixed_ship_engine_slot = empty
 		}
 
-
-		surface_detection = 10
+		
+		sub_detection = 4
 		reliability = 0.92
 		naval_range = 2500
 
-		max_organisation = 40
+		max_organisation = 60
 		max_strength = 60
 		build_cost_ic = 2000
 		resources = {

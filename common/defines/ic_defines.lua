@@ -628,7 +628,7 @@ NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.25
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.5
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5
 NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT = 1
-NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT_FROM_AIR = 0.1
+NDefines.NNavy.CHANCE_TO_DAMAGE_PART_ON_CRITICAL_HIT_FROM_AIR = 0.75
 
 -- damage reduction from naval strikes https://www.desmos.com/calculator/wqjhqevufd
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
@@ -757,8 +757,8 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	-- those t
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING = 100	--
 
 -- subs gameplay
-NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 12	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
-NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 12	-- the same thing, but the number or hours if sub started defencive combat
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 24	-- sub have 12 hours to hide again after being spotter (vanilla is 20)
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24	-- the same thing, but the number or hours if sub started defencive combat
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.2	-- unrevealed sub escapes 20% faster
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1	-- depth charges are doing full damage (still 0.5 since COMBAT_DAMAGE_TO_STR_FACTOR)
 NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.5	-- /deprecated, will be removed in the future update/ every time sub performs attack (every 2 hours +buffs) it have this chance of being revealed 

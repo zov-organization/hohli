@@ -1368,7 +1368,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.20
 			#build_cost_ic = 0.125
-			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1394,7 +1393,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.30
 			#build_cost_ic = 0.15
-			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1424,7 +1422,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.35
 			#build_cost_ic = 0.175
-			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -1453,7 +1450,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.40
 			#build_cost_ic = 0.20
-			naval_torpedo_damage_reduction_factor = 10
 		}
 		
 		can_convert_from = {
@@ -2399,7 +2395,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 6
-			build_cost_ic = 150
+			build_cost_ic = 100
 		}
 		multiply_stats = {
 			sub_attack = 0.15
@@ -2414,7 +2410,7 @@ equipment_modules = {
 		parent = ship_sonar_1
 		add_stats = {
 			sub_detection = 10
-			build_cost_ic = 300
+			build_cost_ic = 130
 		}
 		multiply_stats = {
 			sub_attack = 0.2
@@ -2429,7 +2425,7 @@ equipment_modules = {
 		parent = ship_sonar_1
 		add_stats = {
 			sub_detection = 18
-			build_cost_ic = 450
+			build_cost_ic = 160
 		}
 		multiply_stats = {
 			sub_attack = 0.3

@@ -14,7 +14,9 @@ country_event = {
 	picture = GFX_					# 
 	
 	hidden = yes
-
+	
+	option = { 
+	}
 }
 
 
@@ -40,6 +42,9 @@ country_event = {
 	picture = GFX_report_event_desertion_poster					
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -64,6 +69,9 @@ country_event = {
 	picture = GFX_report_event_worker_protests					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 #mutinies
@@ -87,6 +95,9 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_02
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 
 
@@ -98,6 +109,9 @@ country_event = {
 	picture = GFX_report_event_generic_army					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -109,6 +123,9 @@ country_event = {
 	picture = GFX_report_event_generic_riot					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 
 #military crackdown response to draft dodging - failure, civil war
@@ -119,6 +136,9 @@ country_event = {
 	picture = GFX_report_event_generic_battle					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -130,6 +150,9 @@ country_event = {
 	picture = GFX_report_event_degaulle_inspect_troops					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -141,6 +164,9 @@ country_event = {
 	picture = GFX_report_event_generic_army					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -152,6 +178,9 @@ country_event = {
 	picture = GFX_report_event_generic_riot					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 
 # improve living conditions, level 2 - success
@@ -162,6 +191,9 @@ country_event = {
 	picture = GFX_report_event_degaulle_inspect_troops					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -174,7 +206,9 @@ country_event = {
 	picture = GFX_report_event_generic_army					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #military crackdown response to draft dodging, level 3 - failure, loss of stability
@@ -185,6 +219,9 @@ country_event = {
 	picture = GFX_report_event_generic_riot					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 
 # improve living conditions, level 3 - success
@@ -195,6 +232,9 @@ country_event = {
 	picture = GFX_report_event_degaulle_inspect_troops					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 add_namespace = strikes_event
@@ -207,6 +247,9 @@ country_event = {
 	picture = GFX_report_event_generic_military_parade					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 
 #military crackdown response to strikes - failure, loss of stability
@@ -217,6 +260,9 @@ country_event = {
 	picture = GFX_report_event_gathering_protest					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -228,6 +274,9 @@ country_event = {
 	picture = GFX_report_event_generic_factory					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 }
 #military crackdown response to strikes_2 - success
 country_event = {
@@ -237,6 +286,9 @@ country_event = {
 	picture = GFX_report_event_generic_lend_lease					# 
 		
 	is_triggered_only = yes
+	
+	option = { 
+	}
 
 }
 
@@ -248,7 +300,9 @@ country_event = {
 	picture = GFX_report_event_generic_rally2					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #strikes_2 negotiations - success
@@ -259,7 +313,9 @@ country_event = {
 	picture = GFX_report_event_tank_factory					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 #military crackdown response to strikes_3 - success
 country_event = {
@@ -269,7 +325,9 @@ country_event = {
 	picture = GFX_report_event_polish_tanks_01					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #military crackdown response to strikes_3 - failure, loss of stability
@@ -280,7 +338,9 @@ country_event = {
 	picture = GFX_report_event_ger_civil_war					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #strikes_3 negotiations - success
@@ -291,7 +351,9 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 add_namespace = mutiny_event
 
@@ -314,7 +376,9 @@ country_event = {
 	picture = GFX_report_event_canada_army					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #mutiny negotiations - success
@@ -334,7 +398,9 @@ country_event = {
 	picture = GFX_report_event_czech_soldier_01					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #military crackdown response to mutiny_2 - failure, loss of stability
@@ -345,7 +411,9 @@ country_event = {
 	picture = GFX_report_event_fascists_posing					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #mutiny_2 negotiations - success
@@ -356,7 +424,9 @@ country_event = {
 	picture = GFX_report_event_journalists_speech					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 #military crackdown response to mutiny_3 - success
 country_event = {
@@ -367,7 +437,8 @@ country_event = {
 		
 	is_triggered_only = yes
 	
-
+	option = { 
+	}
 }
 
 #military crackdown response to mutiny_3 - failure, loss of stability
@@ -378,7 +449,9 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_01					# 
 		
 	is_triggered_only = yes
-
+	
+	option = { 
+	}
 }
 
 #mutiny_3 negotiations - success
@@ -390,5 +463,6 @@ country_event = {
 		
 	is_triggered_only = yes
 	
-
+	option = { 
+	}
 }
