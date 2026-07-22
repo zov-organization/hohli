@@ -48,7 +48,7 @@ load_4 = {}
 
 #allied
 load_1 = {}
-b_25_attacking_japanese_ship = {}
+load_ww = {}
 load_bba = {}
 load_aat2 = {}
 cav_from_Chad_joining_Free_France = {}
