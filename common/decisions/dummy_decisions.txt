@@ -17,4 +17,88 @@ whatever_category = {
 	form_roman_empire = {}
 	NZL_demand_islands = {}
 	deeper_swedish_mines = {}
+
+	CHI_china_pledging_to_hold_state_mission = { days_mission_timeout = 1 }
+	INS_militias_di_mission = { days_mission_timeout = 1 }
+	INS_militias_kris_repayment = { days_mission_timeout = 1 }
+	INS_militias_jakarta_pemuda_mission = { days_mission_timeout = 1 }
+	INS_militias_railway_pemuda_mission = { days_mission_timeout = 1 }
+	INS_militias_moestopo_mission = { days_mission_timeout = 1 }
+	INS_militias_pki_uprising_mission = { days_mission_timeout = 1 }
+	JAP_kwantung_army_impatience = { days_mission_timeout = 1 }
+	JAP_conflict_between_faction_reaching_boiling_point_mission = { days_mission_timeout = 1 }
+	JAP_the_suiyuan_offensive_mission = { days_mission_timeout = 1 }
+	JAP_implementing_unos_economic_reforms_mission = { days_mission_timeout = 1 }
+	JAP_growing_unrest_in_the_shanghai_concession = { days_mission_timeout = 1 }
+	JAP_naval_faction_demands_strike_south_happen_mission = { days_mission_timeout = 1 }
+	JAP_securing_control_over_osaka_mission = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_military_factories = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_political_appointment = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_conscription_law_change = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_larger_army = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_more_trucks = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_more_tanks = { days_mission_timeout = 1 }
+	JAP_army_faction_demands_more_artillery = { days_mission_timeout = 1 }
+	JAP_naval_faction_demands_dockyards = { days_mission_timeout = 1 }
+	JAP_naval_faction_demands_political_appointment = { days_mission_timeout = 1 }
+	JAP_naval_faction_demands_conscription_law_change = { days_mission_timeout = 1 }
+	JAP_naval_faction_demands_more_carriers = { days_mission_timeout = 1 }
+	JAP_zaibatsu_faction_demands_factories = { days_mission_timeout = 1 }
+	JAP_zaibatsu_faction_demands_political_appointment = { days_mission_timeout = 1 }
+	JAP_zaibatsu_faction_demands_economy_law_change = { days_mission_timeout = 1 }
+	JAP_zaibatsu_faction_demands_industrial_company_employment = { days_mission_timeout = 1 }
+	JAP_government_faction_demands_political_appointment = { days_mission_timeout = 1 }
+	JAP_government_faction_demands_trade_law_change = { days_mission_timeout = 1 }
+	JAP_government_faction_demands_limited_army_influence = { days_mission_timeout = 1 }
+	JAP_government_faction_demands_limited_navy_influence = { days_mission_timeout = 1 }
+	JAP_government_faction_demands_limited_zaibatsu_influence = { days_mission_timeout = 1 }
+	JAP_tauran_border_incident_forgotten_1 = { days_mission_timeout = 1 }
+	INS_renville_timer_mission_republic = { days_mission_timeout = 1 }
+	INS_renville_timer_mission_HOL = { days_mission_timeout = 1 }
+	INS_national_revolution_republic_sukarno_threatened = { days_mission_timeout = 1 }
+	INS_hold_batavia_HOL = { days_mission_timeout = 1 }
+	INS_take_batavia = { days_mission_timeout = 1 }
+	JAP_release_korea = { days_mission_timeout = 1 }
+
+	AFG_a_royal_successor_decision = {}
+	anti_neutrality_raids = {}
+	CHI_develop_hunan_tungsten_mines = {}
+	CHI_develop_jiangxi_tungsten_mines = {}
+	develop_guapore_casserite_deposits = {}
+	INS_oil_for_civ = {}
+	INS_revolution_planning_hq = {}
+	INS_revolution_war_HOL = {}
+	JAP_break_the_london_naval_treaty = {}
+	JAP_collect_civilian_donations_decision = {}
+	JAP_develop_sufu_materials_decision = {}
+	JAP_distribute_rations_decision = {}
+	JAP_empower_the_yi_dynasty_decision = {}
+	JAP_establish_the_provisional_government_of_free_india_decision = {}
+	JAP_establish_the_second_philippine_republic_decision = {}
+	JAP_establish_the_state_of_burma_decision = {}
+	JAP_form_a_labor_patriot_corps_decision = {}
+	JAP_hold_speech_in_the_imperial_diet_decision = {}
+	JAP_increase_jotaro_watanabe_security_decision = {}
+	JAP_increase_takahashi_korekiyo_security_decision = {}
+	JAP_luxury_is_the_enemy_decision = {}
+	JAP_produce_bullet_stamps_decision = {}
+	JAP_publically_distance_from_sov_decision = {}
+	JAP_raise_military_moreale_decision = {}
+	JAP_return_manchuria = {}
+	JAP_spread_socialist_pamphlets_decision = {}
+	JAP_spread_socialist_propaganda_in_campuses_decision = {}
+	JAP_sway_admiral_loyalty_decision = {}
+	JAP_sway_general_loyalty_decision = {}
+	JAP_war_with_soviet_union = {}
+	JAP_women_in_military_production_decision = {}
+	open_mae_moh_lignite_mine = {}
+	INS_oil_for_dockyard = {}
+	INS_oil_for_mil = {}
+	INS_oil_for_plane = {}
+	INS_rubber_for_civ = {}
+	INS_rubber_for_infantry_eq = {}
+	INS_rubber_for_mil = {}
+	INS_rubber_for_pp = {}
+	INS_rubber_for_truck = {}
+	INS_rubber_for_xp = {}
 }

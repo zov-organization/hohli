@@ -1,5 +1,12 @@
 -- Game
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.29, 0.21, 0.10, 0.06 }
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60
+NDefines.NGame.GAME_SPEED_SECONDS = { 1337.228, 0.3, 0.1, 0.005, 0.000001 } -- 1, 2, 3, 4 and 5. they bigger the number - the slower the game.  0,0000...01 - supa dupa fast
+-- 1st speed - pause for host
+-- 2nd - war
+-- 3rd - nothing happens, but war
+-- 4th - multiplayer pre-war
+-- 5th - single-player progon
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.ENERGY_RESOURCE = "oil"
 
