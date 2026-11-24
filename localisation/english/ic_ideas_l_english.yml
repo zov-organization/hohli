@@ -11,8 +11,6 @@
 
  # DYNAMIC MODIFIERS
  ic_SOV_mass_production:0 "§OEveryone's gangsta, untill Russia starts§!\n§RMASS PRODUCTION§!"
- SOV_ukrain_prom_compleks:0 "Ukrain PromCompleks"
- SOV_making_use_of_the_storehouse_of_russia:0 "Making Use of the Storehouse of Russia"
  SOV_summer_defencive_buff:0 "Soviet Defence In-Depth"
  SOV_1941_defencive_buff:0 "Soviet 1941 Defencive Buff"
  GER_summer_offencive_buff:0 "Axis Summer Offencive Buff"
@@ -91,16 +89,12 @@
  ic_Ground_forces_Romania2:0 "Ground forces Romania"
  ic_Ground_forces_Romania3:0 "Ground forces Romania"
  ic_Ground_forces_Romania4:0 "Ground forces Romania"
- ic_ROM_The_true_descendants_of_the_Romans:0 "The true descendants of the Romans"
- ic_ROM_The_Navy_of_Greater_Romania:0 "The Navy of Greater Romania"
  ic_escort_effort_focus_Rom:0 "Escort effort focus Romania"
- ic_ROM_school_f_bombing_from_the_sea:0 "School bombing"
  ic_ROM_collapse_of_AusHun:0 "Collapse of AusHun"
  ic_ROM_collapse_of_AusHun2:0 "Collapse of AusHun"
  ic_ROM_better_than_AusHun:0 "Better than AusHun"
  ic_ROM_collapse_of_AusHun3:0 "Collapse of AusHun"
  ic_ROM_AXIS:0 "AXIS"
- ic_ROM_Agrarian_reform:0 "Agrarian reform"
  ic_ROM_Agrarian_reform2:0 "Agrarian reform"
  ic_ROM_Navy_romania:0 "Navy romania"
  ic_ROM_ss_idea:0 "SS"
@@ -150,14 +144,14 @@
  FRA_armor_production:0 "Armor Production Plan"
  FRA_armor_production_desc:0 "Focused investments are being made in tank and armored vehicle production to strengthen our land forces and modernize our military industry."
 
- FRA_boost_army_morale:0 "Boost Army Morale"
- FRA_boost_army_morale_desc:0 "Through training and national campaigns, morale within the armed forces is improving. A motivated army is a powerful army."
+ ic_FRA_boost_army_morale:0 "Boost Army Morale"
+ ic_FRA_boost_army_morale_desc:0 "Through training and national campaigns, morale within the armed forces is improving. A motivated army is a powerful army."
 
  FRA_arty_production:0 "Mass Artillery Production"
  FRA_arty_production_desc:0 "The focus has shifted toward producing large quantities of artillery, anti-tank, and anti-air equipment to support infantry on the front lines."
 
- FRA_fleet_investments:0 "Fleet Investments"
- FRA_fleet_investments_desc:0 "Massive state investments into naval dockyards and shipbuilding projects will expand our naval capabilities and boost maritime industry."
+ ic_FRA_fleet_investments:0 "Fleet Investments"
+ ic_FRA_fleet_investments_desc:0 "Massive state investments into naval dockyards and shipbuilding projects will expand our naval capabilities and boost maritime industry."
 
  no_FRA_mainland_buildings:0 "France Mainland"
 

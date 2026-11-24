@@ -653,7 +653,6 @@
  MODIFIER_STABILITY_DEFENSIVE_WAR_FACTOR:0 "£stability_defensive_texticon  Defensive War Penalty Stability Modifier"
  MODIFIER_SURRENDER_LIMIT:0 "£surrender_texticon  Surrender Limit"
  MODIFIER_FORCED_SURRENDER_LIMIT:0 "£surrender_texticon  Surrender Limit"
- MODIFIER_MAX_SURRENDER_LIMIT_OFFSET:0 "£surrender_texticon  Minimum Surrender Limit"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "£war_support_modifiericons_texticon  War Support"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "£war_support_modifiericons_texticon  Weekly War Support"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "£war_support_modifiericons_texticon  Weekly War Support Gain"

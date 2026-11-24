@@ -7886,7 +7886,6 @@ CHI_integrate_the_warlords_sea_cat = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_faction_influence_ratio = -0.15
 				add_political_power = -125
 			}
 			custom_effect_tooltip = if_they_accept_tt
@@ -8121,7 +8120,6 @@ CHI_integrate_the_warlords_sea_cat = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_faction_influence_ratio = -0.1
 				add_political_power = -75
 			}
 			custom_effect_tooltip = if_they_accept_tt
@@ -8357,7 +8355,6 @@ CHI_integrate_the_warlords_sea_cat = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_faction_influence_ratio = -0.1
 				add_political_power = -75
 			}
 			custom_effect_tooltip = if_they_accept_tt
@@ -8584,7 +8581,6 @@ CHI_integrate_the_warlords_sea_cat = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_faction_influence_ratio = -0.05
 				add_political_power = -25
 			}
 			custom_effect_tooltip = if_they_accept_tt

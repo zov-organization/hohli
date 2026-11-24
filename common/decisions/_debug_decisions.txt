@@ -64,7 +64,6 @@ debug_decisions = {
 			is_in_faction = yes
 		}
 		complete_effect = {
-			add_faction_influence_ratio = 1
 		}
 	}
 

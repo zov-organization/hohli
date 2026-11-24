@@ -4,7 +4,7 @@
    decision_cost_AirXP_50_blocked: "£air_experience  §R50§!"
    decision_cost_AirXP_50_tooltip: "It costs £air_experience  §Y50§! to take the decision"
 
-  ic_progon_mode:0 "§HPROGON MODE§"
+  ic_progon_mode:0 "§HPROGON MODE§!"
   ic_progon_mode_blumen_kriege:0 "progon thingy for Blumen Kriege focus"
   ic_progon_mode_blumen_kriege_desc:0 "typically GER would do this focus right before Anschluß itself.\n2 march 1938!"
   ic_progon_mode_aus:0 "progon thingy for AUS annex"
@@ -51,7 +51,7 @@
   SOV_great_patriotic_war_category_desc:0 " "
 
   SOV_forts_category:0 "§HSOVIET FORTS§!"
-  SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war:\n§HKrasnaya Gorka near Leningrad§ §g was never captured by Germans outlining the front line with the range of its guns;\n§HMojayskaya Defencive Line§ §g stopped German panzers advance towards §HMoscow§ §g during fall 1941;\n§HFort Maxim Gorky§ §g was the last one on german way to §HSevastopol§, §g not letting them pass through until the last piece of ammo run out, but even after that did not surrender and shot first waves of SS with powder gases.\nHowever Soviets werent able to build proper fort lines across the whole frontline.§!"
+  SOV_forts_category_desc:0 "§gSoviet forts saved The Red Army many times throughout the war:\n§HKrasnaya Gorka near Leningrad§! §g was never captured by Germans outlining the front line with the range of its guns;\n§HMojayskaya Defencive Line§! §g stopped German panzers advance towards §HMoscow§! §g during fall 1941;\n§HFort Maxim Gorky§! §g was the last one on german way to §HSevastopol§!, §g not letting them pass through until the last piece of ammo run out, but even after that did not surrender and shot first waves of SS with powder gases.\nHowever Soviets werent able to build proper fort lines across the whole frontline.§!"
   SOV_forts_krasnaya_gorka:0 "Krasnaya Gorka Forts"
   SOV_forts_krasnaya_gorka_tt:0 "Create a §HSoviet§! Coastal Defense Battery in §HOranienbaum§!"
   SOV_forts_maxim_gorki:0 "Maxim Gorki Forts"

@@ -794,7 +794,6 @@ CHI_tsr_power_struggle_cat = {
 		cancel_if_not_visible = yes
 
 		complete_effect = {
-				add_faction_influence_ratio	= 0.02
 				add_to_variable = {
 					var = ROOT.increase_party_support_decision_cost
 					value = 25
@@ -892,7 +891,6 @@ CHI_tsr_power_struggle_cat = {
 				clr_country_flag = wtt_negotiating_support_with@ROOT
 				country_event = { id = SEA_warlords.19 }
 			}
-			add_faction_influence_ratio	= 0.03
 			add_to_variable = {
 				var = ROOT.warlord_faction_influence_contribution_factor
 				value = 0.05
@@ -944,7 +942,6 @@ CHI_tsr_power_struggle_cat = {
 				clr_country_flag = wtt_negotiating_support_with@ROOT
 				country_event = { id = SEA_warlords.20 }
 			}
-			add_faction_influence_ratio	= 0.03
 			add_to_variable = {
 				var = ROOT.warlord_faction_influence_contribution_factor
 				value = 0.05
@@ -1008,7 +1005,6 @@ CHI_tsr_power_struggle_cat = {
 				clr_country_flag = wtt_negotiating_support_with@ROOT
 				country_event = { id = SEA_warlords.21 }
 			}
-			add_faction_influence_ratio	= 0.03
 			add_to_variable = {
 				var = ROOT.warlord_faction_influence_contribution_factor
 				value = 0.05

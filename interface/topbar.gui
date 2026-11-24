@@ -737,7 +737,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name ="initiative_text"
-					position = { x= -15 y = 8 }
+					position = { x = -10000 y = -10000 }
 					font = "hoi_16mbs"
 					text = "999"
 					format = center

@@ -2188,4 +2188,58 @@ technologies = {
 			}
 		}
 	}
+
+	rangers_tech2 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = rangers_tech3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1939 }
+		}
+
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	rangers_tech3 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1943 }
+		}
+
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
 }

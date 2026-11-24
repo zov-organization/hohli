@@ -658,7 +658,6 @@
  MODIFIER_STABILITY_DEFENSIVE_WAR_FACTOR:0 "£stability_defensive_texticon  Модификатор стабильности от штрафа за оборонительную войну"
  MODIFIER_SURRENDER_LIMIT:0 "£surrender_texticon  Лимит капитуляции"
  MODIFIER_FORCED_SURRENDER_LIMIT:0 "£surrender_texticon  Лимит капитуляции"
- MODIFIER_MAX_SURRENDER_LIMIT_OFFSET:0 "£surrender_texticon  Минимальный лимит капитуляции"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "£war_support_modifiericons_texticon  Поддержка войны"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "£war_support_modifiericons_texticon  Поддержка войны в неделю"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "£war_support_modifiericons_texticon  Еженедельный прирост поддержки войны"

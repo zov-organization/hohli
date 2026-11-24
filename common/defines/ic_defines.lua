@@ -1,7 +1,7 @@
 -- Game
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60
-NDefines.NGame.GAME_SPEED_SECONDS = { 1337.228, 0.3, 0.1, 0.005, 0.000001 } -- 1, 2, 3, 4 and 5. they bigger the number - the slower the game.  0,0000...01 - supa dupa fast
+NDefines.NGame.GAME_SPEED_SECONDS = { 1337.228, 0.3, 0.1, 0.05, 0.0 } -- Leave interface headroom at speed 4; speed 5 is unbound.
 -- 1st speed - pause for host
 -- 2nd - war
 -- 3rd - nothing happens, but war
@@ -9,6 +9,14 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 1337.228, 0.3, 0.1, 0.005, 0.000001 } -- 1
 -- 5th - single-player progon
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.ENERGY_RESOURCE = "oil"
+
+-- Keep factions as military alliances without the DLC's progression.
+NDefines.NFactions.MAX_NUM_SHORT_TERM_GOALS = 0
+NDefines.NFactions.MAX_NUM_MEDIUM_TERM_GOALS = 0
+NDefines.NFactions.MAX_NUM_LONG_TERM_GOALS = 0
+NDefines.NFactions.PASSIVE_INITIATIVE_GENERATION = 0
+NDefines.NFactions.PEACE_CONFERENCE_MAX_DISCOUNT = 0
+NDefines.NDiplomacy.FACTION_POWER_EFFECTS_WEIGHT = 0
 
 
 -- Agency
@@ -350,6 +358,9 @@ NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 	1.0, -- NAVAL_MINES_SWEEPING
 	1.0, -- RECON
 	1.0, -- NAVAL_PATROL
+	0.0, -- BARRAGE
+	0,0, -- NUCLEAR
+	0,0, -- SAM
 }
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY

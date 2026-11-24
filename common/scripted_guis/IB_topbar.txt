@@ -2,6 +2,7 @@ scripted_gui = {
 
 	IB_civ_ui = {
 		window_name = "IB_civ_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_IC_UI_switching_flag }
@@ -10,6 +11,7 @@ scripted_gui = {
 	
 	IB_mil_ui = {
 		window_name = "IB_mil_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_IC_UI_switching_flag }
@@ -18,6 +20,7 @@ scripted_gui = {
 
 	IB_dockyard = {
 		window_name = "IB_dockyard_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_IC_UI_switching_flag }
@@ -26,6 +29,7 @@ scripted_gui = {
 
 	IB_divison = {
 		window_name = "IB_divison_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_other_UI_switching_flag }
@@ -34,6 +38,7 @@ scripted_gui = {
 
 	IB_planes = {
 		window_name = "IB_planes_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_other_UI_switching_flag }
@@ -42,6 +47,7 @@ scripted_gui = {
 
 	IB_ships = {
 		window_name = "IB_ships_ui_window"
+		ai_enabled = { always = no }
 
 		visible = {
 			NOT = { has_country_flag = IB_other_UI_switching_flag }
@@ -50,6 +56,7 @@ scripted_gui = {
 
 	IB_topbar_open = {
 		window_name = "ib_open_ui"
+		ai_enabled = { always = no }
 		context_type = player_context
 
 		visible = {
@@ -74,6 +81,7 @@ scripted_gui = {
 
 	IB_topbar_resources = {
 		window_name = "ib_topbar_half_ui_window"
+		ai_enabled = { always = no }
 		context_type = player_context
 
 		visible = {

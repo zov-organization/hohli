@@ -202,10 +202,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = basic_heavy_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 		
@@ -248,10 +244,6 @@ technologies = {
 			leads_to_tech = advanced_light_cruiser 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = improved_heavy_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 
@@ -290,10 +282,6 @@ technologies = {
 			light_cruiser_4
 		}
 		
-		path = {
-			leads_to_tech = advanced_heavy_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 
@@ -375,10 +363,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = basic_light_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 		
@@ -411,10 +395,6 @@ technologies = {
 			leads_to_tech = advanced_heavy_cruiser 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = improved_light_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 
@@ -443,10 +423,6 @@ technologies = {
 			heavy_cruiser_4
 		}
 
-		path = {
-			leads_to_tech = advanced_light_cruiser 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 
@@ -508,10 +484,6 @@ technologies = {
 			battle_cruiser_2
 		}
 		
-		path = {
-			leads_to_tech = improved_battleship 
-			research_cost_coeff = 0.75
-		}
 		
 		research_cost = 2
 
@@ -608,10 +580,6 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_battleship 
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = basic_battlecruiser 
-			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2

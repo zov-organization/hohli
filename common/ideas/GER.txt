@@ -1,6 +1,44 @@
 ideas = {
 
 	country = {
+		GER_german_development_aid = {
+			picture = generic_improved_industries
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#Good stuff
+				production_speed_buildings_factor = 0.15
+				compliance_growth = 0.1
+				#Penalties
+				autonomy_gain = -0.1
+			}
+		}
+
+		GER_german_exploitation = {
+			picture = generic_exploit_mines
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#Good stuff - Amplified by German modifiers
+				local_resources_factor = 0.15
+				extra_trade_to_overlord_factor = 0.15
+				overlord_trade_cost_factor = -0.15
+				#Penalties
+				resistance_target = 0.1
+				compliance_growth = -0.1
+			}
+		}
+
 		sour_loser = {
 			
 			allowed = {

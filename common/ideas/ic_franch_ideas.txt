@@ -289,7 +289,6 @@ ideas = {
         }
 
 		ic_FRA_boost_army_morale = {
-			name = FRA_boost_army_morale
 
 			removal_cost = -1
 
@@ -332,7 +331,6 @@ ideas = {
             }
         }
 		ic_FRA_fleet_investments = {
-			name = FRA_fleet_investments
 
 			removal_cost = -1
 

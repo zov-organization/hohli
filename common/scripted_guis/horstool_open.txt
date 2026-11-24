@@ -4,6 +4,7 @@ scripted_gui = {
 		tool_open= {
 		context_type = player_context
 		window_name = "horsttool_open_container"
+		ai_enabled = { always = no }
 		visible = {	has_country_flag = host	}
 		effects = {
 			tool_open_click = {
@@ -26,7 +27,8 @@ scripted_gui = {
 	
 	st_country_powers = {	
 		context_type = selected_state_context	
-		window_name = "horsttool_container"	
+		window_name = "horsttool_container"
+		ai_enabled = { always = no }
 		visible = {
 			ROOT = {
 				has_country_flag = host
@@ -656,6 +658,7 @@ scripted_gui = {
 	pause_is_blocked = {
 		context_type = player_context
 		window_name = "pause_block_window"
+		ai_enabled = { always = no }
 		parent_window_name = time_control_window
 		visible = {
 		OR ={ 

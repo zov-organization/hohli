@@ -1,5 +1,3 @@
-@error_causer_fix = 0 #(dont remove)
-
 @experience_gain_low = 0.06
 @experience_gain_medium = 0.09
 @experience_gain_high = 0.12

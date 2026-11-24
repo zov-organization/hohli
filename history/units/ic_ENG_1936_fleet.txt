@@ -21,8 +21,8 @@ units = {
 			ship = { name = "HMS Renown" definition = battle_cruiser start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Renown Class" } } }
 
 			#BB
-			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
-			ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
+			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
+			ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Royal Oak" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }
 			ship = { name = "HMS Royal Sovereign" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }
 			ship = { name = "HMS Ramillies" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }

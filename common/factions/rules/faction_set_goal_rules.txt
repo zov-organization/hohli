@@ -1,6 +1,2 @@
-goals_only_faction_leader = {
-	type = member_rules
-	trigger = {
-		is_faction_leader = yes	
-	}
-}
+# Rule IDs for legacy scripts and saves.
+goals_only_faction_leader = { type = member_rules visible = { always = no } }
