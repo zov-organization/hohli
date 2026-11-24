@@ -1,5 +1,36 @@
 spriteTypes = {	
 
+	SpriteType = { 
+		name = "GFX_frontend_medal_dlc036_shine"
+		texturefile = "gfx/interface/goals/focus_DLC_by_blood_alone.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_DLC_by_blood_alone.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_DLC_by_blood_alone.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	SpriteType = {
 		name = "GFX_SOV_SOV_navy_one"
 		texturefile = "gfx/interface/goals/focus_generic_construction_dockyard_large.dds"	
@@ -3368,7 +3399,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER/GER_blitzkrieg_stalls.dds"	
 	}	
 	SpriteType = { 
-		name = "GFX_GFX_GER_blitzkrieg_stalls_shine"
+		name = "GFX_GER_blitzkrieg_stalls_shine"
 		texturefile = "gfx/interface/goals/GER/GER_blitzkrieg_stalls.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

@@ -101,4 +101,39 @@ whatever_category = {
 	INS_rubber_for_pp = {}
 	INS_rubber_for_truck = {}
 	INS_rubber_for_xp = {}
+
+	# Vanilla 1.20 dummy decisions/missions
+	ROM_seize_odessa_mission = { days_mission_timeout = 1 }
+	ROM_the_royal_gambit = { days_mission_timeout = 1 }
+	ROM_iron_guard_anti_government_rally = { days_mission_timeout = 1 }
+	ROM_envelop_the_black_sea_mission = { days_mission_timeout = 1 }
+	JAP_test_the_soviets = {}
+	establish_jaykaynagar_aliminium_smelters = {}
+	ROM_purchase_tanks_to_analyze = {}
+	ROM_further_funding_for_the_academies = {}
+	ROM_recall_constantin_prezan = {}
+	ROM_bring_back_bicycle_infantry = {}
+	ROM_moderate_the_nationalists = {}
+	ROM_show_democratic_unity = {}
+	ROM_rally_the_farmers = {}
+	expand_galati_steel_processing = {}
+	ROM_joint_army_exercise = {}
+	ROM_joint_mediterranean_naval_exercise = {}
+	ROM_joint_fortification_program = {}
+	ROM_recall_nicolae_titulescu = {}
+	ROM_raid_iron_guard_hideouts = {}
+	ROM_denounce_the_iron_guard = {}
+	ROM_deal_with_codreanu = {}
+	ROM_form_unitary_balkan_state = {}
+	ROM_creation_of_an_anti_russian_cossak_state = {}
+	ROM_encourage_purchases_of_war_bonds = {}
+	ROM_divert_industrial_capacity_to_the_military = {}
+	ROM_lease_privately_owned_trucks = {}
+	ROM_temporary_expansion_of_draft = {}
+	ROM_fund_retooling_of_factories = {}
+	ROM_integrate_the_eastern_romanians = {}
+	ROM_propose_russian_favoured_neutrality = {}
+	ROM_ask_the_allies_for_intervention = {}
+	ROM_demand_russia_leave_romania = {}
+	form_pan_tai_empire = {}
 }

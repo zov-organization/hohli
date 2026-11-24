@@ -1,7 +1,7 @@
 spriteTypes = {	
 	spriteType = {
 		name = "GFX_unit_flamethrower_icon_small"
-		texturefile = "gfx/texticons/support_flamethrower_small.dds"
+		texturefile = "gfx/texticons/support_flamethrower_sppt_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
@@ -27,5 +27,9 @@ spriteTypes = {
 		name = "GFX_unit_shocktroop_icon_small"
 		texturefile = "gfx/texticons/unit_shocktroop_icon_small.dds"
 		legacy_lazy_load = no
-	}		
+	}
+	spriteType = {
+		name = "GFX_JAP_land_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/generic_land_cruiser_armor.dds"
+	}
 }

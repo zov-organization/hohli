@@ -58,14 +58,17 @@ ic_effect_fra_cap = {
 		    } 
 	    }
         
-        add_country_leader_role = {
-            character = ic_FRA_philippe_petain
-            promote_leader = yes
+        if = {
+            limit = { has_character = ic_FRA_philippe_petain }
+            add_country_leader_role = {
+                character = ic_FRA_philippe_petain
+                promote_leader = yes
 		
-            country_leader = {
-                ideology = fascism_ideology
-                expire = "1965.1.1.1"
-                traits = {  }
+                country_leader = {
+                    ideology = fascism_ideology
+                    expire = "1965.1.1.1"
+                    traits = {  }
+                }
             }
         }
 

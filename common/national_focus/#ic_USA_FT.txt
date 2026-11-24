@@ -1055,121 +1055,6 @@ focus_tree = {
 	
 
 	focus = {
-		id = ic_USA_war_plans_division
-		prerequisite = { focus = ic_USA_department_of_defense }
-		relative_position_id = ic_USA_department_of_defense
-		x = 0
-		y = 1
-
-		cost = 5
-
-		icon = GFX_goal_generic_position_armies
-
-		completion_reward = {
-			unlock_decision_category_tooltip = ic_USA_war_plans_category
-		}
-	}
-	focus = {
-		id = ic_USA_intervention_in_europe
-
-		x = -1
-		y = 1
-
-		prerequisite = { focus = ic_USA_war_plans_division }
-		relative_position_id = ic_USA_war_plans_division
-
-		cost = 1
-
-		icon = GFX_focus_usa_focus_on_europe
-
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
-	
-	focus = {
-		id = ic_USA_war_plan_silver
-
-		x = -1
-		y = 1
-
-		prerequisite = { focus = ic_USA_intervention_in_europe }
-		relative_position_id = ic_USA_intervention_in_europe
-
-		cost = 1
-
-		icon = GFX_focus_ITA_depose_mussolini
-
-		completion_reward = {
-			IF = {
-				USA_create_joe_savoldi_operative = yes
-			}
-			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-	focus = {
-		id = ic_USA_war_plan_black
-		x = 1
-		y = 1
-		prerequisite = { focus = ic_USA_intervention_in_europe }
-		relative_position_id = ic_USA_intervention_in_europe
-		cost = 1
-		icon = GFX_ic_USA_war_plan_black
-		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = USA modifier = war_plan_black }
-			}
-			IF = {
-				USA_create_william_sebold_operative = yes
-			}
-			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-	focus = {
-		id = ic_USA_intervention_in_asia
-		x = 2
-		y = 1
-		prerequisite = { focus = ic_USA_war_plans_division }
-		relative_position_id = ic_USA_war_plans_division
-		available = {
-			always = no
-		}
-		cost = 1
-		icon = GFX_focus_usa_focus_on_asia
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
-	focus = {
-		id = ic_USA_war_plan_orange
-
-		x = 0
-		y = 1
-
-		prerequisite = { focus = ic_USA_intervention_in_asia }
-		relative_position_id = ic_USA_intervention_in_asia
-
-		cost = 1
-
-		icon = GFX_focus_AST_war_japan
-
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
-			}
-			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-	focus = {
-		id = ic_USA_defense_of_the_pacific
-		x = 0
-		y = 1
-		prerequisite = { focus = ic_USA_war_plan_orange }
-		relative_position_id = ic_USA_war_plan_orange
-		cost = 5
-		icon = GFX_ic_USA_defense_of_the_pacific
-	}
-	focus = {
 		id = ic_USA_war_department
 		prerequisite = { focus = ic_USA_continue_the_new_deal }
 		relative_position_id = ic_USA_continue_the_new_deal
@@ -1334,6 +1219,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ic_USA_support_rock_island
+
+		x = 2
+
+		y = 1
+		prerequisite = { focus = ic_USA_selective_training_act }
+		relative_position_id = ic_USA_selective_training_act
+
+		cost = 10
+
+		icon = GFX_focus_SWE_let_fly_all_guns
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_support_rock_island
+				uses = 3
+				bonus = 1.0
+				category = artillery
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
 		id = ic_USA_tank_experiments
 
 		x = 0
@@ -1381,29 +1290,6 @@ focus_tree = {
 				show_ideas_tooltip = tank_destroyer_board
 			}
 			
-		}
-	}
-	focus = {
-		id = ic_USA_support_rock_island
-
-		x = 2
-
-		y = 1
-		prerequisite = { focus = ic_USA_selective_training_act }
-		relative_position_id = ic_USA_selective_training_act
-
-		cost = 10
-
-		icon = GFX_focus_SWE_let_fly_all_guns
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = USA_support_rock_island
-				uses = 3
-				bonus = 1.0
-				category = artillery
-				category = support_tech
-			}
 		}
 	}
 	focus = {
@@ -1468,6 +1354,122 @@ focus_tree = {
 			}
 	}
 }
+
+	focus = {
+		id = ic_USA_war_plans_division
+		prerequisite = { focus = ic_USA_department_of_defense }
+		relative_position_id = ic_USA_department_of_defense
+		x = 0
+		y = 1
+
+		cost = 5
+
+		icon = GFX_goal_generic_position_armies
+
+		completion_reward = {
+			unlock_decision_category_tooltip = ic_USA_war_plans_category
+		}
+	}
+	focus = {
+		id = ic_USA_intervention_in_europe
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_USA_war_plans_division }
+		relative_position_id = ic_USA_war_plans_division
+
+		cost = 1
+
+		icon = GFX_focus_usa_focus_on_europe
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = ic_USA_war_plan_silver
+
+		x = -1
+		y = 1
+
+		prerequisite = { focus = ic_USA_intervention_in_europe }
+		relative_position_id = ic_USA_intervention_in_europe
+
+		cost = 1
+
+		icon = GFX_focus_ITA_depose_mussolini
+
+		completion_reward = {
+			IF = {
+				USA_create_joe_savoldi_operative = yes
+			}
+			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+	focus = {
+		id = ic_USA_war_plan_black
+		x = 1
+		y = 1
+		prerequisite = { focus = ic_USA_intervention_in_europe }
+		relative_position_id = ic_USA_intervention_in_europe
+		cost = 1
+		icon = GFX_ic_USA_war_plan_black
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = { target = USA modifier = war_plan_black }
+			}
+			IF = {
+				USA_create_william_sebold_operative = yes
+			}
+			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+	focus = {
+		id = ic_USA_intervention_in_asia
+		x = 2
+		y = 1
+		prerequisite = { focus = ic_USA_war_plans_division }
+		relative_position_id = ic_USA_war_plans_division
+		available = {
+			always = no
+		}
+		cost = 1
+		icon = GFX_focus_usa_focus_on_asia
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = ic_USA_war_plan_orange
+
+		x = 0
+		y = 1
+
+		prerequisite = { focus = ic_USA_intervention_in_asia }
+		relative_position_id = ic_USA_intervention_in_asia
+
+		cost = 1
+
+		icon = GFX_focus_AST_war_japan
+
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = USA modifier = war_plan_orange }
+			}
+			unlock_decision_tooltip = { decision = ic_USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+	focus = {
+		id = ic_USA_defense_of_the_pacific
+		x = 0
+		y = 1
+		prerequisite = { focus = ic_USA_war_plan_orange }
+		relative_position_id = ic_USA_war_plan_orange
+		cost = 5
+		icon = GFX_ic_USA_defense_of_the_pacific
+	}
 	focus = {
 		id = ic_USA_air_war_plans_division
 
@@ -1583,7 +1585,7 @@ focus_tree = {
 
 		prerequisite = { focus = ic_USA_air_support }
 		relative_position_id = ic_USA_air_support
-		mutually_exclusive = { focus = ic_USA_CAS }
+		#mutually_exclusive = { focus = ic_USA_CAS }
 
 		cost = 5
 
@@ -1986,7 +1988,7 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_Martime_commission }
 		relative_position_id = ic_USA_Martime_commission
 		cost = 5
-		icon = GFX_USA_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
 		completion_reward = {
 			if = { 
 				363 = { 

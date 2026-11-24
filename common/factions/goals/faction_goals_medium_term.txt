@@ -372,7 +372,7 @@ faction_goal_imperial_glory = {
 		count_triggers = {
 			amount = 3 # Add triggers to count below
 			
-			1021 = { is_controlled_by_ROOT_or_ally = yes } # Singapore
+			336 = { is_controlled_by_ROOT_or_ally = yes } # Singapore
 			118 = { is_controlled_by_ROOT_or_ally = yes } # Gibraltar
 			116 = { is_controlled_by_ROOT_or_ally = yes } # Malta
 			IF = {
@@ -394,7 +394,7 @@ faction_goal_imperial_glory = {
 					faction_members 
 					limit = {
 						owns_any_state_of = {
-							 1021
+							 336
 							 118
 							 116
 							 286
@@ -537,13 +537,13 @@ faction_goal_control_the_chinese_coast = {
 		}
 		count_triggers = {
 			amount = 5
-			1033 = { is_controlled_by_ROOT_or_ally = yes }
+			594 = { is_controlled_by_ROOT_or_ally = yes }
 			592 = {	is_controlled_by_ROOT_or_ally = yes }
 			593 = {	is_controlled_by_ROOT_or_ally = yes }
 			595 = {	is_controlled_by_ROOT_or_ally = yes }
 			596 = {	is_controlled_by_ROOT_or_ally = yes }
 			613 = {	is_controlled_by_ROOT_or_ally = yes }
-			1034 = { is_controlled_by_ROOT_or_ally = yes }
+			613 = { is_controlled_by_ROOT_or_ally = yes }
 			598 = {	is_controlled_by_ROOT_or_ally = yes }
 			597 = {	is_controlled_by_ROOT_or_ally = yes }
 		}
@@ -553,13 +553,13 @@ faction_goal_control_the_chinese_coast = {
 		NOT = {
 			count_triggers = {
 				amount = 5
-				1033 = { is_controlled_by_ROOT_or_ally = yes }
+				594 = { is_controlled_by_ROOT_or_ally = yes }
 				592 = {	is_controlled_by_ROOT_or_ally = yes }
 				593 = {	is_controlled_by_ROOT_or_ally = yes }
 				595 = {	is_controlled_by_ROOT_or_ally = yes }
 				596 = {	is_controlled_by_ROOT_or_ally = yes }
 				613 = {	is_controlled_by_ROOT_or_ally = yes }
-				1034 = { is_controlled_by_ROOT_or_ally = yes }
+				613 = { is_controlled_by_ROOT_or_ally = yes }
 				598 = {	is_controlled_by_ROOT_or_ally = yes }
 				597 = {	is_controlled_by_ROOT_or_ally = yes }
 			}
@@ -602,13 +602,13 @@ faction_goal_control_the_chinese_coast = {
 		every_state = {
 			limit = {
 				OR = {
-					state = 1033
+					state = 594
 					state = 592
 					state = 593
 					state = 595
 					state = 596
 					state = 613
-					state = 1034
+					state = 613
 					state = 598
 					state = 597
 				}
@@ -2846,7 +2846,7 @@ faction_goal_control_iraqi_oil = {
 	completed = {
 		291 = { is_controlled_by_ROOT_or_ally = yes }
 		676 = {	is_controlled_by_ROOT_or_ally = yes }
-		1010 = { is_controlled_by_ROOT_or_ally = yes }	
+		291 = { is_controlled_by_ROOT_or_ally = yes }	
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -2858,7 +2858,7 @@ faction_goal_control_iraqi_oil = {
 				OR = {
 					controls_state = 291
 					controls_state = 676
-					controls_state = 1010
+					controls_state = 291
 				}
 			}
 			add_faction_initiative = 1
@@ -2868,7 +2868,7 @@ faction_goal_control_iraqi_oil = {
 				OR = {
 					state = 291
 					state = 676
-					state = 1010
+					state = 291
 				}
 			}
 			if = {
@@ -3225,8 +3225,8 @@ faction_goal_control_malayan_riches = {
 	completed = {
 		333 = { is_controlled_by_ROOT_or_ally = yes }
 		336 = {	is_controlled_by_ROOT_or_ally = yes }
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
-		1024 = { is_controlled_by_ROOT_or_ally = yes }
+		336 = { is_controlled_by_ROOT_or_ally = yes }
+		333 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -3238,8 +3238,8 @@ faction_goal_control_malayan_riches = {
 				OR = {
 					controls_state = 333
 					controls_state = 336
-					controls_state = 1021
-					controls_state = 1024
+					controls_state = 336
+					controls_state = 333
 				}
 			}
 			add_faction_initiative = 1
@@ -3249,8 +3249,8 @@ faction_goal_control_malayan_riches = {
 				OR = {
 					state = 333
 					state = 336
-					state = 1021
-					state = 1024
+					state = 336
+					state = 333
 				}
 			}
 			if = {
@@ -5833,7 +5833,7 @@ faction_goal_control_gulf_of_aden_bases = {
 				 name = FACTION_CONTROLLED_STATES
 			}
 			distance_to = {
-				target = 992
+				target = 659
 				value < 2000
 			}
 		}
@@ -5842,7 +5842,7 @@ faction_goal_control_gulf_of_aden_bases = {
 
 	}
 	completed = {
-		992 = { is_controlled_by_ROOT_or_ally = yes }
+		659 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -5851,11 +5851,11 @@ faction_goal_control_gulf_of_aden_bases = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 992
+				controls_state = 659
 			}
 			add_faction_initiative = 1
 		}
-		992 = {
+		659 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -5881,7 +5881,7 @@ faction_goal_control_gulf_of_aden_bases = {
 		base = 0
 		modifier = {
 			factor = 2 # Target of opportunity - already at war anyway
-			992 = {
+			659 = {
 				owner = {
 					has_war_with = ROOT
 				}
@@ -5951,7 +5951,7 @@ faction_goal_control_strait_of_hormuz = {
 				 name = FACTION_CONTROLLED_STATES
 			}
 			distance_to = {
-				target = 1013
+				target = 658
 				value < 2000
 			}
 		}
@@ -5961,7 +5961,7 @@ faction_goal_control_strait_of_hormuz = {
 	}
 	completed = {
 		412 = { is_controlled_by_ROOT_or_ally = yes }
-		1013 = { is_controlled_by_ROOT_or_ally = yes }
+		658 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -5972,7 +5972,7 @@ faction_goal_control_strait_of_hormuz = {
 			limit = {
 				OR = {
 					controls_state = 412
-					controls_state = 1013
+					controls_state = 658
 				}
 			}
 			add_faction_initiative = 1
@@ -6010,7 +6010,7 @@ faction_goal_control_strait_of_hormuz = {
 				instant_build = yes
 			}
 		}
-		1013 = {
+		658 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -6048,7 +6048,7 @@ faction_goal_control_strait_of_hormuz = {
 		base = 0
 		modifier = {
 			factor = 2 # Target of opportunity - already at war anyway
-			1013 = {
+			658 = {
 				owner = {
 					has_war_with = ROOT
 				}
@@ -6251,7 +6251,7 @@ faction_goal_control_singapore = {
 				 name = FACTION_CONTROLLED_STATES
 			}
 			distance_to = {
-				target = 1021
+				target = 336
 				value < 2000
 			}
 		}
@@ -6260,7 +6260,7 @@ faction_goal_control_singapore = {
 
 	}
 	completed = {
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
+		336 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -6269,11 +6269,11 @@ faction_goal_control_singapore = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 1021
+				controls_state = 336
 			}
 			add_faction_initiative = 1
 		}
-		1021 = {
+		336 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -6299,7 +6299,7 @@ faction_goal_control_singapore = {
 		base = 0
 		modifier = {
 			factor = 2 # Target of opportunity - already at war anyway
-			1021 = {
+			336 = {
 				owner = {
 					has_war_with = ROOT
 				}

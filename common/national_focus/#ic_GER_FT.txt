@@ -1806,7 +1806,7 @@
 		icon = GFX_ic_GER_totaler_krieg
 
 		prerequisite = { focus = GER_aa_defences_of_the_atlantikwall }
-		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 focus = GER_support_our_allies_vic }
+		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom focus = GER_support_our_allies_vic }
 		relative_position_id = GER_support_our_allies_ita
 
 		x = 1

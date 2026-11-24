@@ -150,7 +150,7 @@ characters={
 			defense_skill=5
 			planning_skill=4
 			logistics_skill=3
-			legacy_id = 3
+			#legacy_id removed (collision)
 		}
 	}
 
@@ -313,7 +313,7 @@ characters={
 			defense_skill=2
 			maneuvering_skill=3
 			coordination_skill=3
-			legacy_id=102
+			#legacy_id removed (collision)
 		}
 	}
 
@@ -394,7 +394,7 @@ characters={
 			defense_skill=5
 			planning_skill=4
 			logistics_skill=3
-			legacy_id = 3
+			#legacy_id removed (collision)
 		}
 	}
 

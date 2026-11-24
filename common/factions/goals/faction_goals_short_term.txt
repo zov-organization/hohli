@@ -1126,6 +1126,7 @@ faction_goal_military_infrastructure = {
 						is_core_of = CONTROLLER
 						is_controlled_by_ROOT_or_ally = yes 
 						any_neighbor_state = {
+							has_state_flag = ic_has_owner
 							controller = {
 								NOT = { is_in_faction_with = ROOT }
 							}
@@ -1146,6 +1147,7 @@ faction_goal_military_infrastructure = {
 					limit = {
 						is_controlled_by_ROOT_or_ally = yes 
 						any_neighbor_state = {
+							has_state_flag = ic_has_owner
 							controller = {
 								NOT = { is_in_faction_with = ROOT }
 							}
@@ -2145,7 +2147,7 @@ faction_goal_develop_iraqi_oil = {
 		OR = {
 			291 = { is_controlled_by_ROOT_or_ally = yes }
 			676 = {	is_controlled_by_ROOT_or_ally = yes }
-			1010 = { is_controlled_by_ROOT_or_ally = yes }	
+			291 = { is_controlled_by_ROOT_or_ally = yes }	
 		}
 	}
 	available = {
@@ -2155,7 +2157,7 @@ faction_goal_develop_iraqi_oil = {
 		}
 		291 = { is_controlled_by_ROOT_or_ally = yes }
 		676 = {	is_controlled_by_ROOT_or_ally = yes }
-		1010 = { is_controlled_by_ROOT_or_ally = yes }	
+		291 = { is_controlled_by_ROOT_or_ally = yes }	
 	}
 	completed = {
 		291 = {
@@ -2166,7 +2168,7 @@ faction_goal_develop_iraqi_oil = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		1010 = {
+		291 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
@@ -2185,7 +2187,7 @@ faction_goal_develop_iraqi_oil = {
 			    amount = 4
 			}
 		}
-		1010 = {
+		291 = {
 			add_resource = {
 			    type = oil
 			    amount = 2
@@ -2501,8 +2503,8 @@ faction_goal_develop_malayan_riches = {
 		OR = {
 			333 = { is_controlled_by_ROOT_or_ally = yes }
 			336 = {	is_controlled_by_ROOT_or_ally = yes }
-			1021 = { is_controlled_by_ROOT_or_ally = yes }
-			1024 = { is_controlled_by_ROOT_or_ally = yes }
+			336 = { is_controlled_by_ROOT_or_ally = yes }
+			333 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
@@ -2512,8 +2514,8 @@ faction_goal_develop_malayan_riches = {
 		}
 		333 = { is_controlled_by_ROOT_or_ally = yes }
 		336 = {	is_controlled_by_ROOT_or_ally = yes }
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
-		1024 = { is_controlled_by_ROOT_or_ally = yes }
+		336 = { is_controlled_by_ROOT_or_ally = yes }
+		333 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		333 = {
@@ -2524,11 +2526,11 @@ faction_goal_develop_malayan_riches = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		1021 = {
+		336 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		1024 = {
+		333 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
@@ -2563,7 +2565,7 @@ faction_goal_develop_malayan_riches = {
 			    amount = 4
 			}
 		}
-		1021 = {
+		336 = {
 			add_resource = {
 			    type = aluminium
 			    amount = 3
@@ -2577,7 +2579,7 @@ faction_goal_develop_malayan_riches = {
 			    amount = 4
 			}
 		}
-		1024 = {
+		333 = {
 			add_resource = {
 			    type = rubber
 			    amount = 8
@@ -2591,8 +2593,8 @@ faction_goal_develop_malayan_riches = {
 			OR = {
 				controls_state = 333
 				controls_state = 336
-				controls_state = 1021
-				controls_state = 1024
+				controls_state = 336
+				controls_state = 333
 			}
 		}
 		modifier = {
@@ -4579,13 +4581,13 @@ faction_goal_expand_gulf_of_aden_bases = {
 		
 	}
 	visible = {
-		992 = { is_controlled_by_ROOT_or_ally = yes }
+		659 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
 	}
 	completed = {
-		992 = {
+		659 = {
 			air_base > 2
 			any_province_building_level = {
 				province = {
@@ -4603,7 +4605,7 @@ faction_goal_expand_gulf_of_aden_bases = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 992
+				controls_state = 659
 			}
 			add_faction_initiative = 1
 		}
@@ -4662,12 +4664,12 @@ faction_goal_fortify_strait_of_hormuz = {
 	visible = {
 		OR = {
 			412 = { is_controlled_by_ROOT_or_ally = yes }
-			1013 = { is_controlled_by_ROOT_or_ally = yes }
+			658 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
 		412 = { is_controlled_by_ROOT_or_ally = yes }
-		1013 = { is_controlled_by_ROOT_or_ally = yes }
+		658 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		custom_trigger_tooltip = {
@@ -4688,7 +4690,7 @@ faction_goal_fortify_strait_of_hormuz = {
 					level > 0
 				}
 			}
-			1013 = {
+			658 = {
 				any_province_building_level = {
 					province = {
 						id = 13369
@@ -4707,11 +4709,11 @@ faction_goal_fortify_strait_of_hormuz = {
 			OR = {
 				AND = {
 					divisions_in_state = { state = 412 size > 0 }
-					divisions_in_state = { state = 1013 size > 0 }
+					divisions_in_state = { state = 658 size > 0 }
 				}
 				any_allied_country = {
 					divisions_in_state = { state = 412 size > 0 }
-					divisions_in_state = { state = 1013 size > 0 }
+					divisions_in_state = { state = 658 size > 0 }
 				}
 			}
 		}
@@ -4725,7 +4727,7 @@ faction_goal_fortify_strait_of_hormuz = {
 			limit = {
 				OR = {
 					controls_state = 412
-					controls_state = 1013
+					controls_state = 658
 				}
 			}
 			add_faction_initiative = 1
@@ -4749,7 +4751,7 @@ faction_goal_fortify_strait_of_hormuz = {
 				instant_build = yes
 			}
 		}
-		1013 = {
+		658 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -4905,13 +4907,13 @@ faction_goal_expand_singapore_naval_base = {
 		
 	}
 	visible = {
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
+		336 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
 	}
 	completed = {
-		1021 = {
+		336 = {
 			air_base > 7
 			any_province_building_level = {
 				province = {
@@ -4936,11 +4938,11 @@ faction_goal_expand_singapore_naval_base = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 1021
+				controls_state = 336
 			}
 			add_faction_initiative = 1
 		}
-		1021 = {
+		336 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1

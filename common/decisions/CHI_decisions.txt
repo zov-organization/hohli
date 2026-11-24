@@ -9744,7 +9744,7 @@ CHI_build_up_our_faction_cat = {
 		available = {
 			has_core_occupation_modifier = {
 				occupied_country_tag = FROM
-				modifier = compliance_40
+				modifier = compliance_0
 			}
 		}
         visible = {

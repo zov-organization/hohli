@@ -2016,3 +2016,15 @@ sp_land_large_caliber_kinetic_energy_sabot = {
 	}
 
 }
+
+# Vanilla 1.20 disabled special project
+sp_land_flamethrower_tank = {
+	specialization = specialization_land
+	project_tags = sp_tag_tank
+	allowed = { hidden_trigger = { always = no } }
+	prototype_time = sp_time.prototype.short
+	complexity = sp_complexity.small
+	breakthrough_cost = {
+		specialization_land = 0
+	}
+}

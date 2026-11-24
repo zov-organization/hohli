@@ -1576,6 +1576,14 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "recall_volunteers_indicator"
+			spriteType = "GFX_decision_timer_icon_strip"
+			position = {x = 415 y = -5}
+			scale = 1
+			frame = 1
+		}
+
 		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code

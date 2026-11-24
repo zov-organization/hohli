@@ -4,6 +4,12 @@ on_actions = {
 
 		effect = {
 
+			every_country = {
+				every_owned_state = {
+					set_state_flag = ic_has_owner
+				}
+			}
+
 			FRA = { every_state = { limit = { OR = { 
 			state = 29 
 			state = 785 
@@ -574,6 +580,14 @@ on_actions = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM = {
+				set_state_flag = ic_has_owner
 			}
 		}
 	}

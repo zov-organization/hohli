@@ -379,7 +379,7 @@ characters = {
 			defense_skill=3
 			planning_skill=5
 			logistics_skill=5
-			legacy_id=603
+			#legacy_id removed (collision)
 		}
 	}
 

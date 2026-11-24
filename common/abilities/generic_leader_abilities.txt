@@ -15,8 +15,8 @@ ability = {
 		duration = 168
 		
 		unit_modifiers = {
-			combat_offense = 0.2
-			combat_breakthrough = 0.25
+			offence = 0.2
+			breakthrough_factor = 0.25
 			org_damage_multiplier = -1.0
 			str_damage_multiplier = 0.6
 			war_support_reduction_on_damage = 0.2
@@ -40,7 +40,7 @@ ability = {
 		duration = 168
 		
 		unit_modifiers = {
-			combat_defense = 0.2
+			defence = 0.2
 			combat_entrenchment = 0.25
 			org_damage_multiplier = -1.0
 			str_damage_multiplier = 0.6

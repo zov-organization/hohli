@@ -381,10 +381,10 @@ technologies = {
 		research_cost = 5
 		start_year = 1939
 
-		folder = {
-			name = nsb_sov_armour_folder
-			position = { x = 3 y = @1939 }
-		}
+		#folder = {
+		#	name = nsb_sov_armour_folder
+		#	position = { x = 3 y = @1939 }
+		#}
 
 		categories = {
 			armor

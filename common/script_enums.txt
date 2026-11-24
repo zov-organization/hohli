@@ -677,4 +677,8 @@ script_enum_equipment_bonus_type = {
 	tac_bomber_equipment
 	strat_bomber_equipment
 	scout_plane_equipment
+	# Mod equipment types
+	empty_tank_for_full_tech_display
+	super_heavy_railway_gun
+	self_propelled_super_heavy_artillery
 }

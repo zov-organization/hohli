@@ -2713,4 +2713,26 @@ equipment_modules = {
 		}
 	}
 
+	# Vanilla 1.20 additions
+	ship_escort_deck_space = {
+		abbreviation = "sdc"
+		category = ship_escort_deck_space
+		gfx = ship_escort_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 1
+			build_cost_ic = 700
+			carrier_surface_detection = 5
+			carrier_sub_detection = 7
+		}
+		manpower = 250
+		multiply_stats = {
+			naval_speed = -0.05
+		}
+		#build_cost_resources = {
+		#	steel = 1
+		#}
+		dismantle_cost_ic = 350
+	}
 }

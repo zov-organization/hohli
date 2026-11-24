@@ -40,3 +40,52 @@ ROM_iar_organization = {
 
 	available = { hidden_trigger = { always = no } }
 }
+
+# Vanilla 1.20 disabled MIOs
+ROM_malaxa_organization_2 = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_astra_works_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_malaxa_organization_ba = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_leonidas_works_organization_ba = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_icar_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}
+
+ROM_cugir_organization_ba = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { hidden_trigger = { always = no } }
+	visible = { hidden_trigger = { always = no } }
+	available = { hidden_trigger = { always = no } }
+}

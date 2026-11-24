@@ -13,3 +13,5 @@ guianas_category = {}
 unite_hispaniola = {}
 reunite_peru_bolivia = {}
 unite_guiana = {}
+greater_mongolia_category = {}
+form_dacia_category = {}
