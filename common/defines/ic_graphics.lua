@@ -6,7 +6,7 @@ NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.68
 --
 -- Gradient Border configurations - Need restart for most of these
 --
-	NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
+	NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.3
 	NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 50
 
 	-- Rescales ALL border widths. Somewhat affects gradient border.

@@ -19,6 +19,10 @@ spriteTypes = {
 		name = "GFX_portrait_ic_SOV_mihail_katukov"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Mahail_Katukov.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_ic_SOV_pavel_rotmistrov"
+		texturefile = "gfx/leaders/SOV/portrait_Soviet_Pavel_Rotmistrov.dds"
+	}
 
 
 

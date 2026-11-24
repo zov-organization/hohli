@@ -1,3 +1,9 @@
+@mastery_theorists_gain_chief = 0.05
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.20
+@mastery_theorists_gain_high = 0.30
+@mastery_theorists_gain_esport = 0.40
+
 characters = {
 
 	# Search tags:
@@ -27,6 +33,14 @@ characters = {
 			ledger = army
 			traits = {
 				military_theorist
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 
@@ -58,6 +72,34 @@ characters = {
 			traits = {
 				grand_battle_plan_expert
 			}
+
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_attack_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_defence_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_attack_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_defence_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_swift_maneuvres_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_deep_planning_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+			}
+
 			available = {
 				has_completed_focus = ITA_learn_from_germans
 			}
@@ -71,6 +113,68 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
+		}
+	}
+
+	ic_ITA_renato_sandalli = {
+		name = ITA_renato_sandalli
+		portraits = {
+			army = {
+				small = GFX_idea_renato_sandalli
+			}
+		}
+
+		advisor = {
+			cost = 75
+			slot = theorist
+			idea_token = ic_ITA_renato_sandalli
+			ledger = air
+			traits = {
+				air_warfare_theorist
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+			}
+		}		
+	}
+	
+	ic_ITA_amedeo_mecozzi = { 
+		name = ITA_amedeo_mecozzi
+		portraits = {
+			army = {
+				small = GFX_idea_amedeo_mecozzi
+			}
+		}
+
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ic_ITA_amedeo_mecozzi
+			ledger = air
+			traits = {
+				assault_avaition
+			}
+
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_strategic_destruction_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_dogfights_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_battlefield_support_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+
+			}
+
 		}
 	}
 
@@ -89,7 +193,7 @@ characters = {
 			idea_token = ic_ITA_giuseppe_fioravanzo
 			ledger = navy
 			traits = {
-				grand_fleet_proponent
+				#grand_fleet_proponent
 			}
 		}
 	
@@ -118,7 +222,9 @@ characters = {
 			slot = theorist
 			idea_token = ic_ITA_angelo_iachino
 			ledger = navy
-			traits = { naval_theorist }
+			traits = {
+				#naval_theorist
+			}
 		}
 	
 		#navy_leader = {
@@ -130,42 +236,6 @@ characters = {
 		#	coordination_skill = 1
 		#	legacy_id = 0
 		#}
-	}
-	
-	ic_ITA_amedeo_mecozzi = { 
-		name = ITA_amedeo_mecozzi
-		portraits = {
-			army = {
-				small = GFX_idea_amedeo_mecozzi
-			}
-		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = ic_ITA_amedeo_mecozzi
-			ledger = air
-			traits = {
-				assault_avaition
-			}
-		}
-	}
-
-	ic_ITA_renato_sandalli = {
-		name = ITA_renato_sandalli
-		portraits = {
-			army = {
-				small = GFX_idea_renato_sandalli
-			}
-		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = ic_ITA_renato_sandalli
-			ledger = air
-			traits = { air_warfare_theorist }
-		}		
 	}
 	
 	ic_ITA_romeo_bernotti = {
@@ -182,7 +252,7 @@ characters = {
 			idea_token = ic_ITA_romeo_bernotti
 			ledger = navy
 			traits = {
-				naval_aviation_pioneer
+				#naval_aviation_pioneer
 			}
 		}
 	}
@@ -205,6 +275,12 @@ characters = {
 			idea_token = ic_ITA_pietro_badoglio
 			traits = {
 				army_chief_morale_2
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
 			}
 			cost = 100
 		}
@@ -235,6 +311,12 @@ characters = {
 			traits = {
 				army_chief_defensive_1
 			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 			cost = 50
 		}
 		
@@ -264,6 +346,12 @@ characters = {
 			traits = {
 				army_chief_organizational_1
 			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 			cost = 50
 		}
 		
@@ -291,6 +379,12 @@ characters = {
 			idea_token = ic_ITA_alberto_pariani
 			traits = {
 				army_chief_maneuver_2
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
 			}
 			cost = 100
 		}
@@ -325,24 +419,6 @@ characters = {
 		#	coordination_skill = 3
 		#	legacy_id = 0
 		#}
-	}
-
-	ic_ITA_domenico_cavagnari = {
-		name = ITA_domenico_cavagnari
-		portraits = {
-			army = {
-				small = GFX_idea_domenico_cavagnari
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = ic_ITA_domenico_cavagnari
-			traits = {
-				navy_chief_commerce_raiding_1
-			}
-			cost = 50
-		}
 	}
 
 	ic_ITA_arturo_riccardi = {
@@ -398,6 +474,12 @@ characters = {
 			traits = {
 				air_chief_safety_1
 			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 			cost = 50
 		}
 	}
@@ -416,6 +498,12 @@ characters = {
 			traits = {
 				air_chief_reform_2
 			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 			cost = 100
 		}		
 	}
@@ -433,6 +521,12 @@ characters = {
 			idea_token = ic_ITA_aldo_pellegrini
 			traits = {
 				air_chief_ground_support_1
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
 			}
 			cost = 50
 		}

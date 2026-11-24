@@ -67,6 +67,7 @@
  advanced_sonar: "Advanced Sonar"
 
  DP_GUNS_TIP:0 "Available after research of $antiair2$"
+ proximity_fuze: "Proximity Fuze"
  basic_airplane_launcher:0 "Basic Airplane Catapult"
  improved_airplane_torpedo: "Improved Airplane Torpedo"
  advanced_airplane_torpedo: "Advanced Airplane Torpedo"

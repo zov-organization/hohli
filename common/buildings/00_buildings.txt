@@ -305,6 +305,7 @@ buildings = {
 		air_defence = 1.5
 		damage_factor = 0.1
 		value = 1
+		allied_build = yes
 		infrastructure_construction_effect = yes
 
 		level_cap = {

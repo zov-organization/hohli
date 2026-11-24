@@ -1066,7 +1066,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 
 		completion_reward = {
-			unlock_decision_category_tooltip = ic_USA_war_plans
+			unlock_decision_category_tooltip = ic_USA_war_plans_category
 		}
 	}
 	focus = {
@@ -1132,7 +1132,7 @@ focus_tree = {
 		prerequisite = { focus = ic_USA_war_plans_division }
 		relative_position_id = ic_USA_war_plans_division
 		available = {
-			always = false
+			always = no
 		}
 		cost = 1
 		icon = GFX_focus_usa_focus_on_asia

@@ -1,3 +1,9 @@
+@mastery_theorists_gain_chief = 0.05
+@mastery_theorists_gain_low = 0.15
+@mastery_theorists_gain_medium = 0.20
+@mastery_theorists_gain_high = 0.30
+@mastery_theorists_gain_esport = 0.40
+
 characters = {                                                                                                    
 
 	ic_SOV_nikolay_kuznetsov = {
@@ -178,6 +184,12 @@ characters = {
 				air_chief_reform_4
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -205,6 +217,12 @@ characters = {
 				army_chief_offensive_2
 			}
 			cost = 50
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_low
+				}
+			}
 		}
 	}
 	
@@ -216,12 +234,18 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 75
 			slot = theorist
 			idea_token = ic_SOV_georgy_isserson
 			ledger = army
 			traits = {
 				military_theorist
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
 			}
 		}
 	}
@@ -233,6 +257,26 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_ic_SOV_mihail_katukov
+			}
+		}
+
+		corps_commander = {
+			traits = { trickster panzer_leader combined_arms_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 5
+		}	
+	}
+            
+	ic_SOV_pavel_rotmistrov = {
+		name = ic_SOV_pavel_rotmistrov
+
+		portraits = {
+			army = {
+				large = GFX_portrait_ic_SOV_pavel_rotmistrov
 			}
 		}
 
@@ -381,6 +425,12 @@ characters = {
 				army_chief_reform_2
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 		corps_commander = {
 			traits = {  }
@@ -401,12 +451,19 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 150
+			cost = 100
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_SOV_mikhail_tukhachevsky
 			ledger = army
 			traits = {
 				mass_assault_expert
+			}
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_medium
+				}
 			}
 		}
 
@@ -439,6 +496,12 @@ characters = {
 				air_air_superiority_1
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -460,6 +523,12 @@ characters = {
 				air_close_air_support_1
 			}
 			cost = 100
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_air_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 	}
 
@@ -493,8 +562,9 @@ characters = {
 		}
 
 		advisor = {
-			cost = 50
+			cost = 25
 			slot = theorist
+			can_be_fired = no
 			idea_token = ic_SOV_georgy_zhukov
 			ledger = army
 			available = {
@@ -502,6 +572,34 @@ characters = {
 			}
 			traits = {
 				mass_assault_expert
+			}
+			on_add = {
+
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_attack_track
+					AMOUNT = @mastery_theorists_gain_esport
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_infantry_defence_track
+					AMOUNT = @mastery_theorists_gain_high
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_attack_track
+					AMOUNT = @mastery_theorists_gain_low
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_armor_defence_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_swift_maneuvres_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_operations_deep_planning_track
+					AMOUNT = @mastery_theorists_gain_medium
+				}
+
 			}
 		}
 
@@ -531,6 +629,12 @@ characters = {
 				army_chief_drill_2
 			}
 			cost = 50
+			on_add = {
+				custom_effect_tooltip = {
+					localization_key = daily_mastery_static_grand_doctrine
+					AMOUNT = @mastery_theorists_gain_chief
+				}
+			}
 		}
 
 		#field_marshal = {

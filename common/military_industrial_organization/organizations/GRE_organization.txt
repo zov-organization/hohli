@@ -83,7 +83,7 @@ GRE_basileiades_organization = {
 GRE_astilleros_onassis_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_gre_astilleros_onassis
-	aallowed = {	hidden_trigger = { always = no } }
+	allowed = {	hidden_trigger = { always = no } }
 
 	visible = { hidden_trigger = { always = no } }
 

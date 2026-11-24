@@ -84,7 +84,7 @@ equipments = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = empty
 			deck_space_1 = empty
-			deck_space_2 = empty
+			#deck_space_2 = empty
 		}
 
 		lg_armor_piercing = 0
@@ -109,6 +109,7 @@ equipments = {
 
 		naval_range = 3000
 
+		max_organisation = 140
 		max_strength = 300
 
 
@@ -148,12 +149,6 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			
 			deck_space_1 = inherit
-			deck_space_2 = {
-				required = yes
-				allowed_module_categories = {
-					ship_deck_space
-				}
-			}
 
 		}
 
@@ -180,8 +175,7 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			
 			deck_space_1 = inherit
-			deck_space_2 = inherit
-			deck_space_3 = {
+			deck_space_2 = {
 				required = yes
 				allowed_module_categories = {
 					ship_deck_space
@@ -196,6 +190,8 @@ equipments = {
 
 		naval_range = 4000
 		reliability = 0.75
+		
+		max_organisation = 175
 		max_strength = 325
 
 
@@ -206,6 +202,7 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 5000
+		naval_dominance_factor = 300
 	}
 
 	ship_hull_carrier_3 = {
@@ -226,8 +223,7 @@ equipments = {
 			
 			deck_space_1 = inherit
 			deck_space_2 = inherit
-			deck_space_3 = inherit
-			deck_space_4 = {
+			deck_space_3 =  {
 				required = yes
 				allowed_module_categories = {
 					ship_deck_space
@@ -241,6 +237,8 @@ equipments = {
 
 		naval_range = 5000
 		reliability = 0.8
+
+		max_organisation = 200
 		max_strength = 350
 
 

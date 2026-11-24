@@ -13,48 +13,34 @@ set_stability = 0.6
 set_war_support = 0.12
 
 
+#recruit_character = ic_FRA_jean_de_lattre_de_tassigny
+#recruit_character = ic_FRA_alphonse_juin
+
 recruit_character = ic_FRA_philippe_petain		#political leaders
 recruit_character = ic_FRA_pierre_laval	
 
-
-
-recruit_character = ic_FRA_jean_de_lattre_de_tassigny	#Generals
-recruit_character = ic_FRA_alphonse_juin
-
-
-
-recruit_character = ic_FRA_charles_de_gaulle 	#Theorists
+recruit_character = ic_FRA_charles_de_gaulle
+recruit_character = ic_FRA_maxime_weygand
+recruit_character = ic_FRA_philippe_leclerc
 recruit_character = ic_FRA_henri_giraud
+recruit_character = ic_FRA_charles_huntziger
+
 recruit_character = ic_FRA_jean_decoux
 recruit_character = ic_FRA_jean_marie_bergeret
-
-
-
-recruit_character = ic_FRA_philippe_leclerc 	#High Command
-recruit_character = ic_FRA_charles_huntziger
 recruit_character = ic_FRA_jean_de_laborde
 recruit_character = ic_FRA_martial_valin
 recruit_character = ic_FRA_rene_emile_godfroy
 recruit_character = ic_FRA_jean_francois_jannekeyn
 recruit_character = ic_FRA_alfred_heurtaux
 
-
-
 recruit_character = ic_FRA_francois_darlan		#Chief of Navy
 recruit_character = ic_FRA_marcel_gensoul
 recruit_character = ic_FRA_jean_marie_abrial
 
-
-
 recruit_character = ic_FRA_maurice_gamelin 		#Chief of Army
-recruit_character = ic_FRA_maxime_weygand
-
-
 
 recruit_character = ic_FRA_jeanmarie_charles_abrial		#Admirals
 recruit_character = ic_FRA_jeanpierre_esteva
-
-
 
 recruit_character = ic_FRA_paul_reynaud		#Political advisors
 recruit_character = ic_FRA_pierre_pucheu
@@ -63,7 +49,6 @@ recruit_character = ic_FRA_charles_maurras
 recruit_character = ic_FRA_zivony_peshkov
 recruit_character = ic_FRA_leon_blum
 recruit_character = ic_FRA_felix_gouin
-
 
 recruit_character = ic_FRA_joseph_bethenod		#Scientist
 recruit_character = ic_FRA_louis_renault
@@ -81,39 +66,6 @@ set_popularities = {
 	fascism = 1
 	neutrality = 15
 	communism = 20
-}
-
-create_corps_commander = {
-	name = "Rene Orly"
-	picture = "portrait_fra_Rene_Olry.dds"
-	traits={ old_guard infantry_officer trait_mountaineer infantry_leader ambusher}
-	skill=3
-	attack_skill=2
-	defense_skill=4
-	planning_skill=2
-	logistics_skill=2
-}
-
-create_corps_commander = {
-	name = "Henry Freydenberg"
-	picture = "portrait_fra_Henry_Freydenberg.dds"
-	traits={ old_guard infantry_officer infantry_leader }
-	skill=2
-	attack_skill=1
-	defense_skill=2
-	planning_skill=2
-	logistics_skill=2
-}
-
-create_corps_commander = {
-	name = "Gastonhenri Billotte"
-	picture = "portrait_fra_Gastonhenri_Billotte.dds"
-	traits={ old_guard trait_cautious infantry_officer infantry_leader hill_fighter infantry_expert }
-	skill=2
-	attack_skill=3
-	defense_skill=3
-	planning_skill=2
-	logistics_skill=3
 }
 
 # inflex industry

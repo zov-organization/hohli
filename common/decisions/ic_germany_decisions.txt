@@ -416,6 +416,448 @@ GER_barb_category = {
 
 }
 
+GER_okw_category = {
+
+	GER_complete_uboats_focus = {
+        icon = GFX_decision_generic_wreckers
+
+        visible = {
+			#hidden_trigger = { always = no }
+		}
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        cost = 100
+        days_remove = 70
+
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_subs
+            }
+        }
+    }
+	GER_complete_scharnhorst_class_focus = {
+        icon = GFX_decision_generic_wreckers
+
+        visible = {
+			#hidden_trigger = { always = no }
+		}
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        cost = 100
+        days_remove = 70
+
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_lay_down_scharnhorst_class
+            }
+        }
+    }
+	GER_complete_bismark_focus = {
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+			GER = {
+                has_completed_focus = GER_lay_down_scharnhorst_class
+			    has_tech = improved_ship_hull_heavy
+            }
+		}
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        cost = 100
+        days_remove = 70
+
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_the_bismark_it_is
+            }
+        }
+    }
+	GER_complete_graf_zeppelin_focus = {
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+			GER = {
+                has_completed_focus = GER_lay_down_scharnhorst_class
+                has_completed_focus = GER_navy_planes
+            }
+		}
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        cost = 100
+        days_remove = 70
+
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_renew_graf_zeppelin_construction
+            }
+        }
+    }
+	GER_complete_plan_Z_focus = {
+        icon = GFX_decision_generic_wreckers
+
+        available = {
+			GER = {
+                has_completed_focus = GER_the_bismark_it_is
+                has_completed_focus = GER_renew_graf_zeppelin_construction
+            }
+		}
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        cost = 100
+        days_remove = 70
+
+        remove_effect = {
+            GER = {
+                complete_national_focus = GER_plan_Z
+            }
+        }
+    }
+
+	GER_infantry_attack_studies = {
+        icon = GFX_decision_SWE_set_army_budget
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_infantry_attack_studies
+				track = infantry_attack
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+	GER_infantry_defence_studies = {
+        icon = GFX_decision_SWE_set_army_budget
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_infantry_defence_studies
+				track = infantry_defence
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+	GER_tank_attack_studies = {
+        icon = GFX_decision_generic_tank
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_tank_attack_studies
+				track = armor_attack
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+	GER_tank_defence_studies = {
+        icon = GFX_decision_generic_tank
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_tank_defence_studies
+				track = armor_defence
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+	GER_hq_attack_studies = {
+        icon = GFX_decision_generic_operation
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_hq_attack_studies
+				track = operation_swift_maneuvres
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+	GER_hq_defence_studies = {
+        icon = GFX_decision_generic_operation
+
+		available = {
+			hidden_trigger = {
+				has_army_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_ArmXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.05
+				days = 180
+				name = GER_hq_defence_studies
+				track = operation_deep_planning
+			}
+
+			hidden_effect = {
+				army_experience = -50
+			}
+
+        }
+    }
+
+
+	GER_strategic_destruction_studies = {
+        icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			hidden_trigger = {
+				has_air_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_air_experience > 49
+		}
+		custom_cost_text = decision_cost_AirXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.2
+				days = 180
+				name = GER_strategic_destruction_studies
+				track = strategic_destruction_track
+			}
+
+			hidden_effect = {
+				air_experience = -50
+			}
+
+        }
+    }
+	GER_dogfights_studies = {
+        icon = GFX_decision_generic_air
+
+		available = {
+			hidden_trigger = {
+				has_air_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_air_experience > 49
+		}
+		custom_cost_text = decision_cost_AirXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.2
+				days = 180
+				name = GER_dogfights_studies
+				track = dogfights_track
+			}
+
+			hidden_effect = {
+				air_experience = -50
+			}
+
+        }
+    }
+	GER_battlefield_support_studies = {
+        icon = GFX_decision_SWE_set_air_budget
+
+		available = {
+			hidden_trigger = {
+				has_air_experience > 49
+			}
+		}
+		custom_cost_trigger = {
+			has_air_experience > 49
+		}
+		custom_cost_text = decision_cost_AirXP_50
+        
+        is_good = yes
+
+        fire_only_once = yes
+        cancel_trigger = {  }
+        
+        # add cost in army XP
+        days_remove = 180
+
+        complete_effect = {
+            
+			add_daily_mastery = {
+				amount = 0.2
+				days = 180
+				name = GER_battlefield_support_studies
+				track = battlefield_support_track
+			}
+
+			hidden_effect = {
+				air_experience = -50
+			}
+
+        }
+    }
+
+}
+
 GER_plan_ost_category = {
 
     GER_build_babiy_yar = {

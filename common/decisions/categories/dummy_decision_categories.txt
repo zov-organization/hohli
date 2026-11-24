@@ -1,9 +1,10 @@
 whatever_category = {
-	visible = {
-		hidden_trigger = {
-			always = no
-		}
-	}
+	
+	allowed = {	hidden_trigger = { always = no } }
+
+	visible = { hidden_trigger = { always = no } }
+
+	available = { hidden_trigger = { always = no } }
 }
 
 hispaniola_category = {}

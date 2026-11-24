@@ -2,7 +2,7 @@ ic_sp_ship_armor_dd = {
 	specialization = specialization_naval
 	icon = GFX_ic_sp_ship_armor_dd
 
-	project_tags = sp_tag_submarine
+	project_tags = sp_tag_surface_ship
 	
 	complexity = sp_complexity.ic_ten_fractions
 	prototype_time = sp_time.prototype.ic_thousand_days

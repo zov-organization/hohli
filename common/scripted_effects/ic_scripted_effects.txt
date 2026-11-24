@@ -1,4 +1,4 @@
-fra_cap = {
+ic_effect_fra_cap = {
 
     FRA = {
 
@@ -37,12 +37,43 @@ fra_cap = {
                 }
                 NOT = { has_state_flag = vichy_italian_conquest }
             }
-            VIC = { transfer_state = PREV }
+            VIC = {
+                transfer_state = PREV
+
+                give_resource_rights = {
+                    receiver = GER
+                    state = PREV
+                }
+
+            }
         }
     }
 
     VIC = {
         set_capital = { state = 26 }
+        
+	    FRA = {
+		    ic_FRA_philippe_petain = {
+			    set_nationality = VIC
+		    } 
+	    }
+        
+        add_country_leader_role = {
+            character = ic_FRA_philippe_petain
+            promote_leader = yes
+		
+            country_leader = {
+                ideology = fascism_ideology
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+
+        set_politics = {
+	        ruling_party = fascism
+	        elections_allowed = no
+        }
+
     }
 
     every_state = {

@@ -1,0 +1,413 @@
+infantry_attack_sub = {
+    track = infantry_attack
+    name = SUBDOCTRINE_INFANTRY_ATTACK
+    description = SUBDOCTRINE_INFANTRY_ATTACK_DESC
+    icon = GFX_infantry_attack_new_doctrine_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    
+	category_light_infantry = {
+		defense = 0.05
+	}
+	category_mechanized_inf = {
+		defense = 0.025
+	}
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+		    category_light_infantry = {
+			     breakthrough = 0.05
+		    }
+        }
+        b = {
+            category_support_battalions = {
+			    max_organisation = 5
+		    }
+            category_support_battalions = {
+			    soft_attack = 0.125
+		    }
+        }
+        c = {
+            category_light_infantry = {
+			    max_organisation = 10
+		    }
+        }
+        d = {
+            category_support_battalions = {
+			    max_organisation = 5
+		    }
+            category_support_battalions = {
+			    soft_attack = 0.125
+		    }
+        }
+        e = {
+            category_front_line = {
+			    max_organisation = 5
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
+		    terrain_penalty_reduction = 0.05
+        }
+
+    }
+}
+
+infantry_defence_sub = {
+    track = infantry_defence
+    name = SUBDOCTRINE_INFANTRY_DEFENCE
+    description = SUBDOCTRINE_INFANTRY_DEFENCE_DESC
+    icon = GFX_infantry_defence_5_1_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+            category_all_infantry = {
+			    defense = 0.075
+		    }
+        }
+        b = {
+            category_support_battalions = {
+			    max_organisation = 10
+			    soft_attack = 0.25
+		    }
+        }
+        c = {
+            category_all_infantry = {
+			    max_organisation = 5
+		    }
+            # or
+            engineer = {
+			    battalion_mult = {
+				    category = category_light_infantry
+				    entrenchment = 0.1
+				    add = yes
+			    }
+		    }
+        }
+        d = {
+            category_all_infantry = {
+			    max_organisation = 2.5
+			    defense = 0.025
+		    }
+        }
+        e = {
+            category_light_infantry = {
+			    default_morale = 10
+		    }
+		    max_dig_in_factor = 0.15
+
+            recon = {
+			    battalion_mult = {
+				    category = category_anti_air
+				    air_attack = 0.10
+			    }
+		    }
+		
+		    mot_recon = {
+			    battalion_mult = {
+				    category = category_anti_air
+				    air_attack = 0.10
+			    }
+		    }
+
+        }
+
+    }
+}
+
+armor_attack_sub = {
+    track = armor_attack
+    name = SUBDOCTRINE_ARMOR_ATTACK
+    description = SUBDOCTRINE_ARMOR_ATTACK_DESC
+    icon = GFX_tank_defence_5_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+    effect = {
+
+    }
+   
+    #OTHER BASE REWARDS
+    
+	category_all_armor = {
+		breakthrough = 0.10
+	}
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+            category_tanks = {
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
+        }
+        b = {
+            category_mechanized_inf = {
+			    hardness = 0.1
+			    max_strength = 0.05
+		    }
+
+		    category_tanks = {
+			    max_organisation = 5
+		    }
+        }
+        c = {
+            category_support_tanks = {
+			    max_organisation = 5
+			    soft_attack = 0.125
+			    hard_attack = 0.125
+		    }
+        }
+        d = {
+            category_mechanized_inf = {
+			    hardness = 0.1
+			    max_strength = 0.1
+		    }
+
+		    category_tanks = {
+			    max_organisation = 2.5
+		    }
+        }
+        e = {
+		    category_mechanized_inf = {
+			    maximum_speed = 0.1
+		    }
+
+		    category_tanks = {
+			    breakthrough = 0.25
+			    maximum_speed = 0.1
+		    }
+        }
+    }
+}
+
+armor_defence_sub = {
+    track = armor_defence
+    name = SUBDOCTRINE_ARMOR_DEFENCE
+    description = SUBDOCTRINE_ARMOR_DEFENCE_DESC
+    icon = GFX_tank_defence_2_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+		    category_army = {
+			    defense = 0.1
+		    }
+        }
+        b = {
+            enemy_army_bonus_air_superiority_factor = -0.05
+
+		    category_all_armor = {
+			    defense = 0.1
+		    }
+        }
+        c = {
+            category_artillery = {
+			    hard_attack = 0.15
+			    ap_attack = 0.15
+			    defense = 0.1
+		    }
+        }
+        d = {
+            category_support_tanks = {
+			    max_organisation = 5
+			    soft_attack = 0.1
+			    hard_attack = 0.1
+		    }
+        }
+        e = {
+            light_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    medium_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    heavy_tank_destroyer_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    hard_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    light_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    medium_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+
+		    heavy_sp_artillery_brigade = {
+			    battalion_mult = {
+				    category = category_all_armor
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+			    battalion_mult = {
+				    category = category_mechanized_inf
+				    soft_attack = 0.1
+				    defense = 0.25
+			    }
+		    }
+        }
+
+    }
+}
+
+operation_swift_maneuvres_sub = {
+    track = operation_swift_maneuvres
+    name = SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES
+    description = SUBDOCTRINE_OPERATION_SWIFT_MANEUVRES_DESC
+    icon = GFX_operation_swift_maneuvres_3_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+            #
+        }
+        b = {
+            #
+        }
+        c = {
+            #
+        }
+        d = {
+            #
+        }
+        e = {
+            #
+        }
+
+    }
+}
+
+operation_deep_planning_sub = {
+    track = operation_deep_planning
+    name = SUBDOCTRINE_OPERATION_DEEP_PLANNING
+    description = SUBDOCTRINE_OPERATION_DEEP_PLANNING_DESC
+    icon = GFX_operation_deep_planning_4_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    effect = {
+        #
+    }
+
+    rewards = {
+        a = {
+            #
+        }
+        b = {
+            #
+        }
+        c = {
+            #
+        }
+        d = {
+            #
+        }
+        e = {
+            #
+        }
+
+    }
+}

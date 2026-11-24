@@ -1,6 +1,25 @@
 spriteTypes = {	
+	# SOV
 	spriteType = {
 		name = "GFX_portrait_ic_SOV_ivan_larionov"
 		texturefile = "gfx/leaders/SOV/scientists/portrait_ic_SOV_ivan_larionov.dds"
+	}
+
+	# GER
+	spriteType = {
+		name = "GFX_portrait_ic_GER_hans_techel"
+		texturefile = "gfx/leaders/GER/scientists/portrait_ic_GER_hans_techel.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ic_GER_wilhelm_messerschmitt"
+		texturefile = "gfx/leaders/GER/scientists/portrait_ic_GER_wilhelm_messerschmitt.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ic_GER_ferdinand_porsche"
+		texturefile = "gfx/leaders/GER/scientists/portrait_ic_GER_ferdinand_porsche.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ic_GER_werner_heisenberg"
+		texturefile = "gfx/leaders/GER/scientists/portrait_ic_GER_werner_heisenberg.dds"
 	}
 }

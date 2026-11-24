@@ -7,6 +7,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 100
 		active = yes
+		affects_speed = no
 		
 		type = {
 			armor
@@ -47,6 +48,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 100
 		active = yes
+		affects_speed = no
 		
 		type = {
 			armor
@@ -84,6 +86,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 100
 		active = yes
+		affects_speed = no
 		training_time = 180
 		
 		type = {

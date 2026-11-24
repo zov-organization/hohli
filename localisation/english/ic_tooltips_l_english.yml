@@ -1,4 +1,7 @@
 ﻿l_english:
+  FRA_industry_tt: "Modify §Y$FRA_inflex_industry$§! by: "
+  FRA_political_tt: "Modify §Y$FRA_disjoined_goverment$§! by: "
+
   ITA_fleet_tt: "Modify §CRegia Marina§! by: "
   ITA_modify_army_tt: "Modify §GRegio Escertio§! by: "
   ITA_air_tt: "Modify §RRegia Aeronautica§! by: "

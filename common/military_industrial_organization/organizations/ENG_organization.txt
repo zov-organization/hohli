@@ -1,3 +1,23 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+ ENG_vickers_armstrong_eng_organization = {
+	include = ic_generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_eng
+	
+	allowed = {	
+		tag = ENG
+	}
+}
+
+
  ######  ##     ## #### ########   ######  
 ##    ## ##     ##  ##  ##     ## ##    ## 
 ##       ##     ##  ##  ##     ## ##       
@@ -29,6 +49,13 @@ ENG_harland_wolff_organization = {
 ENG_supermarine_organization = {
 	include = ic_generic_light_aircraft_organization
 	icon = GFX_idea_supermarine
+	
+	equipment_type = {
+		small_plane_airframe
+		medium_plane_airframe
+		large_plane_airframe
+		transport_plane_equipment
+	}
 	
 	allowed = {	
 		tag = ENG

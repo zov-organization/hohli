@@ -1932,6 +1932,12 @@ focus_tree = {
 				add_unit_leader_trait = thorough_planner
 				add_unit_leader_trait = ranger
 			}
+			ic_SOV_pavel_rotmistrov = {
+				add_unit_leader_trait = plus_one_attack_1
+				add_unit_leader_trait = organizer
+				add_unit_leader_trait = thorough_planner
+				add_unit_leader_trait = ranger
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER = {
@@ -2056,6 +2062,12 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			ic_SOV_mihail_katukov = {
+				add_unit_leader_trait = plus_one_attack_2
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
+			}
+			ic_SOV_pavel_rotmistrov = {
 				add_unit_leader_trait = plus_one_attack_2
 				add_unit_leader_trait = trait_engineer
 				add_unit_leader_trait = fortress_buster
@@ -2527,6 +2539,13 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			ic_SOV_mihail_katukov = {
+				add_unit_leader_trait = plus_one_attack_3
+				add_unit_leader_trait = plus_one_defense_3
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = fortress_buster
+				add_unit_leader_trait = urban_assault_specialist
+			}
+			ic_SOV_pavel_rotmistrov = {
 				add_unit_leader_trait = plus_one_attack_3
 				add_unit_leader_trait = plus_one_defense_3
 				add_unit_leader_trait = trait_engineer

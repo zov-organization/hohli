@@ -61,19 +61,6 @@ technologies = {
 			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
 		}
-				
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { ai_has_completed_army_doctrine = yes }
-			}
-		}
-		
-		ai_research_weights = {
-			#air_doctrine = -1.0
-			#light_air = -2.0
-		}
 	}
 	
 	ski_troops = {
@@ -468,23 +455,6 @@ technologies = {
 		folder = {
 			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				factor = 0
-				tag = USA
-				NOT = { has_tech = special_forces_paratroopers }
-			}
-			modifier = {
-				factor = 0
-				NOT = { ai_has_completed_naval_doctrine = yes }
-			}
-		}
-		
-		ai_research_weights = {
-			#artillery = 4.0
 		}
 	}
 	
@@ -994,19 +964,6 @@ technologies = {
 		folder = {
 			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				factor = 0
-				NOT = { ai_has_completed_air_doctrine = yes }
-			}
-		}
-		
-		ai_research_weights = {
-			#infantry_weapons = 1.5
-			#motorized_equipment = 1.0
 		}
 	}
 

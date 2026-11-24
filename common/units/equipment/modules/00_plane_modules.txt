@@ -1156,8 +1156,8 @@ equipment_modules = {
 			weight = 16
 			air_agility = -51.5
 			maximum_speed = -165
-			naval_strike_targetting = 3.0
-			naval_strike_attack = 25.0 #Was 10.0
+			naval_strike_targetting = 4
+			naval_strike_attack = 5 #Was 10.0
 			surface_detection = 23.0
 			sub_detection = 5.5
 		}
@@ -1183,8 +1183,8 @@ equipment_modules = {
 			air_ground_attack = 19.5
 			build_cost_ic = -15
 			weight = 4
-			naval_strike_targetting = 3
-			naval_strike_attack = 25 #Was 15.0
+			naval_strike_targetting = 9
+			naval_strike_attack = 8 #Was 15.0
 			surface_detection = 5.0	
 			sub_detection = 5.0
 			maximum_speed = -50
@@ -1263,12 +1263,12 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			naval_strike_targetting = 4
+			naval_strike_targetting = 6
 		}
 		add_stats = {
 			build_cost_ic = 4
 			weight = 5
-			naval_strike_attack = 15
+			naval_strike_attack = 7
 		}
 
 		xp_cost = 2
@@ -1290,10 +1290,10 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			weight = 8
-			naval_strike_attack = 18
+			naval_strike_attack = 10
 		}
 		add_average_stats = {
-			naval_strike_targetting = 8
+			naval_strike_targetting = 12
 		}
 
 		xp_cost = 2
@@ -1315,10 +1315,10 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			weight = 11
-			naval_strike_attack = 22
+			naval_strike_attack = 17
 		}
 		add_average_stats = {
-			naval_strike_targetting = 10
+			naval_strike_targetting = 24
 		}
 
 		xp_cost = 2

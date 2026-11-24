@@ -1,3 +1,5 @@
 ﻿l_english:
+  consumer_goods_percent_tt: "$MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$: $RIGHT|Y=%1$"
   night_spotting_chance_factor_tt: "$MODIFIER_NIGHT_SPOTTING_CHANCE$: $RIGHT|+=%1$"
   naval_night_attack_tt: "$MODIFIER_NAVAL_NIGHT_ATTACK$: $RIGHT|+=%1$"
+  refit_ic_cost_tt: " $MODIFIER_INDUSTRIAL_REFIT_IC_COST_FACTOR$: $RIGHT|-=%1$"
