@@ -56,15 +56,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-
-			add_to_variable = { 
-				FRA_balance_stab = 0.1
-				tooltip = stability_factor_tt
-			}
-			add_to_variable = { 
-				FRA_balance_cg = -0.2
-				tooltip = consumer_goods_factor_tt
-			}
+		
+			custom_effect_tooltip = FRA_industry_tt
+			add_to_variable = { FRA_balance_stab = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { FRA_balance_cg = -0.2 tooltip = consumer_goods_percent_tt }
 		}
 	}
 
@@ -108,14 +103,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			add_to_variable = { 
-				FRA_balance_stab = 0.2
-				tooltip = stability_factor_tt
-			}
-			add_to_variable = { 
-				FRA_balance_cg = -0.1
-				tooltip = consumer_goods_factor_tt
-			}
+
+			custom_effect_tooltip = FRA_industry_tt
+			add_to_variable = { FRA_balance_stab = 0.2 tooltip = stability_factor_tt }
+			add_to_variable = { FRA_balance_cg = -0.1 tooltip = consumer_goods_percent_tt }
 		}
 	}
 
@@ -130,14 +121,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_to_variable = { 
-				FRA_balance_mils_const_speed = 0.15
-				tooltip = production_speed_arms_factory_factor_tt
-			}
-			add_to_variable = { 
-				FRA_factory_output = 0.2
-				tooltip = industrial_capacity_factory_tt
-			}
+
+			custom_effect_tooltip = FRA_industry_tt
+			add_to_variable = { FRA_balance_mils_const_speed = 0.15 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { FRA_factory_output = 0.2 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 	
@@ -231,14 +218,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
-			add_to_variable = { 
-				FRA_balance_mils_const_speed = 0.15
-				tooltip = production_speed_arms_factory_factor_tt
-			}
-			add_to_variable = { 
-				FRA_factory_output = 0.2
-				tooltip = industrial_capacity_factory_tt
-			}
+
+			custom_effect_tooltip = FRA_industry_tt
+			add_to_variable = { FRA_balance_mils_const_speed = 0.15 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { FRA_factory_output = 0.2 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 	# end of crisis?

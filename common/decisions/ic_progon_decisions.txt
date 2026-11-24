@@ -183,11 +183,6 @@ ic_progon_mode = {
                         set_state_controller_to = GER
 				    }
 			    }
-			    LUX = {
-				    every_core_state = {
-                        set_state_controller_to = GER
-				    }
-			    }
 			    BEL = {
 				    every_core_state = {
                         set_state_controller_to = GER
@@ -208,6 +203,7 @@ ic_progon_mode = {
                         set_state_controller_to = GER
 				    }
                 }
+				ic_effect_fra_cap = yes
             }
 
             SOV = {

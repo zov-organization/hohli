@@ -378,6 +378,100 @@ on_actions = {
 		}
 	}
 
+	on_weekly_FRA = {
+		effect = {
+
+			# theorists else_if chain
+			IF = {
+				limit = {
+					ic_FRA_charles_de_gaulle = {
+						is_hired_as_advisor = yes
+					}
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = infantry_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_low
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = infantry_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = armor_attack
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_high
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = armor_defence
+				}
+
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = operation_swift_maneuvres
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = FRA_charles_de_gaulle
+					track = operation_deep_planning
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_FRA_henri_giraud = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_medium
+					days = @days_for_theorists_to_work
+					name = FRA_henri_giraud
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+
+			# chief of army else_if chain
+			IF = {
+				limit = {
+					ic_FRA_maurice_gamelin = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = FRA_maurice_gamelin
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					ic_FRA_maxime_weygand = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = @mastery_theorists_gain_chief
+					days = @days_for_theorists_to_work
+					name = FRA_maxime_weygand
+					grand_doctrine = ic_grand_doctrine
+				}
+			}
+		}
+	}
+
 	on_weekly_SOV = {
 		effect = {
 

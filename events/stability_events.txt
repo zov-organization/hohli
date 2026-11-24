@@ -14,6 +14,7 @@ country_event = {
 	picture = GFX_					# 
 	
 	hidden = yes
+    is_triggered_only = yes
 	
 	option = { 
 	}
@@ -366,6 +367,8 @@ country_event = {
 		
 	is_triggered_only = yes
 
+	option = { 
+	}
 }
 
 #military crackdown response to mutiny - failure, loss of stability
@@ -389,6 +392,9 @@ country_event = {
 	picture = GFX_report_event_british_inspect_troops					# 
 		
 	is_triggered_only = yes
+
+	option = { 
+	}
 }
 #military crackdown response to mutiny_2 - success
 country_event = {

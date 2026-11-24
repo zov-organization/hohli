@@ -1522,7 +1522,6 @@
 		cost = 5
 		completion_reward = {
 			BUL = {
-				add_ideas = BUL_ger_investments
 				add_to_tech_sharing_group = ic_axis_research
 			}
 			every_country = {
@@ -1554,12 +1553,6 @@
 						instant_build = yes
 					}
 				}
-				add_tech_bonus = {
-					name = GER_support_our_allies_spr
-					bonus = 0.75
-					uses = 5
-					category = excavation_tech
-				}
 				add_to_tech_sharing_group = ic_axis_research
 			}
 			every_country = {
@@ -1583,57 +1576,77 @@
 		y = 1
 		cost = 5
 		completion_reward = {
-			ROM = {
-				add_to_tech_sharing_group = ic_axis_research
+
 				add_resource = {
 					type = oil
 					amount = 8
 					state = 81
 				}
+				81 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+
 				add_resource = {
 					type = oil
 					amount = 6
 					state = 79
 				}
+				79 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+
 				add_resource = {
 					type = oil
 					amount = 10
 					state = 46
 				}
-			}
+				46 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+				}
+			#ROM = {
+			#	add_to_tech_sharing_group = ic_axis_research
+			#}
 		}
 	}
 
 	focus = {
-		id = GER_support_our_allies_rom_2
+		id = GER_support_our_allies_vic
 		icon = GFX_GER_silesian_industrial_region_2
 
-		prerequisite = { focus = GER_support_our_allies_rom }
-		relative_position_id = GER_support_our_allies_rom
+		prerequisite = { focus = GER_support_our_allies }
+		relative_position_id = GER_support_our_allies
 
-		x = 0
-		y = 1
+		x = 4
+		y = 2
 		cost = 5
 		completion_reward = {
-			46 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			81 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			79 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
+			VIC = {
+				set_technology = { excavation1 = 1 }
+				set_technology = { excavation2 = 1 }
+				set_technology = { excavation3 = 1 }
+				set_technology = { excavation4 = 1 }
+				set_technology = { excavation5 = 1 }
+				every_owned_state = {
+					limit = {
+						is_on_continent = europe
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
 				}
 			}
 			every_country = {
@@ -1793,7 +1806,7 @@
 		icon = GFX_ic_GER_totaler_krieg
 
 		prerequisite = { focus = GER_aa_defences_of_the_atlantikwall }
-		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 }
+		prerequisite = { focus = GER_support_our_allies_ita focus = GER_support_our_allies_jap focus = GER_support_our_allies_rom_2 focus = GER_support_our_allies_vic }
 		relative_position_id = GER_support_our_allies_ita
 
 		x = 1
@@ -1847,7 +1860,6 @@
             ENG = {
                 add_to_faction = HOL
                 add_to_faction = BEL
-                add_to_faction = LUX
             }
 
 			declare_war_on = {
@@ -1856,10 +1868,6 @@
 			}
 			declare_war_on = {
 				target = BEL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = LUX
 				type = annex_everything
 			}
 		}
